@@ -1,0 +1,209 @@
+define : p equal to partial.
+
+曲面.
+
+参数曲面.
+
+定义. 设 D subset R^2 是区域.
+
+gamma: D to R^2.
+
+若 rank(p/pu^1 gamma,p/pu^2 gamma)|_u=2, forall u in D.
+
+称 gamma(D)(subset R^2) 是正则 (C^k-) 的参数曲面.
+
+在 (*) 成立时, p/pu^1 famma times p/pu^2 famma ne 0, 法向有确切定义.
+
+在参数曲面上, 一点处有标架
+
+p/pu^1 gamma p/pu^2 gamma 切向, 
+
+n=(p/pu^1 gamma times p/pu^2 gamma)/(|p/pu^1 gamma times p/pu^2 gamma|) 单位法向.(定向)
+
+设有参数曲面 gamma: D to sum(subset R^2), u to gamma(u).
+
+曲线C:u*=u*(t), alpga=1,2 并设 u(0)=u_0, 在 gamma 下的像 C: gamma(u(t))=gamma(u^alpha(t))
+
+切向 p/pt gamma=p/pu gamma d/dt u*(=sum_{alpha=1}^2 p/pu* famma d/dt u*)
+
+弧长微元
+
+<p/pt gamma, p/pt gamma>=<p/pu* fanna d/dt u*,p/pu* gamma d/dt u^beta>=d/dt u^alpha<p/pu* famma, p/pu^beta gamma> d/dt u^beta=(d/dt u^1 d/dt u^2)(<p/pu^alpha gamma, p/pu^beta gamma>)(d/dt u^1;d/dt u^2)
+
+在 gamma(u_0), (+=0)
+
+<p/pt gamma, p/pt gamma>=((u^1)'(0),(u^2)'(0))(<p/pu^1 gamma,p/pu^1 gamma>,<p/pu^1 gamma,p/pu^2 gamma>;<p/pu^2 gamma,p/pu^1 gamma>,<p/pu^2 gamma,p/pu^2 gamma>)(((u^1)')(0);(u^2)'(0))
+
+(d/dt s)^2=<p/pu^alpha gamma,p/pu^beta gamma> d/dt u^alpha d/dt u^beta
+
+定义. 第一基本形式. ds^2=<p/pu^alpha gamma,p/pu^beta gamma> d/dt u^alpha d/dt u^beta.
+
+(曲面上一点处的切向量的长度)
+
+命题. 第一基本形式不依赖于参数的选取.
+
+设D上有变量代换 sigma:tilde D to D, sigma, sigma^-1 in C^k
+
+tilde u to u=sigma(tilde u)
+
+则符合参数化 tilde gamma=gamma circ tilde sigma: tilde D to tilde Sigma 下:
+
+ds^2=<p/p tilde u^alpha tilde gamma,p/p tilde u^beta tilde gamma> d tilde u^alpha d tilde u^beta
+
+证明. 由于 p/p tilde u^alpha tilde gamma=p/pu^epsilon gamma p/p tilde u^alpha u^epsilon
+
+p/p tilde u^beta tilde gamma=p/pu^tau gamma p/p tilde u^beta u^tau
+
+=> <p/p tilde u^alpha tilde gamma,p/p tilde u^beta tilde gamma>=<p/pu^epsilon gamma,p/pu^tau gamma> p/pu^alpha u^epsilonp/pu^beta u^tau dtilde u^alpha dtilde u^beta=<p/pu^epsilon gamma,p/pu^tau gamma> du^1 du^2.
+
+g_alpha beta := <p/pu^alpha gamma,p/pu^beta gamma>
+
+p/pu^epsilon u^ p/pu^tau g_epsllon tau=(p/pu^alpha u^1 p/pu^beta u^1 g_11 + p/pu^alpha u^1 p/pu^beta u^2 g_12 + p/pu^alpha u^2 p/pu^beta u^1 g_21 + p/pu^alpha u^2 p/pu^beta u^2 g_22)_1 le alpha le p=2=(p/ptilde u u)^top g_epsilon tau (p/ptilde u u)
+
+求证, 在 gammau(tilde u) 参数变换下, (tilde g_alphha beta)=(p/ptilde u u)^top (g_epsilon tau) (p/ptilde u u)
+
+设 gamma: D to Sigma(subset R^2) 是参数曲面, u_0 in D
+
+gamma(u+du)-gamma(u)=p/pu gamma du(切向)+gamma(du^2)
+
+在 gamma(u_0) 处, 面积微元 dS=|d/du^1 gamma du^1 times d/du^2 gamma du^2|=|d/du^1 gamma times d/du^2 gamma| du^1 du^2=|d/du^1 gamma| times |d/du^2 gamma| sin<d/du^1 gamma,d/du^2 gamma> du^1 du^2=|d/du^1 gamma| times |d/du^2 gamma|sqrt(1-cos^2 angle(d/du^1 gamma,d/du^2 gamma)) du^1 du^2=|d/du^1 gamma| times |d/du^2 gamma|sqrt(1-(<d/du^1 gamma,d/du^2 gamma>^2)/(|d/du^1 gamma|^2|d/du^2 gamma|^2)) du^1 du^2=sqrt(|d/du^1 gamma|^2|d/du^2 gamma|^2-<d/du^1 gamma,d/du^2 gamma>^2) du^1 du^2=sqrt(g_11g_22-g_u^2) du^1 du^2=sqrt(det(g_alphabeta)) du^1 du^2
+
+d(p/pu^1 gamma;p/pu^2 gamma;n)=(?)(p/pu^1 gamma;p/pu^2 gamma;n)
+
+求 dn. n=(p/pu^1 gamma times p/pu^2 gamma) / (|p/pu^1 gamma times p/pu^2 gamma|)
+
+(1) <n,n>equiv1, <dn,n>equiv0, 所以 dn=a^alpha p/pu^alpha gamma
+
+(2) <n, p/pu^aloga gamma> equiv 0 => <dn, p/pu^aloga gamma>+<n, d p/pu^aloga gamma> equiv 0
+
+<a^beta p/pu^beta gamma,a^alpha p/pu^alpha gamma>+<n,p^2/p u^alpha p u^beta du^beta>=0
+
+(a^beta p/pu^beta gamma,a^alpha p/pu^alpha gamma>+<n,p^2/p u^alpha p u^beta>)du^beta=0
+
+=> a^beta g alphabeta + <n, n,p^2/p u^alpha p u^beta gamma>=0, forall 1 le alpha beta le 2
+
+(2) <n,p/pu^alpha gamma>equiv0
+
+<p/pu^beta n,p/p^alpha gamma> + <n,p^2/p u^alpha p u^beta gamma>=0
+
+d/du^beta u=a^alpha_beta p/pu^alpha gamma
+
+a_beta ^epsilon g_epsilon alpha + <n,p^2/p u^alpha p u^beta gamma>=0
+
+设 (g_epsilon alpha)^-1=(g^gamma nu)
+
+a_beta ^epsilon g_epsilon alpha g^alpha u+g^alpha mu<n,p^2/p u^alpha p u^beta gamma>=0
+
+dn=a^beta_alpha p/pu^beta gamma du^alpha
+
+=> a_beta^mu=-g^alpha mu <n,p^2/p u^alpha p u^beta gamma>
+
+定义. II:=-<n,p^2/p u^alpha p u^beta gamma> du^alpha du^beta称为曲面的第二基本形式.
+
+坐标代换时II的变化. 设有坐标变换 sigma: tilde D to D, tilde u to u=sigma(u)
+
+II=-<tilde n ,p^2/p u^alpha p u^beta gamma>du^tilde alpha du^tilde beta
+
+tilde n=(p/ptilde u^1 gamma times p/ptilde u^2 gamma)/(|p/ptilde u^1 gamma times p/ptilde u^2 gamma|)
+
+p/ptilde u^alpha gamma=p/p u^epsilon gamma p/p tilde u^alpha u^epsilon
+
+p/ptilde u^1 gamma times p/ptilde u^2 gamma=p/ptilde u^wpsilon gamma times p/ptilde u^tau gamma(p/ptilde u^1 u^epsilon times p/ptilde u^2 u^tau)=det(p/p tilde u u)p/ptilde u^1 gamma times p/ptilde u^2 gamma
+
+tilde n=det(p/p tilde u u)ne
+
+p/p tilde u^beta = p/p u^tau gamma p/p tilde u^beta u^tau
+
+p^2/p u^alpha p u^beta gamma=p^2/p u^alpha p u^beta gamma p/p u ^epsilon p u tau gamma p/p tilde u ^aloha u^epsilon p/p tilde u ^beta u^tau+p/pu^tau gammap^2/p tilde u^alpha p tilde u^beta u^tau
+
+<n,p^2/p tilde u^alpha p tilde u^beta gamma>=det(p/p tilde u u)<n, p^2/p tilde u^epsilon p tilde u^tau gamma>p/ptildeu^aloha u^epsilonp/ptildeu^beta u^tau
+
+所以 tilde II=det(p/ptildeu u)(定向)II
+
+证明. II= h_alphabeta du^alpha du^beta
+
+h_alphabeta = -<n,p^2/p u^alpha p u^beta gamma>
+
+(h_alphabeta=h_betaalpha)
+
+则 dn= -g^alphabeta h_betatau p/pu.
+
+?=(?,?,√;?,?,√;√,√,0)
+
+d p/pu^beta gamma=p^2/p u^alpha p u^beta gamma du^beta
+
+求 d p/pu^alpha gamma (<p^2/p u^alpha p u^beta gamma, p/p u^epsilon gamma>=?)
+
+p^2/p u^alpha p u^beta gamma=Gamma_alphabeta^epsilon p/p u^epsilon gamma-h_alphabeta n
+
+g_alphabeta=<p/p u ^alpha gamma,p/p u ^beta gamma>
+
+p/pu^epsilon g_alphabeta = <p^2/p u^alpha p u^beta gamma,p/p u^beta gamma>+<p/pu^aloha gamma,p^2/p u^alpha p u^beta gamma>=Gamma_alphaepsilon^tau g_taubeta+Gamma_betaepsilon^tau g_taualpha
+
+p/pu^epsilon g_alphabeta=Gamma_alphaepsilon^tau g_taubeta+Gamma_betaepsilon^tau g_taualpha
+
+p/pu^alpha g_betaepsilon=Gamma_betaaloha^tau g_tauepsilon+Gamma_epsilonalpha^tau g_taubeta
+
+p/pu^beta g_epsilonalpha=Gamma_epsilonbeta^tau g_taualpha+Gamma_alphabeta^tau g_taualpha
+
+p/pu^beta g_alphaepsilon + p/p u^alpha g_betaepsilon - p/pu^epsilon g_alphabeta=2Gamma_alphabeta^tau g_tauepsilon
+
+所以 Gamma_alphabeta^tau = 1/2 g^tauepsilon (p/p u^alpha g_betaepsilon+p/p u^beta g_alphaepsilon)
+
+?=(Gamma_1*^1,Gamma_1*^2,-h_1*;Gamma_2*^1,Gamma_2*^2,-h_2*;h_1*,h_2*,0)
+
+d p/p u^alpha gamma = p/p u^alpha p u^beta gamma d u^beta
+(<p^2/p u^alpha p u^beta gamma, p/pu^epsilon gamma>)
+
+Gamma_alphabeta^epsilon=1/2 g^epsilontau (p_alpha g_taubeta+p_beta g_alphatau-p_tau g_alphabeta)
+
+Weigarten 变换
+
+<n,n>equiv1
+<dn,n>=0
+在 Sigma 上一点 gamma(u_0) 处, 其空间 T_ gamma(u_0) Sigma-span{p/pu^1 gamma,p/pu^2 gamma}
+
+取 v in T_gamma(u_0) Sigma v=v^alpha p/pu^alpha gamma
+
+dn(v)=v^alpha p/pu^alpha n in T_gamma(u_0) Sigma.
+
+定义: 记 n 是证参数曲面 gamma: D to Sigma 的单位法向向量场. 则 dn: T_gamma(u_0) Sigma to T_gamma(u_0) Sigma v to v^alpha p/pu^alpha n 
+
+p/pu^alpha n=-<n, p^2/p u^alpha p u^beta gamma>=-h_alphabeta
+
+所以 p/p u ^alpha n=-h_alphabeta g^betaepsilon p/pu^epsilon gamma
+dn(v^alpha p/pu^alpha gamma)=-h_alphabeta v^alpha g^beta epsilon p/pu^tau gamma
+设 v,w in T_gamma(u_0) Sigma
+
+<dn(v),w>=<(-h_alphabeta v^alpha g^betaepsilon)p/pu^epsilon gamma, w^tau p/p^tau gamma>=-h_alphabeta v^alpha g^betatau w^tau g_epsilon tau = -h_alpha beta v^alpha w^beta=<v, dc(w)>
+
+
+命题. dn 在 T_gamma(u_0) Sigma 上关于内积 (g_alphabeta(u))_a le alpha,beta le 2 是自共轭的.
+
+(=> dn的矩阵可以和 (g_alphabeta)同时对角化)
+
+引理. 设 A,B 是两个对称矩阵, 并且 A 是正定的, 则存在可逆矩阵 Q, 使得 Q^top AQ, Q^top BQ 同时是对角矩阵.
+
+(a_1,0;0,a_2),(b_1,0;0,b_2)
+
+(g_alphabeta);(h_alphabeta)to(u(u(tilde u))) tilde g=(p/ptilde u u)^top g;h (p/ptilde u u)
+
+证明: 由 A>0, 存在U, U^top U=I, 使得 A=U^top diag(lambda_1,dots,lambda_n)U, lambda_i>0
+
+=U^Tdiag(sqrt(lambda_1),dots,sqrt(lambda_n))(sqrt(lambda_1),dots,sqrt(lambda_n))u
+则 H 可逆, A=H^top h
+
+(H^-1)^top A(H^-1)=II
+tilde B=(H^-1)^top B (H^-1) 对称
+
+则存在 V, V^top V=II
+使得 tilde B=V^top diag(mu_1,dots,mu_2)v
+
+(H^-1)^topA(H^-1)=V^top v
+
+V(H^-1)^top B(H^-1V^top) =diag(mu_1,dots,mu_n)
+
+V(H^-1)^top A (H^-1 V^top) =II
+Q=V(H^-1)^top.
+
+
