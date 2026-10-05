@@ -1,0 +1,226 @@
+k:=kappa
+
+---
+
+上课的板书
+
+弗雷内公式
+
+平面曲线。d/ds(T;N)=(0,k;-k,0)(T;N)。k 也叫相对曲率
+
+{T,N} 是右手系。
+
+gamma 视为空间曲线，
+
+d/ds(T;bar N;B)=(0,bar k,0;-bar k,0,0;0,-bar tau,0)(T;bar N;B)，bar k叫曲率
+
+例题
+
+假设 gamma=gamma(s) 是以弧长为参数的正则曲线，则
+
+gamma*(s):=T(s)
+
+也是正则曲线。gamma* subset S^2(1)
+
+称为 gamma 的切线像，求 gamma* 的曲率，挠率。
+
+解答。设 s* 是 gamma* 的弧长参数。
+
+ds*=|d/ds gamma*|ds=k(s)ds
+
+所以 s*=c_0+int_0^s k(t)dt
+
+T*=d/ds gamma*=ds/ds* d/ds T=1/k(+kN)=N
+
+d/ds* T*=ds/ds*(d/ds N)=1/k(-kT+tau B)=(-T+tau/k B)(s(s*))
+
+N*(s*)=(-T+tau/k B)/(sqrt(1+(tau/k)^2))(s(s*))
+
+B*=T* times N*=(N times (-T+tau/k B))/(sqrt(1+(tau/k)^2))=(B+tau/k T)(sqrt(1+(tau/k)^2))
+
+d/ds B*=1/k((-tau N)+(tau/k)'T+(tau/k)kN)/(sqrt(1+(tau/k)^2))+(-(B+(tau/k)T)2(tau/k)(tau/k)')/(sqrt(1+(tau/k)^2))=1/k(((tau/k)'T)/(sqrt(1+(tau/k)^2))-(tau/k)(tau/k)'(B+(tau/k)T)/(sqrt(1+(tau/k)^2)^3))=1/k(()/(sqrt(1+(tau/k)^2))^3)=1/k...(没抄完)=(-1/k)((tau/k)'/(1+(tau/k)^2))N*
+
+例。设正则曲线 gamma 在每点的法平面都过一个定点，证明 gamma 是球面曲线。
+
+证明。< X-gamma(s),T > = 0
+
+取 x=0，则 < T,gamma(s) > equiv 0，则 < kN,gamma(S) > + < T,T > equiv 0，则 < kN, gamma(s) > equiv -1，则 <k'N,gamma>+<k(-kN+tau(B))>equiv0
+
+k'-k^2+ktau<B,gamma>=0
+
+例。正则曲线gamma(s)，k(s)ne0,任意的s，是球面曲线 iff (1/k(s))^2 + (1/tau(s)d/ds(1/k(s)))^2是常数。
+
+证明。设 gamma subset S^2(R)，讲 gamma 在 {T;N;B} 下分解。<gamma,T>equiv0，<gamma,N>=-1/k，<gamma,B>=(k^2-k')/(k tau)=k/tau+1/tau(1/k)'
+
+gamma=-1/k N+(k/tau+1/tau(1/k)')B
+
+常数=||gamma||^2=(1/k)^2+(1/tau(1/k)')^2
+
+(2) gamma+(1/k N + 1/tau (1/k)'B)=tilde gamma
+
+d/ds tilde gamma = T = k'/k^2 N + 1/k (-kT+tau B)-d/ds(1/tau-d/ds 1/k)B-1/tau(1/k)'(-tau N)=-1/k k'N + tau/k B - d/ds (1/tau d/ds (1/k))B+(1/tau)(1/k)'(+tau N)=[tau/k+(-tau'/tau^2)(1/k)'-1/tau(1/k)'']B=0
+
+(gamma-tilde gamma)=1/k N +1/tau (1/k)' B=1/k^2 + 1/tau ((1/k)')^2
+
+例。若 gamma 是闭球面的曲线，则 int_gamma tau/k ds=0。
+
+曲面 Sigma...?（这是个题目，但我没抄完）
+
+---
+
+平面曲线的包络
+
+在平面上有一族曲线，gamma(t,alpha),alpha in I subset R
+
+gamma_alpha(t):= gamma(t,alpha),J_t to R^2
+
+gamma in C^k (J times I;R^2),k ge1
+
+定义：曲线族 gamma_alpha alpha in I，若有曲线 Gamma 使得 Gamma 与每个 gamma_alpha 都在某一点相切，则称 Gamma 是 gamma_alpha 的一条包络曲线
+
+设 Gamma 已经存在，Gamma 与 gamma_alpha 相切于点 gamma(t(apha);alpha)，则Gamma(alpha):=gamma(t(alpha);alpha)是 Gamma 的参数化。
+
+由相切的条件，partial Gamma/partial alpha=partial gamma/partial t+dt/dalpha+partial gamma/partial alpha，则 partial gamma_alpha/partial t|_t=t(alpha) 与 partial Gamma/partial alpha 平行
+
+gamma=(gamma^1,gamma^2)
+
+p gamma_alpha/p t=(p gamma'/p t p gamma'/p t)
+
+p Gamma/p alpha=(p gamma'/p tt'(alpha)+p gamma'/p alpha p gamma^2.p t t'alpha+p gamma^2 p alpha) 平行
+
+p gamma' p t(p gamma^2/p t t'(alpha) + p gamma^2.p alpha)=p gamma^2/p t(p gamma' p t t'+ p gamma' / palpha)
+
+p gamma'/p t|_t=t(alpha) p gamma/p alpha|_t=t(alpha)=p gamma^2/p t|_t=t(alpha)p gamma' p alpha|_t=t(alpha)
+
+Gamma=(Gamma'(alpha),Gamma'(alpha))
+
+Gamma^i(alpha)=gamma^I(t(alpha),alpha)
+
+(p gamma'/p t p gamma^2/p alpha-p gamma'/p alpha p gamma^2/p alpha)|t=t(alpha)=0
+
+命题。（*）的解或者是 gamma * 的包络线，或者是 gamma_alpha 的起点组成的条（脊线）。
+
+例子。设有半径R的圆，沿着Ox^1方向无滑动滚动，在以C（圆心）为中心的极坐标中给定了某曲线 gamma=(bar x^1=bar x^1(theta)) 附在圆上随着滚动，得到一族曲线 gamma_alpha（alpha一滚动的角），怎么求gamma_alpha的包络？
+
+在附在圆上的坐标系中，仅有转动，曲线gamma经过转角alpha后变为 bar gamma(alpha)=(bar x'(theta,alpha))
+
+所以 (x^1(theta,alpha);x^2(theta,alpha))=(cos alpha,sin alhpa;sin alpha,cosalpha)(bar x^1(theta);bar x^2(tahta))
+
+(x^1(theta);x^2(theta))=(bar x^1(tehta,alpha);bar x^2(taeta,alpha))+(R_alpha;R)
+
+x^1(theta,alpha)=bar x(tehta)cosalpha=bar x^2(theta)sin alpha +Ralpha
+
+x^2(theta,alpha)=bar x(theta)sin alpha + bar x ^2 (theta) cos aloha +R
+
+(((bar x)')'cos alpha-(bar x)' sin aloga + R_alpha)x
+
+(-x^1 cos alpha-bar x^2 sin alpha)=(-bar x sin alpha=bar x^2 cos alpha + R)times(-(bar x)^1 sin alpha+(bar x^2)' cos alpha)-(bar x)'bar x'cos^2alpha=(bar x^1)'bar x^2 cos alpha sin alpha + (bar x^2)'bar x^1 sin alpha cos alpha + (bar x^2)'bar x^2 sin ^2 alpha - R alpha bar x^1 cos alpha-R aloha bar x^2 sin alpha=(bar x^1)'(bar x^1)-(bar x^1)(bar x^1)'cos alpha sin alpha-(bar x^2)(bar x^2)' cos^2 alpha-R(bar x^1)'cos alpha+R(bar x^2)'cos alpha
+
+bar x^1(bar x^1)'--bar x^2(bar x^2)'-2sin alpha cos alpha(bar x^1(bar x^2)-bar x^2(bar x^1)')+R(alpha bar x^1 cos alpha=(bar x^1)' sin alpha + alpha (bar x^2)' cos alpha)=0
+
+theta=arctag((bar x^2)'/bar x^1)
+
+0=(bar x^1 cos theta -bar x^2 sin theta)(1-2sin alpha cos alpha)-R(sin(phi-alpha))
+
+(1-sin 2alpha)F(tehta)=Rsin(G(tehta)-alpha)
+
+解出alpha=alpha(theta)
+
+---
+
+老师的手稿：
+
+例。设曲线C的曲率，挠率处处非零，若C用弧长参数表示为 gamma=gamma(s)，则 C 是球面曲线 iff
+
+(1/k)^2+((1/tau)d/ds(1/k))^2=常数>0
+
+证明（1）若 C subset S^2(R)，则从 < gamma,gamma > equiv R^2 
+
+有 < gamma,T > equiv 0，再微分，有
+
+< gamma,N > = -1/k
+
+再微分，有
+
+< gamma,-kT+tau B > = -1/ds (1/k)
+
+故 gamma=-1/k N -1/tau d/ds (1/k) B
+
+于是，(1/k)^2 + (1/tau d/ds (1/k))^2 equiv k^2
+
+（2）反之，令 tilde gamma=gamma + 1/k N + 1/tau d/ds (1/k) B
+
+则 d/ds tilde gamma = tau/(2d/ds(1/k)) d/ds(1/k^2+1/tau^2((k')^2)k') Bequiv 0
+
+于是 tilde gamma 是一个常量，
+
+gamma-tilde gamma=-1/k N - 1/ tau d/ds (1/k) B
+
+有常值模长。
+
+---
+
+平面曲线族的包络
+
+给定平面曲线族，gamma_alpha=gamma(-;alpha) （gamma=(gamma'(t;alpha),gamma^2(t;alpha))）
+
+其中 gamma:J_tau times I_alpha to R^2 是充分观花的映射
+
+若曲线 Gamma 与每一个 gamma_alpha 都相切，则称 Gamma 是族 {gamma_alpha} 的包络曲线。
+
+若 Gamma 是包络，它与 gamma_alpha 相缺于点 gamma(t(alpha);alpha) ，则 Gamma(alpha)=gamm(t(alpha);alpha) ，alpha in I
+
+就是 Gamma 的参数表示
+
+余下的是求出 t=t(alpha) 。由
+
+d/d alpha Gamma(alpha) 与 d/dt | _ t=t(alpha) gamma_alpha
+
+平行，有
+
+(p gamma;/p alpha p gamma^2/p t - p gamma' / p t p gamma^2 / p alpha) | _ t=t(alpha)=0
+
+这样，Gamma 的方程🈶
+
+Gamma^i (alpha) =gamma^i (t(alpha);alpha), i = 1,2
+(p gamma' / p alpha p gamma^2 / p t - p gamma' / p t p gamma^2 / p alpha) | _t=t(alpha)=0 （*）
+
+决定。注意，（*）的解也可能是脊线。
+
+---
+
+例。在 Ox^1x^2 坐标系中有一个圆 (x^1)^2+(x^2-R)^2=R 沿 Ox^1 轴逆时针无滑动滚动，又设以圆心 C 为中心，与 Ox^1 Ox^2 平行的坐标系 Cbar x^1bar x^2 下给定了某附在圆上的曲线
+
+gamma: bar x^i=bar x^i(theta),i=1,2 ，其中 theta 是圆上的角参数，gamma 随圆滚动产生一族曲线 gamma_alpha（alpha 为转过的角）。求 {gamma_alpha}的包络。
+
+解。有 gamma_alpga 在 {bar x^i} 下的坐标
+
+bar x^1(theta;alpha)=bar x'(theta)cos alpha - bar x ^2(theta)sin alpha
+bar x^2(theta;alpha) = bar x^1(theta)sin alpga + bar x^2 (theta) cos alpha
+
+在 {x^i} 坐标下，为
+
+x^1(theta;alpha) = bar x^1(theta)cos alpha - bar x^2(theta)sin alpha - R alpha
+x^2 (theta;alpha) = bar x^1(theta)sin alpha + bar x^2(theta) cos alpha + R
+
+代入（*）的最后一个式子，有
+
+((bar x^1);cos alpha-(bar x^2)sin alpha)(bar x^1 cos alpha - bar x^2 sin alpha)=(-bar x^1 sin alpga - bar x^2 cos alpha - R)((bar x^1)'sin alpha + (bar x^2)'cos alpha)
+
+化简为
+
+(bar x^2)(bar x^2)'+(bar x^2)(bar x^2)'+R((bar x^1)'sin alpha + (bar x^2)'cos alpha)=0
+
+注意，板书上多余带 sin alpha cos alpha 的项。
+
+令 phi(tehta) = arcctg ((bar x^2)')/((bar x^1)')
+
+那么有
+
+((bar x^1)(bar x^1)'+(bar x^2)(bar x^2)')/(sqrt(((bar x^1)')^2)+((bar x^2)')^2)+R(sin(alpha+phi(theta)))=0
+
+即解出
+
+alpha=-phi(theta)-arcsin((((bar x^1)^2)+((bar x^2)^2))/(2Rsqrt(((bar x^1)')^2)+((bar x^2)')2))
+
+注意，若 bar x(tehta) 代表齿轮的齿形，则包络 Gamma 代表右齿轮波动下能够平动的齿条的齿形。
