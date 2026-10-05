@@ -1,0 +1,75 @@
+曲线论
+
+定义：gamma:[a,b] in R to R^n n=2,3
+
+gamma in C^k([a,b]),k ge 1
+
+则称 gamma 是一个 C^k 曲线。
+
+额外的条件：若 gamma'(t) 处处不为 0，任意的 t in [a,b]，则 gamma 为正则曲线。
+
+例子： {y=x} subset R^2，x(t)=y(t)=t，这是正则。
+
+x(t)=y(t)=t^3，(x,y)'(0)=0，这不正则。
+
+正则是在限制参数化。
+
+弧长：已经有一个曲线 gamma，设 C subset R^n，有参数化 gamma:[a,b] to C，使其称为 C^k 曲线。
+
+还可以设其参数化是单调的。
+
+把 gamma 细分，把一小段用直线代替，则 |gamma(t)gamma(t+dt)|=sqrt(sum_i(gamma^i(t+dt)-gamma^i(t))^2)=sqrt(sum_i(gamma^i'(t_i+theta_i))^2)dt=|gamma'(t_i+theta_i)|dt
+
+gamma|_[t_1,t_2]=int_t_1^t_2|gamma'(t)|dt
+
+命题：设t=t(l)是C^k的，单调的坐标代换，|dgamma(t)/dt|dt=|dgamma(t(l))/dl|dl，弧长不依赖于参数选取
+
+就取S(t):=int_a^t|gamma'(t)|dt=famma|_[a,t]的弧长。s'(t)=|gamma'(t)|>0（正则曲线得到）所以存在一个整体的反函数t=t(s)，所以[0,s(b)]to[a,b]，t in C^k([0,s(b)])。说明可以以弧长为参数。这告诉我们在曲线C上，可以以弧长为参数。并且以弧长为参数时，gamma=gamma(t(s))还是 C^k 正则曲线。
+
+dgamma/ds=(dgamma/dt)dt/ds=gamma'(t)/|gamma'(t)|
+
+命题：设gamma=gamma(tau)是正则的C^k曲线，则tau是弧长参数iff|dgamma/dt|equiv1，任意的t。
+
+描述曲线，要有个合适的坐标系，希望找个与曲线的性质有关系的坐标系。R^2上。设 gamma:[0,L]_s to R^2 是以弧长为参数的平面正则曲线。则在曲线上的每个点gamma(s)，切向量dot gamma(s):=dgamma(s)ds 是单位向量，记作T(s)。在R^2上存在唯一的一个单位向量N(s)perpT(s)，且{T,N}构成一个右手系。{T,N}(s)构成R^2的一组基。在{T,N}下面表达dot T，dot N。（1）||T||^2(s)equiv1，任意的s in [0,L]，求导。<T,dot T>=0，说明dot T=k(s)N(s)（2）同样，dot N=lambda(s)T(s)，k=<N,dot T>。（3）由于 <T,N>equiv0，则在求导，<dot T,N>+<T,dot N>equiv0，iff k(s)+lambda(s)equiv0。所以d/ds(T;N)=(0,k(s);-k(s),0)(T;N)，d/ds gamma=T。
+
+定义：k(s)叫平面曲线gamma的曲率。
+
+定理：（1）若 R^2上有两条曲线，gamma_1，gamma_2都以弧长为参数，并且gamma_2=Agamma_1+beta_0，A'A=I_2，beta_0 in R^2是常量，det(A)=1，则相应的曲率k_1(s)=k_2(s)（2）给定一个连续可微的函数k(s)inC^1([0,L])，在相差R^2上等距变换意义下，存在唯一的一个正则曲线，gamma:[0,L]to R^2，使得其曲率k(s)=bar k(s)。
+
+证明：（1）假设gamma_2=Agamma_1+beta，假设s_1是gamma_1的弧长参数，d/ds gamma_2=Adot gamma_1，||d/ds gamma_2||^2=<Adot gamma_1,A dot gamma_2>=||dot gamma_1||^2=1，则 s_1 也是 gamma_2 的弧长参数。所以 T_gamma_2(s_1)=dot gamma_2=A dot gamma_1N_gamma_2(s_1)=det(A)AN_gamma_1。det(A)=pm 1。如果继续求导，d/ds T_2=Adot T_gamma_1=k_1(s_1)A dot T_gamma_1=det(A)k_1(s)ANgamma_1，k_2(s_1)=det(A)k_1(s_1)
+
+（2）假设gamma(s)=(x^1(s),x^2(s))，T=(dot x^1,dot x^2)(s)，N=(-dotx^2,dotx^1)(s)，代入方程，d/ds(dot x^1;dot x^2)=+k(s)(-dot x^2;dot x^1)。由于系数k in C^k，l ge 1，所以解存在，且受初值决定。gamma(0)，dot gamma(0) 唯一决定。
+
+另有一组初值 tilde gamma(0),dot tilde gamma(0),||dot tilde gamma||=1，取 beta_1=tilde gamma(0)-gamma(0)，取 A=(cos theta,sin theta;-sin theta,cos theta)，则有两组解，tilde=Agamma + beta_0。
+
+到了R^3，假设 gamma:[0,L]to R^3 是 C^k 的正则曲线，k ge 1。s是弧长，T(s)=dot gamma(s)，||T||=1，由 ||T||equiv1，得到 d/ds dot T perp T，dim T^perp(s)=2
+
+（1）dot T |_ [a,b] equiv0，[a,b] subset [0,L] iff T| _ [a,b]equiv v 是常向量，而 T=dot gamma，则 dot gamma|_ [a,b]=v(s-a)+dot v(a) 是直线段。
+
+（2）dot T|_ [0,L] 上处处非零，N:=dot T/||dot T|| 是确定的单位向量。存在一个k(s):=<dot T,N>。即 dot T(s)=k(s)N(s)。
+
+取 B=T x N（外积），B 是与 T N 都垂直的单位向量。并且 {T,N,B} 是右手系，d/dt(T;N;B)=(0,k,0;-k,0,mu;0,-mu,0)(T;N;B)。||N||=\equiv1,||B||equiv1，则 dot N perp N，dot B perp B。设dot  N=lambda T+mu B，从 <T,N>equiv0，则<dot T,N>+<T,dot  N>equiv0，则lambda=-k。d/ds B=d/ds(T x N)=dot T x N + T x dot N=T x (-kT+mu B)=mu T x B=-mu N。0equiv<T,B>，则 <dot T,B>（=0）+<T,dot B>equiv0
+
+定义：k 是曲率，tau 是挠率，T是切向量，N是主法向，B是副法向。{T,N,B}称为Frenet标架。
+
+定理：在相差 R^3 上，一个等距变换的意义下，k，mu 唯一地确定了一个曲线。
+
+挠率代表着离平面有多远。gamma=gamma(s_0)+tau(s_0)(s-s_0)+1/2dot T(s_0)(s-s_0)^2+O(s-s_0)^3，s to s_0。gamma 在 gamma(s_0) 点，与 gamma(s_0)+span{T,N}(s_0)有ge2阶切触。平面gamma(s_0)+span{T,N}(s_0)叫gamma在gamma(s_0)的主切平面。
+
+挠率mu equiv0，意味着B是长向量。B=T x N，是主切平面的法向。则取定s_0，考虑gamma(s)-gamma(s_0)，<d/ds(gamma-gamma(s_0)),B>=<dot T,B>equiv0，则<gamma-gamma(s_0),B>equiv0 iff <gamma(s),B>equiv<gamma(s_0),B>=C_0，则 gamma subset {<x,B>=C_0}平面。gamma 是平面曲线。
+
+命题：挠率mu equiv 0 iff gamma 是平面曲线。
+
+例：gamma(t)=(Rcos t,R sin t,v_t)，R V>0 常数，则称gamma(t)为圆柱螺线。
+
+gamma'(t)=(R sin t, R cos t , V)，所以弧长S=int_0^t|gamma'(t)|dtaut=sqrt(R^2+v^2)t。
+
+弧长参数化：gamma(s)=(Rcos(s/sqrt(R^2+V^2)),R sin(s/sqrt(R^2+V^2),V(s/sqrt(R^2+V^2))，T(s)=dot gamma=(-R/sqrt(R^2+V^2) sin S/sqrt(R^2+V^2),R/sqrt(R^2+V^2) cos(S/sqrt(R^2+V^2)),V/sqrt(R^2+V^2))
+
+dot T=1/sqrt(R^2+V^2)(-R/sqrt(R^2+V^2) cos(s/sqrt(R^2+V^2)),-R/sqrt(R^2+V^2)sin(s/sqrt(R^2+V^2)),0)=R/(R^2+V^2)(-cos(s/sqrt(R^2+V^2)),-sin(s/sqrt(R^2+V^2)),0)，k=R/(R^2+V^2) 为常数。
+
+N=(-cos(s/sqrt(R^2+V^2)),-sin(s/sqrt(R^2+V^2)),0)，B=T x N=(0,0,1) x N=(sin(s/sqrt(R^2+V^2)),-cos(s/sqrt(R^2+V^2)),0)
+
+dot B=cos(s/sqrt(R^2+V^2),sin(s/sqrt(R^2+V^2)),0)/(sqrt(R^2+V^2))，所以 mu=<dot B,N>1/sqrt(R^2+V^2)，常数。
+
+命题：曲率，挠率都是正常数的曲线，一定是圆柱螺线。
