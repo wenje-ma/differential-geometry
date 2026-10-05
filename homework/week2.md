@@ -146,7 +146,7 @@ $$
 -\frac{\lambda\lambda'\left(\boldsymbol B+\lambda\boldsymbol T\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]\\
 &=\frac1\kappa\left[\frac{\lambda'\boldsymbol T}{\sqrt{1+\lambda^{2}}}
 -\frac{\lambda\lambda'\left(\boldsymbol B+\lambda\boldsymbol T\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]
-\quad\left(\because\ \tau=\lambda\kappa,\;-\tau\boldsymbol N+\lambda\kappa\boldsymbol N=\boldsymbol0\right)\\
+\quad\left(\because\tau=\lambda\kappa,\;-\tau\boldsymbol N+\lambda\kappa\boldsymbol N=\boldsymbol0\right)\\
 &=\frac1\kappa\cdot\frac{\lambda'\left(\boldsymbol T-\lambda\boldsymbol B\right)}{\left(1+\lambda^{2}\right)^{3/2}}.
 \end{aligned}
 $$
