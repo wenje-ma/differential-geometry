@@ -1,0 +1,185 @@
+alert: p means partial.
+
+曲线的整体性质.
+
+(1) 等周不等式.
+
+定理. 假设平面上有一个正则简单闭曲线 gamma, 设 gamma 长 L.
+
+gamma 围成的有界区域面积为 S.
+
+则 L^2 ge 4 pi S 并且 = 成立 iff gamma 是圆周.
+
+设有弧长的参数化 gamma(s)=(x^1(s),x^2(s)), 0 le s le L.
+
+S = int_Omega d x^1 wedge x^2 = int_p Omega x^1 d x^2 = int_0^L x^1(s)x^2(s)ds.
+
+x^1 x^2 都是周期函数, 且是 C^1[0,L] 的.
+
+令 S = (L / 2 pi) t, 则 S = int_0^(2 pi)x^1(t)(x^2(t))'dt.
+
+L=int_0^(2pi)|gamma'(t)|dt=int_0^(2pi)sqrt(((x^1)')^2+((x^2)')^2)dt
+
+x^1=1/(2pi)int_0^2pix^idt+sum_(k=1)^(+infty)1.piint_0^(2pi)x_(t)^1'(sinkt(sinkt)+coskt)dt=1/(2pi)int_0^(2pi)x^1;dt+sum_(k=1)^(+infty)(a_ksinkt+b_kcoskt).
+
+定理. 设 finC^1(R), 以 2pi 为周期, 并且 int_0^P2pif=0, 则 int_0^(2pi)(f')^{c} ge int_0^(2pi)f^2, 并且 = iff f=asinx+bcosx.
+
+证明. 由 int_0^(2pi)f=0, => f=sum_(k=1)(+infty)(b_kcoskt+a_ksinkt),
+
+f^1=sum_(k=1)^(+infty)(-kb_ksinkt+ka_kcoskt)
+
+||f'||_(L^2)^2=sum_(k=1)^(+infty)k^2(a_k^2+b_k^2)pi ge ||f'||_(L^2)^{2}, 且 = iff a_(ll)=b_k=0, forall {k>0}
+
+L=int_0^(2pi)sqrt(((x^1)')^2+((x^2)')^2), 其中 (x^1)'^2+(x^2)'^2=||d/dt gamma||^2=||d/ds gamma d/dt s||^2 = |d/dt s|^2=L^2/(2pi)^2.
+
+L^2/(2pi)=int_0^(2pi)((x^1)')^2+(x^2(')^2)dt,
+
+2S=int+0^(2pi)2x^1(x^2)'dt
+
+(L^2/(2pi)-2s)=iny_0^(2pi)((x^1)'^2)dt+int_0^(2pi)(x^1-(x^2)')^2dt
+
+平移 gamma, 使得 int_0^(2pi) x^1 dt=0, 则 L^2/(2pi)-2s ge0, 并且 = iff x^1=acost+bsint;(x^2)'=x^1 iff gamma是圆 x^2=x_0^2+asint-bcost.
+
+第二个方案. 设曲线 gamma 已经使得 int_Omega(gamma) dx^1 wedge dx^2 最大. gamma=(x^1,x^2), 且 int_gammax^1ds=0, i=1,2
+
+设 x_epsilon^i=x^i+epsilon phi^im phi^i in C_0^infty[0,L].
+
+S(epsilon):=int_Omega(gamma_epsilon) dx^1 wege dx^2, 令 p/p epsilon|_epsilon=0 S=0
+
+(x^i)''=pm lambda x^i, forall phi^i.
+
+回转指标.
+
+定义. 设正则闭曲线 D:[c,L] to R^2. 令theta(s):=L(Ox^1,T(s)), where theta(s)=alpha< T(s),e_1 >.
+
+命题.
+
+dot theta(s)=(-k < N,e_1 >)/(sqrt(1-< T(s),e_1 >))= pm k(s).
+
+i_gamma:=(theta(l)-theta_0) / (2pi) in Z, 并且若 i_gamma 是简单闭曲线, i_gamma in (pm 1).
+
+特别地, 切线像映满圆周.
+
+定义. 拓正则的简单闭曲线 gamma 满足:
+
+在任意的 p in gamma, gamma 都完全在 p 处的切线 l_p 的同一侧, 则称 gamma 是凸闭曲线.
+
+命题. 简单闭曲线 gamma 是凸闭曲线 iff k(s) 不变号.
+
+证明. k(s) 不变号 iff theta(s)=L(T(s),e_1) 是单调的.
+
+(1) 设 theta(s) 是单调的. 若 gamma 不凸, 则存在一个 p in gamma. gamma 在 p 处的切线 l 两侧都有点.
+
+令 h(s):= < gamma(s), N_p >, N_p: p 处 gamma 的法向.
+
+则 max_gamma h > h(sp) > min_gamma h, where sp is the p point.
+
+存在 s_pm 使得 h(s_pm)=max_gamma(pm h)
+
+=> 在 s_pm 处, 切线 l_pm // l, l_pm, l 互不重合, 所以 T(s_+), T(s_-), T(s_p) 必定有两个是相同的.
+
+设 S_1 ne S_2 in {s_pm, s_p} 使得 T(s_1) = T(s_2), which iff theta(s_1)=theta(s_2).
+
+设 k > 0, 这时, theta|_(0,s_1)cup(S_2,L) 或 theta|_(s_1,s_2) equiv theta(s_1) => gamma|_[s_1,s_2] 是直线.
+
+这推出切线是重合的, 矛盾.
+
+---
+
+(2) 设 gamma 是凸的, 要证明 theta 单调, 否存在 s_1 < s_0 < s_2.
+
+theta(s_1)=theta(s_2) ne theta(s_0).
+
+设 p_i=gamma(s_i), ze  overline(P_1P_2) not subset gamma.
+
+由于 i_gamma in pm 1 => theta 是满射,
+
+那么一定存在一个 s_3 使得 theta(s_3)=-theta(s_1)
+
+这样, gamma(s_i) 处的切线 l_i
+
+满足 l_1 // l_2 // l_3
+
+这其中必定有两个重合, otherwise 居中的就分 gamma 为两部分.
+
+因此存在 A_1,A_2 in gamma, A_1 A_2 处的切线重合.
+
+由于 theta 不单调 => l/(A_1A_2) notsubset gamma
+
+设 B in (A_1,A_2). 由于 A_1 A_2 在 A 的两侧, 因此 n 一定不能与 gamma 相切.
+
+=> n cao gamma 至少有 2 个交点. 设沿着 n 从 b 出发, 有交点 P_1 P_2
+
+=> P_2 在 三角形 A_1A_2P_2 的内部 => 过任何的 tilde l, A_1 A_2 P_2 不能都在 tilde l 的一侧.
+
+取 tilde l 是 P_1 处 gamma 的切线, 所以 tilde l 两侧都有 gamma 的点, 这矛盾, => gama 非凸.
+
+空间闭曲线的全曲率.
+
+定理. (弗雷内)
+
+设 gamma: [0,L] to R^3 是 正则的闭曲线. k=k(s) 是 gamma 的曲率
+
+则 int_gamma k(s)ds ge 2pi 并且 = iff gamma 退化到平面凸闭曲线.
+
+theta(s)=L(T,e_1),
+
+d/ds theta=k,
+
+int_0^L kds = theta(L)=theta(0)=2pi|i_gamma|\inN_+(2pi)ge2pi = iff i_gamma(简单), kge0(凸)
+
+证明. 令 gamma*(s) := T(s), 切线像 d/ds gamma*=kN(s)
+
+gamma* 的弧长 s* 满足 d.ds s*=k(s)
+
+=> int_0^L kds=: K 是 gamma* 的长.
+
+引理 1: 对于正则闭曲线 gamma, 若 gamma* subset (x in S^2(r)|< x,n_0 > ge 0)=:H_+(n_0)
+
+则 gamma*([0,L])=p H_+(n_0)(赤道).
+
+证明. <gamma*, n_0> ge0, int_0^L<gamma*,n_0>ds=<gamma*,n_0>ds=<gamma,n_0>|_0^L=0
+
+=> gamma* in p H_+(n_0).
+
+引理 2. 任意给一个 n_0 in S^2(1), 那么圆周 p H_+(n_0) cap gamma* 至少 2 个点.
+
+证明. phi_n_0=<gamma,n_0>. 假设 s_pm 是 phi 的极值点, 那么 phi'=<gamma*,n_0>,
+
+则 <gamma*(s_-),n_0> = 0 = <gamma*(s_+),n_0>
+
++引理1 => (...).
+
+设 a,b in gamma* 切线像, 使得他们平分了 gamma* 的弧长.
+
+则 k/2 ge overline(ab).
+
+(1) 设 a b 是对经点. 则 overline(ab)=pi, => k ge2pi.
+
+(2) 设 a b 不是对经点, where iff overline(ab) < pi.
+
+设 m 是 a b 的中点. 以 m 为极点, 作大圆
+
+C_m:=p H_+(m).
+
+由引理2, 存在 p in C_m cap gamma*.
+
+假设 q 是 p 的对称点, pi=overline(pq)+overline(aq)=overline(pa)+overline(pa'), 假设 a' 是 a 的对经点.
+
+pi=overline(pa)+overline(aq)=overline(pa)+overline(pb) le overline(ap)+overline(pb)=overline(ab)=k/2.
+
+=> k/2 ge pi.
+
+当 k=2pi 时, 沿 gamma* , overline(ap), overline(pb) 是大圆弧, 且在三角形 abp所在的半球里(H_+(n_0))
+
+用引理1, => gamma* subset p H_+(n_0)
+
+=> gamma 是平面曲线
+
+由于 i_gamma=1 => dot gamma 是凸闭曲线.
+
+定理. (向正圆)
+
+设 gamma 是分段有限段光滑的空间闭曲线, 设 P_1 ... P_k 是 gamma 的角点, 并且沿参数增加的方向依次排列: 在 P_i = gamma(s_i) 处,
+
+令 theta_i=L(gamma(s_i^-),gamma(s_i^+)), 则 sum_(j=1)^k int_P_j^P_j+1 k+sum_itheta_i ge2pi. 
