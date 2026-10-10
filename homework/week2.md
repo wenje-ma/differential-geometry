@@ -139,8 +139,7 @@ $$
 (4) **挠率.** 由 $\boldsymbol B^{*}$ 的弗雷内方程 $\frac{\mathrm d\boldsymbol B^{*}}{\mathrm ds^{*}}=-\widetilde\tau\,\boldsymbol N^{*}$ 及 $\dot{\boldsymbol B}=-\tau\boldsymbol N$, $\dot{\boldsymbol T}=\kappa\boldsymbol N$ 计算:
 
 $$
-\begin{aligned}
-\frac{\mathrm d\boldsymbol B^{*}}{\mathrm ds^{*}}
+\begin{aligned}\frac{\mathrm d\boldsymbol B^{*}}{\mathrm ds^{*}}
 &=\frac1\kappa\frac{\mathrm d}{\mathrm ds}\frac{\boldsymbol B+\lambda\boldsymbol T}{\sqrt{1+\lambda^{2}}}\\
 &=\frac1\kappa\left[\frac{-\tau\boldsymbol N+\lambda'\boldsymbol T+\lambda\kappa\boldsymbol N}{\sqrt{1+\lambda^{2}}}
 -\frac{\lambda\lambda'\left(\boldsymbol B+\lambda\boldsymbol T\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]\\
@@ -196,8 +195,7 @@ $$
 $$
 
 $$
-\begin{aligned}
-\left(\boldsymbol\gamma\left(s\right)-\boldsymbol\gamma\left(0\right)\right)\wedge\boldsymbol T\left(0\right)
+\begin{aligned}\left(\boldsymbol\gamma\left(s\right)-\boldsymbol\gamma\left(0\right)\right)\wedge\boldsymbol T\left(0\right)
 &=s\left(\boldsymbol T\left(0\right)\wedge\boldsymbol T\left(0\right)\right)+\frac{s^{2}}{2}\kappa\left(0\right)\left(\boldsymbol N\left(0\right)\wedge\boldsymbol T\left(0\right)\right)+O\left(s^{3}\right)\\
 &=-\frac{s^{2}}{2}\kappa\left(0\right)\boldsymbol B\left(0\right)+O\left(s^{3}\right),
 \end{aligned}
@@ -269,8 +267,7 @@ $$
 19. 求沿曲线的向量场 $\boldsymbol v\left(s\right)$, 使其同时满足以下各式:
 
 $$
-\begin{aligned}
-\dot{\boldsymbol T}\left(s\right)&=\boldsymbol v\left(s\right)\wedge \boldsymbol T\left(s\right),\\
+\begin{aligned}\dot{\boldsymbol T}\left(s\right)&=\boldsymbol v\left(s\right)\wedge \boldsymbol T\left(s\right),\\
 \dot{\boldsymbol N}\left(s\right)&=\boldsymbol v\left(s\right)\wedge \boldsymbol N\left(s\right),\\
 \dot{\boldsymbol B}\left(s\right)&=\boldsymbol v\left(s\right)\wedge \boldsymbol B\left(s\right).
 \end{aligned}
@@ -287,8 +284,7 @@ $$
 (此即**达布向量 (旋转向量)**). 逐式验证, 利用**基础知识 (叉积恒等式)** $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$ 及 $\boldsymbol B\wedge\boldsymbol T=\boldsymbol N$, $\boldsymbol T\wedge\boldsymbol B=-\boldsymbol N$, $\boldsymbol B\wedge\boldsymbol N=-\boldsymbol T$:
 
 $$
-\begin{aligned}
-\boldsymbol v\wedge\boldsymbol T&=\left(\tau\boldsymbol T+\kappa\boldsymbol B\right)\wedge\boldsymbol T=\kappa\left(\boldsymbol B\wedge\boldsymbol T\right)=\kappa\boldsymbol N=\dot{\boldsymbol T},\\
+\begin{aligned}\boldsymbol v\wedge\boldsymbol T&=\left(\tau\boldsymbol T+\kappa\boldsymbol B\right)\wedge\boldsymbol T=\kappa\left(\boldsymbol B\wedge\boldsymbol T\right)=\kappa\boldsymbol N=\dot{\boldsymbol T},\\
 \boldsymbol v\wedge\boldsymbol B&=\left(\tau\boldsymbol T+\kappa\boldsymbol B\right)\wedge\boldsymbol B=\tau\left(\boldsymbol T\wedge\boldsymbol B\right)=-\tau\boldsymbol N=\dot{\boldsymbol B},\\
 \boldsymbol v\wedge\boldsymbol N&=\left(\tau\boldsymbol T+\kappa\boldsymbol B\right)\wedge\boldsymbol N
 =\tau\left(\boldsymbol T\wedge\boldsymbol N\right)+\kappa\left(\boldsymbol B\wedge\boldsymbol N\right)
@@ -316,16 +312,14 @@ $$
 **(1) 曲线 $\boldsymbol r$.** 求导:
 
 $$
-\begin{aligned}
-\boldsymbol r'&=\left(1+\sqrt3\cos t,\,-2\sin t,\,\sqrt3-\cos t\right),\\
+\begin{aligned}\boldsymbol r'&=\left(1+\sqrt3\cos t,\,-2\sin t,\,\sqrt3-\cos t\right),\\
 \boldsymbol r''&=\left(-\sqrt3\sin t,\,-2\cos t,\,\sin t\right),\\
 \boldsymbol r'''&=\left(-\sqrt3\cos t,\,2\sin t,\,\cos t\right).
 \end{aligned}
 $$
 
 $$
-\begin{aligned}
-v^{2}&=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}\\
+\begin{aligned}v^{2}&=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}\\
 &=1+2\sqrt3\cos t+3\cos^{2}t+4\sin^{2}t+3-2\sqrt3\cos t+\cos^{2}t=8,
 \end{aligned}
 $$

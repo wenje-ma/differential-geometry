@@ -123,8 +123,7 @@ $$
 则依据反向三角不等式 $\left|x+y\right|\ge\left|x\right|-\left|y\right|$ 有
 
 $$
-\begin{aligned}
-\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|
+\begin{aligned}\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|
 &=\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t\right)\mathrm dt\right|\\
 &\ge\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t_{i-1}\right)\mathrm dt\right|
 -\left|\int_{t_{i-1}}^{t_i}\big[\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\big]\mathrm dt\right|\\
@@ -249,8 +248,7 @@ $$
 (1) $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a>0$).
 
 $$
-\begin{aligned}
-\boldsymbol r'&=\left(a\sinh t,a\cosh t,b\right)\\
+\begin{aligned}\boldsymbol r'&=\left(a\sinh t,a\cosh t,b\right)\\
 v^{2}&=a^{2}\sinh^{2}t+a^{2}\cosh^{2}t+b^{2}\\
 &=a^{2}\cosh 2t+b^{2}\\
 \boldsymbol r''&=\left(a\cosh t,a\sinh t,0\right)\\
@@ -273,8 +271,7 @@ $\blacksquare$
 (3) $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a>0$).
 
 $$
-\begin{aligned}
-\boldsymbol r'&=\left(-a\cos t,a\sin t,b\right)\\
+\begin{aligned}\boldsymbol r'&=\left(-a\cos t,a\sin t,b\right)\\
 v^{2}&=a^{2}+b^{2}=:c^{2}\\
 \boldsymbol r''&=\left(a\sin t,a\cos t,0\right)\\
 \boldsymbol r'''&=\left(a\cos t,-a\sin t,0\right)\\
@@ -314,8 +311,7 @@ $$
 (1) 设 $\boldsymbol\gamma$ 落在半径为 $r$ 的球面上. 平移球心至原点, 则 $\left\|\boldsymbol\gamma\right\|^{2}\equiv r^{2}$. 由**命题 10.1 (球面曲线判定)** 的证明中对 $\left\langle\boldsymbol\gamma,\boldsymbol T\right\rangle\equiv0$, $\left\langle\boldsymbol\gamma,\boldsymbol N\right\rangle=-\frac1\kappa$, $\left\langle\boldsymbol\gamma,\boldsymbol B\right\rangle$ 的逐次求导, 得分解
 
 $$
-\begin{aligned}
-\boldsymbol\gamma&=-\frac1\kappa\boldsymbol N-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol B\\
+\begin{aligned}\boldsymbol\gamma&=-\frac1\kappa\boldsymbol N-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol B\\
 \left\|\boldsymbol\gamma\right\|^{2}&=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}=r^{2}.
 \end{aligned}
 $$
@@ -323,8 +319,7 @@ $$
 因 $\boldsymbol N,\boldsymbol B$ 为单位正交向量, 故
 
 $$
-\begin{aligned}
-&&r^{2}&\ge\left(\frac1\kappa\right)^{2}\\
+\begin{aligned}&&r^{2}&\ge\left(\frac1\kappa\right)^{2}\\
 \Rightarrow&&\frac1\kappa&\le r\\
 \Rightarrow&&&\kern-0.9em\boxed{\kappa\ge\frac1r}
 \end{aligned}
@@ -351,8 +346,7 @@ $$
 由**定义 5.4 (空间弗雷内方程)**  $\dot{\boldsymbol N}=-\kappa\boldsymbol T+\tau\boldsymbol B$, $\dot{\boldsymbol B}=-\tau\boldsymbol N$ 求导:
 
 $$
-\begin{aligned}
-\widetilde{\boldsymbol\gamma}'
+\begin{aligned}\widetilde{\boldsymbol\gamma}'
 &=\boldsymbol T+\varphi'\boldsymbol N+\varphi\dot{\boldsymbol N}+\psi'\boldsymbol B+\psi\dot{\boldsymbol B}\\
 &=\boldsymbol T+\varphi'\boldsymbol N+\varphi\left(-\kappa\boldsymbol T+\tau\boldsymbol B\right)+\psi'\boldsymbol B+\psi\left(-\tau\boldsymbol N\right)\\
 &=\left(1-\varphi\kappa\right)\boldsymbol T+\left(\varphi'-\tau\psi\right)\boldsymbol N+\left(\tau\varphi+\psi'\right)\boldsymbol B.
@@ -362,8 +356,7 @@ $$
 由 $\varphi=\frac1\kappa$ 得 $1-\varphi\kappa=0$, $\varphi'-\tau\psi=\varphi'-\tau\cdot\frac{\varphi'}{\tau}=0$. 又对条件求导:
 
 $$
-\begin{aligned}
-&&2\varphi\varphi'+2\psi\psi'&=0\\
+\begin{aligned}&&2\varphi\varphi'+2\psi\psi'&=0\\
 \Rightarrow&&
 \varphi\varphi'+\psi\psi'&=0.
 \end{aligned}
@@ -372,8 +365,7 @@ $$
 在 $\varphi'\ne0$ 处除以 $\varphi'$, 并代入 $\psi=\frac{\varphi'}{\tau}$, 得
 
 $$
-\begin{aligned}
-&&\varphi+\frac{\psi'}{\tau}&=0\\
+\begin{aligned}&&\varphi+\frac{\psi'}{\tau}&=0\\
 \Rightarrow&&
 \psi'&=-\tau\varphi\\
 \Rightarrow&&
@@ -518,8 +510,7 @@ $$
 由**命题 5.7 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
 
 $$
-\begin{aligned}
-\tilde\tau
+\begin{aligned}\tilde\tau
 &=\frac{\left(\tilde{\boldsymbol r}',\tilde{\boldsymbol r}'',\tilde{\boldsymbol r}'''\right)}{\tilde w^{2}}
 =\frac{\det\left(\boldsymbol A\boldsymbol r',\boldsymbol A\boldsymbol r'',\boldsymbol A\boldsymbol r'''\right)}{w^{2}}\\
 &=\frac{\det\left(\boldsymbol A\right)\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
