@@ -136,7 +136,7 @@ gamma* 的弧长 s* 满足 d.ds s*=k(s)
 
 引理 1: 对于正则闭曲线 gamma, 若 gamma* subset (x in S^2(r)|< x,n_0 > ge 0)=:H_+(n_0)
 
-则 gamma*([0,L])=p H_+(n_0)(赤道).
+则 gamma*([0,L]) subset p H_+(n_0)(赤道).
 
 证明. <gamma*, n_0> ge0, int_0^L<gamma*,n_0>ds=<gamma*,n_0>ds=<gamma,n_0>|_0^L=0
 
