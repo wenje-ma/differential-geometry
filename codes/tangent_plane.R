@@ -1,0 +1,50 @@
+setwd("C:/Users/18904/Github/differential-geometry/codes")
+proj=function(x,y,z)cbind(0.866*(x-y),0.5*(x+y)-0.8*z)
+q=seq(-1,1,length.out=30)
+draw=function(){
+  par(mar=c(0,0,1,0))
+  plot(NULL,xlim=c(-2.0,2.0),ylim=c(-3.0,1.4),main="Tangent Plane and Normal Vector",xlab="",ylab="",asp=1,axes=FALSE)
+  for(y0 in seq(-1,1,length.out=9)){
+    x=q
+    y=rep(y0,30)
+    z=x^2+rep(y0,30)^2
+    lines(proj(x,y,z),lty=2,col="grey")
+  }
+  for(x0 in seq(-1,1,length.out=9)){
+    x=rep(x0,30)
+    y=q
+    z=rep(x0,30)^2+y^2
+    lines(proj(x,y,z),lty=2,col="grey")
+  }
+  x0=0.6
+  y0=0.4
+  z0=x0^2+y0^2
+  zx=2*x0
+  zy=2*y0
+  n1=sqrt(1+zx^2)
+  n2=sqrt(1+zy^2)
+  u1=c(1,0,zx)/n1
+  u2=c(0,1,zy)/n2
+  a=0.45
+  P=c(x0,y0,z0)
+  V1=P+a*(u1+u2)
+  V2=P+a*(u1-u2)
+  V3=P+a*(-u1-u2)
+  V4=P+a*(-u1+u2)
+  poly=rbind(V1,V2,V3,V4,V1)
+  lines(proj(poly[,1],poly[,2],poly[,3]),lwd=2)
+  N=c(-zx,-zy,1)
+  N=N/sqrt(sum(N^2))
+  End=P+0.75*N
+  pr=proj(x0,y0,z0)
+  pe=proj(End[1],End[2],End[3])
+  arrows(pr[1],pr[2],pe[1],pe[2],lwd=2,length=0.14)
+  text(pe[1],pe[2],"n",pos=4,cex=1.3)
+  points(pr[1],pr[2],pch=19)
+}
+pdf("../figures/tangent_plane.pdf",width=4,height=4)
+draw()
+dev.off()
+svglite::svglite("../figures/tangent_plane.svg",width=4,height=4)
+draw()
+dev.off()
