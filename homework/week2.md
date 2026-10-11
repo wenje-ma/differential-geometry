@@ -10,17 +10,20 @@
 
 > **定理 5.6** (空间曲线基本定理)<br>在 $E^3$ 上相差一个等距变换的意义下, $k,T$ 唯一确定一条曲线.
 
-> **命题 5.7** (一般参数下的曲率与挠率公式)<br>记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$k=\frac{w}{v^{3}},\quadT=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
+> **命题 5.7** (一般参数下的曲率与挠率公式)<br>记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$k=\frac{w}{v^{3}},\ T=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
 
 > **定义 6.1 / 推导 6.A** (密切平面与泰勒展开)<br>$\boldsymbol r$ 在 $\boldsymbol r\left(s_0\right)$ 处有展开 $$\boldsymbol r\left(s\right)=\boldsymbol r\left(s_0\right)+\boldsymbol t\left(s_0\right)\left(s-s_0\right)+\frac12\dot{\boldsymbol t}\left(s_0\right)\left(s-s_0\right)^2+O\left(\left(s-s_0\right)^3\right),$$ 其中 $\boldsymbol t\left(s_0\right),\dot{\boldsymbol t}\left(s_0\right)$ 落在密切平面 $\mathrm{span}\left\{\boldsymbol t,\boldsymbol n\right\}\left(s_0\right)$ 内.
 
 > **命题 7.2** ($k,T$ 均正常数 $\Rightarrow$ 圆柱螺线)<br>曲率, 挠率均为正常数的空间曲线一定是圆柱螺线 (由空间曲线基本定理, 等距意义下唯一).
 
-> **例 8.1** (切线像)<br>设 $\boldsymbol r^{*}:=\boldsymbol t$ 是 $\boldsymbol r$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=k\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为 $$k^{*}=\sqrt{1+\left(\frac T k\right)^{2}},\quad T^{*}=\frac1k\cdot\frac{\left(\frac T k\right)'}{1+\left(\frac T k\right)^{2}}.$$
+> **例 8.1** (切线像)<br>设 $\boldsymbol r^{*}:=\boldsymbol t$ 是 $\boldsymbol r$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=k\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为 $$k^{*}=\sqrt{1+\left(\frac T k\right)^{2}},\  T^{*}=\frac1k\cdot\frac{\left(\frac T k\right)'}{1+\left(\frac T k\right)^{2}}.$$
 
 > **定理 17.1** (芬切尔)<br>设 $\boldsymbol r:\left[0,L\right]\to E^3$ 是正则闭曲线, 则全曲率 $\int_{\boldsymbol r}k\left(s\right)\,\mathrm ds\ge2\pi$, 等号当且仅当 $\boldsymbol r$ 是平面凸闭曲线.
 
-> **基础知识**<br>(1) 叉积恒等式 $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$;<br>(2) 点到直线的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$ ($Q\in l$, $\boldsymbol u$ 为单位方向向量).
+> **基础知识**<br>
+> (1) 叉积恒等式 $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$;
+>
+> (2) 点到直线的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$ ($Q\in l$, $\boldsymbol u$ 为单位方向向量).
 
 ## 1 (习题二)
 
@@ -55,7 +58,7 @@ $$
 因 $T>0$, 由**定义 5.2 (曲率与主法向量)** 得
 
 $$
-\widetilde k=\left\|\dot{\widetilde{\boldsymbol t}}\right\|=T,\quad
+\widetilde k=\left\|\dot{\widetilde{\boldsymbol t}}\right\|=T,\ 
 \widetilde{\boldsymbol n}=\frac{\dot{\widetilde{\boldsymbol t}}}{\widetilde k}=-\boldsymbol n.
 $$
 
@@ -83,9 +86,9 @@ $$
 (2) $\widetilde C$ 的弗雷内标架为
 
 $$
-\boxed{\;\widetilde{\boldsymbol t}=\boldsymbol b,\quad
-\widetilde{\boldsymbol n}=-\boldsymbol n,\quad
-\widetilde{\boldsymbol b}=\boldsymbol t\;}\quad\blacksquare
+\boxed{\;\widetilde{\boldsymbol t}=\boldsymbol b,\ 
+\widetilde{\boldsymbol n}=-\boldsymbol n,\ 
+\widetilde{\boldsymbol b}=\boldsymbol t\;}\ \blacksquare
 $$
 
 ---
@@ -93,7 +96,7 @@ $$
 12. 给定曲线 $\boldsymbol r\left(s\right)$, 它的曲率和挠率分别是 $k,T$; $\boldsymbol r\left(s\right)$ 的单位切向量 $\boldsymbol t\left(s\right)$ 可视作单位球面 $S^2$ 上的一条曲线, 称为曲线 $\boldsymbol r\left(s\right)$ 的切线像. 证明: 曲线 $\widetilde{\boldsymbol r}\left(s\right)=\boldsymbol t\left(s\right)$ 的曲率, 挠率分别为
 
 $$
-\widetilde{k}=\sqrt{1+\left(\frac{T}{k}\right)^2},\quad
+\widetilde{k}=\sqrt{1+\left(\frac{T}{k}\right)^2},\ 
 \widetilde T=\frac1k\cdot\frac{\left(\frac T k\right)'}{1+\left(\frac T k\right)^{2}}.
 $$
 
@@ -128,7 +131,7 @@ $$
 (3) **标架.** 主法向与副法向分别为
 
 $$
-\boldsymbol n^{*}=\frac{-\boldsymbol t+\lambda\boldsymbol b}{\sqrt{1+\lambda^{2}}},\quad
+\boldsymbol n^{*}=\frac{-\boldsymbol t+\lambda\boldsymbol b}{\sqrt{1+\lambda^{2}}},\ 
 \boldsymbol b^{*}=\boldsymbol t^{*}\wedge\boldsymbol n^{*}
 =\boldsymbol n\wedge\frac{-\boldsymbol t+\lambda\boldsymbol b}{\sqrt{1+\lambda^{2}}}
 =\frac{\boldsymbol b+\lambda\boldsymbol t}{\sqrt{1+\lambda^{2}}},
@@ -145,7 +148,7 @@ $$
 -\frac{\lambda\lambda'\left(\boldsymbol b+\lambda\boldsymbol t\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]\\
 &=\frac1k\left[\frac{\lambda'\boldsymbol t}{\sqrt{1+\lambda^{2}}}
 -\frac{\lambda\lambda'\left(\boldsymbol b+\lambda\boldsymbol t\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]
-\quad\left(\becauseT=\lambdak,\;-T\boldsymbol n+\lambdak\boldsymbol n=\boldsymbol0\right)\\
+\ \left(\becauseT=\lambdak,\;-T\boldsymbol n+\lambdak\boldsymbol n=\boldsymbol0\right)\\
 &=\frac1k\cdot\frac{\lambda'\left(\boldsymbol t-\lambda\boldsymbol b\right)}{\left(1+\lambda^{2}\right)^{3/2}}.
 \end{aligned}
 $$
@@ -160,8 +163,8 @@ $$
 对比 $-\widetilde T\,\boldsymbol n^{*}$ 得
 
 $$
-\boxed{\;\widetilde k=\sqrt{1+\left(\frac T k\right)^{2}},\quad
-\widetilde T=\frac1k\cdot\frac{\left(\frac T k\right)'}{1+\left(\frac T k\right)^{2}}\;}\quad\blacksquare
+\boxed{\;\widetilde k=\sqrt{1+\left(\frac T k\right)^{2}},\ 
+\widetilde T=\frac1k\cdot\frac{\left(\frac T k\right)'}{1+\left(\frac T k\right)^{2}}\;}\ \blacksquare
 $$
 
 ---
@@ -221,13 +224,13 @@ $$
 \frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}
 =\frac{2\left[\frac{s^{2}}{2}k\left(0\right)+O\left(s^{3}\right)\right]}{s^{2}+O\left(s^{3}\right)}
 =k\left(0\right)\cdot\frac{1+O\left(s\right)}{1+O\left(s\right)}
-\longrightarrowk\left(0\right)=k\left(P_0\right),\quad s\to0.
+\longrightarrowk\left(0\right)=k\left(P_0\right),\  s\to0.
 $$
 
 即
 
 $$
-\lim_{P\to P_0}\frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}=k\left(P_0\right).\quad\blacksquare
+\lim_{P\to P_0}\frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}=k\left(P_0\right).\ \blacksquare
 $$
 
 ---
@@ -298,7 +301,7 @@ $$
 **唯一性**: 若 $\boldsymbol w$ 也满足, 则由 $\boldsymbol w\wedge\boldsymbol t=k\boldsymbol n$ 及 $\boldsymbol w\wedge\boldsymbol b=-T\boldsymbol n$, 设 $\boldsymbol w=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$, 则 $\boldsymbol w\wedge\boldsymbol t=\gamma\left(\boldsymbol b\wedge\boldsymbol t\right)+$ ($\alpha,\beta$ 项)$=\gamma\boldsymbol n+\cdots$, 比较 $\boldsymbol n$ 分量得 $\gamma=k$; 由 $\boldsymbol w\wedge\boldsymbol b$ 比较得 $\alpha=T$; 由 $\boldsymbol w\wedge\boldsymbol n$ 比较 $\boldsymbol b$ 分量得 $\beta=0$. 故 $\boldsymbol w=\boldsymbol v$ 唯一.
 
 $$
-\boxed{\;\boldsymbol v\left(s\right)=T\left(s\right)\,\boldsymbol t\left(s\right)+k\left(s\right)\,\boldsymbol b\left(s\right)\;}\quad\blacksquare
+\boxed{\;\boldsymbol v\left(s\right)=T\left(s\right)\,\boldsymbol t\left(s\right)+k\left(s\right)\,\boldsymbol b\left(s\right)\;}\ \blacksquare
 $$
 
 ---
@@ -349,26 +352,25 @@ $$
 由**命题 5.7**:
 
 $$
-k=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14,\quad
+k=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14,\ 
 T=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=\frac{-8}{32}=-\frac14.
 $$
 
 **(2) 曲线 $\widetilde{\boldsymbol r}$.** 求导:
 
 $$
-\widetilde{\boldsymbol r}'=\left(-\sin\frac{t}{2},\,\cos\frac{t}{2},\,-1\right),\quad
-\widetilde{\boldsymbol r}''=\left(-\frac12\cos\frac{t}{2},\,-\frac12\sin\frac{t}{2},\,0\right),\quad
+\widetilde{\boldsymbol r}'=\left(-\sin\frac{t}{2},\,\cos\frac{t}{2},\,-1\right),\ 
+\widetilde{\boldsymbol r}''=\left(-\frac12\cos\frac{t}{2},\,-\frac12\sin\frac{t}{2},\,0\right),\ 
 \widetilde{\boldsymbol r}'''=\left(\frac14\sin\frac{t}{2},\,-\frac14\cos\frac{t}{2},\,0\right).
 $$
 
 $$
-\tilde v^{2}=\sin^{2}\frac{t}{2}+\cos^{2}\frac{t}{2}+1=2,\quad \tilde v=\sqrt2.
+\tilde v^{2}=\sin^{2}\frac{t}{2}+\cos^{2}\frac{t}{2}+1=2,\  \tilde v=\sqrt2.
 $$
 
 $$
 \widetilde{\boldsymbol r}'\wedge\widetilde{\boldsymbol r}''
 =\left(-\frac12\sin\frac{t}{2},\,\frac12\cos\frac{t}{2},\,\frac12\right),
-\quad
 \tilde w^{2}=\frac14\sin^{2}\frac{t}{2}+\frac14\cos^{2}\frac{t}{2}+\frac14=\frac12,
 $$
 
@@ -387,7 +389,7 @@ $$
 故
 
 $$
-\tilde k=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14,\quad
+\tilde k=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14,\ 
 \tilde T=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\tilde w^{2}}=\frac{-1/8}{1/2}=-\frac14.
 $$
 

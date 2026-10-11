@@ -7,13 +7,16 @@ $$\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1
 
 > **定义 3.1** (弗雷内标架)<br>设 $\boldsymbol r:\left[0,L\right]\to E^2$ 是以弧长为参数的平面正则曲线, 切向量 $\boldsymbol t\left(s\right):=\dot{\boldsymbol r}\left(s\right)$ 是单位向量; $E^2$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的弗雷内标架.
 
-> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\quad\dot{\boldsymbol r}=\boldsymbol t.$$
+> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t.$$
 
 > **定义 3.3** (有向曲率)<br>二维弗雷内方程中的数量函数 $k\left(s\right)$ 称为平面曲线的**有向曲率**, 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
 
 > **定义 4.1** (等距变换)<br>映射 $F:E^2\to E^2$ 若保持欧氏距离, 则称平面等距变换, 均可写为 $F\left(\boldsymbol x\right)=\boldsymbol A\boldsymbol x+\boldsymbol b$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$; $\det\boldsymbol A=1$ 称**保向等距变换**, $\det\boldsymbol A=-1$ 称**反向等距变换**.
 
-> **定理 4.2** (平面曲线基本定理)<br>(1) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数且 $$\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,$$ 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $k_1\left(s\right)=k_2\left(s\right)$;<br>(2) 给定 $\bar k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\bar k$ 为有向曲率.
+> **定理 4.2** (平面曲线基本定理)<br>
+> (1) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数且 $$\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,$$ 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $k_1\left(s\right)=k_2\left(s\right)$;
+>
+> (2) 给定 $\bar k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\bar k$ 为有向曲率.
 
 > **命题 5.1** (直线段刻画)<br>设 $\boldsymbol r$ 是正则 $C^k$ 曲线, $s$ 为弧长, $\boldsymbol t=\dot{\boldsymbol r}$, 则在一段区间 $\left[a,b\right]$ 上 $\dot{\boldsymbol t}|_{\left[a,b\right]}\equiv\boldsymbol 0$ 当且仅当 $\boldsymbol r$ 在该段上是直线段.
 
@@ -23,7 +26,7 @@ $$\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1
 
 > **定义 5.4** (空间弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}=\begin{bmatrix}0&k&0\\-k&0&T\\0&-T&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}.$$
 
-> **命题 5.7** (一般参数下的曲率与挠率公式)<br>记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$k=\frac{w}{v^{3}},\quadT=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
+> **命题 5.7** (一般参数下的曲率与挠率公式)<br>记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$k=\frac{w}{v^{3}},\ T=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
 
 > **命题 6.2** (挠率衡量离平面程度)<br>$T\equiv0$ 当且仅当 $\boldsymbol r$ 是平面曲线.
 
@@ -147,7 +150,7 @@ $\blacksquare$
 (2) 设 $\boldsymbol\alpha:\left[a,b\right]\to E^3$ 是连接两点 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意曲线. 直线段可参数化为
 
 $$
-\boldsymbol r\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right),\quad t\in\left[a,b\right].
+\boldsymbol r\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right),\  t\in\left[a,b\right].
 $$
 
 则 $\boldsymbol r'=\frac{Q-P}{b-a}$, 其弧长为
@@ -168,7 +171,10 @@ $$
 
 (1) 讨论平面曲线的几何. 如平面曲线的曲率的定义, 平面曲线基本定理.
 
-> **定理 4.4**: 设 $k\left(s\right)$ 是连续可微函数, 则 <br> (1) 存在平面 $E^2$ 的曲线 $\boldsymbol{r}\left(s\right)$, 它以 $s$ 为弧长参数, $k\left(s\right)$ 为曲率;<br> (2) 上述曲线在相差平面的一个刚体运动的意义下是唯一的.
+> **定理 4.4**: 设 $k\left(s\right)$ 是连续可微函数, 则
+> (1) 存在平面 $E^2$ 的曲线 $\boldsymbol{r}\left(s\right)$, 它以 $s$ 为弧长参数, $k\left(s\right)$ 为曲率;
+>
+> (2) 上述曲线在相差平面的一个刚体运动的意义下是唯一的.
 
 (2) 对比空间曲线的理论, 谈谈你觉得平面曲线的情形有什么特别之处.
 
@@ -195,7 +201,7 @@ $$
 $$
 \frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}
 =\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},
-\quad\dot{\boldsymbol r}=\boldsymbol t.
+\ \dot{\boldsymbol r}=\boldsymbol t.
 $$
 
 其中 $k\left(s\right)$ 称为有向曲率 (**定义 3.3 (有向曲率)**), 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
@@ -263,7 +269,7 @@ $$
 故
 
 $$
-\boxed{k=\frac{a\sqrt{a^{2}+b^{2}\cosh 2t}}{\left(a^{2}\cosh 2t+b^{2}\right)^{3/2}},\quad
+\boxed{k=\frac{a\sqrt{a^{2}+b^{2}\cosh 2t}}{\left(a^{2}\cosh 2t+b^{2}\right)^{3/2}},\ 
 T=\frac{b}{a^{2}+b^{2}\cosh 2t}}
 $$
 $\blacksquare$
@@ -279,7 +285,7 @@ v^{2}&=a^{2}+b^{2}=:c^{2}\\
 w^{2}&=a^{2}c^{2}\\
 w&=ac\\
 \left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)&=\left\langle\left(-ab\cos t,ab\sin t,-a^{2}\right),\right.\\
-&\quad\left.\left(a\cos t,-a\sin t,0\right)\right\rangle\\
+&\ \left.\left(a\cos t,-a\sin t,0\right)\right\rangle\\
 &=-a^{2}b.
 \end{aligned}
 $$
@@ -287,7 +293,7 @@ $$
 故
 
 $$
-\boxed{k=\frac{a}{a^{2}+b^{2}},\quadT=-\frac{b}{a^{2}+b^{2}}}
+\boxed{k=\frac{a}{a^{2}+b^{2}},\ T=-\frac{b}{a^{2}+b^{2}}}
 $$
 $\blacksquare$
 
@@ -463,7 +469,7 @@ $$
 $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, 比较系数:
 
 $$
-1=-\lambdak,\quad 0=\lambda',\quad 0=\lambdaT.
+1=-\lambdak,\  0=\lambda',\  0=\lambdaT.
 $$
 
 由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambdak\ne0$ 知 $\lambda\ne0$, 再由 $\lambdaT=0$ 得 $T\equiv0$. 于是由**命题 6.2 (挠率衡量离平面程度)**  ($T\equiv0$ 当且仅当曲线是平面曲线), $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故
@@ -523,6 +529,6 @@ $$
 综上:
 
 $$
-\boxed{\tilde s=s,\quad \tilde k=k,\quad \tilde T=-T}
+\boxed{\tilde s=s,\  \tilde k=k,\  \tilde T=-T}
 $$
 $\blacksquare$
