@@ -96,9 +96,9 @@ overline g_alphabeta = <p/p overline u^alpha gamma, p/p overline u^beta gamma> �
 
 解方程
 
-u^alpha = u^alpha(t), d/dt u^alpha =v^alpha(u(t)), u^alpha(t_0) = u_0^alpha
+u^alpha = u^alpha(t), d/d t u^alpha =v^alpha(u(t)), u^alpha(t_0) = u_0^alpha
 
-那么 gamma(u(t)) 满足 d/dt gamma(u(t)) = d/dt u^alpha p/p u^alpha gamma = v^alpha p/p u^alpha gamma
+那么 gamma(u(t)) 满足 d/d t gamma(u(t)) = d/d t u^alpha p/p u^alpha gamma = v^alpha p/p u^alpha gamma
 
 设 v_1, v_2 是 Sigma 上处处非零的光滑向量场., 局部上存在处处非零的光滑函数 mu_1, mu_2, 使得存在参数变换 overline u^alpha = overline u^alpha(u) 满足 p/pu^alpha gamma = mu_alpha(u) v_alpha(u), 则在 Sigma 上局部地总存在正交参数.
 
@@ -127,3 +127,49 @@ d(sigma omega) = 0 iff -p/p u^2 sigma P du^1 wedge du^2 + p/p u^1 sigma Q du^1 w
 则 sigma omega 是恰当形式.
 
 定义. 设 C subset Sigma 是一条曲线, 若在任意的 x in C, C 在 x 的切向量都是第 i 个主方向, 则称 C 是 Sigma 的一条曲率线.
+
+定义, 设在参数曲面 Sigma: gamma = gamma(u) 上每点有主曲率 lambda_1(u) le lambda_2(u), 使 lambda_1(u) = lambda_2(u) 成立的点 gamma(u) 称为 Sigma 的脐点(圆点).
+
+命题, 设 gamma(u_0) in Sigma 不是圆点, 则存在 u_0 的邻域 U subset D, 对于任意的 u in U, gamma(u) 都不是圆点, 并且 U 上 lambda_1 le lambda_2 光滑地依赖于 u.
+
+证明. lambda_1, lambda_2 是 det(h - lambda g) = 0 (*) 的根.
+
+(*) 的判别式 Delta(u) 是 u 的光滑函数.
+
+det(h - lambda g) = lambda^2 - tr(g^(-1)h)lambda + det(hg^(-1)), lambda_1 = (tr(g^(-1)h)-sqrt(Delta))/2, lambda_2 = (tr(g^(-1)h)+sqrt(Delta))/2
+
+在 {Delta(u) > 0} 上也是 u 的光滑函数.
+
+方程组 v_i^alpha = v_i^alpha(u): (h - lambda_i g) v_i = 0, g(v_i, v_i) = 1, g(v_i, p/p u^i gamma) > 0.
+
+的解在 {sqrt{Delta}>0} 上也光滑依赖于 u.
+
+命题: 在 Sigma 的非脐点附近总存在两个光滑的单位向量场 {v_i}_(i=1,2), 使得 v_i(u) 是 gamma(u) 处的第 i 个主方向.
+
+定理, 在 Sigma 的非脐点附近存在参数 (u^1, u^2) 使得 p/p u^1 gamma 是第 i 个主方向.
+
+I = g_11(u)(d u^1)^2 + g-12(u)(d u^2)^2, II = lambda_1(u)g_11(u)(d u^1)^2 + lambda_2(u)g_22(u)(d u^2)^2.
+
+定义. 设 Sigma: gamma = gamma(u) 是参数曲面, 它有两个主曲率, lambda_1, lambda_2. 称 H(u) := lambda_1(u) + lambda_2(u) 为平均曲率, 称 K(u) := lambda_1(u)lambda_2(u) 为总曲率(高斯曲率).
+
+det(h - lambda g) = lambda^2 = H(u) lambda + K(u).
+
+曲面的局部形态.
+
+设 u_0 in D, 设 |Delta u| ll 1, gamma (u_0 + Delta u) = gamma(u) + p/p u^alpha gamma (u_0) + 1/2 p^2/p u^alpha p u^beta (u_0) Delta u^alpha Delta u^beta + O(Delta u^3), |Delta u| to 0.
+
+gamma(u_0 + Delta u) - gamma(u_0) = Delta u^alpha p/p u^alpha gamma(u_0) + 1/2 Delta u^alpha Delta u^beta (Gamma_alphabeta^tau (u_0) p/p u^tau gamma(u_0) - h_alphabeta(u_0)n)+O(Delta u^3) = (Delta u^tau = 1/2 Delta u^alpha Delta u^beta Gamma_alphabeta^tau (u_0))p/p u^tau gamma (u_0) = 1/2 Delta u^alpha Delta u^beta h_alphabeta(u_0) n + O(Delta u^3)
+
+设 (u^1, u^2) 是曲率线网参数
+
+取 e_alpha = p/p u^alpha gamma(u_0)/|p/p u^alpha gamma(u_0)|
+
+则 {e_1, e_2} 是单位正交系,
+
+|p/p u^alpha gamma(u_0)| = sqrt(<p/p u^alpha gamma, p/p u^alpha gamma>) = sqrt(g_alphabeta(u_0))
+
+p/p u^alpha gamma(u_0) = sqrt(g_alphaalpha(u_0))e_alpha
+
+gamma(u_0 + Delta u) - gamma(u_0) = Sum_(tau=1)^2 (Delta u^tau+1/2 Gamma_alphabeta^tau Delta u^alpha Delta u^beta) sqrt(g_tautau(u_0)) e_tau - 1/2 ((Delta u^1)^2lambda_1(u_0) + (Delta u^2)^2 lambda_2(u_0))n(u_0)+O(Delta u^3)
+
+gamma(u_0+Delta u)-gamma(u_0)=Sum_(tau=1)^2 Delta u^tau e_tau sqrt(g_tautau)-1/2(lambda_1(Delta u^1)^2+lambda_2(Delta u^2)^2)+(高阶项)
