@@ -1,0 +1,129 @@
+def: p = partial
+
+参数曲面
+
+gamma: D(subset R^2) to Sigma(subset R^3)
+
+(u^1, u^2) to gamma = gamma(u^1, u^2)
+
+gamma in C^k(D), k ge 1
+
+rk(p/pu^1 gamma, p/pu^2 gamma)|_(u^1. u^2) equiv 2 iff p/pu^1 gamma times p/pu^2 gamma ne 0 (forall u in D)
+
+T_(gamma(u))Sigma = span{p/pu^1 gamma, p/pu^2 gamma}
+
+n(u) = (p/pu^1 gamma times p/pu^2 gamma)/(|p/pu^1 gamma times p/pu^2 gamma|)
+
+I = g_alphabeta du^alpha du^beta
+
+g_alphabeta = <p/pu^alpha gamma, p/pu^beta gamma>
+
+II = h_alphabeta du^alpha du^beta
+
+h_alphabeta = <p^2/pu^alpha pu^beta gamma, n>
+
+由于 <n, n> equiv 1, implies
+
+dn in T_gamma(u)Sigma, forall u in D
+
+so forall v in T_gamma(u)Sigma, v = v^alpha p/pu^alpha gamma
+
+dn(v) = v^alpha p/pu^alpha n in T_gamma(u) Sigma
+
+w := dn: T_gamma(u) Sigma to T_gamma(u) Sigma
+
+命题: forall v, tilde v in T_gamma(u) Sigma
+
+<dn(v), tilde v> = <v, dn(tilde v)>
+
+(自共轭)
+
+命题, forall u in D, 存在两个线性无关的方向 v_1, v_2 in T_gamma(u) Sigma, 以及 lambda_1, lambda_2 in R, 使得 dn(v_i) = lambda_i v_i
+
+定义, lambda_1, lambda_2 称为在 gamma(u) 点的主曲率, v_1, v_2 称为在 gamma(u) 点的主方向.
+
+设 Sigma 上有曲线, c(s) = gamma(u(s)), s - 弧长,
+
+切向量 dot c(s) = p/u^alpha dot u^alpha(s) (=T(s))
+
+法向量 ddot c(s) = p^2/p^2u^alphapubeta gamma dot u^alpha dot u^beta + ddot u^alpha p/pu^alpha gamma (= kN(s))
+
+ddot c(s) = ddot u^alpha p/pu^alpha gamma + dot u^alpha dot u^beta p^2/pu^alphapu^beta gamma,
+
+而 p^2/pu^alphapu^beta gamma = Gamma_alphabeta^2 p/pu^tau gamma - h_alphabeta n
+
+ddot c(s) = (ddot u^alpha + dot u^epsilon dot u^tau Gamma_Sigmatau^alpha) p/pu^alpha gamma (测地曲率向量) - dot u^alpha dot u^beta h_alphabeta n (法曲率向量)
+
+定义: h_alphabeta dot u^alpha dot u^beta 称为法曲率. (k_n)
+
+k_n = h_alphabeta dot u^alpha dot u^beta = (h_alphabeta du^alpha du^beta) |_u^alpha = u^alpha(s)
+
+对一般参数 u^alpha = u^alpha(t), k_n = (h_alphabeta du^alpha du^beta)/(g_alphabeta du^alpha du^beta)|_(u=u(t)) = II/I|_(u=u(t))
+
+存在 Q 非退化, Q^top(g_alphabeta)Q = I_2, Q^top(h_alphabeta)Q = diag(lambda_1, lambda_2)
+
+设有 v in T_gamma(u)Sigma, <v, v> = g_alphabeta v^alpha v^beta = 1
+
+lambda_1 le II/I le lambda_2 (lambda_1 le lambda_2)
+
+命题. 设曲面上有两曲线 C_1, C_2 在 gamma(u_0) 相切, 则他们在 gamma(u_0) 有相同的法曲率.
+
+做坐标变换, (u^1, u^2) to (u^1, u^2)Q, 可以设在 gamma(u_0) 点, g_alphabeta = delta_alphabeta, h_alphabeta = diag(lambda_1, lambda_2), 单位主方向 e_1, e_2, e_1 perp e_2.
+
+若 v = v^alpha e_alpha = |v| cos theta e_1 + sin theta e_2
+
+II/I(v,v) = lambda_1 cos^2 theta + lambda_2 sin^2 theta(欧拉公式)
+
+主曲率 lambda_1, lambda_2 是 Q^top(h_alphabeta)Q 的特征值, 其中 Q^top(g_alphabeta)Q = I_2.
+
+iff lambda_i 是 det(Q^top(h_alphabeta)Q - lambda I_2) = 0 的根
+
+iff lambda_i 是 det((h_alphabeta) - lambda(Q^top)^(-1)Q^(-1)) = 0 的根
+
+iff lambda_i 是 det((h_alphabeta) - lambda(g_alphabeta)) = 0 的根
+
+v_1 是 ((h_alphabeta) - lambda(g_alphabeta)) v_i = 0 的解.
+
+设 v_1(u) in T_gamma(u) Sigma, v_2(u) in T_gamma(u) Sigma 处处非零的光滑向量场.
+
+若 D 上有参数变换 overline u^alpha = overline u^alpha(u^1, u^2) 使得
+
+p/p overline u^alpha gamma = mu_alpha(u) v_alpha(u), mu_alpha 处处非零, 则在 (overline u^1, overline u^2) 下,
+
+overline g_alphabeta = <p/p overline u^alpha gamma, p/p overline u^beta gamma> 是对角阵.
+
+设 Sigma 上有向量场 v(u) = v^alpha(u(t))
+
+解方程
+
+u^alpha = u^alpha(t), d/dt u^alpha =v^alpha(u(t)), u^alpha(t_0) = u_0^alpha
+
+那么 gamma(u(t)) 满足 d/dt gamma(u(t)) = d/dt u^alpha p/p u^alpha gamma = v^alpha p/p u^alpha gamma
+
+设 v_1, v_2 是 Sigma 上处处非零的光滑向量场., 局部上存在处处非零的光滑函数 mu_1, mu_2, 使得存在参数变换 overline u^alpha = overline u^alpha(u) 满足 p/pu^alpha gamma = mu_alpha(u) v_alpha(u), 则在 Sigma 上局部地总存在正交参数.
+
+p/p overline u^alpha gamma = (p/p overline u^alpha u^beta) p/p u^beta gamma
+
+d u^beta= (p/p overline u^alpha u^beta) d u^alpha
+
+(p/p overline u u)^top(g_alphabeta)(p/p overline u u) = diag(lambda_1, lambda_2)
+
+(p/p u overline u)^top(g_alphabeta)(p/p u overline u) = diag(lambda_1^(-1), lambda_2^(-1))
+
+证明, 令 omega_alpha = u_alpha^beta g_betatau d u^tau = P_alpha1 d u^1 Q_alpha1 d u^2, alpha = 1, 2
+
+存在 sigma_alpha(u) 是光滑的, 非零函数(微分因子), 使得 sigma_alpha omega_alpha 是恰当形式, 所以局部上存在 overline u^alpha = overline u^alpha(u), 使得 sigma_alpha omega_alpha = d u^alpha
+
+omega = P du^1+Q du^2
+
+d(sigma omega) = 0 iff -p/p u^2 sigma P du^1 wedge du^2 + p/p u^1 sigma Q du^1 wedge du^2 - sigma p/p u^2 P du^1 wedge du^2 + p/p u^1 Q sigma du^1 wedge du^2 = 0
+
+所以 -P p/p u^2 ln sigma + Q p/p u^1 ln sigma = p/p u^2 P - p/p u^1 Q_alpha1
+
+解 d/d u^1 u^2 = - Q/P (u^1, u^2), u^2 (u_0^1) = u_0^2, 得到 u^2 = psi(u_0^1, u_0^2)
+
+去 ln sigma = u^2 - psi(u^1, u^2)
+
+则 sigma omega 是恰当形式.
+
+定义. 设 C subset Sigma 是一条曲线, 若在任意的 x in C, C 在 x 的切向量都是第 i 个主方向, 则称 C 是 Sigma 的一条曲率线.
