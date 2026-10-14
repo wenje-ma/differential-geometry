@@ -1,0 +1,182 @@
+Sigma: gamma=gamma(u), u in D(subset R^2)
+设 gamma(u_0) 是非脐点
+在 u_0 附近存在开集 U subset D,
+在 U 上存在曲率网(overline u)
+gamma(overline u_0+Delta overline u)-gamma(overline u_0)
+=(Delta overline u^alpha+O(Delta overline u^2)) partial/partial u^alpha gamma(overline u_0)
+-(lambda_1(overline u_0)(Delta overline u^1)^2+lambda_2(overline u_0)(Delta overline u^2)^2)n(overline u_0)
++O(Delta overline u^3), |Delta overline u| to 0.
+
+(1) lambda_1(overline u_0), lambda_2(overline u_0)>0, 椭圆型
+(2) lambda_1(overline u_0)lambda_2(overline u_0)<0, 双曲型
+(3) lambda_1=0, 抛物型
+
+设对 Sigma: gamma=gamma(u), u in D,
+任何的 u in D, gamma(u) 全是脐点.
+称 Sigma 是全脐曲面.
+定理: 全脐曲面一定是球面或平面的一部分.
+
+证明: 存在 lambda(u), 使得 II=lambda(u)I
+partial^2/partial u^alpha partial u^beta gamma, n>=lambda(u)<partial/partial u^alpha gamma, partial/partial u^beta gamma>
+-<partial/partial u^alpha gamma, partial/partial u^beta n>
+implies partial/partial u^beta n=-lambda(u)partial/partial u^beta gamma
+
+partial^2/partial u^alpha partial u^beta n=-partial/partial u^alpha lambda partial/partial u^beta gamma
+-lambda partial^2/partial u^alpha partial u^beta gamma
+
+---
+设 I=g_11(d u^1)^2+g_22(d u^2)^2
+II=lambda(u)g_11(d u^1)^2+lambda(u)g_22(d u^2)^2
+---
+
+partial/partial u^alpha (partial/partial u^beta n)=partial/partial u^alpha(-h_beta^epsilon partial/partial u^epsilon gamma)
+=-partial/partial u^alpha h_beta^epsilon(partial/partial u^epsilon gamma)-h_beta^epsilon(Gamma_epsilonalpha^tau)partial/partial u^tau gamma
+=(-partial/partial u^alpha h_beta^tau-h_beta^tau Gamma_epsilonalpha^tau)partial/partial u^tau gamma-
+h_beta^epsilon h_epsilonalpha n
+
+结构方程
+I=g_alphabeta d u^alpha d u^beta
+II=h_alphabeta d u^alpha d u^beta
+
+{partial/partial u^alpha gamma, n}, {gamma, partial/partial u^alpha gamma, n}
+partial/partial u^alpha gamma=Gamma_alphabeta^tau partial/partial u^tau gamma-h_alphabeta n(*)
+partial/partial u^alpha n=h_alphatau g^taubeta partial/partial u^beta gamma(*)
+
+(*)有局部解,
+iff gamma, partial/partial u^alpha gamma n 对 u 的二阶导数都交换.
+
+partial/partial u^alpha gamma
+partial/partial u^beta partial u^alpha=Gamma_alphabeta^tau partial/partial u^tau gamma-h_alphabeta n
+partial^3/partial u^epsilon partial u^beta partial u^alpha gamma=partial/partial u^epsilon Gamma_alphabeta^tau-Gamma_alphabeta^tau(Gamma_epsilonalpha^delta Gamma_epsilonalpha^delta partial/partial u^delta gamma-h_epsilontau n)
+-partial/partial u^epsilon h_alphabeta n-h_alphabeta h_epsilon^delta partial/partial u^delta gamma
+=(partial/partial u^epsilon Gamma_alphabeta^delta-Gamma_alphabeta^epsilon Gamma_epsilontau^delta-h_alphabeta h_epsilon^delta)partial/partial u^delta gamma-(partial/partial u^epsilon h_alphabeta+h_epsilontau Gamma_alphabeta^tau)n
+partial^3/partial u^epsilon partial u^beta partial u^alpha gamma=(partial/partial u^beta Gamma_alphaepsilon^delta-Gamma_alphaepsilon^tau Gamma_betatau^delta-h_alphatau h_beta^delta)partial/partial u^delta gamma-(partial/partial u^beta h_alphaepsilon+h_betatau Gamma_alphaepsilon^tau)n
+implies partial/partial u^epsilon Gamma_alphabeta^delta-partial/partial u^beta Gamma_alphaepsilon^delta+Gamma_alphaepsilon^tau Gamma_taubeta^delta-Gamma_alphabeta^tau Gamma_tauepsilon^delta+h_alphaepsilon h_beta^delta-h_alphabeta h_epsilon^delta equiv 0(gauss方程)
+partial/partial u^epsilon h_alphabeta-partial/partial u^beta h_alphaepsilon+h_epsilontau Gamma_alphabeta^tau-h_betatau Gamma_alphaepsilon^tau equiv 0(coddai方程)
+
+partial/partial u^alpha n=h_alpha partial/partial u^epsilon gamma
+partial^2/partial u^beta partial u^alpha n=partial/partial u^beta h_alpha^tau partial/partial u^tau gamma+h_alpha^tau(Gamma_taualpha^epsilon partial/partial u^epsilon gamma-h_taubeta n)
+=(partial/partial u^beta h_alpha^tau+h_alpha^delta Gamma_deltabeta^tau)partial/partial u^tau gamma-h_alpha^tau h_taubeta n
+partial^2/partial u^beta partial u^alpha n=partial^2/partial u^alpha partial u^beta n
+partial/partial u^beta h_alpha^tau-partial/partial u^alpha h_beta^tau+h_alpha^delta Gamma_deltabeta^tau-h_beta^delta Gamma_alphadelta equiv 0
+
+定理: 若给定 I, II,
+则存在曲面实现 I,II iff I, II 满足 G-C 方程组.
+
+[(partial/partial u^epsilon Gamma_alphabeta^epsilon+Gamma_alphaepsilon^tau Gamma_taubeta^delta)-(epsilon<->beta)]g_deltatheta
++h_alphaepsilon h_betatheta-h_alphabeta h_epsilontheta=0
+alpha,beta=1,epsilon,theta=2
+det(h_alphabeta)=h_12 h_21-h_11 h_22=(partial Gamma+Gamma Gamma)G
+k=det(h_alphabeta)/det(g_alphabeta)=((partial Gamma+Gamma Gamma)g_****)/det(g_alphabeta)
+
+定理: 曲面的总曲率只与 I 有关.
+
+g=g_11(d u^1)^2+g_22(d u^2)^2
+h=lambda(u)(g)
+partial/partial u^epsilon(lambda(u)g_alphaalpha)-partial/partial u^alpha(lambda(u)g_alphaepsilon)
++h_epsilontau Gamma_alphaalpha^tau-h_alphatau Gamma_alphaepsilon^tau=0
+epsilon=alpha, epsilon ne alpha
+Gamma_alphabeta^epsilon=1/2 g^epsilondelta(partial_alpha g_betadelta+partial_beta g_alphadelta-partial_delta g_alphabeta)
+g_epsilonalpha, h_epsilonalpha=0,
+partial/partial u^epsilon(lambda(u)g_epsilonalpha)+lambda(g_epsilonepsilon Gamma_alphaalpha^epsilon-g_alphaalpha Gamma_alphaepsilon^alpha)
+implies g_alphaalpha partial/partial u^epsilon lambda=0 implies partial/partial u^epsilon lambda=0 implies lambda=const
+
+定理: 全解曲面一定是平面或球面的一部分
+证明: 设 II=lambda(u)I
+由 Coddai 方程组 lambda=const
+(1) lambda=0, 平面
+(2) lambda ne 0, 球面(半径=1/|lambda|)
+
+partial/partial u^alpha n=-lambda partial/partial u^alpha gamma
+iff n-lambda gamma=const
+(1)lambda=0 implies n=const(平面)
+(2)lambda ne 0
+|lambda gamma+const|^2 equiv 1(球面)
+
+曲面的例子
+(1)旋转面
+给定 x^3 O x^2 平面内的曲线
+x^2=x^2(t)
+x^3=x^3(t)
+绕 Ox^3 旋转
+得到
+gamma(t, theta)=(x^2(t)cos theta,x^2(t)sin theta, x^3(t))
+partial/partial t gamma=((x^2)'cos theta, (x^2)'sin theta, (x^3)')
+partial/partial theta gamma=(x^2(-sin theta), x^2 cos theta, 0)
+
+I: g_tt=[((x^2)')^2+((x^3)')^2](t)
+g_ttheta=0
+g_tt=(x^2)^2
+
+n=(partial/partial t gamma times partial/partial theta gamma)/|(partial/partial t gamma times partial/partial theta gamma)|
+=(-x^2(x^3)'cos theta, -x^2(x^3)'sin theta, (x^2)'x^2)/|(-x^2(x^3)'cos theta, -x^2(x^3)'sin theta, (x^2)'x^2)|
+=(-(x^3)'cos theta, -(x^3)'sin theta, (x^2)')/sqrt(((x^2)')^2+((x^3)')^2)
+partial^2/partial t^2 gamma=((x^2)''cos theta, (x^2)'' sin theta, (x^3)'')
+partial^2/partial t theta gamma=(-(x^2)'sin theta, (x^2)'cos theta, 0)
+partial^2/partial theta^2=x^2(-cos theta, -sin theta, 0)
+
+h_tt=-<partial^2/partial t^2 gamma, n>
+=((x^2)''(x^3)'-(x^2)'(x^3)'')/sqrt(((x^2)')^2+((x^3)')^2)
+h_ttheta=0
+h_thetatheta=(-x^2(x^3)')/sqrt(((x^2)')^2+((x^3)')^2)
+
+g_tt=((x^2)')^2+((x^3)')^2
+g_ttheta=0
+g_thetatheta=(x^2)^2
+
+lambda_1=((x^2)''(x^3)'-(x^2)'(x^3)'')/sqrt(((x^2)')^2+((x^3)')^2)^3
+lambda_2=-(x^3)'/(x^2 sqrt(((x^2)')^2+((x^3)')^2)^3)
+主曲率
+
+例子. K equiv const 的旋转面
+即 ((x^2)''(x^3)'-(x^2)'(x^3)'')/x^2 1/(((x^2)')^2+((x^3)')^2)^2
+
+设 x^3=phi(x^2)
+
+-phi''/x^2 1/(1+(phi')^2)^2 equiv K
+
+so phi''+K x^2(1+(phi')^2)^2=0
+
+(1)K=0, phi''=0(线性)
+(2)K=1
+phi=Sum_(n=0)^infty a_n(x^2)^n
+phi'=Sum_(n=1)^infty a_n n(x^2)^(n-1)
+phi''=Sum_(n=2)^infty a_n n(n-1)(x^2)^(n-2)
+
+k=1
+phi=sqrt(1-(x^2)^2)
+k=-1
+phi=-ln tg h|x^2|
+(伪球面)
+
+练习, 伪球面的表面积与包围的主体的体积是有限的(6 pi)(2/3 pi)
+
+直纹面
+gamma(t,u)=c(t)+u l(t), |l(t)|equiv 1
+(1) l(t) equiv const, 柱面
+(2) c(t) equiv const(固定 t, gamma(t) 过定点), 锥面
+(3) l(t)=c'(t)/|c'(t)|, 切线面
+
+定义: 若 gamma 是直纹面
+当 gamma 可以实现为它的切平面的包络 iff
+沿直母线法向不变
+
+称 gamma 是可展曲面.(可以展开成平面的一部分)
+
+gamma(t,u)=c(t)+ul(t)
+partial/partial t gamma=c'(t)+u l'(t)
+partial/partial u gamma=l(t)
+n=(partial/partial t gamma times partial/partial u gamma)/|partial/partial t gamma times partial/partial u gamma|
+=(c' times l+u')/|partial/partial t gamma times partial/partial u gamma|
+
+由 |l|=1, l' perp l
+
+(1) l' times l=0
+(2) l' times l ne 0
+
+(1) 当 l' times l=0 implies l' para lambda
+解出 l=C e^alpha t l_0 implies l=const 柱面
+
+(2) l' times l ne 0 implies {l, l', l' times l} 是一组基
+可以换母线使 c' perp l.
+n=????/|partial/partial t gamma times partial/partial u gamma|
