@@ -1,7 +1,6 @@
 # 作业 1
 
-> **定义 2.1** (弧长)<br>设 $\boldsymbol r:\left[a,b\right]\to E^n$ 是一条简单 $C^k$ 曲线, 则其在参数区间 $\left[t_1,t_2\right]$ 上的弧长为
-$$\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1}^{t_2}|\boldsymbol r'\left(t\right)|\,\mathrm dt.$$
+> **定义 2.1** (弧长)<br>设 $\boldsymbol r:\left[a,b\right]\to E^n$ 是一条简单 $C^k$ 曲线, 则其在参数区间 $\left[t_1,t_2\right]$ 上的弧长为 $$\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1}^{t_2}|\boldsymbol r'\left(t\right)|\,\mathrm dt.$$
 
 > **命题 2.2** (弧长与参数选取无关)<br>弧长 $\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)$ 的值不依赖于曲线的参数化方式.
 
@@ -36,6 +35,7 @@ $$\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1
 设 $\boldsymbol{a}\left(t\right)$ 是向量值函数, 证明:
 
 (1) $\left|\boldsymbol{a}\right|$ 为常数当且仅当 $\left\langle \boldsymbol{a}\left(t\right),\boldsymbol{a}'\left(t\right)\right\rangle=0$;
+
 (2) $\boldsymbol{a}\left(t\right)$ 的方向不变当且仅当 $\boldsymbol{a}\left(t\right)\wedge \boldsymbol{a}'\left(t\right)=\boldsymbol{0}$.
 
 ### 解答 1

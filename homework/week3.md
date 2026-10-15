@@ -16,6 +16,14 @@
 
 ## 1 (习题三)
 
+1. 求下列曲面的参数表达式:
+
+(1) $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ (椭球面);
+
+(2) $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$ (单叶双曲面);
+
+(4) $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$ (椭圆抛物面).
+
 ### 解答 1-1
 
 **(1) 椭球面** $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$. 取参数
@@ -89,6 +97,8 @@ $$
 
 ---
 
+7. 求椭球面的第一基本形式.
+
 ### 解答 1-7
 
 由题 1(1), 椭球面的参数表示为 $\boldsymbol r\left(u,v\right)=\left(a\sin u\cos v,b\sin u\sin v,c\cos u\right)$. 由**定义 21.1 (第一基本形式)**, 系数为 $E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ F=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$. 由解答 1-1 中的 $\boldsymbol r_u,\boldsymbol r_v$:
@@ -117,6 +127,12 @@ $$
 $$
 
 ---
+
+8. 求下列曲面的第一基本形式:
+
+(1) $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$;
+
+(2) $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
 ### 解答 1-8
 
@@ -164,6 +180,8 @@ $$
 
 ---
 
+9. 求曲面 $z=f\left(x,y\right)$ 的第一基本形式.
+
 ### 解答 1-9
 
 曲面 $z=f\left(x,y\right)$ 取参数 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $f_x:=\frac{\partial f}{\partial x}$, $f_y:=\frac{\partial f}{\partial y}$. 由**定义 21.1 (第一基本形式)**, 系数为
@@ -189,6 +207,8 @@ $$
 
 ---
 
+11. 设 $\left(x,y\right)$ 是曲面 $\boldsymbol r\left(u,v\right)$ 的另一组参数, 问: $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的指向是否相同?
+
 ### 解答 1-11
 
 设 $\left(x,y\right)$ 是曲面 $\boldsymbol r\left(u,v\right)$ 的另一组参数, 即存在参数变换 $J=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}$. 由**推导 23.D**, 新参数下的法向 (未归一) 满足
@@ -202,6 +222,8 @@ $$
 事实上由**定义 19.2 (单位法向与定向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 由参数化定向唯一确定, 故上述结论正是**推导 23.D** 中 $\tilde{\boldsymbol n}=\operatorname{sgn}\left(\det J\right)\boldsymbol n$ 的直接结论. 因此答案: **不一定相同; 指向相同 $\Leftrightarrow\det J>0$**. $\blacksquare$
 
 ---
+
+14. 求习题8中曲面的第二基本形式.
 
 ### 解答 1-14
 
@@ -294,6 +316,8 @@ $$
 即 $L=N=-\frac{2ab}{\Delta},\ M=0$. $\blacksquare$
 
 ---
+
+15. 求曲面 $z=f\left(x,y\right)$ 的第二基本形式.
 
 ### 解答 1-15
 
@@ -514,10 +538,6 @@ $$
 II=L\,\mathrm du^2+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^2=\frac{4\left(\mathrm du^2+\mathrm dv^2\right)}{\left(1+u^2+v^2\right)^2}=I.
 $$
 
-**统一说明**: 三种参数表示所得切空间均为过原点、垂直于 $\boldsymbol r$ 的平面 $\left\{\boldsymbol w:\left\langle\boldsymbol w,\boldsymbol r\right\rangle=0\right\}$; 单位法向为 $\boldsymbol n=\pm\boldsymbol r$, 其符号由参数化定向依**定义 19.2** 确定 (球坐标与立体投影取 $\boldsymbol n=-\boldsymbol r$, 函数图形取 $\boldsymbol n=+\boldsymbol r$). 由**性质 23.C**, 反向参数变换使 $II$ 变号: 外法向 $\boldsymbol n=\boldsymbol r$ 时 $II=-I$, 内法向 $\boldsymbol n=-\boldsymbol r$ 时 $II=+I$; 而第一基本形式 $I$ 与切空间不变. 三种情形的总曲率均为
+$\blacksquare$
 
-$$
-K=\frac{LN-M^2}{EG-F^2}=1,
-$$
-
-与单位球面一致. $\blacksquare$
+> 三种参数表示所得切空间均为过原点、垂直于 $\boldsymbol r$ 的平面 $\left\{\boldsymbol w:\left\langle\boldsymbol w,\boldsymbol r\right\rangle=0\right\}$; 单位法向为 $\boldsymbol n=\pm\boldsymbol r$, 其符号由参数化定向依**定义 19.2** 确定 (球坐标与立体投影取 $\boldsymbol n=-\boldsymbol r$, 函数图形取 $\boldsymbol n=+\boldsymbol r$). 由**性质 23.C**, 反向参数变换使 $II$ 变号: 外法向 $\boldsymbol n=\boldsymbol r$ 时 $II=-I$, 内法向 $\boldsymbol n=-\boldsymbol r$ 时 $II=+I$; 而第一基本形式 $I$ 与切空间不变. 三种情形的总曲率均为 $$K=\frac{LN-M^2}{EG-F^2}=1,$$ 与单位球面一致. 

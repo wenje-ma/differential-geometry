@@ -141,11 +141,11 @@ $$
 $$
 \begin{aligned}\frac{\mathrm d\boldsymbol b^{*}}{\mathrm ds^{*}}
 &=\frac1k\frac{\mathrm d}{\mathrm ds}\frac{\boldsymbol b+\lambda\boldsymbol t}{\sqrt{1+\lambda^{2}}}\\
-&=\frac1k\left[\frac{-T\boldsymbol n+\lambda'\boldsymbol t+\lambdak\boldsymbol n}{\sqrt{1+\lambda^{2}}}
+&=\frac1k\left[\frac{-T\boldsymbol n+\lambda'\boldsymbol t+\lambda k\boldsymbol n}{\sqrt{1+\lambda^{2}}}
 -\frac{\lambda\lambda'\left(\boldsymbol b+\lambda\boldsymbol t\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]\\
 &=\frac1k\left[\frac{\lambda'\boldsymbol t}{\sqrt{1+\lambda^{2}}}
 -\frac{\lambda\lambda'\left(\boldsymbol b+\lambda\boldsymbol t\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]
-\ \left(\becauseT=\lambdak,\;-T\boldsymbol n+\lambdak\boldsymbol n=\boldsymbol0\right)\\
+\ \left(\because T=\lambda k,\;-T\boldsymbol n+\lambda k\boldsymbol n=\boldsymbol0\right)\\
 &=\frac1k\cdot\frac{\lambda'\left(\boldsymbol t-\lambda\boldsymbol b\right)}{\left(1+\lambda^{2}\right)^{3/2}}.
 \end{aligned}
 $$
@@ -221,7 +221,7 @@ $$
 \frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}
 =\frac{2\left[\frac{s^{2}}{2}k\left(0\right)+O\left(s^{3}\right)\right]}{s^{2}+O\left(s^{3}\right)}
 =k\left(0\right)\cdot\frac{1+O\left(s\right)}{1+O\left(s\right)}
-\longrightarrowk\left(0\right)=k\left(P_0\right),\  s\to0.
+\longrightarrow k\left(0\right)=k\left(P_0\right),\  s\to0.
 $$
 
 即
@@ -399,13 +399,13 @@ $$
 回忆法里-米尔诺定理: 设 $\gamma:\left[0,L\right]\to E^3$ 是一条光滑弧长参数简单闭曲线. 如果 $\gamma$ 是一个非平凡纽结, 则其全曲率积分满足
 
 $$
-\int_\gammak\left(s\right)ds>4\pi.
+\int_\gamma k\left(s\right)ds>4\pi.
 $$
 
 思考: 是否存在 $\epsilon>0$, 对任何非平凡纽结 $\gamma$, 满足
 
 $$
-\int_\gammak\left(s\right)ds\ge4\pi+\epsilon.
+\int_\gamma k\left(s\right)ds\ge4\pi+\epsilon.
 $$
 
 若存在, 请证明; 若不存在, 请说明理由.
@@ -419,8 +419,8 @@ $$
 - 远离纽结的部分是一段接近整圆的圆弧, 其全曲率趋近圆周的全曲率 $2\pi$ (由**定理 17.1 (芬切尔)**, 平面凸闭曲线取到全曲率下界 $2\pi$);
 - 微小纽结所在的小段, 其切向量几乎额外扫过一整圈 (该小段本身作为闭合环, 全曲率由芬切尔不等式大于等于 $2\pi$, 且随其趋近平面凸环而趋近 $2\pi$).
 
-于是总全曲率趋近 $2\pi+2\pi=4\pi$, 且始终严格大于 $4\pi$ (因为它是非平凡纽结, 法里-米尔诺定理给出 $\int_\gammak>4\pi$). 取纽结小段足够小, 即可使 $\int_\gammak<4\pi+\delta$.
+于是总全曲率趋近 $2\pi+2\pi=4\pi$, 且始终严格大于 $4\pi$ (因为它是非平凡纽结, 法里-米尔诺定理给出 $\int_\gamma k>4\pi$). 取纽结小段足够小, 即可使 $\int_\gamma k<4\pi+\delta$.
 
-因此对任意 $\delta>0$ 都存在非平凡纽结满足 $4\pi<\int_\gammak<4\pi+\delta$. 若存在题设中的 $\epsilon>0$ 使一切非平凡纽结都有 $\int_\gammak\ge4\pi+\epsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gammak\ge4\pi+\epsilon>4\pi$, 与上面构造出的, 全曲率可以任意接近 $4\pi$ 的纽结矛盾.
+因此对任意 $\delta>0$ 都存在非平凡纽结满足 $4\pi<\int_\gamma k<4\pi+\delta$. 若存在题设中的 $\epsilon>0$ 使一切非平凡纽结都有 $\int_\gamma k\ge4\pi+\epsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma k\ge4\pi+\epsilon>4\pi$, 与上面构造出的, 全曲率可以任意接近 $4\pi$ 的纽结矛盾.
 
 所以, 全体非平凡纽结的全曲率的下确界恰为 $4\pi$, 它被趋近但从不达到; 不存在对一切非平凡纽结一致的 $\epsilon>0$. $\blacksquare$
