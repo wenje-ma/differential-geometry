@@ -1,0 +1,25 @@
+setwd("C:/Users/18904/Github/differential-geometry/codes")
+if(!dir.exists("data"))dir.create("data")
+if(!dir.exists("../figures"))dir.create("../figures")
+draw1=function(){
+  par(mar=c(0,0,0,0))
+  x=seq(-2,2,length.out=200);y=0.8*sin(x)
+  plot(x,y,type="l",lwd=2,xlab="x",ylab="y",asp=1,axes=FALSE)
+  x0=0.6;y0=0.8*sin(x0)
+  points(x0,y0,pch=19)
+  dx=1;dy=0.8*cos(x0)
+  len_t=sqrt(dx^2+dy^2)
+  t_x=dx/len_t;t_y=dy/len_t
+  n_x=-t_y;n_y=t_x
+  scale=0.4
+  arrows(x0,y0,x0+scale*t_x,y0+scale*t_y,lwd=2,length=0.08)
+  arrows(x0,y0,x0+scale*n_x,y0+scale*n_y,lwd=2,length=0.08)
+  text(x0+scale*t_x*1.3,y0+scale*t_y*1.3,"t",cex=2)
+  text(x0+scale*n_x*1.3,y0+scale*n_y*1.3,"n",cex=2)
+}
+pdf("../figures/frenet_2d.pdf",width=7,height=6)
+draw1()
+dev.off()
+svglite::svglite("../figures/frenet_2d.svg",width=7,height=6)
+draw1()
+dev.off()

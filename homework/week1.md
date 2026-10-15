@@ -13,10 +13,7 @@ $$\operatorname{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1
 
 > **定义 4.1** (等距变换)<br>映射 $F:E^2\to E^2$ 若保持欧氏距离, 则称平面等距变换, 均可写为 $F\left(\boldsymbol x\right)=\boldsymbol A\boldsymbol x+\boldsymbol b$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$; $\det\boldsymbol A=1$ 称**保向等距变换**, $\det\boldsymbol A=-1$ 称**反向等距变换**.
 
-> **定理 4.2** (平面曲线基本定理)<br>
-> (1) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数且 $$\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,$$ 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $k_1\left(s\right)=k_2\left(s\right)$;
->
-> (2) 给定 $\bar k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\bar k$ 为有向曲率.
+> **定理 4.2** (平面曲线基本定理)<br>(1) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数且 $$\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,$$ 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $k_1\left(s\right)=k_2\left(s\right)$;<br>(2) 给定 $\overline k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\overline k$ 为有向曲率.
 
 > **命题 5.1** (直线段刻画)<br>设 $\boldsymbol r$ 是正则 $C^k$ 曲线, $s$ 为弧长, $\boldsymbol t=\dot{\boldsymbol r}$, 则在一段区间 $\left[a,b\right]$ 上 $\dot{\boldsymbol t}|_{\left[a,b\right]}\equiv\boldsymbol 0$ 当且仅当 $\boldsymbol r$ 在该段上是直线段.
 
@@ -209,7 +206,7 @@ $$
 平面曲线基本定理 (**定理 4.2 (平面曲线基本定理)**):
 
 (正向) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数, 且 $\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\boldsymbol\beta_0\in E^2$ 为常向量, $\det\boldsymbol A=1$ (保向等距), 则 $k_1\left(s\right)=k_2\left(s\right)$.
-(逆向) 给定 $\bar k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下, 存在唯一正则曲线 $\boldsymbol r:\left[0,L\right]\to E^2$ 以 $\bar k$ 为有向曲率.
+(逆向) 给定 $\overline k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下, 存在唯一正则曲线 $\boldsymbol r:\left[0,L\right]\to E^2$ 以 $\overline k$ 为有向曲率.
 
 证明思路: 由 $\dot{\boldsymbol t}=k\boldsymbol n$, $\boldsymbol n=\left(-\dot x^2,\dot x^1\right)$ 得
 

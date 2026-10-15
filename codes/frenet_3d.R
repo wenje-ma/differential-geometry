@@ -1,0 +1,27 @@
+setwd("C:/Users/18904/Github/differential-geometry/codes")
+if(!dir.exists("data"))dir.create("data")
+if(!dir.exists("../figures"))dir.create("../figures")
+draw1=function(){
+  par(mar=c(0,0,0,0),bg="white")
+  a=1;c=0.4;L=sqrt(a^2+c^2);s=seq(-6,6,length.out=300);x=a*cos(s/L);y=a*sin(s/L);z=c*s/L
+  plot3D::lines3D(x,y,z,lwd=2,col="black",xlab="",ylab="",zlab="",axes=FALSE,box=FALSE,theta=60,phi=30,expand=1,asp=1)
+  s0=2;x0=a*cos(s0/L);y0=a*sin(s0/L);z0=c*s0/L
+  t_x=-a/L*sin(s0/L);t_y=a/L*cos(s0/L);t_z=c/L
+  n_x=-cos(s0/L);n_y=-sin(s0/L);n_z=0
+  b_x=t_y*n_z-t_z*n_y
+  b_y=t_z*n_x-t_x*n_z
+  b_z=t_x*n_y-t_y*n_x
+  scale=0.5
+  plot3D::arrows3D(x0,y0,z0,x0+scale*t_x,y0+scale*t_y,z0+scale*t_z,lwd=2,col="black",length=0.08,add=TRUE)
+  plot3D::arrows3D(x0,y0,z0,x0+scale*n_x,y0+scale*n_y,z0+scale*n_z,lwd=2,col="black",length=0.08,add=TRUE)
+  plot3D::arrows3D(x0,y0,z0,x0+scale*b_x,y0+scale*b_y,z0+scale*b_z,lwd=2,col="black",length=0.08,add=TRUE)
+  plot3D::text3D(x0+scale*t_x*1.3,y0+scale*t_y*1.3,z0+scale*t_z*1.3,labels="t",cex=2,col="black",add=TRUE)
+  plot3D::text3D(x0+scale*n_x*1.3,y0+scale*n_y*1.3,z0+scale*n_z*1.3,labels="n",cex=2,col="black",add=TRUE)
+  plot3D::text3D(x0+scale*b_x*1.3,y0+scale*b_y*1.3,z0+scale*b_z*1.3,labels="b",cex=2,col="black",add=TRUE)
+}
+pdf("../figures/frenet_3d.pdf",width=7,height=6)
+draw1()
+dev.off()
+svglite::svglite("../figures/frenet_3d.svg",width=7,height=6)
+draw1()
+dev.off()

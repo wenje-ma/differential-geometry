@@ -20,10 +20,7 @@
 
 > **定理 17.1** (芬切尔)<br>设 $\boldsymbol r:\left[0,L\right]\to E^3$ 是正则闭曲线, 则全曲率 $\int_{\boldsymbol r}k\left(s\right)\,\mathrm ds\ge2\pi$, 等号当且仅当 $\boldsymbol r$ 是平面凸闭曲线.
 
-> **基础知识**<br>
-> (1) 叉积恒等式 $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$;
->
-> (2) 点到直线的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$ ($Q\in l$, $\boldsymbol u$ 为单位方向向量).
+> **基础知识**<br>(1) 叉积恒等式 $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$;<br>(2) 点到直线的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$ ($Q\in l$, $\boldsymbol u$ 为单位方向向量).
 
 ## 1 (习题二)
 
