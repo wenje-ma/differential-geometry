@@ -479,7 +479,7 @@ $$
 II=L\,\mathrm dx^2+2M\,\mathrm dx\,\mathrm dy+N\,\mathrm dy^2=-\frac{\left(1-y^2\right)\mathrm dx^2+2xy\,\mathrm dx\,\mathrm dy+\left(1-x^2\right)\mathrm dy^2}{1-x^2-y^2}=-I.
 $$
 
-**(iii) 立体投影.** 取参数 (从北极 $(0,0,1)$ 的球极投影)
+**(iii) 立体投影.** 取参数 (从北极 $\left(0,0,1\right)$ 的球极投影)
 
 $$
 \boldsymbol r\left(u,v\right)=\frac{\left(2u,\ 2v,\ u^2+v^2-1\right)}{1+u^2+v^2},\quad \left(u,v\right)\in\mathbb R^2.
