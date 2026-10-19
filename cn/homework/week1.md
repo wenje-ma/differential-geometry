@@ -444,10 +444,10 @@ $$
 
 $$
 \boldsymbol t=\dot{\boldsymbol r}=\lambda'\boldsymbol t+\lambda\dot{\boldsymbol t}
-=\lambda'\boldsymbol t+\lambdak\boldsymbol n.
+=\lambda'\boldsymbol t+\lambda k\boldsymbol n.
 $$
 
-若某开区间上 $k\ne0$, 则 $\boldsymbol t,\boldsymbol n$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambdak=0$. 由 $k\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol t}\equiv\boldsymbol 0$. 由**命题 5.1 (直线段刻画)**  ($\dot{\boldsymbol t}\equiv\boldsymbol 0$ 当且仅当曲线是直线段), 曲线 $C$ 是直线. $\blacksquare$
+若某开区间上 $k\ne0$, 则 $\boldsymbol t,\boldsymbol n$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda k=0$. 由 $k\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol t}\equiv\boldsymbol 0$. 由**命题 5.1 (直线段刻画)**  ($\dot{\boldsymbol t}\equiv\boldsymbol 0$ 当且仅当曲线是直线段), 曲线 $C$ 是直线. $\blacksquare$
 
 (2) 设 $k\ne0$ 处处成立 (否则主法线无定义). 每条主法线都过原点, 即 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol n\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使
 
@@ -460,16 +460,16 @@ $$
 $$
 \boldsymbol t=\dot{\boldsymbol r}=\lambda'\boldsymbol n+\lambda\dot{\boldsymbol n}
 =\lambda'\boldsymbol n+\lambda\left(-k\boldsymbol t+T\boldsymbol b\right)
-=-\lambdak\boldsymbol t+\lambda'\boldsymbol n+\lambdaT\boldsymbol b.
+=-\lambda k\boldsymbol t+\lambda'\boldsymbol n+\lambdaT\boldsymbol b.
 $$
 
 $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, 比较系数:
 
 $$
-1=-\lambdak,\  0=\lambda',\  0=\lambdaT.
+1=-\lambda k,\  0=\lambda',\  0=\lambdaT.
 $$
 
-由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambdak\ne0$ 知 $\lambda\ne0$, 再由 $\lambdaT=0$ 得 $T\equiv0$. 于是由**命题 6.2 (挠率衡量离平面程度)**  ($T\equiv0$ 当且仅当曲线是平面曲线), $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故
+由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda k\ne0$ 知 $\lambda\ne0$, 再由 $\lambdaT=0$ 得 $T\equiv0$. 于是由**命题 6.2 (挠率衡量离平面程度)**  ($T\equiv0$ 当且仅当曲线是平面曲线), $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故
 
 $$
 \left\|\boldsymbol r\right\|=\left\|\lambda\boldsymbol n\right\|=\left|\lambda\right|=\text{常数}.

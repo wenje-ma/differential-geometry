@@ -1,0 +1,163 @@
+旋转面
+
+gamma(t, theta) = (t cos theta, t sin theta, phi(t)), t ge 0
+g = (1 + (phi')^2)d t^2 + t^2 d theta^2
+h = - phi''/sqrt(1 + (phi')^2)d t^2 - phi'/sqrt(1 + (phi')^2) d theta^2
+lambda_1 = - phi''/(sqrt(1 + (phi')^2))^3
+lambda_2 = - phi'/(t^2 sqrt(1 + (phi')^2))
+
+k = (phi'phi'')/(t^2 (1 + (phi')^2)^2)
+H = - (phi'' + phi'/t^2)/sqrt(1 + (phi')^2)
+
+(1) k = const
+(phi'phi'')/(1 + (phi')^2)^2 = - (1/(2(1 + (phi')^2)))'
+ - k = 1/t(1/(2(1 + (phi')^2)))'
+c - 2kt = (1/(1 + (phi')^2))'
+
+1 + (phi')^2 = 1/(c - kt^2), c is const
+(1)k equiv - 1
+1 + (phi')^2 = 1/(c + t^2)
+1/(c + t^2) ge 1, c < 1
+
+(1.1) c > 0, t^2 + c le 1, 0 le t le sqrt(1 - c)
+phi' = pm sqrt(1/(c + t^2) - 1) = pm sqrt((t^2 + (c - 1))/(t^2 + c))
+
+(1.2) c = 0
+phi' = pm sqrt(1/t - 1), 0 le t le 1
+phi = ln((t + sqrt(1 - t^2))/t) - sqrt(1 - t^2)
+伪球面
+
+(1.3) c < 0
+1/(t^2 + c^2) ge 1 iff 0 le t^2 + c^2 le 1
+iff sqrt( - c) le t sqrt(1 - c)
+phi' = pm sqrt((1 - c - t^2)/(t^2 + c))
+
+H = 0
+t phi'' + phi'(1 + (phi')^2) = 0
+(t phi'')/(1 + (phi')^2) + phi' = 0
+1/t = phi''(phi'/(1 + (phi')^2) - 1/phi')
+ = (phi'phi'')/(1 + (phi')^2) - phi''/phi'
+c t^2 = (1 + (phi')^2)/(phi')^2
+(phi')^2 c t^2 = 1 + (phi')^2
+ = 1/(c t^2 - 1), c = const
+
+c = 1 时
+phi' = 1/(t^2 - 1)
+=(1/(t - 1)-1/(t + 1))1/2
+悬链面
+
+曲面的包络
+
+设 Sigma_lambda = {F(x; lambda) = 0: x in R^3, lambda in R}, F in C^1
+nabla F ne 0, forall x in Sigma_lambda, lambda in I
+Sigma_lambda 是正则曲面
+
+定义: 设有曲面 S
+forall lambda in I, S 与 Sigma_lambda 都相切.
+forall x in S, exists Sigma_lambda 与 S 在 x 相切
+则称 S 是 {Sigma_lambda: lambda in I} 的包络
+解 S, forall x in S, exists lambda(x), 使得 x in Sigma_lambda(x),
+即 F(x, lambda(x))=0
+
+由相切,
+Rightarrow Sigma_lambda(x) 与 S 在 x 点法向平行
+Rightarrow n_Sigma_lambda(x) = (nabla F)/(|nabla F|)|_ lambda = lambda(x)
+n_S = (nabla phi)/(|nabla phi|),
+nabla phi = nabla F + sum_{i=1}^3(partial/partial x^i F, partial/partial x^1 lambda)e_i
+
+平行 iff
+0 = nabla F times nabla phi
+= nabla F times (sum_{i=1}^3 partial/partial lambda F partial/partial x^i lambda e_i)
+Rightarrow S 的方程
+
+定义: 一族平面的包络称为可展曲面.
+
+F_lambda = <p(lambda), x> + q(lambda)
+p(lambda) times sum_{i=1}^3(x'p'(lambda)partial/partial x^i lambda + q'(lambda)x^i) = 0
+gamma(t, lambda) = c(t) + lambda l(t), |l| equiv 1
+
+直纹面
+gamma(t) = c(t) + lambda l(t)
+其中 |l(t)| equiv 1
+问 gamma 何时可展
+iff 沿直母线法向不变.
+iff 切平面的包络
+
+partial/partial t gamma = c'(t) + lambda l'(t)
+partial/partial lambda gamma = l(t)
+vec n = (c' times l + lambda l' times l)/(|c' times l + lambda l' times l|) = (v_1(t) + lambda v_2(t))/(|v_1(t) + lambda v_2(t)|)
+partial/partial lambda n = v_2(t)/|v|-<v, v_2>/|v|^3(v_1 + lambda v_2)
+=1/|v|^3(|v|^2 v_2 - <v, v_2>(v_1 + lambda v_2))
+
+partial/partial lambda n equiv 0
+iff |v|^2 v_2 - <v_1, v_2>(v_1 + lambda v_2)
+=(lambda^2|v_2|^2+2<v_1,v_2>lambda+|v_1|^2)v_2
+-[lambda_1^2 v_2+lambda<v,v_2>v_1+<v_1,v_2>v_1]
+<v_1 v_2>v_2=|v_2|^2 v_1
+|v_1|^2 v_2=<v_1,v_2>v_1
+
+即 c' times l para l' times l.
+c' sim alpha l+beta l
+由于 {l,l',l' times l} 是正交系
+iff (c',l,l')=0
+
+定理: (1) 直纹面 gamma=c(t)+lambda l(t) 可展 iff (c',l,l') equiv 0.
+推论: 直纹面可展 iff k equiv 0.
+
+证明: Leftarrow. 若 k equiv 0,
+(1) 在某开集 U in Sigma_k, Sigma 只有脐点,
+Rightarrow Sigma 上主曲率, k_1 equiv k_2 equiv 0 Rightarrow U 在平面上
+(2) 在开集 U subset Sigma 上, k_1 ne k_2, (forall x in U) 设 k_1 equiv 0,
+Rightarrow U 上有曲率线网. (u^1, u^2) Rightarrow partial/partial u^1 n equiv 0
+Rightarrow 沿 u^1, 有同一切平面
+Rightarrow 可展.
+
+Sigma 可展 iff (c',l,l') equiv 0.
+不妨设 c' perp l
+(1) l' equiv 0
+Rightarrow l = const
+(柱面)
+(2) c' equiv 0
+Rightarrow c = const
+(锥面)
+(3) c', l' ne 0
+c' perp l, 由 (c',l,l')=0,
+Rightarrow c' para l'
+切线面
+
+设 Sigma: gamma=gamma(u) 是参数曲面
+曲线 C=gamma(u(s)) subset Sigma, s 为弧长
+dot c(s)=dot u^alpha(s) partial/partial u^alpha gamma(u(s)), |dot c| equiv 1.
+ddot c(s)=(ddot u^alpha(s)+Gamma_epsilon tau^alpha dot u^epsilon dot u^tau)partial/partial u^alpha gamma
+-h_epsilon tau dot u^epsilon dot u^tau n
+=(ddot u^alpha+dot u^epsilon dot u^tau Gamma_epsilon tau^alpha)partial/partial u^alpha gamma (=k_h T_g)
+-h_epsilon tau-dot u^epsilon dot u^tau n (=k_n n), ||T_g||=1
+k=|ddot c|=sqrt(k_g^2+k_n^2)
+
+定义: k_n 为法曲率
+k_g 为测地曲率
+(ddot u^alpha + dot u^epsilon dot u^tau Gamma_epsilon tau^alpha) 为测地曲率向量.
+
+定义: 若曲线 c(s)subset Sigma 满足
+测底曲率, k_g equiv 0
+则称 C 是测地线.
+C 是测地线 iff
+ddot u^alpha+dot u^epsilon dot u^tau Gamma_epsilon tau^alpha(u(s))=0, alpha=1,2
+只与 I 有关.
+
+设 Sigma 上有正交参数网,
+I=g_11(d u^1)^2+g_22(d u^2)^2
+令 e_alpha=2/sqrt(g_alpha alpha)partial/partial u^alpha gamma, alpha=1,2
+dot c(s)=cos theta e_1+sin theta e_2
+其中 theta=theta(s).
+
+n=e_1 times e_2 (法向)
+T_g=ddot c-<ddot c,n> n
+=<ddot c, (dot c times n)>(dot c times n)
+=(dot c, n, ddot c)(dot c times dot n)
+
+dot c=cos theta e_1+sin theta e_2
+=cos theta 1/(sqrt(g_11))partial/partial u^1 gamma+sin theta 1/sqrt(g_22) partial/partial n^2 gamma
+dott c=(-sin theta e_1+cos theta e_2) theta'(s)
++cos theta((1/sqrt(g_11))'partial/partial u^1 gamma+1/sqrt(g_11)Gamma_1 alpha^beta dot u^alpha partial/partial u^beta gamma-1/sqrt(g_11)h_1 alpha dot u^alpha n)
++ sin theta ((1/sqrt(g_22))'partial/partial u^1 gamma+1/sqrt(g_22) Gamma_2 alpha^beta dot u^alpha partial/partial u^beta gamma-1/sqrt(g_11)h_2 alpha dot u^alpha n)
