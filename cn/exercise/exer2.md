@@ -27,7 +27,7 @@ $$
 =\dot{\boldsymbol n}=-k\boldsymbol t+T\boldsymbol b.
 $$
 
-记 $A:=-k\boldsymbol t+T\boldsymbol b$. 由 $\boldsymbol t\perp\boldsymbol b$, $|\boldsymbol t|=|\boldsymbol b|=1$,
+记 $A:=-k\boldsymbol t+T\boldsymbol b$. 由 $\boldsymbol t\perp\boldsymbol b$, $\left|\boldsymbol t\right|=\left|\boldsymbol b\right|=1$,
 
 $$
 v:=\left|A\right|=\sqrt{k^{2}+T^{2}}=:\lambda.
@@ -243,7 +243,7 @@ $$
 -T_2\boldsymbol n_2\,q=\pm k_1\boldsymbol n_1.
 $$
 
-由 $\boldsymbol n_1,\boldsymbol n_2$ 均为单位向量, 得 $\boldsymbol n_2=\pm\boldsymbol n_1$ (定向翻转), 且 $|T_2|\,q=|k_1|$. 另一方面, $\gamma_2$ 的切向量 $\boldsymbol t_2$ 垂直于副法向量 $\boldsymbol b_2$, 而 $\boldsymbol b_2=\pm\boldsymbol t_1$, 故
+由 $\boldsymbol n_1,\boldsymbol n_2$ 均为单位向量, 得 $\boldsymbol n_2=\pm\boldsymbol n_1$ (定向翻转), 且 $\left|T_2\right|\,q=\left|k_1\right|$. 另一方面, $\gamma_2$ 的切向量 $\boldsymbol t_2$ 垂直于副法向量 $\boldsymbol b_2$, 而 $\boldsymbol b_2=\pm\boldsymbol t_1$, 故
 
 $$
 \boldsymbol t_2\perp\boldsymbol t_1.
@@ -266,21 +266,21 @@ $$
 -T_1\boldsymbol n_1=\pm k_2\boldsymbol n_2\,q.
 $$
 
-由 $\boldsymbol n_1,\boldsymbol n_2$ 为单位向量得 $|T_1|=|k_2|\,q$, 即
+由 $\boldsymbol n_1,\boldsymbol n_2$ 为单位向量得 $\left|T_1\right|=\left|k_2\right|\,q$, 即
 
 $$
-|k_1|=|T_2|\,q,\qquad |k_2|\,q=|T_1|.
+\left|k_1\right|=\left|T_2\right|\,q,\qquad \left|k_2\right|\,q=\left|T_1\right|.
 $$
 
 两式相乘消去 $q$:
 
 $$
-|k_1||k_2|q=|T_2||T_1|q\ \Longrightarrow\
-\boxed{\ |k_1k_2|=|T_1T_2|.\ }
+\left|k_1\right|\left|k_2\right|q=\left|T_2\right|\left|T_1\right|q\ \Longrightarrow\
+\boxed{\ \left|k_1k_2\right|=\left|T_1T_2\right|.\ }
 $$
 
-即两条曲线中, $\gamma_1$ 的曲率与 $\gamma_2$ 的挠率的绝对值成反比 ($|k_1|/|T_2|=q$), $\gamma_2$ 的曲率与 $\gamma_1$ 的挠率的绝对值也成反比 ($|k_2|/|T_1|=1/q$), 二者互为倒数.
+即两条曲线中, $\gamma_1$ 的曲率与 $\gamma_2$ 的挠率的绝对值成反比 ($\left|k_1\right|/\left|T_2\right|=q$), $\gamma_2$ 的曲率与 $\gamma_1$ 的挠率的绝对值也成反比 ($\left|k_2\right|/\left|T_1\right|=1/q$), 二者互为倒数.
 
-**注**: 由上面的推导, 从几何条件严格推出的关系是 $|k_1k_2|=|T_1T_2|$ (即 $\frac{|k_1|}{|T_2|}=\frac{|T_1|}{|k_2|}$, 交叉成反比), 而非题面所写的 $|k_1\tau_1|=|k_2\tau_2|$. 若令两曲线在对应处的弧长参数一致 (即 $q=1$), 则得 $|k_1|=|T_2|$ 且 $|k_2|=|T_1|$, 此时也有 $|k_1T_1|=|k_2T_2|$ 成立; 在一般对应下, 正确的关系是 $|k_1k_2|=|T_1T_2|$.
+**注**: 由上面的推导, 从几何条件严格推出的关系是 $\left|k_1k_2\right|=\left|T_1T_2\right|$ (即 $\frac{\left|k_1\right|}{\left|T_2\right|}=\frac{\left|T_1\right|}{\left|k_2\right|}$, 交叉成反比), 而非题面所写的 $\left|k_1\tau_1\right|=\left|k_2\tau_2\right|$. 若令两曲线在对应处的弧长参数一致 (即 $q=1$), 则得 $\left|k_1\right|=\left|T_2\right|$ 且 $\left|k_2\right|=\left|T_1\right|$, 此时也有 $\left|k_1T_1\right|=\left|k_2T_2\right|$ 成立; 在一般对应下, 正确的关系是 $\left|k_1k_2\right|=\left|T_1T_2\right|$.
 
 $\blacksquare$

@@ -630,7 +630,7 @@ $$
 即 $\frac{\mathrm d}{\mathrm ds}\left(1-ak\right)=\frac{c'}{c}\left(1-ak\right)$, 故 $1-ak=n\,c$ 对某常数 $n$. 于是
 
 $$
-\frac{1-ak}{T}=\frac{n}{m}=:-b\ \text{(常数)},
+\frac{1-ak}{T}=\frac{n}{m}=:-b\ \text{\left(常数\right)},
 $$
 
 即 $1-ak=-bT$, 也就是

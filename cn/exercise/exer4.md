@@ -21,8 +21,8 @@
 1) 单叶双曲面 $x^2/a^2+y^2/b^2-z^2/c^2=1$;
 2) 双叶双曲面 $x^2/a^2+y^2/b^2-z^2/c^2=-1$;
 3) 椭球面 $x^2/a^2+y^2/b^2+z^2/c^2=1$;
-4) 椭圆抛物面 $z=x^2/(2p)+y^2/(2q)$;
-5) 双曲抛物面 $z=x^2/(2p)-y^2/(2q)$.
+4) 椭圆抛物面 $z=x^2/\left(2p\right)+y^2/\left(2q\right)$;
+5) 双曲抛物面 $z=x^2/\left(2p\right)-y^2/\left(2q\right)$.
 
 ### 解答 1
 
@@ -207,7 +207,7 @@ $$
 
 **(4) 椭圆抛物面.**
 
-取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{u^2}{2p}+\dfrac{v^2}{2q}\right)$, 满足 $z=x^2/(2p)+y^2/(2q)$. 计算
+取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{u^2}{2p}+\dfrac{v^2}{2q}\right)$, 满足 $z=x^2/\left(2p\right)+y^2/\left(2q\right)$. 计算
 
 $$
 \boldsymbol r_u=\left(1,0,\frac up\right),\quad \boldsymbol r_v=\left(0,1,\frac vq\right),\quad
@@ -247,7 +247,7 @@ $$
 
 **(5) 双曲抛物面.**
 
-取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{u^2}{2p}-\dfrac{v^2}{2q}\right)$, 满足 $z=x^2/(2p)-y^2/(2q)$. 计算
+取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{u^2}{2p}-\dfrac{v^2}{2q}\right)$, 满足 $z=x^2/\left(2p\right)-y^2/\left(2q\right)$. 计算
 
 $$
 \boldsymbol r_u=\left(1,0,\frac up\right),\quad \boldsymbol r_v=\left(0,1,-\frac vq\right),\quad

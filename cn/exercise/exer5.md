@@ -35,7 +35,7 @@ $$
 2) 当参数网取 Чебышев 网时, 第一基本形式有如下形式
 
 $$
-\mathrm I=(\mathrm du^{1})^{2}+\cos\omega\,\mathrm du^{1}\mathrm du^{2}+(\mathrm du^{2})^{2},
+\mathrm I=\left(\mathrm du^{1}\right)^{2}+\cos\omega\,\mathrm du^{1}\mathrm du^{2}+\left(\mathrm du^{2}\right)^{2},
 $$
 
 其中 $\omega=\omega\left(u\right)$ 是参数曲线间的交角;

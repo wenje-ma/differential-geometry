@@ -173,7 +173,7 @@ $$
 由 $\theta_A,\theta_B\in\left[0,\pi\right]$, 上式推出
 
 $$
-L\ge2\pi r-\ell-2\pi r=-\ell\ \text{(平凡)}.
+L\ge2\pi r-\ell-2\pi r=-\ell\ \text{\left(平凡\right)}.
 $$
 
 为获得二分, 改用**优弧 $\beta$** 作闭曲线 $C'=\gamma\cup\beta$ (沿 $\gamma$ 从 $A$ 到 $B$, 再沿优弧 $\beta$ 从 $B$ 回 $A$), 其角点为 $A,B$, 转向角为 $\theta'_A,\theta'_B$. 因 $\alpha,\beta$ 在 $A,B$ 处同切于 $\Gamma$ 且方向相反, 有 $\theta_A+\theta'_A=\pi$, $\theta_B+\theta'_B=\pi$, 故 $\theta'_A+\theta'_B=2\pi-\left(\theta_A+\theta_B\right)$. 对 $C'$ 应用**定理 18.1**:
@@ -221,7 +221,7 @@ $$
 综合两种情形,
 
 $$
-\boxed{\ L\le\ell\ \text{(比劣弧短)}\quad\text{或}\quad L\ge2\pi r-\ell\ \text{(比优弧长)}.\ }
+\boxed{\ L\le\ell\ \text{\left(比劣弧短\right)}\quad\text{或}\quad L\ge2\pi r-\ell\ \text{\left(比优弧长\right)}.\ }
 $$
 
 $\blacksquare$

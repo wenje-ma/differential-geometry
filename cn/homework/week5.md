@@ -291,7 +291,7 @@ $$
 于是 $S_{\lambda}$ 的主曲率是 $G_{\lambda}^{-1}B_{\lambda}$ 的特征值
 
 $$
-\kappa_\alpha^{\lambda}=\frac{\kappa_\alpha\left(1-\lambda\kappa_\alpha\right)}{\left(1-\lambda\kappa_\alpha\right)^{2}}=\frac{\kappa_\alpha}{1-\lambda\kappa_\alpha}\qquad(\alpha=1,2).
+\kappa_\alpha^{\lambda}=\frac{\kappa_\alpha\left(1-\lambda\kappa_\alpha\right)}{\left(1-\lambda\kappa_\alpha\right)^{2}}=\frac{\kappa_\alpha}{1-\lambda\kappa_\alpha}\qquad\left(\alpha=1,2\right).
 $$
 
 由**定义 32.1 (平均曲率与总曲率)**, $S_{\lambda}$ 的 Gauss 曲率
