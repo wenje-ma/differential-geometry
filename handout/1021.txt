@@ -1,0 +1,145 @@
+(u^1,u^2)-曲率线网 
+gamma=gamma(u(delta)),delta 弧长 
+k_g=(T times N) dot T 
+T=cos theta partial/partial u^1 gamma / sqrt(g_11) [e_1] + sin theta (partial/partial u^2 gamma 1/sqrt(g_22)) [e_2] 
+theta=theta(s), n(s)=e_1 times e_2 
+T times n 
+=T times (e_1 times e_2) 
+=-cos theta e_2+sin theta e_1 
+dot T=-sin theta e_1+cos theta e_2
++cos theta dot e_1+sin theta dot e_2
+<(T times n, dot T)>=-dot theta
++(-cos^2 theta<e_2,dot e_1>+sin theta <e_1,dot e_2>)
+=-dot theta-<e_2,dot e_1>
+e_1=1/sqrt(g_11)partial/partial u^1 gamma
+dot e_1=partial/partial u^1 (1/sqrt(g_11)) + 1/sqrt(g_11) Gamma_1beta^alpha partial/partial u^alpha gamma dot u^beta(s)
+-1/sqrt(g_11)h_1beta dot u^beta(s)n 
+<(T times n),dot T>=-dot theta+1/sqrt(g_11) Gamma_1beta^2<partial/partial u^2 gamma,e_2>dot u^beta
+=dot theta+sqrt(g_22/g_11)Gamma_1beta^2 dot u^beta, partial/partial u^2=sqrt(g_22)e_2
+
+Gamma_1beta^2=1/2 g^2epsilon(partial_1 g_epsilonbeta+partial_beta g_1epsilon-partial_epsilon g_1beta)
+=1/2 (1/g_11)(partial_1 g_2beta-partial_2 g_1beta)
+=1/(2 g_22)(-partial_2 g_11), beta=1, 1/(2 g_22) partial_1 g_22, beta=2
+
+I=g_11(du^1)^2+g_22(du^2)^2
+II=k_1(du^1)^2+k_2(du^2)^2
+dot T=partial/partial u^alpha gamma dot u^alpha
+=sum_alpha sqrt(g_alphaalpha)e_alpha dot u^alpha
+dot u^alpha=1/sqrt(g_alphaalpha) cos theta, alpha=1, sin theta, alpha=2.
+
+sqrt(g_22/g_11) Gamma_1beta%2 dot u^beta
+=sqrt(g_22/g_11)((-partial_2 g_11)/(2 g_22)cos theta/sqrt(g_11))
++sqrt(g_22/g_11)((partial_1 g_22)/ (2 g_22) sin theta / sqrt(g_22))
+=1/2 (- (partial_2 ln g_11) / sqrt(g_22)cos theta+(partial_1 ln g_22) / sqrt(g_11)sin theta)
+k_g=-dot theta+1/2((partial_1 ln g_22)/sqrt(g_11)sin theta-(partial_2 ln g_11) / sqrt(g_22) cos theta)
+k_g=-dot theta+1/2(partial_1 ln g_22/sqrt(g_11)sqrt(g_22)dot u^2-partial_2 ln g_11 / sqrt(g_22) sqrt(g_11) dot u^1)
+=-dot theta+1/2 (sqrt(g_22/g_11)(partial_1 ln g_22)dot u^2-sqrt(g_11/g_22)(partial_2 ln g_11)dot u^1) (刘维尔公式)
+
+partial/partial u^alpha det(g_alphabeta)=det(g_alphabeta)tr(g^(-1)partial/partial u^alpha g)
+=g_11 g_22(1/g_11 partial/partial u^alpha g_11+1/g_22 partial/partial u^alpha g_22)
+=g_22 partial/partial u^alpha g_11 + g_11 partial/partial u^alpha g_22
+partial/partial u^alpha sqrt(det(g))=1/(2 sqrt(det(g))) partial/partial u^alpha det(g)
+=1/2(sqrt(g_22/g_11) partial/partial u^alpha g_11+sqrt(g_11/g_22)partial/partial u^alpha g_22)
+partial/partial u^alpha ln sqrt(det(g))=1/2 (1/g_11 partial_alpha g_11/g_22 partial_alpha g_22)
+
+int_C k_g ds=int_C dtheta+1/2(int_C sqrt(g_22/g_11)(partial_1 ln g_22) du^2-sqrt(g_11/g_22)(partial_2 ln g_11)du^1)
+=int_C(-dtheta)+1/2 int_C(partial/partial u^1 (sqrt(g_22/g_11) partial_1 ln g_22)+partial/partial u^2 (sqrt(g_11/g_22) partial_2 ln g_11)) du^1 times du^2
+=-int_C dtheta + 1/2 int_C (partial_1 (1/sqrt(g_11 g_22) partial_1 g_22)+partial_2(1/sqrt(g_11 g_22) partial_2 g_11))/sqrt(g_11 g_22)ds
+=-int_C dtheta + 1/2 int_C (partial_1 g_22 partial_1 (1/sqrt(g_11 g_22) partial_1 g_22)+(partial_2 g_22)/sqrt(g_11 g_22)(1<-->2))/sqrt(g_11 g_22)ds
+
+partial^2/partial u^alpha partial u^beta partial u^epsilon = partial/partial u^alpha Gamma_betaepsilon^tau partial/partial u^tau gamma + Gamma_betaepsilon^mu Gamma_mualpha^tau partial/partial u^tau gamma-partial/partial u^alpha h_betaepsilon n-h_betaepsilon h_alpha^tau partial/partial u^tau gamma
+partial^2/partial u^beta partial u^alpha partial u^epsilon=partial/partial u^beta Gamma_alphaepsilon^tau partial/partial u^tau gamma+Gamma_alphaepsilon^mu Gamma_mubeta^tau partial/partial u^tau gamma - partial/partial u^beta h_alphaepsilon n-h_alphaepsilon h_beta^tau partial/partial u^tau gamma
+
+(partial/partial u^alpha Gamma_betaepsilon^tau+Gamma_betaepsilon^mu Gamma_mualpha^tau-h_betaepsilon h_alpha^tau)-(alpha cos beta)=0
+g_Dtau(partial/partial u^alpha Gamma_betaepsilon^tau+Gamma_betaepsilon ^mu Gamma_mualpha^tau-(a <--> beta))=h_betaepsilon h_alphagamma - h_alphaepsilon h_betagamma=k g_11 g_22
+
+Gamma_11^tau=1/2 g^tauepsilon(partial_1 g_epsilonepsilon + partial_1 g_1epsilon - partial_1 g_11)= 1/(2 g_11)(partial_1 g_11), tau=1, 1/(2 g_22)(-partial_2 g_11), tau=2
+
+int_C k_g ds=-int_C dot theta ds-int_Omega k dsigma
+当 C 是简单闭曲线
+-int_C k_g ds=2 pi - sum theta_i + int_C k dsigma
+
+定理: int_C k_g ds + int_Omega K dsigma
+= 2 pi+sum_(i=1)^n theta_i (Gauss-Bonnet)
+
+(绕 C 前进时, Omega 在左侧)
+
+int_C k_g ds+int_Omega K ds + sum theta_i = 2 pi
+
+定理(Gauss-Bonnet)
+设 Sigma 是参数化曲面
+C subet Sigma 是简单分段光滑的闭曲线,
+则 int_C k_g ds+int_Omega K ds + sum theta_i = 2 pi
+
+例子. 在球面 s^2(1)={x in R^2: |x|=1}
+上, 测地线都是大圆.
+
+设有两个大圆 Gamma_1, Gamma_2
+夹成二面角 theta
+围成一个二角形 Omega
+而 K equiv 1
+int_Omega K dsigma + 2(pi-theta)=2 pi
+Rightarrow int_Omega dsigma = 2 theta=theta/(2 pi) 4 pi
+
+设有一个大圆弧多边形三角形外角.
+依次有 theta_1,...,theta_s
+则 int_Delta dsigma=2 pi - sum_i theta_i
+
+dot T para gamma, gamma=n.
+
+对 S^2 cap {x^3 ge 0}
+gamma(x^1, x^2)=(x^1, x^2, sqrt(1-(x^1)^2-(x^2)^2))
+
+partial/partial x^1 gamma=(1,0,-x^1/sqrt(1-|x|^2))
+partial/partial x^2 gamma=(0,1,-x^2/sqrt(1-|x|^2))
+g_11=1+ (x^1)^2/(1-|x|^2)
+g_22=1+(x^2)^2/(1-|x|^2)
+n=gamma
+partial/partial x^1 n=partial/partial x^1 gamma,
+partial/partial x^2 n=partial/partial x^2 gamma,
+
+h_11=(partial/partial x^1 n, partial/partial x^1 n)=g_11
+h_12=g_12=(x^1 x^2)/(1-|x|^2)
+h_22=g_22
+
+过 gamma(0,0) =(0,0,1)的测地线都是 x^1=lambda x^2 或 x^2=0 的形式.
+过七大的测地线可以旋转到过 (0,0,1) 的
+
+定理: 设有旋转面 Sigma 是曲线 gamma subset O_x^2x^3, 绕 O_x^3 旋转得到的, 则 Sigma 所有的经线 (gamma 旋转得到的像) 都是测地线.
+它的经纬线都是曲率线(曲率线网).
+
+定义: 设 Sigma 是参数化曲面.
+K<0.
+若在 gamma(u) 这点有
+v=v^beta partial/partial u^beta gamma
+切向量
+使得 II(v,v)=0
+称 v 在 gamma(u) 处是个渐进方向
+
+渐进方向的积分曲线称为渐近线.
+
+命题: 设有两个曲面, Sigma_1, Sigma_2, C=Sigma_1 cap Sigma_2 是光滑曲线.
+并且假设 Sigma_1, Sigma_2 沿着 C 是正交的.
+若 C 是 Sigma_1 的渐近线 (测地线), 则 C 是 Sigma_2 的渐近线 (测地线).
+
+证明: C=C(s) 是弧长参数化
+
+T=dot C(s)
+
+C 是 Sigma_1 的渐进线,
+
+<dot T, T> equiv 0
+<dot T, n_1> equiv 0
+由 C 是渐近线 iff T 是渐进方向 iff <dn(T),T>equiv 0 iff <d/d s n_1|_(s),T>equiv 0
+
+但是 <dot T, n_1> equiv 0 Rightarrow <T,d/d s n_1>=-<d/d s T,n_1>=-<dot T, n_1> Rightarrow <dot T, n_1>equiv 0
+
+so dot T para n_1, k_g Sigma_2 equiv 0.
+
+例子: 圆锥面
+Sigma={(x^3)^2=(x^1)^2+(x^2)^2}\{0}
+证明: forall p in Sigma
+过 p 有且仅有一个闭测地线
+(求过 p 的一切测地线)
+
+I=dt^2+t^2/4 dtheta^2.
