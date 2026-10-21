@@ -143,3 +143,38 @@ Sigma={(x^3)^2=(x^1)^2+(x^2)^2}\{0}
 (求过 p 的一切测地线)
 
 I=dt^2+t^2/4 dtheta^2.
+
+---
+
+Gauss-Bonnet 公式
+在参数域内, 例如取标架 {e_1,e_2},
+e_alpha=1/sqrt(g_alphaalpha)partial/partial u^alpha gamma, alpha=1,2
+在 Sigma 上取法向 n=e_1 times e_2.
+在 Sigma 的切平面内, 已有一切的 T.
+T 与 n times T 构成的标架为 {T, n times T},
+它与 {e_1,e_2} 定向一致
+因而从 {e_1,e_2} 转过角
+theta=arccos<e_1,T>
+教材上取 {T, n times t} 标架. 定义
+k_g=<n times T, dot T>
+=dot theta(s)-1/2(1/sqrt(g_22)partial_2 ln g_11 cos theta-1/sqrt(g_11)partial_1 ln g_22 sin theta)
+k_g ds=dtheta-1/sqrt(g_22)(partial_2 ln sqrt(g_11))du^1+1/sqrt(g_11)(partial_1 ln sqrt(g_22))du^2
+
+在板书上, 采用了另一标架
+{T times n,T} (与{e_1,e_2} 定向一致)
+这时从{e_1,e_2}转到{T times n,T}
+转过了 -(pi/2-arccos<e_1,T>)=tilde theta (其中 arccos<e_1,T>=theta-pi/2)
+由于 cos tilde  theta = sin theta, sin tilde theta=-cos theta, 因此在角度项上与教材差一个负号.
+
+Gamma_11^alpha=1/2 g^alphabeta(2 partial_1 g_beta1-partial_beta g_11)=1/(2 sqrt(g_11))partial_1 g_11, 另 partial_1 ln sqrt(g_11),alpha=1, 1/(2 sqrt(g_22))partial_2 g_11, 另 g_11/g_22(-partial_2 ln g_11),alpha=2
+Gamma_12^alpha=1/2 g^alphabeta(partial_1 g_beta2+partial_2 g_beta1-partial_beta g_12)=1/(2 g_11)partial_2 g_11, 另 partial_2 ln sqrt(g_11), alpha=1, 1/(2 g_22)partial_1 g_22, 另 partial_1 ln sqrt(g_22), alpha=2
+Gamma_22^alpha=1/2 g^alphabeta(2 partial_1 g_2beta-partial_beta g_22)= 1/(2 g_11)(-partial_1 g_22), 另 -g_22/g_11 partial_1 ln sqrt(g_22), alpha=1, 1/(2 g_22)(partial_2 g_22), 另 partial_2 ln sqrt(g_22), alpha=2.
+
+代入 Gauss 方程
+k=1/g_11 h_11 h_2^2=1/g_11(partial_2 Gamma_11^2+Gamma_11^alpha Gamma_alpha2^2-partial_1 Gamma_12^2-Gamma_12^alpha Gamma_alpha1^2)
+=-1/sqrt(g_11 g_22)((sqrt(g_11)_2/sqrt(g_22))_2+(sqrt(g_22))_2/sqrt(g_11))_1
+(即k=-1/sqrt(g_11 g_22)(partial_2((partial_2 sqrt(g_11))/sqrt(g_22))+partial_1(partial_1 sqrt(g_22))/sqrt(g_11)))
+而 dsigma=sqrt(g_11 g_22) du^1 wedge du^2
+故 d(k_g ds)=-k sqrt(g_11 g_22) du^1 wedge du^2 = -k dsigma
+int_C k_g ds+ int_Omega k dsigma=2 pi -sum_(i=1)^d theta_i
+(所取的参数域与圆盘同胚时)
