@@ -14,6 +14,14 @@
 
 > **推导 23.D** (性质 23.C)<br>新参数下 $\tilde{\boldsymbol r}_{\tilde u}\wedge\tilde{\boldsymbol r}_{\tilde v}=\det J\,\boldsymbol r_u\wedge\boldsymbol r_v$, 故归一化后 $\tilde{\boldsymbol n}=\operatorname{sgn}\left(\det J\right)\boldsymbol n$. 而 $\mathrm d\boldsymbol r$ 不变, 且 $\widetilde{II}=\left\langle\tilde{\boldsymbol n},\frac{\partial^2\tilde{\boldsymbol r}}{\partial\tilde u\partial\tilde u}\right\rangle\mathrm d\tilde u^2+2\left\langle\tilde{\boldsymbol n},\frac{\partial^2\tilde{\boldsymbol r}}{\partial\tilde u\partial\tilde v}\right\rangle\mathrm d\tilde u\,\mathrm d\tilde v+\left\langle\tilde{\boldsymbol n},\frac{\partial^2\tilde{\boldsymbol r}}{\partial\tilde v\partial\tilde v}\right\rangle\mathrm d\tilde v^2=\operatorname{sgn}\left(\det J\right)II$.
 
+> **教材 (彭-陈, §3.6, 例 1.3 与 (6.1)–(6.3))** (旋转曲面)<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f>0$) 的第一、第二基本形式系数为 $$E=\left(f'\right)^2+\left(g'\right)^2,\ F=0,\ G=f^2,\qquad L=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^2+\left(g'\right)^2}},\ M=0,\ N=\frac{fg'}{\sqrt{\left(f'\right)^2+\left(g'\right)^2}}.$$
+
+> **教材 (彭-陈, §3.3, 例 3.3)** (球面的第二基本形式)<br>半径为 $a$ 的球面在球面坐标参数下的第二基本形式为 $$II=a\left(\mathrm d\theta^2+\cos^2\varphi\,\mathrm d\varphi^2\right).$$
+
+> **教材 (彭-陈, §3.4, 例 4.1)** (球面的法曲率)<br>半径为 $a$ 的球面上任意一点沿任何方向的法曲率均为 $\frac1a$.
+
+> **教材 (彭-陈, §3.3, 性质 3.4)** (第二基本形式在参数变换下的变化)<br>当参数变换（$\tilde u,\tilde v$）→（$u,v$）是同向参数变换时, 第二基本形式不变; 是反向参数变换时, 第二基本形式改变符号.
+
 ## 1 (习题三)
 
 1. 求下列曲面的参数表达式:
@@ -411,6 +419,8 @@ $$
 I=E\,\mathrm d\theta^2+2F\,\mathrm d\theta\,\mathrm d\varphi+G\,\mathrm d\varphi^2=\sin^2\varphi\,\mathrm d\theta^2+\mathrm d\varphi^2.
 $$
 
+（注意到球面是旋转曲面: 在**教材 (彭-陈, §3.6, (6.1)–(6.3))** 中取 $f=\sin\varphi,\ g=\cos\varphi$ 直接得 $E=1,\ F=0,\ G=\sin^2\varphi$, 与上面逐项计算一致.）
+
 二阶偏导 $\boldsymbol r_{\theta\theta}=\left(-\sin\varphi\cos\theta,-\sin\varphi\sin\theta,0\right)$, $\boldsymbol r_{\theta\varphi}=\left(-\cos\varphi\sin\theta,\cos\varphi\cos\theta,0\right)$, $\boldsymbol r_{\varphi\varphi}=\left(-\sin\varphi\cos\theta,-\sin\varphi\sin\theta,-\cos\varphi\right)$. 由**定义 23.B (第二基本形式)**, $L=\left\langle\boldsymbol r_{\theta\theta},\boldsymbol n\right\rangle,\ M=\left\langle\boldsymbol r_{\theta\varphi},\boldsymbol n\right\rangle,\ N=\left\langle\boldsymbol r_{\varphi\varphi},\boldsymbol n\right\rangle$ (即与 $\boldsymbol n=-\boldsymbol r$ 的内积):
 
 $$
@@ -540,4 +550,4 @@ $$
 
 $\blacksquare$
 
-> 三种参数表示所得切空间均为过原点、垂直于 $\boldsymbol r$ 的平面 $\left\{\boldsymbol w:\left\langle\boldsymbol w,\boldsymbol r\right\rangle=0\right\}$; 单位法向为 $\boldsymbol n=\pm\boldsymbol r$, 其符号由参数化定向依**定义 19.2** 确定 (球坐标与立体投影取 $\boldsymbol n=-\boldsymbol r$, 函数图形取 $\boldsymbol n=+\boldsymbol r$). 由**性质 23.C**, 反向参数变换使 $II$ 变号: 外法向 $\boldsymbol n=\boldsymbol r$ 时 $II=-I$, 内法向 $\boldsymbol n=-\boldsymbol r$ 时 $II=+I$; 而第一基本形式 $I$ 与切空间不变. 三种情形的总曲率均为 $$K=\frac{LN-M^2}{EG-F^2}=1,$$ 与单位球面一致. 
+> 三种参数表示所得切空间均为过原点、垂直于 $\boldsymbol r$ 的平面 $\left\{\boldsymbol w:\left\langle\boldsymbol w,\boldsymbol r\right\rangle=0\right\}$; 单位法向为 $\boldsymbol n=\pm\boldsymbol r$, 其符号由参数化定向依**定义 19.2** 确定 (球坐标与立体投影取 $\boldsymbol n=-\boldsymbol r$, 函数图形取 $\boldsymbol n=+\boldsymbol r$). 由**性质 23.C**, 反向参数变换使 $II$ 变号: 外法向 $\boldsymbol n=\boldsymbol r$ 时 $II=-I$, 内法向 $\boldsymbol n=-\boldsymbol r$ 时 $II=+I$; 而第一基本形式 $I$ 与切空间不变. 三种情形的总曲率均为 $$K=\frac{LN-M^2}{EG-F^2}=1,$$ 与单位球面一致. 事实上, 对单位球面, 沿任何方向的法曲率均为 $1=\frac1a$ ($a=1$), 这正是**教材 (彭-陈, §3.4, 例 4.1)** 的结论 (半径为 $a$ 的球面法曲率为 $\frac1a$); 而球面在球面坐标下的第二基本形式 $II=\sin^2\varphi\,\mathrm d\theta^2+\mathrm d\varphi^2$ 亦与**教材 (彭-陈, §3.3, 例 3.3)** (取 $a=1$) 一致.

@@ -10,7 +10,7 @@
 
 > **定义 23.B (第二基本形式)**<br>二次微分式 $II:=\left\langle\boldsymbol r_{\alpha\beta},\boldsymbol n\right\rangle\,\mathrm du^{\alpha}\,\mathrm du^{\beta}=b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$ 称为曲面 $S$ 的**第二基本形式**, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol r_{\alpha\beta},\boldsymbol n\right\rangle$ 对称.
 
-> **定义 24.1 (魏因加滕变换)**<br>$W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r\left(u_0\right)}S\to T_{\boldsymbol r\left(u_0\right)}S$ 称为曲面的**魏因加滕变换**; 在基 $\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$ 下其系数矩阵为 $\left(b^{\beta}{}_\alpha\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$, 其特征值为曲面在该点的主曲率 $\lambda_1,\lambda_2$.
+> **定义 24.1 (魏因加滕变换)**<br>$W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r\left(u_0\right)}S\to T_{\boldsymbol r\left(u_0\right)}S$ 称为曲面的**魏因加滕变换**; 在基 $\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$ 下其系数矩阵为 $\left(b^{\beta}{}_\alpha\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$, 其特征值为曲面在该点的主曲率 $k_1,k_2$.
 
 > **基础知识**<br>$\left(\boldsymbol r_\alpha,\boldsymbol r_\beta\right)$ 简记切向量 $\boldsymbol r_\alpha=\partial_\alpha\boldsymbol r$; 二阶导 $\boldsymbol r_{\alpha\beta}=\partial_\alpha\partial_\beta\boldsymbol r$; 对叉积成立 $\left(\boldsymbol a\times\boldsymbol b\right)\cdot\boldsymbol c=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$.
 
@@ -546,16 +546,16 @@ $$
 
 故 $\gamma_a$ 正则当且仅当 $\det\left(\delta-aB\right)\ne0$.
 
-由**定义 24.1**, $B=\left(b^{\beta}{}_\alpha\right)$ 的特征值即主曲率 $\lambda_1,\lambda_2$, 故
+由**定义 24.1**, $B=\left(b^{\beta}{}_\alpha\right)$ 的特征值即主曲率 $k_1,k_2$, 故
 
 $$
-\det\left(\delta-aB\right)=\left(1-a\lambda_1\right)\left(1-a\lambda_2\right).
+\det\left(\delta-aB\right)=\left(1-ak_1\right)\left(1-ak_2\right).
 $$
 
 因此
 
 $$
-\boxed{\ \gamma_a\ \text{是正则参数曲面}\ \Longleftrightarrow\ a\ne\frac1{\lambda_1}\ \text{且}\ a\ne\frac1{\lambda_2},\ 
+\boxed{\ \gamma_a\ \text{是正则参数曲面}\ \Longleftrightarrow\ a\ne\frac1{k_1}\ \text{且}\ a\ne\frac1{k_2},\ 
 \text{即}\ a\ \text{不是任何主曲率的倒数}.\ }
 $$
 

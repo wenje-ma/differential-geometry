@@ -6,29 +6,33 @@
 
 > **定义 3.1** (弗雷内标架)<br>设 $\boldsymbol r:\left[0,L\right]\to E^2$ 是以弧长为参数的平面正则曲线, 切向量 $\boldsymbol t\left(s\right):=\dot{\boldsymbol r}\left(s\right)$ 是单位向量; $E^2$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的弗雷内标架.
 
-> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t.$$
+> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t.$$
 
-> **定义 3.3** (有向曲率)<br>二维弗雷内方程中的数量函数 $k\left(s\right)$ 称为平面曲线的**有向曲率**, 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
+> **定义 3.3** (有向曲率)<br>二维弗雷内方程中的数量函数 $\kappa\left(s\right)$ 称为平面曲线的**有向曲率**, 其绝对值 $\left|\kappa\left(s\right)\right|$ 即通常意义下的曲率.
 
 > **定义 4.1** (等距变换)<br>映射 $F:E^2\to E^2$ 若保持欧氏距离, 则称平面等距变换, 均可写为 $F\left(\boldsymbol x\right)=\boldsymbol A\boldsymbol x+\boldsymbol b$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$; $\det\boldsymbol A=1$ 称**保向等距变换**, $\det\boldsymbol A=-1$ 称**反向等距变换**.
 
-> **定理 4.2** (平面曲线基本定理)<br>(1) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数且 $$\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,$$ 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $k_1\left(s\right)=k_2\left(s\right)$;<br>(2) 给定 $\overline k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\overline k$ 为有向曲率.
+> **定理 4.2** (平面曲线基本定理)<br>(1) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数且 $$\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,$$ 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $\kappa_1\left(s\right)=\kappa_2\left(s\right)$;<br>(2) 给定 $\overline\kappa\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\overline\kappa$ 为有向曲率.
 
 > **命题 5.1** (直线段刻画)<br>设 $\boldsymbol r$ 是正则 $C^k$ 曲线, $s$ 为弧长, $\boldsymbol t=\dot{\boldsymbol r}$, 则在一段区间 $\left[a,b\right]$ 上 $\dot{\boldsymbol t}|_{\left[a,b\right]}\equiv\boldsymbol 0$ 当且仅当 $\boldsymbol r$ 在该段上是直线段.
 
-> **定义 5.2** (曲率与主法向量)<br>若 $\dot{\boldsymbol t}$ 处处非零, 则 $$\boldsymbol n\left(s\right):=\left.\dot{\boldsymbol t}\left(s\right)\middle/\left\|\dot{\boldsymbol t}\left(s\right)\right\|\right.$$ 为主法向量, $$k\left(s\right):=\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle=\left\|\dot{\boldsymbol t}\left(s\right)\right\|$$ 为曲率, 满足 $\dot{\boldsymbol t}=k\boldsymbol n$.
+> **定义 5.2** (曲率与主法向量)<br>若 $\dot{\boldsymbol t}$ 处处非零, 则 $$\boldsymbol n\left(s\right):=\left.\dot{\boldsymbol t}\left(s\right)\middle/\left\|\dot{\boldsymbol t}\left(s\right)\right\|\right.$$ 为主法向量, $$\kappa\left(s\right):=\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle=\left\|\dot{\boldsymbol t}\left(s\right)\right\|$$ 为曲率, 满足 $\dot{\boldsymbol t}=\kappa\boldsymbol n$.
 
 > **定义 5.3** (副法向量与弗雷内标架)<br>$\boldsymbol b\left(s\right):=\boldsymbol t\left(s\right)\times\boldsymbol n\left(s\right)$ 为副法向量, $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 构成右手单位正交系, 称为弗雷内标架.
 
-> **定义 5.4** (空间弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}=\begin{bmatrix}0&k&0\\-k&0&T\\0&-T&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}.$$
+> **定义 5.4** (空间弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}.$$
 
-> **命题 5.7** (一般参数下的曲率与挠率公式)<br>记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$k=\frac{w}{v^{3}},\ T=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
+> **命题 5.7** (一般参数下的曲率与挠率公式)<br>记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则 $$\kappa=\frac{w}{v^{3}},\ \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},$$ 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
 
-> **命题 6.2** (挠率衡量离平面程度)<br>$T\equiv0$ 当且仅当 $\boldsymbol r$ 是平面曲线.
+> **命题 6.2** (挠率衡量离平面程度)<br>$\tau\equiv0$ 当且仅当 $\boldsymbol r$ 是平面曲线.
 
-> **命题 10.1** (球面曲线判定)<br>设 $\boldsymbol r$ 以弧长为参数且 $k,T$ 处处非零, 则 $\boldsymbol r$ 是球面曲线当且仅当 $$\left(\frac1k\right)^{2}+\left(\frac1T\frac{\mathrm d}{\mathrm ds}\frac1k\right)^{2}\equiv\text{常数}>0.$$ 此时有分解 $$\boldsymbol r=-\frac1k\,\boldsymbol n-\frac1T\left(\frac1k\right)'\boldsymbol b,$$ 从而 $$\left\|\boldsymbol r\right\|^{2}=\left(\frac1k\right)^{2}+\left(\frac1T\left(\frac1k\right)'\right)^{2}.$$
+> **命题 10.1** (球面曲线判定)<br>设 $\boldsymbol r$ 以弧长为参数且 $\kappa,\tau$ 处处非零, 则 $\boldsymbol r$ 是球面曲线当且仅当 $$\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\frac{\mathrm d}{\mathrm ds}\frac1\kappa\right)^{2}\equiv\text{常数}>0.$$ 此时有分解 $$\boldsymbol r=-\frac1\kappa\,\boldsymbol n-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol b,$$ 从而 $$\left\|\boldsymbol r\right\|^{2}=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}.$$
 
 > **基础知识**<br>内积求导法则 $$\frac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle.$$
+
+> **教材 (彭-陈, §2.4, 性质 4.1)** (弧长、曲率、挠率在刚体运动下不变)<br>$E^3$ 中曲线的弧长、曲率和挠率在刚体运动下不变.
+
+> **教材 (彭-陈, §2.4, 例 4.5)** (常曲率挠率曲线的分类)<br>设 $\boldsymbol r$ 是 $E^3$ 的曲线, 其挠率 $\tau$ 和曲率 $\kappa$ 是常数. 则: (1) $\kappa=0$ 时 $\boldsymbol r$ 是直线; (2) $\kappa>0,\ \tau=0$ 时 $\boldsymbol r$ 是半径为 $\frac1\kappa$ 的圆; (3) $\kappa>0,\ \tau\ne0$ 时 $\boldsymbol r$ 是圆柱螺线.
 
 ## 1
 
@@ -168,8 +172,8 @@ $$
 
 (1) 讨论平面曲线的几何. 如平面曲线的曲率的定义, 平面曲线基本定理.
 
-> **定理 4.4**: 设 $k\left(s\right)$ 是连续可微函数, 则
-> (1) 存在平面 $E^2$ 的曲线 $\boldsymbol{r}\left(s\right)$, 它以 $s$ 为弧长参数, $k\left(s\right)$ 为曲率;
+> **定理 4.4**: 设 $\kappa\left(s\right)$ 是连续可微函数, 则
+> (1) 存在平面 $E^2$ 的曲线 $\boldsymbol{r}\left(s\right)$, 它以 $s$ 为弧长参数, $\kappa\left(s\right)$ 为曲率;
 >
 > (2) 上述曲线在相差平面的一个刚体运动的意义下是唯一的.
 
@@ -187,68 +191,101 @@ $$
 
 是单位向量; $E^2$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$, 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的弗雷内标架 (此为**定义 3.1 (弗雷内标架)**).
 
-由 $\left\|\boldsymbol t\right\|^{2}\equiv1$ 对 $s$ 求导得 $\dot{\boldsymbol t}\perp\boldsymbol t$; 二维中垂直于 $\boldsymbol t$ 的方向只有 $\boldsymbol n$ 方向, 故存在数量函数 $k\left(s\right)$ 使
+由 $\left\|\boldsymbol t\right\|^{2}\equiv1$ 对 $s$ 求导得 $\dot{\boldsymbol t}\perp\boldsymbol t$; 二维中垂直于 $\boldsymbol t$ 的方向只有 $\boldsymbol n$ 方向, 故存在数量函数 $\kappa\left(s\right)$ 使
 
 $$
-\dot{\boldsymbol t}\left(s\right)=k\left(s\right)\boldsymbol n\left(s\right),
+\dot{\boldsymbol t}\left(s\right)=\kappa\left(s\right)\boldsymbol n\left(s\right),
 $$
 
-再由 $\left\|\boldsymbol n\right\|^{2}\equiv1$ 求导得 $\dot{\boldsymbol n}\perp\boldsymbol n$, 由 $\left\langle\boldsymbol t,\boldsymbol n\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle+\left\langle\boldsymbol t,\dot{\boldsymbol n}\right\rangle=0$, 代入前式得 $\dot{\boldsymbol n}\left(s\right)=-k\left(s\right)\boldsymbol t\left(s\right)$. 于是二维弗雷内方程 (**定义 3.2 (二维弗雷内方程)**) 为
+再由 $\left\|\boldsymbol n\right\|^{2}\equiv1$ 求导得 $\dot{\boldsymbol n}\perp\boldsymbol n$, 由 $\left\langle\boldsymbol t,\boldsymbol n\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle+\left\langle\boldsymbol t,\dot{\boldsymbol n}\right\rangle=0$, 代入前式得 $\dot{\boldsymbol n}\left(s\right)=-\kappa\left(s\right)\boldsymbol t\left(s\right)$. 于是二维弗雷内方程 (**定义 3.2 (二维弗雷内方程)**) 为
 
 $$
 \frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}
-=\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},
+=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},
 \ \dot{\boldsymbol r}=\boldsymbol t.
 $$
 
-其中 $k\left(s\right)$ 称为有向曲率 (**定义 3.3 (有向曲率)**), 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
+其中 $\kappa\left(s\right)$ 称为有向曲率 (**定义 3.3 (有向曲率)**), 其绝对值 $\left|\kappa\left(s\right)\right|$ 即通常意义下的曲率.
 
-平面曲线基本定理 (**定理 4.2 (平面曲线基本定理)**):
+平面曲线基本定理 (**定理 4.2 (平面曲线基本定理)**, 即**教材 (彭-陈, §2.4, 定理 4.4)**):
 
-(正向) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数, 且 $\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\boldsymbol\beta_0\in E^2$ 为常向量, $\det\boldsymbol A=1$ (保向等距), 则 $k_1\left(s\right)=k_2\left(s\right)$.
-(逆向) 给定 $\overline k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下, 存在唯一正则曲线 $\boldsymbol r:\left[0,L\right]\to E^2$ 以 $\overline k$ 为有向曲率.
+(正向) 设 $\boldsymbol r_1,\boldsymbol r_2:\left[0,L\right]\to E^2$ 均以弧长为参数, 且 $\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0$, 其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\boldsymbol\beta_0\in E^2$ 为常向量, $\det\boldsymbol A=1$ (保向等距), 则 $\kappa_1\left(s\right)=\kappa_2\left(s\right)$.
+(逆向) 给定 $\overline\kappa\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下, 存在唯一正则曲线 $\boldsymbol r:\left[0,L\right]\to E^2$ 以 $\overline\kappa$ 为有向曲率.
 
-证明思路: 由 $\dot{\boldsymbol t}=k\boldsymbol n$, $\boldsymbol n=\left(-\dot x^2,\dot x^1\right)$ 得
+证明思路: 由 $\dot{\boldsymbol t}=\kappa\boldsymbol n$, $\boldsymbol n=\left(-\dot x^2,\dot x^1\right)$ 得
 
 $$
 \frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\dot x^1\\\dot x^2\end{bmatrix}
-=k\left(s\right)\begin{bmatrix}-\dot x^2\\\dot x^1\end{bmatrix},
+=\kappa\left(s\right)\begin{bmatrix}-\dot x^2\\\dot x^1\end{bmatrix},
 $$
 
-连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $k\in C^1$, 右端关于未知量 Lipschitz 连续, 由常微分方程初值问题的存在唯一性定理 (**基础知识**) 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $k$ 的弧长参数曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\hat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $k$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\hat{\boldsymbol r}$. $\blacksquare$
+连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $\kappa\in C^1$, 右端关于未知量 Lipschitz 连续, 由常微分方程初值问题的存在唯一性定理 (**基础知识**) 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $\kappa$ 的弧长参数曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\hat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $\kappa$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\hat{\boldsymbol r}$. $\blacksquare$
 
 与空间曲线对比, 平面曲线的特别之处.
 
 1. 曲率是"有符号"的数量函数.
 
-平面上 $\dot{\boldsymbol t}\perp\boldsymbol t$ 只有 $\boldsymbol n$ 一个正交方向, 故 $k$ 是标量且可正可负 (有向曲率, $\left|k\right|$ 为通常曲率); 而空间曲率定义为 $k=\left\|\dot{\boldsymbol t}\right\|\ge0$ (非负), 主法向 $\boldsymbol n=\dot{\boldsymbol t}/\left\|\dot{\boldsymbol t}\right\|$ 由切向变化直接确定, 无符号可言.
+平面上 $\dot{\boldsymbol t}\perp\boldsymbol t$ 只有 $\boldsymbol n$ 一个正交方向, 故 $\kappa$ 是标量且可正可负 (有向曲率, $\left|\kappa\right|$ 为通常曲率); 而空间曲率定义为 $\kappa=\left\|\dot{\boldsymbol t}\right\|\ge0$ (非负), 主法向 $\boldsymbol n=\dot{\boldsymbol t}/\left\|\dot{\boldsymbol t}\right\|$ 由切向变化直接确定, 无符号可言.
 
-2. 没有挠率, 决定曲线只需一个函数 $k$.
+2. 没有挠率, 决定曲线只需一个函数 $\kappa$.
 
-平面曲线基本定理: 给定 $k\left(s\right)$ 即 (模保向等距) 唯一确定曲线; 而空间曲线需由 $k$ 与 $T$ 两个函数共同决定 (**定理 5.6 (空间曲线基本定理)**). 弗雷内方程也从空间的 $3\times3$ 反对称系统退化为平面的 $2\times2$ 反对称系统, 只有一个函数 $k$.
+平面曲线基本定理: 给定 $\kappa\left(s\right)$ 即 (模保向等距) 唯一确定曲线; 而空间曲线需由 $\kappa$ 与 $\tau$ 两个函数共同决定 (**定理 5.6 (空间曲线基本定理)**). 弗雷内方程也从空间的 $3\times3$ 反对称系统退化为平面的 $2\times2$ 反对称系统, 只有一个函数 $\kappa$.
 
 3. 平面曲线自动"扁平".
 
-空间情形中, 挠率 $T$ 度量曲线偏离密切平面的程度, $T\equiv0$ 当且仅当曲线是平面曲线 (**命题 6.2 (挠率衡量离平面程度)**); 而平面曲线本身落在 $E^2$ 中, 自动 $T\equiv0$, 不需要挠率这一几何量.
+空间情形中, 挠率 $\tau$ 度量曲线偏离密切平面的程度, $\tau\equiv0$ 当且仅当曲线是平面曲线 (**命题 6.2 (挠率衡量离平面程度)**); 而平面曲线本身落在 $E^2$ 中, 自动 $\tau\equiv0$, 不需要挠率这一几何量.
 
 4. 等距变换下曲率的"保向"敏感性.
 
-空间曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ 在任意正交变换下不变, 挠率 $T$ 在反向 (反射) 变换下变号; 而平面有向曲率在等距变换下按 $k_2=\det\left(\boldsymbol A\right)k_1$ 变换 (**证明 4.A**), 反射下 $\det\boldsymbol A=-1$ 会翻转符号. 因此平面曲线唯一性需"模保向等距", 空间曲线唯一性"模整个等距变换".
+空间曲率 $\kappa=\left\|\dot{\boldsymbol t}\right\|$ 在任意正交变换下不变, 挠率 $\tau$ 在反向 (反射) 变换下变号 (见**解答 10**); 而平面有向曲率在等距变换下按 $\kappa_2=\det\left(\boldsymbol A\right)\kappa_1$ 变换 (**证明 4.A**), 反射下 $\det\boldsymbol A=-1$ 会翻转符号. 因此平面曲线唯一性需"模保向等距", 空间曲线唯一性"模整个等距变换".
 
-综上, 平面曲线之特别处在于: 曲率退化为一个可带符号的标量函数, 且无挠率, 由单一函数 $k\left(s\right)$ 模保向等距即可完全确定曲线. $\blacksquare$
+综上, 平面曲线之特别处在于: 曲率退化为一个可带符号的标量函数, 且无挠率, 由单一函数 $\kappa\left(s\right)$ 模保向等距即可完全确定曲线. $\blacksquare$
 
 ## 4
 
 曲率和挠率的计算. 求下列曲线的曲率和挠率:
 
 (1) $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a>0$).
+
 (3) $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a>0$).
+
+> **教材 (彭-陈, §2.3, 习题二 5)**<br>证明: $E^3$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为
+> $$\kappa\left(t\right)=\frac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}},\qquad
+> \tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\times\boldsymbol r''\right|^{2}}.$$
 
 ### 解答 4
 
-依据**命题 5.7 (一般参数下的曲率与挠率公式)**:
+依据**命题 5.7 (一般参数下的曲率与挠率公式)** (即**教材 (彭-陈, §2.3, 习题二 5)**), 记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, $\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)$, 则
 
-(1) $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a>0$).
+$$
+\kappa=\frac{w}{v^{3}},\qquad \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}.
+$$
+
+**习题二 5 (公式的证明).** 对正则曲线 $\boldsymbol r\left(t\right)$ 取弧长参数 $s$, 由**定义 5.2 (曲率与主法向量)** 与**定义 5.4 (空间弗雷内方程)**, $\dot{\boldsymbol t}=\kappa\boldsymbol n$ 且 $\left\|\boldsymbol t\right\|=1$. 由链式法则 $\frac{\mathrm d\boldsymbol r}{\mathrm ds}=\frac{\boldsymbol r'}{\left|\boldsymbol r'\right|}$ 与 $\frac{\mathrm d}{\mathrm ds}=\frac1v\frac{\mathrm d}{\mathrm dt}$,
+
+$$
+\frac{\mathrm d\boldsymbol t}{\mathrm ds}=\frac1v\boldsymbol t'=\frac1v\frac{\mathrm d}{\mathrm dt}\left(\frac{\boldsymbol r'}{v}\right)=\frac1v\frac{\boldsymbol r''v-\boldsymbol r'v'}{v^{2}}=\frac{\boldsymbol r''v-\boldsymbol r'v'}{v^{3}},
+$$
+
+故
+
+$$
+\kappa=\left\|\frac{\mathrm d\boldsymbol t}{\mathrm ds}\right\|=\frac{\left\|\boldsymbol r''v-\boldsymbol r'v'\right\|}{v^{3}}.
+$$
+
+由**基础知识 (叉积性质)** $\boldsymbol r'\perp\left(\boldsymbol r''v-\boldsymbol r'v'\right)$ 得 $\left\|\boldsymbol r''v-\boldsymbol r'v'\right\|=\left\|\boldsymbol r'\times\boldsymbol r''\right\|\,v$, 代入得
+
+$$
+\kappa=\frac{\left\|\boldsymbol r'\times\boldsymbol r''\right\|}{v^{2}}\cdot\frac1v=\frac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}.
+$$
+
+挠率: 由 $\dot{\boldsymbol b}=-\tau\boldsymbol n$ (**定义 5.4**) 与 $\boldsymbol b=\boldsymbol t\times\boldsymbol n$, $\boldsymbol n=\frac1\kappa\dot{\boldsymbol t}$ 逐次求导, 并利用 $\left\langle\boldsymbol n,\boldsymbol b\right\rangle=\left\langle\boldsymbol t,\boldsymbol n\right\rangle=0$, 得 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$; 将其按 $\frac{\mathrm d}{\mathrm ds}=\frac1v\frac{\mathrm d}{\mathrm dt}$ 展开并化简 (标准计算), 即得
+
+$$
+\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}.\ \blacksquare
+$$
+
+**(1)** $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a>0$).
 
 $$
 \begin{aligned}\boldsymbol r'&=\left(a\sinh t,a\cosh t,b\right)\\
@@ -266,12 +303,12 @@ $$
 故
 
 $$
-\boxed{k=\frac{a\sqrt{a^{2}+b^{2}\cosh 2t}}{\left(a^{2}\cosh 2t+b^{2}\right)^{3/2}},\ 
-T=\frac{b}{a^{2}+b^{2}\cosh 2t}}
+\boxed{\kappa=\frac{a\sqrt{a^{2}+b^{2}\cosh 2t}}{\left(a^{2}\cosh 2t+b^{2}\right)^{3/2}},\ 
+\tau=\frac{b}{a^{2}+b^{2}\cosh 2t}}
 $$
 $\blacksquare$
 
-(3) $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a>0$).
+**(3)** $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a>0$).
 
 $$
 \begin{aligned}\boldsymbol r'&=\left(-a\cos t,a\sin t,b\right)\\
@@ -290,7 +327,7 @@ $$
 故
 
 $$
-\boxed{k=\frac{a}{a^{2}+b^{2}},\ T=-\frac{b}{a^{2}+b^{2}}}
+\boxed{\kappa=\frac{a}{a^{2}+b^{2}},\ \tau=-\frac{b}{a^{2}+b^{2}}}
 $$
 $\blacksquare$
 
@@ -302,29 +339,31 @@ $\blacksquare$
 (2) *球面曲线的刻画*. 证明: 满足条件
 
 $$
-\left(\frac{1}{k}\right)^2+\left[\frac{1}{T}\frac{d}{ds}\left(\frac{1}{k}\right)\right]^2=\text{常数}
+\left(\frac{1}{\kappa}\right)^2+\left[\frac{1}{\tau}\frac{d}{ds}\left(\frac{1}{\kappa}\right)\right]^2=\text{常数}
 $$
 
-的曲线, 或者是球面曲线, 或者 $k$ 是常数.
+的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
+
+> **教材 (彭-陈, §2.4, 习题二 15)**<br>满足条件 $\left(\frac1\kappa\right)^2+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^2=$ 常数的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
 
 ### 解答 5
 
-以下均设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, 且 $k,T$ 处处非零, 即分母 $\frac1k,\frac1T$ 有意义.
+以下均设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, 且 $\kappa,\tau$ 处处非零, 即分母 $\frac1\kappa,\frac1\tau$ 有意义.
 
-(1) 设 $\boldsymbol r$ 落在半径为 $r$ 的球面上. 平移球心至原点, 则 $\left\|\boldsymbol r\right\|^{2}\equiv r^{2}$. 由**命题 10.1 (球面曲线判定)** 的证明中对 $\left\langle\boldsymbol r,\boldsymbol t\right\rangle\equiv0$, $\left\langle\boldsymbol r,\boldsymbol n\right\rangle=-\frac1k$, $\left\langle\boldsymbol r,\boldsymbol b\right\rangle$ 的逐次求导, 得分解
+(1) 设 $\boldsymbol r$ 落在半径为 $r$ 的球面上. 平移球心至原点, 则 $\left\|\boldsymbol r\right\|^{2}\equiv r^{2}$. 由**命题 10.1 (球面曲线判定)** 的证明中对 $\left\langle\boldsymbol r,\boldsymbol t\right\rangle\equiv0$, $\left\langle\boldsymbol r,\boldsymbol n\right\rangle=-\frac1\kappa$, $\left\langle\boldsymbol r,\boldsymbol b\right\rangle$ 的逐次求导, 得分解
 
 $$
-\begin{aligned}\boldsymbol r&=-\frac1k\boldsymbol n-\frac1T\left(\frac1k\right)'\boldsymbol b\\
-\left\|\boldsymbol r\right\|^{2}&=\left(\frac1k\right)^{2}+\left(\frac1T\left(\frac1k\right)'\right)^{2}=r^{2}.
+\begin{aligned}\boldsymbol r&=-\frac1\kappa\boldsymbol n-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol b\\
+\left\|\boldsymbol r\right\|^{2}&=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}=r^{2}.
 \end{aligned}
 $$
 
 因 $\boldsymbol n,\boldsymbol b$ 为单位正交向量, 故
 
 $$
-\begin{aligned}&&r^{2}&\ge\left(\frac1k\right)^{2}\\
-\Rightarrow&&\frac1k&\le r\\
-\Rightarrow&&&\kern-0.9em\boxed{k\ge\frac1r}
+\begin{aligned}&&r^{2}&\ge\left(\frac1\kappa\right)^{2}\\
+\Rightarrow&&\frac1\kappa&\le r\\
+\Rightarrow&&&\kern-0.9em\boxed{\kappa\ge\frac1r}
 \end{aligned}
 $$
 $\blacksquare$
@@ -332,31 +371,31 @@ $\blacksquare$
 (2) 设
 
 $$
-\left(\frac1k\right)^{2}+\left[\frac1T\frac{\mathrm d}{\mathrm ds}\left(\frac1k\right)\right]^{2}=\text{常数}.
+\left(\frac1\kappa\right)^{2}+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^{2}=\text{常数}.
 $$
 
-记 $\varphi:=\frac1k$, $\psi:=\frac1T\varphi'$, 则条件为 $\varphi^{2}+\psi^{2}=\text{常数}$.
+记 $\varphi:=\frac1\kappa$, $\psi:=\frac1\tau\varphi'$, 则条件为 $\varphi^{2}+\psi^{2}=\text{常数}$.
 
 情形 A: $\varphi'$ 不恒为零.
 
 则存在子区间上 $\varphi'\ne0$. 定义
 
 $$
-\widetilde{\boldsymbol r}:=\boldsymbol r+\frac1k\boldsymbol n+\frac1T\left(\frac1k\right)'\boldsymbol b
+\widetilde{\boldsymbol r}:=\boldsymbol r+\frac1\kappa\boldsymbol n+\frac1\tau\left(\frac1\kappa\right)'\boldsymbol b
 =\boldsymbol r+\varphi\boldsymbol n+\psi\boldsymbol b.
 $$
 
-由**定义 5.4 (空间弗雷内方程)**  $\dot{\boldsymbol n}=-k\boldsymbol t+T\boldsymbol b$, $\dot{\boldsymbol b}=-T\boldsymbol n$ 求导:
+由**定义 5.4 (空间弗雷内方程)**  $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$ 求导:
 
 $$
 \begin{aligned}\widetilde{\boldsymbol r}'
 &=\boldsymbol t+\varphi'\boldsymbol n+\varphi\dot{\boldsymbol n}+\psi'\boldsymbol b+\psi\dot{\boldsymbol b}\\
-&=\boldsymbol t+\varphi'\boldsymbol n+\varphi\left(-k\boldsymbol t+T\boldsymbol b\right)+\psi'\boldsymbol b+\psi\left(-T\boldsymbol n\right)\\
-&=\left(1-\varphik\right)\boldsymbol t+\left(\varphi'-T\psi\right)\boldsymbol n+\left(T\varphi+\psi'\right)\boldsymbol b.
+&=\boldsymbol t+\varphi'\boldsymbol n+\varphi\left(-\kappa\boldsymbol t+\tau\boldsymbol b\right)+\psi'\boldsymbol b+\psi\left(-\tau\boldsymbol n\right)\\
+&=\left(1-\varphi\kappa\right)\boldsymbol t+\left(\varphi'-\tau\psi\right)\boldsymbol n+\left(\tau\varphi+\psi'\right)\boldsymbol b.
 \end{aligned}
 $$
 
-由 $\varphi=\frac1k$ 得 $1-\varphik=0$, $\varphi'-T\psi=\varphi'-T\cdot\frac{\varphi'}{T}=0$. 又对条件求导:
+由 $\varphi=\frac1\kappa$ 得 $1-\varphi\kappa=0$, $\varphi'-\tau\psi=\varphi'-\tau\cdot\frac{\varphi'}{\tau}=0$. 又对条件求导:
 
 $$
 \begin{aligned}&&2\varphi\varphi'+2\psi\psi'&=0\\
@@ -365,14 +404,14 @@ $$
 \end{aligned}
 $$
 
-在 $\varphi'\ne0$ 处除以 $\varphi'$, 并代入 $\psi=\frac{\varphi'}{T}$, 得
+在 $\varphi'\ne0$ 处除以 $\varphi'$, 并代入 $\psi=\frac{\varphi'}{\tau}$, 得
 
 $$
-\begin{aligned}&&\varphi+\frac{\psi'}{T}&=0\\
+\begin{aligned}&&\varphi+\frac{\psi'}{\tau}&=0\\
 \Rightarrow&&
-\psi'&=-T\varphi\\
+\psi'&=-\tau\varphi\\
 \Rightarrow&&
-T\varphi+\psi'&=0.
+\tau\varphi+\psi'&=0.
 \end{aligned}
 $$
 
@@ -386,15 +425,15 @@ $$
 
 故 $\boldsymbol r$ 落在以 $\widetilde{\boldsymbol r}$ 为球心的球面上, 是球面曲线.
 
-情形 B: $\varphi'\equiv0$, 即 $\left(\frac1k\right)'\equiv0$.
+情形 B: $\varphi'\equiv0$, 即 $\left(\frac1\kappa\right)'\equiv0$.
 
-则 $\frac1k$ 为常数, 故
+则 $\frac1\kappa$ 为常数, 故
 
 $$
-k\equiv\text{常数}.
+\kappa\equiv\text{常数}.
 $$
 
-综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $k$ 为常数 (情形 B). $\blacksquare$
+综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $\kappa$ 为常数 (情形 B), 这正是**教材 (彭-陈, §2.4, 习题二 15)** 的结论. $\blacksquare$
 
 ## 6
 
@@ -440,52 +479,58 @@ $$
 \boldsymbol r\left(s\right)=\lambda\left(s\right)\boldsymbol t\left(s\right).
 $$
 
-依据 $\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol t}=k\boldsymbol n$, 对 $s$ 求导:
+依据 $\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol t}=\kappa\boldsymbol n$, 对 $s$ 求导:
 
 $$
 \boldsymbol t=\dot{\boldsymbol r}=\lambda'\boldsymbol t+\lambda\dot{\boldsymbol t}
-=\lambda'\boldsymbol t+\lambda k\boldsymbol n.
+=\lambda'\boldsymbol t+\lambda\kappa\boldsymbol n.
 $$
 
-若某开区间上 $k\ne0$, 则 $\boldsymbol t,\boldsymbol n$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda k=0$. 由 $k\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol t}\equiv\boldsymbol 0$. 由**命题 5.1 (直线段刻画)**  ($\dot{\boldsymbol t}\equiv\boldsymbol 0$ 当且仅当曲线是直线段), 曲线 $C$ 是直线. $\blacksquare$
+若某开区间上 $\kappa\ne0$, 则 $\boldsymbol t,\boldsymbol n$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda\kappa=0$. 由 $\kappa\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $\kappa\equiv0$, 即 $\dot{\boldsymbol t}\equiv\boldsymbol 0$. 由**命题 5.1 (直线段刻画)** ($\dot{\boldsymbol t}\equiv\boldsymbol 0$ 当且仅当曲线是直线段), 曲线 $C$ 是直线. $\blacksquare$
 
-(2) 设 $k\ne0$ 处处成立 (否则主法线无定义). 每条主法线都过原点, 即 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol n\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使
+(2) 设 $\kappa\ne0$ 处处成立 (否则主法线无定义). 每条主法线都过原点, 即 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol n\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使
 
 $$
 \boldsymbol r\left(s\right)=\lambda\left(s\right)\boldsymbol n\left(s\right).
 $$
 
-对 $s$ 求导 ($\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol n}=-k\boldsymbol t+T\boldsymbol b$, 见**定义 5.4 (空间弗雷内方程)**):
+对 $s$ 求导 ($\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, 见**定义 5.4 (空间弗雷内方程)**):
 
 $$
 \boldsymbol t=\dot{\boldsymbol r}=\lambda'\boldsymbol n+\lambda\dot{\boldsymbol n}
-=\lambda'\boldsymbol n+\lambda\left(-k\boldsymbol t+T\boldsymbol b\right)
-=-\lambda k\boldsymbol t+\lambda'\boldsymbol n+\lambdaT\boldsymbol b.
+=\lambda'\boldsymbol n+\lambda\left(-\kappa\boldsymbol t+\tau\boldsymbol b\right)
+=-\lambda\kappa\boldsymbol t+\lambda'\boldsymbol n+\lambda\tau\boldsymbol b.
 $$
 
 $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, 比较系数:
 
 $$
-1=-\lambda k,\  0=\lambda',\  0=\lambdaT.
+1=-\lambda\kappa,\  0=\lambda',\  0=\lambda\tau.
 $$
 
-由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda k\ne0$ 知 $\lambda\ne0$, 再由 $\lambdaT=0$ 得 $T\equiv0$. 于是由**命题 6.2 (挠率衡量离平面程度)**  ($T\equiv0$ 当且仅当曲线是平面曲线), $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故
+由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda\kappa\ne0$ 知 $\lambda\ne0$, 再由 $\lambda\tau=0$ 得 $\tau\equiv0$. 于是由**命题 6.2 (挠率衡量离平面程度)** ($\tau\equiv0$ 当且仅当曲线是平面曲线), $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故
 
 $$
 \left\|\boldsymbol r\right\|=\left\|\lambda\boldsymbol n\right\|=\left|\lambda\right|=\text{常数}.
 $$
 
-即曲线到原点的距离恒定. 落在平面内且到定点距离恒定的曲线是以原点为圆心, 半径 $\left|\lambda\right|=\frac1k$ 的圆. $\blacksquare$
+即曲线到原点的距离恒定, 曲率
+
+$$
+\kappa=\frac1{\left|\lambda\right|}=\text{常数}>0.
+$$
+
+由于 $\boldsymbol r$ 是平面曲线 ($\tau\equiv0$), 且其曲率 $\kappa$ 为正常数, 由**教材 (彭-陈, §2.4, 例 4.5(2))**, $\boldsymbol r$ 是半径为 $\frac1\kappa$ 的圆. 故所有主法线过定点的曲线是圆. $\blacksquare$
 
 ### 10
 
-设 $T\left(\boldsymbol X\right)=X\boldsymbol t+P$ 是 $E^3$ 的一个合同 (等距) 变换, $\det \boldsymbol t=-1$. $\boldsymbol r\left(t\right)$ 是 $E^3$ 的正则曲线, 求曲线 $\tilde{\boldsymbol r}=T\circ \boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
+设 $T\left(\boldsymbol X\right)=\boldsymbol X\boldsymbol T+P$ 是 $E^3$ 的一个合同 (等距) 变换, $\det \boldsymbol T=-1$ (记号同**教材 (彭-陈, §1.2/§2.4)**: $T$ 为变换, $\boldsymbol T\in O\left(3\right)$ 为正交矩阵). $\boldsymbol r\left(t\right)$ 是 $E^3$ 的正则曲线, 求曲线 $\tilde{\boldsymbol r}=T\circ \boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
 
 ### 解答 10
 
-设 $\boldsymbol t=\boldsymbol A$ (正交矩阵, $\det\boldsymbol A=-1$, 即**定义 4.1 (等距变换)** 中的反向等距变换), 则 $\tilde{\boldsymbol r}\left(t\right)=\boldsymbol A\boldsymbol r\left(t\right)+P$.
+设 $\boldsymbol T=\boldsymbol A$ (正交矩阵, $\det\boldsymbol A=-1$, 即**定义 4.1 (等距变换)** 中的反向等距变换), 则 $\tilde{\boldsymbol r}\left(t\right)=\boldsymbol A\boldsymbol r\left(t\right)+P$.
 
-弧长参数.
+**弧长参数.**
 
 由正交性 $\boldsymbol A^{\top}\boldsymbol A=I_3$:
 
@@ -497,35 +542,37 @@ $$
 
 故 $\tilde s\left(t\right)=\int\left|\tilde{\boldsymbol r}'\right|\mathrm dt=\int\left|\boldsymbol r'\right|\mathrm dt=s\left(t\right)$ (只差常数). 因此 $\boldsymbol r$ 的弧长参数 $s$ 仍是 $\tilde{\boldsymbol r}$ 的弧长参数, 弧长参数化不变.
 
-曲率.
+**曲率与挠率 (保向情形).**
 
-以 $s$ 为共同弧长参数, $\tilde{\boldsymbol t}=\dot{\tilde{\boldsymbol r}}=\boldsymbol A\dot{\boldsymbol r}=\boldsymbol A\boldsymbol t$. 空间曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ (**定义 5.2 (曲率与主法向量)**), 由正交性:
+由**教材 (彭-陈, §2.4, 性质 4.1)**, $E^3$ 中曲线的弧长、曲率和挠率在刚体运动下不变. 当 $\det\boldsymbol A=1$ 时 $T$ 是刚体运动, 故 $\tilde s=s$, $\tilde\kappa=\kappa$, $\tilde\tau=\tau$.
 
-$$
-\tilde k=\left\|\dot{\tilde{\boldsymbol t}}\right\|=\left\|\boldsymbol A\dot{\boldsymbol t}\right\|
-=\sqrt{\left\langle\boldsymbol A\dot{\boldsymbol t},\boldsymbol A\dot{\boldsymbol t}\right\rangle}=\left\|\dot{\boldsymbol t}\right\|=k.
-$$
+**反向情形 ($\det\boldsymbol A=-1$).**
 
-故曲率不变 $\tilde k=k$.
-
-挠率.
-
-由**命题 5.7 (一般参数下的曲率与挠率公式)** 中的挠率公式 $T=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
+曲率 $\kappa=\left\|\dot{\boldsymbol t}\right\|$ (**定义 5.2 (曲率与主法向量)**), 由正交性:
 
 $$
-\begin{aligned}\tilde T
+\tilde\kappa=\left\|\dot{\tilde{\boldsymbol t}}\right\|=\left\|\boldsymbol A\dot{\boldsymbol t}\right\|
+=\sqrt{\left\langle\boldsymbol A\dot{\boldsymbol t},\boldsymbol A\dot{\boldsymbol t}\right\rangle}=\left\|\dot{\boldsymbol t}\right\|=\kappa.
+$$
+
+故反向变换下曲率不变 $\tilde\kappa=\kappa$.
+
+挠率: 由**命题 5.7 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
+
+$$
+\begin{aligned}\tilde\tau
 &=\frac{\left(\tilde{\boldsymbol r}',\tilde{\boldsymbol r}'',\tilde{\boldsymbol r}'''\right)}{\tilde w^{2}}
 =\frac{\det\left(\boldsymbol A\boldsymbol r',\boldsymbol A\boldsymbol r'',\boldsymbol A\boldsymbol r'''\right)}{w^{2}}\\
 &=\frac{\det\left(\boldsymbol A\right)\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
-=-\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=-T.
+=-\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=-\tau.
 \end{aligned}
 $$
 
-其中用到 $\det\boldsymbol A=-1$. 故挠率变号 $\tilde T=-T$.
+其中用到 $\det\boldsymbol A=-1$. 故反向变换下挠率变号 $\tilde\tau=-\tau$.
 
 综上:
 
 $$
-\boxed{\tilde s=s,\  \tilde k=k,\  \tilde T=-T}
+\boxed{\tilde s=s,\  \tilde\kappa=\kappa,\  \tilde\tau=-\tau}
 $$
 $\blacksquare$

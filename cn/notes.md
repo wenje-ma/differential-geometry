@@ -39,12 +39,12 @@ $$
 **定义 3.2** (二维弗雷内方程)
 
 $$
-\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t.
+\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t.
 $$
 
 **定义 3.3** (有向曲率)
 
-二维弗雷内方程中的数量函数 $k\left(s\right)$ 称为平面曲线的**有向曲率**, 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
+二维弗雷内方程中的数量函数 $\kappa\left(s\right)$ 称为平面曲线的**有向曲率**, 其绝对值 $\left|\kappa\left(s\right)\right|$ 即通常意义下的曲率.
 
 **定义 4.1** (等距变换)
 
@@ -58,9 +58,9 @@ $$
 \boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0,
 $$
 
-其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $k_1\left(s\right)=k_2\left(s\right)$;
+其中 $\boldsymbol A^{\top}\boldsymbol A=I_2$, $\det\boldsymbol A=1$. 则 $\kappa_1\left(s\right)=\kappa_2\left(s\right)$;
 
-(2) 给定 $\overline k\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\overline k$ 为有向曲率.
+(2) 给定 $\overline\kappa\in C^1\left(\left[0,L\right]\right)$, 在保向等距变换的意义下存在唯一的正则曲线以 $\overline\kappa$ 为有向曲率.
 
 **命题 5.1** (直线段刻画)
 
@@ -77,10 +77,10 @@ $$
 为主法向量,
 
 $$
-k\left(s\right):=\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle=\left\|\dot{\boldsymbol t}\left(s\right)\right\|
+\kappa\left(s\right):=\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle=\left\|\dot{\boldsymbol t}\left(s\right)\right\|
 $$
 
-为曲率, 满足 $\dot{\boldsymbol t}=k\boldsymbol n$.
+为曲率, 满足 $\dot{\boldsymbol t}=\kappa\boldsymbol n$.
 
 **定义 5.3** (副法向量与弗雷内标架)
 
@@ -91,19 +91,19 @@ $\boldsymbol b\left(s\right):=\boldsymbol t\left(s\right)\times\boldsymbol n\lef
 **定义 5.4** (空间弗雷内方程)
 
 $$
-\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}=\begin{bmatrix}0&k&0\\-k&0&T\\0&-T&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}.
+\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}=\begin{bmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\\\boldsymbol b\end{bmatrix}.
 $$
 
 **定理 5.6** (空间曲线基本定理)
 
-在 $E^3$ 上相差一个等距变换的意义下, $k,T$ 唯一确定一条曲线.
+在 $E^3$ 上相差一个等距变换的意义下, $\kappa,\tau$ 唯一确定一条曲线.
 
 **命题 5.7** (一般参数下的曲率与挠率公式)
 
 记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, 则
 
 $$
-k=\frac{w}{v^{3}},\ T=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},
+\kappa=\frac{w}{v^{3}},\ \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}},
 $$
 
 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right):=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$ 为混合积.
@@ -120,43 +120,43 @@ $$
 
 **命题 6.2** (挠率衡量离平面程度)
 
-$T\equiv0$ 当且仅当 $\boldsymbol r$ 是平面曲线.
+$\tau\equiv0$ 当且仅当 $\boldsymbol r$ 是平面曲线.
 
-**命题 7.2** ($k,T$ 均正常数 $\Rightarrow$ 圆柱螺线)
+**命题 7.2** ($\kappa,\tau$ 均正常数 $\Rightarrow$ 圆柱螺线)
 
 曲率, 挠率均为正常数的空间曲线一定是圆柱螺线 (由空间曲线基本定理, 等距意义下唯一).
 
 **例 8.1** (切线像)
 
-设 $\boldsymbol r^{*}:=\boldsymbol t$ 是 $\boldsymbol r$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=k\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为
+设 $\boldsymbol r^{*}:=\boldsymbol t$ 是 $\boldsymbol r$ 的切线像, 以 $s^{*}$ (满足 $\mathrm ds^{*}=\kappa\,\mathrm ds$) 为弧长参数时, 其曲率与挠率为
 
 $$
-k^{*}=\sqrt{1+\left(\frac T k\right)^{2}},\  T^{*}=\frac1k\cdot\frac{\left(\frac T k\right)'}{1+\left(\frac T k\right)^{2}}.
+\kappa^{*}=\sqrt{1+\left(\frac{\tau}{\kappa}\right)^{2}},\  \tau^{*}=\frac1\kappa\cdot\frac{\left(\frac{\tau}{\kappa}\right)'}{1+\left(\frac{\tau}{\kappa}\right)^{2}}.
 $$
 
 **命题 10.1** (球面曲线判定)
 
-设 $\boldsymbol r$ 以弧长为参数且 $k,T$ 处处非零, 则 $\boldsymbol r$ 是球面曲线当且仅当
+设 $\boldsymbol r$ 以弧长为参数且 $\kappa,\tau$ 处处非零, 则 $\boldsymbol r$ 是球面曲线当且仅当
 
 $$
-\left(\frac1k\right)^{2}+\left(\frac1T\frac{\mathrm d}{\mathrm ds}\frac1k\right)^{2}\equiv\text{常数}>0.
+\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\frac{\mathrm d}{\mathrm ds}\frac1\kappa\right)^{2}\equiv\text{常数}>0.
 $$
 
 此时有分解
 
 $$
-\boldsymbol r=-\frac1k\,\boldsymbol n-\frac1T\left(\frac1k\right)'\boldsymbol b,
+\boldsymbol r=-\frac1\kappa\,\boldsymbol n-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol b,
 $$
 
 从而
 
 $$
-\left\|\boldsymbol r\right\|^{2}=\left(\frac1k\right)^{2}+\left(\frac1T\left(\frac1k\right)'\right)^{2}.
+\left\|\boldsymbol r\right\|^{2}=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}.
 $$
 
 **定理 17.1** (芬切尔)
 
-设 $\boldsymbol r:\left[0,L\right]\to E^3$ 是正则闭曲线, 则全曲率 $\int_{\boldsymbol r}k\left(s\right)\,\mathrm ds\ge2\pi$, 等号当且仅当 $\boldsymbol r$ 是平面凸闭曲线.
+设 $\boldsymbol r:\left[0,L\right]\to E^3$ 是正则闭曲线, 则全曲率 $\int_{\boldsymbol r}\kappa\left(s\right)\,\mathrm ds\ge2\pi$, 等号当且仅当 $\boldsymbol r$ 是平面凸闭曲线.
 
 **定义 19.1** (参数曲面)
 

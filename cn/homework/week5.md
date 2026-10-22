@@ -14,15 +14,15 @@
 
 > **命题 24.2** (魏因加滕变换的自共轭性)<br>$W$ 在切空间上关于内积是自共轭的: 对任意切向量 $\boldsymbol v,\boldsymbol w$, $\left\langle W\boldsymbol v,\boldsymbol w\right\rangle=\left\langle\boldsymbol v,W\boldsymbol w\right\rangle$.
 
-> **命题 29.1** (同时对角化 $g$ 与 $b$)<br>存在坐标使 $g_{\alpha\beta}=\delta_{\alpha\beta}$, $b_{\alpha\beta}=\lambda_\alpha\delta_{\alpha\beta}$, 此时单位主方向 $\boldsymbol e_1,\boldsymbol e_2$ 相互正交, 对角线元正是主曲率.
+> **命题 29.1** (同时对角化 $g$ 与 $b$)<br>存在坐标使 $g_{\alpha\beta}=\delta_{\alpha\beta}$, $b_{\alpha\beta}=k_\alpha\delta_{\alpha\beta}$, 此时单位主方向 $\boldsymbol e_1,\boldsymbol e_2$ 相互正交, 对角线元正是主曲率.
 
 > **定义 28.B** (法曲率)<br>对一般参数, 曲线在曲面上沿切方向的**法曲率** $k_n=\left.\dfrac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\dfrac{II}{I}$.
 
-> **命题 29.4** (主曲率的特征方程)<br>$\lambda$ 是主曲率当且仅当它是方程 $\det\left(b_{\alpha\beta}-\lambda g_{\alpha\beta}\right)=0$ 的根.
+> **命题 29.4** (主曲率的特征方程)<br>$k$ 是主曲率当且仅当它是方程 $\det\left(b_{\alpha\beta}-k g_{\alpha\beta}\right)=0$ 的根.
 
-> **定义 32.1** (平均曲率与总曲率)<br>$H:=\dfrac{\lambda_1+\lambda_2}{2}$ 为**平均曲率**, $K:=\lambda_1\lambda_2$ 为**总曲率 (高斯曲率)**.
+> **定义 32.1** (平均曲率与总曲率)<br>$H:=\dfrac{k_1+k_2}{2}$ 为**平均曲率**, $K:=k_1k_2$ 为**总曲率 (高斯曲率)**.
 
-> **命题 32.2** (特征方程与 $H,K$)<br>主曲率是 $\lambda^2-2H\lambda+K=0$ 的根, 其中 $H=\dfrac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\dfrac{\det b}{\det g}$.
+> **命题 32.2** (特征方程与 $H,K$)<br>主曲率是 $k^2-2Hk+K=0$ 的根, 其中 $H=\dfrac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\dfrac{\det b}{\det g}$.
 
 > **教材 (彭-陈, §10.1, 极小曲面方程)**<br>对函数图 $z=f\left(x,y\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\sqrt{1+p^2+q^2}$, 则曲面是极小曲面 ($H\equiv0$) 当且仅当 $$\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t=0.$$
 
@@ -254,7 +254,7 @@ $$
 
 **(教材第 27 题: 设 $S:\boldsymbol r=\boldsymbol r\left(u,v\right)$ 上没有抛物点, $\boldsymbol n$ 是 $S$ 的法向量, 曲面 $S_{\lambda}:\boldsymbol r_{\lambda}\left(u,v\right)=\boldsymbol r\left(u,v\right)+\lambda\boldsymbol n\left(u,v\right)$ (常数 $\lambda$ 充分小) 称为 $S$ 的平行曲面. (1) 证明 $S$ 与 $S_{\lambda}$ 在对应点的切平面平行; (2) 选取 $S_{\lambda}$ 的单位法向量 $\boldsymbol n_{\lambda}$, 使其 Gauss 曲率与平均曲率分别为 $K_{\lambda}=\dfrac{K}{1-2\lambda H+\lambda^{2}K}$, $H_{\lambda}=\dfrac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}$.)**
 
-以 $\kappa_1,\kappa_2$ 记 $S$ 的主曲率, $H=\frac{\kappa_1+\kappa_2}{2}$, $K=\kappa_1\kappa_2$.
+以 $k_1,k_2$ 记 $S$ 的主曲率, $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$.
 
 **(1) 切平面平行.**
 
@@ -276,33 +276,33 @@ $$
 
 **(2) Gauss 曲率与平均曲率.**
 
-取 $S$ 的主方向为坐标方向 (由**命题 29.1 (同时对角化 $g$ 与 $b$)** 存在), 则 $G=\mathrm{diag}\left(g_{11},g_{22}\right)$, $B=\mathrm{diag}\left(\kappa_1g_{11},\kappa_2g_{22}\right)$, $G^{-1}B=\mathrm{diag}\left(\kappa_1,\kappa_2\right)$. 由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\left(\delta^{\beta}{}_\alpha-\lambda b^{\beta}{}_\alpha\right)\boldsymbol r_\beta$ 及 $b^{\beta}{}_\alpha$ 在此坐标下为对角矩阵, 得
+取 $S$ 的主方向为坐标方向 (由**命题 29.1 (同时对角化 $g$ 与 $b$)** 存在), 则 $G=\mathrm{diag}\left(g_{11},g_{22}\right)$, $B=\mathrm{diag}\left(k_1g_{11},k_2g_{22}\right)$, $G^{-1}B=\mathrm{diag}\left(k_1,k_2\right)$. 由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\left(\delta^{\beta}{}_\alpha-\lambda b^{\beta}{}_\alpha\right)\boldsymbol r_\beta$ 及 $b^{\beta}{}_\alpha$ 在此坐标下为对角矩阵, 得
 
 $$
-G_{\lambda}=\mathrm{diag}\left(g_{11}\left(1-\lambda\kappa_1\right)^{2},\ g_{22}\left(1-\lambda\kappa_2\right)^{2}\right).
+G_{\lambda}=\mathrm{diag}\left(g_{11}\left(1-\lambda k_1\right)^{2},\ g_{22}\left(1-\lambda k_2\right)^{2}\right).
 $$
 
-又由**推导 23.A**, $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$, 其二阶导与 $\boldsymbol n$ 的内积给出第二基本形式系数: 由 $\partial_\alpha\boldsymbol r_{\lambda}=\left(1-\lambda\kappa_\alpha\right)\boldsymbol r_\alpha$ (主方向坐标下无交叉项), 对 $\boldsymbol r_{\lambda,\alpha\beta}$ 与 $\boldsymbol n$ 作内积得
+又由**推导 23.A**, $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$, 其二阶导与 $\boldsymbol n$ 的内积给出第二基本形式系数: 由 $\partial_\alpha\boldsymbol r_{\lambda}=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$ (主方向坐标下无交叉项), 对 $\boldsymbol r_{\lambda,\alpha\beta}$ 与 $\boldsymbol n$ 作内积得
 
 $$
-B_{\lambda}=\mathrm{diag}\left(\kappa_1g_{11}\left(1-\lambda\kappa_1\right),\ \kappa_2g_{22}\left(1-\lambda\kappa_2\right)\right).
+B_{\lambda}=\mathrm{diag}\left(k_1g_{11}\left(1-\lambda k_1\right),\ k_2g_{22}\left(1-\lambda k_2\right)\right).
 $$
 
 于是 $S_{\lambda}$ 的主曲率是 $G_{\lambda}^{-1}B_{\lambda}$ 的特征值
 
 $$
-\kappa_\alpha^{\lambda}=\frac{\kappa_\alpha\left(1-\lambda\kappa_\alpha\right)}{\left(1-\lambda\kappa_\alpha\right)^{2}}=\frac{\kappa_\alpha}{1-\lambda\kappa_\alpha}\qquad\left(\alpha=1,2\right).
+k_\alpha^{\lambda}=\frac{k_\alpha\left(1-\lambda k_\alpha\right)}{\left(1-\lambda k_\alpha\right)^{2}}=\frac{k_\alpha}{1-\lambda k_\alpha}\qquad\left(\alpha=1,2\right).
 $$
 
 由**定义 32.1 (平均曲率与总曲率)**, $S_{\lambda}$ 的 Gauss 曲率
 
 $$
-K_{\lambda}=\kappa_1^{\lambda}\kappa_2^{\lambda}
-=\frac{\kappa_1\kappa_2}{\left(1-\lambda\kappa_1\right)\left(1-\lambda\kappa_2\right)}
-=\frac{K}{1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2},
+K_{\lambda}=k_1^{\lambda}k_2^{\lambda}
+=\frac{k_1k_2}{\left(1-\lambda k_1\right)\left(1-\lambda k_2\right)}
+=\frac{K}{1-\lambda\left(k_1+k_2\right)+\lambda^{2}k_1k_2},
 $$
 
-由 $H=\frac{\kappa_1+\kappa_2}{2}$, $K=\kappa_1\kappa_2$ 得
+由 $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$ 得
 
 $$
 \boxed{\ K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}.\ }
@@ -311,9 +311,9 @@ $$
 平均曲率
 
 $$
-H_{\lambda}=\frac{\kappa_1^{\lambda}+\kappa_2^{\lambda}}2
-=\frac12\left(\frac{\kappa_1}{1-\lambda\kappa_1}+\frac{\kappa_2}{1-\lambda\kappa_2}\right)
-=\frac{\kappa_1+\kappa_2-2\lambda\kappa_1\kappa_2}{2\left(1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2\right)}
+H_{\lambda}=\frac{k_1^{\lambda}+k_2^{\lambda}}2
+=\frac12\left(\frac{k_1}{1-\lambda k_1}+\frac{k_2}{1-\lambda k_2}\right)
+=\frac{k_1+k_2-2\lambda k_1k_2}{2\left(1-\lambda\left(k_1+k_2\right)+\lambda^{2}k_1k_2\right)}
 $$
 
 $$

@@ -2,15 +2,15 @@
 
 > **定义 2.1** (弧长)<br>设 $C\subset E^n$ 是简单 $C^k$ 曲线, 参数化为 $\boldsymbol r:\left[a,b\right]\to C$, 则它在参数区间 $\left[t_1,t_2\right]$ 上对应弧段的**弧长**为 $$\mathrm{len}\left(\boldsymbol r|_{\left[t_1,t_2\right]}\right)=\int_{t_1}^{t_2}|\boldsymbol r'\left(t\right)|\,\mathrm dt.$$
 
-> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&k\\-k&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t,$$ 其中 $k$ 为有向曲率, $\left|\boldsymbol t\right|\equiv1$, $\left|\boldsymbol n\right|\equiv1$, $\left\{\boldsymbol t,\boldsymbol n\right\}$ 为右手系.
+> **定义 3.2** (二维弗雷内方程) $$\frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}=\begin{bmatrix}0&\kappa\\-\kappa&0\end{bmatrix}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix},\ \dot{\boldsymbol r}=\boldsymbol t,$$ 其中 $\kappa$ 为有向曲率, $\left|\boldsymbol t\right|\equiv1$, $\left|\boldsymbol n\right|\equiv1$, $\left\{\boldsymbol t,\boldsymbol n\right\}$ 为右手系.
 
 > **定理 14.1** (等周不等式)<br>设 $\boldsymbol r$ 是平面上的正则简单闭曲线, 长度为 $L$, 所围有界区域的面积为 $S$. 则 $$L^2\ge 4\pi S,$$ 且等号成立当且仅当 $\boldsymbol r$ 是圆周.
 
-> **命题 15.2** (方向角的导数与回转指标)<br>(1) 方向角沿弧长的变化率 $\dot\theta\left(s\right)=\pm k\left(s\right)$, 即切向量旋转的角速度恰为 (带符号的) 曲率;<br>(2) 回转指标 $i_{\boldsymbol r}:=\frac{\theta\left(L\right)-\theta\left(0\right)}{2\pi}\in\mathbb Z$;<br>(3) 若 $\boldsymbol r$ 是简单闭曲线, 则 $i_{\boldsymbol r}=\pm1$, 且 $\int_0^L k\,\mathrm ds=\theta\left(L\right)-\theta\left(0\right)=2\pi i_{\boldsymbol r}$.
+> **命题 15.2** (方向角的导数与回转指标)<br>(1) 方向角沿弧长的变化率 $\dot\theta\left(s\right)=\pm\kappa\left(s\right)$, 即切向量旋转的角速度恰为 (带符号的) 曲率;<br>(2) 回转指标 $i_{\boldsymbol r}:=\frac{\theta\left(L\right)-\theta\left(0\right)}{2\pi}\in\mathbb Z$;<br>(3) 若 $\boldsymbol r$ 是简单闭曲线, 则 $i_{\boldsymbol r}=\pm1$, 且 $\int_0^L \kappa\,\mathrm ds=\theta\left(L\right)-\theta\left(0\right)=2\pi i_{\boldsymbol r}$.
 
-> **定理 17.1** (芬切尔)<br>设 $\boldsymbol r:\left[0,L\right]\to E^3$ 是正则闭曲线, $k=k\left(s\right)$ 为其曲率, 则全曲率 $$\int_{\boldsymbol r}k\left(s\right)\,\mathrm ds\ge2\pi,$$ 等号成立当且仅当 $\boldsymbol r$ 退化到平面凸闭曲线.
+> **定理 17.1** (芬切尔)<br>设 $\boldsymbol r:\left[0,L\right]\to E^3$ 是正则闭曲线, $\kappa=\kappa\left(s\right)$ 为其曲率, 则全曲率 $$\int_{\boldsymbol r}\kappa\left(s\right)\,\mathrm ds\ge2\pi,$$ 等号成立当且仅当 $\boldsymbol r$ 退化到平面凸闭曲线.
 
-> **定理 18.1** (芬切尔定理的分段光滑推广)<br>设 $\boldsymbol r$ 是分段有限段光滑的空间闭曲线, $P_1,\dots,P_k$ 是 $\boldsymbol r$ 的角点, 在 $P_i=\boldsymbol r\left(s_i\right)$ 处令转向角 $\theta_i:=\angle\left(\dot{\boldsymbol r}\left(s_i^-\right),\dot{\boldsymbol r}\left(s_i^+\right)\right)$ (其中 $P_{k+1}=P_1$). 则 $$\sum_{j=1}^k\int_{P_j}^{P_{j+1}}k\,\mathrm ds+\sum_{i=1}^k\theta_i\ge2\pi.$$
+> **定理 18.1** (芬切尔定理的分段光滑推广)<br>设 $\boldsymbol r$ 是分段有限段光滑的空间闭曲线, $P_1,\dots,P_k$ 是 $\boldsymbol r$ 的角点, 在 $P_i=\boldsymbol r\left(s_i\right)$ 处令转向角 $\theta_i:=\angle\left(\dot{\boldsymbol r}\left(s_i^-\right),\dot{\boldsymbol r}\left(s_i^+\right)\right)$ (其中 $P_{k+1}=P_1$). 则 $$\sum_{j=1}^k\int_{P_j}^{P_{j+1}}\kappa\,\mathrm ds+\sum_{i=1}^k\theta_i\ge2\pi.$$
 
 > **基础知识**<br>对常向量 $\boldsymbol a$, 有 $\frac{\mathrm d}{\mathrm ds}\left\|\boldsymbol r-\boldsymbol a\right\|^{2}=2\left\langle\boldsymbol r-\boldsymbol a,\boldsymbol t\right\rangle$; 若光滑函数 $f$ 满足 $f''\ge0$ 且 $f\left(0\right)=f\left(L\right)$, 则 $f\left(s\right)\le f\left(0\right)$ 于 $\left[0,L\right]$.
 
@@ -49,41 +49,41 @@ $\blacksquare$
 
 ### 解答 2
 
-以 $k\left(s\right)$ 记 $\gamma$ 的**有向曲率** ($N$ 取右手单位法向, $\left\{\boldsymbol t,N\right\}$ 为右手系), 由**定义 3.2 (二维弗雷内方程)**, $\dot{\boldsymbol t}=kN$, $\dot N=-k\boldsymbol t$.
+以 $\kappa\left(s\right)$ 记 $\gamma$ 的**有向曲率** ($N$ 取右手单位法向, $\left\{\boldsymbol t,N\right\}$ 为右手系), 由**定义 3.2 (二维弗雷内方程)**, $\dot{\boldsymbol t}=\kappa N$, $\dot N=-\kappa\boldsymbol t$.
 
 **(1) $\gamma^{*}$ 是简单正则闭曲线.**
 
-对 $\gamma^{*}=\gamma-aN$ 求导, 利用 $\dot N=-k\boldsymbol t$:
+对 $\gamma^{*}=\gamma-aN$ 求导, 利用 $\dot N=-\kappa\boldsymbol t$:
 
 $$
-\frac{\mathrm d\gamma^{*}}{\mathrm ds}=\boldsymbol t-a\dot N=\boldsymbol t+a k\boldsymbol t=\left(1+ak\right)\boldsymbol t.
+\frac{\mathrm d\gamma^{*}}{\mathrm ds}=\boldsymbol t-a\dot N=\boldsymbol t+a\kappa\boldsymbol t=\left(1+a\kappa\right)\boldsymbol t.
 $$
 
-因 $\gamma$ 闭, 故 $\gamma^{*}\left(0\right)=\gamma\left(0\right)-aN\left(0\right)=\gamma\left(L\right)-aN\left(L\right)=\gamma^{*}\left(L\right)$, 即 $\gamma^{*}$ 是闭曲线. 由有向曲率 $k$ 在紧集 $\left[0,L\right]$ 上有界, 存在 $M>0$ 使 $\left|k\right|\le M$; 取 $a$ 充分小使 $aM<1$, 则 $1+ak\left(s\right)\ge1-aM>0$ 对一切 $s$ 成立. 于是 $\frac{\mathrm d\gamma^{*}}{\mathrm ds}=\left(1+ak\right)\boldsymbol t\ne\boldsymbol0$ 处处成立, 即 $\gamma^{*}$ 是正则曲线.
+因 $\gamma$ 闭, 故 $\gamma^{*}\left(0\right)=\gamma\left(0\right)-aN\left(0\right)=\gamma\left(L\right)-aN\left(L\right)=\gamma^{*}\left(L\right)$, 即 $\gamma^{*}$ 是闭曲线. 由有向曲率 $\kappa$ 在紧集 $\left[0,L\right]$ 上有界, 存在 $M>0$ 使 $\left|\kappa\right|\le M$; 取 $a$ 充分小使 $aM<1$, 则 $1+a\kappa\left(s\right)\ge1-aM>0$ 对一切 $s$ 成立. 于是 $\frac{\mathrm d\gamma^{*}}{\mathrm ds}=\left(1+a\kappa\right)\boldsymbol t\ne\boldsymbol0$ 处处成立, 即 $\gamma^{*}$ 是正则曲线.
 
 又 $\gamma$ 是简单闭曲线, 它围成的有界区域 $\Omega$ 中, 曲线与自身的距离在紧集上达到正的最小值; 当 $a>0$ 充分小时, $\gamma^{*}=\gamma-aN$ 是 $\gamma$ 的**小偏移**, 仍是一条互不相交的简单闭曲线. 因此, 当 $a$ 充分小时 $\gamma^{*}$ 是简单正则闭曲线. $\blacksquare$
 
 **(2) 求 $L^{*}$ 与 $A^{*}$.**
 
-由 (1), $\left|\frac{\mathrm d\gamma^{*}}{\mathrm ds}\right|=1+ak>0$ (取 $a$ 充分小). 由**定义 2.1 (弧长)**,
+由 (1), $\left|\frac{\mathrm d\gamma^{*}}{\mathrm ds}\right|=1+a\kappa>0$ (取 $a$ 充分小). 由**定义 2.1 (弧长)**,
 
 $$
 L^{*}=\int_0^L\left|\frac{\mathrm d\gamma^{*}}{\mathrm ds}\right|\,\mathrm ds
-=\int_0^L\left(1+ak\right)\,\mathrm ds
-=L+a\int_0^L k\,\mathrm ds.
+=\int_0^L\left(1+a\kappa\right)\,\mathrm ds
+=L+a\int_0^L \kappa\,\mathrm ds.
 $$
 
-由**命题 15.2 (方向角的导数与回转指标)**, 对简单闭曲线 $\gamma$ 回转指标 $i_{\gamma}=\pm1$, 故 $\int_0^L k\,\mathrm ds=2\pi i_{\gamma}$; 由 $N$ 为右手法向且 $\gamma$ 依此定向, $i_{\gamma}=1$, 故
+由**命题 15.2 (方向角的导数与回转指标)**, 对简单闭曲线 $\gamma$ 回转指标 $i_{\gamma}=\pm1$, 故 $\int_0^L \kappa\,\mathrm ds=2\pi i_{\gamma}$; 由 $N$ 为右手法向且 $\gamma$ 依此定向, $i_{\gamma}=1$, 故
 
 $$
 L^{*}=L+2\pi a.
 $$
 
-再求面积. 对平面有向闭曲线, 由格林公式 $A=\frac12\int_0^L\gamma\times\dot\gamma\,\mathrm ds$ (二维叉积). 由 $\gamma^{*}=\gamma-aN$, $\frac{\mathrm d\gamma^{*}}{\mathrm ds}=\left(1+ak\right)\boldsymbol t$, 有
+再求面积. 对平面有向闭曲线, 由格林公式 $A=\frac12\int_0^L\gamma\times\dot\gamma\,\mathrm ds$ (二维叉积). 由 $\gamma^{*}=\gamma-aN$, $\frac{\mathrm d\gamma^{*}}{\mathrm ds}=\left(1+a\kappa\right)\boldsymbol t$, 有
 
 $$
 A^{*}=\frac12\int_0^L\gamma^{*}\times\frac{\mathrm d\gamma^{*}}{\mathrm ds}\,\mathrm ds
-=\frac12\int_0^L\left(1+ak\right)\left(\gamma-aN\right)\times\boldsymbol t\,\mathrm ds.
+=\frac12\int_0^L\left(1+a\kappa\right)\left(\gamma-aN\right)\times\boldsymbol t\,\mathrm ds.
 $$
 
 因 $\boldsymbol t\times N=1$ (右手系), 故 $N\times\boldsymbol t=-\boldsymbol t\times N=-1$, 展开:
@@ -95,13 +95,13 @@ $$
 于是
 
 $$
-A^{*}=\frac12\int_0^L\left(1+ak\right)\left(\gamma\times\boldsymbol t+a\right)\,\mathrm ds.
+A^{*}=\frac12\int_0^L\left(1+a\kappa\right)\left(\gamma\times\boldsymbol t+a\right)\,\mathrm ds.
 $$
 
-注意到 $\frac{\mathrm d}{\mathrm ds}\left(\gamma\times\boldsymbol t\right)=\gamma\times\dot{\boldsymbol t}+\boldsymbol t\times\boldsymbol t=\gamma\times kN$, 而 $\gamma\times N$ 的导数为 $\frac{\mathrm d}{\mathrm ds}\left(\gamma\times N\right)=\gamma\times\dot N+\boldsymbol t\times N=\gamma\times\left(-k\boldsymbol t\right)+1$, 故
+注意到 $\frac{\mathrm d}{\mathrm ds}\left(\gamma\times\boldsymbol t\right)=\gamma\times\dot{\boldsymbol t}+\boldsymbol t\times\boldsymbol t=\gamma\times\kappa N$, 而 $\gamma\times N$ 的导数为 $\frac{\mathrm d}{\mathrm ds}\left(\gamma\times N\right)=\gamma\times\dot N+\boldsymbol t\times N=\gamma\times\left(-\kappa\boldsymbol t\right)+1$, 故
 
 $$
-\int_0^L k\left(\gamma\times\boldsymbol t\right)\,\mathrm ds
+\int_0^L \kappa\left(\gamma\times\boldsymbol t\right)\,\mathrm ds
 =\int_0^L\left(1-\frac{\mathrm d}{\mathrm ds}\left(\gamma\times N\right)\right)\mathrm ds
 =L-\left[\gamma\times N\right]_0^L=L
 $$
@@ -110,7 +110,7 @@ $$
 
 $$
 A^{*}
-=\frac12\int_0^L\gamma\times\boldsymbol t\,\mathrm ds+\frac a2\int_0^L k\left(\gamma\times\boldsymbol t\right)\mathrm ds+\frac a2\int_0^L\mathrm ds+\frac{a^{2}}{2}\int_0^L k\,\mathrm ds
+=\frac12\int_0^L\gamma\times\boldsymbol t\,\mathrm ds+\frac a2\int_0^L \kappa\left(\gamma\times\boldsymbol t\right)\mathrm ds+\frac a2\int_0^L\mathrm ds+\frac{a^{2}}{2}\int_0^L \kappa\,\mathrm ds
 $$
 
 $$

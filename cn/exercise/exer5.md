@@ -8,17 +8,17 @@
 
 > **定义 28.B (法曲率)**<br>对一般参数, 曲线在曲面上沿切方向 $\dot u^{\alpha}$ 的**法曲率** $k_n=\left.\dfrac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\dfrac{II}{I}$.
 
-> **命题 29.2 (欧拉公式)**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是 $S$ 在 $\boldsymbol r\left(u_0\right)$ 的单位正交主方向, $\lambda_1,\lambda_2$ 是对应的主曲率. 对单位切向量 $\boldsymbol v=\cos\theta\,\boldsymbol e_1+\sin\theta\,\boldsymbol e_2$, 沿 $\boldsymbol v$ 的法曲率 $k_n\left(\boldsymbol v\right)=\lambda_1\cos^2\theta+\lambda_2\sin^2\theta$.
+> **命题 29.2 (欧拉公式)**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是 $S$ 在 $\boldsymbol r\left(u_0\right)$ 的单位正交主方向, $k_1,k_2$ 是对应的主曲率. 对单位切向量 $\boldsymbol v=\cos\theta\,\boldsymbol e_1+\sin\theta\,\boldsymbol e_2$, 沿 $\boldsymbol v$ 的法曲率 $k_n\left(\boldsymbol v\right)=k_1\cos^2\theta+k_2\sin^2\theta$.
 
-> **命题 29.4 (主曲率的特征方程)**<br>$\lambda$ 是主曲率当且仅当它是方程 $\det\left(b_{\alpha\beta}-\lambda g_{\alpha\beta}\right)=0$ 的根; 对应的主方向 $\boldsymbol v_i=v_i^\beta\boldsymbol r_\beta$ 的分量满足 $\left(b_{\alpha\beta}-\lambda_i g_{\alpha\beta}\right)v_i^\beta=0$.
+> **命题 29.4 (主曲率的特征方程)**<br>$k$ 是主曲率当且仅当它是方程 $\det\left(b_{\alpha\beta}-k g_{\alpha\beta}\right)=0$ 的根; 对应的主方向 $\boldsymbol v_i=v_i^\beta\boldsymbol r_\beta$ 的分量满足 $\left(b_{\alpha\beta}-k_i g_{\alpha\beta}\right)v_i^\beta=0$.
 
 > **定义 31.1 (曲率线)**<br>设 $C\subset S$ 是一条曲线. 若 $C$ 在每点 $\boldsymbol r\left(u\right)\in C$ 的切向量都是 $S$ 在该点的一个主方向, 则称 $C$ 是 $S$ 的一条**曲率线**.
 
-> **定义 31.2 (脐点)**<br>使主曲率 $\lambda_1\left(u\right)=\lambda_2\left(u\right)$ 成立的点 $\boldsymbol r\left(u\right)$ 称为 $S$ 的**脐点**.
+> **定义 31.2 (脐点)**<br>使主曲率 $k_1\left(u\right)=k_2\left(u\right)$ 成立的点 $\boldsymbol r\left(u\right)$ 称为 $S$ 的**脐点**.
 
-> **定义 32.1 (平均曲率与总曲率)**<br>称 $H\left(u\right):=\dfrac{\lambda_1\left(u\right)+\lambda_2\left(u\right)}{2}$ 为曲面在该点的**平均曲率**, 称 $K\left(u\right):=\lambda_1\left(u\right)\lambda_2\left(u\right)$ 为曲面在该点的**总曲率 (高斯曲率)**.
+> **定义 32.1 (平均曲率与总曲率)**<br>称 $H\left(u\right):=\dfrac{k_1\left(u\right)+k_2\left(u\right)}{2}$ 为曲面在该点的**平均曲率**, 称 $K\left(u\right):=k_1\left(u\right)k_2\left(u\right)$ 为曲面在该点的**总曲率 (高斯曲率)**.
 
-> **命题 32.2 (特征方程与 $H,K$)**<br>主曲率是方程 $\lambda^2-2H\lambda+K=0$ 的根, 其中 $H=\dfrac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\dfrac{\det b}{\det g}$.
+> **命题 32.2 (特征方程与 $H,K$)**<br>主曲率是方程 $k^2-2Hk+K=0$ 的根, 其中 $H=\dfrac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\dfrac{\det b}{\det g}$.
 
 > **基础知识**<br>切向量 $\boldsymbol r_\alpha=\partial_\alpha\boldsymbol r$, 二阶导 $\boldsymbol r_{\alpha\beta}=\partial_\alpha\partial_\beta\boldsymbol r$; 对叉积有 $\left(\boldsymbol a\times\boldsymbol b\right)\cdot\boldsymbol c=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$.
 
@@ -173,13 +173,13 @@ b_{uv}=0,\quad
 b_{vv}=\frac{ac\cosh u}{\sqrt{a^{2}\sinh^{2}u+c^{2}}}.
 $$
 
-于是 $g_{uv}=0$ 且 $b_{uv}=0$, 即第一、第二基本形式的系数矩阵都是对角矩阵. 由**命题 29.4 (主曲率的特征方程)**, 主方向的分量满足 $\left(b_{\alpha\beta}-\lambda g_{\alpha\beta}\right)v^{\beta}=0$; 由于 $g_{12}=b_{12}=0$, 方程组退化为
+于是 $g_{uv}=0$ 且 $b_{uv}=0$, 即第一、第二基本形式的系数矩阵都是对角矩阵. 由**命题 29.4 (主曲率的特征方程)**, 主方向的分量满足 $\left(b_{\alpha\beta}-k g_{\alpha\beta}\right)v^{\beta}=0$; 由于 $g_{12}=b_{12}=0$, 方程组退化为
 
 $$
-\left(b_{11}-\lambda g_{11}\right)v^{1}=0,\qquad\left(b_{22}-\lambda g_{22}\right)v^{2}=0,
+\left(b_{11}-k g_{11}\right)v^{1}=0,\qquad\left(b_{22}-k g_{22}\right)v^{2}=0,
 $$
 
-故当 $\lambda=\dfrac{b_{11}}{g_{11}}$ 时主方向为 $v=\left(1,0\right)$ (沿 $\boldsymbol r_u$), 当 $\lambda=\dfrac{b_{22}}{g_{22}}$ 时主方向为 $v=\left(0,1\right)$ (沿 $\boldsymbol r_v$). 因而曲面上每点的两个主方向分别是坐标曲线 $v=\mathrm{const}$ 与 $u=\mathrm{const}$ 的切方向.
+故当 $k=\dfrac{b_{11}}{g_{11}}$ 时主方向为 $v=\left(1,0\right)$ (沿 $\boldsymbol r_u$), 当 $k=\dfrac{b_{22}}{g_{22}}$ 时主方向为 $v=\left(0,1\right)$ (沿 $\boldsymbol r_v$). 因而曲面上每点的两个主方向分别是坐标曲线 $v=\mathrm{const}$ 与 $u=\mathrm{const}$ 的切方向.
 
 由**定义 31.1 (曲率线)**, 曲率线是切向量恒为主方向的曲线, 故
 
@@ -235,19 +235,19 @@ b_{12}=\frac{a^{6}}{u^{4}v^{3}}\frac1W,\quad
 b_{22}=\frac{2a^{6}}{u^{2}v^{5}}\frac1W.
 $$
 
-由**定义 31.2 (脐点)**, 脐点即 $\lambda_1=\lambda_2$ 的点. 此时魏因加滕变换 $W=-\mathrm d\boldsymbol n$ 是纯量变换, 故系数矩阵 $\left(b_{\alpha\beta}\right)=\lambda\left(g_{\alpha\beta}\right)$, 即 $b_{\alpha\beta}=\lambda g_{\alpha\beta}$ 对 $\alpha,\beta=1,2$ 成立. 于是
+由**定义 31.2 (脐点)**, 脐点即 $k_1=k_2$ 的点. 此时魏因加滕变换 $W=-\mathrm d\boldsymbol n$ 是纯量变换, 故系数矩阵 $\left(b_{\alpha\beta}\right)=k\left(g_{\alpha\beta}\right)$, 即 $b_{\alpha\beta}=k g_{\alpha\beta}$ 对 $\alpha,\beta=1,2$ 成立. 于是
 
 $$
-\frac{b_{11}}{g_{11}}=\frac{b_{12}}{g_{12}}=\frac{b_{22}}{g_{22}}=\lambda.
+\frac{b_{11}}{g_{11}}=\frac{b_{12}}{g_{12}}=\frac{b_{22}}{g_{22}}=k.
 $$
 
-由 $\dfrac{b_{12}}{g_{12}}=\lambda$:
+由 $\dfrac{b_{12}}{g_{12}}=k$:
 
 $$
-\lambda=\frac{\frac{a^{6}}{u^{4}v^{3}}\frac1W}{\frac{a^{6}}{u^{3}v^{3}}}=\frac1{uW}.
+k=\frac{\frac{a^{6}}{u^{4}v^{3}}\frac1W}{\frac{a^{6}}{u^{3}v^{3}}}=\frac1{uW}.
 $$
 
-代入 $\dfrac{b_{11}}{g_{11}}=\lambda$:
+代入 $\dfrac{b_{11}}{g_{11}}=k$:
 
 $$
 \frac{2a^{6}}{u^{5}v^{2}W}\cdot\frac{u^{4}v^{2}}{u^{4}v^{2}+a^{6}}=\frac1{uW}
@@ -258,7 +258,7 @@ $$
 \ \Longrightarrow\ u^{2}v=a^{3}.
 $$
 
-代入 $\dfrac{b_{22}}{g_{22}}=\lambda$, 由 $u^{2}v=a^{3}$ 得 $u^{2}v^{4}=a^{3}v^{3}$, $u^{2}v^{5}=a^{3}v^{4}$, 故
+代入 $\dfrac{b_{22}}{g_{22}}=k$, 由 $u^{2}v=a^{3}$ 得 $u^{2}v^{4}=a^{3}v^{3}$, $u^{2}v^{5}=a^{3}v^{4}$, 故
 
 $$
 \frac{2a^{6}}{a^{3}v^{4}W}\cdot\frac{u^{2}v^{4}}{u^{2}v^{4}+a^{6}}=\frac1{uW}
@@ -396,31 +396,31 @@ $\blacksquare$
 
 ### 解答 5
 
-取 $S$ 在该点 $\boldsymbol r\left(u_0\right)$ 的单位正交主方向 $\boldsymbol e_1,\boldsymbol e_2$ (由**命题 29.1 (同时对角化 $g$ 与 $b$)** 存在且相互正交), 对应主曲率 $\lambda_1,\lambda_2$. 设 $\boldsymbol v,\boldsymbol w$ 是该点任意两个正交的单位切向量; 由正交性, 若 $\boldsymbol v=\cos\theta\,\boldsymbol e_1+\sin\theta\,\boldsymbol e_2$, 则 $\boldsymbol w=-\sin\theta\,\boldsymbol e_1+\cos\theta\,\boldsymbol e_2$ ($\theta$ 为 $\boldsymbol v$ 与 $\boldsymbol e_1$ 的夹角, 相差一个整体符号不影响法曲率).
+取 $S$ 在该点 $\boldsymbol r\left(u_0\right)$ 的单位正交主方向 $\boldsymbol e_1,\boldsymbol e_2$ (由**命题 29.1 (同时对角化 $g$ 与 $b$)** 存在且相互正交), 对应主曲率 $k_1,k_2$. 设 $\boldsymbol v,\boldsymbol w$ 是该点任意两个正交的单位切向量; 由正交性, 若 $\boldsymbol v=\cos\theta\,\boldsymbol e_1+\sin\theta\,\boldsymbol e_2$, 则 $\boldsymbol w=-\sin\theta\,\boldsymbol e_1+\cos\theta\,\boldsymbol e_2$ ($\theta$ 为 $\boldsymbol v$ 与 $\boldsymbol e_1$ 的夹角, 相差一个整体符号不影响法曲率).
 
 由**命题 29.2 (欧拉公式)**, 沿 $\boldsymbol v$ 的法曲率
 
 $$
-k_n\left(\boldsymbol v\right)=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta,
+k_n\left(\boldsymbol v\right)=k_1\cos^{2}\theta+k_2\sin^{2}\theta,
 $$
 
 沿 $\boldsymbol w$ 的法曲率
 
 $$
-k_n\left(\boldsymbol w\right)=\lambda_1\sin^{2}\theta+\lambda_2\cos^{2}\theta.
+k_n\left(\boldsymbol w\right)=k_1\sin^{2}\theta+k_2\cos^{2}\theta.
 $$
 
 两式相加:
 
 $$
 k_n\left(\boldsymbol v\right)+k_n\left(\boldsymbol w\right)
-=\left(\lambda_1+\lambda_2\right)\left(\cos^{2}\theta+\sin^{2}\theta\right)=\lambda_1+\lambda_2.
+=\left(k_1+k_2\right)\left(\cos^{2}\theta+\sin^{2}\theta\right)=k_1+k_2.
 $$
 
-由**定义 32.1 (平均曲率与总曲率)**, $\lambda_1+\lambda_2=2H$, 故对曲面上该点任意两个正交方向 $\boldsymbol v,\boldsymbol w$,
+由**定义 32.1 (平均曲率与总曲率)**, $k_1+k_2=2H$, 故对曲面上该点任意两个正交方向 $\boldsymbol v,\boldsymbol w$,
 
 $$
-\boxed{\ k_n\left(\boldsymbol v\right)+k_n\left(\boldsymbol w\right)=\lambda_1+\lambda_2=2H\ \text{是只依赖该点、与方向无关的常数}.\ }
+\boxed{\ k_n\left(\boldsymbol v\right)+k_n\left(\boldsymbol w\right)=k_1+k_2=2H\ \text{是只依赖该点、与方向无关的常数}.\ }
 $$
 
 $\blacksquare$
