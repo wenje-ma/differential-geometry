@@ -1,40 +1,48 @@
-# 作业 5
+# week5
 
-> **基础知识** (隐函数求导)<br>若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$, $F_z\ne0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$
+> **基础知识: 隐函数求导**<br>若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$ 且 $F_z\neq0$, 则 $z_x=-\dfrac{F_x}{F_z}$, $z_y=-\dfrac{F_y}{F_z}$.
 
-> **基础知识** (混合积)<br>$\left(\boldsymbol a\times\boldsymbol b\right)\cdot\boldsymbol c=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$.
+> **基础知识: 隐函数定理**<br>若 $F$ 光滑, $F\left(x_0,y_0,z_0\right)=0$ 且 $F_z\left(x_0,y_0,z_0\right)\neq0$, 则 $F\left(x,y,z\right)=0$ 在 $\left(x_0,y_0,z_0\right)$ 邻近确定光滑函数 $z=z\left(x,y\right)$, 满足 $z\left(x_0,y_0\right)=z_0$ 且 $F\left(x,y,z\left(x,y\right)\right)\equiv0$.
 
-> **定义 19.2** (单位法向与定向)<br>正则曲面 $S:\boldsymbol r=\boldsymbol r\left(u^1,u^2\right)$ 上每点有确定的**单位法向** $\boldsymbol n:=\frac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
+> **基础知识: 变量替换公式**<br>若 $\sigma:\widetilde D\to D$ 是微分同胚, 则 $\int_{\widetilde D}F\left(\sigma\left(\widetilde x\right)\right)\left|\det\mathrm d\sigma\left(\widetilde x\right)\right|\,\mathrm d\widetilde x=\int_{D}F\left(x\right)\,\mathrm dx$.
 
-> **定义 21.1** (第一基本形式)<br>$I:=\left\langle\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right\rangle=g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol r_\alpha,\boldsymbol r_\beta\right\rangle$; 它给出切向量长度的平方.
+> **定义 (§3.1, 曲面与单位法向)**<br>若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$, 的每个分量函数无限次可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
 
-> **推导 22.A** (面积微元)<br>面积元 $\mathrm dA=\left|\boldsymbol r_1\mathrm du^1\wedge\boldsymbol r_2\mathrm du^2\right|=\sqrt{\det\left(g_{\alpha\beta}\right)}\,\mathrm du^1\mathrm du^2=\sqrt{EG-F^2}\,\mathrm du\,\mathrm dv$.
+> **例 (§3.1, 函数图与等值面)**<br>(i) 函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$ 满足 $\boldsymbol r_x\wedge\boldsymbol r_y\neq\boldsymbol0$, 因而是曲面.<br>(ii) 等值面 $S_c=\left\{\left(x,y,z\right)\mid F\left(x,y,z\right)=c\right\}$: 当 $\nabla F\left(P\right)\neq\boldsymbol0$ ($\forall P\in S_c$) 时 $S_c$ 是曲面, $\nabla F$ 是 $S_c$ 的法向, 且 $S_c$ 在 $P_0=\left(x_0,y_0,z_0\right)$ 的切平面方程为 $F_x\left(P_0\right)\left(x-x_0\right)+F_y\left(P_0\right)\left(y-y_0\right)+F_z\left(P_0\right)\left(z-z_0\right)=0$.
 
-> **推导 23.A** (法向微分 $\mathrm d\boldsymbol n$ 是切向量场)<br>$\mathrm d\boldsymbol n=-b^{\beta}{}_\alpha\,\boldsymbol r_\beta\,\mathrm du^{\alpha}$, 即 $\partial_\alpha\boldsymbol n=-b^{\beta}{}_\alpha\boldsymbol r_\beta=-b_{\alpha\gamma}g^{\gamma\beta}\boldsymbol r_\beta$.
+> **定义 (§3.2, 第一基本形式)**<br>$\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=E\,\mathrm du^{2}+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^{2}$, 其中 $E=\left(\boldsymbol r_u,\boldsymbol r_u\right)$, $F=\left(\boldsymbol r_u,\boldsymbol r_v\right)$, $G=\left(\boldsymbol r_v,\boldsymbol r_v\right)$; 它给出切向量长度的平方.
 
-> **定义 23.B** (第二基本形式)<br>$II:=\left\langle\boldsymbol r_{\alpha\beta},\boldsymbol n\right\rangle\,\mathrm du^{\alpha}\,\mathrm du^{\beta}=b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol r_{\alpha\beta},\boldsymbol n\right\rangle$ 对称.
+> **定理 2.1 (§3.2)**<br>曲面的第一基本形式与参数选取无关.
 
-> **定义 24.1** (魏因加滕变换)<br>$W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r\left(u_0\right)}S\to T_{\boldsymbol r\left(u_0\right)}S$ 称为曲面的**魏因加滕变换**, 在基 $\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$ 下系数矩阵为 $\left(b^{\beta}{}_\alpha\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$; 其特征值为主曲率.
+> **定义 (§3.3, 第二基本形式)**<br>$\mathrm{II}=-\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol n\right)=L\,\mathrm du^{2}+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^{2}$, 其中 $L=\left(\boldsymbol r_{uu},\boldsymbol n\right)$, $M=\left(\boldsymbol r_{uv},\boldsymbol n\right)$, $N=\left(\boldsymbol r_{vv},\boldsymbol n\right)$.
 
-> **命题 24.2** (魏因加滕变换的自共轭性)<br>$W$ 在切空间上关于内积是自共轭的: 对任意切向量 $\boldsymbol v,\boldsymbol w$, $\left\langle W\boldsymbol v,\boldsymbol w\right\rangle=\left\langle\boldsymbol v,W\boldsymbol w\right\rangle$.
+> **定义 (§3.4, 法曲率)**<br>曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\dfrac{L\lambda^{2}+2M\lambda\mu+N\mu^{2}}{E\lambda^{2}+2F\lambda\mu+G\mu^{2}}=\dfrac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
 
-> **命题 29.1** (同时对角化 $g$ 与 $b$)<br>存在坐标使 $g_{\alpha\beta}=\delta_{\alpha\beta}$, $b_{\alpha\beta}=k_\alpha\delta_{\alpha\beta}$, 此时单位主方向 $\boldsymbol e_1,\boldsymbol e_2$ 相互正交, 对角线元正是主曲率.
+> **§3.4 (法向微分是切向量场)**<br>因 $\left(\boldsymbol n,\boldsymbol n\right)=1$, 对 $\left(\boldsymbol n,\boldsymbol n\right)=1$ 求微分得 $\left(\mathrm d\boldsymbol n,\boldsymbol n\right)=0$, 故 $\mathrm d\boldsymbol n$ (从而 $\boldsymbol n_u,\boldsymbol n_v$) 是曲面的切向量.
 
-> **定义 28.B** (法曲率)<br>对一般参数, 曲线在曲面上沿切方向的**法曲率** $k_n=\left.\frac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\frac{II}{I}$.
+> **定义 (§3.4, Weingarten 变换)**<br>线性变换 $\boldsymbol W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r}S\to T_{\boldsymbol r}S$, $\boldsymbol W\left(\lambda\boldsymbol r_u+\mu\boldsymbol r_v\right)=-\left(\lambda\boldsymbol n_u+\mu\boldsymbol n_v\right)$ 称为曲面的 Weingarten 变换.
 
-> **命题 29.4** (主曲率的特征方程)<br>$k$ 是主曲率当且仅当它是方程 $\det\left(b_{\alpha\beta}-k g_{\alpha\beta}\right)=0$ 的根.
+> **定义 (§3.5, 主曲率与主方向)**<br>Weingarten 变换在点 $P$ 的两个特征值称为曲面在点 $P$ 的主曲率, 对应特征方向称为主方向; 当两个主曲率不等时两主方向相互正交, 当两主曲率相等时任一切向都是主方向.
 
-> **定义 32.1** (平均曲率与总曲率)<br>$H:=\frac{k_1+k_2}{2}$ 为**平均曲率**, $K:=k_1k_2$ 为**总曲率 (高斯曲率)**.
+> **引理 5.2 (§3.5)**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
 
-> **命题 32.2** (特征方程与 $H,K$)<br>主曲率是 $k^2-2Hk+K=0$ 的根, 其中 $H=\frac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\frac{\det b}{\det g}$.
+> **公式 (§3.5, 平均曲率与 Gauss 曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\dfrac{k_1+k_2}{2}=\dfrac{LG-2MF+NE}{2\left(EG-F^{2}\right)}$, Gauss 曲率 $K=k_1k_2=\dfrac{LN-M^{2}}{EG-F^{2}}$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$.
 
-> **教材 (彭-陈, §10.1, 极小曲面方程)**<br>对函数图 $z=f\left(x,y\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\sqrt{1+p^2+q^2}$, 则曲面是极小曲面 ($H\equiv0$) 当且仅当 $$\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t=0.$$
+> **公式 (§3.5, 面积元与 Gauss 映射面积)**<br>曲面面积元 $\mathrm dA=\left(\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$; 在 Gauss 映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left(\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\dfrac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right)$.
 
-> **教材 (彭-陈, §10.1, 例 1.1)**<br>螺旋面 (helicoid) $\boldsymbol r\left(x,y\right)=\left(x,\ y,\ \arctan\frac{y}{x}\right)$ 满足极小曲面方程, 它是惟一的 (非平面) 直纹极小曲面.
+> **定义 (§3.6, 直纹面)**<br>形如 $\boldsymbol r\left(u,v\right)=\boldsymbol a\left(u\right)+v\boldsymbol b\left(u\right)$ 的曲面称为直纹面, 固定 $u$ 时 $\boldsymbol a\left(u\right)+v\boldsymbol b\left(u\right)$ 是过点 $\boldsymbol a\left(u\right)$ 沿方向 $\boldsymbol b\left(u\right)$ 的直线, 称为直母线.
 
-> **教材 (彭-陈, §10.1, 例 1.3)**<br>极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $$f\left(x,y\right)=\ln\frac{\cos y}{\cos x},$$ 相应的极小曲面称为 Scherk (谢尔克) 曲面.
+> **定义 (§10.1, 极小曲面)**<br>$\mathbb E^{3}$ 中平均曲率处处恒为零的曲面称为极小曲面.
 
-> **教材 (彭-陈, §3.5,高斯映射的面积解释)**<br>设 $\mathrm dA=\sqrt{EG-F^2}\,\mathrm du\,\mathrm dv$ 是曲面面积元.高斯映射 $g$ 下像的 (定向) 面积元 $\mathrm d\sigma=\left(\boldsymbol n_u\times\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$, 其中 $K$ 是高斯曲率; 若 $D$ 是含点 $P$ 的区域, 则 $$\lim_{D\to P}\frac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right).$$
+> **公式 (§10.1, 函数图的几何量)**<br>对函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}$, 则第一基本形式 $\mathrm I=\left(1+p^{2}\right)\mathrm dx^{2}+2pq\,\mathrm dx\,\mathrm dy+\left(1+q^{2}\right)\mathrm dy^{2}$, 单位法向 $\boldsymbol e_3=\frac1W\left(-p,-q,1\right)$, 第二基本形式 $\mathrm{II}=\frac{r\,\mathrm dx^{2}+2s\,\mathrm dx\,\mathrm dy+t\,\mathrm dy^{2}}{W}$, 平均曲率 $H=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}}$.
+
+> **定理 (§10.1, 极小曲面方程)**<br>函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$ 是极小曲面当且仅当 $\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}=0$.
+
+> **例 1.1 (§10.1, 螺旋面)**<br>函数 $f\left(x,y\right)=\arctan\frac yx$ 满足极小曲面方程, 相应的极小曲面 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 称为螺旋面(helicoid), 它是惟一的直纹极小曲面.
+
+> **例 1.3 (§10.1, Scherk 曲面)**<br>极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $f\left(x,y\right)=\ln\frac{\cos x}{\cos y}$, 相应的极小曲面称为 Scherk(谢尔克) 曲面.
+
+---
 
 ## 1. 函数图的几何
 
@@ -42,89 +50,60 @@
 
 ### 解答 1
 
-取参数化 $\boldsymbol r\left(x,y\right)=\left(x,\ y,\ f\left(x,y\right)\right)$, 记 $p:=f_x$, $q:=f_y$, $r:=f_{xx}$, $s:=f_{xy}$, $t:=f_{yy}$. 坐标切向量
+取参数化 $\boldsymbol r\left(x,y\right)=\left(x,\ y,\ f\left(x,y\right)\right)$, 记 $p:=f_x$, $q:=f_y$, $r:=f_{xx}$, $s:=f_{xy}$, $t:=f_{yy}$. 则 $\boldsymbol r_x=\left(1,0,p\right)$, $\boldsymbol r_y=\left(0,1,q\right)$, 于是由**定义 (§3.2, 第一基本形式)**,
 
 $$
-\boldsymbol r_x=\left(1,\ 0,\ p\right),\qquad \boldsymbol r_y=\left(0,\ 1,\ q\right).
+E=\left(\boldsymbol r_x,\boldsymbol r_x\right)=1+p^{2},\quad
+F=\left(\boldsymbol r_x,\boldsymbol r_y\right)=pq,\quad
+G=\left(\boldsymbol r_y,\boldsymbol r_y\right)=1+q^{2}.
 $$
 
-由**定义 21.1 (第一基本形式)**,
+因此
 
 $$
-g_{11}=\left\langle\boldsymbol r_x,\boldsymbol r_x\right\rangle=1+p^{2},\quad
-g_{12}=\left\langle\boldsymbol r_x,\boldsymbol r_y\right\rangle=pq,\quad
-g_{22}=1+q^{2},
+\mathrm I=\left(1+p^{2}\right)\mathrm dx^{2}+2pq\,\mathrm dx\,\mathrm dy+\left(1+q^{2}\right)\mathrm dy^{2}.
 $$
 
-故
+又 $\boldsymbol r_x\times\boldsymbol r_y=\left(-p,-q,1\right)$, 故 $\left|\boldsymbol r_x\times\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}=:W$, 由**定义 (§3.1, 曲面与单位法向)** 得 $\boldsymbol n=\left(-p,-q,1\right)/W$, 这与**公式 (§10.1, 函数图的几何量)** 中的 $\boldsymbol e_3$ 一致. 二阶导 $\boldsymbol r_{xx}=\left(0,0,r\right)$, $\boldsymbol r_{xy}=\left(0,0,s\right)$, $\boldsymbol r_{yy}=\left(0,0,t\right)$, 由**定义 (§3.3, 第二基本形式)**,
 
 $$
-\boxed{\ I=\left(1+p^{2}\right)\mathrm dx^{2}+2pq\,\mathrm dx\,\mathrm dy+\left(1+q^{2}\right)\mathrm dy^{2}.\ }
+L=\left(\boldsymbol r_{xx},\boldsymbol n\right)=\frac rW,\quad
+M=\left(\boldsymbol r_{xy},\boldsymbol n\right)=\frac sW,\quad
+N=\left(\boldsymbol r_{yy},\boldsymbol n\right)=\frac tW.
 $$
 
-叉积
+因此
 
 $$
-\boldsymbol r_x\times\boldsymbol r_y=\left(-p,\ -q,\ 1\right),\qquad
-\left|\boldsymbol r_x\times\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}=:W,
+\mathrm{II}=\frac{r\,\mathrm dx^{2}+2s\,\mathrm dx\,\mathrm dy+t\,\mathrm dy^{2}}{\sqrt{1+p^{2}+q^{2}}}.
 $$
 
-由**定义 19.2 (单位法向与定向)** 得 $\boldsymbol n=\left(-p,-q,1\right)/W$. 二阶导
+计算行列式: $EG-F^{2}=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=W^{2}$, $LN-M^{2}=\left(rt-s^{2}\right)/W^{2}$. 由**公式 (§3.5, 平均曲率与 Gauss 曲率)** 得 Gauss 曲率
 
 $$
-\boldsymbol r_{xx}=\left(0,0,r\right),\quad
-\boldsymbol r_{xy}=\left(0,0,s\right),\quad
-\boldsymbol r_{yy}=\left(0,0,t\right).
+K=\frac{LN-M^{2}}{EG-F^{2}}
+=\frac{\left(rt-s^{2}\right)/W^{2}}{W^{2}}
+=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
 
-由**定义 23.B (第二基本形式)**,
+又由同一公式, 平均曲率
 
 $$
-b_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle=\frac rW,\quad
-b_{12}=\frac sW,\quad
-b_{22}=\frac tW,
+H=\frac{LG-2MF+NE}{2\left(EG-F^{2}\right)}
+=\frac{\frac rW\left(1+q^{2}\right)-2\frac sW\,pq+\frac tW\left(1+p^{2}\right)}{2W^{2}}
+=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}},
 $$
 
-故
+即
 
 $$
-\boxed{\ II=\frac{r\,\mathrm dx^{2}+2s\,\mathrm dx\,\mathrm dy+t\,\mathrm dy^{2}}{\sqrt{1+p^{2}+q^{2}}}.\ }
+H=\frac{\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}}{2\left(1+f_x^{2}+f_y^{2}\right)^{3/2}},\qquad
+K=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
 
-第一、第二基本形式系数矩阵为
+$H,K$ 的表达式分别与**公式 (§10.1, 函数图的几何量)** 中给出的 $H$ 以及由 $K=\frac{LN-M^{2}}{EG-F^{2}}$ 得到的值一致. $\blacksquare$
 
-$$
-G=\begin{pmatrix}1+p^{2}&pq\\pq&1+q^{2}\end{pmatrix},\qquad
-B=\frac1W\begin{pmatrix}r&s\\s&t\end{pmatrix}.
-$$
-
-计算行列式: $\det G=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=W^{2}$, $\det B=\left(rt-s^{2}\right)/W^{2}$. 由**命题 32.2 (特征方程与 $H,K$)** 得高斯曲率
-
-$$
-K=\frac{\det B}{\det G}=\frac{rt-s^{2}}{W^{4}}
-=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_{x}^{2}+f_{y}^{2}\right)^{2}}.
-$$
-
-由 $G^{-1}=\frac1{W^{2}}\begin{pmatrix}1+q^{2}&-pq\\-pq&1+p^{2}\end{pmatrix}$, 得
-
-$$
-G^{-1}B=\frac1{W^{3}}\begin{pmatrix}1+q^{2}&-pq\\-pq&1+p^{2}\end{pmatrix}\begin{pmatrix}r&s\\s&t\end{pmatrix},
-$$
-
-其迹
-
-$$
-\operatorname{tr}\left(G^{-1}B\right)=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{W^{3}}.
-$$
-
-由**命题 32.2**, $H=\frac12\operatorname{tr}\left(G^{-1}B\right)$, 故
-
-$$
-\boxed{\ H=\frac{\left(1+f_{y}^{2}\right)f_{xx}-2f_{x}f_{y}f_{xy}+\left(1+f_{x}^{2}\right)f_{yy}}{2\left(1+f_{x}^{2}+f_{y}^{2}\right)^{3/2}},\qquad
-K=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_{x}^{2}+f_{y}^{2}\right)^{2}}.\ }
-$$
-
-$\blacksquare$
+---
 
 ## 2. 隐函数型曲面的几何
 
@@ -136,41 +115,43 @@ b) 试确定隐函数型曲面 $S:=\left\{\left(x,y,z\right)\mid F\left(x,y,z\ri
 
 **(a) (教材第 18 题: $S$ 由 $x^{2}+y^{2}-f\left(z\right)=0$ 给定, $f\left(0\right)=0$, $f'\left(0\right)\ne0$, 证明 $S$ 在 $\left(0,0,0\right)$ 的法曲率为常数.)**
 
-在 $\left(0,0,0\right)$ 处, 函数 $\Phi:=x^{2}+y^{2}-f\left(z\right)$ 的梯度
+记 $\Phi\left(x,y,z\right):=x^{2}+y^{2}-f\left(z\right)$, 则 $S=\left\{\Phi=0\right\}$ 是 $\Phi$ 的等值面. 由**例 (§3.1, 函数图与等值面)**, $\nabla\Phi$ 是 $S$ 的法向; 在 $\left(0,0,0\right)$ 处
 
 $$
-\nabla\Phi\left(0,0,0\right)=\left(2x,\ 2y,\ -f'\left(z\right)\right)\big|_{\left(0,0,0\right)}=\left(0,\ 0,\ -f'\left(0\right)\right)\ne\boldsymbol0
+\nabla\Phi\left(0,0,0\right)=\left(2x,2y,-f'\left(z\right)\right)\big|_{\left(0,0,0\right)}=\left(0,0,-f'\left(0\right)\right)\neq\boldsymbol0
 $$
 
-(因 $f'\left(0\right)\ne0$), 故 $\left(0,0,0\right)$ 是 $S$ 的正则点, 且 $\left(0,0,0\right)$ 处的切平面是水平面 $z=0$. 由 $f'\left(0\right)\ne0$ 及隐函数定理, 在 $\left(0,0,0\right)$ 附近 $z$ 是 $\rho^{2}:=x^{2}+y^{2}$ 的光滑函数: $S$ 局部是图
+(因 $f'\left(0\right)\neq0$), 故 $\left(0,0,0\right)$ 是 $S$ 的正则点, 且由**例 (§3.1, 函数图与等值面)** 的切平面方程, $\left(0,0,0\right)$ 处 $S$ 的切平面是 $z=0$. 又 $\Phi_z\left(0,0,0\right)=-f'\left(0\right)\neq0$, 由**基础知识: 隐函数定理**, 在 $\left(0,0,0\right)$ 邻近 $S$ 可表示为函数图 $z=z\left(x,y\right)$; 因 $\Phi$ 只通过 $\rho^{2}:=x^{2}+y^{2}$ 依赖 $x,y$, 该函数图具形式
 
 $$
-z=\psi\left(x^{2}+y^{2}\right),
+z=\psi\left(\rho^{2}\right),
 $$
 
-其中 $\psi$ 满足 $f\left(\psi\left(\rho^{2}\right)\right)=\rho^{2}$, 且 $\psi\left(0\right)=0$ (因 $f\left(0\right)=0$). 对 $\rho^{2}=f\left(z\right)$ 关于 $\rho^{2}$ 求导得 $1=f'\left(z\right)\psi'\left(\rho^{2}\right)$, 在 $\rho=0$ (即 $z=0$) 处
+其中 $\psi$ 满足 $f\left(\psi\left(\rho^{2}\right)\right)=\rho^{2}$, 且 $\psi\left(0\right)=0$ (因 $f\left(0\right)=0$). 对 $f\left(\psi\left(\rho^{2}\right)\right)=\rho^{2}$ 关于 $\rho^{2}$ 求导得 $f'\left(z\right)\psi'\left(\rho^{2}\right)=1$, 在 $\rho=0$ (即 $z=0$) 处
 
 $$
 \psi'\left(0\right)=\frac1{f'\left(0\right)}.
 $$
 
-对图 $z=\psi\left(x^{2}+y^{2}\right)$ 应用**解答 1** 中 $z=f\left(x,y\right)$ 的公式, 记 $\Psi:=\psi\left(x^{2}+y^{2}\right)$, 则 $\Psi_x=\psi'\cdot2x$, $\Psi_y=\psi'\cdot2y$, 在 $\left(0,0\right)$ 处 $\Psi_x\left(0,0\right)=\Psi_y\left(0,0\right)=0$; 且
+下面对图 $z=u\left(x,y\right):=\psi\left(x^{2}+y^{2}\right)$ 应用**公式 (§10.1, 函数图的几何量)**. 记 $\Psi:=\psi\left(x^{2}+y^{2}\right)$, 则 $\Psi_x=\psi'\cdot2x$, $\Psi_y=\psi'\cdot2y$, 故在 $\left(0,0\right)$ 处 $p=\Psi_x\left(0,0\right)=0$, $q=\Psi_y\left(0,0\right)=0$, 从而 $W=\sqrt{1+0+0}=1$. 又
 
 $$
-\Psi_{xx}=2\psi'\left(x^{2}+y^{2}\right)+4x^{2}\psi''\left(x^{2}+y^{2}\right),
+\Psi_{xx}=2\psi'+4x^{2}\psi'',\qquad
+\Psi_{xy}=4xy\psi'',\qquad
+\Psi_{yy}=2\psi'+4y^{2}\psi'',
 $$
 
-故 $\Psi_{xx}\left(0,0\right)=\Psi_{yy}\left(0,0\right)=2\psi'\left(0\right)$, $\Psi_{xy}\left(0,0\right)=0$. 代入**解答 1** 的第一、第二基本形式系数, 得在 $\left(0,0,0\right)$ 处
+故在 $\left(0,0\right)$ 处 $r=\Psi_{xx}\left(0,0\right)=2\psi'\left(0\right)$, $s=\Psi_{xy}\left(0,0\right)=0$, $t=\Psi_{yy}\left(0,0\right)=2\psi'\left(0\right)$. 代入**公式 (§10.1, 函数图的几何量)**, 在 $\left(0,0,0\right)$ 处
 
 $$
-G=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
-B=\begin{pmatrix}2\psi'\left(0\right)&0\\0&2\psi'\left(0\right)\end{pmatrix}.
+\mathrm I=\mathrm dx^{2}+\mathrm dy^{2},\qquad
+\mathrm{II}=2\psi'\left(0\right)\left(\mathrm dx^{2}+\mathrm dy^{2}\right).
 $$
 
-由**定义 28.B (法曲率)**, 对任意单位切方向 $\left(\mathrm dx,\mathrm dy\right)$,
+于是由**定义 (§3.4, 法曲率)**, 对任意非零切方向 $\left(\mathrm dx,\mathrm dy\right)$,
 
 $$
-k_n=\frac{II}{I}
+k_n=\frac{\mathrm{II}}{\mathrm I}
 =\frac{2\psi'\left(0\right)\left(\mathrm dx^{2}+\mathrm dy^{2}\right)}{\mathrm dx^{2}+\mathrm dy^{2}}
 =2\psi'\left(0\right)=\frac2{f'\left(0\right)}.
 $$
@@ -178,26 +159,26 @@ $$
 右端与切方向 $\left(\mathrm dx,\mathrm dy\right)$ 无关, 故
 
 $$
-\boxed{\ S\ \text{在}\ \left(0,0,0\right)\ \text{的法曲率是常数}\ k_n=\frac{2}{f'\left(0\right)}.\ }
+S\ \text{在}\ \left(0,0,0\right)\ \text{的法曲率是常数}\ k_n=\frac{2}{f'\left(0\right)}.
 $$
 
 $\blacksquare$
 
 **(b) (隐函数型曲面的 $I,II,H,K$.)**
 
-在 $F_z\ne0$ 的邻域, 由隐函数定理 $S$ 局部是函数图 $z=z\left(x,y\right)$, $F\left(x,y,z\left(x,y\right)\right)\equiv0$. 由**基础知识 (隐函数求导)**,
+在 $F_z\neq0$ 的邻域, 由**基础知识: 隐函数定理**, $S$ 局部是函数图 $z=z\left(x,y\right)$, 满足 $F\left(x,y,z\left(x,y\right)\right)\equiv0$. 由**基础知识: 隐函数求导**,
 
 $$
 z_x=-\frac{F_x}{F_z},\qquad z_y=-\frac{F_y}{F_z}.
 $$
 
-对 $S$ 取图形式参数化 $\boldsymbol r\left(x,y\right)=\left(x,\ y,\ z\left(x,y\right)\right)$, 由**解答 1** 中 $z=f\left(x,y\right)$ 的公式, 第一基本形式
+对 $S$ 取图形式参数化 $\boldsymbol r\left(x,y\right)=\left(x,y,z\left(x,y\right)\right)$, 由**公式 (§10.1, 函数图的几何量)**, 第一基本形式
 
 $$
-I=\left(1+z_x^{2}\right)\mathrm dx^{2}+2z_xz_y\,\mathrm dx\,\mathrm dy+\left(1+z_y^{2}\right)\mathrm dy^{2}.
+\mathrm I=\left(1+z_x^{2}\right)\mathrm dx^{2}+2z_xz_y\,\mathrm dx\,\mathrm dy+\left(1+z_y^{2}\right)\mathrm dy^{2}.
 $$
 
-代入 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$:
+代入 $z_x=-F_x/F_z$, $z_y=-F_y/F_z$, 得
 
 $$
 1+z_x^{2}=\frac{F_x^{2}+F_z^{2}}{F_z^{2}},\qquad
@@ -208,14 +189,16 @@ $$
 故
 
 $$
-\boxed{\ I=\frac{\left(F_x^{2}+F_z^{2}\right)\mathrm dx^{2}+2F_xF_y\,\mathrm dx\,\mathrm dy+\left(F_y^{2}+F_z^{2}\right)\mathrm dy^{2}}{F_z^{2}}.\ }
+\mathrm I=\frac{\left(F_x^{2}+F_z^{2}\right)\mathrm dx^{2}+2F_xF_y\,\mathrm dx\,\mathrm dy+\left(F_y^{2}+F_z^{2}\right)\mathrm dy^{2}}{F_z^{2}}.
 $$
 
-记 $W=\sqrt{1+z_x^{2}+z_y^{2}}=\frac{\left|\nabla F\right|}{\left|F_z\right|}$. 对 $z_x=-\frac{F_x}{F_z}$ 再求导, 利用 $\frac{\partial}{\partial x}F_x=F_{xx}+F_{xz}z_x$ 等链式法则 (设 $F$ 二阶连续可微), 得
+记 $W=\sqrt{1+z_x^{2}+z_y^{2}}$. 对 $z_x=-F_x/F_z$ 关于 $x$ 再求导, 用链式法则 $\left(F_x\right)_x=F_{xx}+F_{xz}z_x$, $\left(F_z\right)_x=F_{zx}+F_{zz}z_x$ (设 $F$ 二阶连续可微), 得
 
 $$
 z_{xx}=\frac{-F_{xx}F_z^{2}+2F_xF_{xz}F_z-F_x^{2}F_{zz}}{F_z^{3}},
 $$
+
+同理
 
 $$
 z_{xy}=\frac{-F_{xy}F_z^{2}+F_xF_{yz}F_z+F_yF_{xz}F_z-F_xF_yF_{zz}}{F_z^{3}},
@@ -225,28 +208,34 @@ $$
 z_{yy}=\frac{-F_{yy}F_z^{2}+2F_yF_{yz}F_z-F_y^{2}F_{zz}}{F_z^{3}}.
 $$
 
-由**解答 1** 的图公式, 第二基本形式
+由**公式 (§10.1, 函数图的几何量)**, 第二基本形式
 
 $$
-II=\frac{z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}}{W}
-=\frac{\left|F_z\right|}{\left|\nabla F\right|}\left(z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}\right),
+\mathrm{II}=\frac{z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}}{W},
 $$
 
 即
 
 $$
-\boxed{\ II=\frac{z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}}{\sqrt{1+z_x^{2}+z_y^{2}}},
-\qquad z_x,z_y,z_{xx},z_{xy},z_{yy}\ \text{如上代入}.\ }
+\mathrm{II}=\frac{z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}}{\sqrt{1+z_x^{2}+z_y^{2}}},
+\qquad z_x,z_y,z_{xx},z_{xy},z_{yy}\ \text{如上代入}.
 $$
 
-最后, 由**解答 1** 的图公式 (把 $f$ 换成 $z\left(x,y\right)$),
+最后, 由**公式 (§3.5, 平均曲率与 Gauss 曲率)** 对函数图 $z=z\left(x,y\right)$ 应用 (此时 $E=1+z_x^{2}$, $F=z_xz_y$, $G=1+z_y^{2}$, $L=z_{xx}/W$, $M=z_{xy}/W$, $N=z_{yy}/W$), 得
 
 $$
-K=\frac{z_{xx}z_{yy}-z_{xy}^{2}}{\left(1+z_x^{2}+z_y^{2}\right)^{2}},\qquad
-H=\frac{\left(1+z_y^{2}\right)z_{xx}-2z_xz_yz_{xy}+\left(1+z_x^{2}\right)z_{yy}}{2\left(1+z_x^{2}+z_y^{2}\right)^{3/2}},
+K=\frac{LN-M^{2}}{EG-F^{2}}
+=\frac{z_{xx}z_{yy}-z_{xy}^{2}}{\left(1+z_x^{2}+z_y^{2}\right)^{2}},
 $$
 
-再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的高斯曲率与平均曲率. $\blacksquare$
+$$
+H=\frac{LG-2MF+NE}{2\left(EG-F^{2}\right)}
+=\frac{\left(1+z_y^{2}\right)z_{xx}-2z_xz_yz_{xy}+\left(1+z_x^{2}\right)z_{yy}}{2\left(1+z_x^{2}+z_y^{2}\right)^{3/2}},
+$$
+
+再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的 Gauss 曲率与平均曲率. $\blacksquare$
+
+---
 
 ## 3. 平行曲面的几何
 
@@ -254,49 +243,58 @@ $$
 
 ### 解答 3
 
-**(教材第 27 题: 设 $S:\boldsymbol r=\boldsymbol r\left(u,v\right)$ 上没有抛物点, $\boldsymbol n$ 是 $S$ 的法向量, 曲面 $S_{\lambda}:\boldsymbol r_{\lambda}\left(u,v\right)=\boldsymbol r\left(u,v\right)+\lambda\boldsymbol n\left(u,v\right)$ (常数 $\lambda$ 充分小) 称为 $S$ 的平行曲面. (1) 证明 $S$ 与 $S_{\lambda}$ 在对应点的切平面平行; (2) 选取 $S_{\lambda}$ 的单位法向量 $\boldsymbol n_{\lambda}$, 使其高斯曲率与平均曲率分别为 $K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}$, $H_{\lambda}=\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}$.)**
+**(教材第 27 题: 设曲面 $S:\boldsymbol r=\boldsymbol r\left(u,v\right)$ 上没有抛物点, $\boldsymbol n$ 是 $S$ 的法向量; 曲面 $S_{\lambda}:\boldsymbol r_{\lambda}\left(u,v\right)=\boldsymbol r\left(u,v\right)+\lambda\boldsymbol n\left(u,v\right)$ (常数 $\lambda$ 充分小) 称为 $S$ 的平行曲面. (1) 证明 $S$ 与 $S_{\lambda}$ 在对应点的切平面平行; (2) 可以选取 $S_{\lambda}$ 的单位法向量 $\boldsymbol n_{\lambda}$, 使得 $S_{\lambda}$ 的 Gauss 曲率与平均曲率分别为 $K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}$, $H_{\lambda}=\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}$.)**
 
-以 $k_1,k_2$ 记 $S$ 的主曲率, $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$.
+以 $k_1,k_2$ 记 $S$ 的主曲率, 则 $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$.
 
 **(1) 切平面平行.**
 
-由**推导 23.A (法向微分 $\mathrm d\boldsymbol n$ 是切向量场)**, $\partial_\alpha\boldsymbol n=-b^{\beta}{}_\alpha\boldsymbol r_\beta$, 故对 $S_{\lambda}$ 的坐标切向量,
+由**§3.4 (法向微分是切向量场)**, $\boldsymbol n_u,\boldsymbol n_v$ 是切向量, 即 $\boldsymbol n_\alpha\in T_{\boldsymbol r}S=\operatorname{span}\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$; 于是 $S_{\lambda}$ 的坐标切向量
 
 $$
 \partial_\alpha\boldsymbol r_{\lambda}=\partial_\alpha\boldsymbol r+\lambda\,\partial_\alpha\boldsymbol n
-=\left(\delta^{\beta}{}_\alpha-\lambda\,b^{\beta}{}_\alpha\right)\boldsymbol r_\beta
-\in T_{\boldsymbol r}S=\operatorname{span}\left\{\boldsymbol r_1,\boldsymbol r_2\right\}.
+\in T_{\boldsymbol r}S,\qquad \alpha=1,2.
 $$
 
-于是 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 张成的切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 含于 $T_{\boldsymbol r}S$; 两者维数相同 (都二维), 故
+故切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}=\operatorname{span}\left\{\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}\right\}$ 含于 $T_{\boldsymbol r}S$. 由**引理 5.2 (§3.5)**, 在 $P$ 取主方向坐标 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则由**定义 (§3.4, Weingarten 变换)** 与**定义 (§3.5, 主曲率与主方向)**, $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$, 故 $\boldsymbol r_{\lambda,\alpha}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$; 因 $k_\alpha$ 有限且 $\lambda$ 充分小, $1-\lambda k_\alpha\neq0$ ($\alpha=1,2$), 故 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 线性无关, $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 与 $T_{\boldsymbol r}S$ 同维数(二维). 于是
 
 $$
-\boxed{\ T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,\ \text{即对应点的切平面平行}.\ }
+T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,\ \text{即对应点的切平面平行}.
 $$
 
-由 $\boldsymbol r_{\lambda,\alpha}\in T_{\boldsymbol r}S$ 且 $\boldsymbol r_{\lambda,1}\times\boldsymbol r_{\lambda,2}\parallel\boldsymbol r_1\times\boldsymbol r_2$, 可取 $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$.
+因 $\boldsymbol r_{\lambda,\alpha}\in T_{\boldsymbol r}S$ 且 $\boldsymbol r_{\lambda,1}\wedge\boldsymbol r_{\lambda,2}\parallel\boldsymbol r_1\wedge\boldsymbol r_2$, 可取 $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$.
 
-**(2)高斯曲率与平均曲率.**
+**(2) Gauss 曲率与平均曲率.**
 
-取 $S$ 的主方向为坐标方向 (由**命题 29.1 (同时对角化 $g$ 与 $b$)** 存在), 则 $G=\mathrm{diag}\left(g_{11},g_{22}\right)$, $B=\mathrm{diag}\left(k_1g_{11},k_2g_{22}\right)$, $G^{-1}B=\mathrm{diag}\left(k_1,k_2\right)$. 由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\left(\delta^{\beta}{}_\alpha-\lambda b^{\beta}{}_\alpha\right)\boldsymbol r_\beta$ 及 $b^{\beta}{}_\alpha$ 在此坐标下为对角矩阵, 得
-
-$$
-G_{\lambda}=\mathrm{diag}\left(g_{11}\left(1-\lambda k_1\right)^{2},\ g_{22}\left(1-\lambda k_2\right)^{2}\right).
-$$
-
-又由**推导 23.A**, $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$, 其二阶导与 $\boldsymbol n$ 的内积给出第二基本形式系数: 由 $\partial_\alpha\boldsymbol r_{\lambda}=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$ (主方向坐标下无交叉项), 对 $\boldsymbol r_{\lambda,\alpha\beta}$ 与 $\boldsymbol n$ 作内积得
+由**引理 5.2 (§3.5)**, 取 $S$ 的坐标切向量为点 $P$ 的单位正交主方向 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则 $E=\left(\boldsymbol r_1,\boldsymbol r_1\right)=1$, $F=0$, $G=1$, 且第二基本形式系数 $M=0$. 因主方向对应 Weingarten 变换的特征方向, 由**定义 (§3.4, Weingarten 变换)** 与**定义 (§3.5, 主曲率与主方向)**, $\boldsymbol W\left(\boldsymbol r_\alpha\right)=-\boldsymbol n_\alpha=k_\alpha\boldsymbol r_\alpha$, 即 $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$. 于是由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$ (无交叉项), 得
 
 $$
-B_{\lambda}=\mathrm{diag}\left(k_1g_{11}\left(1-\lambda k_1\right),\ k_2g_{22}\left(1-\lambda k_2\right)\right).
+\mathrm I_{\lambda}=\left(1-\lambda k_1\right)^{2}\mathrm du^{2}+\left(1-\lambda k_2\right)^{2}\mathrm dv^{2}.
 $$
 
-于是 $S_{\lambda}$ 的主曲率是 $G_{\lambda}^{-1}B_{\lambda}$ 的特征值
+又取 $\boldsymbol n_{\lambda}=\boldsymbol n$, 由**定义 (§3.3, 第二基本形式)** 计算 $S_{\lambda}$ 的第二基本形式系数: 因 $\left(\boldsymbol n_\alpha,\boldsymbol n\right)=0$, 求导得 $\left(\boldsymbol n_{\alpha\alpha},\boldsymbol n\right)=-\left(\boldsymbol n_\alpha,\boldsymbol n_\alpha\right)$, 而 $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$ 且 $E=G=1$, 故 $\left(\boldsymbol n_\alpha,\boldsymbol n_\alpha\right)=k_\alpha^{2}$, 于是
+
+$$
+L_{\lambda}=\left(\boldsymbol r_{\lambda,11},\boldsymbol n\right)
+=\left(\boldsymbol r_{11}+\lambda\boldsymbol n_{11},\boldsymbol n\right)
+=L-\lambda k_1^{2}
+=k_1-\lambda k_1^{2}
+=k_1\left(1-\lambda k_1\right),
+$$
+
+同理 $N_{\lambda}=k_2\left(1-\lambda k_2\right)$, 且 $M_{\lambda}=\left(\boldsymbol r_{\lambda,12},\boldsymbol n\right)=M-\lambda\left(\boldsymbol n_1,\boldsymbol n_2\right)=0$ (因主方向正交, $\boldsymbol n_1,\boldsymbol n_2$ 也正交). 因此
+
+$$
+\mathrm{II}_{\lambda}=k_1\left(1-\lambda k_1\right)\mathrm du^{2}+k_2\left(1-\lambda k_2\right)\mathrm dv^{2}.
+$$
+
+由**定义 (§3.5, 主曲率与主方向)**, $S_{\lambda}$ 的主曲率是矩阵 $\mathrm{II}_{\lambda}\mathrm I_{\lambda}^{-1}$ 的特征值, 即
 
 $$
 k_\alpha^{\lambda}=\frac{k_\alpha\left(1-\lambda k_\alpha\right)}{\left(1-\lambda k_\alpha\right)^{2}}=\frac{k_\alpha}{1-\lambda k_\alpha}\qquad\left(\alpha=1,2\right).
 $$
 
-由**定义 32.1 (平均曲率与总曲率)**, $S_{\lambda}$ 的高斯曲率
+由**公式 (§3.5, 平均曲率与 Gauss 曲率)**, $S_{\lambda}$ 的 Gauss 曲率
 
 $$
 K_{\lambda}=k_1^{\lambda}k_2^{\lambda}
@@ -307,32 +305,29 @@ $$
 由 $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$ 得
 
 $$
-\boxed{\ K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}.\ }
+K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}.
 $$
 
-平均曲率
+又平均曲率
 
 $$
 H_{\lambda}=\frac{k_1^{\lambda}+k_2^{\lambda}}2
 =\frac12\left(\frac{k_1}{1-\lambda k_1}+\frac{k_2}{1-\lambda k_2}\right)
 =\frac{k_1+k_2-2\lambda k_1k_2}{2\left(1-\lambda\left(k_1+k_2\right)+\lambda^{2}k_1k_2\right)}
-$$
-
-$$
 =\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K},
 $$
 
 故
 
 $$
-\boxed{\ H_{\lambda}=\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}.\ }
+H_{\lambda}=\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}.
 $$
 
 $\blacksquare$
 
-## 4. 极小曲面
+---
 
-平均曲率恒为 0 的曲面片称为极小曲面.
+## 4. 极小曲面
 
 彭-陈, 70 页, 第 35、36 题.
 
@@ -340,13 +335,13 @@ $\blacksquare$
 
 **(教材第 35 题: 若曲面 $z=f\left(x\right)+g\left(y\right)$ 是极小曲面, 证明除相差一个常数外它可以写成 $\frac1a\ln\frac{\cos ay}{\cos ax}$, 这个曲面称为 Scherk 曲面.)**
 
-设 $z=h\left(x,y\right)=f\left(x\right)+g\left(y\right)$. 由**解答 1** 的图公式, 对 $h$ 有 $h_x=f'$, $h_y=g'$, $h_{xx}=f''$, $h_{xy}=0$, $h_{yy}=g''$, 故平均曲率
+设 $h\left(x,y\right)=f\left(x\right)+g\left(y\right)$, 则 $S$ 是函数 $h$ 的图. 记 $p=h_x=f'$, $q=h_y=g'$, $r=h_{xx}=f''$, $s=h_{xy}=0$, $t=h_{yy}=g''$. 由**定理 (§10.1, 极小曲面方程)**, $S$ 是极小曲面当且仅当
 
 $$
-H=\frac{\left(1+\left(g'\right)^{2}\right)f''+\left(1+\left(f'\right)^{2}\right)g''}{2\left(1+\left(f'\right)^{2}+\left(g'\right)^{2}\right)^{3/2}}.
+\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t=0,
 $$
 
-$z=h$ 是极小曲面当且仅当 $H\equiv0$, 即
+代入得
 
 $$
 \left(1+\left(g'\right)^{2}\right)f''+\left(1+\left(f'\right)^{2}\right)g''=0.
@@ -365,7 +360,7 @@ $$
 \frac{g''}{1+\left(g'\right)^{2}}=-c.
 $$
 
-由 $\frac{\mathrm d}{\mathrm dx}\arctan\left(f'\right)=\frac{f''}{1+\left(f'\right)^{2}}$, 第一式给出 $\arctan\left(f'\right)=cx+\alpha$, 即 $f'=\tan\left(cx+\alpha\right)$, 积分得 $f\left(x\right)=-\frac1c\ln\left|\cos\left(cx+\alpha\right)\right|+C_1$; 同理 $g'=\tan\left(\beta-cy\right)$, 积分得 $g\left(y\right)=\frac1c\ln\left|\cos\left(cy-\beta\right)\right|+C_2$. 因此
+由 $\frac{\mathrm d}{\mathrm dx}\arctan\left(f'\right)=\frac{f''}{1+\left(f'\right)^{2}}$, 第一式给出 $\arctan\left(f'\right)=cx+\alpha$, 即 $f'=\tan\left(cx+\alpha\right)$, 积分得 $f\left(x\right)=-\frac1c\ln\left|\cos\left(cx+\alpha\right)\right|+C_1$; 同理 $\frac{\mathrm d}{\mathrm dy}\arctan\left(g'\right)=\frac{g''}{1+\left(g'\right)^{2}}=-c$ 给出 $g'=\tan\left(\beta-cy\right)$, 积分得 $g\left(y\right)=\frac1c\ln\left|\cos\left(cy-\beta\right)\right|+C_2$. 因此
 
 $$
 z=f\left(x\right)+g\left(y\right)
@@ -375,84 +370,59 @@ $$
 其中 $C=C_1+C_2$. 对 $x,y$ 作平移 $\bar x=x+\frac\alpha c$, $\bar y=y-\frac\beta c$ 吸收常数 $\alpha,\beta$, 并略去符号与常数 $C$, 得
 
 $$
-\boxed{\ z=\frac1a\ln\frac{\cos ay}{\cos ax}\qquad\left(a=c\right),\ 
-\text{即 Scherk 曲面};\ \text{除相差一个常数外它必具此形式}.\ }
+z=\frac1a\ln\frac{\cos ay}{\cos ax}\qquad\left(a=c\right),\ 
+\text{即 Scherk 曲面};\ \text{除相差一个常数外它必具此形式}.
 $$
 
-这正与教材例 1.3 一致: 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $\ln\frac{\cos y}{\cos x}$ (取 $a=1$). $\blacksquare$
+这与**例 1.3 (§10.1, Scherk 曲面)** 一致: 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $\ln\frac{\cos x}{\cos y}$ (取 $a=1$ 并作反射 $z\mapsto-z$). $\blacksquare$
 
 **(教材第 36 题: 证明正螺面 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$ 是极小曲面; 并证明直纹极小曲面是平面或正螺面.)**
 
 **(i) 正螺面是极小曲面.**
 
-参数化 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$. 坐标切向量
+参数化 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$, 则 $\boldsymbol r_u=\left(\cos v,\ \sin v,\ 0\right)$, $\boldsymbol r_v=\left(-u\sin v,\ u\cos v,\ b\right)$. 由**定义 (§3.2, 第一基本形式)**,
 
 $$
-\boldsymbol r_u=\left(\cos v,\ \sin v,\ 0\right),\qquad
-\boldsymbol r_v=\left(-u\sin v,\ u\cos v,\ b\right).
+E=\left(\boldsymbol r_u,\boldsymbol r_u\right)=1,\quad
+F=\left(\boldsymbol r_u,\boldsymbol r_v\right)=0,\quad
+G=\left(\boldsymbol r_v,\boldsymbol r_v\right)=u^{2}+b^{2}.
 $$
 
-由**定义 21.1**,
+二阶导 $\boldsymbol r_{uu}=\boldsymbol0$, $\boldsymbol r_{uv}=\left(-\sin v,\ \cos v,\ 0\right)$, $\boldsymbol r_{vv}=\left(-u\cos v,\ -u\sin v,\ 0\right)$. 由**定义 (§3.1, 曲面与单位法向)**, 单位法向 $\boldsymbol n=\left(\boldsymbol r_u\wedge\boldsymbol r_v\right)/\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|$, 而 $\boldsymbol r_u\wedge\boldsymbol r_v=\left(b\sin v,\ -b\cos v,\ u\right)$, $\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|=\sqrt{b^{2}+u^{2}}$, 故 $\boldsymbol n=\left(b\sin v,-b\cos v,u\right)/\sqrt{b^{2}+u^{2}}$. 由**定义 (§3.3, 第二基本形式)**,
 
 $$
-g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle=1,\quad
-g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle=0,\quad
-g_{22}=u^{2}+b^{2}.
+L=\left(\boldsymbol r_{uu},\boldsymbol n\right)=0,\qquad
+M=\left(\boldsymbol r_{uv},\boldsymbol n\right)=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac b{\sqrt{b^{2}+u^{2}}},\qquad
+N=\left(\boldsymbol r_{vv},\boldsymbol n\right)=0.
 $$
 
-二阶导
+于是 $EG-F^{2}=u^{2}+b^{2}$. 由**公式 (§3.5, 平均曲率与 Gauss 曲率)**,
 
 $$
-\boldsymbol r_{uu}=\boldsymbol0,\quad
-\boldsymbol r_{uv}=\left(-\sin v,\ \cos v,\ 0\right),\quad
-\boldsymbol r_{vv}=\left(-u\cos v,\ -u\sin v,\ 0\right).
+H=\frac{LG-2MF+NE}{2\left(EG-F^{2}\right)}=\frac{0-2M\cdot0+0}{2\left(u^{2}+b^{2}\right)}=0,
 $$
 
-叉积
+由**定义 (§10.1, 极小曲面)** ($H\equiv0$),
 
 $$
-\boldsymbol r_u\times\boldsymbol r_v=\left(b\sin v,\ -b\cos v,\ u\right),\qquad
-\left|\boldsymbol r_u\times\boldsymbol r_v\right|=\sqrt{b^{2}+u^{2}},
+\text{正螺面}\ \boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)\ \text{是极小曲面}.
 $$
 
-由**定义 19.2** 得 $\boldsymbol n=\left(b\sin v,-b\cos v,u\right)/\sqrt{b^{2}+u^{2}}$. 由**定义 23.B**,
-
-$$
-b_{11}=0,\qquad
-b_{12}=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac b{\sqrt{b^{2}+u^{2}}},\qquad
-b_{22}=0.
-$$
-
-于是 $G=\mathrm{diag}\left(1,u^{2}+b^{2}\right)$, $B=\begin{pmatrix}0&-\frac b{\sqrt{b^{2}+u^{2}}}\\-\frac b{\sqrt{b^{2}+u^{2}}}&0\end{pmatrix}$. 由**命题 32.2 (特征方程与 $H,K$)**,
-
-$$
-G^{-1}B=
-\begin{pmatrix}
-0&-\frac b{\sqrt{b^{2}+u^{2}}}\\
--\frac b{\left(b^{2}+u^{2}\right)^{3/2}}&0
-\end{pmatrix},\qquad
-\operatorname{tr}\left(G^{-1}B\right)=0,
-$$
-
-故平均曲率 $H=\frac12\operatorname{tr}\left(G^{-1}B\right)=0$; 由极小曲面的定义 ($H\equiv0$),
-
-$$
-\boxed{\ \text{正螺面}\ \boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)\ \text{是极小曲面}.\ }
-$$
-
-(此时 $K=\frac{\det B}{\det G}=-\frac{b^{2}}{\left(b^{2}+u^{2}\right)^{2}}<0$, 正螺面处处是双曲点, 且与教材例 1.1 的图 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 是同一螺旋面的两种参数化.)
+(此时由同一公式, $K=\frac{LN-M^{2}}{EG-F^{2}}=-\frac{b^{2}}{\left(b^{2}+u^{2}\right)^{2}}<0$, 故正螺面处处是双曲点, 与**例 1.1 (§10.1, 螺旋面)** 的图 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 是同一螺旋面的两种参数化.)
 
 **(ii) 直纹极小曲面是平面或正螺面.**
 
-平面是直纹面 (任一方向族均为直母线) 且处处 $H\equiv0$, 故平面是直纹极小曲面. 由**教材 (彭-陈, §10.1, 例 1.1)**, 螺旋面是惟一的非平面直纹极小曲面, 而螺旋面即正螺面 (同一曲面的不同参数化). 因此任一非平面的直纹极小曲面必为正螺面. 综合两者:
+平面是直纹面 (任一方向族均为直母线), 且由**定义 (§10.1, 极小曲面)** 处处 $H\equiv0$, 故平面是直纹极小曲面. 由**例 1.1 (§10.1, 螺旋面)**, 螺旋面是惟一的直纹极小曲面, 而螺旋面即正螺面 (同一曲面的不同参数化), 因此任一非平面的直纹极小曲面必为正螺面. 综合两者:
 
 $$
-\boxed{\ \text{直纹极小曲面是平面或正螺面}.\ }
+\text{直纹极小曲面是平面或正螺面}.
 $$
 
 $\blacksquare$
 
-## 5.高斯曲率的几何解释
+---
+
+## 5. 高斯曲率的几何解释
 
 设 $S$ 是参数曲面片 $\boldsymbol r:D\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$.
 
@@ -468,69 +438,56 @@ $$
 
 **(a) 面积与参数选取无关.**
 
-设 $\sigma:\tilde D\to D$, $\left(\tilde u,\tilde v\right)\mapsto\left(u,v\right)$ 是参数变换 (局部同胚), 复合参数化 $\tilde{\boldsymbol r}=\boldsymbol r\circ\sigma$. 由链式法则,
+设 $\sigma:\widetilde D\to D$, $\left(\widetilde u,\widetilde v\right)\mapsto\left(u,v\right)$ 是参数变换 (局部同胚), 复合参数化 $\tilde{\boldsymbol r}=\boldsymbol r\circ\sigma$. 由链式法则,
 
 $$
-\tilde{\boldsymbol r}_{\tilde u}=\boldsymbol r_u\frac{\partial u}{\partial\tilde u}+\boldsymbol r_v\frac{\partial v}{\partial\tilde u},\qquad
-\tilde{\boldsymbol r}_{\tilde v}=\boldsymbol r_u\frac{\partial u}{\partial\tilde v}+\boldsymbol r_v\frac{\partial v}{\partial\tilde v},
+\tilde{\boldsymbol r}_{\widetilde u}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde u}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde u},\qquad
+\tilde{\boldsymbol r}_{\widetilde v}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde v}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde v},
 $$
 
 故叉积
 
 $$
-\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}
-=\left(\frac{\partial u}{\partial\tilde u}\frac{\partial v}{\partial\tilde v}-\frac{\partial u}{\partial\tilde v}\frac{\partial v}{\partial\tilde u}\right)\boldsymbol r_u\times\boldsymbol r_v
-=\det\begin{pmatrix}\frac{\partial u}{\partial\tilde u}&\frac{\partial u}{\partial\tilde v}\\\frac{\partial v}{\partial\tilde u}&\frac{\partial v}{\partial\tilde v}\end{pmatrix}\boldsymbol r_u\times\boldsymbol r_v.
+\tilde{\boldsymbol r}_{\widetilde u}\times\tilde{\boldsymbol r}_{\widetilde v}
+=\left(\frac{\partial u}{\partial\widetilde u}\frac{\partial v}{\partial\widetilde v}-\frac{\partial u}{\partial\widetilde v}\frac{\partial v}{\partial\widetilde u}\right)\boldsymbol r_u\times\boldsymbol r_v
+=J\,\boldsymbol r_u\times\boldsymbol r_v,
 $$
 
-记 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\tilde u,\tilde v\right)}$, 则 $\left|\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}\right|=\left|\det J\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|$. 由变量替换公式 $\mathrm d\tilde u\,\mathrm d\tilde v=\left|\det\frac{\partial\left(\tilde u,\tilde v\right)}{\partial\left(u,v\right)}\right|\mathrm du\,\mathrm dv=\left|\det J\right|^{-1}\mathrm du\,\mathrm dv$ (因 $\det\frac{\partial\left(\tilde u,\tilde v\right)}{\partial\left(u,v\right)}=\left(\det J\right)^{-1}$), 得
+其中 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\widetilde u,\widetilde v\right)}$. 于是 $\left|\tilde{\boldsymbol r}_{\widetilde u}\times\tilde{\boldsymbol r}_{\widetilde v}\right|=\left|J\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|$. 由**基础知识: 变量替换公式**, $\mathrm d\widetilde u\,\mathrm d\widetilde v=\left|\det\frac{\partial\left(\widetilde u,\widetilde v\right)}{\partial\left(u,v\right)}\right|\mathrm du\,\mathrm dv=\left|J\right|^{-1}\mathrm du\,\mathrm dv$ (因 $\det\frac{\partial\left(\widetilde u,\widetilde v\right)}{\partial\left(u,v\right)}=\left(\det J\right)^{-1}$), 得
 
 $$
-\left|\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}\right|\mathrm d\tilde u\,\mathrm d\tilde v
-=\left|\det J\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|\cdot\left|\det J\right|^{-1}\mathrm du\,\mathrm dv
+\left|\tilde{\boldsymbol r}_{\widetilde u}\times\tilde{\boldsymbol r}_{\widetilde v}\right|\mathrm d\widetilde u\,\mathrm d\widetilde v
+=\left|J\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|\cdot\left|J\right|^{-1}\mathrm du\,\mathrm dv
 =\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv.
 $$
 
 于是
 
 $$
-\int_{\tilde D}\left|\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}\right|\mathrm d\tilde u\,\mathrm d\tilde v
+\int_{\widetilde D}\left|\tilde{\boldsymbol r}_{\widetilde u}\times\tilde{\boldsymbol r}_{\widetilde v}\right|\mathrm d\widetilde u\,\mathrm d\widetilde v
 =\int_{D}\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv,
 $$
 
-即面积元 $\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv$ (也即由**推导 22.A (面积微元)** 的 $\sqrt{\det g}\,\mathrm du\,\mathrm dv=\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$) 在参数变换下不变, 因此
+即面积元 $\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv$ 在参数变换下不变; 由**公式 (§3.5, 面积元与 Gauss 映射面积)**, 该面积元即 $\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$, 这与**定理 2.1 (§3.2)** (第一基本形式与参数选取无关) 一致. 因此
 
 $$
-\boxed{\ Area\left(S\right)\ \text{与参数选取无关}.\ }
+Area\left(S\right)\ \text{与参数选取无关}.
 $$
 
 $\blacksquare$
 
 **(b) $\tilde{\boldsymbol r}=g\circ\boldsymbol r$ 是参数曲面片及极限公式.**
 
-先证正则性.高斯映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 的切映射即魏因加滕变换 $W=-\mathrm d\boldsymbol n$ (定义 24.1). 由 $\partial_\alpha\boldsymbol n=-b^{\beta}{}_\alpha\boldsymbol r_\beta$ (推导 23.A), 在基 $\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$ 下 $W$ 的系数矩阵是 $\left(b^{\beta}{}_\alpha\right)=\left(g^{\gamma\beta}b_{\alpha\gamma}\right)$, 其行列式
+先证正则性. 设 $\boldsymbol n\left(u,v\right)=\tilde{\boldsymbol r}\left(u,v\right)$ 是 $S$ 的单位法向, 由**公式 (§3.5, 平均曲率与 Gauss 曲率)** 中的 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$, 在 $\left(u_0,v_0\right)$ 处 $K\left(p_0\right)>0$. 因 $K$ 连续, 在 $\left(u_0,v_0\right)$ 的某邻域内 $K\neq0$, 故在该邻域内 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$, 即 $\boldsymbol n_u,\boldsymbol n_v$ 线性无关. 由**定义 (§3.1, 曲面与单位法向)**, $\tilde{\boldsymbol r}:\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是正则参数曲面片; 又 $\boldsymbol n\left(u,v\right)\in S^{2}\left(1\right)$, 故它是单位球面在 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化.
 
-$$
-\det\left(b^{\beta}{}_\alpha\right)=\det\left(g^{-1}b\right)=\frac{\det b}{\det g}=K.
-$$
-
-由 $K\left(p_0\right)>0$ 及连续性, 在 $p_0$ 附近 $K\ne0$, 故 $W$ 在该邻域内可逆, 因而 $\boldsymbol n_1,\boldsymbol n_2$ 线性无关:
-
-$$
-\boldsymbol n_u\times\boldsymbol n_v
-=\det\left(b^{\beta}{}_\alpha\right)\left(\boldsymbol r_u\times\boldsymbol r_v\right)=K\left(\boldsymbol r_u\times\boldsymbol r_v\right)\ne\boldsymbol0.
-$$
-
-由**定义 19.1 (参数曲面)**, $\tilde{\boldsymbol r}=g\circ\boldsymbol r:\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 在 $p_0$ 附近是正则参数曲面片; 又 $\boldsymbol n\left(u,v\right)\in S^{2}\left(1\right)$, 故它是单位球面在 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化.
-
-再证极限公式. 对 $S$, 由**推导 22.A** 面积元 $\mathrm dA=\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv$; 对像 $\tilde{\boldsymbol r}\left(B_{\delta}\right)\subset S^{2}$, 面积元
+再证极限公式. 对 $S$, 由**公式 (§3.5, 面积元与 Gauss 映射面积)**, 面积元 $\mathrm dA=\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv$; 对像 $\tilde{\boldsymbol r}\left(B_{\delta}\right)\subset S^{2}$, 面积元
 
 $$
 \mathrm d\tilde A=\left|\boldsymbol n_u\times\boldsymbol n_v\right|\mathrm du\,\mathrm dv
 =\left|K\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv=K\,\mathrm dA
 $$
 
-(因 $K\left(p_0\right)>0$, 在充分小的 $B_{\delta}$ 内 $K>0$). 这与**教材 (彭-陈, §3.5)** 的 $\mathrm d\sigma=\left(\boldsymbol n_u\times\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$ 一致. 于是
+(因 $K\left(p_0\right)>0$, 在充分小的 $B_{\delta}$ 内 $K>0$). 这与**公式 (§3.5, 面积元与 Gauss 映射面积)** 的 $\mathrm d\sigma=\left(\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$ 一致. 于是
 
 $$
 \frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\right)\right)}
@@ -541,7 +498,7 @@ $$
 右端是以 $\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv$ 为权对 $K$ 在 $B_{\delta}$ 上的加权平均; 因 $K$ 连续且 $B_{\delta}$ 收缩到 $\left(u_0,v_0\right)$, 该加权平均当 $\delta\to0$ 时趋于 $K\left(u_0,v_0\right)=K\left(p_0\right)$. 故
 
 $$
-\boxed{\ K\left(p_0\right)=\lim_{\delta\to0}\frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.\ }
+K\left(p_0\right)=\lim_{\delta\to0}\frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.
 $$
 
 $\blacksquare$
