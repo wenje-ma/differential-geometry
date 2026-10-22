@@ -34,8 +34,6 @@ $$
 
 设 $\boldsymbol r:\left[0,L\right]\to E^2$ 是以弧长为参数的平面正则曲线, 切向量 $\boldsymbol t\left(s\right):=\dot{\boldsymbol r}\left(s\right)$ 是单位向量; $E^2$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的弗雷内标架.
 
-![figures/frenet.svg](figures/frenet_2d.svg){width=50%}
-
 **定义 3.2** (二维弗雷内方程)
 
 $$
@@ -85,8 +83,6 @@ $$
 **定义 5.3** (副法向量与弗雷内标架)
 
 $\boldsymbol b\left(s\right):=\boldsymbol t\left(s\right)\times\boldsymbol n\left(s\right)$ 为副法向量, $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 构成右手单位正交系, 称为弗雷内标架.
-
-![figures\frenet_3d.svg](figures\frenet_3d.svg){width=50%}
 
 **定义 5.4** (空间弗雷内方程)
 
