@@ -2,7 +2,7 @@
 
 > **定义 19.1 (参数曲面)**<br>设 $D\subset\mathbb R^{2}$ 是平面区域, $\boldsymbol r:D\to E^{3}$, $\boldsymbol r\left(u^{1},u^{2}\right)=\left(x\left(u^{1},u^{2}\right),y\left(u^{1},u^{2}\right),z\left(u^{1},u^{2}\right)\right)$ 是 $C^{k}$ ($k\ge1$) 映射. 若坐标切向量 $\boldsymbol r_1,\boldsymbol r_2$ 处处线性无关, 即 $\operatorname{rank}\left(\boldsymbol r_1,\boldsymbol r_2\right)=2,\ \boldsymbol r_1\wedge\boldsymbol r_2\ne\boldsymbol0$ 对一切 $\left(u^{1},u^{2}\right)\in D$ 成立, 则称 $\boldsymbol r\left(D\right)\subset E^{3}$ 是一张 (正则 $C^k$) **参数曲面**.
 
-> **定义 19.2 (单位法向与定向)**<br>由正则性 $\boldsymbol r_1\wedge\boldsymbol r_2\ne\boldsymbol0$, 曲面上每点有确定的**单位法向** $\boldsymbol n\left(u^{1},u^{2}\right):=\dfrac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
+> **定义 19.2 (单位法向与定向)**<br>由正则性 $\boldsymbol r_1\wedge\boldsymbol r_2\ne\boldsymbol0$, 曲面上每点有确定的**单位法向** $\boldsymbol n\left(u^{1},u^{2}\right):=\frac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
 
 > **定义 21.1 (第一基本形式)**<br>二次微分式 $I:=\left\langle\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right\rangle=g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$ 称为曲面 $S$ 的**第一基本形式**, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol r_\alpha,\boldsymbol r_\beta\right\rangle$; 它给出切向量长度的平方.
 
@@ -207,7 +207,7 @@ $$
 
 **(4) 椭圆抛物面.**
 
-取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{u^2}{2p}+\dfrac{v^2}{2q}\right)$, 满足 $z=x^2/\left(2p\right)+y^2/\left(2q\right)$. 计算
+取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \frac{u^2}{2p}+\frac{v^2}{2q}\right)$, 满足 $z=x^2/\left(2p\right)+y^2/\left(2q\right)$. 计算
 
 $$
 \boldsymbol r_u=\left(1,0,\frac up\right),\quad \boldsymbol r_v=\left(0,1,\frac vq\right),\quad
@@ -247,7 +247,7 @@ $$
 
 **(5) 双曲抛物面.**
 
-取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{u^2}{2p}-\dfrac{v^2}{2q}\right)$, 满足 $z=x^2/\left(2p\right)-y^2/\left(2q\right)$. 计算
+取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \frac{u^2}{2p}-\frac{v^2}{2q}\right)$, 满足 $z=x^2/\left(2p\right)-y^2/\left(2q\right)$. 计算
 
 $$
 \boldsymbol r_u=\left(1,0,\frac up\right),\quad \boldsymbol r_v=\left(0,1,-\frac vq\right),\quad
@@ -439,7 +439,7 @@ $$
 \left|\boldsymbol r_u\times\boldsymbol r_v\right|=\sqrt{a^2+u^2}=\rho,
 $$
 
-故 $\boldsymbol n=\dfrac{\left(-a\cos v,\ -a\sin v,\ u\right)}{\rho}$. 二阶导
+故 $\boldsymbol n=\frac{\left(-a\cos v,\ -a\sin v,\ u\right)}{\rho}$. 二阶导
 
 $$
 \boldsymbol r_{uu}=\frac{a}{\rho^3}\left(a\cos v,\ a\sin v,\ -u\right),\quad

@@ -1,12 +1,12 @@
 # 练习 5
 
-> **定义 19.2 (单位法向与定向)**<br>正则曲面 $S:\boldsymbol r=\boldsymbol r\left(u^1,u^2\right)$ 上每点有确定的**单位法向** $\boldsymbol n:=\dfrac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
+> **定义 19.2 (单位法向与定向)**<br>正则曲面 $S:\boldsymbol r=\boldsymbol r\left(u^1,u^2\right)$ 上每点有确定的**单位法向** $\boldsymbol n:=\frac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
 
 > **定义 21.1 (第一基本形式)**<br>$I:=\left\langle\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right\rangle=g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol r_\alpha,\boldsymbol r_\beta\right\rangle$; 它给出切向量长度的平方, 故弧长微元 $\mathrm ds^2=I$.
 
 > **定义 23.B (第二基本形式)**<br>$II:=\left\langle\boldsymbol r_{\alpha\beta},\boldsymbol n\right\rangle\,\mathrm du^{\alpha}\,\mathrm du^{\beta}=b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol r_{\alpha\beta},\boldsymbol n\right\rangle$ 对称.
 
-> **定义 28.B (法曲率)**<br>对一般参数, 曲线在曲面上沿切方向 $\dot u^{\alpha}$ 的**法曲率** $k_n=\left.\dfrac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\dfrac{II}{I}$.
+> **定义 28.B (法曲率)**<br>对一般参数, 曲线在曲面上沿切方向 $\dot u^{\alpha}$ 的**法曲率** $k_n=\left.\frac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\frac{II}{I}$.
 
 > **命题 29.2 (欧拉公式)**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是 $S$ 在 $\boldsymbol r\left(u_0\right)$ 的单位正交主方向, $k_1,k_2$ 是对应的主曲率. 对单位切向量 $\boldsymbol v=\cos\theta\,\boldsymbol e_1+\sin\theta\,\boldsymbol e_2$, 沿 $\boldsymbol v$ 的法曲率 $k_n\left(\boldsymbol v\right)=k_1\cos^2\theta+k_2\sin^2\theta$.
 
@@ -16,9 +16,9 @@
 
 > **定义 31.2 (脐点)**<br>使主曲率 $k_1\left(u\right)=k_2\left(u\right)$ 成立的点 $\boldsymbol r\left(u\right)$ 称为 $S$ 的**脐点**.
 
-> **定义 32.1 (平均曲率与总曲率)**<br>称 $H\left(u\right):=\dfrac{k_1\left(u\right)+k_2\left(u\right)}{2}$ 为曲面在该点的**平均曲率**, 称 $K\left(u\right):=k_1\left(u\right)k_2\left(u\right)$ 为曲面在该点的**总曲率 (高斯曲率)**.
+> **定义 32.1 (平均曲率与总曲率)**<br>称 $H\left(u\right):=\frac{k_1\left(u\right)+k_2\left(u\right)}{2}$ 为曲面在该点的**平均曲率**, 称 $K\left(u\right):=k_1\left(u\right)k_2\left(u\right)$ 为曲面在该点的**总曲率 (高斯曲率)**.
 
-> **命题 32.2 (特征方程与 $H,K$)**<br>主曲率是方程 $k^2-2Hk+K=0$ 的根, 其中 $H=\dfrac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\dfrac{\det b}{\det g}$.
+> **命题 32.2 (特征方程与 $H,K$)**<br>主曲率是方程 $k^2-2Hk+K=0$ 的根, 其中 $H=\frac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\frac{\det b}{\det g}$.
 
 > **基础知识**<br>切向量 $\boldsymbol r_\alpha=\partial_\alpha\boldsymbol r$, 二阶导 $\boldsymbol r_{\alpha\beta}=\partial_\alpha\partial_\beta\boldsymbol r$; 对叉积有 $\left(\boldsymbol a\times\boldsymbol b\right)\cdot\boldsymbol c=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$.
 
@@ -179,7 +179,7 @@ $$
 \left(b_{11}-k g_{11}\right)v^{1}=0,\qquad\left(b_{22}-k g_{22}\right)v^{2}=0,
 $$
 
-故当 $k=\dfrac{b_{11}}{g_{11}}$ 时主方向为 $v=\left(1,0\right)$ (沿 $\boldsymbol r_u$), 当 $k=\dfrac{b_{22}}{g_{22}}$ 时主方向为 $v=\left(0,1\right)$ (沿 $\boldsymbol r_v$). 因而曲面上每点的两个主方向分别是坐标曲线 $v=\mathrm{const}$ 与 $u=\mathrm{const}$ 的切方向.
+故当 $k=\frac{b_{11}}{g_{11}}$ 时主方向为 $v=\left(1,0\right)$ (沿 $\boldsymbol r_u$), 当 $k=\frac{b_{22}}{g_{22}}$ 时主方向为 $v=\left(0,1\right)$ (沿 $\boldsymbol r_v$). 因而曲面上每点的两个主方向分别是坐标曲线 $v=\mathrm{const}$ 与 $u=\mathrm{const}$ 的切方向.
 
 由**定义 31.1 (曲率线)**, 曲率线是切向量恒为主方向的曲线, 故
 
@@ -202,7 +202,7 @@ $$
 
 ### 解答 3
 
-在第一卦限 (即 $x,y,z>0$) 取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \dfrac{a^{3}}{uv}\right)$, 满足 $xyz=u\cdot v\cdot\dfrac{a^{3}}{uv}=a^{3}$. 计算
+在第一卦限 (即 $x,y,z>0$) 取参数化 $\boldsymbol r\left(u,v\right)=\left(u,\ v,\ \frac{a^{3}}{uv}\right)$, 满足 $xyz=u\cdot v\cdot\frac{a^{3}}{uv}=a^{3}$. 计算
 
 $$
 \boldsymbol r_u=\left(1,0,-\frac{a^{3}}{u^{2}v}\right),\quad
@@ -241,13 +241,13 @@ $$
 \frac{b_{11}}{g_{11}}=\frac{b_{12}}{g_{12}}=\frac{b_{22}}{g_{22}}=k.
 $$
 
-由 $\dfrac{b_{12}}{g_{12}}=k$:
+由 $\frac{b_{12}}{g_{12}}=k$:
 
 $$
 k=\frac{\frac{a^{6}}{u^{4}v^{3}}\frac1W}{\frac{a^{6}}{u^{3}v^{3}}}=\frac1{uW}.
 $$
 
-代入 $\dfrac{b_{11}}{g_{11}}=k$:
+代入 $\frac{b_{11}}{g_{11}}=k$:
 
 $$
 \frac{2a^{6}}{u^{5}v^{2}W}\cdot\frac{u^{4}v^{2}}{u^{4}v^{2}+a^{6}}=\frac1{uW}
@@ -258,7 +258,7 @@ $$
 \ \Longrightarrow\ u^{2}v=a^{3}.
 $$
 
-代入 $\dfrac{b_{22}}{g_{22}}=k$, 由 $u^{2}v=a^{3}$ 得 $u^{2}v^{4}=a^{3}v^{3}$, $u^{2}v^{5}=a^{3}v^{4}$, 故
+代入 $\frac{b_{22}}{g_{22}}=k$, 由 $u^{2}v=a^{3}$ 得 $u^{2}v^{4}=a^{3}v^{3}$, $u^{2}v^{5}=a^{3}v^{4}$, 故
 
 $$
 \frac{2a^{6}}{a^{3}v^{4}W}\cdot\frac{u^{2}v^{4}}{u^{2}v^{4}+a^{6}}=\frac1{uW}
@@ -268,7 +268,7 @@ $$
 \frac{2a^{6}}{v\left(a^{3}v^{3}+a^{6}\right)}=\frac1u.
 $$
 
-由 $u^{2}v=a^{3}$ 得 $u=\dfrac{a^{3/2}}{\sqrt v}$, 代入上式得 $2a^{6}\cdot a^{3/2}=v\cdot\sqrt v\left(a^{3}v^{3}+a^{6}\right)$, 即 $2a^{15/2}=v^{3/2}\left(a^{3}v^{3}+a^{6}\right)$; 令 $t=v^{3/2}$, 得 $2a^{15/2}=a^{3}t^{3}+a^{6}t$, 除以 $a^{3}$ 即 $2a^{9/2}=t^{3}+a^{3}t$. 该三次方程 $t^{3}+a^{3}t-2a^{9/2}=0$ 在 $t=a^{3/2}$ 处满足 $a^{9/2}+a^{9/2}-2a^{9/2}=0$, 且因 $t^{3}+a^{3}t$ 关于 $t$ 严格递增, 根唯一, 故 $v^{3/2}=a^{3/2}$, 即 $v=a$; 再由 $u^{2}v=a^{3}$ 得 $u=a$.
+由 $u^{2}v=a^{3}$ 得 $u=\frac{a^{3/2}}{\sqrt v}$, 代入上式得 $2a^{6}\cdot a^{3/2}=v\cdot\sqrt v\left(a^{3}v^{3}+a^{6}\right)$, 即 $2a^{15/2}=v^{3/2}\left(a^{3}v^{3}+a^{6}\right)$; 令 $t=v^{3/2}$, 得 $2a^{15/2}=a^{3}t^{3}+a^{6}t$, 除以 $a^{3}$ 即 $2a^{9/2}=t^{3}+a^{3}t$. 该三次方程 $t^{3}+a^{3}t-2a^{9/2}=0$ 在 $t=a^{3/2}$ 处满足 $a^{9/2}+a^{9/2}-2a^{9/2}=0$, 且因 $t^{3}+a^{3}t$ 关于 $t$ 严格递增, 根唯一, 故 $v^{3/2}=a^{3/2}$, 即 $v=a$; 再由 $u^{2}v=a^{3}$ 得 $u=a$.
 
 于是第一卦限上唯一的脐点为 $\boldsymbol r\left(a,a\right)=\left(a,a,a\right)$. 曲面 $xyz=a^{3}$ 关于自变量 $x,y,z$ 及符号变换 (保持乘积为 $a^{3}$) 对称, 故其余卦限对应地各得一个脐点, 它们是乘积 $xyz=a^{3}$ 且 $\left|x\right|=\left|y\right|=\left|z\right|=a$ 的四个点:
 
@@ -359,7 +359,7 @@ K=\det\left(G^{-1}B\right)=\frac{\det B}{\det G}
 =-\frac1{\left(2u^{2}+1\right)^{2}}.
 $$
 
-又 $G^{-1}=\dfrac1{2u^{2}+1}\begin{pmatrix}u^{2}+1&-1\\-1&2\end{pmatrix}$, 故
+又 $G^{-1}=\frac1{2u^{2}+1}\begin{pmatrix}u^{2}+1&-1\\-1&2\end{pmatrix}$, 故
 
 $$
 G^{-1}B=\frac1{2u^{2}+1}\begin{pmatrix}u^{2}+1&-1\\-1&2\end{pmatrix}
@@ -381,7 +381,7 @@ $$
 =\frac{2u^{2}+2}{\left(2u^{2}+1\right)\sqrt{2u^{2}+1}}.
 $$
 
-由**定义 32.1 (平均曲率与总曲率)** 及**命题 32.2**, $H=\dfrac12\operatorname{tr}\left(G^{-1}B\right)$, 故
+由**定义 32.1 (平均曲率与总曲率)** 及**命题 32.2**, $H=\frac12\operatorname{tr}\left(G^{-1}B\right)$, 故
 
 $$
 \boxed{\ H=\frac{u^{2}+1}{\left(2u^{2}+1\right)^{3/2}},\qquad

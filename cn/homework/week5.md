@@ -1,6 +1,10 @@
 # 作业 5
 
-> **定义 19.2** (单位法向与定向)<br>正则曲面 $S:\boldsymbol r=\boldsymbol r\left(u^1,u^2\right)$ 上每点有确定的**单位法向** $\boldsymbol n:=\dfrac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
+> **基础知识** (隐函数求导)<br>若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$, $F_z\ne0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$
+
+> **基础知识** (混合积)<br>$\left(\boldsymbol a\times\boldsymbol b\right)\cdot\boldsymbol c=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$.
+
+> **定义 19.2** (单位法向与定向)<br>正则曲面 $S:\boldsymbol r=\boldsymbol r\left(u^1,u^2\right)$ 上每点有确定的**单位法向** $\boldsymbol n:=\frac{\boldsymbol r_1\wedge\boldsymbol r_2}{\left|\boldsymbol r_1\wedge\boldsymbol r_2\right|}$.
 
 > **定义 21.1** (第一基本形式)<br>$I:=\left\langle\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right\rangle=g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}$, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol r_\alpha,\boldsymbol r_\beta\right\rangle$; 它给出切向量长度的平方.
 
@@ -16,13 +20,13 @@
 
 > **命题 29.1** (同时对角化 $g$ 与 $b$)<br>存在坐标使 $g_{\alpha\beta}=\delta_{\alpha\beta}$, $b_{\alpha\beta}=k_\alpha\delta_{\alpha\beta}$, 此时单位主方向 $\boldsymbol e_1,\boldsymbol e_2$ 相互正交, 对角线元正是主曲率.
 
-> **定义 28.B** (法曲率)<br>对一般参数, 曲线在曲面上沿切方向的**法曲率** $k_n=\left.\dfrac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\dfrac{II}{I}$.
+> **定义 28.B** (法曲率)<br>对一般参数, 曲线在曲面上沿切方向的**法曲率** $k_n=\left.\frac{b_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}{g_{\alpha\beta}\,\mathrm du^{\alpha}\,\mathrm du^{\beta}}\right|=\frac{II}{I}$.
 
 > **命题 29.4** (主曲率的特征方程)<br>$k$ 是主曲率当且仅当它是方程 $\det\left(b_{\alpha\beta}-k g_{\alpha\beta}\right)=0$ 的根.
 
-> **定义 32.1** (平均曲率与总曲率)<br>$H:=\dfrac{k_1+k_2}{2}$ 为**平均曲率**, $K:=k_1k_2$ 为**总曲率 (高斯曲率)**.
+> **定义 32.1** (平均曲率与总曲率)<br>$H:=\frac{k_1+k_2}{2}$ 为**平均曲率**, $K:=k_1k_2$ 为**总曲率 (高斯曲率)**.
 
-> **命题 32.2** (特征方程与 $H,K$)<br>主曲率是 $k^2-2Hk+K=0$ 的根, 其中 $H=\dfrac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\dfrac{\det b}{\det g}$.
+> **命题 32.2** (特征方程与 $H,K$)<br>主曲率是 $k^2-2Hk+K=0$ 的根, 其中 $H=\frac12\operatorname{tr}\left(g^{-1}b\right)$, $K=\det\left(g^{-1}b\right)=\frac{\det b}{\det g}$.
 
 > **教材 (彭-陈, §10.1, 极小曲面方程)**<br>对函数图 $z=f\left(x,y\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\sqrt{1+p^2+q^2}$, 则曲面是极小曲面 ($H\equiv0$) 当且仅当 $$\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t=0.$$
 
@@ -30,13 +34,11 @@
 
 > **教材 (彭-陈, §10.1, 例 1.3)**<br>极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $$f\left(x,y\right)=\ln\frac{\cos y}{\cos x},$$ 相应的极小曲面称为 Scherk (谢尔克) 曲面.
 
-> **教材 (彭-陈, §3.5, Gauss 映射的面积解释)**<br>设 $\mathrm dA=\sqrt{EG-F^2}\,\mathrm du\,\mathrm dv$ 是曲面面积元. Gauss 映射 $g$ 下像的 (定向) 面积元 $\mathrm d\sigma=\left(\boldsymbol n_u\times\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$, 其中 $K$ 是 Gauss 曲率; 若 $D$ 是含点 $P$ 的区域, 则 $$\lim_{D\to P}\frac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right).$$
-
-> **基础知识**<br>隐函数求导: 若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$, $F_z\ne0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$; 叉积 $\left(\boldsymbol a\times\boldsymbol b\right)\cdot\boldsymbol c=\det\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)$.
+> **教材 (彭-陈, §3.5,高斯映射的面积解释)**<br>设 $\mathrm dA=\sqrt{EG-F^2}\,\mathrm du\,\mathrm dv$ 是曲面面积元.高斯映射 $g$ 下像的 (定向) 面积元 $\mathrm d\sigma=\left(\boldsymbol n_u\times\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$, 其中 $K$ 是高斯曲率; 若 $D$ 是含点 $P$ 的区域, 则 $$\lim_{D\to P}\frac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right).$$
 
 ## 1. 函数图的几何
 
-设 $f:D\subset\mathbb R^{2}\to\mathbb R$ 是光滑函数, 而且正则曲面 $S:=\left\{\left(x,y,f\left(x,y\right)\right)\mid\left(x,y\right)\in D\right\}$ 是 $f$ 的图. 试确定 $S$ 的 $I,II$, 平均曲率 $H$ 以及 Gauss 曲率 $K$.
+设 $f:D\subset\mathbb R^{2}\to\mathbb R$ 是光滑函数, 而且正则曲面 $S:=\left\{\left(x,y,f\left(x,y\right)\right)\mid\left(x,y\right)\in D\right\}$ 是 $f$ 的图. 试确定 $S$ 的 $I,II$, 平均曲率 $H$ 以及高斯曲率 $K$.
 
 ### 解答 1
 
@@ -96,14 +98,14 @@ G=\begin{pmatrix}1+p^{2}&pq\\pq&1+q^{2}\end{pmatrix},\qquad
 B=\frac1W\begin{pmatrix}r&s\\s&t\end{pmatrix}.
 $$
 
-计算行列式: $\det G=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=W^{2}$, $\det B=\left(rt-s^{2}\right)/W^{2}$. 由**命题 32.2 (特征方程与 $H,K$)** 得 Gauss 曲率
+计算行列式: $\det G=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=W^{2}$, $\det B=\left(rt-s^{2}\right)/W^{2}$. 由**命题 32.2 (特征方程与 $H,K$)** 得高斯曲率
 
 $$
 K=\frac{\det B}{\det G}=\frac{rt-s^{2}}{W^{4}}
 =\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_{x}^{2}+f_{y}^{2}\right)^{2}}.
 $$
 
-由 $G^{-1}=\dfrac1{W^{2}}\begin{pmatrix}1+q^{2}&-pq\\-pq&1+p^{2}\end{pmatrix}$, 得
+由 $G^{-1}=\frac1{W^{2}}\begin{pmatrix}1+q^{2}&-pq\\-pq&1+p^{2}\end{pmatrix}$, 得
 
 $$
 G^{-1}B=\frac1{W^{3}}\begin{pmatrix}1+q^{2}&-pq\\-pq&1+p^{2}\end{pmatrix}\begin{pmatrix}r&s\\s&t\end{pmatrix},
@@ -115,7 +117,7 @@ $$
 \operatorname{tr}\left(G^{-1}B\right)=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{W^{3}}.
 $$
 
-由**命题 32.2**, $H=\dfrac12\operatorname{tr}\left(G^{-1}B\right)$, 故
+由**命题 32.2**, $H=\frac12\operatorname{tr}\left(G^{-1}B\right)$, 故
 
 $$
 \boxed{\ H=\frac{\left(1+f_{y}^{2}\right)f_{xx}-2f_{x}f_{y}f_{xy}+\left(1+f_{x}^{2}\right)f_{yy}}{2\left(1+f_{x}^{2}+f_{y}^{2}\right)^{3/2}},\qquad
@@ -128,7 +130,7 @@ $\blacksquare$
 
 a) 彭-陈, 69 页, 第 18 题;
 
-b) 试确定隐函数型曲面 $S:=\left\{\left(x,y,z\right)\mid F\left(x,y,z\right)=0\right\}$ 的 $I,II$, 平均曲率 $H$ 以及 Gauss 曲率 $K$.
+b) 试确定隐函数型曲面 $S:=\left\{\left(x,y,z\right)\mid F\left(x,y,z\right)=0\right\}$ 的 $I,II$, 平均曲率 $H$ 以及高斯曲率 $K$.
 
 ### 解答 2
 
@@ -209,7 +211,7 @@ $$
 \boxed{\ I=\frac{\left(F_x^{2}+F_z^{2}\right)\mathrm dx^{2}+2F_xF_y\,\mathrm dx\,\mathrm dy+\left(F_y^{2}+F_z^{2}\right)\mathrm dy^{2}}{F_z^{2}}.\ }
 $$
 
-记 $W=\sqrt{1+z_x^{2}+z_y^{2}}=\dfrac{\left|\nabla F\right|}{\left|F_z\right|}$. 对 $z_x=-\frac{F_x}{F_z}$ 再求导, 利用 $\frac{\partial}{\partial x}F_x=F_{xx}+F_{xz}z_x$ 等链式法则 (设 $F$ 二阶连续可微), 得
+记 $W=\sqrt{1+z_x^{2}+z_y^{2}}=\frac{\left|\nabla F\right|}{\left|F_z\right|}$. 对 $z_x=-\frac{F_x}{F_z}$ 再求导, 利用 $\frac{\partial}{\partial x}F_x=F_{xx}+F_{xz}z_x$ 等链式法则 (设 $F$ 二阶连续可微), 得
 
 $$
 z_{xx}=\frac{-F_{xx}F_z^{2}+2F_xF_{xz}F_z-F_x^{2}F_{zz}}{F_z^{3}},
@@ -244,7 +246,7 @@ K=\frac{z_{xx}z_{yy}-z_{xy}^{2}}{\left(1+z_x^{2}+z_y^{2}\right)^{2}},\qquad
 H=\frac{\left(1+z_y^{2}\right)z_{xx}-2z_xz_yz_{xy}+\left(1+z_x^{2}\right)z_{yy}}{2\left(1+z_x^{2}+z_y^{2}\right)^{3/2}},
 $$
 
-再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的 Gauss 曲率与平均曲率. $\blacksquare$
+再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的高斯曲率与平均曲率. $\blacksquare$
 
 ## 3. 平行曲面的几何
 
@@ -252,7 +254,7 @@ $$
 
 ### 解答 3
 
-**(教材第 27 题: 设 $S:\boldsymbol r=\boldsymbol r\left(u,v\right)$ 上没有抛物点, $\boldsymbol n$ 是 $S$ 的法向量, 曲面 $S_{\lambda}:\boldsymbol r_{\lambda}\left(u,v\right)=\boldsymbol r\left(u,v\right)+\lambda\boldsymbol n\left(u,v\right)$ (常数 $\lambda$ 充分小) 称为 $S$ 的平行曲面. (1) 证明 $S$ 与 $S_{\lambda}$ 在对应点的切平面平行; (2) 选取 $S_{\lambda}$ 的单位法向量 $\boldsymbol n_{\lambda}$, 使其 Gauss 曲率与平均曲率分别为 $K_{\lambda}=\dfrac{K}{1-2\lambda H+\lambda^{2}K}$, $H_{\lambda}=\dfrac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}$.)**
+**(教材第 27 题: 设 $S:\boldsymbol r=\boldsymbol r\left(u,v\right)$ 上没有抛物点, $\boldsymbol n$ 是 $S$ 的法向量, 曲面 $S_{\lambda}:\boldsymbol r_{\lambda}\left(u,v\right)=\boldsymbol r\left(u,v\right)+\lambda\boldsymbol n\left(u,v\right)$ (常数 $\lambda$ 充分小) 称为 $S$ 的平行曲面. (1) 证明 $S$ 与 $S_{\lambda}$ 在对应点的切平面平行; (2) 选取 $S_{\lambda}$ 的单位法向量 $\boldsymbol n_{\lambda}$, 使其高斯曲率与平均曲率分别为 $K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}$, $H_{\lambda}=\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K}$.)**
 
 以 $k_1,k_2$ 记 $S$ 的主曲率, $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$.
 
@@ -274,7 +276,7 @@ $$
 
 由 $\boldsymbol r_{\lambda,\alpha}\in T_{\boldsymbol r}S$ 且 $\boldsymbol r_{\lambda,1}\times\boldsymbol r_{\lambda,2}\parallel\boldsymbol r_1\times\boldsymbol r_2$, 可取 $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$.
 
-**(2) Gauss 曲率与平均曲率.**
+**(2)高斯曲率与平均曲率.**
 
 取 $S$ 的主方向为坐标方向 (由**命题 29.1 (同时对角化 $g$ 与 $b$)** 存在), 则 $G=\mathrm{diag}\left(g_{11},g_{22}\right)$, $B=\mathrm{diag}\left(k_1g_{11},k_2g_{22}\right)$, $G^{-1}B=\mathrm{diag}\left(k_1,k_2\right)$. 由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\left(\delta^{\beta}{}_\alpha-\lambda b^{\beta}{}_\alpha\right)\boldsymbol r_\beta$ 及 $b^{\beta}{}_\alpha$ 在此坐标下为对角矩阵, 得
 
@@ -294,7 +296,7 @@ $$
 k_\alpha^{\lambda}=\frac{k_\alpha\left(1-\lambda k_\alpha\right)}{\left(1-\lambda k_\alpha\right)^{2}}=\frac{k_\alpha}{1-\lambda k_\alpha}\qquad\left(\alpha=1,2\right).
 $$
 
-由**定义 32.1 (平均曲率与总曲率)**, $S_{\lambda}$ 的 Gauss 曲率
+由**定义 32.1 (平均曲率与总曲率)**, $S_{\lambda}$ 的高斯曲率
 
 $$
 K_{\lambda}=k_1^{\lambda}k_2^{\lambda}
@@ -432,13 +434,13 @@ G^{-1}B=
 \operatorname{tr}\left(G^{-1}B\right)=0,
 $$
 
-故平均曲率 $H=\dfrac12\operatorname{tr}\left(G^{-1}B\right)=0$; 由极小曲面的定义 ($H\equiv0$),
+故平均曲率 $H=\frac12\operatorname{tr}\left(G^{-1}B\right)=0$; 由极小曲面的定义 ($H\equiv0$),
 
 $$
 \boxed{\ \text{正螺面}\ \boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)\ \text{是极小曲面}.\ }
 $$
 
-(此时 $K=\dfrac{\det B}{\det G}=-\dfrac{b^{2}}{\left(b^{2}+u^{2}\right)^{2}}<0$, 正螺面处处是双曲点, 且与教材例 1.1 的图 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 是同一螺旋面的两种参数化.)
+(此时 $K=\frac{\det B}{\det G}=-\frac{b^{2}}{\left(b^{2}+u^{2}\right)^{2}}<0$, 正螺面处处是双曲点, 且与教材例 1.1 的图 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 是同一螺旋面的两种参数化.)
 
 **(ii) 直纹极小曲面是平面或正螺面.**
 
@@ -450,13 +452,13 @@ $$
 
 $\blacksquare$
 
-## 5. Gauss 曲率的几何解释
+## 5.高斯曲率的几何解释
 
 设 $S$ 是参数曲面片 $\boldsymbol r:D\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$.
 
 a) 定义参数曲面片 $S$ 的面积为 $Area\left(S\right):=\int_{D}\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv=\int_{D}\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$. 试证明面积的定义与参数选取无关.
 
-b) 设 $p_0=\boldsymbol r\left(u_0,v_0\right)$ 是参数曲面片上的一点, 且 Gauss 曲率 $K\left(p_0\right)>0$. 考虑参数区域 $D$ 中 $\left(u_0,v_0\right)$ 的球形开邻域 $B_{\delta}\left(u_0,v_0\right):=\left\{\left(u,v\right)\mid\sqrt{\left(u-u_0\right)^{2}+\left(v-v_0\right)^{2}}<\delta\right\}$. 试证明当 $\delta$ 充分小时, $\tilde{\boldsymbol r}=g\circ\boldsymbol r:B_{\delta}\left(u_0,v_0\right)\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是参数曲面片, 即单位球面 $S^{2}\left(1\right)$ 在点 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化, 其中 $g$ 和 $\boldsymbol n$ 分别是参数曲面片 $S$ 的 Gauss 映射和单位法向量. 进一步证明
+b) 设 $p_0=\boldsymbol r\left(u_0,v_0\right)$ 是参数曲面片上的一点, 且高斯曲率 $K\left(p_0\right)>0$. 考虑参数区域 $D$ 中 $\left(u_0,v_0\right)$ 的球形开邻域 $B_{\delta}\left(u_0,v_0\right):=\left\{\left(u,v\right)\mid\sqrt{\left(u-u_0\right)^{2}+\left(v-v_0\right)^{2}}<\delta\right\}$. 试证明当 $\delta$ 充分小时, $\tilde{\boldsymbol r}=g\circ\boldsymbol r:B_{\delta}\left(u_0,v_0\right)\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是参数曲面片, 即单位球面 $S^{2}\left(1\right)$ 在点 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化, 其中 $g$ 和 $\boldsymbol n$ 分别是参数曲面片 $S$ 的高斯映射和单位法向量. 进一步证明
 
 $$
 K\left(p_0\right)=\lim_{\delta\to0}\frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.
@@ -481,7 +483,7 @@ $$
 =\det\begin{pmatrix}\frac{\partial u}{\partial\tilde u}&\frac{\partial u}{\partial\tilde v}\\\frac{\partial v}{\partial\tilde u}&\frac{\partial v}{\partial\tilde v}\end{pmatrix}\boldsymbol r_u\times\boldsymbol r_v.
 $$
 
-记 $J:=\dfrac{\partial\left(u,v\right)}{\partial\left(\tilde u,\tilde v\right)}$, 则 $\left|\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}\right|=\left|\det J\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|$. 由变量替换公式 $\mathrm d\tilde u\,\mathrm d\tilde v=\left|\det\dfrac{\partial\left(\tilde u,\tilde v\right)}{\partial\left(u,v\right)}\right|\mathrm du\,\mathrm dv=\left|\det J\right|^{-1}\mathrm du\,\mathrm dv$ (因 $\det\dfrac{\partial\left(\tilde u,\tilde v\right)}{\partial\left(u,v\right)}=\left(\det J\right)^{-1}$), 得
+记 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\tilde u,\tilde v\right)}$, 则 $\left|\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}\right|=\left|\det J\right|\left|\boldsymbol r_u\times\boldsymbol r_v\right|$. 由变量替换公式 $\mathrm d\tilde u\,\mathrm d\tilde v=\left|\det\frac{\partial\left(\tilde u,\tilde v\right)}{\partial\left(u,v\right)}\right|\mathrm du\,\mathrm dv=\left|\det J\right|^{-1}\mathrm du\,\mathrm dv$ (因 $\det\frac{\partial\left(\tilde u,\tilde v\right)}{\partial\left(u,v\right)}=\left(\det J\right)^{-1}$), 得
 
 $$
 \left|\tilde{\boldsymbol r}_{\tilde u}\times\tilde{\boldsymbol r}_{\tilde v}\right|\mathrm d\tilde u\,\mathrm d\tilde v
@@ -506,7 +508,7 @@ $\blacksquare$
 
 **(b) $\tilde{\boldsymbol r}=g\circ\boldsymbol r$ 是参数曲面片及极限公式.**
 
-先证正则性. Gauss 映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 的切映射即魏因加滕变换 $W=-\mathrm d\boldsymbol n$ (定义 24.1). 由 $\partial_\alpha\boldsymbol n=-b^{\beta}{}_\alpha\boldsymbol r_\beta$ (推导 23.A), 在基 $\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$ 下 $W$ 的系数矩阵是 $\left(b^{\beta}{}_\alpha\right)=\left(g^{\gamma\beta}b_{\alpha\gamma}\right)$, 其行列式
+先证正则性.高斯映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 的切映射即魏因加滕变换 $W=-\mathrm d\boldsymbol n$ (定义 24.1). 由 $\partial_\alpha\boldsymbol n=-b^{\beta}{}_\alpha\boldsymbol r_\beta$ (推导 23.A), 在基 $\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$ 下 $W$ 的系数矩阵是 $\left(b^{\beta}{}_\alpha\right)=\left(g^{\gamma\beta}b_{\alpha\gamma}\right)$, 其行列式
 
 $$
 \det\left(b^{\beta}{}_\alpha\right)=\det\left(g^{-1}b\right)=\frac{\det b}{\det g}=K.
