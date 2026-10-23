@@ -197,7 +197,7 @@ $$
 依据**教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**, 记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, $\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)$, 则
 
 $$
-k=\frac{w}{v^{3}},\qquad \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}.
+k=\frac{w}{v^{3}},\quad \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}.
 $$
 
 **(1)** $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a>0$).
@@ -217,7 +217,7 @@ $$
 故
 
 $$
-k=\frac{a\sqrt{a^{2}+b^{2}\cosh2t}}{\left(a^{2}\cosh2t+b^{2}\right)^{3/2}},\qquad
+k=\frac{a\sqrt{a^{2}+b^{2}\cosh2t}}{\left(a^{2}\cosh2t+b^{2}\right)^{3/2}},\quad
 \tau=\frac{b}{a^{2}+b^{2}\cosh2t}.\ \blacksquare
 $$
 
@@ -237,7 +237,7 @@ $$
 故
 
 $$
-k=\frac{a}{a^{2}+b^{2}},\qquad
+k=\frac{a}{a^{2}+b^{2}},\quad
 \tau=-\frac{b}{a^{2}+b^{2}}.\ \blacksquare
 $$
 

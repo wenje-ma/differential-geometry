@@ -49,7 +49,7 @@ $$
 因 $\tau>0$, 由**教材 §2.3 (曲率与主法向量)** 得
 
 $$
-\widetilde\kappa=\left\|\dot{\widetilde{\boldsymbol t}}\right\|=\tau,\qquad
+\widetilde\kappa=\left\|\dot{\widetilde{\boldsymbol t}}\right\|=\tau,\quad
 \widetilde{\boldsymbol n}=\frac{\dot{\widetilde{\boldsymbol t}}}{\widetilde\kappa}=-\boldsymbol n.
 $$
 
@@ -231,13 +231,13 @@ $$
 $$
 
 $$
-v^{2}=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}=8,\qquad v=2\sqrt2.
+v^{2}=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}=8,\quad v=2\sqrt2.
 $$
 
 又 $\boldsymbol r'\wedge\boldsymbol r''=\left(-2+2\sqrt3\cos t,\ -4\sin t,\ -2\cos t-2\sqrt3\right)$,
 
 $$
-w^{2}=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right)^{2}=32,\qquad w=4\sqrt2.
+w^{2}=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right)^{2}=32,\quad w=4\sqrt2.
 $$
 
 混合积
@@ -262,13 +262,13 @@ $$
 $$
 
 $$
-\tilde v^{2}=\sin^{2}\frac{t}{2}+\cos^{2}\frac{t}{2}+1=2,\qquad \tilde v=\sqrt2.
+\tilde v^{2}=\sin^{2}\frac{t}{2}+\cos^{2}\frac{t}{2}+1=2,\quad \tilde v=\sqrt2.
 $$
 
 $$
 \widetilde{\boldsymbol r}'\wedge\widetilde{\boldsymbol r}''
-=\left(-\frac12\sin\frac{t}{2},\ \frac12\cos\frac{t}{2},\ \frac12\right),\qquad
-\tilde w^{2}=\frac12,\qquad \tilde w=\frac1{\sqrt2}.
+=\left(-\frac12\sin\frac{t}{2},\ \frac12\cos\frac{t}{2},\ \frac12\right),\quad
+\tilde w^{2}=\frac12,\quad \tilde w=\frac1{\sqrt2}.
 $$
 
 混合积 $\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)=-\frac18$. 故 $\tilde k=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\tilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\tilde w^{2}}=\frac{-1/8}{1/2}=-\frac14$.

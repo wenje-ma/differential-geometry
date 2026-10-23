@@ -97,7 +97,7 @@ $$
 即
 
 $$
-H=\frac{\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}}{2\left(1+f_x^{2}+f_y^{2}\right)^{3/2}},\qquad
+H=\frac{\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}}{2\left(1+f_x^{2}+f_y^{2}\right)^{3/2}},\quad
 K=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
 
@@ -136,15 +136,15 @@ $$
 下面对图 $z=u\left(x,y\right):=\psi\left(x^{2}+y^{2}\right)$ 应用**公式 (§10.1, 函数图的几何量)**. 记 $\Psi:=\psi\left(x^{2}+y^{2}\right)$, 则 $\Psi_x=\psi'\cdot2x$, $\Psi_y=\psi'\cdot2y$, 故在 $\left(0,0\right)$ 处 $p=\Psi_x\left(0,0\right)=0$, $q=\Psi_y\left(0,0\right)=0$, 从而 $W=\sqrt{1+0+0}=1$. 又
 
 $$
-\Psi_{xx}=2\psi'+4x^{2}\psi'',\qquad
-\Psi_{xy}=4xy\psi'',\qquad
+\Psi_{xx}=2\psi'+4x^{2}\psi'',\quad
+\Psi_{xy}=4xy\psi'',\quad
 \Psi_{yy}=2\psi'+4y^{2}\psi'',
 $$
 
 故在 $\left(0,0\right)$ 处 $r=\Psi_{xx}\left(0,0\right)=2\psi'\left(0\right)$, $s=\Psi_{xy}\left(0,0\right)=0$, $t=\Psi_{yy}\left(0,0\right)=2\psi'\left(0\right)$. 代入**公式 (§10.1, 函数图的几何量)**, 在 $\left(0,0,0\right)$ 处
 
 $$
-\mathrm I=\mathrm dx^{2}+\mathrm dy^{2},\qquad
+\mathrm I=\mathrm dx^{2}+\mathrm dy^{2},\quad
 \mathrm{II}=2\psi'\left(0\right)\left(\mathrm dx^{2}+\mathrm dy^{2}\right).
 $$
 
@@ -169,7 +169,7 @@ $\blacksquare$
 在 $F_z\neq0$ 的邻域, 由**基础知识: 隐函数定理**, $S$ 局部是函数图 $z=z\left(x,y\right)$, 满足 $F\left(x,y,z\left(x,y\right)\right)\equiv0$. 由**基础知识: 隐函数求导**,
 
 $$
-z_x=-\frac{F_x}{F_z},\qquad z_y=-\frac{F_y}{F_z}.
+z_x=-\frac{F_x}{F_z},\quad z_y=-\frac{F_y}{F_z}.
 $$
 
 对 $S$ 取图形式参数化 $\boldsymbol r\left(x,y\right)=\left(x,y,z\left(x,y\right)\right)$, 由**公式 (§10.1, 函数图的几何量)**, 第一基本形式
@@ -181,8 +181,8 @@ $$
 代入 $z_x=-F_x/F_z$, $z_y=-F_y/F_z$, 得
 
 $$
-1+z_x^{2}=\frac{F_x^{2}+F_z^{2}}{F_z^{2}},\qquad
-1+z_y^{2}=\frac{F_y^{2}+F_z^{2}}{F_z^{2}},\qquad
+1+z_x^{2}=\frac{F_x^{2}+F_z^{2}}{F_z^{2}},\quad
+1+z_y^{2}=\frac{F_y^{2}+F_z^{2}}{F_z^{2}},\quad
 z_xz_y=\frac{F_xF_y}{F_z^{2}},
 $$
 
@@ -218,7 +218,7 @@ $$
 
 $$
 \mathrm{II}=\frac{z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}}{\sqrt{1+z_x^{2}+z_y^{2}}},
-\qquad z_x,z_y,z_{xx},z_{xy},z_{yy}\ \text{如上代入}.
+\quad z_x,z_y,z_{xx},z_{xy},z_{yy}\ \text{如上代入}.
 $$
 
 最后, 由**公式 (§3.5, 平均曲率与 Gauss 曲率)** 对函数图 $z=z\left(x,y\right)$ 应用 (此时 $E=1+z_x^{2}$, $F=z_xz_y$, $G=1+z_y^{2}$, $L=z_{xx}/W$, $M=z_{xy}/W$, $N=z_{yy}/W$), 得
@@ -253,7 +253,7 @@ $$
 
 $$
 \partial_\alpha\boldsymbol r_{\lambda}=\partial_\alpha\boldsymbol r+\lambda\,\partial_\alpha\boldsymbol n
-\in T_{\boldsymbol r}S,\qquad \alpha=1,2.
+\in T_{\boldsymbol r}S,\quad \alpha=1,2.
 $$
 
 故切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}=\operatorname{span}\left\{\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}\right\}$ 含于 $T_{\boldsymbol r}S$. 由**引理 5.2 (§3.5)**, 在 $P$ 取主方向坐标 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则由**定义 (§3.4, Weingarten 变换)** 与**定义 (§3.5, 主曲率与主方向)**, $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$, 故 $\boldsymbol r_{\lambda,\alpha}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$; 因 $k_\alpha$ 有限且 $\lambda$ 充分小, $1-\lambda k_\alpha\neq0$ ($\alpha=1,2$), 故 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 线性无关, $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 与 $T_{\boldsymbol r}S$ 同维数(二维). 于是
@@ -291,7 +291,7 @@ $$
 由**定义 (§3.5, 主曲率与主方向)**, $S_{\lambda}$ 的主曲率是矩阵 $\mathrm{II}_{\lambda}\mathrm I_{\lambda}^{-1}$ 的特征值, 即
 
 $$
-k_\alpha^{\lambda}=\frac{k_\alpha\left(1-\lambda k_\alpha\right)}{\left(1-\lambda k_\alpha\right)^{2}}=\frac{k_\alpha}{1-\lambda k_\alpha}\qquad\left(\alpha=1,2\right).
+k_\alpha^{\lambda}=\frac{k_\alpha\left(1-\lambda k_\alpha\right)}{\left(1-\lambda k_\alpha\right)^{2}}=\frac{k_\alpha}{1-\lambda k_\alpha}\quad\left(\alpha=1,2\right).
 $$
 
 由**公式 (§3.5, 平均曲率与 Gauss 曲率)**, $S_{\lambda}$ 的 Gauss 曲率
@@ -356,7 +356,7 @@ $$
 左端只依赖 $x$, 右端只依赖 $y$, 故二者均为常数, 记为 $c$:
 
 $$
-\frac{f''}{1+\left(f'\right)^{2}}=c,\qquad
+\frac{f''}{1+\left(f'\right)^{2}}=c,\quad
 \frac{g''}{1+\left(g'\right)^{2}}=-c.
 $$
 
@@ -370,7 +370,7 @@ $$
 其中 $C=C_1+C_2$. 对 $x,y$ 作平移 $\bar x=x+\frac\alpha c$, $\bar y=y-\frac\beta c$ 吸收常数 $\alpha,\beta$, 并略去符号与常数 $C$, 得
 
 $$
-z=\frac1a\ln\frac{\cos ay}{\cos ax}\qquad\left(a=c\right),\ 
+z=\frac1a\ln\frac{\cos ay}{\cos ax}\quad\left(a=c\right),\ 
 \text{即 Scherk 曲面};\ \text{除相差一个常数外它必具此形式}.
 $$
 
@@ -391,8 +391,8 @@ $$
 二阶导 $\boldsymbol r_{uu}=\boldsymbol0$, $\boldsymbol r_{uv}=\left(-\sin v,\ \cos v,\ 0\right)$, $\boldsymbol r_{vv}=\left(-u\cos v,\ -u\sin v,\ 0\right)$. 由**定义 (§3.1, 曲面与单位法向)**, 单位法向 $\boldsymbol n=\left(\boldsymbol r_u\wedge\boldsymbol r_v\right)/\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|$, 而 $\boldsymbol r_u\wedge\boldsymbol r_v=\left(b\sin v,\ -b\cos v,\ u\right)$, $\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|=\sqrt{b^{2}+u^{2}}$, 故 $\boldsymbol n=\left(b\sin v,-b\cos v,u\right)/\sqrt{b^{2}+u^{2}}$. 由**定义 (§3.3, 第二基本形式)**,
 
 $$
-L=\left(\boldsymbol r_{uu},\boldsymbol n\right)=0,\qquad
-M=\left(\boldsymbol r_{uv},\boldsymbol n\right)=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac b{\sqrt{b^{2}+u^{2}}},\qquad
+L=\left(\boldsymbol r_{uu},\boldsymbol n\right)=0,\quad
+M=\left(\boldsymbol r_{uv},\boldsymbol n\right)=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac b{\sqrt{b^{2}+u^{2}}},\quad
 N=\left(\boldsymbol r_{vv},\boldsymbol n\right)=0.
 $$
 
@@ -441,7 +441,7 @@ $$
 设 $\sigma:\widetilde D\to D$, $\left(\widetilde u,\widetilde v\right)\mapsto\left(u,v\right)$ 是参数变换 (局部同胚), 复合参数化 $\tilde{\boldsymbol r}=\boldsymbol r\circ\sigma$. 由链式法则,
 
 $$
-\tilde{\boldsymbol r}_{\widetilde u}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde u}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde u},\qquad
+\tilde{\boldsymbol r}_{\widetilde u}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde u}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde u},\quad
 \tilde{\boldsymbol r}_{\widetilde v}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde v}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde v},
 $$
 

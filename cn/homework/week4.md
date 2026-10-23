@@ -385,7 +385,7 @@ $$
 (即过原点、垂直于 $\boldsymbol r$ 的平面, 因 $\dim T_{\boldsymbol r}S=2$ 而 $\boldsymbol r\ne\boldsymbol0$). 又 $\boldsymbol r$ 是单位向量, 故 $\boldsymbol r$ 是曲面在该点的一个单位法向量; 由**定义 (§3.1, 曲面与单位法向)**,
 
 $$
-\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}=\sigma\,\boldsymbol r,\qquad \sigma=\pm1,
+\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}=\sigma\,\boldsymbol r,\quad \sigma=\pm1,
 $$
 
 其中 $\sigma$ 的符号由该参数化下 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r$ 平行或反平行决定.
