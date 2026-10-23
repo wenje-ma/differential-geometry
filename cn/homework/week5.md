@@ -159,7 +159,7 @@ $$
 右端与切方向 $\left(\mathrm dx,\mathrm dy\right)$ 无关, 故
 
 $$
-S\ \text{在}\ \left(0,0,0\right)\ \text{的法曲率是常数}\ k_n=\frac{2}{f'\left(0\right)}.
+S\;\text{在}\;\left(0,0,0\right)\;\text{的法曲率是常数}\;k_n=\frac{2}{f'\left(0\right)}.
 $$
 
 $\blacksquare$
@@ -218,7 +218,7 @@ $$
 
 $$
 \mathrm{II}=\frac{z_{xx}\,\mathrm dx^{2}+2z_{xy}\,\mathrm dx\,\mathrm dy+z_{yy}\,\mathrm dy^{2}}{\sqrt{1+z_x^{2}+z_y^{2}}},
-\quad z_x,z_y,z_{xx},z_{xy},z_{yy}\ \text{如上代入}.
+\quad z_x,z_y,z_{xx},z_{xy},z_{yy}\;\text{如上代入}.
 $$
 
 最后, 由**公式 (§3.5, 平均曲率与 Gauss 曲率)** 对函数图 $z=z\left(x,y\right)$ 应用 (此时 $E=1+z_x^{2}$, $F=z_xz_y$, $G=1+z_y^{2}$, $L=z_{xx}/W$, $M=z_{xy}/W$, $N=z_{yy}/W$), 得
@@ -259,7 +259,7 @@ $$
 故切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}=\operatorname{span}\left\{\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}\right\}$ 含于 $T_{\boldsymbol r}S$. 由**引理 5.2 (§3.5)**, 在 $P$ 取主方向坐标 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则由**定义 (§3.4, Weingarten 变换)** 与**定义 (§3.5, 主曲率与主方向)**, $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$, 故 $\boldsymbol r_{\lambda,\alpha}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$; 因 $k_\alpha$ 有限且 $\lambda$ 充分小, $1-\lambda k_\alpha\neq0$ ($\alpha=1,2$), 故 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 线性无关, $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 与 $T_{\boldsymbol r}S$ 同维数(二维). 于是
 
 $$
-T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,\ \text{即对应点的切平面平行}.
+T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,\;\text{即对应点的切平面平行}.
 $$
 
 因 $\boldsymbol r_{\lambda,\alpha}\in T_{\boldsymbol r}S$ 且 $\boldsymbol r_{\lambda,1}\wedge\boldsymbol r_{\lambda,2}\parallel\boldsymbol r_1\wedge\boldsymbol r_2$, 可取 $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$.
@@ -370,8 +370,8 @@ $$
 其中 $C=C_1+C_2$. 对 $x,y$ 作平移 $\bar x=x+\frac\alpha c$, $\bar y=y-\frac\beta c$ 吸收常数 $\alpha,\beta$, 并略去符号与常数 $C$, 得
 
 $$
-z=\frac1a\ln\frac{\cos ay}{\cos ax}\quad\left(a=c\right),\ 
-\text{即 Scherk 曲面};\ \text{除相差一个常数外它必具此形式}.
+z=\frac1a\ln\frac{\cos ay}{\cos ax}\quad\left(a=c\right),\;
+\text{即 Scherk 曲面};\;\text{除相差一个常数外它必具此形式}.
 $$
 
 这与**例 1.3 (§10.1, Scherk 曲面)** 一致: 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $\ln\frac{\cos x}{\cos y}$ (取 $a=1$ 并作反射 $z\mapsto-z$). $\blacksquare$
@@ -405,7 +405,7 @@ $$
 由**定义 (§10.1, 极小曲面)** ($H\equiv0$),
 
 $$
-\text{正螺面}\ \boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)\ \text{是极小曲面}.
+\text{正螺面}\;\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)\;\text{是极小曲面}.
 $$
 
 (此时由同一公式, $K=\frac{LN-M^{2}}{EG-F^{2}}=-\frac{b^{2}}{\left(b^{2}+u^{2}\right)^{2}}<0$, 故正螺面处处是双曲点, 与**例 1.1 (§10.1, 螺旋面)** 的图 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 是同一螺旋面的两种参数化.)
@@ -471,7 +471,7 @@ $$
 即面积元 $\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv$ 在参数变换下不变; 由**公式 (§3.5, 面积元与 Gauss 映射面积)**, 该面积元即 $\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$, 这与**定理 2.1 (§3.2)** (第一基本形式与参数选取无关) 一致. 因此
 
 $$
-Area\left(S\right)\ \text{与参数选取无关}.
+Area\left(S\right)\;\text{与参数选取无关}.
 $$
 
 $\blacksquare$
