@@ -42,9 +42,9 @@ L^2/(2pi)=int_0^(2pi)((x^1)')^2+(x^2(')^2)dt,
 
 第二个方案. 设曲线 gamma 已经使得 int_Omega(gamma) dx^1 wedge dx^2 最大. gamma=(x^1,x^2), 且 int_gammax^1ds=0, i=1,2
 
-设 x_epsilon^i=x^i+epsilon phi^im phi^i in C_0^infty[0,L].
+设 x_varepsilon^i=x^i+varepsilon phi^im phi^i in C_0^infty[0,L].
 
-S(epsilon):=int_Omega(gamma_epsilon) dx^1 wege dx^2, 令 p/p epsilon|_epsilon=0 S=0
+S(varepsilon):=int_Omega(gamma_varepsilon) dx^1 wege dx^2, 令 p/p varepsilon|_varepsilon=0 S=0
 
 (x^i)''=pm lambda x^i, forall phi^i.
 

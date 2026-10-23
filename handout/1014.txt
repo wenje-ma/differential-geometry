@@ -29,10 +29,10 @@ partial^2/partial u^alpha partial u^beta n=-partial/partial u^alpha lambda parti
 II=lambda(u)g_11(d u^1)^2+lambda(u)g_22(d u^2)^2
 ---
 
-partial/partial u^alpha (partial/partial u^beta n)=partial/partial u^alpha(-h_beta^epsilon partial/partial u^epsilon gamma)
-=-partial/partial u^alpha h_beta^epsilon(partial/partial u^epsilon gamma)-h_beta^epsilon(Gamma_epsilonalpha^tau)partial/partial u^tau gamma
-=(-partial/partial u^alpha h_beta^tau-h_beta^tau Gamma_epsilonalpha^tau)partial/partial u^tau gamma-
-h_beta^epsilon h_epsilonalpha n
+partial/partial u^alpha (partial/partial u^beta n)=partial/partial u^alpha(-h_beta^varepsilon partial/partial u^varepsilon gamma)
+=-partial/partial u^alpha h_beta^varepsilon(partial/partial u^varepsilon gamma)-h_beta^varepsilon(Gamma_varepsilonalpha^tau)partial/partial u^tau gamma
+=(-partial/partial u^alpha h_beta^tau-h_beta^tau Gamma_varepsilonalpha^tau)partial/partial u^tau gamma-
+h_beta^varepsilon h_varepsilonalpha n
 
 结构方程
 I=g_alphabeta d u^alpha d u^beta
@@ -47,15 +47,15 @@ iff gamma, partial/partial u^alpha gamma n 对 u 的二阶导数都交换.
 
 partial/partial u^alpha gamma
 partial/partial u^beta partial u^alpha=Gamma_alphabeta^tau partial/partial u^tau gamma-h_alphabeta n
-partial^3/partial u^epsilon partial u^beta partial u^alpha gamma=partial/partial u^epsilon Gamma_alphabeta^tau-Gamma_alphabeta^tau(Gamma_epsilonalpha^delta Gamma_epsilonalpha^delta partial/partial u^delta gamma-h_epsilontau n)
--partial/partial u^epsilon h_alphabeta n-h_alphabeta h_epsilon^delta partial/partial u^delta gamma
-=(partial/partial u^epsilon Gamma_alphabeta^delta-Gamma_alphabeta^epsilon Gamma_epsilontau^delta-h_alphabeta h_epsilon^delta)partial/partial u^delta gamma-(partial/partial u^epsilon h_alphabeta+h_epsilontau Gamma_alphabeta^tau)n
-partial^3/partial u^epsilon partial u^beta partial u^alpha gamma=(partial/partial u^beta Gamma_alphaepsilon^delta-Gamma_alphaepsilon^tau Gamma_betatau^delta-h_alphatau h_beta^delta)partial/partial u^delta gamma-(partial/partial u^beta h_alphaepsilon+h_betatau Gamma_alphaepsilon^tau)n
-implies partial/partial u^epsilon Gamma_alphabeta^delta-partial/partial u^beta Gamma_alphaepsilon^delta+Gamma_alphaepsilon^tau Gamma_taubeta^delta-Gamma_alphabeta^tau Gamma_tauepsilon^delta+h_alphaepsilon h_beta^delta-h_alphabeta h_epsilon^delta equiv 0(gauss方程)
-partial/partial u^epsilon h_alphabeta-partial/partial u^beta h_alphaepsilon+h_epsilontau Gamma_alphabeta^tau-h_betatau Gamma_alphaepsilon^tau equiv 0(coddai方程)
+partial^3/partial u^varepsilon partial u^beta partial u^alpha gamma=partial/partial u^varepsilon Gamma_alphabeta^tau-Gamma_alphabeta^tau(Gamma_varepsilonalpha^delta Gamma_varepsilonalpha^delta partial/partial u^delta gamma-h_varepsilontau n)
+-partial/partial u^varepsilon h_alphabeta n-h_alphabeta h_varepsilon^delta partial/partial u^delta gamma
+=(partial/partial u^varepsilon Gamma_alphabeta^delta-Gamma_alphabeta^varepsilon Gamma_varepsilontau^delta-h_alphabeta h_varepsilon^delta)partial/partial u^delta gamma-(partial/partial u^varepsilon h_alphabeta+h_varepsilontau Gamma_alphabeta^tau)n
+partial^3/partial u^varepsilon partial u^beta partial u^alpha gamma=(partial/partial u^beta Gamma_alphavarepsilon^delta-Gamma_alphavarepsilon^tau Gamma_betatau^delta-h_alphatau h_beta^delta)partial/partial u^delta gamma-(partial/partial u^beta h_alphavarepsilon+h_betatau Gamma_alphavarepsilon^tau)n
+implies partial/partial u^varepsilon Gamma_alphabeta^delta-partial/partial u^beta Gamma_alphavarepsilon^delta+Gamma_alphavarepsilon^tau Gamma_taubeta^delta-Gamma_alphabeta^tau Gamma_tauvarepsilon^delta+h_alphavarepsilon h_beta^delta-h_alphabeta h_varepsilon^delta equiv 0(gauss方程)
+partial/partial u^varepsilon h_alphabeta-partial/partial u^beta h_alphavarepsilon+h_varepsilontau Gamma_alphabeta^tau-h_betatau Gamma_alphavarepsilon^tau equiv 0(coddai方程)
 
-partial/partial u^alpha n=h_alpha partial/partial u^epsilon gamma
-partial^2/partial u^beta partial u^alpha n=partial/partial u^beta h_alpha^tau partial/partial u^tau gamma+h_alpha^tau(Gamma_taualpha^epsilon partial/partial u^epsilon gamma-h_taubeta n)
+partial/partial u^alpha n=h_alpha partial/partial u^varepsilon gamma
+partial^2/partial u^beta partial u^alpha n=partial/partial u^beta h_alpha^tau partial/partial u^tau gamma+h_alpha^tau(Gamma_taualpha^varepsilon partial/partial u^varepsilon gamma-h_taubeta n)
 =(partial/partial u^beta h_alpha^tau+h_alpha^delta Gamma_deltabeta^tau)partial/partial u^tau gamma-h_alpha^tau h_taubeta n
 partial^2/partial u^beta partial u^alpha n=partial^2/partial u^alpha partial u^beta n
 partial/partial u^beta h_alpha^tau-partial/partial u^alpha h_beta^tau+h_alpha^delta Gamma_deltabeta^tau-h_beta^delta Gamma_alphadelta equiv 0
@@ -63,9 +63,9 @@ partial/partial u^beta h_alpha^tau-partial/partial u^alpha h_beta^tau+h_alpha^de
 定理: 若给定 I, II,
 则存在曲面实现 I,II iff I, II 满足 G-C 方程组.
 
-[(partial/partial u^epsilon Gamma_alphabeta^epsilon+Gamma_alphaepsilon^tau Gamma_taubeta^delta)-(epsilon<->beta)]g_deltatheta
-+h_alphaepsilon h_betatheta-h_alphabeta h_epsilontheta=0
-alpha,beta=1,epsilon,theta=2
+[(partial/partial u^varepsilon Gamma_alphabeta^varepsilon+Gamma_alphavarepsilon^tau Gamma_taubeta^delta)-(varepsilon<->beta)]g_deltatheta
++h_alphavarepsilon h_betatheta-h_alphabeta h_varepsilontheta=0
+alpha,beta=1,varepsilon,theta=2
 det(h_alphabeta)=h_12 h_21-h_11 h_22=(partial Gamma+Gamma Gamma)G
 k=det(h_alphabeta)/det(g_alphabeta)=((partial Gamma+Gamma Gamma)g_****)/det(g_alphabeta)
 
@@ -73,13 +73,13 @@ k=det(h_alphabeta)/det(g_alphabeta)=((partial Gamma+Gamma Gamma)g_****)/det(g_al
 
 g=g_11(d u^1)^2+g_22(d u^2)^2
 h=lambda(u)(g)
-partial/partial u^epsilon(lambda(u)g_alphaalpha)-partial/partial u^alpha(lambda(u)g_alphaepsilon)
-+h_epsilontau Gamma_alphaalpha^tau-h_alphatau Gamma_alphaepsilon^tau=0
-epsilon=alpha, epsilon ne alpha
-Gamma_alphabeta^epsilon=1/2 g^epsilondelta(partial_alpha g_betadelta+partial_beta g_alphadelta-partial_delta g_alphabeta)
-g_epsilonalpha, h_epsilonalpha=0,
-partial/partial u^epsilon(lambda(u)g_epsilonalpha)+lambda(g_epsilonepsilon Gamma_alphaalpha^epsilon-g_alphaalpha Gamma_alphaepsilon^alpha)
-implies g_alphaalpha partial/partial u^epsilon lambda=0 implies partial/partial u^epsilon lambda=0 implies lambda=const
+partial/partial u^varepsilon(lambda(u)g_alphaalpha)-partial/partial u^alpha(lambda(u)g_alphavarepsilon)
++h_varepsilontau Gamma_alphaalpha^tau-h_alphatau Gamma_alphavarepsilon^tau=0
+varepsilon=alpha, varepsilon ne alpha
+Gamma_alphabeta^varepsilon=1/2 g^varepsilondelta(partial_alpha g_betadelta+partial_beta g_alphadelta-partial_delta g_alphabeta)
+g_varepsilonalpha, h_varepsilonalpha=0,
+partial/partial u^varepsilon(lambda(u)g_varepsilonalpha)+lambda(g_varepsilonvarepsilon Gamma_alphaalpha^varepsilon-g_alphaalpha Gamma_alphavarepsilon^alpha)
+implies g_alphaalpha partial/partial u^varepsilon lambda=0 implies partial/partial u^varepsilon lambda=0 implies lambda=const
 
 定理: 全解曲面一定是平面或球面的一部分
 证明: 设 II=lambda(u)I

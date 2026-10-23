@@ -17,7 +17,7 @@ dot e_1=partial/partial u^1 (1/sqrt(g_11)) + 1/sqrt(g_11) Gamma_1beta^alpha part
 <(T times n),dot T>=-dot theta+1/sqrt(g_11) Gamma_1beta^2<partial/partial u^2 gamma,e_2>dot u^beta
 =dot theta+sqrt(g_22/g_11)Gamma_1beta^2 dot u^beta, partial/partial u^2=sqrt(g_22)e_2
 
-Gamma_1beta^2=1/2 g^2epsilon(partial_1 g_epsilonbeta+partial_beta g_1epsilon-partial_epsilon g_1beta)
+Gamma_1beta^2=1/2 g^2varepsilon(partial_1 g_varepsilonbeta+partial_beta g_1varepsilon-partial_varepsilon g_1beta)
 =1/2 (1/g_11)(partial_1 g_2beta-partial_2 g_1beta)
 =1/(2 g_22)(-partial_2 g_11), beta=1, 1/(2 g_22) partial_1 g_22, beta=2
 
@@ -47,13 +47,13 @@ int_C k_g ds=int_C dtheta+1/2(int_C sqrt(g_22/g_11)(partial_1 ln g_22) du^2-sqrt
 =-int_C dtheta + 1/2 int_C (partial_1 (1/sqrt(g_11 g_22) partial_1 g_22)+partial_2(1/sqrt(g_11 g_22) partial_2 g_11))/sqrt(g_11 g_22)ds
 =-int_C dtheta + 1/2 int_C (partial_1 g_22 partial_1 (1/sqrt(g_11 g_22) partial_1 g_22)+(partial_2 g_22)/sqrt(g_11 g_22)(1<-->2))/sqrt(g_11 g_22)ds
 
-partial^2/partial u^alpha partial u^beta partial u^epsilon = partial/partial u^alpha Gamma_betaepsilon^tau partial/partial u^tau gamma + Gamma_betaepsilon^mu Gamma_mualpha^tau partial/partial u^tau gamma-partial/partial u^alpha h_betaepsilon n-h_betaepsilon h_alpha^tau partial/partial u^tau gamma
-partial^2/partial u^beta partial u^alpha partial u^epsilon=partial/partial u^beta Gamma_alphaepsilon^tau partial/partial u^tau gamma+Gamma_alphaepsilon^mu Gamma_mubeta^tau partial/partial u^tau gamma - partial/partial u^beta h_alphaepsilon n-h_alphaepsilon h_beta^tau partial/partial u^tau gamma
+partial^2/partial u^alpha partial u^beta partial u^varepsilon = partial/partial u^alpha Gamma_betavarepsilon^tau partial/partial u^tau gamma + Gamma_betavarepsilon^mu Gamma_mualpha^tau partial/partial u^tau gamma-partial/partial u^alpha h_betavarepsilon n-h_betavarepsilon h_alpha^tau partial/partial u^tau gamma
+partial^2/partial u^beta partial u^alpha partial u^varepsilon=partial/partial u^beta Gamma_alphavarepsilon^tau partial/partial u^tau gamma+Gamma_alphavarepsilon^mu Gamma_mubeta^tau partial/partial u^tau gamma - partial/partial u^beta h_alphavarepsilon n-h_alphavarepsilon h_beta^tau partial/partial u^tau gamma
 
-(partial/partial u^alpha Gamma_betaepsilon^tau+Gamma_betaepsilon^mu Gamma_mualpha^tau-h_betaepsilon h_alpha^tau)-(alpha cos beta)=0
-g_Dtau(partial/partial u^alpha Gamma_betaepsilon^tau+Gamma_betaepsilon ^mu Gamma_mualpha^tau-(a <--> beta))=h_betaepsilon h_alphagamma - h_alphaepsilon h_betagamma=k g_11 g_22
+(partial/partial u^alpha Gamma_betavarepsilon^tau+Gamma_betavarepsilon^mu Gamma_mualpha^tau-h_betavarepsilon h_alpha^tau)-(alpha cos beta)=0
+g_Dtau(partial/partial u^alpha Gamma_betavarepsilon^tau+Gamma_betavarepsilon ^mu Gamma_mualpha^tau-(a <--> beta))=h_betavarepsilon h_alphagamma - h_alphavarepsilon h_betagamma=k g_11 g_22
 
-Gamma_11^tau=1/2 g^tauepsilon(partial_1 g_epsilonepsilon + partial_1 g_1epsilon - partial_1 g_11)= 1/(2 g_11)(partial_1 g_11), tau=1, 1/(2 g_22)(-partial_2 g_11), tau=2
+Gamma_11^tau=1/2 g^tauvarepsilon(partial_1 g_varepsilonvarepsilon + partial_1 g_1varepsilon - partial_1 g_11)= 1/(2 g_11)(partial_1 g_11), tau=1, 1/(2 g_22)(-partial_2 g_11), tau=2
 
 int_C k_g ds=-int_C dot theta ds-int_Omega k dsigma
 当 C 是简单闭曲线

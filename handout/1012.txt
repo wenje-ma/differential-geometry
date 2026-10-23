@@ -52,7 +52,7 @@ ddot c(s) = ddot u^alpha p/pu^alpha gamma + dot u^alpha dot u^beta p^2/pu^alphap
 
 而 p^2/pu^alphapu^beta gamma = Gamma_alphabeta^2 p/pu^tau gamma - h_alphabeta n
 
-ddot c(s) = (ddot u^alpha + dot u^epsilon dot u^tau Gamma_Sigmatau^alpha) p/pu^alpha gamma (测地曲率向量) - dot u^alpha dot u^beta h_alphabeta n (法曲率向量)
+ddot c(s) = (ddot u^alpha + dot u^varepsilon dot u^tau Gamma_Sigmatau^alpha) p/pu^alpha gamma (测地曲率向量) - dot u^alpha dot u^beta h_alphabeta n (法曲率向量)
 
 定义: h_alphabeta dot u^alpha dot u^beta 称为法曲率. (k_n)
 

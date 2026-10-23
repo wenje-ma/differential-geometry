@@ -50,17 +50,17 @@ tilde u to u=sigma(tilde u)
 
 ds^2=<p/p tilde u^alpha tilde gamma,p/p tilde u^beta tilde gamma> d tilde u^alpha d tilde u^beta
 
-证明. 由于 p/p tilde u^alpha tilde gamma=p/pu^epsilon gamma p/p tilde u^alpha u^epsilon
+证明. 由于 p/p tilde u^alpha tilde gamma=p/pu^varepsilon gamma p/p tilde u^alpha u^varepsilon
 
 p/p tilde u^beta tilde gamma=p/pu^tau gamma p/p tilde u^beta u^tau
 
-=> <p/p tilde u^alpha tilde gamma,p/p tilde u^beta tilde gamma>=<p/pu^epsilon gamma,p/pu^tau gamma> p/pu^alpha u^epsilonp/pu^beta u^tau dtilde u^alpha dtilde u^beta=<p/pu^epsilon gamma,p/pu^tau gamma> du^1 du^2.
+=> <p/p tilde u^alpha tilde gamma,p/p tilde u^beta tilde gamma>=<p/pu^varepsilon gamma,p/pu^tau gamma> p/pu^alpha u^varepsilonp/pu^beta u^tau dtilde u^alpha dtilde u^beta=<p/pu^varepsilon gamma,p/pu^tau gamma> du^1 du^2.
 
 g_alpha beta := <p/pu^alpha gamma,p/pu^beta gamma>
 
-p/pu^epsilon u^ p/pu^tau g_epsllon tau=(p/pu^alpha u^1 p/pu^beta u^1 g_11 + p/pu^alpha u^1 p/pu^beta u^2 g_12 + p/pu^alpha u^2 p/pu^beta u^1 g_21 + p/pu^alpha u^2 p/pu^beta u^2 g_22)_1 le alpha le p=2=(p/ptilde u u)^top g_epsilon tau (p/ptilde u u)
+p/pu^varepsilon u^ p/pu^tau g_epsllon tau=(p/pu^alpha u^1 p/pu^beta u^1 g_11 + p/pu^alpha u^1 p/pu^beta u^2 g_12 + p/pu^alpha u^2 p/pu^beta u^1 g_21 + p/pu^alpha u^2 p/pu^beta u^2 g_22)_1 le alpha le p=2=(p/ptilde u u)^top g_varepsilon tau (p/ptilde u u)
 
-求证, 在 gammau(tilde u) 参数变换下, (tilde g_alphha beta)=(p/ptilde u u)^top (g_epsilon tau) (p/ptilde u u)
+求证, 在 gammau(tilde u) 参数变换下, (tilde g_alphha beta)=(p/ptilde u u)^top (g_varepsilon tau) (p/ptilde u u)
 
 设 gamma: D to Sigma(subset R^2) 是参数曲面, u_0 in D
 
@@ -88,11 +88,11 @@ d(p/pu^1 gamma;p/pu^2 gamma;n)=(?)(p/pu^1 gamma;p/pu^2 gamma;n)
 
 d/du^beta u=a^alpha_beta p/pu^alpha gamma
 
-a_beta ^epsilon g_epsilon alpha + <n,p^2/p u^alpha p u^beta gamma>=0
+a_beta ^varepsilon g_varepsilon alpha + <n,p^2/p u^alpha p u^beta gamma>=0
 
-设 (g_epsilon alpha)^-1=(g^gamma nu)
+设 (g_varepsilon alpha)^-1=(g^gamma nu)
 
-a_beta ^epsilon g_epsilon alpha g^alpha u+g^alpha mu<n,p^2/p u^alpha p u^beta gamma>=0
+a_beta ^varepsilon g_varepsilon alpha g^alpha u+g^alpha mu<n,p^2/p u^alpha p u^beta gamma>=0
 
 dn=a^beta_alpha p/pu^beta gamma du^alpha
 
@@ -106,17 +106,17 @@ II=-<tilde n ,p^2/p u^alpha p u^beta gamma>du^tilde alpha du^tilde beta
 
 tilde n=(p/ptilde u^1 gamma times p/ptilde u^2 gamma)/(|p/ptilde u^1 gamma times p/ptilde u^2 gamma|)
 
-p/ptilde u^alpha gamma=p/p u^epsilon gamma p/p tilde u^alpha u^epsilon
+p/ptilde u^alpha gamma=p/p u^varepsilon gamma p/p tilde u^alpha u^varepsilon
 
-p/ptilde u^1 gamma times p/ptilde u^2 gamma=p/ptilde u^wpsilon gamma times p/ptilde u^tau gamma(p/ptilde u^1 u^epsilon times p/ptilde u^2 u^tau)=det(p/p tilde u u)p/ptilde u^1 gamma times p/ptilde u^2 gamma
+p/ptilde u^1 gamma times p/ptilde u^2 gamma=p/ptilde u^wpsilon gamma times p/ptilde u^tau gamma(p/ptilde u^1 u^varepsilon times p/ptilde u^2 u^tau)=det(p/p tilde u u)p/ptilde u^1 gamma times p/ptilde u^2 gamma
 
 tilde n=det(p/p tilde u u)ne
 
 p/p tilde u^beta = p/p u^tau gamma p/p tilde u^beta u^tau
 
-p^2/p u^alpha p u^beta gamma=p^2/p u^alpha p u^beta gamma p/p u ^epsilon p u tau gamma p/p tilde u ^aloha u^epsilon p/p tilde u ^beta u^tau+p/pu^tau gammap^2/p tilde u^alpha p tilde u^beta u^tau
+p^2/p u^alpha p u^beta gamma=p^2/p u^alpha p u^beta gamma p/p u ^varepsilon p u tau gamma p/p tilde u ^aloha u^varepsilon p/p tilde u ^beta u^tau+p/pu^tau gammap^2/p tilde u^alpha p tilde u^beta u^tau
 
-<n,p^2/p tilde u^alpha p tilde u^beta gamma>=det(p/p tilde u u)<n, p^2/p tilde u^epsilon p tilde u^tau gamma>p/ptildeu^aloha u^epsilonp/ptildeu^beta u^tau
+<n,p^2/p tilde u^alpha p tilde u^beta gamma>=det(p/p tilde u u)<n, p^2/p tilde u^varepsilon p tilde u^tau gamma>p/ptildeu^aloha u^varepsilonp/ptildeu^beta u^tau
 
 所以 tilde II=det(p/ptildeu u)(定向)II
 
@@ -132,30 +132,30 @@ h_alphabeta = -<n,p^2/p u^alpha p u^beta gamma>
 
 d p/pu^beta gamma=p^2/p u^alpha p u^beta gamma du^beta
 
-求 d p/pu^alpha gamma (<p^2/p u^alpha p u^beta gamma, p/p u^epsilon gamma>=?)
+求 d p/pu^alpha gamma (<p^2/p u^alpha p u^beta gamma, p/p u^varepsilon gamma>=?)
 
-p^2/p u^alpha p u^beta gamma=Gamma_alphabeta^epsilon p/p u^epsilon gamma-h_alphabeta n
+p^2/p u^alpha p u^beta gamma=Gamma_alphabeta^varepsilon p/p u^varepsilon gamma-h_alphabeta n
 
 g_alphabeta=<p/p u ^alpha gamma,p/p u ^beta gamma>
 
-p/pu^epsilon g_alphabeta = <p^2/p u^alpha p u^beta gamma,p/p u^beta gamma>+<p/pu^aloha gamma,p^2/p u^alpha p u^beta gamma>=Gamma_alphaepsilon^tau g_taubeta+Gamma_betaepsilon^tau g_taualpha
+p/pu^varepsilon g_alphabeta = <p^2/p u^alpha p u^beta gamma,p/p u^beta gamma>+<p/pu^aloha gamma,p^2/p u^alpha p u^beta gamma>=Gamma_alphavarepsilon^tau g_taubeta+Gamma_betavarepsilon^tau g_taualpha
 
-p/pu^epsilon g_alphabeta=Gamma_alphaepsilon^tau g_taubeta+Gamma_betaepsilon^tau g_taualpha
+p/pu^varepsilon g_alphabeta=Gamma_alphavarepsilon^tau g_taubeta+Gamma_betavarepsilon^tau g_taualpha
 
-p/pu^alpha g_betaepsilon=Gamma_betaaloha^tau g_tauepsilon+Gamma_epsilonalpha^tau g_taubeta
+p/pu^alpha g_betavarepsilon=Gamma_betaaloha^tau g_tauvarepsilon+Gamma_varepsilonalpha^tau g_taubeta
 
-p/pu^beta g_epsilonalpha=Gamma_epsilonbeta^tau g_taualpha+Gamma_alphabeta^tau g_taualpha
+p/pu^beta g_varepsilonalpha=Gamma_varepsilonbeta^tau g_taualpha+Gamma_alphabeta^tau g_taualpha
 
-p/pu^beta g_alphaepsilon + p/p u^alpha g_betaepsilon - p/pu^epsilon g_alphabeta=2Gamma_alphabeta^tau g_tauepsilon
+p/pu^beta g_alphavarepsilon + p/p u^alpha g_betavarepsilon - p/pu^varepsilon g_alphabeta=2Gamma_alphabeta^tau g_tauvarepsilon
 
-所以 Gamma_alphabeta^tau = 1/2 g^tauepsilon (p/p u^alpha g_betaepsilon+p/p u^beta g_alphaepsilon)
+所以 Gamma_alphabeta^tau = 1/2 g^tauvarepsilon (p/p u^alpha g_betavarepsilon+p/p u^beta g_alphavarepsilon)
 
 ?=(Gamma_1*^1,Gamma_1*^2,-h_1*;Gamma_2*^1,Gamma_2*^2,-h_2*;h_1*,h_2*,0)
 
 d p/p u^alpha gamma = p/p u^alpha p u^beta gamma d u^beta
-(<p^2/p u^alpha p u^beta gamma, p/pu^epsilon gamma>)
+(<p^2/p u^alpha p u^beta gamma, p/pu^varepsilon gamma>)
 
-Gamma_alphabeta^epsilon=1/2 g^epsilontau (p_alpha g_taubeta+p_beta g_alphatau-p_tau g_alphabeta)
+Gamma_alphabeta^varepsilon=1/2 g^varepsilontau (p_alpha g_taubeta+p_beta g_alphatau-p_tau g_alphabeta)
 
 Weigarten 变换
 
@@ -171,11 +171,11 @@ dn(v)=v^alpha p/pu^alpha n in T_gamma(u_0) Sigma.
 
 p/pu^alpha n=-<n, p^2/p u^alpha p u^beta gamma>=-h_alphabeta
 
-所以 p/p u ^alpha n=-h_alphabeta g^betaepsilon p/pu^epsilon gamma
-dn(v^alpha p/pu^alpha gamma)=-h_alphabeta v^alpha g^beta epsilon p/pu^tau gamma
+所以 p/p u ^alpha n=-h_alphabeta g^betavarepsilon p/pu^varepsilon gamma
+dn(v^alpha p/pu^alpha gamma)=-h_alphabeta v^alpha g^beta varepsilon p/pu^tau gamma
 设 v,w in T_gamma(u_0) Sigma
 
-<dn(v),w>=<(-h_alphabeta v^alpha g^betaepsilon)p/pu^epsilon gamma, w^tau p/p^tau gamma>=-h_alphabeta v^alpha g^betatau w^tau g_epsilon tau = -h_alpha beta v^alpha w^beta=<v, dc(w)>
+<dn(v),w>=<(-h_alphabeta v^alpha g^betavarepsilon)p/pu^varepsilon gamma, w^tau p/p^tau gamma>=-h_alphabeta v^alpha g^betatau w^tau g_varepsilon tau = -h_alpha beta v^alpha w^beta=<v, dc(w)>
 
 
 命题. dn 在 T_gamma(u_0) Sigma 上关于内积 (g_alphabeta(u))_a le alpha,beta le 2 是自共轭的.

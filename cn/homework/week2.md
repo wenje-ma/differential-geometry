@@ -279,11 +279,11 @@ $$
 
 ## 2
 
-回忆法里-米尔诺定理: 设 $\gamma:\left[0,L\right]\to\mathbb E^{3}$ 是一条光滑弧长参数简单闭曲线. 如果 $\gamma$ 是一个非平凡纽结, 则其全曲率积分满足 $\int_\gamma\kappa\left(s\right)\mathrm ds>4\pi$. 思考: 是否存在 $\epsilon>0$, 对任何非平凡纽结 $\gamma$, 满足 $\int_\gamma\kappa\left(s\right)\mathrm ds\ge4\pi+\epsilon$? 若存在, 请证明; 若不存在, 请说明理由.
+回忆法里-米尔诺定理: 设 $\gamma:\left[0,L\right]\to\mathbb E^{3}$ 是一条光滑弧长参数简单闭曲线. 如果 $\gamma$ 是一个非平凡纽结, 则其全曲率积分满足 $\int_\gamma\kappa\left(s\right)\mathrm ds>4\pi$. 思考: 是否存在 $\varepsilon>0$, 对任何非平凡纽结 $\gamma$, 满足 $\int_\gamma\kappa\left(s\right)\mathrm ds\ge4\pi+\varepsilon$? 若存在, 请证明; 若不存在, 请说明理由.
 
 ### 解答 2
 
-**不存在**这样的 $\epsilon>0$. 理由如下.
+**不存在**这样的 $\varepsilon>0$. 理由如下.
 
 对任意 $\delta>0$, 可以构造一条非平凡纽结 $\gamma$, 使其全曲率落在区间 $\left(4\pi,\ 4\pi+\delta\right)$ 内. 构造思路: 取一条几乎整段落在一张平面内的闭曲线, 它形如"平面圆周上打一个微小纽结"的形状:
 
@@ -292,6 +292,6 @@ $$
 
 于是总全曲率趋近 $2\pi+2\pi=4\pi$, 取纽结小段足够小即可使 $\int_\gamma\kappa<4\pi+\delta$. 另一方面, 因 $\gamma$ 是非平凡纽结, 由**教材 §7.3 定理 3.5** 有 $\int_\gamma\kappa\ge4\pi$, 再由题面给定的法里-米尔诺定理 (非平凡纽结 $\int_\gamma\kappa>4\pi$) 得 $\int_\gamma\kappa>4\pi$. 故对任意 $\delta>0$ 都存在非平凡纽结满足 $4\pi<\int_\gamma\kappa<4\pi+\delta$.
 
-若存在题设中的 $\epsilon>0$ 使一切非平凡纽结都有 $\int_\gamma\kappa\ge4\pi+\epsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma\kappa\ge4\pi+\epsilon>4\pi$, 与上面构造出的、全曲率可以任意接近 $4\pi$ 的纽结矛盾.
+若存在题设中的 $\varepsilon>0$ 使一切非平凡纽结都有 $\int_\gamma\kappa\ge4\pi+\varepsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma\kappa\ge4\pi+\varepsilon>4\pi$, 与上面构造出的、全曲率可以任意接近 $4\pi$ 的纽结矛盾.
 
-所以, 全体非平凡纽结的全曲率的下确界恰为 $4\pi$, 它被趋近但从不达到; 不存在对一切非平凡纽结一致的 $\epsilon>0$. $\blacksquare$
+所以, 全体非平凡纽结的全曲率的下确界恰为 $4\pi$, 它被趋近但从不达到; 不存在对一切非平凡纽结一致的 $\varepsilon>0$. $\blacksquare$

@@ -108,24 +108,24 @@ $$
 
 故由**基础知识: 积分三角不等式**, $\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|=\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\mathrm dt\right|\le\int_{t_{i-1}}^{t_i}\left|\boldsymbol\alpha'\right|\mathrm dt$. 对 $i=1,\dots,n$ 求和得 $L\left(\boldsymbol\alpha,P\right)\le\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 故 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_P L\left(\boldsymbol\alpha,P\right)\le\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$.
 
-反之, 因 $\boldsymbol\alpha$ 光滑, $\left|\boldsymbol\alpha'\right|$ 连续, 由**基础知识: 一致连续与黎曼和** 它在 $\left[a,b\right]$ 上一致连续. 对给定 $\epsilon>0$, 取充分细的划分使在每个子区间 $\left[t_{i-1},t_i\right]$ 上 $\left|\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\right|<\epsilon$. 则由**基础知识: 积分三角不等式** ($\left|x+y\right|\ge\left|x\right|-\left|y\right|$),
+反之, 因 $\boldsymbol\alpha$ 光滑, $\left|\boldsymbol\alpha'\right|$ 连续, 由**基础知识: 一致连续与黎曼和** 它在 $\left[a,b\right]$ 上一致连续. 对给定 $\varepsilon>0$, 取充分细的划分使在每个子区间 $\left[t_{i-1},t_i\right]$ 上 $\left|\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\right|<\varepsilon$. 则由**基础知识: 积分三角不等式** ($\left|x+y\right|\ge\left|x\right|-\left|y\right|$),
 
 $$
 \begin{aligned}\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|
 &=\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t\right)\mathrm dt\right|\\
 &\ge\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t_{i-1}\right)\mathrm dt\right|
 -\left|\int_{t_{i-1}}^{t_i}\big[\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\big]\mathrm dt\right|\\
-&\ge\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)-\epsilon\left(t_i-t_{i-1}\right).
+&\ge\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)-\varepsilon\left(t_i-t_{i-1}\right).
 \end{aligned}
 $$
 
 对 $i$ 求和并令划分加密: 由 $\left|\boldsymbol\alpha'\right|$ 连续, 黎曼和 $\sum_i\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)\to\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 故
 
 $$
-L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_P L\left(\boldsymbol\alpha,P\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt-\epsilon\left(b-a\right).
+L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_P L\left(\boldsymbol\alpha,P\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt-\varepsilon\left(b-a\right).
 $$
 
-由 $\epsilon>0$ 任意, 得 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$. 两方向结合即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 与**教材 §2.2 (弧长与弧长参数)** 的弧长公式一致. $\blacksquare$
+由 $\varepsilon>0$ 任意, 得 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$. 两方向结合即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 与**教材 §2.2 (弧长与弧长参数)** 的弧长公式一致. $\blacksquare$
 
 (2) 设 $\boldsymbol\alpha:\left[a,b\right]\to\mathbb E^{3}$ 是连接两点 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意曲线. 直线段可参数化为 $\boldsymbol r\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right)$, $t\in\left[a,b\right]$. 则 $\boldsymbol r'=\frac{Q-P}{b-a}$, 其弧长为 $\int_a^b\left|\boldsymbol r'\right|\mathrm dt=\int_a^b\frac{\left|Q-P\right|}{b-a}\mathrm dt=\left|Q-P\right|$. 对任意连接 $P,Q$ 的曲线 $\boldsymbol\alpha$, 由 (1) 及**基础知识: 积分三角不等式** ($\left|\int f\right|\le\int\left|f\right|$):
 

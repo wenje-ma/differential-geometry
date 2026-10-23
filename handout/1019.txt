@@ -128,21 +128,21 @@ Rightarrow c' para l'
 设 Sigma: gamma=gamma(u) 是参数曲面
 曲线 C=gamma(u(s)) subset Sigma, s 为弧长
 dot c(s)=dot u^alpha(s) partial/partial u^alpha gamma(u(s)), |dot c| equiv 1.
-ddot c(s)=(ddot u^alpha(s)+Gamma_epsilon tau^alpha dot u^epsilon dot u^tau)partial/partial u^alpha gamma
--h_epsilon tau dot u^epsilon dot u^tau n
-=(ddot u^alpha+dot u^epsilon dot u^tau Gamma_epsilon tau^alpha)partial/partial u^alpha gamma (=k_h T_g)
--h_epsilon tau-dot u^epsilon dot u^tau n (=k_n n), ||T_g||=1
+ddot c(s)=(ddot u^alpha(s)+Gamma_varepsilon tau^alpha dot u^varepsilon dot u^tau)partial/partial u^alpha gamma
+-h_varepsilon tau dot u^varepsilon dot u^tau n
+=(ddot u^alpha+dot u^varepsilon dot u^tau Gamma_varepsilon tau^alpha)partial/partial u^alpha gamma (=k_h T_g)
+-h_varepsilon tau-dot u^varepsilon dot u^tau n (=k_n n), ||T_g||=1
 k=|ddot c|=sqrt(k_g^2+k_n^2)
 
 定义: k_n 为法曲率
 k_g 为测地曲率
-(ddot u^alpha + dot u^epsilon dot u^tau Gamma_epsilon tau^alpha) 为测地曲率向量.
+(ddot u^alpha + dot u^varepsilon dot u^tau Gamma_varepsilon tau^alpha) 为测地曲率向量.
 
 定义: 若曲线 c(s)subset Sigma 满足
 测底曲率, k_g equiv 0
 则称 C 是测地线.
 C 是测地线 iff
-ddot u^alpha+dot u^epsilon dot u^tau Gamma_epsilon tau^alpha(u(s))=0, alpha=1,2
+ddot u^alpha+dot u^varepsilon dot u^tau Gamma_varepsilon tau^alpha(u(s))=0, alpha=1,2
 只与 I 有关.
 
 设 Sigma 上有正交参数网,
