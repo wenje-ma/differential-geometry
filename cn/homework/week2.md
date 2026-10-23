@@ -18,7 +18,7 @@
 
 > **教材 §2.4 定理 4.2 (空间曲线基本定理)**<br>设 $\boldsymbol r_1\left(s\right),\boldsymbol r_2\left(s\right)$ 是 $\mathbb E^{3}$ 的两条弧长参数曲线, 定义在同一参数区间上, 且 $k_1=k_2>0$, $\tau_1=\tau_2$, 则存在 $\mathbb E^{3}$ 的一个刚体运动把 $\boldsymbol r_2$ 变为 $\boldsymbol r_1$.
 
-> **教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\dfrac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\dfrac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\times\boldsymbol r''\right|^{2}}$.
+> **教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\frac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\times\boldsymbol r''\right|^{2}}$.
 
 > **教材 §2.4 习题二 12 (切线像的曲率与挠率)**<br>设 $\boldsymbol r\left(s\right)$ 的曲率与挠率为 $\kappa,\tau$, 则其切线像 $\boldsymbol t\left(s\right)$ 的曲率、挠率分别为 $\kappa^{*}=\sqrt{1+\left(\frac{\tau}{\kappa}\right)^{2}}$, $\tau^{*}=\frac1\kappa\cdot\frac{\left(\frac{\tau}{\kappa}\right)'}{1+\left(\frac{\tau}{\kappa}\right)^{2}}$.
 

@@ -1,6 +1,6 @@
 # week5
 
-> **基础知识: 隐函数求导**<br>若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$ 且 $F_z\neq0$, 则 $z_x=-\dfrac{F_x}{F_z}$, $z_y=-\dfrac{F_y}{F_z}$.
+> **基础知识: 隐函数求导**<br>若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$ 且 $F_z\neq0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$.
 
 > **基础知识: 隐函数定理**<br>若 $F$ 光滑, $F\left(x_0,y_0,z_0\right)=0$ 且 $F_z\left(x_0,y_0,z_0\right)\neq0$, 则 $F\left(x,y,z\right)=0$ 在 $\left(x_0,y_0,z_0\right)$ 邻近确定光滑函数 $z=z\left(x,y\right)$, 满足 $z\left(x_0,y_0\right)=z_0$ 且 $F\left(x,y,z\left(x,y\right)\right)\equiv0$.
 
@@ -16,7 +16,7 @@
 
 > **定义 (§3.3, 第二基本形式)**<br>$\mathrm{II}=-\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol n\right)=L\,\mathrm du^{2}+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^{2}$, 其中 $L=\left(\boldsymbol r_{uu},\boldsymbol n\right)$, $M=\left(\boldsymbol r_{uv},\boldsymbol n\right)$, $N=\left(\boldsymbol r_{vv},\boldsymbol n\right)$.
 
-> **定义 (§3.4, 法曲率)**<br>曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\dfrac{L\lambda^{2}+2M\lambda\mu+N\mu^{2}}{E\lambda^{2}+2F\lambda\mu+G\mu^{2}}=\dfrac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
+> **定义 (§3.4, 法曲率)**<br>曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\frac{L\lambda^{2}+2M\lambda\mu+N\mu^{2}}{E\lambda^{2}+2F\lambda\mu+G\mu^{2}}=\frac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
 
 > **§3.4 (法向微分是切向量场)**<br>因 $\left(\boldsymbol n,\boldsymbol n\right)=1$, 对 $\left(\boldsymbol n,\boldsymbol n\right)=1$ 求微分得 $\left(\mathrm d\boldsymbol n,\boldsymbol n\right)=0$, 故 $\mathrm d\boldsymbol n$ (从而 $\boldsymbol n_u,\boldsymbol n_v$) 是曲面的切向量.
 
@@ -26,9 +26,9 @@
 
 > **引理 5.2 (§3.5)**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
 
-> **公式 (§3.5, 平均曲率与 Gauss 曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\dfrac{k_1+k_2}{2}=\dfrac{LG-2MF+NE}{2\left(EG-F^{2}\right)}$, Gauss 曲率 $K=k_1k_2=\dfrac{LN-M^{2}}{EG-F^{2}}$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$.
+> **公式 (§3.5, 平均曲率与 Gauss 曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\frac{k_1+k_2}{2}=\frac{LG-2MF+NE}{2\left(EG-F^{2}\right)}$, Gauss 曲率 $K=k_1k_2=\frac{LN-M^{2}}{EG-F^{2}}$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$.
 
-> **公式 (§3.5, 面积元与 Gauss 映射面积)**<br>曲面面积元 $\mathrm dA=\left(\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$; 在 Gauss 映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left(\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\dfrac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right)$.
+> **公式 (§3.5, 面积元与 Gauss 映射面积)**<br>曲面面积元 $\mathrm dA=\left(\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=\sqrt{EG-F^{2}}\,\mathrm du\,\mathrm dv$; 在 Gauss 映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left(\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right)\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right)$.
 
 > **定义 (§3.6, 直纹面)**<br>形如 $\boldsymbol r\left(u,v\right)=\boldsymbol a\left(u\right)+v\boldsymbol b\left(u\right)$ 的曲面称为直纹面, 固定 $u$ 时 $\boldsymbol a\left(u\right)+v\boldsymbol b\left(u\right)$ 是过点 $\boldsymbol a\left(u\right)$ 沿方向 $\boldsymbol b\left(u\right)$ 的直线, 称为直母线.
 

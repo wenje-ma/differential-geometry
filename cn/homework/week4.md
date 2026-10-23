@@ -16,9 +16,9 @@
 
 > **性质 (§3.3, 第二基本形式在参数变换下变号)**<br>设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 与 $\boldsymbol r=\boldsymbol r\left(\tilde u,\tilde v\right)$ 是曲面 $S$ 的两个不同参数表示. 当变换 $\left(u,v\right)\to\left(\tilde u,\tilde v\right)$ 是同向参数变换时, $\mathrm{II}\left(\tilde u,\tilde v\right)=\mathrm{II}\left(u,v\right)$; 当它是反向参数变换时, $\mathrm{II}\left(\tilde u,\tilde v\right)=-\mathrm{II}\left(u,v\right)$.
 
-> **公式 (§3.6, 旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f>0$) 的第一、第二基本形式系数为 $E=\left(f'\right)^{2}+\left(g'\right)^{2}$, $F=0$, $G=f^{2}$, $L=\dfrac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $M=0$, $N=\dfrac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
+> **公式 (§3.6, 旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f>0$) 的第一、第二基本形式系数为 $E=\left(f'\right)^{2}+\left(g'\right)^{2}$, $F=0$, $G=f^{2}$, $L=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $M=0$, $N=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
 
-> **例 (§3.4, 球面的法曲率)**<br>半径为 $a$ 的球面上任意一点沿任何方向的法曲率均为 $\dfrac1a$.
+> **例 (§3.4, 球面的法曲率)**<br>半径为 $a$ 的球面上任意一点沿任何方向的法曲率均为 $\frac1a$.
 
 > **例 (§3.3, 球面的第二基本形式)**<br>半径为 $a$ 的球面在球面坐标参数下的第二基本形式为 $\mathrm{II}=a\left(\mathrm d\theta^{2}+\cos^{2}\varphi\,\mathrm d\varphi^{2}\right)$.
 

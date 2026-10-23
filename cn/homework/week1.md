@@ -4,13 +4,13 @@
 
 > **基础知识: 积分三角不等式**<br>对向量值连续函数 $\boldsymbol g$, 有 $\left|\int_a^b\boldsymbol g\left(t\right)\mathrm dt\right|\le\int_a^b\left|\boldsymbol g\left(t\right)\right|\mathrm dt$, 且 $\left|x+y\right|\ge\left|x\right|-\left|y\right|$.
 
-> **基础知识: 内积求导法则**<br>$\dfrac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle$.
+> **基础知识: 内积求导法则**<br>$\frac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle$.
 
 > **基础知识: 一致连续与黎曼和**<br>闭区间上的连续函数一致连续, 且黎曼和 $\sum_i\boldsymbol g\left(t_{i-1}\right)\Delta t_i\to\int_a^b\boldsymbol g\left(t\right)\mathrm dt$ 当划分加密时.
 
-> **基础知识: ODE 解的存在唯一性**<br>一阶常微分方程组 $\dfrac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 关于 $\boldsymbol y$ 满足 Lipschitz 条件时, 初值问题的解存在且唯一.
+> **基础知识: ODE 解的存在唯一性**<br>一阶常微分方程组 $\frac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 关于 $\boldsymbol y$ 满足 Lipschitz 条件时, 初值问题的解存在且唯一.
 
-> **教材 §2.2 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^t\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\dfrac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
+> **教材 §2.2 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^t\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
 
 > **教材 §2.2 (平面曲线的曲率与 Frenet 标架)**<br>对平面曲线 $\boldsymbol r\left(s\right)$, 取单位切向量 $\boldsymbol t$ 与单位法向量 $\boldsymbol n$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 为右手系, 则 $\left[\boldsymbol r\left(s\right);\boldsymbol t\left(s\right),\boldsymbol n\left(s\right)\right]$ 是沿曲线的 Frenet(弗雷内)标架, 且 $\dot{\boldsymbol t}=k\boldsymbol n$, $\dot{\boldsymbol n}=-k\boldsymbol t$; 函数 $k\left(s\right)$ 称为曲线的 (有向) 曲率.
 
@@ -30,7 +30,7 @@
 
 > **教材 §2.4 例 4.5 (常曲率挠率曲线的分类)**<br>设 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的曲线, 其挠率 $\tau$ 和曲率 $k$ 是常数. 则: (1) $k=0$ 时 $\boldsymbol r$ 是直线; (2) $k>0,\ \tau=0$ 时 $\boldsymbol r$ 是半径 $\frac1k$ 的圆; (3) $k>0,\ \tau\ne0$ 时 $\boldsymbol r$ 是圆柱螺线.
 
-> **教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\dfrac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\dfrac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\times\boldsymbol r''\right|^{2}}$.
+> **教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\frac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\times\boldsymbol r''\right|^{2}}$.
 
 > **教材 §2.4 习题二 8**<br>设平面正则曲线 $C:\boldsymbol r=\boldsymbol r\left(t\right)$ 不过 $P_0$ 点, $\boldsymbol r\left(t_0\right)$ 是 $C$ 与 $P_0$ 距离最近的点, 则向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直.
 
