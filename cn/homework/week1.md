@@ -6,39 +6,49 @@
 
 > **基础知识: 内积求导法则**<br>$\frac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle$.
 
+> **基础知识: 链式法则**<br>若 $u\left(t\right)$ 是非负可导函数, 则 $\frac{\mathrm d}{\mathrm dt}\sqrt{u\left(t\right)}=\frac{u'\left(t\right)}{2\sqrt{u\left(t\right)}}$.
+
 > **基础知识: 一致连续与黎曼和**<br>闭区间上的连续函数一致连续, 且黎曼和 $\sum_i\boldsymbol g\left(t_{i-1}\right)\Delta t_i\to\int_a^b\boldsymbol g\left(t\right)\mathrm dt$ 当划分加密时.
 
-> **基础知识: ODE 解的存在唯一性**<br>一阶常微分方程组 $\frac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 关于 $\boldsymbol y$ 满足 Lipschitz 条件时, 初值问题的解存在且唯一.
+> **基础知识: 一阶常微分方程组初值问题解的存在唯一性**<br>一阶常微分方程组 $\frac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 关于 $\boldsymbol y$ 满足利普希茨条件时, 初值问题的解存在且唯一.
 
-> **教材 §2.2 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^t\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
+> **基础知识: 叉积为零与共线**<br>对 $\mathbb E^{3}$ 中向量 $\boldsymbol a,\boldsymbol b$, $\boldsymbol a\wedge\boldsymbol b=\boldsymbol0$ 当且仅当 $\boldsymbol a,\boldsymbol b$ 共线.
 
-> **教材 §2.2 (平面曲线的曲率与 Frenet 标架)**<br>对平面曲线 $\boldsymbol r\left(s\right)$, 取单位切向量 $\boldsymbol t$ 与单位法向量 $\boldsymbol n$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 为右手系, 则 $\left[\boldsymbol r\left(s\right);\boldsymbol t\left(s\right),\boldsymbol n\left(s\right)\right]$ 是沿曲线的 Frenet(弗雷内)标架, 且 $\dot{\boldsymbol t}=k\boldsymbol n$, $\dot{\boldsymbol n}=-k\boldsymbol t$; 函数 $k\left(s\right)$ 称为曲线的 (有向) 曲率.
+> **基础知识: 正交矩阵保内积与长度**<br>若 $\boldsymbol A$ 是正交矩阵 ($\boldsymbol A^{\top}\boldsymbol A=I$), 则 $\left\langle\boldsymbol A\boldsymbol x,\boldsymbol A\boldsymbol y\right\rangle=\left\langle\boldsymbol x,\boldsymbol y\right\rangle$, 特别 $\left|\boldsymbol A\boldsymbol x\right|=\left|\boldsymbol x\right|$.
 
-> **教材 §2.2 例 2.2 (常曲率平面曲线)**<br>(1) $k\left(s\right)\equiv0$ 时 $\boldsymbol r$ 是直线; (2) $k\left(s\right)$ 为非零常数时 $\boldsymbol r$ 是半径 $\frac1{\left|k\right|}$ 的圆 (或它的一部分).
+> **基础知识: 行列式的乘积性**<br>对 $\mathbb E^{3}$ 中向量 $\boldsymbol x_1,\boldsymbol x_2,\boldsymbol x_3$ 与 $3\times3$ 矩阵 $\boldsymbol A$, 有 $\det\left(\boldsymbol A\boldsymbol x_1,\boldsymbol A\boldsymbol x_2,\boldsymbol A\boldsymbol x_3\right)=\det\boldsymbol A\cdot\det\left(\boldsymbol x_1,\boldsymbol x_2,\boldsymbol x_3\right)$.
 
-> **教材 §2.3 (空间曲线的曲率与 Frenet 标架)**<br>对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 记曲率 $k\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $k>0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/k$, 副法向量 $\boldsymbol b=\boldsymbol t\times\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是 Frenet 标架; 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$.
+> **定义 2.1 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^t\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
 
-> **教材 §2.3 (Frenet 公式)**<br>$\dot{\boldsymbol t}=k\boldsymbol n$, $\dot{\boldsymbol n}=-k\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$.
+> **定义 2.2 (平面曲线的曲率与弗勒内标架)**<br>对平面曲线 $\boldsymbol r\left(s\right)$, 取单位切向量 $\boldsymbol t$ 与单位法向量 $\boldsymbol n$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 为右手系, 则 $\left[\boldsymbol r\left(s\right);\boldsymbol t\left(s\right),\boldsymbol n\left(s\right)\right]$ 是沿曲线的弗勒内标架, 且 $\dot{\boldsymbol t}=k\boldsymbol n$, $\dot{\boldsymbol n}=-k\boldsymbol t$; 函数 $k\left(s\right)$ 称为曲线的有向曲率.
 
-> **教材 §2.3 定理 3.1 (挠率衡量离平面程度)**<br>设空间曲线 $\boldsymbol r$ 的曲率 $k>0$, 则 $\boldsymbol r$ 落在某个平面上的充要条件是 $\tau\equiv0$.
+> **例 2.2 (曲率为常数的曲线)**<br>(1) $k\left(s\right)\equiv0$ 时 $\boldsymbol r$ 是直线; (2) $k\left(s\right)$ 为非零常数时 $\boldsymbol r$ 是半径 $\frac1{\left|k\right|}$ 的圆 (或它的一部分).
 
-> **教材 §2.4 性质 4.1 (刚体运动下不变)**<br>$\mathbb E^{3}$ 中曲线的弧长、曲率和挠率在刚体运动下不变.
+> **定义 3.1 (空间曲线的曲率与弗勒内标架)**<br>对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 记曲率 $k\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $k>0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/k$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是弗勒内标架; 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$.
 
-> **教材 §2.4 定理 4.2 (空间曲线基本定理)**<br>设 $\boldsymbol r_1\left(s\right)$ 和 $\boldsymbol r_2\left(s\right)$ 是 $\mathbb E^{3}$ 的两条弧长参数曲线, 定义在同一参数区间上, 且 $k_1\left(s\right)=k_2\left(s\right)>0$, $\tau_1\left(s\right)=\tau_2\left(s\right)$ 对一切 $s$ 成立, 则存在 $\mathbb E^{3}$ 的一个刚体运动把 $\boldsymbol r_2$ 变为 $\boldsymbol r_1$.
+> **定理 3.1 (平面曲线的充要条件)**<br>设空间曲线 $\boldsymbol r$ 的曲率 $k>0$, 则 $\boldsymbol r$ 落在某个平面上的充要条件是 $\tau\equiv0$.
 
-> **教材 §2.4 定理 4.4 (平面曲线基本定理)**<br>设 $k\left(s\right)$ 是连续可微函数, 则 (1) 存在平面 $\mathbb E^{2}$ 的曲线 $\boldsymbol r\left(s\right)$, 它以 $s$ 为弧长参数, $k\left(s\right)$ 为曲率; (2) 上述曲线在相差平面的一个刚体运动的意义下是惟一的.
+> **定理 3.2 (弗勒内公式)**<br>$\dot{\boldsymbol t}=k\boldsymbol n$, $\dot{\boldsymbol n}=-k\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$.
 
-> **教材 §2.4 例 4.5 (常曲率挠率曲线的分类)**<br>设 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的曲线, 其挠率 $\tau$ 和曲率 $k$ 是常数. 则: (1) $k=0$ 时 $\boldsymbol r$ 是直线; (2) $k>0,\ \tau=0$ 时 $\boldsymbol r$ 是半径 $\frac1k$ 的圆; (3) $k>0,\ \tau\ne0$ 时 $\boldsymbol r$ 是圆柱螺线.
+> **性质 4.1 (弧长, 曲率, 挠率的刚体运动不变性)**<br>$\mathbb E^{3}$ 中曲线的弧长, 曲率和挠率在刚体运动下不变.
 
-> **教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\frac{\left|\boldsymbol r'\times\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\times\boldsymbol r''\right|^{2}}$.
+> **定理 4.2 (空间曲线基本定理)**<br>设 $\boldsymbol r_1\left(s\right)$ 和 $\boldsymbol r_2\left(s\right)$ 是 $\mathbb E^{3}$ 的两条弧长参数曲线, 定义在同一参数区间上, 且 $k_1\left(s\right)=k_2\left(s\right)>0$, $\tau_1\left(s\right)=\tau_2\left(s\right)$ 对一切 $s$ 成立, 则存在 $\mathbb E^{3}$ 的一个刚体运动把 $\boldsymbol r_2$ 变为 $\boldsymbol r_1$.
 
-> **教材 §2.4 习题二 8**<br>设平面正则曲线 $C:\boldsymbol r=\boldsymbol r\left(t\right)$ 不过 $P_0$ 点, $\boldsymbol r\left(t_0\right)$ 是 $C$ 与 $P_0$ 距离最近的点, 则向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直.
+> **定理 4.3 (给定曲率挠率存在弧长参数曲线)**<br>设 $k=k\left(s\right)$ 和 $\tau=\tau\left(s\right)$ 是定义在区间 $\left(a,b\right)$ 上的两个连续可微函数, 且 $k\left(s\right)>0$, 则存在以 $s$ 为弧长参数, 以 $k$ 为曲率, 以 $\tau$ 为挠率的空间曲线.
 
-> **教材 §2.4 习题二 9**<br>(1) 若 $\mathbb E^{3}$ 的曲线 $C$ 的所有切线过一个定点, 则 $C$ 是直线; (2) 所有主法线过定点的曲线是圆.
+> **定理 4.4 (平面曲线基本定理)**<br>设 $k\left(s\right)$ 是连续可微函数, 则 (1) 存在平面 $\mathbb E^{2}$ 的曲线 $\boldsymbol r\left(s\right)$, 它以 $s$ 为弧长参数, $k\left(s\right)$ 为曲率; (2) 上述曲线在相差平面的一个刚体运动的意义下是惟一的.
 
-> **教材 §2.4 习题二 10**<br>设 $T\left(\boldsymbol X\right)=\boldsymbol XT+P$ 是 $\mathbb E^{3}$ 的一个合同变换, $\det T=-1$, $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 则曲线 $\tilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数相同, 曲率相同, 挠率变号.
+> **例 4.5 (曲率挠率均为常数的曲线分类)**<br>设 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的曲线, 其挠率 $\tau$ 和曲率 $k$ 是常数. 则: (1) $k=0$ 时 $\boldsymbol r$ 是直线; (2) $k>0,\ \tau=0$ 时 $\boldsymbol r$ 是半径 $\frac1k$ 的圆; (3) $k>0,\ \tau\ne0$ 时 $\boldsymbol r$ 是圆柱螺线.
 
-> **教材 §2.4 习题二 15 (球面曲线的刻画)**<br>满足条件 $\left(\frac1\kappa\right)^{2}+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^{2}=$ 常数的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
+> **习题 2-5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\frac{\left|\boldsymbol r'\wedge\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\wedge\boldsymbol r''\right|^{2}}$, 其中 $\left(\cdot,\cdot,\cdot\right)$ 为混合积.
+
+> **习题 2-8 (距离最近点的向量垂直)**<br>设平面正则曲线 $C:\boldsymbol r=\boldsymbol r\left(t\right)$ 不过 $P_0$ 点, $\boldsymbol r\left(t_0\right)$ 是 $C$ 与 $P_0$ 距离最近的点, 则向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直.
+
+> **习题 2-9 (切线过定点为直线, 主法线过定点为圆)**<br>(1) 若 $\mathbb E^{3}$ 的曲线 $C$ 的所有切线过一个定点, 则 $C$ 是直线; (2) 所有主法线过定点的曲线是圆.
+
+> **习题 2-10 (反向合同变换下弧长, 曲率不变, 挠率变号)**<br>设 $T\left(\boldsymbol X\right)=\boldsymbol X\boldsymbol T+P$ 是 $\mathbb E^{3}$ 的一个合同变换, $\det T=-1$, $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 则曲线 $\tilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数相同, 曲率相同, 挠率变号.
+
+> **习题 2-15 (球面曲线的刻画)**<br>满足条件 $\left(\frac1\kappa\right)^{2}+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^{2}=$ 常数的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
 
 ---
 
@@ -52,15 +62,15 @@
 
 ### 解答 1
 
-(1) 依据**基础知识: 内积求导法则**, 对 $\left\|\boldsymbol a\right\|^{2}=\left\langle\boldsymbol a,\boldsymbol a\right\rangle$ 求导:
+(1) 依据**基础知识: 内积求导法则**, 对 $\left\|\boldsymbol a\right\|^{2}=\left\langle\boldsymbol a,\boldsymbol a\right\rangle$ 求导得
 
 $$
 \frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\left(t\right)\right\|^{2}=\left\langle\boldsymbol a',\boldsymbol a\right\rangle+\left\langle\boldsymbol a,\boldsymbol a'\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle.
 $$
 
-($\Rightarrow$) 若 $\left|\boldsymbol a\right|$ 为常数, 则 $\left\|\boldsymbol a\right\|^{2}$ 亦为常数, 故 $\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|^{2}=0$, 从而 $\left\langle\boldsymbol a,\boldsymbol a'\right\rangle=0$.
+($\Rightarrow$) 若 $\left|\boldsymbol a\right|$ 为常数, 则 $\left\|\boldsymbol a\right\|^{2}$ 亦为常数, 故 $\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|^{2}=0$, 从而由上式 $\left\langle\boldsymbol a,\boldsymbol a'\right\rangle=0$.
 
-($\Leftarrow$) 反之, 若 $\left\langle\boldsymbol a,\boldsymbol a'\right\rangle=0$, 则 $\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|^{2}=0$, 故 $\left\|\boldsymbol a\right\|^{2}$ 为常数, 即 $\left|\boldsymbol a\right|$ 为常数. $\blacksquare$
+($\Leftarrow$) 反之, 若 $\left\langle\boldsymbol a,\boldsymbol a'\right\rangle=0$, 则由上式 $\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|^{2}=0$, 故 $\left\|\boldsymbol a\right\|^{2}$ 为常数, 即 $\left|\boldsymbol a\right|$ 为常数. $\blacksquare$
 
 (2) 设 $\boldsymbol a\ne\boldsymbol0$ (否则方向无定义).
 
@@ -70,13 +80,7 @@ $$
 \boldsymbol a\left(t\right)\wedge\boldsymbol a'\left(t\right)=f\left(t\right)f'\left(t\right)\left(\boldsymbol v\wedge\boldsymbol v\right)=\boldsymbol0.
 $$
 
-($\Leftarrow$) 若 $\boldsymbol a\wedge\boldsymbol a'=\boldsymbol0$, 则 $\boldsymbol a'$ 与 $\boldsymbol a$ 共线: 存在数量函数 $\mu\left(t\right)$ 使 $\boldsymbol a'=\mu\left(t\right)\boldsymbol a$. 令 $\boldsymbol u\left(t\right):=\frac{\boldsymbol a\left(t\right)}{\left\|\boldsymbol a\left(t\right)\right\|}$ 为方向单位向量. 由 (1) 及 $\left\langle\boldsymbol a,\boldsymbol a'\right\rangle=\mu\left\|\boldsymbol a\right\|^{2}$,
-
-$$
-\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|=\frac{\left\langle\boldsymbol a,\boldsymbol a'\right\rangle}{\left\|\boldsymbol a\right\|}=\frac{\mu\left\langle\boldsymbol a,\boldsymbol a\right\rangle}{\left\|\boldsymbol a\right\|}=\mu\left\|\boldsymbol a\right\|.
-$$
-
-于是
+($\Leftarrow$) 若 $\boldsymbol a\wedge\boldsymbol a'=\boldsymbol0$, 则由**基础知识: 叉积为零与共线**, $\boldsymbol a'$ 与 $\boldsymbol a$ 共线, 即存在数量函数 $\mu\left(t\right)$ 使 $\boldsymbol a'=\mu\left(t\right)\boldsymbol a$. 令 $\boldsymbol u\left(t\right):=\frac{\boldsymbol a\left(t\right)}{\left\|\boldsymbol a\left(t\right)\right\|}$ 为方向单位向量. 由**基础知识: 链式法则**与**基础知识: 内积求导法则**, $\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|=\frac{\left\langle\boldsymbol a,\boldsymbol a'\right\rangle}{\left\|\boldsymbol a\right\|}$; 代入 $\boldsymbol a'=\mu\boldsymbol a$ 得 $\frac{\mathrm d}{\mathrm dt}\left\|\boldsymbol a\right\|=\frac{\mu\left\langle\boldsymbol a,\boldsymbol a\right\rangle}{\left\|\boldsymbol a\right\|}=\mu\left\|\boldsymbol a\right\|$. 于是
 
 $$
 \boldsymbol u'=\frac{\boldsymbol a'}{\left\|\boldsymbol a\right\|}-\frac{\boldsymbol a\left(\left\|\boldsymbol a\right\|\right)'}{\left\|\boldsymbol a\right\|^{2}}=\frac{\mu\boldsymbol a}{\left\|\boldsymbol a\right\|}-\frac{\boldsymbol a\,\mu\left\|\boldsymbol a\right\|}{\left\|\boldsymbol a\right\|^{2}}=\boldsymbol0.
@@ -119,15 +123,15 @@ $$
 \end{aligned}
 $$
 
-对 $i$ 求和并令划分加密: 由 $\left|\boldsymbol\alpha'\right|$ 连续, 黎曼和 $\sum_i\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)\to\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 故
+对 $i$ 求和并令划分加密: 由**基础知识: 一致连续与黎曼和**, 黎曼和 $\sum_i\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)\to\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 故
 
 $$
 L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_P L\left(\boldsymbol\alpha,P\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt-\varepsilon\left(b-a\right).
 $$
 
-由 $\varepsilon>0$ 任意, 得 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$. 两方向结合即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 与**教材 §2.2 (弧长与弧长参数)** 的弧长公式一致. $\blacksquare$
+由 $\varepsilon>0$ 任意, 得 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$. 两方向结合即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 与**定义 2.1 (弧长与弧长参数)** 的弧长公式一致. $\blacksquare$
 
-(2) 设 $\boldsymbol\alpha:\left[a,b\right]\to\mathbb E^{3}$ 是连接两点 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意曲线. 直线段可参数化为 $\boldsymbol r\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right)$, $t\in\left[a,b\right]$. 则 $\boldsymbol r'=\frac{Q-P}{b-a}$, 其弧长为 $\int_a^b\left|\boldsymbol r'\right|\mathrm dt=\int_a^b\frac{\left|Q-P\right|}{b-a}\mathrm dt=\left|Q-P\right|$. 对任意连接 $P,Q$ 的曲线 $\boldsymbol\alpha$, 由 (1) 及**基础知识: 积分三角不等式** ($\left|\int f\right|\le\int\left|f\right|$):
+(2) 设 $\boldsymbol\alpha:\left[a,b\right]\to\mathbb E^{3}$ 是连接两点 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意曲线. 直线段可参数化为 $\boldsymbol r\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right)$, $t\in\left[a,b\right]$. 则 $\boldsymbol r'=\frac{Q-P}{b-a}$, 其弧长为 $\int_a^b\left|\boldsymbol r'\right|\mathrm dt=\int_a^b\frac{\left|Q-P\right|}{b-a}\mathrm dt=\left|Q-P\right|$. 对任意连接 $P,Q$ 的曲线 $\boldsymbol\alpha$, 由 (1) 及**基础知识: 积分三角不等式**,
 
 $$
 L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt\ge\left|\int_a^b\boldsymbol\alpha'\mathrm dt\right|=\left|\boldsymbol\alpha\left(b\right)-\boldsymbol\alpha\left(a\right)\right|=\left|Q-P\right|.
@@ -147,7 +151,7 @@ $$
 
 **(1) 平面曲线的几何: 曲率与平面曲线基本定理.**
 
-设 $\boldsymbol r:\left[0,L\right]\to\mathbb E^{2}$ 是以弧长为参数的平面正则曲线. 切向量 $\boldsymbol t\left(s\right):=\dot{\boldsymbol r}\left(s\right)=\frac{\mathrm d\boldsymbol r}{\mathrm ds}$ 是单位向量; $\mathbb E^{2}$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的 Frenet 标架 (此为**教材 §2.2 (平面曲线的曲率与 Frenet 标架)**). 由 $\left\|\boldsymbol t\right\|^{2}\equiv1$ 对 $s$ 求导得 $\dot{\boldsymbol t}\perp\boldsymbol t$; 二维中垂直于 $\boldsymbol t$ 的方向只有 $\boldsymbol n$ 方向, 故存在数量函数 $k\left(s\right)$ 使 $\dot{\boldsymbol t}\left(s\right)=k\left(s\right)\boldsymbol n\left(s\right)$, 再由 $\left\|\boldsymbol n\right\|^{2}\equiv1$ 求导得 $\dot{\boldsymbol n}\perp\boldsymbol n$, 由 $\left\langle\boldsymbol t,\boldsymbol n\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle+\left\langle\boldsymbol t,\dot{\boldsymbol n}\right\rangle=0$, 代入前式得 $\dot{\boldsymbol n}\left(s\right)=-k\left(s\right)\boldsymbol t\left(s\right)$. 于是平面 Frenet 方程 (**教材 §2.2**) 为
+设 $\boldsymbol r:\left[0,L\right]\to\mathbb E^{2}$ 是以弧长为参数的平面正则曲线. 切向量 $\boldsymbol t\left(s\right):=\dot{\boldsymbol r}\left(s\right)=\frac{\mathrm d\boldsymbol r}{\mathrm ds}$ 是单位向量; $\mathbb E^{2}$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的弗勒内标架 (此为**定义 2.2 (平面曲线的曲率与弗勒内标架)**). 由 $\left\|\boldsymbol t\right\|^{2}\equiv1$ 对 $s$ 求导得 $\dot{\boldsymbol t}\perp\boldsymbol t$; 二维中垂直于 $\boldsymbol t$ 的方向只有 $\boldsymbol n$ 方向, 故存在数量函数 $k\left(s\right)$ 使 $\dot{\boldsymbol t}\left(s\right)=k\left(s\right)\boldsymbol n\left(s\right)$, 再由 $\left\|\boldsymbol n\right\|^{2}\equiv1$ 求导得 $\dot{\boldsymbol n}\perp\boldsymbol n$, 由 $\left\langle\boldsymbol t,\boldsymbol n\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle+\left\langle\boldsymbol t,\dot{\boldsymbol n}\right\rangle=0$, 代入前式得 $\dot{\boldsymbol n}\left(s\right)=-k\left(s\right)\boldsymbol t\left(s\right)$. 于是平面弗勒内方程 (**定义 2.2 (平面曲线的曲率与弗勒内标架)**) 为
 
 $$
 \frac{\mathrm d}{\mathrm ds}\begin{bmatrix}\boldsymbol t\\\boldsymbol n\end{bmatrix}
@@ -155,11 +159,11 @@ $$
 \ \dot{\boldsymbol r}=\boldsymbol t.
 $$
 
-其中 $k\left(s\right)$ 称为平面曲线的有向曲率 (**教材 §2.2**), 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
+其中 $k\left(s\right)$ 称为平面曲线的有向曲率 (**定义 2.2 (平面曲线的曲率与弗勒内标架)**), 其绝对值 $\left|k\left(s\right)\right|$ 即通常意义下的曲率.
 
-平面曲线基本定理 (**教材 §2.4 定理 4.4**):
+平面曲线基本定理 (**定理 4.4 (平面曲线基本定理)**):
 
-(正向) 由**教材 §2.4 性质 4.1** 的刚体运动不变性, 若 $\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0$ ($\boldsymbol A\in O\left(2\right)$, $\det\boldsymbol A=1$), 则 $k_1\left(s\right)=k_2\left(s\right)$.
+(正向) 由**性质 4.1 (弧长, 曲率, 挠率的刚体运动不变性)** 的刚体运动不变性, 若 $\boldsymbol r_2=\boldsymbol A\boldsymbol r_1+\boldsymbol\beta_0$ ($\boldsymbol A\in O\left(2\right)$, $\det\boldsymbol A=1$), 则 $k_1\left(s\right)=k_2\left(s\right)$.
 
 (逆向) 给定 $k\in C^1\left(\left[0,L\right]\right)$, 在保向等距的意义下存在唯一正则平面曲线以 $k$ 为有向曲率. 其证明思路如下: 由 $\dot{\boldsymbol t}=k\boldsymbol n$, $\boldsymbol n=\left(-\dot x^2,\dot x^1\right)$ 得
 
@@ -168,17 +172,17 @@ $$
 =k\left(s\right)\begin{bmatrix}-\dot x^2\\\dot x^1\end{bmatrix},
 $$
 
-连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $k\in C^1$, 右端关于未知量 Lipschitz 连续, 由**基础知识: ODE 解的存在唯一性** 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $k$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\hat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $k$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\hat{\boldsymbol r}$. $\blacksquare$
+连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $k\in C^1$, 右端关于未知量满足利普希茨条件, 由**基础知识: 一阶常微分方程组初值问题解的存在唯一性** 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $k$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\hat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $k$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\hat{\boldsymbol r}$. $\blacksquare$
 
 **(2) 平面曲线的特别之处.**
 
-1. 曲率是"有符号"的数量函数. 平面上 $\dot{\boldsymbol t}\perp\boldsymbol t$ 只有 $\boldsymbol n$ 一个正交方向, 故 $k$ 是标量且可正可负 (有向曲率, $\left|k\right|$ 为通常曲率); 而空间曲率定义为 $k=\left\|\dot{\boldsymbol t}\right\|\ge0$ (非负) (**教材 §2.3**), 主法向 $\boldsymbol n=\dot{\boldsymbol t}/\left\|\dot{\boldsymbol t}\right\|$ 由切向变化直接确定, 无符号可言.
+1. 曲率是带符号的数量函数. 平面上 $\dot{\boldsymbol t}\perp\boldsymbol t$ 只有 $\boldsymbol n$ 一个正交方向, 故 $k$ 是标量且可正可负 (有向曲率, $\left|k\right|$ 为通常曲率); 而空间曲率定义为 $k=\left\|\dot{\boldsymbol t}\right\|\ge0$ (非负) (**定义 3.1 (空间曲线的曲率与弗勒内标架)**), 主法向 $\boldsymbol n=\dot{\boldsymbol t}/\left\|\dot{\boldsymbol t}\right\|$ 由切向变化直接确定, 无符号可言.
 
-2. 没有挠率, 决定曲线只需一个函数 $k$. 平面曲线基本定理: 给定 $k\left(s\right)$ 即 (模保向等距) 唯一确定曲线 (**教材 §2.4 定理 4.4**); 而空间曲线需由 $k$ 与 $\tau$ 两个函数共同决定 (**教材 §2.4 定理 4.2 与定理 4.3**). Frenet 方程也从空间的 $3\times3$ 反对称系统退化为平面的 $2\times2$ 反对称系统, 只有一个函数 $k$.
+2. 没有挠率, 决定曲线只需一个函数 $k$. 平面曲线基本定理: 给定 $k\left(s\right)$ 即 (模保向等距) 唯一确定曲线 (**定理 4.4 (平面曲线基本定理)**); 而空间曲线需由 $k$ 与 $\tau$ 两个函数共同决定 (**定理 4.2 (空间曲线基本定理)** 与**定理 4.3 (给定曲率挠率存在弧长参数曲线)**). 弗勒内方程也从空间的 $3\times3$ 反对称系统退化为平面的 $2\times2$ 反对称系统, 只有一个函数 $k$.
 
-3. 平面曲线自动"扁平". 空间情形中, 挠率 $\tau$ 度量曲线偏离密切平面的程度, $\tau\equiv0$ 当且仅当曲线是平面曲线 (**教材 §2.3 定理 3.1**); 而平面曲线本身落在 $\mathbb E^{2}$ 中, 自动 $\tau\equiv0$, 不需要挠率这一几何量.
+3. 平面曲线自动扁平. 空间情形中, 挠率 $\tau$ 度量曲线偏离密切平面的程度, $\tau\equiv0$ 当且仅当曲线是平面曲线 (**定理 3.1 (平面曲线的充要条件)**); 而平面曲线本身落在 $\mathbb E^{2}$ 中, 自动 $\tau\equiv0$, 不需要挠率这一几何量.
 
-4. 等距变换下曲率的"保向"敏感性. 空间曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ 在任意正交变换下不变, 挠率 $\tau$ 在反向 (反射) 变换下变号 (见**解答 10**, 即**教材 §2.4 习题二 10**); 而平面有向曲率在等距变换下按 $k_2=\det\boldsymbol A\cdot k_1$ 变换, 反射下 $\det\boldsymbol A=-1$ 会翻转符号. 因此平面曲线唯一性需"模保向等距" (**教材 §2.4 定理 4.4(2)**), 空间曲线唯一性"模整个刚体运动" (**教材 §2.4 定理 4.2**).
+4. 等距变换下曲率的保向敏感性. 空间曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ 在任意正交变换下不变, 挠率 $\tau$ 在反向 (反射) 变换下变号 (见**解答 10**, 即**习题 2-10 (反向合同变换下弧长, 曲率不变, 挠率变号)**); 而平面有向曲率在等距变换下按 $k_2=\det\boldsymbol A\cdot k_1$ 变换, 反射下 $\det\boldsymbol A=-1$ 会翻转符号. 因此平面曲线唯一性需模保向等距 (**定理 4.4 (平面曲线基本定理)**), 空间曲线唯一性模整个刚体运动 (**定理 4.2 (空间曲线基本定理)**).
 
 综上, 平面曲线之特别处在于: 曲率退化为一个可带符号的标量函数, 且无挠率, 由单一函数 $k\left(s\right)$ 模保向等距即可完全确定曲线. $\blacksquare$
 
@@ -194,7 +198,7 @@ $$
 
 ### 解答 4
 
-依据**教材 §2.3 习题二 5 (一般参数下的曲率与挠率公式)**, 记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\times\boldsymbol r''\right|$, $\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)$, 则
+依据**习题 2-5 (一般参数下的曲率与挠率公式)**, 记 $v=\left|\boldsymbol r'\right|$, $w=\left|\boldsymbol r'\wedge\boldsymbol r''\right|$, $\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)$, 则
 
 $$
 k=\frac{w}{v^{3}},\quad \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}.
@@ -207,7 +211,7 @@ $$
 v^{2}&=a^{2}\cosh2t+b^{2},\\
 \boldsymbol r''&=\left(a\cosh t,a\sinh t,0\right),&
 \boldsymbol r'''&=\left(a\sinh t,a\cosh t,0\right),\\
-\boldsymbol r'\times\boldsymbol r''&=\left(-ab\sinh t,ab\cosh t,-a^{2}\right),&
+\boldsymbol r'\wedge\boldsymbol r''&=\left(-ab\sinh t,ab\cosh t,-a^{2}\right),&
 w^{2}&=a^{2}b^{2}\cosh2t+a^{4},\\
 w&=a\sqrt{a^{2}+b^{2}\cosh2t},&
 \left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)&=a^{2}b.
@@ -228,7 +232,7 @@ $$
 v^{2}&=a^{2}+b^{2}=:c^{2},\\
 \boldsymbol r''&=\left(a\sin t,a\cos t,0\right),&
 \boldsymbol r'''&=\left(a\cos t,-a\sin t,0\right),\\
-\boldsymbol r'\times\boldsymbol r''&=\left(-ab\cos t,ab\sin t,-a^{2}\right),&
+\boldsymbol r'\wedge\boldsymbol r''&=\left(-ab\cos t,ab\sin t,-a^{2}\right),&
 w^{2}&=a^{2}c^{2},\ w=ac,\\
 \left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)&=\left\langle\left(-ab\cos t,ab\sin t,-a^{2}\right),\left(a\cos t,-a\sin t,0\right)\right\rangle=-a^{2}b.
 \end{aligned}
@@ -255,13 +259,13 @@ $$
 
 以下均设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, 且 $\kappa,\tau$ 处处非零, 即分母 $\frac1\kappa,\frac1\tau$ 有意义.
 
-(1) 设 $\boldsymbol r$ 落在半径为 $r$ 的球面上. 平移球心至原点, 则 $\left\|\boldsymbol r\right\|^{2}\equiv r^{2}$. 由**教材 §2.4 习题二 15** (球面曲线的刻画) 的标准分解, 球面曲线满足
+(1) 设 $\boldsymbol r$ 落在半径为 $r$ 的球面上. 平移球心至原点, 则 $\left\|\boldsymbol r\right\|^{2}\equiv r^{2}$. 由**习题 2-15 (球面曲线的刻画)** 的标准分解, 球面曲线满足
 
 $$
 \boldsymbol r=-\frac1\kappa\boldsymbol n-\frac1\tau\left(\frac1\kappa\right)'\boldsymbol b,
 $$
 
-故由 $\boldsymbol n,\boldsymbol b$ 为单位正交向量,
+故由**定义 3.1 (空间曲线的曲率与弗勒内标架)** 中 $\boldsymbol n,\boldsymbol b$ 为单位正交向量,
 
 $$
 r^{2}=\left\|\boldsymbol r\right\|^{2}=\left(\frac1\kappa\right)^{2}+\left(\frac1\tau\left(\frac1\kappa\right)'\right)^{2}\ge\left(\frac1\kappa\right)^{2}.
@@ -281,7 +285,7 @@ $$
 \widetilde{\boldsymbol r}:=\boldsymbol r+\frac1\kappa\boldsymbol n+\frac1\tau\left(\frac1\kappa\right)'\boldsymbol b=\boldsymbol r+\varphi\boldsymbol n+\psi\boldsymbol b.
 $$
 
-由**教材 §2.3 (Frenet 公式)** 中 $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$ 求导:
+由**定理 3.2 (弗勒内公式)** 中 $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$ 求导:
 
 $$
 \begin{aligned}\widetilde{\boldsymbol r}'
@@ -303,17 +307,15 @@ $$
 
 情形 B: $\varphi'\equiv0$, 即 $\left(\frac1\kappa\right)'\equiv0$. 则 $\frac1\kappa$ 为常数, 故 $\kappa\equiv$ 常数.
 
-综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $\kappa$ 为常数 (情形 B), 这正是**教材 §2.4 习题二 15** 的结论. $\blacksquare$
+综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $\kappa$ 为常数 (情形 B), 这正是**习题 2-15 (球面曲线的刻画)** 的结论. $\blacksquare$
 
 ---
 
-## 6
-
-### 8
+## 6-8
 
 设平面正则曲线 $C:\boldsymbol r=\boldsymbol r\left(t\right)$ 不过 $P_0$ 点, $\boldsymbol r\left(t_0\right)$ 是 $C$ 与 $P_0$ 距离最近的点, 证明: 向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直.
 
-### 解答 8
+### 解答 6-8
 
 考虑函数 $f\left(t\right):=\left\|\boldsymbol r\left(t\right)-P_0\right\|^{2}=\left\langle\boldsymbol r\left(t\right)-P_0,\boldsymbol r\left(t\right)-P_0\right\rangle$. 由**基础知识: 内积求导法则**, 对 $\left\langle\boldsymbol a,\boldsymbol a\right\rangle$ 的求导规则有
 
@@ -328,28 +330,30 @@ $$
 0=f'\left(t_0\right)=2\left\langle\boldsymbol r\left(t_0\right)-P_0,\boldsymbol r'\left(t_0\right)\right\rangle.
 $$
 
-即 $\left\langle\boldsymbol r\left(t_0\right)-P_0,\boldsymbol r'\left(t_0\right)\right\rangle=0$. 故向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直, 这正是**教材 §2.4 习题二 8** 的结论. $\blacksquare$
+即 $\left\langle\boldsymbol r\left(t_0\right)-P_0,\boldsymbol r'\left(t_0\right)\right\rangle=0$. 故向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直, 这正是**习题 2-8 (距离最近点的向量垂直)** 的结论. $\blacksquare$
 
-### 9
+---
+
+## 6-9
 
 (1) 设 $\mathbb E^{3}$ 的曲线 $C$ 的所有切线过一个定点, 证明: $C$ 是直线;
 
 (2) 证明: 所有主法线过定点的曲线是圆.
 
-### 解答 9
+### 解答 6-9
 
 设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数. 平移坐标使定点为原点.
 
-(1) 每条切线都过原点, 即曲线点 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol t\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使 $\boldsymbol r\left(s\right)=\lambda\left(s\right)\boldsymbol t\left(s\right)$. 依据 $\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol t}=k\boldsymbol n$ (**教材 §2.3 (Frenet 公式)**), 对 $s$ 求导:
+(1) 每条切线都过原点, 即曲线点 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol t\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使 $\boldsymbol r\left(s\right)=\lambda\left(s\right)\boldsymbol t\left(s\right)$. 依据 $\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol t}=k\boldsymbol n$ (**定理 3.2 (弗勒内公式)**), 对 $s$ 求导:
 
 $$
 \boldsymbol t=\dot{\boldsymbol r}=\lambda'\boldsymbol t+\lambda\dot{\boldsymbol t}
 =\lambda'\boldsymbol t+\lambda k\boldsymbol n.
 $$
 
-若某开区间上 $k\ne0$, 则 $\boldsymbol t,\boldsymbol n$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda k=0$. 由 $k\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol t}\equiv\boldsymbol0$. 由**教材 §2.2 例 2.2 (1)** ($k\equiv0$ 当且仅当曲线是直线), 曲线 $C$ 是直线. 这正是**教材 §2.4 习题二 9 (1)** 的结论. $\blacksquare$
+若某开区间上 $k\ne0$, 则由**定义 3.1 (空间曲线的曲率与弗勒内标架)** 知 $\boldsymbol t,\boldsymbol n$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda k=0$. 由 $k\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol t}\equiv\boldsymbol0$. 由**例 2.2 (曲率为常数的曲线)** (1) ($k\equiv0$ 当且仅当曲线是直线), 曲线 $C$ 是直线. 这正是**习题 2-9 (切线过定点为直线, 主法线过定点为圆)** (1) 的结论. $\blacksquare$
 
-(2) 设 $k\ne0$ 处处成立 (否则主法线无定义). 每条主法线都过原点, 即 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol n\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使 $\boldsymbol r\left(s\right)=\lambda\left(s\right)\boldsymbol n\left(s\right)$. 对 $s$ 求导 ($\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol n}=-k\boldsymbol t+\tau\boldsymbol b$, 见**教材 §2.3 (Frenet 公式)**):
+(2) 设 $k\ne0$ 处处成立 (否则主法线无定义). 每条主法线都过原点, 即 $\boldsymbol r\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol n\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使 $\boldsymbol r\left(s\right)=\lambda\left(s\right)\boldsymbol n\left(s\right)$. 对 $s$ 求导 ($\dot{\boldsymbol r}=\boldsymbol t$, $\dot{\boldsymbol n}=-k\boldsymbol t+\tau\boldsymbol b$, 见**定理 3.2 (弗勒内公式)**):
 
 $$
 \boldsymbol t=\dot{\boldsymbol r}=\lambda'\boldsymbol n+\lambda\dot{\boldsymbol n}
@@ -357,49 +361,49 @@ $$
 =-\lambda k\boldsymbol t+\lambda'\boldsymbol n+\lambda\tau\boldsymbol b.
 $$
 
-$\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, 比较系数: $1=-\lambda k$, $0=\lambda'$, $0=\lambda\tau$. 由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda k\ne0$ 知 $\lambda\ne0$, 再由 $\lambda\tau=0$ 得 $\tau\equiv0$. 于是由**教材 §2.3 定理 3.1** ($\tau\equiv0$ 当且仅当曲线是平面曲线), $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故 $\left\|\boldsymbol r\right\|=\left|\lambda\right|=$ 常数, 即曲线到原点的距离恒定. 于是曲率 $k=\frac1{\left|\lambda\right|}=$ 常数 $>0$ (因 $\dot{\boldsymbol t}=k\boldsymbol n$ 且 $\boldsymbol r=\lambda\boldsymbol n$, 可由 Frenet 公式 $k=\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle=\left\|\dot{\boldsymbol t}\right\|$ 直接验证). 由于 $\boldsymbol r$ 是平面曲线 ($\tau\equiv0$) 且其曲率 $k$ 为正常数, 由**教材 §2.4 例 4.5 (2)**, $\boldsymbol r$ 是半径 $\frac1k$ 的圆. 故所有主法线过定点的曲线是圆, 这正是**教材 §2.4 习题二 9 (2)** 的结论. $\blacksquare$
+$\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, 比较系数: $1=-\lambda k$, $0=\lambda'$, $0=\lambda\tau$. 由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda k\ne0$ 知 $\lambda\ne0$, 再由 $\lambda\tau=0$ 得 $\tau\equiv0$. 于是由**定理 3.1 (平面曲线的充要条件)**, $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故 $\left\|\boldsymbol r\right\|=\left|\lambda\right|=$ 常数, 即曲线到原点的距离恒定. 于是曲率 $k=\frac1{\left|\lambda\right|}=$ 常数 $>0$ (由 $\dot{\boldsymbol t}=k\boldsymbol n$ 及 $\boldsymbol r=\lambda\boldsymbol n$ 得 $\left\|\dot{\boldsymbol t}\right\|=\left\|k\boldsymbol n\right\|=\left|k\right|=\frac1{\left|\lambda\right|}$). 由于 $\boldsymbol r$ 是平面曲线 ($\tau\equiv0$) 且其曲率 $k$ 为正常数, 由**例 4.5 (曲率挠率均为常数的曲线分类)** (2), $\boldsymbol r$ 是半径 $\frac1k$ 的圆. 故所有主法线过定点的曲线是圆, 这正是**习题 2-9 (切线过定点为直线, 主法线过定点为圆)** (2) 的结论. $\blacksquare$
 
-### 10
+---
 
-设 $T\left(\boldsymbol X\right)=\boldsymbol XT+P$ 是 $\mathbb E^{3}$ 的一个合同 (等距) 变换, $\det T=-1$ (记号同**教材 §2.4**: $T$ 为变换, $\boldsymbol T\in O\left(3\right)$ 为正交矩阵). $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 求曲线 $\tilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
+## 6-10
 
-### 解答 10
+设 $T\left(\boldsymbol X\right)=\boldsymbol X\boldsymbol T+P$ 是 $\mathbb E^{3}$ 的一个合同 (等距) 变换, $\det T=-1$ (记号同**习题 2-10 (反向合同变换下弧长, 曲率不变, 挠率变号)**: $T$ 为变换, $\boldsymbol T\in O\left(3\right)$ 为正交矩阵). $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 求曲线 $\tilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
+
+### 解答 6-10
 
 设 $\boldsymbol T=\boldsymbol A$ (正交矩阵, $\det\boldsymbol A=-1$), 则 $\tilde{\boldsymbol r}\left(t\right)=\boldsymbol A\boldsymbol r\left(t\right)+P$.
 
-**弧长参数.** 由正交性 $\boldsymbol A^{\top}\boldsymbol A=I_3$:
+**弧长参数.** 由**基础知识: 正交矩阵保内积与长度** ($\left|\boldsymbol A\boldsymbol x\right|=\left|\boldsymbol x\right|$):
 
 $$
-\left|\tilde{\boldsymbol r}'\right|=\left|\boldsymbol A\boldsymbol r'\right|
-=\sqrt{\left\langle\boldsymbol A\boldsymbol r',\boldsymbol A\boldsymbol r'\right\rangle}
-=\sqrt{\left\langle\boldsymbol r',\boldsymbol r'\right\rangle}=\left|\boldsymbol r'\right|.
+\left|\tilde{\boldsymbol r}'\right|=\left|\boldsymbol A\boldsymbol r'\right|=\left|\boldsymbol r'\right|.
 $$
 
 故 $\tilde s\left(t\right)=\int\left|\tilde{\boldsymbol r}'\right|\mathrm dt=\int\left|\boldsymbol r'\right|\mathrm dt=s\left(t\right)$ (只差常数). 因此 $\boldsymbol r$ 的弧长参数 $s$ 仍是 $\tilde{\boldsymbol r}$ 的弧长参数, 弧长参数化不变.
 
-**曲率与挠率 (保向情形).** 由**教材 §2.4 性质 4.1**, $\mathbb E^{3}$ 中曲线的弧长、曲率和挠率在刚体运动下不变. 当 $\det\boldsymbol A=1$ 时 $T$ 是刚体运动, 故 $\tilde s=s$, $\tilde k=k$, $\tilde\tau=\tau$.
+**曲率与挠率 (保向情形).** 由**性质 4.1 (弧长, 曲率, 挠率的刚体运动不变性)**, $\mathbb E^{3}$ 中曲线的弧长, 曲率和挠率在刚体运动下不变. 当 $\det\boldsymbol A=1$ 时 $T$ 是刚体运动, 故 $\tilde s=s$, $\tilde k=k$, $\tilde\tau=\tau$.
 
-**反向情形 ($\det\boldsymbol A=-1$).** 曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ (**教材 §2.3 (空间曲线的曲率与 Frenet 标架)**), 由正交性:
+**反向情形 ($\det\boldsymbol A=-1$).** 曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ (**定义 3.1 (空间曲线的曲率与弗勒内标架)**), 由**基础知识: 正交矩阵保内积与长度**:
 
 $$
-\tilde k=\left\|\dot{\tilde{\boldsymbol t}}\right\|=\left\|\boldsymbol A\dot{\boldsymbol t}\right\|=\sqrt{\left\langle\boldsymbol A\dot{\boldsymbol t},\boldsymbol A\dot{\boldsymbol t}\right\rangle}=\left\|\dot{\boldsymbol t}\right\|=k.
+\tilde k=\left\|\dot{\tilde{\boldsymbol t}}\right\|=\left\|\boldsymbol A\dot{\boldsymbol t}\right\|=\left|\dot{\boldsymbol t}\right|=k.
 $$
 
-故反向变换下曲率不变 $\tilde k=k$. 挠率: 由**教材 §2.3 习题二 5** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
+故反向变换下曲率不变 $\tilde k=k$. 挠率: 由**习题 2-5 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
 
 $$
 \begin{aligned}\tilde\tau
 &=\frac{\left(\tilde{\boldsymbol r}',\tilde{\boldsymbol r}'',\tilde{\boldsymbol r}'''\right)}{\tilde w^{2}}
 =\frac{\det\left(\boldsymbol A\boldsymbol r',\boldsymbol A\boldsymbol r'',\boldsymbol A\boldsymbol r'''\right)}{w^{2}}\\
-&=\frac{\det\left(\boldsymbol A\right)\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
-=-\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=-\tau.
+&=\frac{\det\boldsymbol A\cdot\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
+=-\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=-\tau,
 \end{aligned}
 $$
 
-其中用到 $\det\boldsymbol A=-1$. 故反向变换下挠率变号 $\tilde\tau=-\tau$. 综上:
+其中第一步用**基础知识: 行列式的乘积性**, 第二步用到 $\det\boldsymbol A=-1$. 故反向变换下挠率变号 $\tilde\tau=-\tau$. 综上:
 
 $$
 \tilde s=s,\quad \tilde k=k,\quad \tilde\tau=-\tau,
 $$
 
-这正是**教材 §2.4 习题二 10** 的结论. $\blacksquare$
+这正是**习题 2-10 (反向合同变换下弧长, 曲率不变, 挠率变号)** 的结论. $\blacksquare$
