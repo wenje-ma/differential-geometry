@@ -206,6 +206,8 @@ $$
 
 即切向量 $\boldsymbol t$ 与固定方向 $\boldsymbol v$ 的夹角恒定. 因此满足 $\tau=c\kappa$ 的曲线正是**一般螺旋线** (其切向量与固定方向保持定角). $\blacksquare$
 
+> 计算 $\frac{\mathrm d}{\mathrm ds}(A\boldsymbol t+B\boldsymbol b)=(A\kappa-B\tau)\boldsymbol n$ 发现其仅与 $\boldsymbol n$ 有关, 一个自然的想法是, 若令 $\boldsymbol n$ 的系数为 $0$, 这样的曲线肯定很特殊.
+
 ---
 
 ## 1.19 (旋转向量)
@@ -231,7 +233,7 @@ $$
 
 三式全部成立.
 
-**唯一性**: 若 $\boldsymbol w$ 也满足三式, 设 $\boldsymbol w=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$. 由 $\boldsymbol w\wedge\boldsymbol t=\dot{\boldsymbol t}=\kappa\boldsymbol n$ 及 $\boldsymbol n\wedge\boldsymbol t=-\boldsymbol b$, $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$ 得 $-\beta\boldsymbol b+\gamma\boldsymbol n=\kappa\boldsymbol n$, 故 $\beta=0$, $\gamma=\kappa$. 由 $\boldsymbol w\wedge\boldsymbol b=\dot{\boldsymbol b}=-\tau\boldsymbol n$ 及 $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$ 得 $-\alpha\boldsymbol n-\beta\boldsymbol t=-\tau\boldsymbol n$, 故 $\alpha=\tau$. 于是 $\boldsymbol w=\tau\boldsymbol t+\kappa\boldsymbol b=\boldsymbol v$, 即
+**唯一性**: 若 $\boldsymbol v$ 也满足三式, 设 $\boldsymbol v=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$. 由 $\boldsymbol v\wedge\boldsymbol t=\dot{\boldsymbol t}=\kappa\boldsymbol n$ 及 $\boldsymbol n\wedge\boldsymbol t=-\boldsymbol b$, $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$ 得 $-\beta\boldsymbol b+\gamma\boldsymbol n=\kappa\boldsymbol n$, 故 $\beta=0$, $\gamma=\kappa$. 由 $\boldsymbol v\wedge\boldsymbol b=\dot{\boldsymbol b}=-\tau\boldsymbol n$ 及 $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$ 得 $-\alpha\boldsymbol n-\beta\boldsymbol t=-\tau\boldsymbol n$, 故 $\alpha=\tau$. 于是 $\boldsymbol v=\tau\boldsymbol t+\kappa\boldsymbol b$, 即
 
 $$
 \boldsymbol v\left(s\right)=\tau\left(s\right)\,\boldsymbol t\left(s\right)+\kappa\left(s\right)\,\boldsymbol b\left(s\right).\ \blacksquare
@@ -270,11 +272,11 @@ $$
 
 $$
 \left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)
-=\det\begin{pmatrix}
+=\det\begin{bmatrix}
 1+\sqrt3\cos t&-2\sin t&\sqrt3-\cos t\\
 -\sqrt3\sin t&-2\cos t&\sin t\\
 -\sqrt3\cos t&2\sin t&\cos t
-\end{pmatrix}=-8.
+\end{bmatrix}=-8.
 $$
 
 由**习题 2.5 (一般参数下的曲率与挠率公式)**: $k=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14$, $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=\frac{-8}{32}=-\frac14$.
