@@ -249,7 +249,7 @@ $$
 
 两曲线**合同**即相差 $\mathbb E^{3}$ 的一个等距变换. 由**定理 2.4.2 (空间曲线基本定理)**, 只需证明二者具有相同的曲率与挠率, 再用**习题 2.5 (一般参数下的曲率与挠率公式)** 计算.
 
-**(1) 曲线 $\boldsymbol r$.** 求导:
+**曲线 $\boldsymbol r$.** 求导:
 
 $$
 \begin{aligned}\boldsymbol r'&=\left(1+\sqrt3\cos t,\ -2\sin t,\ \sqrt3-\cos t\right),\\
@@ -259,13 +259,13 @@ $$
 $$
 
 $$
-v^{2}=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}=8,\quad v=2\sqrt2.
+v^{2}=|\boldsymbol r'|^2=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}=8,\quad v=2\sqrt2.
 $$
 
 又 $\boldsymbol r'\wedge\boldsymbol r''=\left(-2+2\sqrt3\cos t,\ -4\sin t,\ -2\cos t-2\sqrt3\right)$,
 
 $$
-w^{2}=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right)^{2}=32,\quad w=4\sqrt2.
+w^{2}=|\boldsymbol r'\wedge\boldsymbol r''|^2=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right)^{2}=32,\quad w=4\sqrt2.
 $$
 
 混合积
@@ -281,7 +281,7 @@ $$
 
 由**习题 2.5 (一般参数下的曲率与挠率公式)**: $k=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14$, $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=\frac{-8}{32}=-\frac14$.
 
-**(2) 曲线 $\widetilde{\boldsymbol r}$.** 求导:
+**曲线 $\widetilde{\boldsymbol r}$.** 求导:
 
 $$
 \widetilde{\boldsymbol r}'=\left(-\sin\frac{t}{2},\ \cos\frac{t}{2},\ -1\right),\quad
@@ -301,7 +301,7 @@ $$
 
 混合积 $\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)=-\frac18$. 故 $\tilde k=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\tilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\tilde w^{2}}=\frac{-1/8}{1/2}=-\frac14$.
 
-**(3) 结论.** 两条曲线的曲率, 挠率分别相等: $k=\widetilde k=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb E^{3}$ 中相差一个刚体运动, 即两曲线**合同**. $\blacksquare$
+**结论.** 两条曲线的曲率, 挠率分别相等: $k=\widetilde k=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb E^{3}$ 中相差一个刚体运动, 即两曲线**合同**. $\blacksquare$
 
 ---
 
