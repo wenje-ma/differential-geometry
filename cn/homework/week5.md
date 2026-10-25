@@ -26,9 +26,9 @@
 
 > **引理 3.5.2**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
 
-> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $\kappa_1,\kappa_2$, 则平均曲率 $H=\frac{\kappa_1+\kappa_2}{2}=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}$, 高斯曲率 $K=\kappa_1\kappa_2=\frac{h_{11}h_{22}-h_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$.
+> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $\kappa_1,\kappa_2$, 则平均曲率 $H=\frac{\kappa_1+\kappa_2}{2}$, 高斯曲率 $K=\kappa_1\kappa_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $\kappa_1\kappa_2=\det\boldsymbol W$, $\frac12(\kappa_1+\kappa_2)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}h_{11}&h_{12}\\h_{21}&h_{22}\end{bmatrix}$.
 
-> **公式 3.5.5 (面积元与高斯映射面积)**<br>曲面面积元 $\mathrm dA=\left\langle\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$; 在单位法向映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\text{面积}\left(g\left(D\right)\right)}{\text{面积}\left(D\right)}=K\left(P\right)$.
+> **公式 3.5.5 (面积元与高斯映射面积)**<br>曲面面积元 $\mathrm dA=\left\langle\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$; 在单位法向映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\mathrm{Area}\left(g\left(D\right)\right)}{\mathrm{Area}\left(D\right)}=K\left(P\right)$.
 
 > **定义 10.1.1 (极小曲面)**<br>$\mathbb E^{3}$ 中平均曲率处处恒为零的曲面称为极小曲面.
 
@@ -62,7 +62,7 @@ $$
 \mathrm I=\left(1+p^{2}\right)\mathrm dx^{2}+2pq\,\mathrm dx\,\mathrm dy+\left(1+q^{2}\right)\mathrm dy^{2}.
 $$
 
-又 $\boldsymbol r_x\wedge\boldsymbol r_y=\left(-p,-q,1\right)$, 故 $\left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}=:W$. 由**定义 3.1.1 (曲面与单位法向)** 得 $\boldsymbol n=\left(-p,-q,1\right)/W$, 这与**公式 10.1.2 (函数图的几何量)** 中的 $\boldsymbol e_3$ 一致. 二阶偏导 $\boldsymbol r_{xx}=\left(0,0,r\right)$, $\boldsymbol r_{xy}=\left(0,0,s\right)$, $\boldsymbol r_{yy}=\left(0,0,t\right)$. 由**定义 3.3.1 (第二基本形式)**,
+又 $\boldsymbol r_x\wedge\boldsymbol r_y=\left(-p,-q,1\right)$, 故 $\left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}=:W$. 由**定义 3.1.1 (曲面与单位法向)** 得 $\boldsymbol n=\left(-p,-q,1\right)/W$. 二阶偏导 $\boldsymbol r_{xx}=\left(0,0,r\right)$, $\boldsymbol r_{xy}=\left(0,0,s\right)$, $\boldsymbol r_{yy}=\left(0,0,t\right)$. 由**定义 3.3.1 (第二基本形式)**,
 
 $$
 h_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle=\frac rW,\quad
@@ -84,7 +84,7 @@ K=\frac{h_{11}h_{22}-h_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}
 =\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
 
-又由同一公式**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
+又由**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
 
 $$
 \begin{aligned}
@@ -101,7 +101,7 @@ H=\frac{\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}}
 K=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
 
-$H$ 的表达式与**公式 10.1.2 (函数图的几何量)** 中给出的 $H$ 一致, $K$ 的表达式与由 $K=\frac{h_{11}h_{22}-h_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}$ 得到的值一致. $\blacksquare$
+$\blacksquare$
 
 ---
 
@@ -261,8 +261,10 @@ $$
 故切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}=\mathrm{span}\left\{\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}\right\}$ 含于 $T_{\boldsymbol r}S$. 由**引理 3.5.2**, 在 $P$ 取主方向坐标 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则由**定义 3.4.3 (魏因加滕变换)** 与**定义 3.5.1 (主曲率与主方向)**, $\boldsymbol n_\alpha=-\kappa_\alpha\boldsymbol r_\alpha$, 故 $\boldsymbol r_{\lambda,\alpha}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda \kappa_\alpha\right)\boldsymbol r_\alpha$; 因 $\kappa_\alpha$ 有限且 $\lambda$ 充分小, $1-\lambda \kappa_\alpha\neq0$ ($\alpha=1,2$), 故 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 线性无关, $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 与 $T_{\boldsymbol r}S$ 同维数(二维). 于是
 
 $$
-T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,\;\text{即对应点的切平面平行}.
+T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,
 $$
+
+即对应点的切平面平行.
 
 因 $\boldsymbol r_{\lambda,\alpha}\in T_{\boldsymbol r}S$ 且 $\boldsymbol r_{\lambda,1}\wedge\boldsymbol r_{\lambda,2}\parallel\boldsymbol r_1\wedge\boldsymbol r_2$, 可取 $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$.
 
@@ -313,10 +315,12 @@ $$
 又由**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
 
 $$
-H_{\lambda}=\frac{\kappa_1^{\lambda}+\kappa_2^{\lambda}}2
-=\frac12\left(\frac{\kappa_1}{1-\lambda \kappa_1}+\frac{\kappa_2}{1-\lambda \kappa_2}\right)
-=\frac{\kappa_1+\kappa_2-2\lambda \kappa_1\kappa_2}{2\left(1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2\right)}
+\begin{aligned}
+H_{\lambda}&=\frac{\kappa_1^{\lambda}+\kappa_2^{\lambda}}2
+=\frac12\left(\frac{\kappa_1}{1-\lambda \kappa_1}+\frac{\kappa_2}{1-\lambda \kappa_2}\right)\\
+&=\frac{\kappa_1+\kappa_2-2\lambda \kappa_1\kappa_2}{2\left(1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2\right)}
 =\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K},
+\end{aligned}
 $$
 
 故
@@ -335,7 +339,7 @@ $\blacksquare$
 
 ### 解答 4.35
 
-设 $h\left(x,y\right)=f\left(x\right)+g\left(y\right)$, 则 $S$ 是函数 $h$ 的图. 记 $p=h_x=f'$, $q=h_y=g'$, $r=h_{xx}=f''$, $s=h_{xy}=0$, $t=h_{yy}=g''$. 由**定理 10.1.3 (极小曲面方程)**, $S$ 是极小曲面当且仅当
+设 $h\left(x,y\right)=f\left(x\right)+g\left(y\right)$, $S$ 是函数 $h$ 的图. 记 $p=h_x=f'$, $q=h_y=g'$, $r=h_{xx}=f''$, $s=h_{xy}=0$, $t=h_{yy}=g''$. 由**定理 10.1.3 (极小曲面方程)**, $S$ 是极小曲面当且仅当
 
 $$
 \left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t=0,
@@ -370,11 +374,10 @@ $$
 其中 $C=C_1+C_2$. 对 $x,y$ 作平移 $\bar x=x+\frac\alpha c$, $\bar y=y-\frac\beta c$ 吸收常数 $\alpha,\beta$, 并略去符号与常数 $C$, 得
 
 $$
-z=\frac1a\ln\frac{\cos ay}{\cos ax}\quad\left(a=c\right),\;
-\text{即谢尔克曲面};\;\text{除相差一个常数外它必具此形式}.
+z=\frac1a\ln\frac{\cos ay}{\cos ax}\quad\left(a=c\right),
 $$
 
-这与**例 10.1.3 (谢尔克曲面)** 一致: 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $\ln\frac{\cos x}{\cos y}$ (取 $a=1$ 并作反射 $z\mapsto-z$). $\blacksquare$
+即**例 10.1.3 (谢尔克曲面)**; 除相差一个常数外它必具此形式.
 
 ## 4.36 (直纹极小曲面与正螺面)
 
@@ -406,13 +409,7 @@ $$
 H=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{0-2h_{12}\cdot0+0}{2\left(u^{2}+b^{2}\right)}=0,
 $$
 
-由**定义 10.1.1 (极小曲面)** ($H\equiv0$),
-
-$$
-\text{正螺面}\;\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)\;\text{是极小曲面}.
-$$
-
-(此时由同一公式**公式 3.5.4 (平均曲率与高斯曲率)**, $K=\frac{h_{11}h_{22}-h_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}=-\frac{b^{2}}{\left(b^{2}+u^{2}\right)^{2}}< 0$, 故正螺面处处是双曲点, 与**例 10.1.1 (螺旋面)** 的图 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 是同一螺旋面的两种参数化.)
+由**定义 10.1.1 (极小曲面)** ($H\equiv0$), 正螺面 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$ 是极小曲面.
 
 **(ii) 直纹极小曲面是平面或正螺面.**
 
@@ -424,71 +421,41 @@ $$
 
 设 $S$ 是参数曲面片 $\boldsymbol r:D\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$.
 
-a) 定义参数曲面片 $S$ 的面积为 $Area\left(S\right):=\int_{D}\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$. 试证明面积的定义与参数选取无关.
+(a) 定义参数曲面片 $S$ 的面积为 $\mathrm{Area}\left(S\right):=\int_{D}\left|\boldsymbol r_u\times\boldsymbol r_v\right|\mathrm du\,\mathrm dv=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$. 试证明面积的定义与参数选取无关.
 
-b) 设 $p_0=\boldsymbol r\left(u_0,v_0\right)$ 是参数曲面片上的一点, 且高斯曲率 $K\left(p_0\right)> 0$. 考虑参数区域 $D$ 中 $\left(u_0,v_0\right)$ 的球形开邻域 $B_{\delta}\left(u_0,v_0\right):=\left\{\left(u,v\right)\mid\sqrt{\left(u-u_0\right)^{2}+\left(v-v_0\right)^{2}}< \delta\right\}$. 试证明当 $\delta$ 充分小时, $\tilde{\boldsymbol r}=g\circ\boldsymbol r:B_{\delta}\left(u_0,v_0\right)\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是参数曲面片, 即单位球面 $S^{2}\left(1\right)$ 在点 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化, 其中 $g$ 和 $\boldsymbol n$ 分别是参数曲面片 $S$ 的高斯映射和单位法向量. 进一步证明
+(b) 设 $p_0=\boldsymbol r\left(u_0,v_0\right)$ 是参数曲面片上的一点, 且高斯曲率 $K\left(p_0\right)> 0$. 考虑参数区域 $D$ 中 $\left(u_0,v_0\right)$ 的球形开邻域 $B_{\delta}\left(u_0,v_0\right):=\left\{\left(u,v\right)\mid\sqrt{\left(u-u_0\right)^{2}+\left(v-v_0\right)^{2}}< \delta\right\}$. 试证明当 $\delta$ 充分小时, $\widetilde{\boldsymbol r}=g\circ\boldsymbol r:B_{\delta}\left(u_0,v_0\right)\to\mathbb R^{3}$, $\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是参数曲面片, 即单位球面 $S^{2}\left(1\right)$ 在点 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化, 其中 $g$ 和 $\boldsymbol n$ 分别是参数曲面片 $S$ 的高斯映射和单位法向量. 进一步证明
 
 $$
-K\left(p_0\right)=\lim_{\delta\to0}\frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.
+K\left(p_0\right)=\lim_{\delta\to0}\frac{\mathrm{Area}\left(\widetilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{\mathrm{Area}\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.
 $$
 
 ### 解答 5
 
 **(a) 面积与参数选取无关.**
 
-设 $\sigma:\widetilde D\to D$, $\left(\widetilde u,\widetilde v\right)\mapsto\left(u,v\right)$ 是参数变换 (局部同胚), 复合参数化 $\tilde{\boldsymbol r}=\boldsymbol r\circ\sigma$. 由链式法则,
+由于**定义 3.2.1 (第一基本形式)**, $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv=\int_{D}\sqrt{\det(g_{ij})}\,\mathrm du\,\mathrm dv$, 矩阵 $\boldsymbol G=(g_{ij})$ 为第一基本形式的系数矩阵. 由 **定理 3.2.1 (第一基本形式与参数选取无关)**, 存在 $\boldsymbol J$, 使得换参数后的新系数矩阵 $\widetilde{\boldsymbol G}$ 满足 $\widetilde{\boldsymbol G}=\boldsymbol J^\top\boldsymbol G\boldsymbol J$, 则
 
 $$
-\tilde{\boldsymbol r}_{\widetilde u}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde u}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde u},\quad
-\tilde{\boldsymbol r}_{\widetilde v}=\boldsymbol r_u\frac{\partial u}{\partial\widetilde v}+\boldsymbol r_v\frac{\partial v}{\partial\widetilde v},
+\sqrt{\det\widetilde{\boldsymbol G}}\,\mathrm d\widetilde u\,\mathrm d\widetilde v=|\det\boldsymbol J|\sqrt{\det\boldsymbol G}\cdot\frac1{|\det\boldsymbol J|}\,\mathrm du\,\mathrm dv=\sqrt{\det\boldsymbol G}\,\mathrm du\,\mathrm dv.
 $$
 
-故叉积
+即面积与参数选取无关. $\blacksquare$
+
+**(b) $\widetilde{\boldsymbol r}=g\circ\boldsymbol r$ 是参数曲面片及极限公式.**
+
+先证正则性. 设 $\boldsymbol n\left(u,v\right)=\widetilde{\boldsymbol r}\left(u,v\right)$ 是 $S$ 的单位法向, 由**公式 3.5.4 (平均曲率与高斯曲率)** 中的 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$, 在 $\left(u_0,v_0\right)$ 处 $K\left(p_0\right)> 0$. 因 $K$ 连续, 在 $\left(u_0,v_0\right)$ 的某邻域内 $K\neq0$, 故在该邻域内 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$, 即 $\boldsymbol n_u,\boldsymbol n_v$ 线性无关. 由**定义 3.1.1 (曲面与单位法向)**, $\widetilde{\boldsymbol r}:\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是正则参数曲面片; 又 $\boldsymbol n\left(u,v\right)\in S^{2}\left(1\right)$, 故它是单位球面在 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化.
+
+再证极限公式. 对 $S$, 由**公式 3.5.5 (面积元与高斯映射面积)**, 面积元 $\mathrm dA=\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv$; 对像 $\widetilde{\boldsymbol r}\left(B_{\delta}\right)\subset S^{2}$, 面积元
 
 $$
-\tilde{\boldsymbol r}_{\widetilde u}\wedge\tilde{\boldsymbol r}_{\widetilde v}
-=\left(\frac{\partial u}{\partial\widetilde u}\frac{\partial v}{\partial\widetilde v}-\frac{\partial u}{\partial\widetilde v}\frac{\partial v}{\partial\widetilde u}\right)\boldsymbol r_u\wedge\boldsymbol r_v
-=J\,\boldsymbol r_u\wedge\boldsymbol r_v,
-$$
-
-其中 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\widetilde u,\widetilde v\right)}$. 于是 $\left|\tilde{\boldsymbol r}_{\widetilde u}\wedge\tilde{\boldsymbol r}_{\widetilde v}\right|=\left|J\right|\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|$. 由**基础知识: 变量替换公式**, $\mathrm d\widetilde u\,\mathrm d\widetilde v=\left|\det\frac{\partial\left(\widetilde u,\widetilde v\right)}{\partial\left(u,v\right)}\right|\mathrm du\,\mathrm dv=\left|J\right|^{-1}\mathrm du\,\mathrm dv$ (因 $\det\frac{\partial\left(\widetilde u,\widetilde v\right)}{\partial\left(u,v\right)}=\left(\det J\right)^{-1}$), 得
-
-$$
-\left|\tilde{\boldsymbol r}_{\widetilde u}\wedge\tilde{\boldsymbol r}_{\widetilde v}\right|\mathrm d\widetilde u\,\mathrm d\widetilde v
-=\left|J\right|\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\cdot\left|J\right|^{-1}\mathrm du\,\mathrm dv
-=\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv.
-$$
-
-于是
-
-$$
-\int_{\widetilde D}\left|\tilde{\boldsymbol r}_{\widetilde u}\wedge\tilde{\boldsymbol r}_{\widetilde v}\right|\mathrm d\widetilde u\,\mathrm d\widetilde v
-=\int_{D}\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv,
-$$
-
-即面积元 $\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv$ 在参数变换下不变; 由**公式 3.5.5 (面积元与高斯映射面积)**, 该面积元即 $\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$, 这与**定理 3.2.1 (第一基本形式与参数选取无关)** 一致. 因此
-
-$$
-Area\left(S\right)\;\text{与参数选取无关}.
-$$
-
-$\blacksquare$
-
-**(b) $\tilde{\boldsymbol r}=g\circ\boldsymbol r$ 是参数曲面片及极限公式.**
-
-先证正则性. 设 $\boldsymbol n\left(u,v\right)=\tilde{\boldsymbol r}\left(u,v\right)$ 是 $S$ 的单位法向, 由**公式 3.5.4 (平均曲率与高斯曲率)** 中的 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$, 在 $\left(u_0,v_0\right)$ 处 $K\left(p_0\right)> 0$. 因 $K$ 连续, 在 $\left(u_0,v_0\right)$ 的某邻域内 $K\neq0$, 故在该邻域内 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$, 即 $\boldsymbol n_u,\boldsymbol n_v$ 线性无关. 由**定义 3.1.1 (曲面与单位法向)**, $\tilde{\boldsymbol r}:\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是正则参数曲面片; 又 $\boldsymbol n\left(u,v\right)\in S^{2}\left(1\right)$, 故它是单位球面在 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化.
-
-再证极限公式. 对 $S$, 由**公式 3.5.5 (面积元与高斯映射面积)**, 面积元 $\mathrm dA=\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv$; 对像 $\tilde{\boldsymbol r}\left(B_{\delta}\right)\subset S^{2}$, 面积元
-
-$$
-\mathrm d\tilde A=\left|\boldsymbol n_u\wedge\boldsymbol n_v\right|\mathrm du\,\mathrm dv
+\mathrm d\widetilde A=\left|\boldsymbol n_u\wedge\boldsymbol n_v\right|\mathrm du\,\mathrm dv
 =\left|K\right|\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv=K\,\mathrm dA
 $$
 
-(因 $K\left(p_0\right)> 0$, 在充分小的 $B_{\delta}$ 内 $K> 0$). 这与**公式 3.5.5 (面积元与高斯映射面积)** 的 $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$ 一致. 于是
+(因 $K\left(p_0\right)> 0$, 在充分小的 $B_{\delta}$ 内 $K> 0$). 于是
 
 $$
-\frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\right)\right)}
+\frac{\mathrm{Area}\left(\widetilde{\boldsymbol r}\left(B_{\delta}\right)\right)}{\mathrm{Area}\left(\boldsymbol r\left(B_{\delta}\right)\right)}
 =\frac{\int_{B_{\delta}}K\,\mathrm dA}{\int_{B_{\delta}}\mathrm dA}
 =\frac{\int_{B_{\delta}}K\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv}{\int_{B_{\delta}}\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv}.
 $$
@@ -496,7 +463,7 @@ $$
 右端是以 $\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|\mathrm du\,\mathrm dv$ 为权对 $K$ 在 $B_{\delta}$ 上的加权平均; 因 $K$ 连续且 $B_{\delta}$ 收缩到 $\left(u_0,v_0\right)$, 该加权平均当 $\delta\to0$ 时趋于 $K\left(u_0,v_0\right)=K\left(p_0\right)$. 故
 
 $$
-K\left(p_0\right)=\lim_{\delta\to0}\frac{Area\left(\tilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{Area\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.
+K\left(p_0\right)=\lim_{\delta\to0}\frac{\mathrm{Area}\left(\widetilde{\boldsymbol r}\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}{\mathrm{Area}\left(\boldsymbol r\left(B_{\delta}\left(u_0,v_0\right)\right)\right)}.
 $$
 
 $\blacksquare$
