@@ -6,11 +6,11 @@
 
 > **基础知识: 内积求导法则**<br>$\frac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle$.
 
-> **基础知识: 链式法则**<br>$(f(g(x)))'=f'(g(x))g'(x)$.
+> **基础知识: 链式法则**<br>$\left(f\left(g\left(x\right)\right)\right)'=f'\left(g\left(x\right)\right)g'\left(x\right)$.
 
 > **基础知识: 一致连续与黎曼和**<br>闭区间上的连续函数一致连续, 且黎曼和 $\sum_i\boldsymbol g\left(t_{i-1}\right)\Delta t_i\to\int_a^b\boldsymbol g\left(t\right)\mathrm dt$ 当划分加密时.
 
-> **基础知识: 一阶常微分方程组初值问题解的存在唯一性**<br>一阶常微分方程组 $\frac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 对 $(x,\boldsymbol y)$ 连续, 且关于 $\boldsymbol y$ 满足利普希茨条件时, 初值问题的解存在且唯一.
+> **基础知识: 一阶常微分方程组初值问题解的存在唯一性**<br>一阶常微分方程组 $\frac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 对 $\left(x,\boldsymbol y\right)$ 连续, 且关于 $\boldsymbol y$ 满足利普希茨条件时, 初值问题的解存在且唯一.
 
 > **基础知识: 叉积为零与共线**<br>对 $\mathbb E^{3}$ 中向量 $\boldsymbol a,\boldsymbol b$, $\boldsymbol a\wedge\boldsymbol b=\boldsymbol0$ 当且仅当 $\boldsymbol a,\boldsymbol b$ 共线.
 
@@ -40,7 +40,7 @@
 
 > **例 2.4.5 (曲率挠率均为常数的曲线分类)**<br>设 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的曲线, 其挠率 $\tau$ 和曲率 $k$ 是常数. 则:<br>(1) $k=0$ 时 $\boldsymbol r$ 是直线;<br>(2) $k> 0,\ \tau=0$ 时 $\boldsymbol r$ 是半径 $\frac1k$ 的圆;<br>(3) $k> 0,\ \tau\ne0$ 时 $\boldsymbol r$ 是圆柱螺线.
 
-> **习题 2.5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\frac{\left|\boldsymbol r'\wedge\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\wedge\boldsymbol r''\right|^{2}}$, 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)=\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\rangle$ 为混合积.
+> **习题 2.5 (一般参数下的曲率与挠率公式)**<br>$\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $k\left(t\right)=\frac{\left|\boldsymbol r'\wedge\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\wedge\boldsymbol r''\right|^{2}}$, 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle$ 为混合积.
 
 > **习题 2.15 (球面曲线的刻画)**<br>满足条件 $\left(\frac1\kappa\right)^{2}+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^{2}=$ 常数的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
 

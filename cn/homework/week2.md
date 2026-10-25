@@ -12,7 +12,7 @@
 
 > **定理 2.3.2 (弗勒内公式)**<br>$\dot{\boldsymbol t}=k\boldsymbol n$, $\dot{\boldsymbol n}=-k\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$.
 
-> **定理 2.3.3 (弧长参数曲线的二阶渐近展开)**<br>设 $\boldsymbol r$ 以弧长为参数, 在 $s_0=0$ 处有 $\boldsymbol r\left(s\right)=\boldsymbol r\left(0\right)+s\,\dot{\boldsymbol r}\left(0\right)+\frac{s^{2}}2\ddot{\boldsymbol r}\left(0\right)+O\left(s^{3}\right)$, 其中 $\dot{\boldsymbol r}=\boldsymbol t(0)$, $\ddot{\boldsymbol r}\left(0\right)=k\left(0\right)\boldsymbol n\left(0\right)$.
+> **定理 2.3.3 (弧长参数曲线的二阶渐近展开)**<br>设 $\boldsymbol r$ 以弧长为参数, 在 $s_0=0$ 处有 $\boldsymbol r\left(s\right)=\boldsymbol r\left(0\right)+s\,\dot{\boldsymbol r}\left(0\right)+\frac{s^{2}}2\ddot{\boldsymbol r}\left(0\right)+O\left(s^{3}\right)$, 其中 $\dot{\boldsymbol r}=\boldsymbol t\left(0\right)$, $\ddot{\boldsymbol r}\left(0\right)=k\left(0\right)\boldsymbol n\left(0\right)$.
 
 > **定理 2.4.2 (空间曲线基本定理)**<br>设 $\boldsymbol r_1\left(s\right),\boldsymbol r_2\left(s\right)$ 是 $\mathbb E^{3}$ 的两条弧长参数曲线, 定义在同一参数区间上, 且 $k_1=k_2> 0$, $\tau_1=\tau_2$, 则存在 $\mathbb E^{3}$ 的一个刚体运动把 $\boldsymbol r_2$ 变为 $\boldsymbol r_1$.
 
@@ -140,7 +140,7 @@ $$
 
 ### 解答 1.16
 
-设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, $P_0=\boldsymbol r\left(0\right)$, $P=\boldsymbol r\left(s\right)$ ($s\to0$), $l$ 是过 $P_0$, 方向为 $\boldsymbol t\left(0\right)$ 的直线. 由**基础知识: 点到直线的距离**, $P$ 到 $l$ 的距离为 $d\left(P,l\right)=\left|\left(\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)\right)\wedge\boldsymbol t\left(0\right)\right|$. 由**定理 2.3.3 (弧长参数曲线的三阶渐近展开)**, 在 $s_0=0$ 处展开 ($\ddot{\boldsymbol r}\left(0\right)=\kappa\left(0\right)\boldsymbol n\left(0\right)$, 见**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**):
+设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, $P_0=\boldsymbol r\left(0\right)$, $P=\boldsymbol r\left(s\right)$ ($s\to0$), $l$ 是过 $P_0$, 方向为 $\boldsymbol t\left(0\right)$ 的直线. 由**基础知识: 点到直线的距离**, $P$ 到 $l$ 的距离为 $d\left(P,l\right)=\left|\left(\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)\right)\wedge\boldsymbol t\left(0\right)\right|$. 由**定理 2.3.3 (弧长参数曲线的二阶渐近展开)**, 在 $s_0=0$ 处展开:
 
 $$
 \boldsymbol r\left(s\right)=\boldsymbol r\left(0\right)+s\boldsymbol t\left(0\right)+\frac{s^{2}}{2}\kappa\left(0\right)\boldsymbol n\left(0\right)+O\left(s^{3}\right).
