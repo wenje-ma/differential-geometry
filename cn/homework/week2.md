@@ -290,16 +290,16 @@ $$
 $$
 
 $$
-\tilde v^{2}=\sin^{2}\frac{t}{2}+\cos^{2}\frac{t}{2}+1=2,\quad \tilde v=\sqrt2.
+\widetilde v^{2}=\sin^{2}\frac{t}{2}+\cos^{2}\frac{t}{2}+1=2,\quad \widetilde v=\sqrt2.
 $$
 
 $$
 \widetilde{\boldsymbol r}'\wedge\widetilde{\boldsymbol r}''
 =\left(-\frac12\sin\frac{t}{2},\ \frac12\cos\frac{t}{2},\ \frac12\right),\quad
-\tilde w^{2}=\frac12,\quad \tilde w=\frac1{\sqrt2}.
+\widetilde w^{2}=\frac12,\quad \widetilde w=\frac1{\sqrt2}.
 $$
 
-混合积 $\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)=-\frac18$. 故 $\tilde k=\frac{\tilde w}{\tilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\tilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\tilde w^{2}}=\frac{-1/8}{1/2}=-\frac14$.
+混合积 $\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)=-\frac18$. 故 $\widetilde k=\frac{\widetilde w}{\widetilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\widetilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\widetilde w^{2}}=\frac{-1/8}{1/2}=-\frac14$.
 
 **结论.** 两条曲线的曲率, 挠率分别相等: $k=\widetilde k=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb E^{3}$ 中相差一个刚体运动, 即两曲线**合同**. $\blacksquare$
 

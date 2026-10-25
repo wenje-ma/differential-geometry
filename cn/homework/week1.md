@@ -361,43 +361,43 @@ $\left\{\boldsymbol t,\boldsymbol \nu,\boldsymbol b\right\}$ 为标准正交基,
 
 ## 6.10 (反向等距变换下曲线几何量的变化)
 
-设 $T\left(\boldsymbol X\right)=\boldsymbol X\boldsymbol T+P$ 是 $\mathbb E^{3}$ 的一个合同 (等距) 变换, $\det T=-1$: $T$ 为变换, $\boldsymbol T\in O\left(3\right)$ 为正交矩阵. $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 求曲线 $\tilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
+设 $T\left(\boldsymbol X\right)=\boldsymbol X\boldsymbol T+P$ 是 $\mathbb E^{3}$ 的一个合同 (等距) 变换, $\det T=-1$: $T$ 为变换, $\boldsymbol T\in O\left(3\right)$ 为正交矩阵. $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 求曲线 $\widetilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
 
 ### 解答 6.10
 
-由题可知, $\tilde{\boldsymbol r}\left(t\right)=\boldsymbol T\boldsymbol r\left(t\right)+P$.
+由题可知, $\widetilde{\boldsymbol r}\left(t\right)=\boldsymbol T\boldsymbol r\left(t\right)+P$.
 
 **弧长参数.** 由**基础知识: 正交矩阵保内积与长度** ($\left|\boldsymbol T\boldsymbol x\right|=\left|\boldsymbol x\right|$):
 
 $$
-\left|\tilde{\boldsymbol r}'\right|=\left|\boldsymbol T\boldsymbol r'\right|=\left|\boldsymbol r'\right|.
+\left|\widetilde{\boldsymbol r}'\right|=\left|\boldsymbol T\boldsymbol r'\right|=\left|\boldsymbol r'\right|.
 $$
 
-故 $\tilde s\left(t\right)=\int\left|\tilde{\boldsymbol r}'\right|\mathrm dt=\int\left|\boldsymbol r'\right|\mathrm dt=s\left(t\right)$ (只差常数). 因此 $\boldsymbol r$ 的弧长参数 $s$ 仍是 $\tilde{\boldsymbol r}$ 的弧长参数, 弧长参数化不变.
+故 $\widetilde s\left(t\right)=\int\left|\widetilde{\boldsymbol r}'\right|\mathrm dt=\int\left|\boldsymbol r'\right|\mathrm dt=s\left(t\right)$ (只差常数). 因此 $\boldsymbol r$ 的弧长参数 $s$ 仍是 $\widetilde{\boldsymbol r}$ 的弧长参数, 弧长参数化不变.
 
 **曲率.** 已知 $\det\boldsymbol T=-1$, 曲率 $k=\left\|\dot{\boldsymbol t}\right\|$ (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), 由**基础知识: 正交矩阵保内积与长度**:
 
 $$
-\tilde k=\left\|\dot{\tilde{\boldsymbol t}}\right\|=\left\|\boldsymbol T\dot{\boldsymbol t}\right\|=\left|\dot{\boldsymbol t}\right|=k.
+\widetilde k=\left\|\dot{\widetilde{\boldsymbol t}}\right\|=\left\|\boldsymbol T\dot{\boldsymbol t}\right\|=\left|\dot{\boldsymbol t}\right|=k.
 $$
 
-故反向变换下曲率不变 $\tilde k=k$.
+故反向变换下曲率不变 $\widetilde k=k$.
 
 **挠率.** 由**习题 2.5 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
 
 $$
-\begin{aligned}\tilde\tau
-&=\frac{\left(\tilde{\boldsymbol r}',\tilde{\boldsymbol r}'',\tilde{\boldsymbol r}'''\right)}{\tilde w^{2}}
+\begin{aligned}\widetilde\tau
+&=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\widetilde w^{2}}
 =\frac{\det\left(\boldsymbol T\boldsymbol r',\boldsymbol T\boldsymbol r'',\boldsymbol T\boldsymbol r'''\right)}{w^{2}}\\
 &=\frac{\det\boldsymbol T\cdot\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
 =-\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=-\tau,
 \end{aligned}
 $$
 
-其中第一步用**基础知识: 行列式的乘积性**, 第二步用到 $\det\boldsymbol T=-1$. 故反向变换下挠率变号 $\tilde\tau=-\tau$. 综上:
+其中第一步用**基础知识: 行列式的乘积性**, 第二步用到 $\det\boldsymbol T=-1$. 故反向变换下挠率变号 $\widetilde\tau=-\tau$. 综上:
 
 $$
-\tilde s=s,\quad \tilde k=k,\quad \tilde\tau=-\tau,
+\widetilde s=s,\quad \widetilde k=k,\quad \widetilde\tau=-\tau,
 $$
 
 $\blacksquare$
