@@ -46,13 +46,11 @@ $$
 故 $\boldsymbol r\left(u,v\right)\in S$. 由**定义 3.1.1 (曲面与单位法向)**, 还需验证正则性:
 
 $$
-\boldsymbol r_u=\left(a\cos u\cos v,\ b\cos u\sin v,\ -c\sin u\right),\quad
-\boldsymbol r_v=\left(-a\sin u\sin v,\ b\sin u\cos v,\ 0\right),
-$$
-
-$$
-\boldsymbol r_u\wedge\boldsymbol r_v
-=\sin u\left(bc\sin u\cos v,\ ac\sin u\sin v,\ ab\cos u\right).
+\begin{aligned}
+\boldsymbol r_u&=\left(a\cos u\cos v,\ b\cos u\sin v,\ -c\sin u\right),\\
+\boldsymbol r_v&=\left(-a\sin u\sin v,\ b\sin u\cos v,\ 0\right),\\
+\boldsymbol r_u\wedge\boldsymbol r_v&=\sin u\left(bc\sin u\cos v,\ ac\sin u\sin v,\ ab\cos u\right).
+\end{aligned}
 $$
 
 因 $u\in\left(0,\pi\right)$ 时 $\sin u> 0$, 且 $\left(bc\sin u\cos v,ac\sin u\sin v,ab\cos u\right)\ne\boldsymbol0$ ($\cos v,\sin v$ 不能同时为零), 故 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol r\left(u,v\right)$ 是椭球面 (除去南北两极) 的正则参数曲面. $\blacksquare$
@@ -73,12 +71,11 @@ $$
 故 $\boldsymbol r\left(u,v\right)\in S$. 由**定义 3.1.1 (曲面与单位法向)**, 验证正则性:
 
 $$
-\boldsymbol r_u=\left(a\sinh u\cos v,\ b\sinh u\sin v,\ c\cosh u\right),\quad
-\boldsymbol r_v=\left(-a\cosh u\sin v,\ b\cosh u\cos v,\ 0\right),
-$$
-
-$$
-\boldsymbol r_u\wedge\boldsymbol r_v=\left(-bc\cosh^2 u\cos v,\ -ac\cosh^2 u\sin v,\ ab\sinh u\cosh u\right).
+\begin{aligned}
+\boldsymbol r_u&=\left(a\sinh u\cos v,\ b\sinh u\sin v,\ c\cosh u\right),\\
+\boldsymbol r_v&=\left(-a\cosh u\sin v,\ b\cosh u\cos v,\ 0\right),\\
+\boldsymbol r_u\wedge\boldsymbol r_v&=\left(-bc\cosh^2 u\cos v,\ -ac\cosh^2 u\sin v,\ ab\sinh u\cosh u\right).
+\end{aligned}
 $$
 
 因 $\cosh u> 0$ 恒成立, 前两个分量同为零当且仅当 $\cos v=\sin v=0$, 这不可能, 故 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, 它是单叶双曲面的正则参数曲面. $\blacksquare$
@@ -103,7 +100,13 @@ $$
 
 ## 1.7 (椭球面的第一基本形式)
 
-求椭球面的第一基本形式.
+求椭球面
+
+$$
+\boldsymbol r\left(u,v\right)=\left(a\sin u\cos v,\ b\sin u\sin v,\ c\cos u\right),\quad u\in\left(0,\pi\right),\ v\in\left[0,2\pi\right).
+$$
+
+的第一基本形式.
 
 ### 解答 1.7
 
@@ -154,15 +157,11 @@ $$
 $$
 
 $$
-E=\cos^2 v+\sin^2 v=1
-$$
-
-$$
-F=\cos v\left(-u\sin v\right)+\sin v\left(u\cos v\right)+0=0
-$$
-
-$$
-G=u^2\sin^2 v+u^2\cos^2 v+b^2=u^2+b^2.
+\begin{aligned}
+E&=\cos^2 v+\sin^2 v=1\\
+F&=\cos v\left(-u\sin v\right)+\sin v\left(u\cos v\right)+0=0\\
+G&=u^2\sin^2 v+u^2\cos^2 v+b^2=u^2+b^2.
+\end{aligned}
 $$
 
 故
@@ -189,7 +188,10 @@ $$
 故
 
 $$
-\mathrm I=E\,\mathrm du^2+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2+2\left(a^2-b^2+4uv\right)\mathrm du\,\mathrm dv+\left(a^2+b^2+4v^2\right)\mathrm dv^2.\ \blacksquare
+\begin{aligned}
+\mathrm I&=E\,\mathrm du^2+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2\\
+&\quad+2\left(a^2-b^2+4uv\right)\mathrm du\,\mathrm dv+\left(a^2+b^2+4v^2\right)\mathrm dv^2.\ \blacksquare
+\end{aligned}
 $$
 
 ---
@@ -219,7 +221,7 @@ $$
 \mathrm I=E\,\mathrm dx^2+2F\,\mathrm dx\,\mathrm dy+G\,\mathrm dy^2=\left(1+f_x^2\right)\mathrm dx^2+2f_xf_y\,\mathrm dx\,\mathrm dy+\left(1+f_y^2\right)\mathrm dy^2,
 $$
 
-即 $E=1+f_x^2,\ F=f_xf_y,\ G=1+f_y^2$. $\blacksquare$
+$\blacksquare$
 
 ---
 
@@ -229,21 +231,25 @@ $$
 
 ### 解答 1.11
 
+**不一定相同**; 指向相同 $\Leftrightarrow\det J> 0$ (同向参数变换).
+
 设 $\left(x,y\right)$ 是另一组参数, 即存在参数变换 $u=u\left(x,y\right)$, $v=v\left(x,y\right)$, 记其雅可比行列式 $J:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}$. 由**推导 3.1.2 (参数变换下法向)**,
 
 $$
 \boldsymbol r_x\wedge\boldsymbol r_y=\det J\,\boldsymbol r_u\wedge\boldsymbol r_v.
 $$
 
-因此两向量 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的**指向是否相同, 取决于 $\det J$ 的符号**: 当 $\det J> 0$ (同向参数变换) 时 $\boldsymbol r_x\wedge\boldsymbol r_y$ 与 $\boldsymbol r_u\wedge\boldsymbol r_v$ 同向; 当 $\det J< 0$ (反向参数变换) 时两者反向. 由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 由参数化定向唯一确定, 故上述结论正是**推导 3.1.2 (参数变换下法向)** 中"$\det J> 0$ 不改变单位法向, $\det J< 0$ 使单位法向变号"的直接体现. 进一步地, 由**性质 3.3.4 (第二基本形式在参数变换下变号)**, 同向参数变换下 $\mathrm{II}$ 不变, 反向参数变换下 $\mathrm{II}$ 变号.
-
-因此答案: **不一定相同; 指向相同 $\Leftrightarrow\det J> 0$ (同向参数变换)**. $\blacksquare$
+因此两向量 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的**指向是否相同, 取决于 $\det J$ 的符号**: 当 $\det J> 0$ (同向参数变换) 时 $\boldsymbol r_x\wedge\boldsymbol r_y$ 与 $\boldsymbol r_u\wedge\boldsymbol r_v$ 同向; 当 $\det J< 0$ (反向参数变换) 时两者反向. $\blacksquare$
 
 ---
 
 ## 1.14 (第二基本形式的计算)
 
-求习题8中曲面的第二基本形式.
+求下列曲面的第二基本形式:
+
+(1) $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$;
+
+(2) $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
 ### 解答 1.14
 
@@ -288,7 +294,7 @@ $$
 \mathrm{II}=L\,\mathrm du^2+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^2=-\frac{2b}{\sqrt{b^2+u^2}}\,\mathrm du\,\mathrm dv,
 $$
 
-即 $L=0,\ M=-\frac{b}{\sqrt{u^2+b^2}},\ N=0$. $\blacksquare$
+$\blacksquare$
 
 **(2)** $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$. 由解答 1-8(2),
 
@@ -333,7 +339,7 @@ $$
 \Delta=\sqrt{b^2\left(u+v\right)^2+a^2\left(u-v\right)^2+a^2b^2},
 $$
 
-即 $L=N=-\frac{2ab}{\Delta},\ M=0$. $\blacksquare$
+$\blacksquare$
 
 ---
 
@@ -378,7 +384,7 @@ $$
 \mathrm{II}=L\,\mathrm dx^2+2M\,\mathrm dx\,\mathrm dy+N\,\mathrm dy^2=\frac{f_{xx}\,\mathrm dx^2+2f_{xy}\,\mathrm dx\,\mathrm dy+f_{yy}\,\mathrm dy^2}{\sqrt{1+f_x^2+f_y^2}},
 $$
 
-即 $L=\frac{f_{xx}}{\sqrt{1+f_x^2+f_y^2}},\ M=\frac{f_{xy}}{\sqrt{1+f_x^2+f_y^2}},\ N=\frac{f_{yy}}{\sqrt{1+f_x^2+f_y^2}}$. $\blacksquare$
+$\blacksquare$
 
 ---
 
@@ -463,7 +469,7 @@ $$
 \mathrm{II}=\mathrm I=\sin^2\varphi\,\mathrm d\theta^{2}+\mathrm d\varphi^{2}.
 $$
 
-(注: 也可用**公式 3.6.1 (旋转曲面的基本量)** 交叉检验. 把球面视为旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$, 取 $u=\varphi,\ v=\theta,\ f=\sin\varphi,\ g=\cos\varphi$, 则 $E=\cos^{2}\varphi+\sin^{2}\varphi=1$ (对应 $\mathrm d\varphi^{2}$ 系数), $G=\sin^{2}\varphi$ (对应 $\mathrm d\theta^{2}$ 系数), 与上面逐项计算一致.) $\blacksquare$
+$\blacksquare$
 
 **(ii) 函数图形 (上半球).** 取参数
 
