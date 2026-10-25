@@ -26,7 +26,7 @@
 
 > **引理 3.5.2**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
 
-> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $\kappa_1,\kappa_2$, 则平均曲率 $H=\frac{\kappa_1+\kappa_2}{2}$, 高斯曲率 $K=\kappa_1\kappa_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $\kappa_1\kappa_2=\det\boldsymbol W$, $\frac12(\kappa_1+\kappa_2)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}h_{11}&h_{12}\\h_{21}&h_{22}\end{bmatrix}$.
+> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $\kappa_1,\kappa_2$, 则平均曲率 $H=\frac{\kappa_1+\kappa_2}{2}$, 高斯曲率 $K=\kappa_1\kappa_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $\kappa_1\kappa_2=\det\boldsymbol W$, $\frac12\left(\kappa_1+\kappa_2\right)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}h_{11}&h_{12}\\h_{21}&h_{22}\end{bmatrix}$.
 
 > **公式 3.5.5 (面积元与高斯映射面积)**<br>曲面面积元 $\mathrm dA=\left\langle\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$; 在单位法向映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\mathrm{Area}\left(g\left(D\right)\right)}{\mathrm{Area}\left(D\right)}=K\left(P\right)$.
 
@@ -433,10 +433,10 @@ $$
 
 **(a) 面积与参数选取无关.**
 
-由于**定义 3.2.1 (第一基本形式)**, $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv=\int_{D}\sqrt{\det(g_{ij})}\,\mathrm du\,\mathrm dv$, 矩阵 $\boldsymbol G=(g_{ij})$ 为第一基本形式的系数矩阵. 由 **定理 3.2.1 (第一基本形式与参数选取无关)**, 存在 $\boldsymbol J$, 使得换参数后的新系数矩阵 $\widetilde{\boldsymbol G}$ 满足 $\widetilde{\boldsymbol G}=\boldsymbol J^\top\boldsymbol G\boldsymbol J$, 则
+由于**定义 3.2.1 (第一基本形式)**, $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv=\int_{D}\sqrt{\det\left(g_{ij}\right)}\,\mathrm du\,\mathrm dv$, 矩阵 $\boldsymbol G=\left(g_{ij}\right)$ 为第一基本形式的系数矩阵. 由 **定理 3.2.1 (第一基本形式与参数选取无关)**, 存在 $\boldsymbol J$, 使得换参数后的新系数矩阵 $\widetilde{\boldsymbol G}$ 满足 $\widetilde{\boldsymbol G}=\boldsymbol J^\top\boldsymbol G\boldsymbol J$, 则
 
 $$
-\sqrt{\det\widetilde{\boldsymbol G}}\,\mathrm d\widetilde u\,\mathrm d\widetilde v=|\det\boldsymbol J|\sqrt{\det\boldsymbol G}\cdot\frac1{|\det\boldsymbol J|}\,\mathrm du\,\mathrm dv=\sqrt{\det\boldsymbol G}\,\mathrm du\,\mathrm dv.
+\sqrt{\det\widetilde{\boldsymbol G}}\,\mathrm d\widetilde u\,\mathrm d\widetilde v=\left|\det\boldsymbol J\right|\sqrt{\det\boldsymbol G}\cdot\frac1{\left|\det\boldsymbol J\right|}\,\mathrm du\,\mathrm dv=\sqrt{\det\boldsymbol G}\,\mathrm du\,\mathrm dv.
 $$
 
 即面积与参数选取无关. $\blacksquare$

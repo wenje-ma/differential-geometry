@@ -206,7 +206,7 @@ $$
 
 即切向量 $\boldsymbol t$ 与固定方向 $\boldsymbol v$ 的夹角恒定. 因此满足 $\tau=c\kappa$ 的曲线正是**一般螺旋线** (其切向量与固定方向保持定角). $\blacksquare$
 
-> 计算 $\frac{\mathrm d}{\mathrm ds}(A\boldsymbol t+B\boldsymbol b)=(A\kappa-B\tau)\boldsymbol \nu$ 发现其仅与 $\boldsymbol \nu$ 有关, 一个自然的想法是, 若令 $\boldsymbol \nu$ 的系数为 $0$, 这样的曲线肯定很特殊.
+> 计算 $\frac{\mathrm d}{\mathrm ds}\left(A\boldsymbol t+B\boldsymbol b\right)=\left(A\kappa-B\tau\right)\boldsymbol \nu$ 发现其仅与 $\boldsymbol \nu$ 有关, 一个自然的想法是, 若令 $\boldsymbol \nu$ 的系数为 $0$, 这样的曲线肯定很特殊.
 
 ---
 
@@ -259,13 +259,13 @@ $$
 $$
 
 $$
-v^{2}=|\boldsymbol r'|^2=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}=8,\quad v=2\sqrt2.
+v^{2}=\left|\boldsymbol r'\right|^2=\left(1+\sqrt3\cos t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos t\right)^{2}=8,\quad v=2\sqrt2.
 $$
 
 又 $\boldsymbol r'\wedge\boldsymbol r''=\left(-2+2\sqrt3\cos t,\ -4\sin t,\ -2\cos t-2\sqrt3\right)$,
 
 $$
-w^{2}=|\boldsymbol r'\wedge\boldsymbol r''|^2=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right)^{2}=32,\quad w=4\sqrt2.
+w^{2}=\left|\boldsymbol r'\wedge\boldsymbol r''\right|^2=\left(-2+2\sqrt3\cos t\right)^{2}+16\sin^{2}t+\left(-2\cos t-2\sqrt3\right)^{2}=32,\quad w=4\sqrt2.
 $$
 
 混合积
