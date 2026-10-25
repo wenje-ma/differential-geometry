@@ -8,13 +8,13 @@
 
 > **定义 3.1.3 (切平面)**<br>$\boldsymbol r_u,\boldsymbol r_v$ 张成的平面 $T_{\boldsymbol r}S=\mathrm{span}\left\{\boldsymbol r_u,\boldsymbol r_v\right\}$ 称为曲面 $S$ 在点 $\boldsymbol r$ 处的切平面(切空间).
 
-> **定义 3.2.1 (第一基本形式)**<br>$\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=E\,\mathrm du^{2}+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^{2}$, 其中 $E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $F=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
+> **定义 3.2.1 (第一基本形式)**<br>$\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}$, 其中 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
 
-> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=L\,\mathrm du^{2}+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^{2}$, 其中 $L=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $M=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $N=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=h_{11}\,\mathrm du^{2}+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^{2}$, 其中 $h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
 > **性质 3.3.4 (第二基本形式在参数变换下变号)**<br>设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 与 $\boldsymbol r=\boldsymbol r\left(\tilde u,\tilde v\right)$ 是曲面 $S$ 的两个不同参数表示. 当变换 $\left(u,v\right)\to\left(\tilde u,\tilde v\right)$ 是同向参数变换时, $\mathrm{II}\left(\tilde u,\tilde v\right)=\mathrm{II}\left(u,v\right)$; 当它是反向参数变换时, $\mathrm{II}\left(\tilde u,\tilde v\right)=-\mathrm{II}\left(u,v\right)$.
 
-> **公式 3.6.1 (旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $E=\left(f'\right)^{2}+\left(g'\right)^{2}$, $F=0$, $G=f^{2}$, $L=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $M=0$, $N=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
+> **公式 3.6.1 (旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $h_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $h_{12}=0$, $h_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
 
 ---
 
@@ -110,17 +110,17 @@ $$
 
 ### 解答 1.7
 
-由题 1(1), 椭球面的参数表示为 $\boldsymbol r\left(u,v\right)=\left(a\sin u\cos v,b\sin u\sin v,c\cos u\right)$. 由**定义 3.2.1 (第一基本形式)**, 系数为 $E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ F=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$. 由解答 1-1 中的 $\boldsymbol r_u,\boldsymbol r_v$:
+由题 1(1), 椭球面的参数表示为 $\boldsymbol r\left(u,v\right)=\left(a\sin u\cos v,b\sin u\sin v,c\cos u\right)$. 由**定义 3.2.1 (第一基本形式)**, 系数为 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$. 由解答 1-1 中的 $\boldsymbol r_u,\boldsymbol r_v$:
 
 $$
 \begin{aligned}
-E&=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle
+g_{11}&=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle
 =a^2\cos^2 u\cos^2 v+b^2\cos^2 u\sin^2 v+c^2\sin^2 u
 =\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u,\\
-F&=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle
+g_{12}&=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle
 =-a^2\sin u\cos u\sin v\cos v+b^2\sin u\cos u\sin v\cos v
 =\left(b^2-a^2\right)\sin u\cos u\sin v\cos v,\\
-G&=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle
+g_{22}&=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle
 =a^2\sin^2 u\sin^2 v+b^2\sin^2 u\cos^2 v
 =\sin^2 u\left(a^2\sin^2 v+b^2\cos^2 v\right).
 \end{aligned}
@@ -130,7 +130,7 @@ $$
 
 $$
 \begin{aligned}
-\mathrm I&=E\,\mathrm du^2+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^2=\left[\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u\right]\mathrm du^2\\
+\mathrm I&=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left[\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u\right]\mathrm du^2\\
 &\quad+2\left(b^2-a^2\right)\sin u\cos u\sin v\cos v\,\mathrm du\,\mathrm dv+\sin^2 u\left(a^2\sin^2 v+b^2\cos^2 v\right)\mathrm dv^2.\ \blacksquare
 \end{aligned}
 $$
@@ -147,7 +147,7 @@ $$
 
 ### 解答 1.8
 
-由**定义 3.2.1 (第一基本形式)**, $E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ F=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$.
+由**定义 3.2.1 (第一基本形式)**, $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$.
 
 **(1)** $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$.
 
@@ -158,19 +158,19 @@ $$
 
 $$
 \begin{aligned}
-E&=\cos^2 v+\sin^2 v=1\\
-F&=\cos v\left(-u\sin v\right)+\sin v\left(u\cos v\right)+0=0\\
-G&=u^2\sin^2 v+u^2\cos^2 v+b^2=u^2+b^2.
+g_{11}&=\cos^2 v+\sin^2 v=1\\
+g_{12}&=\cos v\left(-u\sin v\right)+\sin v\left(u\cos v\right)+0=0\\
+g_{22}&=u^2\sin^2 v+u^2\cos^2 v+b^2=u^2+b^2.
 \end{aligned}
 $$
 
 故
 
 $$
-\mathrm I=E\,\mathrm du^2+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^2=\mathrm du^2+\left(u^2+b^2\right)\mathrm dv^2,
+\mathrm I=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\mathrm du^2+\left(u^2+b^2\right)\mathrm dv^2,
 $$
 
-即 $E=1,\ F=0,\ G=u^2+b^2$. $\blacksquare$
+即 $g_{11}=1,\ g_{12}=0,\ g_{22}=u^2+b^2$. $\blacksquare$
 
 **(2)** $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
@@ -180,16 +180,16 @@ $$
 $$
 
 $$
-E=a^2+b^2+4u^2,\quad
-F=a^2-b^2+4uv,\quad
-G=a^2+b^2+4v^2.
+g_{11}=a^2+b^2+4u^2,\quad
+g_{12}=a^2-b^2+4uv,\quad
+g_{22}=a^2+b^2+4v^2.
 $$
 
 故
 
 $$
 \begin{aligned}
-\mathrm I&=E\,\mathrm du^2+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2\\
+\mathrm I&=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2\\
 &\quad+2\left(a^2-b^2+4uv\right)\mathrm du\,\mathrm dv+\left(a^2+b^2+4v^2\right)\mathrm dv^2.\ \blacksquare
 \end{aligned}
 $$
@@ -210,15 +210,15 @@ $$
 $$
 
 $$
-E=1+f_x^2,\quad
-F=f_xf_y,\quad
-G=1+f_y^2.
+g_{11}=1+f_x^2,\quad
+g_{12}=f_xf_y,\quad
+g_{22}=1+f_y^2.
 $$
 
 故
 
 $$
-\mathrm I=E\,\mathrm dx^2+2F\,\mathrm dx\,\mathrm dy+G\,\mathrm dy^2=\left(1+f_x^2\right)\mathrm dx^2+2f_xf_y\,\mathrm dx\,\mathrm dy+\left(1+f_y^2\right)\mathrm dy^2,
+\mathrm I=g_{11}\,\mathrm dx^2+2g_{12}\,\mathrm dx\,\mathrm dy+g_{22}\,\mathrm dy^2=\left(1+f_x^2\right)\mathrm dx^2+2f_xf_y\,\mathrm dx\,\mathrm dy+\left(1+f_y^2\right)\mathrm dy^2,
 $$
 
 $\blacksquare$
@@ -253,7 +253,7 @@ $$
 
 ### 解答 1.14
 
-由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$; 由**定义 3.3.1 (第二基本形式)**, $L=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle,\ M=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle,\ N=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$; 由**定义 3.3.1 (第二基本形式)**, $h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle,\ h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle,\ h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
 **(1)** $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$. 由解答 1-8(1),
 
@@ -283,15 +283,15 @@ $$
 由**定义 3.3.1 (第二基本形式)**,
 
 $$
-L=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=0,\quad
-M=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=\frac{-b\sin^2 v-b\cos^2 v}{\sqrt{b^2+u^2}}=-\frac{b}{\sqrt{b^2+u^2}},\quad
-N=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=0.
+h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=0,\quad
+h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=\frac{-b\sin^2 v-b\cos^2 v}{\sqrt{b^2+u^2}}=-\frac{b}{\sqrt{b^2+u^2}},\quad
+h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=0.
 $$
 
 故
 
 $$
-\mathrm{II}=L\,\mathrm du^2+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^2=-\frac{2b}{\sqrt{b^2+u^2}}\,\mathrm du\,\mathrm dv,
+\mathrm{II}=h_{11}\,\mathrm du^2+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^2=-\frac{2b}{\sqrt{b^2+u^2}}\,\mathrm du\,\mathrm dv,
 $$
 
 $\blacksquare$
@@ -327,15 +327,15 @@ $$
 由**定义 3.3.1 (第二基本形式)**,
 
 $$
-L=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\frac{2\left(-ab\right)}{\Delta}=-\frac{2ab}{\Delta},\quad
-M=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=0,\quad
-N=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=-\frac{2ab}{\Delta}.
+h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\frac{2\left(-ab\right)}{\Delta}=-\frac{2ab}{\Delta},\quad
+h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=0,\quad
+h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=-\frac{2ab}{\Delta}.
 $$
 
 故
 
 $$
-\mathrm{II}=L\,\mathrm du^2+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^2=-\frac{2ab}{\Delta}\left(\mathrm du^2+\mathrm dv^2\right),\quad
+\mathrm{II}=h_{11}\,\mathrm du^2+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^2=-\frac{2ab}{\Delta}\left(\mathrm du^2+\mathrm dv^2\right),\quad
 \Delta=\sqrt{b^2\left(u+v\right)^2+a^2\left(u-v\right)^2+a^2b^2},
 $$
 
@@ -370,18 +370,18 @@ $$
 \boldsymbol r_{yy}=\left(0,0,f_{yy}\right).
 $$
 
-由**定义 3.3.1 (第二基本形式)**, $L=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle,\ M=\left\langle\boldsymbol r_{xy},\boldsymbol n\right\rangle,\ N=\left\langle\boldsymbol r_{yy},\boldsymbol n\right\rangle$, 得
+由**定义 3.3.1 (第二基本形式)**, $h_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle,\ h_{12}=\left\langle\boldsymbol r_{xy},\boldsymbol n\right\rangle,\ h_{22}=\left\langle\boldsymbol r_{yy},\boldsymbol n\right\rangle$, 得
 
 $$
-L=\frac{f_{xx}}{\sqrt{1+f_x^2+f_y^2}},\quad
-M=\frac{f_{xy}}{\sqrt{1+f_x^2+f_y^2}},\quad
-N=\frac{f_{yy}}{\sqrt{1+f_x^2+f_y^2}}.
+h_{11}=\frac{f_{xx}}{\sqrt{1+f_x^2+f_y^2}},\quad
+h_{12}=\frac{f_{xy}}{\sqrt{1+f_x^2+f_y^2}},\quad
+h_{22}=\frac{f_{yy}}{\sqrt{1+f_x^2+f_y^2}}.
 $$
 
 故
 
 $$
-\mathrm{II}=L\,\mathrm dx^2+2M\,\mathrm dx\,\mathrm dy+N\,\mathrm dy^2=\frac{f_{xx}\,\mathrm dx^2+2f_{xy}\,\mathrm dx\,\mathrm dy+f_{yy}\,\mathrm dy^2}{\sqrt{1+f_x^2+f_y^2}},
+\mathrm{II}=h_{11}\,\mathrm dx^2+2h_{12}\,\mathrm dx\,\mathrm dy+h_{22}\,\mathrm dy^2=\frac{f_{xx}\,\mathrm dx^2+2f_{xy}\,\mathrm dx\,\mathrm dy+f_{yy}\,\mathrm dy^2}{\sqrt{1+f_x^2+f_y^2}},
 $$
 
 $\blacksquare$
@@ -410,20 +410,20 @@ $$
 
 **切空间与法线已由上述通用结论确定**: 对每种参数表示, 切空间都是 $T_{\boldsymbol r}S=\boldsymbol r^{\perp}$, 单位法向为 $\boldsymbol n=\pm\boldsymbol r$.
 
-**第一基本形式**由**定义 3.2.1 (第一基本形式)** 按 $E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ F=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$ 逐张计算.
+**第一基本形式**由**定义 3.2.1 (第一基本形式)** 按 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$ 逐张计算.
 
-**第二基本形式**可用如下通用关系求出. 由**基础知识: 内积求导**, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-F$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-E$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-G$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
+**第二基本形式**可用如下通用关系求出. 由**基础知识: 内积求导**, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-g_{11}$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
 
 $$
-L=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\sigma\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-\sigma E,\quad
-M=-\sigma F,\quad
-N=-\sigma G,
+h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\sigma\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-\sigma g_{11},\quad
+h_{12}=-\sigma g_{12},\quad
+h_{22}=-\sigma g_{22},
 $$
 
 从而
 
 $$
-\mathrm{II}=-\sigma\left(E\,\mathrm du^{2}+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^{2}\right)=-\sigma\,\mathrm I.
+\mathrm{II}=-\sigma\left(g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}\right)=-\sigma\,\mathrm I.
 $$
 
 下面逐张确定 $\sigma$ 并给出 $T,\ \boldsymbol n,\ \mathrm I,\ \mathrm{II}$.
@@ -452,9 +452,9 @@ $$
 因 $\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi> 0$, 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=-\boldsymbol r$, 即 $\sigma=-1$ (球面**内法向**). 由**定义 3.2.1 (第一基本形式)**:
 
 $$
-E=\left\langle\boldsymbol r_\theta,\boldsymbol r_\theta\right\rangle=\sin^2\varphi,\quad
-F=\left\langle\boldsymbol r_\theta,\boldsymbol r_\varphi\right\rangle=0,\quad
-G=\left\langle\boldsymbol r_\varphi,\boldsymbol r_\varphi\right\rangle=1,
+g_{11}=\left\langle\boldsymbol r_\theta,\boldsymbol r_\theta\right\rangle=\sin^2\varphi,\quad
+g_{12}=\left\langle\boldsymbol r_\theta,\boldsymbol r_\varphi\right\rangle=0,\quad
+g_{22}=\left\langle\boldsymbol r_\varphi,\boldsymbol r_\varphi\right\rangle=1,
 $$
 
 故
@@ -494,13 +494,13 @@ $$
 故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=\boldsymbol r$, 即 $\sigma=+1$ (球面**外法向**). 由**定义 3.2.1 (第一基本形式)**:
 
 $$
-E=1+\frac{x^2}{f^2},\quad F=\frac{xy}{f^2},\quad G=1+\frac{y^2}{f^2}.
+g_{11}=1+\frac{x^2}{f^2},\quad g_{12}=\frac{xy}{f^2},\quad g_{22}=1+\frac{y^2}{f^2}.
 $$
 
 利用 $f^2=1-x^2-y^2$ 得 $f^2+x^2=1-y^2$, $f^2+y^2=1-x^2$, 故
 
 $$
-\mathrm I=E\,\mathrm dx^2+2F\,\mathrm dx\,\mathrm dy+G\,\mathrm dy^2=\frac{\left(1-y^2\right)\mathrm dx^2+2xy\,\mathrm dx\,\mathrm dy+\left(1-x^2\right)\mathrm dy^2}{1-x^2-y^2}.
+\mathrm I=g_{11}\,\mathrm dx^2+2g_{12}\,\mathrm dx\,\mathrm dy+g_{22}\,\mathrm dy^2=\frac{\left(1-y^2\right)\mathrm dx^2+2xy\,\mathrm dx\,\mathrm dy+\left(1-x^2\right)\mathrm dy^2}{1-x^2-y^2}.
 $$
 
 由 $\mathrm{II}=-\sigma\,\mathrm I$ 且 $\sigma=+1$, 得
@@ -535,15 +535,15 @@ $$
 故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=-\boldsymbol r$, 即 $\sigma=-1$ (球面**内法向**). 由**定义 3.2.1 (第一基本形式)**:
 
 $$
-E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle=\frac4{D^2},\quad
-F=0,\quad
-G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle=\frac4{D^2},
+g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle=\frac4{D^2},\quad
+g_{12}=0,\quad
+g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle=\frac4{D^2},
 $$
 
 故
 
 $$
-\mathrm I=E\,\mathrm du^2+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^2=\frac{4\left(\mathrm du^2+\mathrm dv^2\right)}{\left(1+u^2+v^2\right)^2}.
+\mathrm I=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\frac{4\left(\mathrm du^2+\mathrm dv^2\right)}{\left(1+u^2+v^2\right)^2}.
 $$
 
 由 $\mathrm{II}=-\sigma\,\mathrm I$ 且 $\sigma=-1$, 得
