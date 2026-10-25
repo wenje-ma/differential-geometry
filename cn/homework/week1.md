@@ -46,7 +46,7 @@
 
 ---
 
-## 1
+## 1 (向量值函数的模长与方向判据)
 
 设 $\boldsymbol a\left(t\right)$ 是向量值函数, 证明:
 
@@ -84,7 +84,7 @@ $$
 
 ---
 
-## 2
+## 2 (光滑曲线弧长的积分公式与直线最短性)
 
 (1) 设 $\boldsymbol\alpha:I\to\mathbb E^{3}$ 是连续曲线, 以及 $\left[a,b\right]$ 是包含在 $I$ 中的闭区间. 对于 $\left[a,b\right]$ 的任意划分 $P:a=t_0< t_1< \dots< t_n=b$, 定义
 
@@ -135,7 +135,7 @@ $$
 
 ---
 
-## 3
+## 3 (平面曲线几何与空间曲线的对比)
 
 (1) 讨论平面曲线的几何, 如平面曲线的曲率的定义, 平面曲线基本定理;
 
@@ -182,7 +182,7 @@ $$
 
 ---
 
-## 4
+## 4 (曲率与挠率的计算)
 
 曲率和挠率的计算. 求下列曲线的曲率和挠率:
 
@@ -241,7 +241,7 @@ $$
 
 ---
 
-## 5
+## 5 (球面曲线的刻画与曲率下界)
 
 球面曲线为像集落在 $\mathbb E^{3}$ 中某个球面上的曲线.
 
@@ -305,7 +305,7 @@ $$
 
 ---
 
-## 6.8
+## 6.8 (曲线到定点最近点的切向垂直性)
 
 设平面正则曲线 $C:\boldsymbol r=\boldsymbol r\left(t\right)$ 不过 $P_0$ 点, $\boldsymbol r\left(t_0\right)$ 是 $C$ 与 $P_0$ 距离最近的点, 证明: 向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直.
 
@@ -328,7 +328,7 @@ $$
 
 ---
 
-## 6.9
+## 6.9 (切线或主法线过定点的曲线)
 
 (1) 设 $\mathbb E^{3}$ 的曲线 $C$ 的所有切线过一个定点, 证明: $C$ 是直线;
 
@@ -359,7 +359,7 @@ $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, �
 
 ---
 
-## 6.10
+## 6.10 (反向等距变换下曲线几何量的变化)
 
 设 $T\left(\boldsymbol X\right)=\boldsymbol X\boldsymbol T+P$ 是 $\mathbb E^{3}$ 的一个合同 (等距) 变换, $\det T=-1$: $T$ 为变换, $\boldsymbol T\in O\left(3\right)$ 为正交矩阵. $\boldsymbol r\left(t\right)$ 是 $\mathbb E^{3}$ 的正则曲线, 求曲线 $\tilde{\boldsymbol r}=T\circ\boldsymbol r$ 与曲线 $\boldsymbol r$ 的弧长参数, 曲率, 挠率间的关系.
 
