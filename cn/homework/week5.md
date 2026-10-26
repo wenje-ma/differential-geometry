@@ -87,11 +87,7 @@ $$
 又由**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
 
 $$
-\begin{aligned}
-H&=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}\\
-&=\frac{\frac rW\left(1+q^{2}\right)-2\frac sW\,pq+\frac tW\left(1+p^{2}\right)}{2W^{2}}\\
-&=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}},
-\end{aligned}
+H=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{\frac rW\left(1+q^{2}\right)-2\frac sW\,pq+\frac tW\left(1+p^{2}\right)}{2W^{2}}=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}},
 $$
 
 即
@@ -315,12 +311,9 @@ $$
 又由**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
 
 $$
-\begin{aligned}
-H_{\lambda}&=\frac{\kappa_1^{\lambda}+\kappa_2^{\lambda}}2
-=\frac12\left(\frac{\kappa_1}{1-\lambda \kappa_1}+\frac{\kappa_2}{1-\lambda \kappa_2}\right)\\
-&=\frac{\kappa_1+\kappa_2-2\lambda \kappa_1\kappa_2}{2\left(1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2\right)}
+H_{\lambda}=\frac{\kappa_1^{\lambda}+\kappa_2^{\lambda}}2
+=\frac12\left(\frac{\kappa_1}{1-\lambda \kappa_1}+\frac{\kappa_2}{1-\lambda \kappa_2}\right)=\frac{\kappa_1+\kappa_2-2\lambda \kappa_1\kappa_2}{2\left(1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2\right)}
 =\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K},
-\end{aligned}
 $$
 
 故

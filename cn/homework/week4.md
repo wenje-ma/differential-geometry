@@ -46,11 +46,7 @@ $$
 故 $\boldsymbol r\left(u,v\right)\in S$. 由**定义 3.1.1 (曲面与单位法向)**, 还需验证正则性:
 
 $$
-\begin{aligned}
-\boldsymbol r_u&=\left(a\cos u\cos v,\ b\cos u\sin v,\ -c\sin u\right),\\
-\boldsymbol r_v&=\left(-a\sin u\sin v,\ b\sin u\cos v,\ 0\right),\\
-\boldsymbol r_u\wedge\boldsymbol r_v&=\sin u\left(bc\sin u\cos v,\ ac\sin u\sin v,\ ab\cos u\right).
-\end{aligned}
+\boldsymbol r_u=\left(a\cos u\cos v,\ b\cos u\sin v,\ -c\sin u\right),;\boldsymbol r_v=\left(-a\sin u\sin v,\ b\sin u\cos v,\ 0\right),;\boldsymbol r_u\wedge\boldsymbol r_v=\sin u\left(bc\sin u\cos v,\ ac\sin u\sin v,\ ab\cos u\right).
 $$
 
 因 $u\in\left(0,\pi\right)$ 时 $\sin u> 0$, 且 $\left(bc\sin u\cos v,ac\sin u\sin v,ab\cos u\right)\ne\boldsymbol0$ ($\cos v,\sin v$ 不能同时为零), 故 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol r\left(u,v\right)$ 是椭球面 (除去南北两极) 的正则参数曲面. $\blacksquare$
@@ -71,11 +67,7 @@ $$
 故 $\boldsymbol r\left(u,v\right)\in S$. 由**定义 3.1.1 (曲面与单位法向)**, 验证正则性:
 
 $$
-\begin{aligned}
-\boldsymbol r_u&=\left(a\sinh u\cos v,\ b\sinh u\sin v,\ c\cosh u\right),\\
-\boldsymbol r_v&=\left(-a\cosh u\sin v,\ b\cosh u\cos v,\ 0\right),\\
-\boldsymbol r_u\wedge\boldsymbol r_v&=\left(-bc\cosh^2 u\cos v,\ -ac\cosh^2 u\sin v,\ ab\sinh u\cosh u\right).
-\end{aligned}
+\boldsymbol r_u=\left(a\sinh u\cos v,\ b\sinh u\sin v,\ c\cosh u\right),;\boldsymbol r_v=\left(-a\cosh u\sin v,\ b\cosh u\cos v,\ 0\right),;\boldsymbol r_u\wedge\boldsymbol r_v=\left(-bc\cosh^2 u\cos v,\ -ac\cosh^2 u\sin v,\ ab\sinh u\cosh u\right).
 $$
 
 因 $\cosh u> 0$ 恒成立, 前两个分量同为零当且仅当 $\cos v=\sin v=0$, 这不可能, 故 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, 它是单叶双曲面的正则参数曲面. $\blacksquare$
@@ -113,26 +105,19 @@ $$
 由题 1(1), 椭球面的参数表示为 $\boldsymbol r\left(u,v\right)=\left(a\sin u\cos v,b\sin u\sin v,c\cos u\right)$. 由**定义 3.2.1 (第一基本形式)**, 系数为 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$. 由解答 1-1 中的 $\boldsymbol r_u,\boldsymbol r_v$:
 
 $$
-\begin{aligned}
-g_{11}&=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle
+g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle
 =a^2\cos^2 u\cos^2 v+b^2\cos^2 u\sin^2 v+c^2\sin^2 u
-=\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u,\\
-g_{12}&=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle
+=\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u,;g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle
 =-a^2\sin u\cos u\sin v\cos v+b^2\sin u\cos u\sin v\cos v
-=\left(b^2-a^2\right)\sin u\cos u\sin v\cos v,\\
-g_{22}&=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle
+=\left(b^2-a^2\right)\sin u\cos u\sin v\cos v,;g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle
 =a^2\sin^2 u\sin^2 v+b^2\sin^2 u\cos^2 v
 =\sin^2 u\left(a^2\sin^2 v+b^2\cos^2 v\right).
-\end{aligned}
 $$
 
 故椭球面的第一基本形式为
 
 $$
-\begin{aligned}
-\mathrm I&=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left[\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u\right]\mathrm du^2\\
-&\quad+2\left(b^2-a^2\right)\sin u\cos u\sin v\cos v\,\mathrm du\,\mathrm dv+\sin^2 u\left(a^2\sin^2 v+b^2\cos^2 v\right)\mathrm dv^2.\ \blacksquare
-\end{aligned}
+\mathrm I=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left[\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u\right]\mathrm du^2+2\left(b^2-a^2\right)\sin u\cos u\sin v\cos v\,\mathrm du\,\mathrm dv+\sin^2 u\left(a^2\sin^2 v+b^2\cos^2 v\right)\mathrm dv^2.\ \blacksquare
 $$
 
 ---
@@ -157,11 +142,7 @@ $$
 $$
 
 $$
-\begin{aligned}
-g_{11}&=\cos^2 v+\sin^2 v=1\\
-g_{12}&=\cos v\left(-u\sin v\right)+\sin v\left(u\cos v\right)+0=0\\
-g_{22}&=u^2\sin^2 v+u^2\cos^2 v+b^2=u^2+b^2.
-\end{aligned}
+g_{11}=\cos^2 v+\sin^2 v=1;g_{12}=\cos v\left(-u\sin v\right)+\sin v\left(u\cos v\right)+0=0;g_{22}=u^2\sin^2 v+u^2\cos^2 v+b^2=u^2+b^2.
 $$
 
 故
@@ -188,10 +169,7 @@ $$
 故
 
 $$
-\begin{aligned}
-\mathrm I&=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2\\
-&\quad+2\left(a^2-b^2+4uv\right)\mathrm du\,\mathrm dv+\left(a^2+b^2+4v^2\right)\mathrm dv^2.\ \blacksquare
-\end{aligned}
+\mathrm I=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2+2\left(a^2-b^2+4uv\right)\mathrm du\,\mathrm dv+\left(a^2+b^2+4v^2\right)\mathrm dv^2.\ \blacksquare
 $$
 
 ---

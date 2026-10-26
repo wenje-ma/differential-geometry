@@ -102,12 +102,10 @@ $$
 主法向与副法向分别为 $\boldsymbol \nu^{*}=\frac{-\boldsymbol t+\lambda\boldsymbol b}{\sqrt{1+\lambda^{2}}}$, $\boldsymbol b^{*}=\boldsymbol t^{*}\wedge\boldsymbol \nu^{*}=\boldsymbol \nu\wedge\frac{-\boldsymbol t+\lambda\boldsymbol b}{\sqrt{1+\lambda^{2}}}=\frac{\boldsymbol b+\lambda\boldsymbol t}{\sqrt{1+\lambda^{2}}}$. 由 $\boldsymbol b^{*}$ 的弗勒内方程 $\frac{\mathrm d\boldsymbol b^{*}}{\mathrm ds^{*}}=-\widetilde\tau\,\boldsymbol \nu^{*}$ 及 $\dot{\boldsymbol b}=-\tau\boldsymbol \nu$, $\dot{\boldsymbol t}=\kappa\boldsymbol \nu$ 计算:
 
 $$
-\begin{aligned}\frac{\mathrm d\boldsymbol b^{*}}{\mathrm ds^{*}}
-&=\frac1\kappa\frac{\mathrm d}{\mathrm ds}\frac{\boldsymbol b+\lambda\boldsymbol t}{\sqrt{1+\lambda^{2}}}\\
-&=\frac1\kappa\left[\frac{-\tau\boldsymbol \nu+\lambda'\boldsymbol t+\lambda k\boldsymbol \nu}{\sqrt{1+\lambda^{2}}}
+\frac{\mathrm d\boldsymbol b^{*}}{\mathrm ds^{*}}
+=\frac1\kappa\frac{\mathrm d}{\mathrm ds}\frac{\boldsymbol b+\lambda\boldsymbol t}{\sqrt{1+\lambda^{2}}}=\frac1\kappa\left[\frac{-\tau\boldsymbol \nu+\lambda'\boldsymbol t+\lambda k\boldsymbol \nu}{\sqrt{1+\lambda^{2}}}
 -\frac{\lambda\lambda'\left(\boldsymbol b+\lambda\boldsymbol t\right)}{\left(1+\lambda^{2}\right)^{3/2}}\right]
 =\frac1\kappa\cdot\frac{\lambda'\left(\boldsymbol t-\lambda\boldsymbol b\right)}{\left(1+\lambda^{2}\right)^{3/2}},
-\end{aligned}
 $$
 
 (因 $\tau=\lambda\kappa$). 另一方面 $\boldsymbol t-\lambda\boldsymbol b=-\sqrt{1+\lambda^{2}}\,\boldsymbol \nu^{*}$, 故
@@ -149,10 +147,8 @@ $$
 于是 $\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)=s\boldsymbol t\left(0\right)+\frac{s^{2}}{2}\kappa\left(0\right)\boldsymbol \nu\left(0\right)+O\left(s^{3}\right)$, 且
 
 $$
-\begin{aligned}\left(\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)\right)\wedge\boldsymbol t\left(0\right)
-&=s\left(\boldsymbol t\left(0\right)\wedge\boldsymbol t\left(0\right)\right)+\frac{s^{2}}{2}\kappa\left(0\right)\left(\boldsymbol \nu\left(0\right)\wedge\boldsymbol t\left(0\right)\right)+O\left(s^{3}\right)\\
-&=-\frac{s^{2}}{2}\kappa\left(0\right)\boldsymbol b\left(0\right)+O\left(s^{3}\right),
-\end{aligned}
+\left(\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)\right)\wedge\boldsymbol t\left(0\right)
+=s\left(\boldsymbol t\left(0\right)\wedge\boldsymbol t\left(0\right)\right)+\frac{s^{2}}{2}\kappa\left(0\right)\left(\boldsymbol \nu\left(0\right)\wedge\boldsymbol t\left(0\right)\right)+O\left(s^{3}\right)=-\frac{s^{2}}{2}\kappa\left(0\right)\boldsymbol b\left(0\right)+O\left(s^{3}\right),
 $$
 
 其中用到 $\boldsymbol t\wedge\boldsymbol t=\boldsymbol0$, $\boldsymbol \nu\wedge\boldsymbol t=-\boldsymbol b$ (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), $\boldsymbol b$ 为单位向量. 故
@@ -225,10 +221,7 @@ $$
 (此即旋转向量.) 逐式验证, 利用**基础知识: 叉积恒等式** 及 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol \nu$, $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol \nu$, $\boldsymbol b\wedge\boldsymbol \nu=-\boldsymbol t$:
 
 $$
-\begin{aligned}\boldsymbol v\wedge\boldsymbol t&=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol t=\tau\left(\boldsymbol t\wedge\boldsymbol t\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol t\right)=\kappa\boldsymbol \nu=\dot{\boldsymbol t},\\
-\boldsymbol v\wedge\boldsymbol b&=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol b=\tau\left(\boldsymbol t\wedge\boldsymbol b\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol b\right)=-\tau\boldsymbol \nu=\dot{\boldsymbol b},\\
-\boldsymbol v\wedge\boldsymbol \nu&=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol \nu=\tau\left(\boldsymbol t\wedge\boldsymbol \nu\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol \nu\right)=\tau\boldsymbol b-\kappa\boldsymbol t=-\kappa\boldsymbol t+\tau\boldsymbol b=\dot{\boldsymbol \nu}.
-\end{aligned}
+\boldsymbol v\wedge\boldsymbol t=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol t=\tau\left(\boldsymbol t\wedge\boldsymbol t\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol t\right)=\kappa\boldsymbol \nu=\dot{\boldsymbol t},;\boldsymbol v\wedge\boldsymbol b=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol b=\tau\left(\boldsymbol t\wedge\boldsymbol b\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol b\right)=-\tau\boldsymbol \nu=\dot{\boldsymbol b},;\boldsymbol v\wedge\boldsymbol \nu=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol \nu=\tau\left(\boldsymbol t\wedge\boldsymbol \nu\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol \nu\right)=\tau\boldsymbol b-\kappa\boldsymbol t=-\kappa\boldsymbol t+\tau\boldsymbol b=\dot{\boldsymbol \nu}.
 $$
 
 三式全部成立.
@@ -252,10 +245,7 @@ $$
 **曲线 $\boldsymbol r$.** 求导:
 
 $$
-\begin{aligned}\boldsymbol r'&=\left(1+\sqrt3\cos t,\ -2\sin t,\ \sqrt3-\cos t\right),\\
-\boldsymbol r''&=\left(-\sqrt3\sin t,\ -2\cos t,\ \sin t\right),\\
-\boldsymbol r'''&=\left(-\sqrt3\cos t,\ 2\sin t,\ \cos t\right).
-\end{aligned}
+\boldsymbol r'=\left(1+\sqrt3\cos t,\ -2\sin t,\ \sqrt3-\cos t\right),;\boldsymbol r''=\left(-\sqrt3\sin t,\ -2\cos t,\ \sin t\right),;\boldsymbol r'''=\left(-\sqrt3\cos t,\ 2\sin t,\ \cos t\right).
 $$
 
 $$

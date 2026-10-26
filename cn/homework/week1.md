@@ -109,12 +109,9 @@ $$
 反之, 因 $\boldsymbol\alpha$ 光滑, $\left|\boldsymbol\alpha'\right|$ 连续, 由**基础知识: 一致连续与黎曼和** 它在 $\left[a,b\right]$ 上一致连续. 对给定 $\varepsilon> 0$, 取充分细的划分使在每个子区间 $\left[t_{i-1},t_i\right]$ 上 $\left|\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\right|< \varepsilon$. 则由**基础知识: 积分三角不等式** ($\left|x+y\right|\ge\left|x\right|-\left|y\right|$),
 
 $$
-\begin{aligned}\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|
-&=\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t\right)\mathrm dt\right|\\
-&\ge\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t_{i-1}\right)\mathrm dt\right|
--\left|\int_{t_{i-1}}^{t_i}\big[\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\big]\mathrm dt\right|\\
-&\ge\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)-\varepsilon\left(t_i-t_{i-1}\right).
-\end{aligned}
+\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|
+=\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t\right)\mathrm dt\right|\ge\left|\int_{t_{i-1}}^{t_i}\boldsymbol\alpha'\left(t_{i-1}\right)\mathrm dt\right|
+-\left|\int_{t_{i-1}}^{t_i}\big[\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(t_{i-1}\right)\big]\mathrm dt\right|\ge\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)-\varepsilon\left(t_i-t_{i-1}\right).
 $$
 
 对 $i$ 求和并令划分加密: 由**基础知识: 一致连续与黎曼和**, 黎曼和 $\sum_i\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)\to\int_a^b\left|\boldsymbol\alpha'\right|\mathrm dt$, 故
@@ -201,15 +198,7 @@ $$
 **(1)** $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a> 0$).
 
 $$
-\begin{aligned}\boldsymbol r'&=\left(a\sinh t,a\cosh t,b\right),\\
-v^{2}&=a^{2}\cosh2t+b^{2},\\
-\boldsymbol r''&=\left(a\cosh t,a\sinh t,0\right),\\
-\boldsymbol r'''&=\left(a\sinh t,a\cosh t,0\right),\\
-\boldsymbol r'\wedge\boldsymbol r''&=\left(-ab\sinh t,ab\cosh t,-a^{2}\right),\\
-w^{2}&=a^{2}b^{2}\cosh2t+a^{4},\\
-w&=a\sqrt{a^{2}+b^{2}\cosh2t},\\
-\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)&=a^{2}b.
-\end{aligned}
+\boldsymbol r'=\left(a\sinh t,a\cosh t,b\right),;v^{2}=a^{2}\cosh2t+b^{2},;\boldsymbol r''=\left(a\cosh t,a\sinh t,0\right),;\boldsymbol r'''=\left(a\sinh t,a\cosh t,0\right),;\boldsymbol r'\wedge\boldsymbol r''=\left(-ab\sinh t,ab\cosh t,-a^{2}\right),;w^{2}=a^{2}b^{2}\cosh2t+a^{4},;w=a\sqrt{a^{2}+b^{2}\cosh2t},;\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=a^{2}b.
 $$
 
 故
@@ -222,14 +211,7 @@ $$
 **(3)** $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a> 0$).
 
 $$
-\begin{aligned}\boldsymbol r'&=\left(-a\cos t,a\sin t,b\right),\\
-v^{2}&=a^{2}+b^{2}=:c^{2},\\
-\boldsymbol r''&=\left(a\sin t,a\cos t,0\right),\\
-\boldsymbol r'''&=\left(a\cos t,-a\sin t,0\right),\\
-\boldsymbol r'\wedge\boldsymbol r''&=\left(-ab\cos t,ab\sin t,-a^{2}\right),\\
-w^{2}&=a^{2}c^{2},\ w=ac,\\
-\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)&=\left\langle\left(-ab\cos t,ab\sin t,-a^{2}\right),\left(a\cos t,-a\sin t,0\right)\right\rangle=-a^{2}b.
-\end{aligned}
+\boldsymbol r'=\left(-a\cos t,a\sin t,b\right),;v^{2}=a^{2}+b^{2}=:c^{2},;\boldsymbol r''=\left(a\sin t,a\cos t,0\right),;\boldsymbol r'''=\left(a\cos t,-a\sin t,0\right),;\boldsymbol r'\wedge\boldsymbol r''=\left(-ab\cos t,ab\sin t,-a^{2}\right),;w^{2}=a^{2}c^{2},\ w=ac,;\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=\left\langle\left(-ab\cos t,ab\sin t,-a^{2}\right),\left(a\cos t,-a\sin t,0\right)\right\rangle=-a^{2}b.
 $$
 
 故
@@ -282,11 +264,8 @@ $$
 由**定理 2.3.2 (弗勒内公式)** 中 $\dot{\boldsymbol \nu}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol \nu$ 求导:
 
 $$
-\begin{aligned}\widetilde{\boldsymbol r}'
-&=\boldsymbol t+\varphi'\boldsymbol \nu+\varphi\dot{\boldsymbol \nu}+\psi'\boldsymbol b+\psi\dot{\boldsymbol b}\\
-&=\boldsymbol t+\varphi'\boldsymbol \nu+\varphi\left(-\kappa\boldsymbol t+\tau\boldsymbol b\right)+\psi'\boldsymbol b+\psi\left(-\tau\boldsymbol \nu\right)\\
-&=\left(1-\varphi\kappa\right)\boldsymbol t+\left(\varphi'-\tau\psi\right)\boldsymbol \nu+\left(\tau\varphi+\psi'\right)\boldsymbol b.
-\end{aligned}
+\widetilde{\boldsymbol r}'
+=\boldsymbol t+\varphi'\boldsymbol \nu+\varphi\dot{\boldsymbol \nu}+\psi'\boldsymbol b+\psi\dot{\boldsymbol b}=\boldsymbol t+\varphi'\boldsymbol \nu+\varphi\left(-\kappa\boldsymbol t+\tau\boldsymbol b\right)+\psi'\boldsymbol b+\psi\left(-\tau\boldsymbol \nu\right)=\left(1-\varphi\kappa\right)\boldsymbol t+\left(\varphi'-\tau\psi\right)\boldsymbol \nu+\left(\tau\varphi+\psi'\right)\boldsymbol b.
 $$
 
 由 $\varphi=\frac1\kappa$ 得 $1-\varphi\kappa=0$, $\varphi'-\tau\psi=\varphi'-\tau\cdot\frac{\varphi'}{\tau}=0$. 又对条件求导: $2\varphi\varphi'+2\psi\psi'=0$, 即 $\varphi\varphi'+\psi\psi'=0$. 在 $\varphi'\ne0$ 处除以 $\varphi'$, 并代入 $\psi=\frac{\varphi'}{\tau}$, 得 $\varphi+\frac{\psi'}{\tau}=0$, 即 $\tau\varphi+\psi'=0$. 故 $\widetilde{\boldsymbol r}'=\boldsymbol0$, $\widetilde{\boldsymbol r}$ 为常向量. 于是
@@ -386,12 +365,10 @@ $$
 **挠率.** 由**习题 2.5 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
 
 $$
-\begin{aligned}\widetilde\tau
-&=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\widetilde w^{2}}
-=\frac{\det\left(\boldsymbol T\boldsymbol r',\boldsymbol T\boldsymbol r'',\boldsymbol T\boldsymbol r'''\right)}{w^{2}}\\
-&=\frac{\det\boldsymbol T\cdot\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
+\widetilde\tau
+=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\widetilde w^{2}}
+=\frac{\det\left(\boldsymbol T\boldsymbol r',\boldsymbol T\boldsymbol r'',\boldsymbol T\boldsymbol r'''\right)}{w^{2}}=\frac{\det\boldsymbol T\cdot\det\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}
 =-\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=-\tau,
-\end{aligned}
 $$
 
 其中第一步用**基础知识: 行列式的乘积性**, 第二步用到 $\det\boldsymbol T=-1$. 故反向变换下挠率变号 $\widetilde\tau=-\tau$. 综上:
