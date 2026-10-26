@@ -364,7 +364,7 @@ z=f\left(x\right)+g\left(y\right)
 =-\frac1c\ln\left|\cos\left(cx+\alpha\right)\right|+\frac1c\ln\left|\cos\left(cy-\beta\right)\right|+C,
 $$
 
-其中 $C=C_1+C_2$. 对 $x,y$ 作平移 $\bar x=x+\frac\alpha c$, $\bar y=y-\frac\beta c$ 吸收常数 $\alpha,\beta$, 并略去符号与常数 $C$, 得
+其中 $C=C_1+C_2$. 对 $x,y$ 作平移 $\overline x=x+\frac\alpha c$, $\overline y=y-\frac\beta c$ 吸收常数 $\alpha,\beta$, 并略去符号与常数 $C$, 得
 
 $$
 z=\frac1a\ln\frac{\cos ay}{\cos ax}\quad\left(a=c\right),

@@ -163,7 +163,7 @@ $$
 =\kappa\left(s\right)\begin{bmatrix}-\dot x^2\\\dot x^1\end{bmatrix},
 $$
 
-连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $\kappa\in C^1$, 右端关于未知量满足利普希茨条件, 由**基础知识: 一阶常微分方程组初值问题解的存在唯一性** 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $\kappa$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\hat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $\kappa$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\hat{\boldsymbol r}$. $\blacksquare$
+连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $\kappa\in C^1$, 右端关于未知量满足利普希茨条件, 由**基础知识: 一阶常微分方程组初值问题解的存在唯一性** 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $\kappa$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\widehat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $\kappa$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\widehat{\boldsymbol r}$. $\blacksquare$
 
 **(2) 平面曲线的特别之处.**
 
