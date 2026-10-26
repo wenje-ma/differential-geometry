@@ -18,7 +18,7 @@
 
 > **基础知识: 行列式的乘积性**<br>对 $\mathbb E^{3}$ 中向量 $\boldsymbol x_1,\boldsymbol x_2,\boldsymbol x_3$ 与 $3\times3$ 矩阵 $\boldsymbol A$, 有 $\det\left(\boldsymbol A\boldsymbol x_1,\boldsymbol A\boldsymbol x_2,\boldsymbol A\boldsymbol x_3\right)=\det\boldsymbol A\cdot\det\left(\boldsymbol x_1,\boldsymbol x_2,\boldsymbol x_3\right)$.
 
-> **定义 2.2.1 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^t\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
+> **定义 2.2.1 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
 
 > **定义 2.2.2 (平面曲线的曲率与弗勒内标架)**<br>对平面曲线 $\boldsymbol r\left(s\right)$, 取单位切向量 $\boldsymbol t$ 与单位法向量 $\boldsymbol \nu$ 使 $\left\{\boldsymbol t,\boldsymbol \nu\right\}$ 为右手系, 则 $\left[\boldsymbol r\left(s\right);\boldsymbol t\left(s\right),\boldsymbol \nu\left(s\right)\right]$ 是沿曲线的弗勒内标架, 且 $\dot{\boldsymbol t}=\kappa\boldsymbol \nu$, $\dot{\boldsymbol \nu}=-\kappa\boldsymbol t$; 函数 $\kappa\left(s\right)$ 称为曲线的有向曲率.
 

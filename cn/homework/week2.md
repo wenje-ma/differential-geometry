@@ -6,7 +6,7 @@
 
 > **基础知识: 点到直线的距离**<br>设 $Q\in l$, $\boldsymbol u$ 是 $l$ 的单位方向向量, 则点 $P$ 到直线 $l$ 的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$.
 
-> **定义 2.2.1 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^t\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$; 反之, 若参数 $t$ 满足 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm dt}\right|\equiv1$, 则 $t$ 是弧长参数.
+> **定义 2.2.1 (弧长与弧长参数)**<br>曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$; 反之, 若参数 $t$ 满足 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm dt}\right|\equiv1$, 则 $t$ 是弧长参数.
 
 > **定义 2.3.1 (空间曲线的曲率与弗勒内标架)**<br>对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 记曲率 $\kappa\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $k> 0$ 时主法向量 $\boldsymbol \nu=\dot{\boldsymbol t}/k$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol \nu$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol \nu,\boldsymbol b\right]$ 是弗勒内标架; 挠率 $\tau=\left\langle\dot{\boldsymbol \nu},\boldsymbol b\right\rangle$.
 
