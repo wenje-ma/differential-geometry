@@ -10,11 +10,11 @@
 
 > **定义 3.2.1 (第一基本形式)**<br>$\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}$, 其中 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
 
-> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=h_{11}\,\mathrm du^{2}+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^{2}$, 其中 $h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=b_{11}\,\mathrm du^{2}+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^{2}$, 其中 $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
 > **性质 3.3.4 (第二基本形式在参数变换下变号)**<br>设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 与 $\boldsymbol r=\boldsymbol r\left(\widetilde u,\widetilde v\right)$ 是曲面 $S$ 的两个不同参数表示. 当变换 $\left(u,v\right)\to\left(\widetilde u,\widetilde v\right)$ 是同向参数变换时, $\mathrm{II}\left(\widetilde u,\widetilde v\right)=\mathrm{II}\left(u,v\right)$; 当它是反向参数变换时, $\mathrm{II}\left(\widetilde u,\widetilde v\right)=-\mathrm{II}\left(u,v\right)$.
 
-> **公式 3.6.1 (旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $h_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $h_{12}=0$, $h_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
+> **公式 3.6.1 (旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $b_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $b_{12}=0$, $b_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
 
 ---
 
@@ -231,7 +231,7 @@ $$
 
 ### 解答 1.14
 
-由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$; 由**定义 3.3.1 (第二基本形式)**, $h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle,\ h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle,\ h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$; 由**定义 3.3.1 (第二基本形式)**, $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle,\ b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle,\ b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
 **(1)** $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$. 由解答 1-8(1),
 
@@ -261,15 +261,15 @@ $$
 由**定义 3.3.1 (第二基本形式)**,
 
 $$
-h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=0,\quad
-h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=\frac{-b\sin^2 v-b\cos^2 v}{\sqrt{b^2+u^2}}=-\frac{b}{\sqrt{b^2+u^2}},\quad
-h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=0.
+b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=0,\quad
+b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=\frac{-b\sin^2 v-b\cos^2 v}{\sqrt{b^2+u^2}}=-\frac{b}{\sqrt{b^2+u^2}},\quad
+b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=0.
 $$
 
 故
 
 $$
-\mathrm{II}=h_{11}\,\mathrm du^2+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^2=-\frac{2b}{\sqrt{b^2+u^2}}\,\mathrm du\,\mathrm dv,
+\mathrm{II}=b_{11}\,\mathrm du^2+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^2=-\frac{2b}{\sqrt{b^2+u^2}}\,\mathrm du\,\mathrm dv,
 $$
 
 $\blacksquare$
@@ -305,15 +305,15 @@ $$
 由**定义 3.3.1 (第二基本形式)**,
 
 $$
-h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\frac{2\left(-ab\right)}{\Delta}=-\frac{2ab}{\Delta},\quad
-h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=0,\quad
-h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=-\frac{2ab}{\Delta}.
+b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\frac{2\left(-ab\right)}{\Delta}=-\frac{2ab}{\Delta},\quad
+b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=0,\quad
+b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=-\frac{2ab}{\Delta}.
 $$
 
 故
 
 $$
-\mathrm{II}=h_{11}\,\mathrm du^2+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^2=-\frac{2ab}{\Delta}\left(\mathrm du^2+\mathrm dv^2\right),\quad
+\mathrm{II}=b_{11}\,\mathrm du^2+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^2=-\frac{2ab}{\Delta}\left(\mathrm du^2+\mathrm dv^2\right),\quad
 \Delta=\sqrt{b^2\left(u+v\right)^2+a^2\left(u-v\right)^2+a^2b^2},
 $$
 
@@ -348,18 +348,18 @@ $$
 \boldsymbol r_{yy}=\left(0,0,f_{yy}\right).
 $$
 
-由**定义 3.3.1 (第二基本形式)**, $h_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle,\ h_{12}=\left\langle\boldsymbol r_{xy},\boldsymbol n\right\rangle,\ h_{22}=\left\langle\boldsymbol r_{yy},\boldsymbol n\right\rangle$, 得
+由**定义 3.3.1 (第二基本形式)**, $b_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle,\ b_{12}=\left\langle\boldsymbol r_{xy},\boldsymbol n\right\rangle,\ b_{22}=\left\langle\boldsymbol r_{yy},\boldsymbol n\right\rangle$, 得
 
 $$
-h_{11}=\frac{f_{xx}}{\sqrt{1+f_x^2+f_y^2}},\quad
-h_{12}=\frac{f_{xy}}{\sqrt{1+f_x^2+f_y^2}},\quad
-h_{22}=\frac{f_{yy}}{\sqrt{1+f_x^2+f_y^2}}.
+b_{11}=\frac{f_{xx}}{\sqrt{1+f_x^2+f_y^2}},\quad
+b_{12}=\frac{f_{xy}}{\sqrt{1+f_x^2+f_y^2}},\quad
+b_{22}=\frac{f_{yy}}{\sqrt{1+f_x^2+f_y^2}}.
 $$
 
 故
 
 $$
-\mathrm{II}=h_{11}\,\mathrm dx^2+2h_{12}\,\mathrm dx\,\mathrm dy+h_{22}\,\mathrm dy^2=\frac{f_{xx}\,\mathrm dx^2+2f_{xy}\,\mathrm dx\,\mathrm dy+f_{yy}\,\mathrm dy^2}{\sqrt{1+f_x^2+f_y^2}},
+\mathrm{II}=b_{11}\,\mathrm dx^2+2b_{12}\,\mathrm dx\,\mathrm dy+b_{22}\,\mathrm dy^2=\frac{f_{xx}\,\mathrm dx^2+2f_{xy}\,\mathrm dx\,\mathrm dy+f_{yy}\,\mathrm dy^2}{\sqrt{1+f_x^2+f_y^2}},
 $$
 
 $\blacksquare$
@@ -393,9 +393,9 @@ $$
 **第二基本形式**可用如下通用关系求出. 由**基础知识: 内积求导**, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-g_{11}$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
 
 $$
-h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\sigma\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-\sigma g_{11},\quad
-h_{12}=-\sigma g_{12},\quad
-h_{22}=-\sigma g_{22},
+b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\sigma\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-\sigma g_{11},\quad
+b_{12}=-\sigma g_{12},\quad
+b_{22}=-\sigma g_{22},
 $$
 
 从而

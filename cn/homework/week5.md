@@ -14,9 +14,9 @@
 
 > **定理 3.2.1 (第一基本形式与参数选取无关)**<br>曲面的第一基本形式与参数选取无关.
 
-> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=h_{11}\,\mathrm du^{2}+2h_{12}\,\mathrm du\,\mathrm dv+h_{22}\,\mathrm dv^{2}$, 其中 $h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=b_{11}\,\mathrm du^{2}+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^{2}$, 其中 $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
-> **定义 3.4.2 (法曲率)**<br>曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $\kappa_n\left(\boldsymbol w\right)=\frac{h_{11}\lambda^{2}+2h_{12}\lambda\mu+h_{22}\mu^{2}}{g_{11}\lambda^{2}+2g_{12}\lambda\mu+g_{22}\mu^{2}}=\frac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
+> **定义 3.4.2 (法曲率)**<br>曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\frac{b_{11}\lambda^{2}+2b_{12}\lambda\mu+b_{22}\mu^{2}}{g_{11}\lambda^{2}+2g_{12}\lambda\mu+g_{22}\mu^{2}}=\frac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
 
 > **定义 3.4.3 (魏因加滕变换)**<br>线性变换 $\boldsymbol W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r}S\to T_{\boldsymbol r}S$, $\boldsymbol W\left(\lambda\boldsymbol r_u+\mu\boldsymbol r_v\right)=-\left(\lambda\boldsymbol n_u+\mu\boldsymbol n_v\right)$ 称为曲面的魏因加滕变换.
 
@@ -26,7 +26,7 @@
 
 > **引理 3.5.2**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
 
-> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $\kappa_1,\kappa_2$, 则平均曲率 $H=\frac{\kappa_1+\kappa_2}{2}$, 高斯曲率 $K=\kappa_1\kappa_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $\kappa_1\kappa_2=\det\boldsymbol W$, $\frac12\left(\kappa_1+\kappa_2\right)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}h_{11}&h_{12}\\h_{21}&h_{22}\end{bmatrix}$.
+> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\frac{k_1+k_2}{2}$, 高斯曲率 $K=k_1k_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $k_1k_2=\det\boldsymbol W$, $\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\end{bmatrix}$.
 
 > **公式 3.5.5 (面积元与高斯映射面积)**<br>曲面面积元 $\mathrm dA=\left\langle\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$; 在单位法向映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\mathrm{Area}\left(g\left(D\right)\right)}{\mathrm{Area}\left(D\right)}=K\left(P\right)$.
 
@@ -65,9 +65,9 @@ $$
 又 $\boldsymbol r_x\wedge\boldsymbol r_y=\left(-p,-q,1\right)$, 故 $\left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}=:W$. 由**定义 3.1.1 (曲面与单位法向)** 得 $\boldsymbol n=\left(-p,-q,1\right)/W$. 二阶偏导 $\boldsymbol r_{xx}=\left(0,0,r\right)$, $\boldsymbol r_{xy}=\left(0,0,s\right)$, $\boldsymbol r_{yy}=\left(0,0,t\right)$. 由**定义 3.3.1 (第二基本形式)**,
 
 $$
-h_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle=\frac rW,\quad
-h_{12}=\left\langle\boldsymbol r_{xy},\boldsymbol n\right\rangle=\frac sW,\quad
-h_{22}=\left\langle\boldsymbol r_{yy},\boldsymbol n\right\rangle=\frac tW.
+b_{11}=\left\langle\boldsymbol r_{xx},\boldsymbol n\right\rangle=\frac rW,\quad
+b_{12}=\left\langle\boldsymbol r_{xy},\boldsymbol n\right\rangle=\frac sW,\quad
+b_{22}=\left\langle\boldsymbol r_{yy},\boldsymbol n\right\rangle=\frac tW.
 $$
 
 因此
@@ -76,10 +76,10 @@ $$
 \mathrm{II}=\frac{r\,\mathrm dx^{2}+2s\,\mathrm dx\,\mathrm dy+t\,\mathrm dy^{2}}{\sqrt{1+p^{2}+q^{2}}}.
 $$
 
-计算行列式: $g_{11}g_{22}-g_{12}^{2}=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=W^{2}$, $h_{11}h_{22}-h_{12}^{2}=\left(rt-s^{2}\right)/W^{2}$. 由**公式 3.5.4 (平均曲率与高斯曲率)** 得高斯曲率
+计算行列式: $g_{11}g_{22}-g_{12}^{2}=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=W^{2}$, $b_{11}b_{22}-b_{12}^{2}=\left(rt-s^{2}\right)/W^{2}$. 由**公式 3.5.4 (平均曲率与高斯曲率)** 得高斯曲率
 
 $$
-K=\frac{h_{11}h_{22}-h_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}
+K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}
 =\frac{\left(rt-s^{2}\right)/W^{2}}{W^{2}}
 =\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
@@ -87,7 +87,7 @@ $$
 又由**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
 
 $$
-H=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{\frac rW\left(1+q^{2}\right)-2\frac sW\,pq+\frac tW\left(1+p^{2}\right)}{2W^{2}}=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}},
+H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{\frac rW\left(1+q^{2}\right)-2\frac sW\,pq+\frac tW\left(1+p^{2}\right)}{2W^{2}}=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}},
 $$
 
 即
@@ -143,7 +143,7 @@ $$
 于是由**定义 3.4.2 (法曲率)**, 对任意非零切方向 $\left(\mathrm dx,\mathrm dy\right)$,
 
 $$
-\kappa_n=\frac{\mathrm{II}}{\mathrm I}
+k_n=\frac{\mathrm{II}}{\mathrm I}
 =\frac{2\psi'\left(0\right)\left(\mathrm dx^{2}+\mathrm dy^{2}\right)}{\mathrm dx^{2}+\mathrm dy^{2}}
 =2\psi'\left(0\right)=\frac2{f'\left(0\right)}.
 $$
@@ -151,7 +151,7 @@ $$
 右端与切方向 $\left(\mathrm dx,\mathrm dy\right)$ 无关, 故
 
 $$
-S\;\text{在}\;\left(0,0,0\right)\;\text{的法曲率是常数}\;\kappa_n=\frac{2}{f'\left(0\right)}.
+S\;\text{在}\;\left(0,0,0\right)\;\text{的法曲率是常数}\;k_n=\frac{2}{f'\left(0\right)}.
 $$
 
 $\blacksquare$
@@ -217,15 +217,15 @@ $$
 \quad z_x,z_y,z_{xx},z_{xy},z_{yy}\;\text{如上代入}.
 $$
 
-最后, 由**公式 3.5.4 (平均曲率与高斯曲率)** 对函数图 $z=z\left(x,y\right)$ 应用 (此时 $g_{11}=1+z_x^{2}$, $g_{12}=z_xz_y$, $g_{22}=1+z_y^{2}$, $h_{11}=z_{xx}/W$, $h_{12}=z_{xy}/W$, $h_{22}=z_{yy}/W$), 得
+最后, 由**公式 3.5.4 (平均曲率与高斯曲率)** 对函数图 $z=z\left(x,y\right)$ 应用 (此时 $g_{11}=1+z_x^{2}$, $g_{12}=z_xz_y$, $g_{22}=1+z_y^{2}$, $b_{11}=z_{xx}/W$, $b_{12}=z_{xy}/W$, $b_{22}=z_{yy}/W$), 得
 
 $$
-K=\frac{h_{11}h_{22}-h_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}
+K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}
 =\frac{z_{xx}z_{yy}-z_{xy}^{2}}{\left(1+z_x^{2}+z_y^{2}\right)^{2}},
 $$
 
 $$
-H=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}
+H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}
 =\frac{\left(1+z_y^{2}\right)z_{xx}-2z_xz_yz_{xy}+\left(1+z_x^{2}\right)z_{yy}}{2\left(1+z_x^{2}+z_y^{2}\right)^{3/2}},
 $$
 
@@ -243,7 +243,7 @@ $$
 
 ### 解答 3.27
 
-以 $\kappa_1,\kappa_2$ 记 $S$ 的主曲率, 则 $H=\frac{\kappa_1+\kappa_2}{2}$, $K=\kappa_1\kappa_2$.
+以 $k_1,k_2$ 记 $S$ 的主曲率, 则 $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$.
 
 **(1) 切平面平行.**
 
@@ -254,7 +254,7 @@ $$
 \in T_{\boldsymbol r}S,\quad \alpha=1,2.
 $$
 
-故切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}=\mathrm{span}\left\{\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}\right\}$ 含于 $T_{\boldsymbol r}S$. 由**引理 3.5.2**, 在 $P$ 取主方向坐标 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则由**定义 3.4.3 (魏因加滕变换)** 与**定义 3.5.1 (主曲率与主方向)**, $\boldsymbol n_\alpha=-\kappa_\alpha\boldsymbol r_\alpha$, 故 $\boldsymbol r_{\lambda,\alpha}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda \kappa_\alpha\right)\boldsymbol r_\alpha$; 因 $\kappa_\alpha$ 有限且 $\lambda$ 充分小, $1-\lambda \kappa_\alpha\neq0$ ($\alpha=1,2$), 故 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 线性无关, $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 与 $T_{\boldsymbol r}S$ 同维数(二维). 于是
+故切平面 $T_{\boldsymbol r_{\lambda}}S_{\lambda}=\mathrm{span}\left\{\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}\right\}$ 含于 $T_{\boldsymbol r}S$. 由**引理 3.5.2**, 在 $P$ 取主方向坐标 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则由**定义 3.4.3 (魏因加滕变换)** 与**定义 3.5.1 (主曲率与主方向)**, $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$, 故 $\boldsymbol r_{\lambda,\alpha}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$; 因 $k_\alpha$ 有限且 $\lambda$ 充分小, $1-\lambda k_\alpha\neq0$ ($\alpha=1,2$), 故 $\boldsymbol r_{\lambda,1},\boldsymbol r_{\lambda,2}$ 线性无关, $T_{\boldsymbol r_{\lambda}}S_{\lambda}$ 与 $T_{\boldsymbol r}S$ 同维数(二维). 于是
 
 $$
 T_{\boldsymbol r_{\lambda}}S_{\lambda}=T_{\boldsymbol r}S,
@@ -266,43 +266,43 @@ $$
 
 **(2) 高斯曲率与平均曲率.**
 
-由**引理 3.5.2**, 取 $S$ 的坐标切向量为点 $P$ 的单位正交主方向 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则 $g_{11}=\left\langle\boldsymbol r_1,\boldsymbol r_1\right\rangle=1$, $g_{12}=0$, $g_{22}=1$, 且第二基本形式系数 $h_{12}=0$. 因主方向对应魏因加滕变换的特征方向, 由**定义 3.4.3 (魏因加滕变换)** 与**定义 3.5.1 (主曲率与主方向)**, $\boldsymbol W\left(\boldsymbol r_\alpha\right)=-\boldsymbol n_\alpha=\kappa_\alpha\boldsymbol r_\alpha$, 即 $\boldsymbol n_\alpha=-\kappa_\alpha\boldsymbol r_\alpha$. 于是由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda \kappa_\alpha\right)\boldsymbol r_\alpha$ (无交叉项), 得
+由**引理 3.5.2**, 取 $S$ 的坐标切向量为点 $P$ 的单位正交主方向 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则 $g_{11}=\left\langle\boldsymbol r_1,\boldsymbol r_1\right\rangle=1$, $g_{12}=0$, $g_{22}=1$, 且第二基本形式系数 $b_{12}=0$. 因主方向对应魏因加滕变换的特征方向, 由**定义 3.4.3 (魏因加滕变换)** 与**定义 3.5.1 (主曲率与主方向)**, $\boldsymbol W\left(\boldsymbol r_\alpha\right)=-\boldsymbol n_\alpha=k_\alpha\boldsymbol r_\alpha$, 即 $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$. 于是由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$ (无交叉项), 得
 
 $$
-\mathrm I_{\lambda}=\left(1-\lambda \kappa_1\right)^{2}\mathrm du^{2}+\left(1-\lambda \kappa_2\right)^{2}\mathrm dv^{2}.
+\mathrm I_{\lambda}=\left(1-\lambda k_1\right)^{2}\mathrm du^{2}+\left(1-\lambda k_2\right)^{2}\mathrm dv^{2}.
 $$
 
-又取 $\boldsymbol n_{\lambda}=\boldsymbol n$, 由**定义 3.3.1 (第二基本形式)** 计算 $S_{\lambda}$ 的第二基本形式系数: 因 $\left\langle\boldsymbol n_\alpha,\boldsymbol n\right\rangle=0$, 求导得 $\left\langle\boldsymbol n_{\alpha\alpha},\boldsymbol n\right\rangle=-\left\langle\boldsymbol n_\alpha,\boldsymbol n_\alpha\right\rangle$, 而 $\boldsymbol n_\alpha=-\kappa_\alpha\boldsymbol r_\alpha$ 且 $g_{11}=g_{22}=1$, 故 $\left\langle\boldsymbol n_\alpha,\boldsymbol n_\alpha\right\rangle=\kappa_\alpha^{2}$, 于是
+又取 $\boldsymbol n_{\lambda}=\boldsymbol n$, 由**定义 3.3.1 (第二基本形式)** 计算 $S_{\lambda}$ 的第二基本形式系数: 因 $\left\langle\boldsymbol n_\alpha,\boldsymbol n\right\rangle=0$, 求导得 $\left\langle\boldsymbol n_{\alpha\alpha},\boldsymbol n\right\rangle=-\left\langle\boldsymbol n_\alpha,\boldsymbol n_\alpha\right\rangle$, 而 $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$ 且 $g_{11}=g_{22}=1$, 故 $\left\langle\boldsymbol n_\alpha,\boldsymbol n_\alpha\right\rangle=k_\alpha^{2}$, 于是
 
 $$
-h_{11,\lambda}=\left\langle\boldsymbol r_{\lambda,11},\boldsymbol n\right\rangle
+b_{11,\lambda}=\left\langle\boldsymbol r_{\lambda,11},\boldsymbol n\right\rangle
 =\left\langle\boldsymbol r_{11}+\lambda\boldsymbol n_{11},\boldsymbol n\right\rangle
-=h_{11}-\lambda \kappa_1^{2}
-=\kappa_1-\lambda \kappa_1^{2}
-=\kappa_1\left(1-\lambda \kappa_1\right),
+=b_{11}-\lambda k_1^{2}
+=k_1-\lambda k_1^{2}
+=k_1\left(1-\lambda k_1\right),
 $$
 
-同理 $h_{22,\lambda}=\kappa_2\left(1-\lambda \kappa_2\right)$, 且 $h_{12,\lambda}=\left\langle\boldsymbol r_{\lambda,12},\boldsymbol n\right\rangle=h_{12}-\lambda\left\langle\boldsymbol n_1,\boldsymbol n_2\right\rangle=0$ (因主方向正交, $\boldsymbol n_1,\boldsymbol n_2$ 也正交). 因此
+同理 $b_{22,\lambda}=k_2\left(1-\lambda k_2\right)$, 且 $b_{12,\lambda}=\left\langle\boldsymbol r_{\lambda,12},\boldsymbol n\right\rangle=b_{12}-\lambda\left\langle\boldsymbol n_1,\boldsymbol n_2\right\rangle=0$ (因主方向正交, $\boldsymbol n_1,\boldsymbol n_2$ 也正交). 因此
 
 $$
-\mathrm{II}_{\lambda}=\kappa_1\left(1-\lambda \kappa_1\right)\mathrm du^{2}+\kappa_2\left(1-\lambda \kappa_2\right)\mathrm dv^{2}.
+\mathrm{II}_{\lambda}=k_1\left(1-\lambda k_1\right)\mathrm du^{2}+k_2\left(1-\lambda k_2\right)\mathrm dv^{2}.
 $$
 
 由**定义 3.5.1 (主曲率与主方向)**, $S_{\lambda}$ 的主曲率是矩阵 $\mathrm{II}_{\lambda}\mathrm I_{\lambda}^{-1}$ 的特征值, 即
 
 $$
-\kappa_\alpha^{\lambda}=\frac{\kappa_\alpha\left(1-\lambda \kappa_\alpha\right)}{\left(1-\lambda \kappa_\alpha\right)^{2}}=\frac{\kappa_\alpha}{1-\lambda \kappa_\alpha}\quad\left(\alpha=1,2\right).
+k_\alpha^{\lambda}=\frac{k_\alpha\left(1-\lambda k_\alpha\right)}{\left(1-\lambda k_\alpha\right)^{2}}=\frac{k_\alpha}{1-\lambda k_\alpha}\quad\left(\alpha=1,2\right).
 $$
 
 由**公式 3.5.4 (平均曲率与高斯曲率)**, $S_{\lambda}$ 的高斯曲率
 
 $$
-K_{\lambda}=\kappa_1^{\lambda}\kappa_2^{\lambda}
-=\frac{\kappa_1\kappa_2}{\left(1-\lambda \kappa_1\right)\left(1-\lambda \kappa_2\right)}
-=\frac{K}{1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2},
+K_{\lambda}=k_1^{\lambda}k_2^{\lambda}
+=\frac{k_1k_2}{\left(1-\lambda k_1\right)\left(1-\lambda k_2\right)}
+=\frac{K}{1-\lambda\left(k_1+k_2\right)+\lambda^{2}k_1k_2},
 $$
 
-由 $H=\frac{\kappa_1+\kappa_2}{2}$, $K=\kappa_1\kappa_2$ 得
+由 $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$ 得
 
 $$
 K_{\lambda}=\frac{K}{1-2\lambda H+\lambda^{2}K}.
@@ -311,8 +311,8 @@ $$
 又由**公式 3.5.4 (平均曲率与高斯曲率)**, 平均曲率
 
 $$
-H_{\lambda}=\frac{\kappa_1^{\lambda}+\kappa_2^{\lambda}}2
-=\frac12\left(\frac{\kappa_1}{1-\lambda \kappa_1}+\frac{\kappa_2}{1-\lambda \kappa_2}\right)=\frac{\kappa_1+\kappa_2-2\lambda \kappa_1\kappa_2}{2\left(1-\lambda\left(\kappa_1+\kappa_2\right)+\lambda^{2}\kappa_1\kappa_2\right)}
+H_{\lambda}=\frac{k_1^{\lambda}+k_2^{\lambda}}2
+=\frac12\left(\frac{k_1}{1-\lambda k_1}+\frac{k_2}{1-\lambda k_2}\right)=\frac{k_1+k_2-2\lambda k_1k_2}{2\left(1-\lambda\left(k_1+k_2\right)+\lambda^{2}k_1k_2\right)}
 =\frac{H-\lambda K}{1-2\lambda H+\lambda^{2}K},
 $$
 
@@ -391,15 +391,15 @@ $$
 二阶偏导 $\boldsymbol r_{uu}=\boldsymbol0$, $\boldsymbol r_{uv}=\left(-\sin v,\ \cos v,\ 0\right)$, $\boldsymbol r_{vv}=\left(-u\cos v,\ -u\sin v,\ 0\right)$. 由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\left(\boldsymbol r_u\wedge\boldsymbol r_v\right)/\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|$, 而 $\boldsymbol r_u\wedge\boldsymbol r_v=\left(b\sin v,\ -b\cos v,\ u\right)$, $\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|=\sqrt{b^{2}+u^{2}}$, 故 $\boldsymbol n=\left(b\sin v,-b\cos v,u\right)/\sqrt{b^{2}+u^{2}}$. 由**定义 3.3.1 (第二基本形式)**,
 
 $$
-h_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=0,\quad
-h_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac b{\sqrt{b^{2}+u^{2}}},\quad
-h_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=0.
+b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=0,\quad
+b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac b{\sqrt{b^{2}+u^{2}}},\quad
+b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle=0.
 $$
 
 于是 $g_{11}g_{22}-g_{12}^{2}=u^{2}+b^{2}$. 由**公式 3.5.4 (平均曲率与高斯曲率)**,
 
 $$
-H=\frac{h_{11}g_{22}-2h_{12}g_{12}+h_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{0-2h_{12}\cdot0+0}{2\left(u^{2}+b^{2}\right)}=0,
+H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{0-2b_{12}\cdot0+0}{2\left(u^{2}+b^{2}\right)}=0,
 $$
 
 由**定义 10.1.1 (极小曲面)** ($H\equiv0$), 正螺面 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$ 是极小曲面.
