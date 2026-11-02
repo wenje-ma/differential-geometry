@@ -1,20 +1,36 @@
 # week4
 
-> **基础知识: 内积求导**<br>对 $\left\langle\boldsymbol r,\boldsymbol r\right\rangle=1$ 求偏导得 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_v,\boldsymbol r\right\rangle=0$; 对 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle$ 等求导有 $\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle=0$.
+> **基础知识: 内积求导**
+>
+> 对 $\left\langle\boldsymbol r,\boldsymbol r\right\rangle=1$ 求偏导得 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_v,\boldsymbol r\right\rangle=0$; 对 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle$ 等求导有 $\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle=0$.
 
-> **定义 3.1.1 (曲面与单位法向)**<br>若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$ 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
+> **定义 3.1.1 (曲面与单位法向)**
+>
+> 若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$ 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
 
-> **推导 3.1.2 (参数变换下法向)**<br>设 $\left(u,v\right)\to\left(\widetilde u,\widetilde v\right)$ 是参数变换, 雅可比行列式 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\widetilde u,\widetilde v\right)}$, 则 $\boldsymbol r_{\widetilde u}\wedge\boldsymbol r_{\widetilde v}=\det J\,\boldsymbol r_u\wedge\boldsymbol r_v$; 因而同向参数变换 ($\det J> 0$) 不改变单位法向 $\boldsymbol n$, 反向参数变换 ($\det J< 0$) 使 $\boldsymbol n$ 变号.
+> **推导 3.1.2 (参数变换下法向)**
+>
+> 设 $\left(u,v\right)\to\left(\widetilde u,\widetilde v\right)$ 是参数变换, 雅可比行列式 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\widetilde u,\widetilde v\right)}$, 则 $\boldsymbol r_{\widetilde u}\wedge\boldsymbol r_{\widetilde v}=\det J\,\boldsymbol r_u\wedge\boldsymbol r_v$; 因而同向参数变换 ($\det J> 0$) 不改变单位法向 $\boldsymbol n$, 反向参数变换 ($\det J< 0$) 使 $\boldsymbol n$ 变号.
 
-> **定义 3.1.3 (切平面)**<br>$\boldsymbol r_u,\boldsymbol r_v$ 张成的平面 $T_{\boldsymbol r}S=\mathrm{span}\left\{\boldsymbol r_u,\boldsymbol r_v\right\}$ 称为曲面 $S$ 在点 $\boldsymbol r$ 处的切平面(切空间).
+> **定义 3.1.3 (切平面)**
+>
+> $\boldsymbol r_u,\boldsymbol r_v$ 张成的平面 $T_{\boldsymbol r}S=\mathrm{span}\left\{\boldsymbol r_u,\boldsymbol r_v\right\}$ 称为曲面 $S$ 在点 $\boldsymbol r$ 处的切平面(切空间).
 
-> **定义 3.2.1 (第一基本形式)**<br>$\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}$, 其中 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
+> **定义 3.2.1 (第一基本形式)**
+>
+> $\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}$, 其中 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
 
-> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=b_{11}\,\mathrm du^{2}+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^{2}$, 其中 $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+> **定义 3.3.1 (第二基本形式)**
+>
+> $\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=b_{11}\,\mathrm du^{2}+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^{2}$, 其中 $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
-> **性质 3.3.4 (第二基本形式在参数变换下变号)**<br>设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 与 $\boldsymbol r=\boldsymbol r\left(\widetilde u,\widetilde v\right)$ 是曲面 $S$ 的两个不同参数表示. 当变换 $\left(u,v\right)\to\left(\widetilde u,\widetilde v\right)$ 是同向参数变换时, $\mathrm{II}\left(\widetilde u,\widetilde v\right)=\mathrm{II}\left(u,v\right)$; 当它是反向参数变换时, $\mathrm{II}\left(\widetilde u,\widetilde v\right)=-\mathrm{II}\left(u,v\right)$.
+> **性质 3.3.4 (第二基本形式在参数变换下变号)**
+>
+> 设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 与 $\boldsymbol r=\boldsymbol r\left(\widetilde u,\widetilde v\right)$ 是曲面 $S$ 的两个不同参数表示. 当变换 $\left(u,v\right)\to\left(\widetilde u,\widetilde v\right)$ 是同向参数变换时, $\mathrm{II}\left(\widetilde u,\widetilde v\right)=\mathrm{II}\left(u,v\right)$; 当它是反向参数变换时, $\mathrm{II}\left(\widetilde u,\widetilde v\right)=-\mathrm{II}\left(u,v\right)$.
 
-> **公式 3.6.1 (旋转曲面的基本量)**<br>旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $b_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $b_{12}=0$, $b_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
+> **公式 3.6.1 (旋转曲面的基本量)**
+>
+> 旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $b_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $b_{12}=0$, $b_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
 
 ---
 

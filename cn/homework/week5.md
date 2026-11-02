@@ -1,44 +1,84 @@
 # week5
 
-> **基础知识: 隐函数求导**<br>若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$ 且 $F_z\neq0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$.
+> **基础知识: 隐函数求导**
+>
+> 若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$ 且 $F_z\neq0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$.
 
-> **基础知识: 隐函数定理**<br>若 $F$ 光滑, $F\left(x_0,y_0,z_0\right)=0$ 且 $F_z\left(x_0,y_0,z_0\right)\neq0$, 则 $F\left(x,y,z\right)=0$ 在 $\left(x_0,y_0,z_0\right)$ 邻近确定光滑函数 $z=z\left(x,y\right)$, 满足 $z\left(x_0,y_0\right)=z_0$ 且 $F\left(x,y,z\left(x,y\right)\right)\equiv0$.
+> **基础知识: 隐函数定理**
+>
+> 若 $F$ 光滑, $F\left(x_0,y_0,z_0\right)=0$ 且 $F_z\left(x_0,y_0,z_0\right)\neq0$, 则 $F\left(x,y,z\right)=0$ 在 $\left(x_0,y_0,z_0\right)$ 邻近确定光滑函数 $z=z\left(x,y\right)$, 满足 $z\left(x_0,y_0\right)=z_0$ 且 $F\left(x,y,z\left(x,y\right)\right)\equiv0$.
 
-> **基础知识: 变量替换公式**<br>若 $\sigma:\widetilde D\to D$ 是微分同胚, 则 $\int_{\widetilde D}F\left(\sigma\left(\widetilde x\right)\right)\left|\det\mathrm d\sigma\left(\widetilde x\right)\right|\,\mathrm d\widetilde x=\int_{D}F\left(x\right)\,\mathrm dx$.
+> **基础知识: 变量替换公式**
+>
+> 若 $\sigma:\widetilde D\to D$ 是微分同胚, 则 $\int_{\widetilde D}F\left(\sigma\left(\widetilde x\right)\right)\left|\det\mathrm d\sigma\left(\widetilde x\right)\right|\,\mathrm d\widetilde x=\int_{D}F\left(x\right)\,\mathrm dx$.
 
-> **定义 3.1.1 (曲面与单位法向)**<br>若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$, 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
+> **定义 3.1.1 (曲面与单位法向)**
+>
+> 若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$, 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
 
-> **例 3.1.5 (等值面)**<br>等值面 $S_c=\left\{\left(x,y,z\right)\mid F\left(x,y,z\right)=c\right\}$: 当 $\nabla F\left(P\right)\neq\boldsymbol0$ ($\forall P\in S_c$) 时 $S_c$ 是曲面, $\nabla F$ 是 $S_c$ 的法向, 且 $S_c$ 在 $P_0=\left(x_0,y_0,z_0\right)$ 的切平面方程为 $F_x\left(P_0\right)\left(x-x_0\right)+F_y\left(P_0\right)\left(y-y_0\right)+F_z\left(P_0\right)\left(z-z_0\right)=0$.
+> **例 3.1.5 (等值面)**
+>
+> 等值面 $S_c=\left\{\left(x,y,z\right)\mid F\left(x,y,z\right)=c\right\}$: 当 $\nabla F\left(P\right)\neq\boldsymbol0$ ($\forall P\in S_c$) 时 $S_c$ 是曲面, $\nabla F$ 是 $S_c$ 的法向, 且 $S_c$ 在 $P_0=\left(x_0,y_0,z_0\right)$ 的切平面方程为 $F_x\left(P_0\right)\left(x-x_0\right)+F_y\left(P_0\right)\left(y-y_0\right)+F_z\left(P_0\right)\left(z-z_0\right)=0$.
 
-> **定义 3.2.1 (第一基本形式)**<br>$\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}$, 其中 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
+> **定义 3.2.1 (第一基本形式)**
+>
+> $\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=g_{11}\,\mathrm du^{2}+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^{2}$, 其中 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
 
-> **定理 3.2.1 (第一基本形式与参数选取无关)**<br>曲面的第一基本形式与参数选取无关.
+> **定理 3.2.1 (第一基本形式与参数选取无关)**
+>
+> 曲面的第一基本形式与参数选取无关.
 
-> **定义 3.3.1 (第二基本形式)**<br>$\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=b_{11}\,\mathrm du^{2}+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^{2}$, 其中 $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
+> **定义 3.3.1 (第二基本形式)**
+>
+> $\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=b_{11}\,\mathrm du^{2}+2b_{12}\,\mathrm du\,\mathrm dv+b_{22}\,\mathrm dv^{2}$, 其中 $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
-> **定义 3.4.2 (法曲率)**<br>曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\frac{b_{11}\lambda^{2}+2b_{12}\lambda\mu+b_{22}\mu^{2}}{g_{11}\lambda^{2}+2g_{12}\lambda\mu+g_{22}\mu^{2}}=\frac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
+> **定义 3.4.2 (法曲率)**
+>
+> 曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\frac{b_{11}\lambda^{2}+2b_{12}\lambda\mu+b_{22}\mu^{2}}{g_{11}\lambda^{2}+2g_{12}\lambda\mu+g_{22}\mu^{2}}=\frac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
 
-> **定义 3.4.3 (魏因加滕变换)**<br>线性变换 $\boldsymbol W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r}S\to T_{\boldsymbol r}S$, $\boldsymbol W\left(\lambda\boldsymbol r_u+\mu\boldsymbol r_v\right)=-\left(\lambda\boldsymbol n_u+\mu\boldsymbol n_v\right)$ 称为曲面的魏因加滕变换.
+> **定义 3.4.3 (魏因加滕变换)**
+>
+> 线性变换 $\boldsymbol W:=-\mathrm d\boldsymbol n:\ T_{\boldsymbol r}S\to T_{\boldsymbol r}S$, $\boldsymbol W\left(\lambda\boldsymbol r_u+\mu\boldsymbol r_v\right)=-\left(\lambda\boldsymbol n_u+\mu\boldsymbol n_v\right)$ 称为曲面的魏因加滕变换.
 
-> **命题 3.4.4 (法向微分是切向量场)**<br>因 $\left\langle\boldsymbol n,\boldsymbol n\right\rangle=1$, 对 $\left\langle\boldsymbol n,\boldsymbol n\right\rangle=1$ 求微分得 $\left\langle\mathrm d\boldsymbol n,\boldsymbol n\right\rangle=0$, 故 $\mathrm d\boldsymbol n$ (从而 $\boldsymbol n_u,\boldsymbol n_v$) 是曲面的切向量.
+> **命题 3.4.4 (法向微分是切向量场)**
+>
+> 因 $\left\langle\boldsymbol n,\boldsymbol n\right\rangle=1$, 对 $\left\langle\boldsymbol n,\boldsymbol n\right\rangle=1$ 求微分得 $\left\langle\mathrm d\boldsymbol n,\boldsymbol n\right\rangle=0$, 故 $\mathrm d\boldsymbol n$ (从而 $\boldsymbol n_u,\boldsymbol n_v$) 是曲面的切向量.
 
-> **定义 3.5.1 (主曲率与主方向)**<br>魏因加滕变换在点 $P$ 的两个特征值称为曲面在点 $P$ 的主曲率, 对应特征方向称为主方向; 当两个主曲率不等时两主方向相互正交, 当两主曲率相等时任一切向都是主方向.
+> **定义 3.5.1 (主曲率与主方向)**
+>
+> 魏因加滕变换在点 $P$ 的两个特征值称为曲面在点 $P$ 的主曲率, 对应特征方向称为主方向; 当两个主曲率不等时两主方向相互正交, 当两主曲率相等时任一切向都是主方向.
 
-> **引理 3.5.2**<br>设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
+> **引理 3.5.2**
+>
+> 设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$.
 
-> **公式 3.5.4 (平均曲率与高斯曲率)**<br>记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\frac{k_1+k_2}{2}$, 高斯曲率 $K=k_1k_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $k_1k_2=\det\boldsymbol W$, $\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\end{bmatrix}$.
+> **公式 3.5.4 (平均曲率与高斯曲率)**
+>
+> 记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\frac{k_1+k_2}{2}$, 高斯曲率 $K=k_1k_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$. 其中 $k_1k_2=\det\boldsymbol W$, $\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol W$, $\boldsymbol W=\begin{bmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{bmatrix}^{-1}\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\end{bmatrix}$.
 
-> **公式 3.5.5 (面积元与高斯映射面积)**<br>曲面面积元 $\mathrm dA=\left\langle\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$; 在单位法向映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\mathrm{Area}\left(g\left(D\right)\right)}{\mathrm{Area}\left(D\right)}=K\left(P\right)$.
+> **公式 3.5.5 (面积元与高斯映射面积)**
+>
+> 曲面面积元 $\mathrm dA=\left\langle\boldsymbol r_u\wedge\boldsymbol r_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv$; 在单位法向映射 $g:\boldsymbol r\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 下, $\mathrm d\sigma=\left\langle\boldsymbol n_u\wedge\boldsymbol n_v,\boldsymbol n\right\rangle\mathrm du\,\mathrm dv=K\,\mathrm dA$, 且若 $D$ 是曲面 $S$ 上含点 $P$ 的区域, 则 $\lim_{D\to P}\frac{\mathrm{Area}\left(g\left(D\right)\right)}{\mathrm{Area}\left(D\right)}=K\left(P\right)$.
 
-> **定义 10.1.1 (极小曲面)**<br>$\mathbb E^{3}$ 中平均曲率处处恒为零的曲面称为极小曲面.
+> **定义 10.1.1 (极小曲面)**
+>
+> $\mathbb E^{3}$ 中平均曲率处处恒为零的曲面称为极小曲面.
 
-> **例 10.1.1 (螺旋面)**<br>函数 $f\left(x,y\right)=\arctan\frac yx$ 满足极小曲面方程, 相应的极小曲面 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 称为螺旋面, 它是唯一的直纹极小曲面.
+> **例 10.1.1 (螺旋面)**
+>
+> 函数 $f\left(x,y\right)=\arctan\frac yx$ 满足极小曲面方程, 相应的极小曲面 $\boldsymbol r\left(x,y\right)=\left(x,y,\arctan\frac yx\right)$ 称为螺旋面, 它是唯一的直纹极小曲面.
 
-> **公式 10.1.2 (函数图的几何量)**<br>对函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}$, 则第一基本形式 $\mathrm I=\left(1+p^{2}\right)\mathrm dx^{2}+2pq\,\mathrm dx\,\mathrm dy+\left(1+q^{2}\right)\mathrm dy^{2}$, 单位法向 $\boldsymbol e_3=\frac1W\left(-p,-q,1\right)$, 第二基本形式 $\mathrm{II}=\frac{r\,\mathrm dx^{2}+2s\,\mathrm dx\,\mathrm dy+t\,\mathrm dy^{2}}{W}$, 平均曲率 $H=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}}$.
+> **公式 10.1.2 (函数图的几何量)**
+>
+> 对函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\sqrt{1+p^{2}+q^{2}}$, 则第一基本形式 $\mathrm I=\left(1+p^{2}\right)\mathrm dx^{2}+2pq\,\mathrm dx\,\mathrm dy+\left(1+q^{2}\right)\mathrm dy^{2}$, 单位法向 $\boldsymbol e_3=\frac1W\left(-p,-q,1\right)$, 第二基本形式 $\mathrm{II}=\frac{r\,\mathrm dx^{2}+2s\,\mathrm dx\,\mathrm dy+t\,\mathrm dy^{2}}{W}$, 平均曲率 $H=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}}$.
 
-> **定理 10.1.3 (极小曲面方程)**<br>函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$ 是极小曲面当且仅当 $\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}=0$.
+> **定理 10.1.3 (极小曲面方程)**
+>
+> 函数图 $\boldsymbol r\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$ 是极小曲面当且仅当 $\left(1+f_y^{2}\right)f_{xx}-2f_xf_yf_{xy}+\left(1+f_x^{2}\right)f_{yy}=0$.
 
-> **例 10.1.3 (谢尔克曲面)**<br>极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $f\left(x,y\right)=\ln\frac{\cos x}{\cos y}$, 相应的极小曲面称为谢尔克曲面.
+> **例 10.1.3 (谢尔克曲面)**
+>
+> 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $f\left(x,y\right)=\ln\frac{\cos x}{\cos y}$, 相应的极小曲面称为谢尔克曲面.
 
 ---
 
