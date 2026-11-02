@@ -1,51 +1,51 @@
 # week2
 
 > **基础知识: 微积分基本定理**
->
+> 
 > 设 $\boldsymbol g:\left[a,b\right]\to\mathbb E^{n}$ 连续, 则 $\left(\int_0^s\boldsymbol g\left(u\right)\mathrm du\right)'=\boldsymbol g\left(s\right)$.
 
 > **基础知识: 叉积恒等式**
->
+> 
 > $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$; 且 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$, $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$, $\boldsymbol b\wedge\boldsymbol n=-\boldsymbol t$.
 
 > **基础知识: 点到直线的距离**
->
+> 
 > 设 $Q\in l$, $\boldsymbol u$ 是 $l$ 的单位方向向量, 则点 $P$ 到直线 $l$ 的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$.
 
 > **定义 2.2.1 (弧长与弧长参数)**
->
+> 
 > 曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$; 反之, 若参数 $t$ 满足 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm dt}\right|\equiv1$, 则 $t$ 是弧长参数.
 
 > **定义 2.3.1 (空间曲线的曲率与弗勒内标架)**
->
+> 
 > 对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 记曲率 $\kappa\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $k> 0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/k$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是弗勒内标架; 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$.
 
 > **定理 2.3.2 (弗勒内公式)**
->
+> 
 > $\dot{\boldsymbol t}=\kappa\boldsymbol n$, $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$.
 
 > **定理 2.3.3 (弧长参数曲线的二阶渐近展开)**
->
+> 
 > 设 $\boldsymbol r$ 以弧长为参数, 在 $s_0=0$ 处有 $\boldsymbol r\left(s\right)=\boldsymbol r\left(0\right)+s\,\dot{\boldsymbol r}\left(0\right)+\frac{s^{2}}2\ddot{\boldsymbol r}\left(0\right)+O\left(s^{3}\right)$, 其中 $\dot{\boldsymbol r}=\boldsymbol t\left(0\right)$, $\ddot{\boldsymbol r}\left(0\right)=\kappa\left(0\right)\boldsymbol n\left(0\right)$.
 
 > **定理 2.4.2 (空间曲线基本定理)**
->
+> 
 > 设 $\boldsymbol r_1\left(s\right),\boldsymbol r_2\left(s\right)$ 是 $\mathbb E^{3}$ 的两条弧长参数曲线, 定义在同一参数区间上, 且 $k_1=k_2> 0$, $\tau_1=\tau_2$, 则存在 $\mathbb E^{3}$ 的一个刚体运动把 $\boldsymbol r_2$ 变为 $\boldsymbol r_1$.
 
 > **习题 2.5 (一般参数下的曲率与挠率公式)**
->
+> 
 > $\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $\kappa\left(t\right)=\frac{\left|\boldsymbol r'\wedge\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\wedge\boldsymbol r''\right|^{2}}$.
 
 > **定理 7.3.4 (芬切尔不等式)**
->
+> 
 > 设 $C$ 是 $\mathbb E^{3}$ 中的闭曲线, $\kappa$ 是它的曲率函数, 则 $C$ 的全曲率满足 $\int_C\kappa\,\mathrm ds\ge2\pi$.
 
 > **定理 7.3.5 (扭结曲线的全曲率)**
->
+> 
 > 设 $C$ 是 $\mathbb E^{3}$ 中的扭结曲线, 则 $C$ 的全曲率满足 $\int_C\kappa\,\mathrm ds\ge4\pi$.
 
 > **法里-米尔诺定理 (题面给定)**
->
+> 
 > 设 $\gamma:\left[0,L\right]\to\mathbb E^{3}$ 是光滑弧长参数简单闭曲线, 若 $\gamma$ 是非平凡纽结, 则其全曲率积分满足 $\int_\gamma\kappa\left(s\right)\mathrm ds> 4\pi$.
 
 ---

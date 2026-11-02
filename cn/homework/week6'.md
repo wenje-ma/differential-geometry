@@ -1,67 +1,67 @@
 # week6
 
 > **基础知识: 泰勒展开**
->
+> 
 > 若 $\boldsymbol f$ 光滑, 则 $\boldsymbol f\left(t+h\right)=\boldsymbol f\left(t\right)+h\boldsymbol f'\left(t\right)+\frac{h^2}{2}\boldsymbol f''\left(t\right)+o\left(h^2\right)$, 其中 $o\left(h^2\right)/h^2\to0$（$h\to0$）.
 
 > **基础知识: 常微分方程积分曲线的存在性**
->
+> 
 > 对光滑向量场 $\boldsymbol X$, 过任意点存在光滑积分曲线 $\gamma\left(t\right)$ 满足 $\gamma'\left(t\right)=\boldsymbol X\left(\gamma\left(t\right)\right)$, 且积分曲线族铺满 $\boldsymbol X$ 所在的区域; 方程 $\gamma'=\gamma$ 的通解为 $\gamma\left(t\right)=e^t\gamma\left(0\right)$.
 
 > **定义 2.3.1 (曲率与弗雷内标架)**
->
-> 对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$, 曲率 $\kappa\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $\kappa>0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/\kappa$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是弗雷内标架, 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$; 曲率向量 $\ddot{\boldsymbol r}=\kappa\boldsymbol n$.
+> 
+> 对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$, 曲率 $\kappa\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $\kappa> 0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/\kappa$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是弗雷内标架, 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$; 曲率向量 $\ddot{\boldsymbol r}=\kappa\boldsymbol n$.
 
 > **定理 2.3.2 (弗雷内公式)**
->
+> 
 > $\dot{\boldsymbol t}=\kappa\boldsymbol n$, $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$.
 
 > **定理 3.1 (平面曲线的挠率为零)**
->
-> 设空间曲线 $\boldsymbol r$ 的曲率 $\kappa>0$, 则 $\boldsymbol r$ 落在某个平面上的充要条件是 $\tau=0$.
+> 
+> 设空间曲线 $\boldsymbol r$ 的曲率 $\kappa> 0$, 则 $\boldsymbol r$ 落在某个平面上的充要条件是 $\tau=0$.
 
 > **定义 3.1.1 (曲面与单位法向)**
->
+> 
 > 若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$ 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关（即 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$）, 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量 (故 $\boldsymbol n\perp\boldsymbol r_u,\boldsymbol r_v$, 垂直于切平面).
 
 > **定义 3.1.3 (切平面)**
->
+> 
 > $\boldsymbol r_u,\boldsymbol r_v$ 张成的平面 $T_{\boldsymbol r}S=\mathrm{span}\left\{\boldsymbol r_u,\boldsymbol r_v\right\}$ 称为曲面 $S$ 在点 $\boldsymbol r$ 处的切平面(切空间).
 
 > **定义 3.2.1 (第一基本形式)**
->
+> 
 > $\mathrm I=\left(\mathrm d\boldsymbol r,\mathrm d\boldsymbol r\right)=E\,\mathrm du^{2}+2F\,\mathrm du\,\mathrm dv+G\,\mathrm dv^{2}$, 其中 $E=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle$, $F=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, $G=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$; 它给出切向量长度的平方.
 
 > **定义 3.3.1 (第二基本形式)**
->
+> 
 > $\mathrm{II}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle\mathrm du^{2}+2\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle\mathrm du\,\mathrm dv+\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle\mathrm dv^{2}=L\,\mathrm du^{2}+2M\,\mathrm du\,\mathrm dv+N\,\mathrm dv^{2}$, 其中 $L=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle$, $M=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle$, $N=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
 > **推导 3.4 (曲线在曲面上的法曲率)**
->
+> 
 > 设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 是曲面 $S$ 上以弧长为参数的曲线, $\boldsymbol n$ 是 $S$ 的单位法向, 则曲线沿其单位切向在 $S$ 上的法曲率 $k_n=\left\langle\ddot{\boldsymbol r}\left(s\right),\boldsymbol n\right\rangle=\frac{\mathrm{II}\left(\dot{\boldsymbol r},\dot{\boldsymbol r}\right)}{\mathrm I\left(\dot{\boldsymbol r},\dot{\boldsymbol r}\right)}$.
 
 > **定义 3.4.2 (法曲率)**
->
+> 
 > 曲面沿非零切向量 $\boldsymbol w=\lambda\boldsymbol r_u+\mu\boldsymbol r_v$ 的法曲率 $k_n\left(\boldsymbol w\right)=\frac{L\lambda^{2}+2M\lambda\mu+N\mu^{2}}{E\lambda^{2}+2F\lambda\mu+G\mu^{2}}=\frac{\mathrm{II}\left(\boldsymbol w,\boldsymbol w\right)}{\mathrm I\left(\boldsymbol w,\boldsymbol w\right)}$.
 
 > **定义 3.4.3 (魏因加滕变换)**
->
+> 
 > 线性变换 $\boldsymbol W:T_{\boldsymbol r}S\to T_{\boldsymbol r}S$, $\boldsymbol W\left(\lambda\boldsymbol r_u+\mu\boldsymbol r_v\right)=-\left(\lambda\boldsymbol n_u+\mu\boldsymbol n_v\right)$ 称为曲面的 Weingarten (魏因加滕) 变换.
 
 > **定义 3.5.1 (主曲率与主方向)**
->
+> 
 > Weingarten 变换在点 $P$ 的两个特征值称为曲面在该点的主曲率, 对应特征方向称为主方向; 当两主曲率不等时两主方向相互正交, 当两主曲率相等时任一切向都是主方向.
 
 > **引理 5.2 (主方向坐标)**
->
+> 
 > 设 $\boldsymbol e_1,\boldsymbol e_2$ 是曲面在点 $P$ 的单位正交主方向, 则存在曲面在点 $P$ 的参数使得 $\boldsymbol r_u\left(P\right)=\boldsymbol e_1$, $\boldsymbol r_v\left(P\right)=\boldsymbol e_2$; 在此参数下第二基本形式系数 $L\left(P\right)=k_1$, $M\left(P\right)=0$, $N\left(P\right)=k_2$.
 
 > **公式 3.5.4 (平均曲率与高斯曲率)**
->
+> 
 > 记曲面在点 $P$ 的两个主曲率为 $k_1,k_2$, 则平均曲率 $H=\frac{k_1+k_2}{2}$, 高斯曲率 $K=k_1k_2$; 且 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$.
 
 > **例 6.2 (锥面)**
->
+> 
 > 设直纹面 $S$ 的参数表示为 $\boldsymbol r\left(u,v\right)=\boldsymbol a\left(u\right)+v\boldsymbol b\left(u\right)$, 当 $\boldsymbol a\left(u\right)$ 是常向量 $\boldsymbol a_0$ 时, 称它为以 $\boldsymbol a_0$ 为顶点的锥面, 这时 $S$ 的直母线均过定点 $\boldsymbol a_0$.
 
 ---

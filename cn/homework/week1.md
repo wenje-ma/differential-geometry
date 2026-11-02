@@ -1,103 +1,103 @@
 # week1
 
 > **基础知识: 微积分基本定理**
->
+> 
 > 设 $\boldsymbol g:\left[a,b\right]\to\mathbb E^n$ 连续, $\boldsymbol G$ 是 $\boldsymbol g$ 的原函数, 则 $\int_{t_1}^{t_2}\boldsymbol g\left(t\right)\mathrm dt=\boldsymbol G\left(t_2\right)-\boldsymbol G\left(t_1\right)$; 特别地 $\int_{t_1}^{t_2}\boldsymbol\alpha'\left(t\right)\mathrm dt=\boldsymbol\alpha\left(t_2\right)-\boldsymbol\alpha\left(t_1\right)$.
 
 > **基础知识: 积分三角不等式**
->
+> 
 > 对向量值连续函数 $\boldsymbol g$, 有 $\left|\int_a^b\boldsymbol g\left(t\right)\mathrm dt\right|\le\int_a^b\left|\boldsymbol g\left(t\right)\right|\mathrm dt$, 且 $\left|x+y\right|\ge\left|x\right|-\left|y\right|$.
 
 > **基础知识: 内积求导法则**
->
+> 
 > $\frac{\mathrm d}{\mathrm dt}\left\langle\boldsymbol a,\boldsymbol a\right\rangle=2\left\langle\boldsymbol a,\boldsymbol a'\right\rangle$.
 
 > **基础知识: 链式法则**
->
+> 
 > $\left(f\left(g\left(x\right)\right)\right)'=f'\left(g\left(x\right)\right)g'\left(x\right)$.
 
 > **基础知识: 一致连续与黎曼和**
->
+> 
 > 闭区间上的连续函数一致连续, 且黎曼和 $\sum_i\boldsymbol g\left(t_{i-1}\right)\Delta t_i\to\int_a^b\boldsymbol g\left(t\right)\mathrm dt$ 当划分加密时.
 
 > **基础知识: 一阶常微分方程组初值问题解的存在唯一性**
->
+> 
 > 一阶常微分方程组 $\frac{\mathrm dy}{\mathrm dx}=\boldsymbol f\left(x,\boldsymbol y\right)$, 当 $\boldsymbol f$ 对 $\left(x,\boldsymbol y\right)$ 连续, 且关于 $\boldsymbol y$ 满足利普希茨条件时, 初值问题的解存在且唯一.
 
 > **基础知识: 叉积为零与共线**
->
+> 
 > 对 $\mathbb E^{3}$ 中向量 $\boldsymbol a,\boldsymbol b$, $\boldsymbol a\wedge\boldsymbol b=\boldsymbol0$ 当且仅当 $\boldsymbol a,\boldsymbol b$ 共线.
 
 > **基础知识: 正交矩阵保内积与长度**
->
+> 
 > 若 $\boldsymbol A$ 是正交矩阵 ($\boldsymbol A^{\top}\boldsymbol A=\boldsymbol I$), 则 $\left\langle\boldsymbol A\boldsymbol x,\boldsymbol A\boldsymbol y\right\rangle=\left\langle\boldsymbol x,\boldsymbol y\right\rangle$, 特别 $\left|\boldsymbol A\boldsymbol x\right|=\left|\boldsymbol x\right|$.
 
 > **基础知识: 行列式的乘积性**
->
+> 
 > 对 $\mathbb E^{3}$ 中向量 $\boldsymbol x_1,\boldsymbol x_2,\boldsymbol x_3$ 与 $3\times3$ 矩阵 $\boldsymbol A$, 有 $\det\left(\boldsymbol A\boldsymbol x_1,\boldsymbol A\boldsymbol x_2,\boldsymbol A\boldsymbol x_3\right)=\det\boldsymbol A\cdot\det\left(\boldsymbol x_1,\boldsymbol x_2,\boldsymbol x_3\right)$.
 
 > **定义 2.2.1 (弧长与弧长参数)**
->
+> 
 > 曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$.
 
 > **定义 2.2.2 (平面曲线的曲率与弗勒内标架)**
->
+> 
 > 对平面曲线 $\boldsymbol r\left(s\right)$, 取单位切向量 $\boldsymbol t$ 与单位法向量 $\boldsymbol n$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 为右手系, 则 $\left[\boldsymbol r\left(s\right);\boldsymbol t\left(s\right),\boldsymbol n\left(s\right)\right]$ 是沿曲线的弗勒内标架, 且 $\dot{\boldsymbol t}=\kappa\boldsymbol n$, $\dot{\boldsymbol n}=-\kappa\boldsymbol t$; 函数 $\kappa\left(s\right)$ 称为曲线的有向曲率.
 
 > **例 2.2.2 (曲率为常数的曲线)**
->
+> 
 > (1) $\kappa\left(s\right)\equiv0$ 时 $\boldsymbol r$ 是直线;
->
+> 
 > (2) $\kappa\left(s\right)$ 为非零常数时 $\boldsymbol r$ 是半径 $\frac1{\left|k\right|}$ 的圆 (或它的一部分).
 
 > **定义 2.3.1 (空间曲线的曲率与弗勒内标架)**
->
+> 
 > 对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 记曲率 $\kappa\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $k> 0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/k$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是弗勒内标架; 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$.
 
 > **定理 2.3.1 (平面曲线的充要条件)**
->
+> 
 > 设空间曲线 $\boldsymbol r$ 的曲率 $\kappa> 0$, 则 $\boldsymbol r$ 落在某个平面上的充要条件是 $\tau\equiv0$.
 
 > **定理 2.3.2 (弗勒内公式)**
->
+> 
 > $\dot{\boldsymbol t}=\kappa\boldsymbol n$, $\dot{\boldsymbol n}=-\kappa\boldsymbol t+\tau\boldsymbol b$, $\dot{\boldsymbol b}=-\tau\boldsymbol n$.
 
 > **性质 2.4.1 (弧长, 曲率, 挠率的刚体运动不变性)**
->
+> 
 > $\mathbb E^{3}$ 中曲线的弧长, 曲率和挠率在刚体运动下不变.
 
 > **定理 2.4.2 (空间曲线基本定理)**
->
+> 
 > 设 $\boldsymbol r_1\left(s\right)$ 和 $\boldsymbol r_2\left(s\right)$ 是 $\mathbb E^{3}$ 的两条弧长参数曲线, 定义在同一参数区间上, 且 $k_1\left(s\right)=k_2\left(s\right)> 0$, $\tau_1\left(s\right)=\tau_2\left(s\right)$ 对一切 $s$ 成立, 则存在 $\mathbb E^{3}$ 的一个刚体运动把 $\boldsymbol r_2$ 变为 $\boldsymbol r_1$.
 
 > **定理 2.4.3 (给定曲率挠率存在弧长参数曲线)**
->
+> 
 > 设 $\kappa=\kappa\left(s\right)$ 和 $\tau=\tau\left(s\right)$ 是定义在区间 $\left(a,b\right)$ 上的两个连续可微函数, 且 $\kappa\left(s\right)> 0$, 则存在以 $s$ 为弧长参数, 以 $\kappa$ 为曲率, 以 $\tau$ 为挠率的空间曲线.
 
 > **定理 2.4.4 (平面曲线基本定理)**
->
+> 
 > 设 $\kappa\left(s\right)$ 是连续可微函数, 则
->
+> 
 > (1) 存在平面 $\mathbb E^{2}$ 的曲线 $\boldsymbol r\left(s\right)$, 它以 $s$ 为弧长参数, $\kappa\left(s\right)$ 为曲率;
->
+> 
 > (2) 上述曲线在相差平面的一个刚体运动的意义下是唯一的.
 
 > **例 2.4.5 (曲率挠率均为常数的曲线分类)**
->
+> 
 > 设 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的曲线, 其挠率 $\tau$ 和曲率 $\kappa$ 是常数. 则:
->
+> 
 > (1) $\kappa=0$ 时 $\boldsymbol r$ 是直线;
->
+> 
 > (2) $k> 0,\ \tau=0$ 时 $\boldsymbol r$ 是半径 $\frac1k$ 的圆;
->
+> 
 > (3) $k> 0,\ \tau\ne0$ 时 $\boldsymbol r$ 是圆柱螺线.
 
 > **习题 2.5 (一般参数下的曲率与挠率公式)**
->
+> 
 > $\mathbb E^{3}$ 的正则曲线 $\boldsymbol r\left(t\right)$ 的曲率和挠率分别为 $\kappa\left(t\right)=\frac{\left|\boldsymbol r'\wedge\boldsymbol r''\right|}{\left|\boldsymbol r'\right|^{3}}$, $\tau\left(t\right)=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{\left|\boldsymbol r'\wedge\boldsymbol r''\right|^{2}}$, 其中 $\left(\boldsymbol a,\boldsymbol b,\boldsymbol c\right)=\left\langle\boldsymbol a\times\boldsymbol b,\boldsymbol c\right\rangle$ 为混合积.
 
 > **习题 2.15 (球面曲线的刻画)**
->
+> 
 > 满足条件 $\left(\frac1\kappa\right)^{2}+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^{2}=$ 常数的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
 
 ---
