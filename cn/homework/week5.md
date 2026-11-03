@@ -1,17 +1,5 @@
 # week5
 
-> **基础知识: 隐函数求导**
-> 
-> 若 $F\left(x,y,z\left(x,y\right)\right)\equiv0$ 且 $F_z\neq0$, 则 $z_x=-\frac{F_x}{F_z}$, $z_y=-\frac{F_y}{F_z}$.
-
-> **基础知识: 隐函数定理**
-> 
-> 若 $F$ 光滑, $F\left(x_0,y_0,z_0\right)=0$ 且 $F_z\left(x_0,y_0,z_0\right)\neq0$, 则 $F\left(x,y,z\right)=0$ 在 $\left(x_0,y_0,z_0\right)$ 邻近确定光滑函数 $z=z\left(x,y\right)$, 满足 $z\left(x_0,y_0\right)=z_0$ 且 $F\left(x,y,z\left(x,y\right)\right)\equiv0$.
-
-> **基础知识: 变量替换公式**
-> 
-> 若 $\sigma:\widetilde D\to D$ 是微分同胚, 则 $\int_{\widetilde D}F\left(\sigma\left(\widetilde x\right)\right)\left|\det\mathrm d\sigma\left(\widetilde x\right)\right|\,\mathrm d\widetilde x=\int_{D}F\left(x\right)\,\mathrm dx$.
-
 > **定义 3.1.1 (曲面与单位法向)**
 > 
 > 若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$, 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
@@ -153,7 +141,7 @@ $$
 \nabla\Phi\left(0,0,0\right)=\left(2x,2y,-f'\left(z\right)\right)\big|_{\left(0,0,0\right)}=\left(0,0,-f'\left(0\right)\right)\neq\boldsymbol0
 $$
 
-(因 $f'\left(0\right)\neq0$), 故 $\left(0,0,0\right)$ 是 $S$ 的正则点, 且由**例 3.1.5 (等值面)** 的切平面方程, $\left(0,0,0\right)$ 处 $S$ 的切平面是 $z=0$. 又 $\Phi_z\left(0,0,0\right)=-f'\left(0\right)\neq0$, 由**基础知识: 隐函数定理**, 在 $\left(0,0,0\right)$ 邻近 $S$ 可表示为函数图 $z=z\left(x,y\right)$; 因 $\Phi$ 只通过 $\rho^{2}:=x^{2}+y^{2}$ 依赖 $x,y$, 该函数图具形式
+(因 $f'\left(0\right)\neq0$), 故 $\left(0,0,0\right)$ 是 $S$ 的正则点, 且由**例 3.1.5 (等值面)** 的切平面方程, $\left(0,0,0\right)$ 处 $S$ 的切平面是 $z=0$. 又 $\Phi_z\left(0,0,0\right)=-f'\left(0\right)\neq0$, 由隐函数定理, 在 $\left(0,0,0\right)$ 邻近 $S$ 可表示为函数图 $z=z\left(x,y\right)$; 因 $\Phi$ 只通过 $\rho^{2}:=x^{2}+y^{2}$ 依赖 $x,y$, 该函数图具形式
 
 $$
 z=\psi\left(\rho^{2}\right),
@@ -202,7 +190,7 @@ $\blacksquare$
 
 ### 解答 2.2
 
-在 $F_z\neq0$ 的邻域, 由**基础知识: 隐函数定理**, $S$ 局部是函数图 $z=z\left(x,y\right)$, 满足 $F\left(x,y,z\left(x,y\right)\right)\equiv0$. 由**基础知识: 隐函数求导**,
+在 $F_z\neq0$ 的邻域, 由隐函数定理, $S$ 局部是函数图 $z=z\left(x,y\right)$, 满足 $F\left(x,y,z\left(x,y\right)\right)\equiv0$. 由隐函数求导,
 
 $$
 z_x=-\frac{F_x}{F_z},\quad z_y=-\frac{F_y}{F_z}.

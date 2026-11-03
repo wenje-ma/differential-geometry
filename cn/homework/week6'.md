@@ -1,13 +1,5 @@
 # week6
 
-> **基础知识: 泰勒展开**
-> 
-> 若 $\boldsymbol f$ 光滑, 则 $\boldsymbol f\left(t+h\right)=\boldsymbol f\left(t\right)+h\boldsymbol f'\left(t\right)+\frac{h^2}{2}\boldsymbol f''\left(t\right)+o\left(h^2\right)$, 其中 $o\left(h^2\right)/h^2\to0$（$h\to0$）.
-
-> **基础知识: 常微分方程积分曲线的存在性**
-> 
-> 对光滑向量场 $\boldsymbol X$, 过任意点存在光滑积分曲线 $\gamma\left(t\right)$ 满足 $\gamma'\left(t\right)=\boldsymbol X\left(\gamma\left(t\right)\right)$, 且积分曲线族铺满 $\boldsymbol X$ 所在的区域; 方程 $\gamma'=\gamma$ 的通解为 $\gamma\left(t\right)=e^t\gamma\left(0\right)$.
-
 > **定义 2.3.1 (曲率与弗雷内标架)**
 > 
 > 对弧长参数空间曲线 $\boldsymbol r\left(s\right)$, 单位切向量 $\boldsymbol t=\dot{\boldsymbol r}$, 曲率 $\kappa\left(s\right)=\left|\dot{\boldsymbol t}\left(s\right)\right|$; 当 $\kappa> 0$ 时主法向量 $\boldsymbol n=\dot{\boldsymbol t}/\kappa$, 副法向量 $\boldsymbol b=\boldsymbol t\wedge\boldsymbol n$, $\left[\boldsymbol r;\boldsymbol t,\boldsymbol n,\boldsymbol b\right]$ 是弗雷内标架, 挠率 $\tau=\left\langle\dot{\boldsymbol n},\boldsymbol b\right\rangle$; 曲率向量 $\ddot{\boldsymbol r}=\kappa\boldsymbol n$.
@@ -116,7 +108,7 @@ $$
 \boldsymbol r\left(t_2\right)-\boldsymbol r\left(t_1\right)=\lambda_1\boldsymbol n\left(t_1\right)-\lambda_2\boldsymbol n\left(t_2\right).
 $$
 
-由**基础知识: 泰勒展开**, 并利用 $\boldsymbol r'=v\boldsymbol t$ 及（由**定理 2.3.2 (弗雷内公式)** $\frac{\mathrm d\boldsymbol t}{\mathrm ds}=k\boldsymbol n$ 与链式法则 $\frac{\mathrm d}{\mathrm dt}=v\frac{\mathrm d}{\mathrm ds}$ 得）$\boldsymbol t'=vk\boldsymbol n$, 有 $\boldsymbol r''=v'\boldsymbol t+v\boldsymbol t'=v'\boldsymbol t+v^{2}k\boldsymbol n$, 故
+由泰勒展开, 并利用 $\boldsymbol r'=v\boldsymbol t$ 及（由**定理 2.3.2 (弗雷内公式)** $\frac{\mathrm d\boldsymbol t}{\mathrm ds}=k\boldsymbol n$ 与链式法则 $\frac{\mathrm d}{\mathrm dt}=v\frac{\mathrm d}{\mathrm ds}$ 得）$\boldsymbol t'=vk\boldsymbol n$, 有 $\boldsymbol r''=v'\boldsymbol t+v\boldsymbol t'=v'\boldsymbol t+v^{2}k\boldsymbol n$, 故
 
 $$
 \boldsymbol r\left(t_2\right)-\boldsymbol r\left(t_1\right)
@@ -281,7 +273,7 @@ $$
 
 即位置向量场 $\boldsymbol X\left(\boldsymbol r\left(u,v\right)\right):=\boldsymbol r\left(u,v\right)$ 是曲面 $S$ 上的光滑切向量场.
 
-在 $O$ 之外的区域, 由**基础知识: 常微分方程积分曲线的存在性**, 过 $S$ 上任一点 $P_0=\boldsymbol r\left(u_0,v_0\right)$ 有 $\boldsymbol X$ 的积分曲线 $\gamma\left(t\right)$; 因 $\boldsymbol X$ 切于 $S$, 积分曲线落在 $S$ 上, 且满足
+在 $O$ 之外的区域, 由常微分方程积分曲线的存在性, 过 $S$ 上任一点 $P_0=\boldsymbol r\left(u_0,v_0\right)$ 有 $\boldsymbol X$ 的积分曲线 $\gamma\left(t\right)$; 因 $\boldsymbol X$ 切于 $S$, 积分曲线落在 $S$ 上, 且满足
 
 $$
 \gamma'\left(t\right)=\boldsymbol X\left(\gamma\left(t\right)\right)=\gamma\left(t\right)

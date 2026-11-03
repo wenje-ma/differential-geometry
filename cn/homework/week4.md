@@ -1,9 +1,5 @@
 # week4
 
-> **基础知识: 内积求导**
-> 
-> 对 $\left\langle\boldsymbol r,\boldsymbol r\right\rangle=1$ 求偏导得 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_v,\boldsymbol r\right\rangle=0$; 对 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle$ 等求导有 $\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle=0$.
-
 > **定义 3.1.1 (曲面与单位法向)**
 > 
 > 若映射 $\boldsymbol r:D\to\mathbb E^{3}$, $\left(u,v\right)\mapsto\boldsymbol r\left(u,v\right)$ 的分量函数可微且 $\boldsymbol r_u,\boldsymbol r_v$ 线性无关 (即 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$), 则称 $\boldsymbol r$ 是 $\mathbb E^{3}$ 的一个曲面(片); $\boldsymbol r_u\wedge\boldsymbol r_v$ 是曲面在该点的法向量, $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$ 是该点的单位法向量.
@@ -388,7 +384,7 @@ $\blacksquare$
 
 ### 解答 2
 
-先建立单位球面的通用刻画. 设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 是 $S^{2}\left(1\right)$ 的任一参数表示. 由**基础知识: 内积求导**, 对 $\left\langle\boldsymbol r,\boldsymbol r\right\rangle=1$ 求偏导得 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_v,\boldsymbol r\right\rangle=0$, 故 $\boldsymbol r$ 同时垂直于 $\boldsymbol r_u,\boldsymbol r_v$; 于是由**定义 3.1.3 (切平面)**,
+先建立单位球面的通用刻画. 设 $\boldsymbol r=\boldsymbol r\left(u,v\right)$ 是 $S^{2}\left(1\right)$ 的任一参数表示. 由内积求导, 对 $\left\langle\boldsymbol r,\boldsymbol r\right\rangle=1$ 求偏导得 $\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_v,\boldsymbol r\right\rangle=0$, 故 $\boldsymbol r$ 同时垂直于 $\boldsymbol r_u,\boldsymbol r_v$; 于是由**定义 3.1.3 (切平面)**,
 
 $$
 T_{\boldsymbol r}S=\mathrm{span}\left\{\boldsymbol r_u,\boldsymbol r_v\right\}=\left\{\boldsymbol w:\left\langle\boldsymbol w,\boldsymbol r\right\rangle=0\right\}
@@ -406,7 +402,7 @@ $$
 
 **第一基本形式**由**定义 3.2.1 (第一基本形式)** 按 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$ 逐张计算.
 
-**第二基本形式**可用如下通用关系求出. 由**基础知识: 内积求导**, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-g_{11}$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
+**第二基本形式**可用如下通用关系求出. 由内积求导, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-g_{11}$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
 
 $$
 b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\sigma\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-\sigma g_{11},\quad

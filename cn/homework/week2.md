@@ -1,17 +1,5 @@
 # week2
 
-> **基础知识: 微积分基本定理**
-> 
-> 设 $\boldsymbol g:\left[a,b\right]\to\mathbb E^{n}$ 连续, 则 $\left(\int_0^s\boldsymbol g\left(u\right)\mathrm du\right)'=\boldsymbol g\left(s\right)$.
-
-> **基础知识: 叉积恒等式**
-> 
-> $\left(\boldsymbol a\wedge\boldsymbol b\right)\wedge\boldsymbol c=\boldsymbol b\left\langle\boldsymbol a,\boldsymbol c\right\rangle-\boldsymbol a\left\langle\boldsymbol b,\boldsymbol c\right\rangle$; 且 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$, $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$, $\boldsymbol b\wedge\boldsymbol n=-\boldsymbol t$.
-
-> **基础知识: 点到直线的距离**
-> 
-> 设 $Q\in l$, $\boldsymbol u$ 是 $l$ 的单位方向向量, 则点 $P$ 到直线 $l$ 的距离 $d\left(P,l\right)=\left|\left(P-Q\right)\wedge\boldsymbol u\right|$.
-
 > **定义 2.2.1 (弧长与弧长参数)**
 > 
 > 曲线 $\boldsymbol r\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol r'\left(t\right)\right|\mathrm dt$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol r'\left(u\right)\right|\mathrm du$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm ds}\right|\equiv1$; 反之, 若参数 $t$ 满足 $\left|\frac{\mathrm d\boldsymbol r}{\mathrm dt}\right|\equiv1$, 则 $t$ 是弧长参数.
@@ -62,7 +50,7 @@
 
 设 $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 是曲线 $\boldsymbol r\left(s\right)$ (记 $C$) 的弗勒内标架 (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**).
 
-(1) 由**基础知识: 微积分基本定理**, $\widetilde{\boldsymbol r}'\left(s\right)=\boldsymbol b\left(s\right)$. 因副法向量 $\boldsymbol b$ 是单位向量 (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), 故 $\left|\widetilde{\boldsymbol r}'\right|\equiv1$; 由**定义 2.2.1 (弧长与弧长参数)**, $s$ 是曲线 $\widetilde C$ 的弧长参数.
+(1) 由微积分基本定理, $\widetilde{\boldsymbol r}'\left(s\right)=\boldsymbol b\left(s\right)$. 因副法向量 $\boldsymbol b$ 是单位向量 (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), 故 $\left|\widetilde{\boldsymbol r}'\right|\equiv1$; 由**定义 2.2.1 (弧长与弧长参数)**, $s$ 是曲线 $\widetilde C$ 的弧长参数.
 
 于是 $\widetilde C$ 的单位切向量为 $\widetilde{\boldsymbol t}=\frac{\mathrm d\widetilde{\boldsymbol r}}{\mathrm ds}=\boldsymbol b$. 对 $s$ 求导, 由**定理 2.3.2 (弗勒内公式)** 中 $\dot{\boldsymbol b}=-\tau\boldsymbol n$:
 
@@ -84,7 +72,7 @@ $$
 =\boldsymbol b\wedge\left(-\boldsymbol n\right)=-\left(\boldsymbol b\wedge\boldsymbol n\right).
 $$
 
-用**基础知识: 叉积恒等式** 计算 $\boldsymbol b\wedge\boldsymbol n=\left(\boldsymbol t\wedge\boldsymbol n\right)\wedge\boldsymbol n=\boldsymbol n\left\langle\boldsymbol t,\boldsymbol n\right\rangle-\boldsymbol t\left\langle\boldsymbol n,\boldsymbol n\right\rangle=-\boldsymbol t$, 故 $\widetilde{\boldsymbol b}=\boldsymbol t$. 于是 $\dot{\widetilde{\boldsymbol b}}=\dot{\boldsymbol t}=\kappa\boldsymbol n$; 又 $\widetilde C$ 的弗勒内公式给出 $\dot{\widetilde{\boldsymbol b}}=-\widetilde\tau\,\widetilde{\boldsymbol n}=-\widetilde\tau\left(-\boldsymbol n\right)=\widetilde\tau\boldsymbol n$, 对比系数得
+用叉积恒等式 计算 $\boldsymbol b\wedge\boldsymbol n=\left(\boldsymbol t\wedge\boldsymbol n\right)\wedge\boldsymbol n=\boldsymbol n\left\langle\boldsymbol t,\boldsymbol n\right\rangle-\boldsymbol t\left\langle\boldsymbol n,\boldsymbol n\right\rangle=-\boldsymbol t$, 故 $\widetilde{\boldsymbol b}=\boldsymbol t$. 于是 $\dot{\widetilde{\boldsymbol b}}=\dot{\boldsymbol t}=\kappa\boldsymbol n$; 又 $\widetilde C$ 的弗勒内公式给出 $\dot{\widetilde{\boldsymbol b}}=-\widetilde\tau\,\widetilde{\boldsymbol n}=-\widetilde\tau\left(-\boldsymbol n\right)=\widetilde\tau\boldsymbol n$, 对比系数得
 
 $$
 \widetilde\tau=\kappa.
@@ -162,7 +150,7 @@ $$
 
 ### 解答 1.16
 
-设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, $P_0=\boldsymbol r\left(0\right)$, $P=\boldsymbol r\left(s\right)$ ($s\to0$), $l$ 是过 $P_0$, 方向为 $\boldsymbol t\left(0\right)$ 的直线. 由**基础知识: 点到直线的距离**, $P$ 到 $l$ 的距离为 $d\left(P,l\right)=\left|\left(\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)\right)\wedge\boldsymbol t\left(0\right)\right|$. 由**定理 2.3.3 (弧长参数曲线的二阶渐近展开)**, 在 $s_0=0$ 处展开:
+设 $\boldsymbol r=\boldsymbol r\left(s\right)$ 以弧长为参数, $P_0=\boldsymbol r\left(0\right)$, $P=\boldsymbol r\left(s\right)$ ($s\to0$), $l$ 是过 $P_0$, 方向为 $\boldsymbol t\left(0\right)$ 的直线. 由点到直线的距离, $P$ 到 $l$ 的距离为 $d\left(P,l\right)=\left|\left(\boldsymbol r\left(s\right)-\boldsymbol r\left(0\right)\right)\wedge\boldsymbol t\left(0\right)\right|$. 由**定理 2.3.3 (弧长参数曲线的二阶渐近展开)**, 在 $s_0=0$ 处展开:
 
 $$
 \boldsymbol r\left(s\right)=\boldsymbol r\left(0\right)+s\boldsymbol t\left(0\right)+\frac{s^{2}}{2}\kappa\left(0\right)\boldsymbol n\left(0\right)+O\left(s^{3}\right).
@@ -242,7 +230,7 @@ $$
 \boldsymbol v\left(s\right)=\tau\left(s\right)\,\boldsymbol t\left(s\right)+\kappa\left(s\right)\,\boldsymbol b\left(s\right).
 $$
 
-(此即旋转向量.) 逐式验证, 利用**基础知识: 叉积恒等式** 及 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$, $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$, $\boldsymbol b\wedge\boldsymbol n=-\boldsymbol t$:
+(此即旋转向量.) 逐式验证, 利用叉积恒等式 及 $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$, $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$, $\boldsymbol b\wedge\boldsymbol n=-\boldsymbol t$:
 
 $$
 \boldsymbol v\wedge\boldsymbol t=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol t=\tau\left(\boldsymbol t\wedge\boldsymbol t\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol t\right)=\kappa\boldsymbol n=\dot{\boldsymbol t},;\boldsymbol v\wedge\boldsymbol b=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol b=\tau\left(\boldsymbol t\wedge\boldsymbol b\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol b\right)=-\tau\boldsymbol n=\dot{\boldsymbol b},;\boldsymbol v\wedge\boldsymbol n=\left(\tau\boldsymbol t+\kappa\boldsymbol b\right)\wedge\boldsymbol n=\tau\left(\boldsymbol t\wedge\boldsymbol n\right)+\kappa\left(\boldsymbol b\wedge\boldsymbol n\right)=\tau\boldsymbol b-\kappa\boldsymbol t=-\kappa\boldsymbol t+\tau\boldsymbol b=\dot{\boldsymbol n}.
