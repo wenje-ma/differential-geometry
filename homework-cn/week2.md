@@ -36,8 +36,6 @@
 > 
 > 设 $\gamma:\left[0,L\right]\to\mathbb E^{3}$ 是光滑弧长参数简单闭曲线, 若 $\gamma$ 是非平凡纽结, 则其全曲率积分满足 $\int_\gamma\kappa\left(s\right)\mathrm ds> 4\pi$.
 
----
-
 ## 1.11 (副法向量积分曲线与曲率挠率互换)
 
 设弧长参数曲线 $\boldsymbol r\left(s\right)$ 的曲率 $\kappa> 0$, 挠率 $\tau> 0$, $\boldsymbol b\left(s\right)$ 是 $\widetilde C$ 的副法向量, 定义曲线 $\widetilde C$: $\widetilde{\boldsymbol r}\left(s\right)=\int_0^s\boldsymbol b\left(u\right)\mathrm du$.
@@ -81,8 +79,6 @@ $$
 故 $\widetilde\kappa=\tau$, $\widetilde\tau=k$. $\blacksquare$
 
 (2) $\widetilde C$ 的弗勒内标架为 $\widetilde{\boldsymbol t}=\boldsymbol b$, $\widetilde{\boldsymbol n}=-\boldsymbol n$, $\widetilde{\boldsymbol b}=\boldsymbol t$. $\blacksquare$
-
----
 
 ## 1.12 (切线像的曲率与挠率)
 
@@ -136,8 +132,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 1.16 (曲率作为切线距离的二阶逼近)
 
 设 $P_0$ 是 $\mathbb E^{3}$ 的曲线 $\widetilde C$ 上一点, $P$ 是 $\widetilde C$ 上 $P_0$ 的邻近点, $l$ 是 $P_0$ 处的切线; 证明:
@@ -181,8 +175,6 @@ $$
 
 即 $\lim_{P\to P_0}\frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}=\kappa\left(P_0\right)$. $\blacksquare$
 
----
-
 ## 1.17 (满足 $\tau=c\kappa$ 的一般螺旋线)
 
 求满足 $\tau=c\kappa$ ($c$ 为常数, $\kappa> 0$) 的曲线.
@@ -216,8 +208,6 @@ $$
 
 > 计算 $\frac{\mathrm d}{\mathrm ds}\left(A\boldsymbol t+B\boldsymbol b\right)=\left(A\kappa-B\tau\right)\boldsymbol n$ 发现其仅与 $\boldsymbol n$ 有关, 一个自然的想法是, 若令 $\boldsymbol n$ 的系数为 $0$, 这样的曲线肯定很特殊.
 
----
-
 ## 1.19 (旋转向量)
 
 求沿曲线的向量场 $\boldsymbol v\left(s\right)$, 使其同时满足: $\dot{\boldsymbol t}\left(s\right)=\boldsymbol v\left(s\right)\wedge\boldsymbol t\left(s\right)$, $\dot{\boldsymbol n}\left(s\right)=\boldsymbol v\left(s\right)\wedge\boldsymbol n\left(s\right)$, $\dot{\boldsymbol b}\left(s\right)=\boldsymbol v\left(s\right)\wedge\boldsymbol b\left(s\right)$.
@@ -243,8 +233,6 @@ $$
 $$
 \boldsymbol v\left(s\right)=\tau\left(s\right)\,\boldsymbol t\left(s\right)+\kappa\left(s\right)\,\boldsymbol b\left(s\right).\ \blacksquare
 $$
-
----
 
 ## 1.20 (两条曲线合同的判定)
 
@@ -304,8 +292,6 @@ $$
 混合积 $\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)=-\frac18$. 故 $\widetilde k=\frac{\widetilde w}{\widetilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\widetilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\widetilde w^{2}}=\frac{-1/8}{1/2}=-\frac14$.
 
 **结论.** 两条曲线的曲率, 挠率分别相等: $k=\widetilde k=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb E^{3}$ 中相差一个刚体运动, 即两曲线**合同**. $\blacksquare$
-
----
 
 ## 2 (非平凡纽结全曲率的下确界)
 

@@ -68,8 +68,6 @@
 > 
 > 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $f\left(x,y\right)=\ln\frac{\cos x}{\cos y}$, 相应的极小曲面称为谢尔克曲面.
 
----
-
 ## 1 (函数图的 $\mathrm I,\mathrm{II}$ 与平均、高斯曲率)
 
 设 $f:D\subset\mathbb R^{2}\to\mathbb R$ 是光滑函数, 而且正则曲面 $S:=\left\{\left(x,y,f\left(x,y\right)\right)\mid\left(x,y\right)\in D\right\}$ 是 $f$ 的图. 试确定 $S$ 的 $I,II$, 平均曲率 $H$ 以及高斯曲率 $K$.
@@ -126,8 +124,6 @@ K=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_x^{2}+f_y^{2}\right)^{2}}.
 $$
 
 $\blacksquare$
-
----
 
 ## 2.18 (法曲率为常数的旋转面)
 
@@ -259,8 +255,6 @@ $$
 
 再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的高斯曲率与平均曲率. $\blacksquare$
 
----
-
 ## 3.27 (平行曲面的曲率)
 
 设曲面 $S:\boldsymbol r=\boldsymbol r\left(u,v\right)$ 上没有抛物点, $\boldsymbol n$ 是 $S$ 的法向量; 曲面 $S_{\lambda}:\boldsymbol r_{\lambda}\left(u,v\right)=\boldsymbol r\left(u,v\right)+\lambda\boldsymbol n\left(u,v\right)$ (常数 $\lambda$ 充分小) 称为 $S$ 的平行曲面.
@@ -352,8 +346,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.35 (谢尔克曲面的唯一性)
 
 若曲面 $z=f\left(x\right)+g\left(y\right)$ 是极小曲面, 证明除相差一个常数外它可以写成 $\frac1a\ln\frac{\cos ay}{\cos ax}$, 这个曲面称为谢尔克曲面.
@@ -435,8 +427,6 @@ $$
 **(ii) 直纹极小曲面是平面或正螺面.**
 
 平面是直纹面 (任一方向族均为直母线), 且由**定义 10.1.1 (极小曲面)** 处处 $H\equiv0$, 故平面是直纹极小曲面. 由**例 10.1.1 (螺旋面)**, 螺旋面是唯一的直纹极小曲面, 而螺旋面即正螺面 (同一曲面的不同参数化), 因此任一非平面的直纹极小曲面必为正螺面. 综合两者: 直纹极小曲面是平面或正螺面. $\blacksquare$
-
----
 
 ## 5 (曲面的面积与高斯曲率的面积比)
 

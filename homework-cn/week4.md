@@ -28,8 +28,6 @@
 > 
 > 旋转曲面 $\boldsymbol r\left(u,v\right)=\left(f\left(u\right)\cos v,\ f\left(u\right)\sin v,\ g\left(u\right)\right)$ ($f> 0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $b_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $b_{12}=0$, $b_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
 
----
-
 ## 1.1 (二次曲面的参数表达式)
 
 求下列曲面的参数表达式:
@@ -100,8 +98,6 @@ $$
 
 (第三个分量恒为 $1$, 处处非零). 由**定义 3.1.1 (曲面与单位法向)**, 它是椭圆抛物面的正则参数曲面. $\blacksquare$
 
----
-
 ## 1.7 (椭球面的第一基本形式)
 
 求椭球面
@@ -131,8 +127,6 @@ $$
 $$
 \mathrm I=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left[\cos^2 u\left(a^2\cos^2 v+b^2\sin^2 v\right)+c^2\sin^2 u\right]\mathrm du^2+2\left(b^2-a^2\right)\sin u\cos u\sin v\cos v\,\mathrm du\,\mathrm dv+\sin^2 u\left(a^2\sin^2 v+b^2\cos^2 v\right)\mathrm dv^2.\ \blacksquare
 $$
-
----
 
 ## 1.8 (第一基本形式的计算)
 
@@ -184,8 +178,6 @@ $$
 \mathrm I=g_{11}\,\mathrm du^2+2g_{12}\,\mathrm du\,\mathrm dv+g_{22}\,\mathrm dv^2=\left(a^2+b^2+4u^2\right)\mathrm du^2+2\left(a^2-b^2+4uv\right)\mathrm du\,\mathrm dv+\left(a^2+b^2+4v^2\right)\mathrm dv^2.\ \blacksquare
 $$
 
----
-
 ## 1.9 (函数图的第一基本形式)
 
 求曲面 $z=f\left(x,y\right)$ 的第一基本形式.
@@ -213,8 +205,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 1.11 (参数变换下法向的指向)
 
 设 $\left(x,y\right)$ 是曲面 $\boldsymbol r\left(u,v\right)$ 的另一组参数, 问: $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的指向是否相同?
@@ -230,8 +220,6 @@ $$
 $$
 
 因此两向量 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的**指向是否相同, 取决于 $\det J$ 的符号**: 当 $\det J> 0$ (同向参数变换) 时 $\boldsymbol r_x\wedge\boldsymbol r_y$ 与 $\boldsymbol r_u\wedge\boldsymbol r_v$ 同向; 当 $\det J< 0$ (反向参数变换) 时两者反向. $\blacksquare$
-
----
 
 ## 1.14 (第二基本形式的计算)
 
@@ -331,8 +319,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 1.15 (函数图的第二基本形式)
 
 求曲面 $z=f\left(x,y\right)$ 的第二基本形式.
@@ -375,8 +361,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 2 (单位球面的三种参数化与基本形式)
 

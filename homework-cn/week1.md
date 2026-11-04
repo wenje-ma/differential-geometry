@@ -64,8 +64,6 @@
 > 
 > 满足条件 $\left(\frac1\kappa\right)^{2}+\left[\frac1\tau\frac{\mathrm d}{\mathrm ds}\left(\frac1\kappa\right)\right]^{2}=$ 常数的曲线, 或者是球面曲线, 或者 $\kappa$ 是常数.
 
----
-
 ## 1 (向量值函数的模长与方向判据)
 
 设 $\boldsymbol a\left(t\right)$ 是向量值函数, 证明:
@@ -101,8 +99,6 @@ $$
 $$
 
 故 $\boldsymbol u$ 为常向量, 即 $\boldsymbol a$ 的方向不变. $\blacksquare$
-
----
 
 ## 2 (光滑曲线弧长的积分公式与直线最短性)
 
@@ -150,8 +146,6 @@ $$
 
 故任何连接两点的曲线长度都不小于 $\left|Q-P\right|$, 而直线段恰好达到 $\left|Q-P\right|$, 所以 $\mathbb E^{3}$ 中任何两点之间直线最短. $\blacksquare$
 
----
-
 ## 3 (平面曲线几何与空间曲线的对比)
 
 (1) 讨论平面曲线的几何, 如平面曲线的曲率的定义, 平面曲线基本定理;
@@ -197,8 +191,6 @@ $$
 
 综上, 平面曲线之特别处在于: 曲率退化为一个可带符号的标量函数, 且无挠率, 由单一函数 $\kappa\left(s\right)$ 模保向等距即可完全确定曲线. $\blacksquare$
 
----
-
 ## 4 (曲率与挠率的计算)
 
 曲率和挠率的计算. 求下列曲线的曲率和挠率:
@@ -240,8 +232,6 @@ $$
 k=\frac{a}{a^{2}+b^{2}},\quad
 \tau=-\frac{b}{a^{2}+b^{2}}.\ \blacksquare
 $$
-
----
 
 ## 5 (球面曲线的刻画与曲率下界)
 
@@ -302,8 +292,6 @@ $$
 
 综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $\kappa$ 为常数 (情形 B), 这正是**习题 2.15 (球面曲线的刻画)** 的结论. $\blacksquare$
 
----
-
 ## 6.8 (曲线到定点最近点的切向垂直性)
 
 设平面正则曲线 $C:\boldsymbol r=\boldsymbol r\left(t\right)$ 不过 $P_0$ 点, $\boldsymbol r\left(t_0\right)$ 是 $C$ 与 $P_0$ 距离最近的点, 证明: 向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直.
@@ -324,8 +312,6 @@ $$
 $$
 
 即 $\left\langle\boldsymbol r\left(t_0\right)-P_0,\boldsymbol r'\left(t_0\right)\right\rangle=0$. 故向量 $\boldsymbol r\left(t_0\right)-P_0$ 与 $\boldsymbol r'\left(t_0\right)$ 垂直. $\blacksquare$
-
----
 
 ## 6.9 (切线或主法线过定点的曲线)
 
@@ -355,8 +341,6 @@ $$
 $$
 
 $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, 比较系数: $1=-\lambda k$, $0=\lambda'$, $0=\lambda\tau$. 由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda \kappa\ne0$ 知 $\lambda\ne0$, 再由 $\lambda\tau=0$ 得 $\tau\equiv0$. 于是由**定理 2.3.1 (平面曲线的充要条件)**, $\boldsymbol r$ 是平面曲线; 又 $\lambda$ 为常数, 故 $\left|\boldsymbol r\right|=\left|\lambda\right|=$ 常数, 即曲线到原点的距离恒定. 于是曲率 $k=\frac1{\left|\lambda\right|}=$ 常数 $> 0$ (由 $\dot{\boldsymbol t}=\kappa\boldsymbol n$ 及 $\boldsymbol r=\lambda\boldsymbol n$ 得 $\left|\dot{\boldsymbol t}\right|=\left|k\boldsymbol n\right|=\left|k\right|=\frac1{\left|\lambda\right|}$). 由于 $\boldsymbol r$ 是平面曲线 ($\tau\equiv0$) 且其曲率 $\kappa$ 为正常数, 由**例 2.4.5 (曲率挠率均为常数的曲线分类)** (2), $\boldsymbol r$ 是半径 $\frac1k$ 的圆. 故所有主法线过定点的曲线是圆. $\blacksquare$
-
----
 
 ## 6.10 (反向等距变换下曲线几何量的变化)
 

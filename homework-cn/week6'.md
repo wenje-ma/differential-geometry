@@ -56,8 +56,6 @@
 > 
 > 设直纹面 $S$ 的参数表示为 $\boldsymbol r\left(u,v\right)=\boldsymbol a\left(u\right)+v\boldsymbol b\left(u\right)$, 当 $\boldsymbol a\left(u\right)$ 是常向量 $\boldsymbol a_0$ 时, 称它为以 $\boldsymbol a_0$ 为顶点的锥面, 这时 $S$ 的直母线均过定点 $\boldsymbol a_0$.
 
----
-
 ## 2.22 (渐屈线)
 
 设 $C:\boldsymbol r=\boldsymbol r\left(t\right)$（$t\in I$）是平面曲线, 且曲率 $k\left(t\right)\neq0$. 定义曲线
@@ -147,8 +145,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 3.19 (第三基本形式的恒等式)
 
 定义 $\mathrm{III}=\left(\mathrm d\boldsymbol n,\mathrm d\boldsymbol n\right)$ 为曲面的第三基本形式, 证明:
@@ -212,8 +208,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 3.20 (两曲面交线的曲率)
 
 设曲面 $S_1$ 和 $S_2$ 的交线 $C$ 的曲率为 $k$, 曲线 $C$ 在曲面 $S_i$ 上的法曲率为 $k_i$（$i=1,2$）; 若沿 $C$, $S_1$ 和 $S_2$ 法向的夹角为 $\theta$, 证明:
@@ -256,8 +250,6 @@ k^{2}\sin^{2}\theta=k_1^{2}+k_2^{2}-2k_1k_2\cos\theta.
 $$
 
 $\blacksquare$
-
----
 
 ## 3.32 (切平面过定点的曲面是锥面)
 
