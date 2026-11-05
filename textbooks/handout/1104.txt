@@ -1,0 +1,171 @@
+设 Sigma: gamma = gamma(u) 是正则曲面.
+切向量场
+V(u) = V'(u) partial/partial u^1 gamma + V^2(u) partial/partial u^2 gamma
+曲线 gamma(u(t)) = c(t)
+d/d t | _ +\infty V(c(t)) = d/d t | _ +infty (V^alpha(u(t)) partial/partial U^alpha gamma)
+=partial/partial u^beta V^alpha (u^beta)' | _ +infty partial/partial u^alpha gamma + V^alpha (partial^2/partial u^alpha partial u^beta gamma(u^beta)' | _ +infty)
+partial^2/partial u^alpha partial u^beta gamma = Gamma_alphabeta^epsilon partial/partial u^epsilon gamma - h_alphabeta n
+
+求出一个求导运算
+D x(Sigma) times x(Sigma) to x(Sigma)
+切向量场
+(W, V) to D_W V
+要求
+(1) 任意函数 lambda, mu
+D_lamndaW_1+muW2 V = lambda D_W_1 V + mu D_W_2 V
+(2) D_W(lambda V_1 + mu V_2) = W(lambda) V_1 + lambda D_W V_1
++ W(mu) V_2 + mu D_W V_2
+(3) D<V_1, V_2> = <D V_1, V_2> + <V_1, D V_2>
+设 D_ partial/partial u^alpha gamma partial/partial u^alpha gamma = C_alphabeta^epsilon partial/partial u^epsilon gamma
+(3) iff D_ partial/partial u^alpha gamma <partial/partial u^epsilon gamma, partial/partial u^tau gamma>
+=<D_ partial/partial u^alpha gamma partial/partial u^epsilon gamma, partial/partial u^tau gamma> + <partial/partial u^epsilon gamma, D_ partial/partial u^alpha gamma partial/partial u^tau gamma>
+iff partial/partial u^alpha g_epsilontau = C_alphaepsilon^mu g_mutau + C_alphatau^mu g_muepsilon
+(4) 要求 nabla_ partial/partial u^alpha gamma = nabla_ partial/partial u^beta gamma partial/partial u^alpha gamma
+iff C_alphabeta^* = C_betaalpha^*
+
+在 (1) sim (4) 下,
+partial_alpha g_epsilontau = C_alphatau^mu g_mutau + C_alphatau^mu g_epsilontau
+partial_epsilon g_taualpha = C_epsilontau^mu g_mualpha + C_epsilonalpha^mu g_epsilontau
+partial_tau g_alphaepsilon = C_taualpha^mu g_muepsilon + C_tauepsilon^mu g_epsilonmu
+partial_tau g_alphaepsilon + partial_epsilon g_taualpha - partial_alpha g_epsilontau
+=2 C_epsilontau^mu g_alphamu
+implies C_epsilontau^mu = 1/2 g^mulambda (partial_tau g_lambdaepsilon+partial_epsilon g_lambdatau - partial_lambda g_epsilontau)
+=Gamma_epsilontau^mu
+
+partial^2/partial u^epsilon partial u^tau gamma = Gamma_epsilontau^mu partial/partial u^mu gamma - h_epsilontau n
+即 D_W V =W(V) - <W(V), n> n
+...?(没抄上, 不知道老师写没写别的, 一抬头已经换页了)
+
+定义: 设有 I = g_alphabeta d u^alpha d u^beta, u in D 
+(抽象第一基本形式)
+由 D_ partial/partial u^alpha gamma partial/partial u^beta gamma := Gamma_alphabeta^lambda partial/partial u^lambda gamma
+定义的微分称为协变微分
+
+定义: 设 C(t) = (u^1(t), u^2(t)) 是 Sigma 一条曲线. 若向量场 V 法 C(t) 满足 D_ C'(t) V = 0, 则称 V 沿着 C 平行
+
+V 平行 ??? 与 C 的参数化无关
+设 t=t(s)
+d/d s c(t(s)) = d/d t c cdot d/d s t.
+D_ d/d s c(t(s)) V(t(s)) = D_ t'(s) c'(t) V(t(s))
+=t'(s) D_ c'(t) V(t(s))
+
+定义. 设 c(t), t in [0,1] 是 Sigma 上一曲线.
+V in T_ c(0) Sigma
+若将 V 沿 c(t) 延拓成沿C平行的向量场
+V(t), 则称 V(t) 是 V 沿 c 平行移动到 c(1).
+
+设 V = V^alpha(c(t)) partial/partial u^alpha gamma
+O = D_ c'(t) V = nabla_ (u^alpha) partial/partial u^alpha gamma V^beta partial/partial u^beta gamma
+(c'(t) = (u^alpha)'partial/partial u^alpha gamma)
+=(u^alpha)'partial/partial u^alpha V^beta partial/partial u^beta gamma
++(u^alpha)' V^epsilon Gamma_alphatau^beta partial/partial u^beta gamma
+=(u^alpha)' (partial/partial u^alpha V^beta+V^epsilon Gamma_epsilonalpha^beta) partial/partial u^beta gamma
+=(d/d t V^beta+V^epsilon(c')^alpha Gamma_epsilonalpha^beta) partial/partial u^beta gamma
+平行移动的方程组
+d/d t V^beta(c(t)) + V^epsilon(c')^alpha Gamma_epsilonalpha^beta = 0
+
+命题. 向量沿着给定曲线平行移动是唯一确定的.
+映射: T_ c(0) Sigma to T_ c(0) Sigma
+V to V(1)
+是个线性同构.
+
+命题. 设 V_1, V_2 向量场沿 c(t) 都平行, 则 <V_1, V_2> 沿着 c(t) 是常数.
+
+---
+
+证明. d/d t <V_1, V_2> | _ c(t)
+=<d/d t V_1(c(t)), V_2> + <V_1, d/d t V_2(c(t))>
+=<(V_i^epsilon)'partial/partial u^epsilon gamma + V_1^beta Gamma_alphabeta^epsilon partial/partial u^epsilon gamma, V_2>
++<V_1, (V_2^epsilon)'partial/partial u^epsilon gamma + V_2^beta Gamma_alphabeta^epsilon partial/partial u^epsilon gamma>
+=0
+d/d t <V_1, V_2> | _ c(t) = c'(t) (<V_1, V_2>)
+=<D_ c' V_1, V_2>+<V_1, D_ c' V_2>
+=0
+
+命题. 平行移动不改变向量的长度与向量间的夹角.
+
+沿闭曲线平行移动
+设 Sigma 是参数曲面
+gamma = gamma(u)
+p in Sigma, C 是过 P 的
+分段光滑的闭曲线.
+设 V in T_p Sigma 将 V 沿
+C 平行移动一周, 围绕P得到V', 求 <V, V'>
+
+不妨设 (u^1, u^2) 是正交参数
+e_alpha = 1/sqrt(epsilon_alphaalpha) partial/partial u^alpha gamma
+不妨设 V(t) 是单位法向量
+则 V 在一且 c(t) 处都是单位法向量.
+可以设 V(t) = (cos omega (t)) e_1 (t)
++(sin omega (t))e_2 (t)
+设 t 是弧长, c 的长是 l.
+问, omega(L) - omega (s)=?
+
+DV = - sin omega d omega e_1 + cos omega d omega e_2
++ cos omega D e_1 + sin omega D e_2
+(-sin omega e_1 + cos omega e_2) D V
+=d omega + cos^2 omega e_2 D e_1 - sin^2 omega e_1 D e_2
+= d omega + e_2 D e_1
+0=D_ c' V = d/d t omega + e_2 D_ c' e_1
+d/d t omega = -e_2 D_ c'(s) e_1
+=<-1/sqrt(g_22)(D_ (c')^alpha partial/partial u^alpha gamma 1/ sqrt(g_11) partial/partial u^1 gamma)>
+=-1/sqrt(g_11 g_22) (e')^alpha Gamma_alpha1^2 g_22 
+=sqrt(g_22) / sqrt(g_11) (c')^alpha Gamma_alpha1^2
+Gamma_11^2 = 1/2 g^22 (partial_1 g_12 + partial_1 g_12 -partial_2 g_11)
+= 1/(2 g_22) (-partial_2 g_11)
+
+Gamma_21^2 = 1/2 g^22(partial_1 g_22+0-0)
+=partial_1 g_22 / (2 g_22)
+d/d t omega = -sqrt(g12 / g_11) ((c')^1(-partial_2 g_11 / (2 g_22)) + (c')^2 partial_1 g_22 / (2 g_22))
+=+1/sqrt(g_11 g_22) ((c')^1 partial_2 g_11 - (c')^2 partial_1 g_22)
+=d/d t theta-k_g (刘维尔公式)
+
+int_c d omega = int_c d theta - int_c k_g d t = int_D K d Sigma
+
+命题. c(t) 是 Sigma 上的曲线
+并且 t 是弧长参数
+则 c'(t) 沿着 c(t) 平行 iff
+c(t) 是测地线.
+
+测地线方程.
+0=D_ c' c' = D (c')^alpha partial/partial u^alpha gamma (c')^beta partial/partial u^beta gamma
+=((c'')^beta + (c')^epsilon (c')^tau Gamma_epsilontau^beta)partial/partial u^beta gamma
+在弧长参数下, 测地线方程
+(c^beta)''+(c')^epsilon(c')^tau Gamma_epsilontau^beta(c(t))=0, beta = 1,2
+
+(1) 给定 c(0), c'(0) in T_ c(0) Sigma
+则 c(t) 唯一确定的.
+
+(2) 测地线只与第一基本形式有关.
+若 sigma: Sigma to Sigma 是等距变换,
+则 sigma cdot C 是测地线 iff c 本身就是测地线.
+
+例子. 设 S^2(1) subet R^3 是单位求main
+S^2(1)={x | |x|=1}.
+过 (0,0,1) 点, 所有的大圆都是测地线(旋转面), 而且就是全部测地线. (方程)
+
+任何一点 p in S^2(1), 存在正交变换 sigma (等距), 使得 sigma(p)=(0,0,1).
+implies S^2(1) 上一切测地线都是大圆.
+
+例子. I = ((d u^1)^2+(d u^2)^2)/(1-(u^1)^2+(u^2)^2)
+D={(u^1)^2+(u^2)^2<1}
+则 (D,I) 的测地线
+或者是过 O 的直线
+或者是与 partial D 正交的
+圆弧.
+PSL_2=G.
+
+测地坐标系.
+
+(1) 平行坐标系.
+取定一个点 x_0 in Sigma. 和一条过 x_0 的测地线 c(t).
+gamma(t_1 S)=c_t(s)
+c_t(0)=c(t)
+c_t'(0) perp c'(t)
+c_t(s) 是测地线.
+
+定义. exp_x(v):= c_v(|v|), x in Sigma, v in T_x Sigma
+其中 c_v(0)=x, 以 c_v'(0)=v/|v| 为方向的测地线
+
+沿着 c(t) 取定单位向量场 v(t), v(t) perp c'(t)
+令 gamma(t,s)=exp_ c(t) (s V(t)).
