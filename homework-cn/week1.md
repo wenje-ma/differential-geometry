@@ -154,7 +154,7 @@ $$
 
 ### 解答 3
 
-**(1) 平面曲线的几何: 曲率与平面曲线基本定理.**
+(1) 平面曲线的几何: 曲率与平面曲线基本定理.
 
 设 $\boldsymbol r:\left[0,L\right]\to\mathbb E^{2}$ 是以弧长为参数的平面正则曲线. 切向量 $\boldsymbol t\left(s\right):=\dot{\boldsymbol r}\left(s\right)=\frac{\mathrm d\boldsymbol r}{\mathrm ds}$ 是单位向量; $\mathbb E^{2}$ 中存在唯一的单位向量 $\boldsymbol n\left(s\right)\perp\boldsymbol t\left(s\right)$ 使 $\left\{\boldsymbol t,\boldsymbol n\right\}$ 构成右手系, 称为曲线在 $\boldsymbol r\left(s\right)$ 处的弗勒内标架 (此为**定义 2.2.2 (平面曲线的曲率与弗勒内标架)**). 由 $\left|\boldsymbol t\right|^{2}\equiv1$ 对 $s$ 求导得 $\dot{\boldsymbol t}\perp\boldsymbol t$; 二维中垂直于 $\boldsymbol t$ 的方向只有 $\boldsymbol n$ 方向, 故存在数量函数 $\kappa\left(s\right)$ 使 $\dot{\boldsymbol t}\left(s\right)=\kappa\left(s\right)\boldsymbol n\left(s\right)$, 再由 $\left|\boldsymbol n\right|^{2}\equiv1$ 求导得 $\dot{\boldsymbol n}\perp\boldsymbol n$, 由 $\left\langle\boldsymbol t,\boldsymbol n\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol t},\boldsymbol n\right\rangle+\left\langle\boldsymbol t,\dot{\boldsymbol n}\right\rangle=0$, 代入前式得 $\dot{\boldsymbol n}\left(s\right)=-\kappa\left(s\right)\boldsymbol t\left(s\right)$. 于是平面弗勒内方程 (**定义 2.2.2 (平面曲线的曲率与弗勒内标架)**) 为
 
@@ -179,7 +179,7 @@ $$
 
 连同 $\dot x^1,\dot x^2$ 的定义构成一阶常微分方程组; 因 $\kappa\in C^1$, 右端关于未知量满足利普希茨条件, 由一阶常微分方程组初值问题解的存在唯一性 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol r}$ 也是同一 $\kappa$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol A$ 使 $\boldsymbol A\dot{\boldsymbol r}\left(0\right)=\dot{\widetilde{\boldsymbol r}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol r}\left(0\right)-\boldsymbol A\boldsymbol r\left(0\right)$, 构造 $\widehat{\boldsymbol r}=\boldsymbol A\boldsymbol r+\boldsymbol\beta_0$; 由正向部分它仍以 $\kappa$ 为有向曲率, 且与 $\widetilde{\boldsymbol r}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol r}=\widehat{\boldsymbol r}$. $\blacksquare$
 
-**(2) 平面曲线的特别之处.**
+(2) 平面曲线的特别之处.
 
 (a) 曲率是带符号的数量函数. 平面上 $\dot{\boldsymbol t}\perp\boldsymbol t$ 只有 $\boldsymbol n$ 一个正交方向, 故 $\kappa$ 是标量且可正可负 (有向曲率, $\left|k\right|$ 为通常曲率); 而空间曲率定义为 $k=\left|\dot{\boldsymbol t}\right|\ge0$ (非负) (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), 主法向 $\boldsymbol n=\dot{\boldsymbol t}/\left|\dot{\boldsymbol t}\right|$ 由切向变化直接确定, 无符号可言.
 
@@ -207,7 +207,7 @@ $$
 k=\frac{w}{v^{3}},\quad \tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}.
 $$
 
-**(1)** $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a> 0$).
+(1) $\boldsymbol r\left(t\right)=\left(a\cosh t,a\sinh t,bt\right)$ ($a> 0$).
 
 $$
 \boldsymbol r'=\left(a\sinh t,a\cosh t,b\right),;v^{2}=a^{2}\cosh2t+b^{2},;\boldsymbol r''=\left(a\cosh t,a\sinh t,0\right),;\boldsymbol r'''=\left(a\sinh t,a\cosh t,0\right),;\boldsymbol r'\wedge\boldsymbol r''=\left(-ab\sinh t,ab\cosh t,-a^{2}\right),;w^{2}=a^{2}b^{2}\cosh2t+a^{4},;w=a\sqrt{a^{2}+b^{2}\cosh2t},;\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=a^{2}b.
@@ -220,7 +220,7 @@ k=\frac{a\sqrt{a^{2}+b^{2}\cosh2t}}{\left(a^{2}\cosh2t+b^{2}\right)^{3/2}},\quad
 \tau=\frac{b}{a^{2}+b^{2}\cosh2t}.\ \blacksquare
 $$
 
-**(3)** $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a> 0$).
+(3) $\boldsymbol r\left(t\right)=\left(a\left(1-\sin t\right),a\left(1-\cos t\right),bt\right)$ ($a> 0$).
 
 $$
 \boldsymbol r'=\left(-a\cos t,a\sin t,b\right),;v^{2}=a^{2}+b^{2}=:c^{2},;\boldsymbol r''=\left(a\sin t,a\cos t,0\right),;\boldsymbol r'''=\left(a\cos t,-a\sin t,0\right),;\boldsymbol r'\wedge\boldsymbol r''=\left(-ab\cos t,ab\sin t,-a^{2}\right),;w^{2}=a^{2}c^{2},\ w=ac,;\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)=\left\langle\left(-ab\cos t,ab\sin t,-a^{2}\right),\left(a\cos t,-a\sin t,0\right)\right\rangle=-a^{2}b.
@@ -350,7 +350,7 @@ $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 为标准正交基, �
 
 由题可知, $\widetilde{\boldsymbol r}\left(t\right)=\boldsymbol T\boldsymbol r\left(t\right)+P$.
 
-**弧长参数.** 由正交矩阵保内积与长度 ($\left|\boldsymbol T\boldsymbol x\right|=\left|\boldsymbol x\right|$):
+弧长参数. 由正交矩阵保内积与长度 ($\left|\boldsymbol T\boldsymbol x\right|=\left|\boldsymbol x\right|$):
 
 $$
 \left|\widetilde{\boldsymbol r}'\right|=\left|\boldsymbol T\boldsymbol r'\right|=\left|\boldsymbol r'\right|.
@@ -358,7 +358,7 @@ $$
 
 故 $\widetilde s\left(t\right)=\int\left|\widetilde{\boldsymbol r}'\right|\mathrm dt=\int\left|\boldsymbol r'\right|\mathrm dt=s\left(t\right)$ (只差常数). 因此 $\boldsymbol r$ 的弧长参数 $s$ 仍是 $\widetilde{\boldsymbol r}$ 的弧长参数, 弧长参数化不变.
 
-**曲率.** 已知 $\det\boldsymbol T=-1$, 曲率 $k=\left|\dot{\boldsymbol t}\right|$ (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), 由正交矩阵保内积与长度:
+曲率. 已知 $\det\boldsymbol T=-1$, 曲率 $k=\left|\dot{\boldsymbol t}\right|$ (**定义 2.3.1 (空间曲线的曲率与弗勒内标架)**), 由正交矩阵保内积与长度:
 
 $$
 \widetilde k=\left|\dot{\widetilde{\boldsymbol t}}\right|=\left|\boldsymbol T\dot{\boldsymbol t}\right|=\left|\dot{\boldsymbol t}\right|=k.
@@ -366,7 +366,7 @@ $$
 
 故反向变换下曲率不变 $\widetilde k=k$.
 
-**挠率.** 由**习题 2.5 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
+挠率. 由**习题 2.5 (一般参数下的曲率与挠率公式)** 中的挠率公式 $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}$,
 
 $$
 \widetilde\tau

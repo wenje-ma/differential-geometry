@@ -74,7 +74,7 @@ $$
 
 设 $\left\{\boldsymbol t,\boldsymbol n,\boldsymbol b\right\}$ 是曲线 $C$ 的弗雷内标架 (**定义 2.3.1 (曲率与弗雷内标架)**), 记 $v\left(t\right):=\left|\boldsymbol r'\left(t\right)\right|$. 因 $\boldsymbol t$ 是单位切向量, $\boldsymbol r'\left(t\right)=v\left(t\right)\boldsymbol t\left(t\right)$, 且 $\boldsymbol n\perp\boldsymbol t$, $\left|\boldsymbol t\right|=\left|\boldsymbol n\right|=1$.
 
-**(1)** 因 $C$ 是平面曲线, 由**定理 3.1 (平面曲线的挠率为零)** 有 $\tau\equiv0$; 由**定理 2.3.2 (弗雷内公式)**, 对弧长参数 $s$ 有 $\frac{\mathrm d\boldsymbol n}{\mathrm ds}=-k\boldsymbol t$. 由链式法则 $\frac{\mathrm d}{\mathrm dt}=v\frac{\mathrm d}{\mathrm ds}$, 得
+(1) 因 $C$ 是平面曲线, 由**定理 3.1 (平面曲线的挠率为零)** 有 $\tau\equiv0$; 由**定理 2.3.2 (弗雷内公式)**, 对弧长参数 $s$ 有 $\frac{\mathrm d\boldsymbol n}{\mathrm ds}=-k\boldsymbol t$. 由链式法则 $\frac{\mathrm d}{\mathrm dt}=v\frac{\mathrm d}{\mathrm ds}$, 得
 
 $$
 \boldsymbol n'\left(t\right)=\frac{\mathrm d\boldsymbol n}{\mathrm dt}=-v\,k\,\boldsymbol t.
@@ -94,7 +94,7 @@ $$
 \alpha'\left(t\right)\perp\boldsymbol r'\left(t\right).
 $$
 
-**(2)** 令 $t_1=a$, $t_2=a+h$（$h\to0$, $h\neq0$）. 曲线在 $\boldsymbol r\left(t\right)$ 处的法线是 $\left\{\boldsymbol r\left(t\right)+\lambda\boldsymbol n\left(t\right):\lambda\in\mathbb R\right\}$; 交点 $\alpha\left(t_1,t_2\right)$ 同时落在两条法线上, 故存在 $\lambda_1,\lambda_2$ 使
+(2) 令 $t_1=a$, $t_2=a+h$（$h\to0$, $h\neq0$）. 曲线在 $\boldsymbol r\left(t\right)$ 处的法线是 $\left\{\boldsymbol r\left(t\right)+\lambda\boldsymbol n\left(t\right):\lambda\in\mathbb R\right\}$; 交点 $\alpha\left(t_1,t_2\right)$ 同时落在两条法线上, 故存在 $\lambda_1,\lambda_2$ 使
 
 $$
 \alpha\left(t_1,t_2\right)=\boldsymbol r\left(t_1\right)+\lambda_1\boldsymbol n\left(t_1\right)=\boldsymbol r\left(t_2\right)+\lambda_2\boldsymbol n\left(t_2\right),

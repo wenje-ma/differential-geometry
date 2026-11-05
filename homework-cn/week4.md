@@ -40,7 +40,7 @@
 
 ### 解答 1.1
 
-**(1) 椭球面** $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$. 取参数
+(1) 椭球面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$. 取参数
 
 $$
 \boldsymbol r\left(u,v\right)=\left(a\sin u\cos v,\ b\sin u\sin v,\ c\cos u\right),\quad u\in\left(0,\pi\right),\ v\in\left[0,2\pi\right).
@@ -61,7 +61,7 @@ $$
 
 因 $u\in\left(0,\pi\right)$ 时 $\sin u> 0$, 且 $\left(bc\sin u\cos v,ac\sin u\sin v,ab\cos u\right)\ne\boldsymbol0$ ($\cos v,\sin v$ 不能同时为零), 故 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol r\left(u,v\right)$ 是椭球面 (除去南北两极) 的正则参数曲面. $\blacksquare$
 
-**(2) 单叶双曲面** $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$. 取参数
+(2) 单叶双曲面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$. 取参数
 
 $$
 \boldsymbol r\left(u,v\right)=\left(a\cosh u\cos v,\ b\cosh u\sin v,\ c\sinh u\right),\quad u\in\mathbb R,\ v\in\left[0,2\pi\right).
@@ -82,7 +82,7 @@ $$
 
 因 $\cosh u> 0$ 恒成立, 前两个分量同为零当且仅当 $\cos v=\sin v=0$, 这不可能, 故 $\boldsymbol r_u\wedge\boldsymbol r_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, 它是单叶双曲面的正则参数曲面. $\blacksquare$
 
-**(4) 椭圆抛物面** $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$. 取参数
+(4) 椭圆抛物面 $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$. 取参数
 
 $$
 \boldsymbol r\left(u,v\right)=\left(u,\ v,\ \frac{u^2}{a^2}+\frac{v^2}{b^2}\right),\quad \left(u,v\right)\in\mathbb R^2.
@@ -140,7 +140,7 @@ $$
 
 由**定义 3.2.1 (第一基本形式)**, $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$.
 
-**(1)** $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$.
+(1) $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$.
 
 $$
 \boldsymbol r_u=\left(\cos v,\sin v,0\right),\quad
@@ -159,7 +159,7 @@ $$
 
 即 $g_{11}=1,\ g_{12}=0,\ g_{22}=u^2+b^2$. $\blacksquare$
 
-**(2)** $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
+(2) $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
 $$
 \boldsymbol r_u=\left(a,b,2u\right),\quad
@@ -211,7 +211,7 @@ $\blacksquare$
 
 ### 解答 1.11
 
-**不一定相同**; 指向相同 $\Leftrightarrow\det J> 0$ (同向参数变换).
+不一定相同; 指向相同 $\Leftrightarrow\det J> 0$ (同向参数变换).
 
 设 $\left(x,y\right)$ 是另一组参数, 即存在参数变换 $u=u\left(x,y\right)$, $v=v\left(x,y\right)$, 记其雅可比行列式 $J:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}$. 由**推导 3.1.2 (参数变换下法向)**,
 
@@ -219,7 +219,7 @@ $$
 \boldsymbol r_x\wedge\boldsymbol r_y=\det J\,\boldsymbol r_u\wedge\boldsymbol r_v.
 $$
 
-因此两向量 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的**指向是否相同, 取决于 $\det J$ 的符号**: 当 $\det J> 0$ (同向参数变换) 时 $\boldsymbol r_x\wedge\boldsymbol r_y$ 与 $\boldsymbol r_u\wedge\boldsymbol r_v$ 同向; 当 $\det J< 0$ (反向参数变换) 时两者反向. $\blacksquare$
+因此两向量 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r_x\wedge\boldsymbol r_y$ 的指向是否相同, 取决于 $\det J$ 的符号: 当 $\det J> 0$ (同向参数变换) 时 $\boldsymbol r_x\wedge\boldsymbol r_y$ 与 $\boldsymbol r_u\wedge\boldsymbol r_v$ 同向; 当 $\det J< 0$ (反向参数变换) 时两者反向. $\blacksquare$
 
 ## 1.14 (第二基本形式的计算)
 
@@ -233,7 +233,7 @@ $$
 
 由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol n=\frac{\boldsymbol r_u\wedge\boldsymbol r_v}{\left|\boldsymbol r_u\wedge\boldsymbol r_v\right|}$; 由**定义 3.3.1 (第二基本形式)**, $b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle,\ b_{12}=\left\langle\boldsymbol r_{uv},\boldsymbol n\right\rangle,\ b_{22}=\left\langle\boldsymbol r_{vv},\boldsymbol n\right\rangle$.
 
-**(1)** $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$. 由解答 1-8(1),
+(1) $\boldsymbol r\left(u,v\right)=\left(u\cos v,u\sin v,bv\right)$. 由解答 1-8(1),
 
 $$
 \boldsymbol r_u=\left(\cos v,\sin v,0\right),\quad\boldsymbol r_v=\left(-u\sin v,u\cos v,b\right),
@@ -274,7 +274,7 @@ $$
 
 $\blacksquare$
 
-**(2)** $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$. 由解答 1-8(2),
+(2) $\boldsymbol r\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$. 由解答 1-8(2),
 
 $$
 \boldsymbol r_u=\left(a,b,2u\right),\quad\boldsymbol r_v=\left(a,-b,2v\right),
@@ -382,11 +382,11 @@ $$
 
 其中 $\sigma$ 的符号由该参数化下 $\boldsymbol r_u\wedge\boldsymbol r_v$ 与 $\boldsymbol r$ 平行或反平行决定.
 
-**切空间与法线已由上述通用结论确定**: 对每种参数表示, 切空间都是 $T_{\boldsymbol r}S=\boldsymbol r^{\perp}$, 单位法向为 $\boldsymbol n=\pm\boldsymbol r$.
+切空间与法线已由上述通用结论确定: 对每种参数表示, 切空间都是 $T_{\boldsymbol r}S=\boldsymbol r^{\perp}$, 单位法向为 $\boldsymbol n=\pm\boldsymbol r$.
 
-**第一基本形式**由**定义 3.2.1 (第一基本形式)** 按 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$ 逐张计算.
+第一基本形式由**定义 3.2.1 (第一基本形式)** 按 $g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle,\ g_{12}=\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle,\ g_{22}=\left\langle\boldsymbol r_v,\boldsymbol r_v\right\rangle$ 逐张计算.
 
-**第二基本形式**可用如下通用关系求出. 由内积求导, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-g_{11}$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
+第二基本形式可用如下通用关系求出. 由内积求导, $0=\frac{\partial}{\partial v}\left\langle\boldsymbol r_u,\boldsymbol r\right\rangle=\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle+\left\langle\boldsymbol r_u,\boldsymbol r_v\right\rangle$, 故 $\left\langle\boldsymbol r_{uv},\boldsymbol r\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-g_{11}$, $\left\langle\boldsymbol r_{vv},\boldsymbol r\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol n=\sigma\boldsymbol r$,
 
 $$
 b_{11}=\left\langle\boldsymbol r_{uu},\boldsymbol n\right\rangle=\sigma\left\langle\boldsymbol r_{uu},\boldsymbol r\right\rangle=-\sigma g_{11},\quad
@@ -402,7 +402,7 @@ $$
 
 下面逐张确定 $\sigma$ 并给出 $T,\ \boldsymbol n,\ \mathrm I,\ \mathrm{II}$.
 
-**(i) 球坐标.** 取参数
+(i) 球坐标. 取参数
 
 $$
 \boldsymbol r\left(\theta,\varphi\right)=\left(\sin\varphi\cos\theta,\ \sin\varphi\sin\theta,\ \cos\varphi\right),\quad \varphi\in\left(0,\pi\right),\ \theta\in\left[0,2\pi\right).
@@ -423,7 +423,7 @@ $$
 \left|\boldsymbol r_\theta\wedge\boldsymbol r_\varphi\right|=\sin\varphi.
 $$
 
-因 $\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi> 0$, 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=-\boldsymbol r$, 即 $\sigma=-1$ (球面**内法向**). 由**定义 3.2.1 (第一基本形式)**:
+因 $\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi> 0$, 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=-\boldsymbol r$, 即 $\sigma=-1$ (球面内法向). 由**定义 3.2.1 (第一基本形式)**:
 
 $$
 g_{11}=\left\langle\boldsymbol r_\theta,\boldsymbol r_\theta\right\rangle=\sin^2\varphi,\quad
@@ -445,7 +445,7 @@ $$
 
 $\blacksquare$
 
-**(ii) 函数图形 (上半球).** 取参数
+(ii) 函数图形 (上半球). 取参数
 
 $$
 \boldsymbol r\left(x,y\right)=\left(x,\ y,\ \sqrt{1-x^2-y^2}\right),\quad x^2+y^2< 1.
@@ -465,7 +465,7 @@ $$
 \left|\boldsymbol r_x\wedge\boldsymbol r_y\right|=\frac1f,
 $$
 
-故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=\boldsymbol r$, 即 $\sigma=+1$ (球面**外法向**). 由**定义 3.2.1 (第一基本形式)**:
+故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=\boldsymbol r$, 即 $\sigma=+1$ (球面外法向). 由**定义 3.2.1 (第一基本形式)**:
 
 $$
 g_{11}=1+\frac{x^2}{f^2},\quad g_{12}=\frac{xy}{f^2},\quad g_{22}=1+\frac{y^2}{f^2}.
@@ -485,7 +485,7 @@ $$
 
 $\blacksquare$
 
-**(iii) 立体投影.** 取参数 (从北极 $\left(0,0,1\right)$ 的球极投影)
+(iii) 立体投影. 取参数 (从北极 $\left(0,0,1\right)$ 的球极投影)
 
 $$
 \boldsymbol r\left(u,v\right)=\frac{\left(2u,\ 2v,\ u^2+v^2-1\right)}{1+u^2+v^2},\quad \left(u,v\right)\in\mathbb R^2.
@@ -506,7 +506,7 @@ $$
 \left|\boldsymbol r_u\wedge\boldsymbol r_v\right|=\frac4{D^2},
 $$
 
-故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=-\boldsymbol r$, 即 $\sigma=-1$ (球面**内法向**). 由**定义 3.2.1 (第一基本形式)**:
+故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol n=-\boldsymbol r$, 即 $\sigma=-1$ (球面内法向). 由**定义 3.2.1 (第一基本形式)**:
 
 $$
 g_{11}=\left\langle\boldsymbol r_u,\boldsymbol r_u\right\rangle=\frac4{D^2},\quad

@@ -32,7 +32,7 @@
 > 
 > 设 $C$ 是 $\mathbb E^{3}$ 中的扭结曲线, 则 $C$ 的全曲率满足 $\int_C\kappa\,\mathrm ds\ge4\pi$.
 
-> **法里-米尔诺定理 (题面给定)**
+> 法里-米尔诺定理 (题面给定)
 > 
 > 设 $\gamma:\left[0,L\right]\to\mathbb E^{3}$ 是光滑弧长参数简单闭曲线, 若 $\gamma$ 是非平凡纽结, 则其全曲率积分满足 $\int_\gamma\kappa\left(s\right)\mathrm ds> 4\pi$.
 
@@ -204,7 +204,7 @@ $$
 =\frac{c}{\sqrt{1+c^{2}}}=\text{常数},
 $$
 
-即切向量 $\boldsymbol t$ 与固定方向 $\boldsymbol v$ 的夹角恒定. 因此满足 $\tau=c\kappa$ 的曲线正是**一般螺旋线** (其切向量与固定方向保持定角). $\blacksquare$
+即切向量 $\boldsymbol t$ 与固定方向 $\boldsymbol v$ 的夹角恒定. 因此满足 $\tau=c\kappa$ 的曲线正是一般螺旋线 (其切向量与固定方向保持定角). $\blacksquare$
 
 > 计算 $\frac{\mathrm d}{\mathrm ds}\left(A\boldsymbol t+B\boldsymbol b\right)=\left(A\kappa-B\tau\right)\boldsymbol n$ 发现其仅与 $\boldsymbol n$ 有关, 一个自然的想法是, 若令 $\boldsymbol n$ 的系数为 $0$, 这样的曲线肯定很特殊.
 
@@ -228,7 +228,7 @@ $$
 
 三式全部成立.
 
-**唯一性**: 若 $\boldsymbol v$ 也满足三式, 设 $\boldsymbol v=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$. 由 $\boldsymbol v\wedge\boldsymbol t=\dot{\boldsymbol t}=\kappa\boldsymbol n$ 及 $\boldsymbol n\wedge\boldsymbol t=-\boldsymbol b$, $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$ 得 $-\beta\boldsymbol b+\gamma\boldsymbol n=\kappa\boldsymbol n$, 故 $\beta=0$, $\gamma=\kappa$. 由 $\boldsymbol v\wedge\boldsymbol b=\dot{\boldsymbol b}=-\tau\boldsymbol n$ 及 $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$ 得 $-\alpha\boldsymbol n-\beta\boldsymbol t=-\tau\boldsymbol n$, 故 $\alpha=\tau$. 于是 $\boldsymbol v=\tau\boldsymbol t+\kappa\boldsymbol b$, 即
+唯一性: 若 $\boldsymbol v$ 也满足三式, 设 $\boldsymbol v=\alpha\boldsymbol t+\beta\boldsymbol n+\gamma\boldsymbol b$. 由 $\boldsymbol v\wedge\boldsymbol t=\dot{\boldsymbol t}=\kappa\boldsymbol n$ 及 $\boldsymbol n\wedge\boldsymbol t=-\boldsymbol b$, $\boldsymbol b\wedge\boldsymbol t=\boldsymbol n$ 得 $-\beta\boldsymbol b+\gamma\boldsymbol n=\kappa\boldsymbol n$, 故 $\beta=0$, $\gamma=\kappa$. 由 $\boldsymbol v\wedge\boldsymbol b=\dot{\boldsymbol b}=-\tau\boldsymbol n$ 及 $\boldsymbol t\wedge\boldsymbol b=-\boldsymbol n$ 得 $-\alpha\boldsymbol n-\beta\boldsymbol t=-\tau\boldsymbol n$, 故 $\alpha=\tau$. 于是 $\boldsymbol v=\tau\boldsymbol t+\kappa\boldsymbol b$, 即
 
 $$
 \boldsymbol v\left(s\right)=\tau\left(s\right)\,\boldsymbol t\left(s\right)+\kappa\left(s\right)\,\boldsymbol b\left(s\right).\ \blacksquare
@@ -240,9 +240,9 @@ $$
 
 ### 解答 1.20
 
-两曲线**合同**即相差 $\mathbb E^{3}$ 的一个等距变换. 由**定理 2.4.2 (空间曲线基本定理)**, 只需证明二者具有相同的曲率与挠率, 再用**习题 2.5 (一般参数下的曲率与挠率公式)** 计算.
+两曲线合同即相差 $\mathbb E^{3}$ 的一个等距变换. 由**定理 2.4.2 (空间曲线基本定理)**, 只需证明二者具有相同的曲率与挠率, 再用**习题 2.5 (一般参数下的曲率与挠率公式)** 计算.
 
-**曲线 $\boldsymbol r$.** 求导:
+曲线 $\boldsymbol r$. 求导:
 
 $$
 \boldsymbol r'=\left(1+\sqrt3\cos t,\ -2\sin t,\ \sqrt3-\cos t\right),;\boldsymbol r''=\left(-\sqrt3\sin t,\ -2\cos t,\ \sin t\right),;\boldsymbol r'''=\left(-\sqrt3\cos t,\ 2\sin t,\ \cos t\right).
@@ -271,7 +271,7 @@ $$
 
 由**习题 2.5 (一般参数下的曲率与挠率公式)**: $\kappa=\frac{w}{v^{3}}=\frac{4\sqrt2}{\left(2\sqrt2\right)^{3}}=\frac14$, $\tau=\frac{\left(\boldsymbol r',\boldsymbol r'',\boldsymbol r'''\right)}{w^{2}}=\frac{-8}{32}=-\frac14$.
 
-**曲线 $\widetilde{\boldsymbol r}$.** 求导:
+曲线 $\widetilde{\boldsymbol r}$. 求导:
 
 $$
 \widetilde{\boldsymbol r}'=\left(-\sin\frac{t}{2},\ \cos\frac{t}{2},\ -1\right),\quad
@@ -291,7 +291,7 @@ $$
 
 混合积 $\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)=-\frac18$. 故 $\widetilde k=\frac{\widetilde w}{\widetilde v^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\widetilde\tau=\frac{\left(\widetilde{\boldsymbol r}',\widetilde{\boldsymbol r}'',\widetilde{\boldsymbol r}'''\right)}{\widetilde w^{2}}=\frac{-1/8}{1/2}=-\frac14$.
 
-**结论.** 两条曲线的曲率, 挠率分别相等: $k=\widetilde k=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb E^{3}$ 中相差一个刚体运动, 即两曲线**合同**. $\blacksquare$
+结论. 两条曲线的曲率, 挠率分别相等: $k=\widetilde k=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb E^{3}$ 中相差一个刚体运动, 即两曲线合同. $\blacksquare$
 
 ## 2 (非平凡纽结全曲率的下确界)
 
@@ -299,14 +299,14 @@ $$
 
 ### 解答 2
 
-**不存在**这样的 $\varepsilon> 0$. 理由如下.
+不存在这样的 $\varepsilon> 0$. 理由如下.
 
 对任意 $\delta> 0$, 可以构造一条非平凡纽结 $\gamma$, 使其全曲率落在区间 $\left(4\pi,\ 4\pi+\delta\right)$ 内. 构造思路: 取一条几乎整段落在一张平面内的闭曲线, 它形如"平面圆周上打一个微小纽结"的形状:
 
 - 远离纽结的部分是一段接近整圆的圆弧, 其全曲率趋近圆周的全曲率 $2\pi$ (由**定理 7.3.4 (芬切尔不等式)**, 闭曲线的全曲率不小于 $2\pi$, 而圆周恰好取到 $2\pi$);
 - 微小纽结所在的小段, 其切向量几乎额外扫过一整圈 (该小段作为近平面凸闭曲线, 由**定理 7.3.4 (芬切尔不等式)** 其全曲率不小于 $2\pi$, 且随其趋近平面凸环而趋近 $2\pi$).
 
-于是总全曲率趋近 $2\pi+2\pi=4\pi$, 取纽结小段足够小即可使 $\int_\gamma\kappa< 4\pi+\delta$. 另一方面, 因 $\gamma$ 是非平凡纽结, 由**定理 7.3.5 (扭结曲线的全曲率)** 有 $\int_\gamma\kappa\ge4\pi$, 再由**法里-米尔诺定理 (题面给定)** (非平凡纽结 $\int_\gamma\kappa> 4\pi$) 得 $\int_\gamma\kappa> 4\pi$. 故对任意 $\delta> 0$ 都存在非平凡纽结满足 $4\pi< \int_\gamma\kappa< 4\pi+\delta$.
+于是总全曲率趋近 $2\pi+2\pi=4\pi$, 取纽结小段足够小即可使 $\int_\gamma\kappa< 4\pi+\delta$. 另一方面, 因 $\gamma$ 是非平凡纽结, 由**定理 7.3.5 (扭结曲线的全曲率)** 有 $\int_\gamma\kappa\ge4\pi$, 再由法里-米尔诺定理 (题面给定) (非平凡纽结 $\int_\gamma\kappa> 4\pi$) 得 $\int_\gamma\kappa> 4\pi$. 故对任意 $\delta> 0$ 都存在非平凡纽结满足 $4\pi< \int_\gamma\kappa< 4\pi+\delta$.
 
 若存在题设中的 $\varepsilon> 0$ 使一切非平凡纽结都有 $\int_\gamma\kappa\ge4\pi+\varepsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma\kappa\ge4\pi+\varepsilon> 4\pi$, 与上面构造出的, 全曲率可以任意接近 $4\pi$ 的纽结矛盾.
 

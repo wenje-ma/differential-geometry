@@ -267,7 +267,7 @@ $$
 
 以 $k_1,k_2$ 记 $S$ 的主曲率, 则 $H=\frac{k_1+k_2}{2}$, $K=k_1k_2$.
 
-**(1) 切平面平行.**
+(1) 切平面平行.
 
 由**命题 3.4.4 (法向微分是切向量场)**, $\boldsymbol n_u,\boldsymbol n_v$ 是切向量, 即 $\boldsymbol n_\alpha\in T_{\boldsymbol r}S=\mathrm{span}\left\{\boldsymbol r_1,\boldsymbol r_2\right\}$; 于是 $S_{\lambda}$ 的坐标切向量
 
@@ -286,7 +286,7 @@ $$
 
 因 $\boldsymbol r_{\lambda,\alpha}\in T_{\boldsymbol r}S$ 且 $\boldsymbol r_{\lambda,1}\wedge\boldsymbol r_{\lambda,2}\parallel\boldsymbol r_1\wedge\boldsymbol r_2$, 可取 $S_{\lambda}$ 的单位法向 $\boldsymbol n_{\lambda}=\boldsymbol n$.
 
-**(2) 高斯曲率与平均曲率.**
+(2) 高斯曲率与平均曲率.
 
 由**引理 3.5.2**, 取 $S$ 的坐标切向量为点 $P$ 的单位正交主方向 $\boldsymbol r_1=\boldsymbol e_1$, $\boldsymbol r_2=\boldsymbol e_2$, 则 $g_{11}=\left\langle\boldsymbol r_1,\boldsymbol r_1\right\rangle=1$, $g_{12}=0$, $g_{22}=1$, 且第二基本形式系数 $b_{12}=0$. 因主方向对应魏因加滕变换的特征方向, 由**定义 3.4.3 (魏因加滕变换)** 与**定义 3.5.1 (主曲率与主方向)**, $\boldsymbol W\left(\boldsymbol r_\alpha\right)=-\boldsymbol n_\alpha=k_\alpha\boldsymbol r_\alpha$, 即 $\boldsymbol n_\alpha=-k_\alpha\boldsymbol r_\alpha$. 于是由 (1) 中 $\partial_\alpha\boldsymbol r_{\lambda}=\boldsymbol r_\alpha+\lambda\boldsymbol n_\alpha=\left(1-\lambda k_\alpha\right)\boldsymbol r_\alpha$ (无交叉项), 得
 
@@ -398,7 +398,7 @@ $$
 
 ### 解答 4.36
 
-**(i) 正螺面是极小曲面.**
+(i) 正螺面是极小曲面.
 
 参数化 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$, 则 $\boldsymbol r_u=\left(\cos v,\ \sin v,\ 0\right)$, $\boldsymbol r_v=\left(-u\sin v,\ u\cos v,\ b\right)$. 由**定义 3.2.1 (第一基本形式)**,
 
@@ -424,7 +424,7 @@ $$
 
 由**定义 10.1.1 (极小曲面)** ($H\equiv0$), 正螺面 $\boldsymbol r\left(u,v\right)=\left(u\cos v,\ u\sin v,\ bv\right)$ 是极小曲面.
 
-**(ii) 直纹极小曲面是平面或正螺面.**
+(ii) 直纹极小曲面是平面或正螺面.
 
 平面是直纹面 (任一方向族均为直母线), 且由**定义 10.1.1 (极小曲面)** 处处 $H\equiv0$, 故平面是直纹极小曲面. 由**例 10.1.1 (螺旋面)**, 螺旋面是唯一的直纹极小曲面, 而螺旋面即正螺面 (同一曲面的不同参数化), 因此任一非平面的直纹极小曲面必为正螺面. 综合两者: 直纹极小曲面是平面或正螺面. $\blacksquare$
 
@@ -442,7 +442,7 @@ $$
 
 ### 解答 5
 
-**(a) 面积与参数选取无关.**
+(a) 面积与参数选取无关.
 
 由于**定义 3.2.1 (第一基本形式)**, $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm du\,\mathrm dv=\int_{D}\sqrt{\det\left(g_{ij}\right)}\,\mathrm du\,\mathrm dv$, 矩阵 $\boldsymbol G=\left(g_{ij}\right)$ 为第一基本形式的系数矩阵. 由 **定理 3.2.1 (第一基本形式与参数选取无关)**, 存在 $\boldsymbol J$, 使得换参数后的新系数矩阵 $\widetilde{\boldsymbol G}$ 满足 $\widetilde{\boldsymbol G}=\boldsymbol J^\top\boldsymbol G\boldsymbol J$, 则
 
@@ -452,7 +452,7 @@ $$
 
 即面积与参数选取无关. $\blacksquare$
 
-**(b) $\widetilde{\boldsymbol r}=g\circ\boldsymbol r$ 是参数曲面片及极限公式.**
+(b) $\widetilde{\boldsymbol r}=g\circ\boldsymbol r$ 是参数曲面片及极限公式.
 
 先证正则性. 设 $\boldsymbol n\left(u,v\right)=\widetilde{\boldsymbol r}\left(u,v\right)$ 是 $S$ 的单位法向, 由**公式 3.5.4 (平均曲率与高斯曲率)** 中的 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v$, 在 $\left(u_0,v_0\right)$ 处 $K\left(p_0\right)> 0$. 因 $K$ 连续, 在 $\left(u_0,v_0\right)$ 的某邻域内 $K\neq0$, 故在该邻域内 $\boldsymbol n_u\wedge\boldsymbol n_v=K\,\boldsymbol r_u\wedge\boldsymbol r_v\neq\boldsymbol0$, 即 $\boldsymbol n_u,\boldsymbol n_v$ 线性无关. 由**定义 3.1.1 (曲面与单位法向)**, $\widetilde{\boldsymbol r}:\left(u,v\right)\mapsto\boldsymbol n\left(u,v\right)$ 是正则参数曲面片; 又 $\boldsymbol n\left(u,v\right)\in S^{2}\left(1\right)$, 故它是单位球面在 $\boldsymbol n\left(u_0,v_0\right)$ 附近的参数化.
 
