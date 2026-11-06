@@ -2,11 +2,11 @@
 
 > **公式 3.5.4 (平均曲率与高斯曲率)**
 > 
-> 魏因加滕变换的两个特征值即曲面的两个主曲率 $k_1,k_2$; 平均曲率 $H=\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol{W}$, 高斯曲率 $K=k_1k_2=\det\boldsymbol{W}$; 用第一、第二基本形式的系数表示, $H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}$, $K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}$.
+> 魏因加滕变换的两个特征值即曲面的两个主曲率 $k_1,k_2$; 平均曲率 $H=\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol{W}$, 高斯曲率 $K=k_1k_2=\det\boldsymbol{W}$; 用第一, 第二基本形式的系数表示, $H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}$, $K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}$.
 
-> **公式 4.2.8 (第一、第二基本形式)**
+> **公式 4.2.8 (第一, 第二基本形式)**
 > 
-> 曲面 $\boldsymbol{r}=\boldsymbol{r}\left(u^{1},u^{2}\right)$ 的第一、第二基本形式为 $\mathrm{I}=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$, $\mathrm{II}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$, $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$; 采用爱因斯坦求和约定, 同一项中一上一下重复出现的指标对该指标求和.
+> 曲面 $\boldsymbol{r}=\boldsymbol{r}\left(u^{1},u^{2}\right)$ 的第一, 第二基本形式为 $\mathrm{I}=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$, $\mathrm{II}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$, $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$; 采用爱因斯坦求和约定, 同一项中一上一下重复出现的指标对该指标求和.
 
 > **公式 4.2.10 (基本量的矩阵与行列式)**
 > 
@@ -14,7 +14,7 @@
 
 > **公式 4.2.11 (对偶基)**
 > 
-> $g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}_{\,\gamma}$, 即 $\left(g^{\alpha\beta}\right)\left(g_{\beta\gamma}\right)=I_2$.
+> $g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}{}_{\gamma}$, 即 $\left(g^{\alpha\beta}\right)\left(g_{\beta\gamma}\right)=I_2$.
 
 > **公式 4.2.M (自然标架的运动方程)**
 > 
@@ -54,17 +54,11 @@
 
 (1) $g^{\alpha\beta}g_{\alpha\beta}=2$;
 
-(2) $\dfrac{\partial\ln\sqrt{g}}{\partial{u}^{\alpha}}=\Gamma^{1}_{1\alpha}+\Gamma^{2}_{2\alpha}$, 其中 $g=\det\left(g_{\alpha\beta}\right)$.
+(2) $\frac{\partial\ln\sqrt{g}}{\partial{u}^{\alpha}}=\Gamma^{1}_{1\alpha}+\Gamma^{2}_{2\alpha}$, 其中 $g=\det\left(g_{\alpha\beta}\right)$.
 
 ### 解答 1.1
 
-(1) 由**公式 4.2.10 (基本量的矩阵与行列式)**, $\left(g^{\alpha\beta}\right)=G^{-1}$, 故 $\left(g^{\alpha\beta}\right)G=I_2$; 写成指标形式即**公式 4.2.11 (对偶基)**: $g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}_{\,\gamma}$. 对 $\alpha$ 与 $\gamma$ 取迹:
-
-$$
-\operatorname{tr}\left[\left(g^{\alpha\beta}\right)\left(g_{\beta\gamma}\right)\right]=\sum_{\alpha}g^{\alpha\beta}g_{\beta\alpha}=\sum_{\alpha}\delta^{\alpha}_{\,\alpha}=2.
-$$
-
-又 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$ 对称, 即 $g_{\beta\alpha}=g_{\alpha\beta}$, 故上式左端 $=\sum_{\alpha,\beta}g^{\alpha\beta}g_{\alpha\beta}=g^{\alpha\beta}g_{\alpha\beta}$, 于是 $g^{\alpha\beta}g_{\alpha\beta}=2$.
+(1) 由**公式 4.2.10 (基本量的矩阵与行列式)**, $(g^{\alpha\beta})(g_{\alpha\beta})=G^{-1}G=I_{2}$, 故 $g^{\alpha\beta}g_{\alpha\beta}=g_{11}+g_{22}=1+1=2$. $\blacksquare$
 
 (2) 由 $g>0$, $\sqrt{g}$ 可微, 且 $\ln\sqrt{g}=\frac12\ln{g}$, 故
 
@@ -72,13 +66,13 @@ $$
 \frac{\partial\ln\sqrt{g}}{\partial{u}^{\alpha}}=\frac{1}{2}\frac{\partial\ln{g}}{\partial{u}^{\alpha}}=\frac{1}{2g}\frac{\partial{g}}{\partial{u}^{\alpha}}.
 $$
 
-对 $\det$ 用"$\partial_\alpha\det{G}=\det{G}\cdot\operatorname{tr}\left(G^{-1}\partial_\alpha{G}\right)$"($G$ 可逆), 而
+对 $\det$ 用 $\partial_\alpha\det{G}=\det{G}\cdot\operatorname{tr}\left(G^{-1}\partial_\alpha{G}\right)$ ($G$ 可逆), 而
 
 $$
-\left(G^{-1}\partial_\alpha{G}\right)^{\beta}_{\,\xi}=g^{\beta\eta}\frac{\partial{g}_{\eta\xi}}{\partial{u}^{\alpha}},
+\left(G^{-1}\partial_\alpha{G}\right)^{\beta}{}_{\xi}=g^{\beta\eta}\frac{\partial{g}_{\eta\xi}}{\partial{u}^{\alpha}},
 $$
 
-取迹得 $\operatorname{tr}\left(G^{-1}\partial_\alpha{G}\right)=g^{\beta\eta}\dfrac{\partial{g}_{\eta\beta}}{\partial{u}^{\alpha}}$, 把哑指标 $\eta$ 改名为 $\xi$, 即
+取迹得 $\operatorname{tr}\left(G^{-1}\partial_\alpha{G}\right)=g^{\beta\eta}\frac{\partial{g}_{\eta\beta}}{\partial{u}^{\alpha}}$, 把哑指标 $\eta$ 改名为 $\xi$, 即
 
 $$
 \frac{\partial{g}}{\partial{u}^{\alpha}}=g\,g^{\beta\xi}\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}}.
@@ -93,10 +87,10 @@ $$
 下面把右端用克里斯托费尔符号表示. 由**公式 4.2.24 (第一类克里斯托费尔符号)**,
 
 $$
-\Gamma_{\xi\alpha\beta}+\Gamma_{\beta\alpha\xi}=\frac12\left(\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}}+\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}}\right)+\frac12\left(\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\xi}}-\frac{\partial{g}_{\xi\alpha}}{\partial{u}^{\beta}}+\frac{\partial{g}_{\alpha\xi}}{\partial{u}^{\beta}}-\frac{\partial{g}_{\xi\alpha}}{\partial{u}^{\xi}}\right)=\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}},
+\Gamma_{\xi\alpha\beta}+\Gamma_{\beta\alpha\xi}=\frac12\left(\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}}+\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}}\right)+\frac12\left(\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\xi}}-\frac{\partial{g}_{\xi\alpha}}{\partial{u}^{\beta}}+\frac{\partial{g}_{\alpha\xi}}{\partial{u}^{\beta}}-\frac{\partial{g}_{\beta\alpha}}{\partial{u}^{\xi}}\right)=\frac{\partial{g}_{\xi\beta}}{\partial{u}^{\alpha}},
 $$
 
-其中用到了 $g_{\alpha\beta}=g_{\beta\alpha}$ 与 $\partial_\beta{g}_{\alpha\xi}=\partial_\beta{g}_{\xi\alpha}$, 中括号里的四项两两相抵消. 于是
+其中用到了 $g_{\alpha\beta}=g_{\beta\alpha}$ 与 ${g}_{\alpha\xi}={g}_{\xi\alpha}$, 中括号里的四项两两相抵消. 于是
 
 $$
 \frac{\partial\ln\sqrt{g}}{\partial{u}^{\alpha}}=\frac12g^{\beta\xi}\left(\Gamma_{\xi\alpha\beta}+\Gamma_{\beta\alpha\xi}\right).
@@ -105,139 +99,133 @@ $$
 再由**公式 4.2.24 (第一类克里斯托费尔符号)** 中的 $\Gamma_{\alpha\beta\gamma}=g_{\gamma\xi}\Gamma^{\xi}_{\alpha\beta}$ 与**公式 4.2.11 (对偶基)**,
 
 $$
-g^{\beta\xi}\Gamma_{\xi\alpha\beta}=g^{\beta\xi}g_{\beta\eta}\Gamma^{\eta}_{\xi\alpha}=\delta^{\xi}_{\,\eta}\Gamma^{\eta}_{\xi\alpha}=\Gamma^{\xi}_{\xi\alpha},
-$$
-
-$$
-g^{\beta\xi}\Gamma_{\beta\alpha\xi}=g^{\beta\xi}g_{\xi\eta}\Gamma^{\eta}_{\beta\alpha}=\delta^{\beta}_{\,\eta}\Gamma^{\eta}_{\beta\alpha}=\Gamma^{\beta}_{\beta\alpha}=\Gamma^{\xi}_{\xi\alpha},
-$$
-
-(最后一式只是把哑指标 $\beta$ 改名为 $\xi$). 两式相同, 故
-
-$$
 \frac{\partial\ln\sqrt{g}}{\partial{u}^{\alpha}}=\Gamma^{\xi}_{\xi\alpha}=\Gamma^{1}_{1\alpha}+\Gamma^{2}_{2\alpha},
 $$
 
-这就是 (2). $\blacksquare$
+$\blacksquare$
 
-## 1.2 (参数变换下第一、第二基本形式与克里斯托费尔符号的变换规律)
+## 1.2 (参数变换下第一, 第二基本形式与克里斯托费尔符号的变换规律)
 
-设曲面 $S:\boldsymbol{r}\left(u^{1},u^{2}\right)$ 有参数变换 $u^{\alpha}=u^{\alpha}\left(\tilde{u}^{1},\tilde{u}^{2}\right)$, $\alpha=1,2$. 记
+设曲面 $S:\boldsymbol{r}\left(u^{1},u^{2}\right)$ 有参数变换 $u^{\alpha}=u^{\alpha}\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$, $\alpha=1,2$. 记
 
 $$
-a^{\alpha}_{i}=\frac{\partial{u}^{\alpha}}{\partial\tilde{u}^{i}},\qquad\tilde{a}^{i}_{\alpha}=\frac{\partial\tilde{u}^{i}}{\partial{u}^{\alpha}}\qquad\left(1\leq\alpha,i\leq2\right),
+a^{\alpha}_{i}=\frac{\partial{u}^{\alpha}}{\partial\widetilde{u}^{i}},\quad\widetilde{a}^{i}_{\alpha}=\frac{\partial\widetilde{u}^{i}}{\partial{u}^{\alpha}}\quad\left(1\leq\alpha,i\leq2\right),
 $$
 
-$S$ 在参数 $\left(\tilde{u}^{1},\tilde{u}^{2}\right)$ 下的第一、第二基本形式的系数为 $\tilde{g}_{ij}$, $\tilde{b}_{ij}$, 证明:
+$S$ 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下的第一, 第二基本形式的系数为 $\widetilde{g}_{ij}$, $\widetilde{b}_{ij}$, 证明:
 
-(1) $\tilde{g}_{ij}=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$, $\tilde{b}_{ij}=b_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$, $g^{\alpha\beta}=\tilde{g}^{ij}a^{\alpha}_{i}a^{\beta}_{j}$;
+(1) $\widetilde{g}_{ij}=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$, $\widetilde{b}_{ij}=b_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$, $g^{\alpha\beta}=\widetilde{g}^{ij}a^{\alpha}_{i}a^{\beta}_{j}$;
 
-(2) $\tilde\Gamma^{k}_{ij}=\Gamma^{\gamma}_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}\tilde{a}^{k}_{\gamma}+\dfrac{\partial{a}^{\alpha}_{i}}{\partial\tilde{u}^{j}}\tilde{a}^{k}_{\alpha}$.
+(2) $\widetilde\Gamma^{k}_{ij}=\Gamma^{\gamma}_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}\widetilde{a}^{k}_{\gamma}+\frac{\partial{a}^{\alpha}_{i}}{\partial\widetilde{u}^{j}}\widetilde{a}^{k}_{\alpha}$.
 
 ### 解答 1.2
 
 (1) 先算切向量. 由**公式 4.2.M (自然标架的运动方程)** 中的 $(M_1)$: $\partial_\alpha\boldsymbol{r}=\boldsymbol{r}_\alpha$, 与链式法则,
 
 $$
-\boldsymbol{r}_{\tilde{u}^{i}}=\frac{\partial{u}^{\alpha}}{\partial\tilde{u}^{i}}\boldsymbol{r}_\alpha=a^{\alpha}_{i}\boldsymbol{r}_\alpha.
+\boldsymbol{r}_{\widetilde{u}^{i}}=\frac{\partial{u}^{\alpha}}{\partial\widetilde{u}^{i}}\boldsymbol{r}_\alpha=a^{\alpha}_{i}\boldsymbol{r}_\alpha.
 $$
 
-由**公式 4.2.8 (第一、第二基本形式)** 中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$,
+由**公式 4.2.8 (第一, 第二基本形式)** 中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$,
 
 $$
-\tilde{g}_{ij}=\left\langle\boldsymbol{r}_{\tilde{u}^{i}},\boldsymbol{r}_{\tilde{u}^{j}}\right\rangle=a^{\alpha}_{i}a^{\beta}_{j}\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}.
+\widetilde{g}_{ij}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}},\boldsymbol{r}_{\widetilde{u}^{j}}\right\rangle=a^{\alpha}_{i}a^{\beta}_{j}\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}.
 $$
 
-再对 $\tilde{u}^{j}$ 求偏导, 用乘积法则与链式法则:
+$\blacksquare$
+
+再对 $\widetilde{u}^{j}$ 求偏导, 用乘积法则与链式法则:
 
 $$
-\boldsymbol{r}_{\tilde{u}^{i}\tilde{u}^{j}}=\frac{\partial}{\partial\tilde{u}^{j}}\left(a^{\alpha}_{i}\boldsymbol{r}_\alpha\right)=\frac{\partial{a}^{\alpha}_{i}}{\partial\tilde{u}^{j}}\boldsymbol{r}_\alpha+a^{\alpha}_{i}\frac{\partial\boldsymbol{r}_\alpha}{\partial\tilde{u}^{j}},\qquad
-\frac{\partial\boldsymbol{r}_\alpha}{\partial\tilde{u}^{j}}=\frac{\partial{u}^{\beta}}{\partial\tilde{u}^{j}}\partial_\beta\boldsymbol{r}_\alpha=a^{\beta}_{j}\partial_\beta\boldsymbol{r}_\alpha.
+\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}}=\frac{\partial}{\partial\widetilde{u}^{j}}\left(a^{\alpha}_{i}\boldsymbol{r}_\alpha\right)=\frac{\partial{a}^{\alpha}_{i}}{\partial\widetilde{u}^{j}}\boldsymbol{r}_\alpha+a^{\alpha}_{i}\frac{\partial\boldsymbol{r}_\alpha}{\partial\widetilde{u}^{j}},\quad
+\frac{\partial\boldsymbol{r}_\alpha}{\partial\widetilde{u}^{j}}=\frac{\partial{u}^{\beta}}{\partial\widetilde{u}^{j}}\partial_\beta\boldsymbol{r}_\alpha=a^{\beta}_{j}\partial_\beta\boldsymbol{r}_\alpha.
 $$
 
 由**公式 4.2.M (自然标架的运动方程)** 中的 $(M_2)$: $\partial_\beta\boldsymbol{r}_\alpha=\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}$, 代入上式得
 
 $$
-\boldsymbol{r}_{\tilde{u}^{i}\tilde{u}^{j}}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\tilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)\boldsymbol{r}_\gamma+a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}\boldsymbol{n}.\qquad\left(\mathrm{A}\right)
+\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)\boldsymbol{r}_\gamma+a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}\boldsymbol{n}.\quad\left(\mathrm{A}\right)
 $$
 
-$\boldsymbol{n}$ 是单位法向, 故 $\left\langle\boldsymbol{r}_\gamma,\boldsymbol{n}\right\rangle=0$; 由**公式 4.2.8 (第一、第二基本形式)** 中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$, 在参数 $\left(\tilde{u}^{1},\tilde{u}^{2}\right)$ 下 (按同一个单位法向 $\boldsymbol{n}$ 计算) 同样有 $\tilde{b}_{ij}=\left\langle\boldsymbol{r}_{\tilde{u}^{i}\tilde{u}^{j}},\boldsymbol{n}\right\rangle$, 于是
+$\boldsymbol{n}$ 是单位法向, 故 $\left\langle\boldsymbol{r}_\gamma,\boldsymbol{n}\right\rangle=0$; 由**公式 4.2.8 (第一, 第二基本形式)** 中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$, 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下 (按同一个单位法向 $\boldsymbol{n}$ 计算) 同样有 $\widetilde{b}_{ij}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{n}\right\rangle$, 于是
 
 $$
-\tilde{b}_{ij}=\left\langle\boldsymbol{r}_{\tilde{u}^{i}\tilde{u}^{j}},\boldsymbol{n}\right\rangle=a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}.
+\widetilde{b}_{ij}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{n}\right\rangle=a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}.
 $$
 
-最后算 $g^{\alpha\beta}$. 由链式法则 $\dfrac{\partial{u}^{\alpha}}{\partial\tilde{u}^{i}}\dfrac{\partial\tilde{u}^{i}}{\partial{u}^{\beta}}=\dfrac{\partial{u}^{\alpha}}{\partial{u}^{\beta}}=\delta^{\alpha}_{\,\beta}$, 即
+$\blacksquare$
+
+最后算 $g^{\alpha\beta}$. 由链式法则 $\frac{\partial{u}^{\alpha}}{\partial\widetilde{u}^{i}}\frac{\partial\widetilde{u}^{i}}{\partial{u}^{\beta}}=\frac{\partial{u}^{\alpha}}{\partial{u}^{\beta}}=\delta^{\alpha}{}_{\beta}$, 即
 
 $$
-a^{\alpha}_{i}\tilde{a}^{i}_{\beta}=\delta^{\alpha}_{\,\beta},\qquad\tilde{a}^{i}_{\alpha}a^{\alpha}_{j}=\delta^{i}_{\,j}.
+a^{\alpha}_{i}\widetilde{a}^{i}_{\beta}=\delta^{\alpha}{}_{\beta},\quad\widetilde{a}^{i}_{\alpha}a^{\alpha}_{j}=\delta^{i}{}_{j}.
 $$
 
-记 $A=\left(a^{\alpha}_{i}\right)$(行指标 $\alpha$, 列指标 $i$)、$\tilde{A}=\left(\tilde{a}^{i}_{\alpha}\right)$, 则上两式即 $A\tilde{A}=I_2$ 与 $\tilde{A}A=I_2$, 故 $\tilde{A}=A^{-1}$. 已证的 $\tilde{g}_{ij}=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$ 即矩阵等式 $\tilde{G}=A^{\mathrm{T}}GA$; 于是
+记 $A=\left(a^{\alpha}_{i}\right)$(行指标 $\alpha$, 列指标 $i$), $\widetilde{A}=\left(\widetilde{a}^{i}_{\alpha}\right)$, 则上两式即 $A\widetilde{A}=I_2$ 与 $\widetilde{A}A=I_2$, 故 $\widetilde{A}=A^{-1}$. 已证的 $\widetilde{g}_{ij}=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$ 即矩阵等式 $\widetilde{G}=A^\top GA$; 于是
 
 $$
-\tilde{G}^{-1}=\left(A^{\mathrm{T}}GA\right)^{-1}=A^{-1}G^{-1}\left(A^{\mathrm{T}}\right)^{-1}=\tilde{A}\,G^{-1}\tilde{A}^{\mathrm{T}},
+\widetilde{G}^{-1}=\left(A^\top GA\right)^{-1}=A^{-1}G^{-1}\left(A^\top\right)^{-1}=\widetilde{A}\,G^{-1}\widetilde{A}^\top,
 $$
 
-即 $\tilde{g}^{ij}=\tilde{a}^{i}_{\alpha}g^{\alpha\beta}\tilde{a}^{j}_{\beta}$. 两边左乘 $\tilde{A}^{-1}=A$、右乘 $\left(\tilde{A}^{\mathrm{T}}\right)^{-1}=A^{\mathrm{T}}$, 得
+即 $\widetilde{g}^{ij}=\widetilde{a}^{i}_{\alpha}g^{\alpha\beta}\widetilde{a}^{j}_{\beta}$. 两边左乘 $\widetilde{A}^{-1}=A$, 右乘 $\left(\widetilde{A}^\top\right)^{-1}=A^\top$, 得
 
 $$
-G^{-1}=A\tilde{G}^{-1}A^{\mathrm{T}},\qquad\text{即}\qquad{g}^{\alpha\beta}=\tilde{g}^{ij}a^{\alpha}_{i}a^{\beta}_{j}.
+G^{-1}=A\widetilde{G}^{-1}A^\top,\quad\text{即}\quad{g}^{\alpha\beta}=\widetilde{g}^{ij}a^{\alpha}_{i}a^{\beta}_{j}.
 $$
 
-(2) 由**公式 4.2.19 (克里斯托费尔符号与内积的关系)**, 在 $\left(\tilde{u}^{1},\tilde{u}^{2}\right)$ 参数下同样有
+(2) 由**公式 4.2.19 (克里斯托费尔符号与内积的关系)**, 在 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 参数下同样有
 
 $$
-\tilde\Gamma^{k}_{ij}\tilde{g}_{k\ell}=\left\langle\boldsymbol{r}_{\tilde{u}^{i}\tilde{u}^{j}},\boldsymbol{r}_{\tilde{u}^{\ell}}\right\rangle.
+\widetilde\Gamma^{k}_{ij}\widetilde{g}_{k\ell}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{r}_{\widetilde{u}^{\ell}}\right\rangle.
 $$
 
-把（A）与 $\boldsymbol{r}_{\tilde{u}^{\ell}}=a^{\sigma}_{\ell}\boldsymbol{r}_\sigma$ 代入右端, 并用 $\left\langle\boldsymbol{r}_\gamma,\boldsymbol{r}_\sigma\right\rangle=g_{\gamma\sigma}$:
+把（A）与 $\boldsymbol{r}_{\widetilde{u}^{\ell}}=a^{\sigma}_{\ell}\boldsymbol{r}_\sigma$ 代入右端, 并用 $\left\langle\boldsymbol{r}_\gamma,\boldsymbol{r}_\sigma\right\rangle=g_{\gamma\sigma}$:
 
 $$
-\left\langle\boldsymbol{r}_{\tilde{u}^{i}\tilde{u}^{j}},\boldsymbol{r}_{\tilde{u}^{\ell}}\right\rangle=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\tilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)a^{\sigma}_{\ell}g_{\gamma\sigma}.
+\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{r}_{\widetilde{u}^{\ell}}\right\rangle=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)a^{\sigma}_{\ell}g_{\gamma\sigma}.
 $$
 
-又由 (1) $\tilde{g}_{k\ell}=g_{\alpha\beta}a^{\alpha}_{k}a^{\beta}_{\ell}$, 故
+又由 (1) $\widetilde{g}_{k\ell}=g_{\alpha\beta}a^{\alpha}_{k}a^{\beta}_{\ell}$, 故
 
 $$
-\tilde\Gamma^{k}_{ij}g_{\alpha\beta}a^{\alpha}_{k}a^{\beta}_{\ell}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\tilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)g_{\gamma\sigma}a^{\sigma}_{\ell}.
+\widetilde\Gamma^{k}_{ij}g_{\alpha\beta}a^{\alpha}_{k}a^{\beta}_{\ell}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)g_{\gamma\sigma}a^{\sigma}_{\ell}.
 $$
 
-两边乘 $\tilde{a}^{\ell}_{\theta}$ 并对 $\ell$ 求和, 用 $a^{\beta}_{\ell}\tilde{a}^{\ell}_{\theta}=\delta^{\beta}_{\,\theta}$ 与 $a^{\sigma}_{\ell}\tilde{a}^{\ell}_{\theta}=\delta^{\sigma}_{\,\theta}$:
+两边乘 $\widetilde{a}^{\ell}_{\theta}$ 并对 $\ell$ 求和, 用 $a^{\beta}_{\ell}\widetilde{a}^{\ell}_{\theta}=\delta^{\beta}{}_{\theta}$ 与 $a^{\sigma}_{\ell}\widetilde{a}^{\ell}_{\theta}=\delta^{\sigma}{}_{\theta}$:
 
 $$
-\tilde\Gamma^{k}_{ij}g_{\alpha\beta}a^{\alpha}_{k}\delta^{\beta}_{\,\theta}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\tilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)g_{\gamma\theta},
+\widetilde\Gamma^{k}_{ij}g_{\alpha\beta}a^{\alpha}_{k}\delta^{\beta}{}_{\theta}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)g_{\gamma\theta},
 $$
 
 即
 
 $$
-g_{\alpha\theta}\left(a^{\alpha}_{k}\tilde\Gamma^{k}_{ij}\right)=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\tilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)g_{\gamma\theta}.
+g_{\alpha\theta}\left(a^{\alpha}_{k}\widetilde\Gamma^{k}_{ij}\right)=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)g_{\gamma\theta}.
 $$
 
-两边乘 $g^{\theta\rho}$ 并对 $\theta$ 求和, 用 $g_{\alpha\theta}g^{\theta\rho}=\delta^{\rho}_{\,\alpha}$ 与 $g_{\gamma\theta}g^{\theta\rho}=\delta^{\rho}_{\,\gamma}$:
+两边乘 $g^{\theta\rho}$ 并对 $\theta$ 求和, 用 $g_{\alpha\theta}g^{\theta\rho}=\delta^{\rho}{}_{\alpha}$ 与 $g_{\gamma\theta}g^{\theta\rho}=\delta^{\rho}{}_{\gamma}$:
 
 $$
-a^{\rho}_{k}\tilde\Gamma^{k}_{ij}=\frac{\partial{a}^{\rho}_{i}}{\partial\tilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\rho}_{\alpha\beta}.
+a^{\rho}_{k}\widetilde\Gamma^{k}_{ij}=\frac{\partial{a}^{\rho}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\rho}_{\alpha\beta}.
 $$
 
-再两边乘 $\tilde{a}^{m}_{\rho}$ 并对 $\rho$ 求和, 用 $\tilde{a}^{m}_{\rho}a^{\rho}_{k}=\delta^{m}_{\,k}$:
+再两边乘 $\widetilde{a}^{m}_{\rho}$ 并对 $\rho$ 求和, 用 $\widetilde{a}^{m}_{\rho}a^{\rho}_{k}=\delta^{m}{}_{k}$:
 
 $$
-\tilde\Gamma^{m}_{ij}=\tilde{a}^{m}_{\rho}\frac{\partial{a}^{\rho}_{i}}{\partial\tilde{u}^{j}}+\tilde{a}^{m}_{\rho}a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\rho}_{\alpha\beta}.
+\widetilde\Gamma^{m}_{ij}=\widetilde{a}^{m}_{\rho}\frac{\partial{a}^{\rho}_{i}}{\partial\widetilde{u}^{j}}+\widetilde{a}^{m}_{\rho}a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\rho}_{\alpha\beta}.
 $$
 
-把哑指标 $m,\rho$ 改名为 $k,\gamma$ (并注意 $a^{\rho}_{i}=\dfrac{\partial{u}^{\rho}}{\partial\tilde{u}^{i}}$, 从而 $\dfrac{\partial{a}^{\rho}_{i}}{\partial\tilde{u}^{j}}=\dfrac{\partial^{2}u^{\rho}}{\partial\tilde{u}^{i}\partial\tilde{u}^{j}}$), 即得
+把哑指标 $m,\rho$ 改名为 $k,\gamma$ (并注意 $a^{\rho}_{i}=\frac{\partial{u}^{\rho}}{\partial\widetilde{u}^{i}}$, 从而 $\frac{\partial{a}^{\rho}_{i}}{\partial\widetilde{u}^{j}}=\frac{\partial^{2}u^{\rho}}{\partial\widetilde{u}^{i}\partial\widetilde{u}^{j}}$), 即得
 
 $$
-\tilde\Gamma^{k}_{ij}=\Gamma^{\gamma}_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}\tilde{a}^{k}_{\gamma}+\frac{\partial{a}^{\alpha}_{i}}{\partial\tilde{u}^{j}}\tilde{a}^{k}_{\alpha}.
+\widetilde\Gamma^{k}_{ij}=\Gamma^{\gamma}_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}\widetilde{a}^{k}_{\gamma}+\frac{\partial{a}^{\alpha}_{i}}{\partial\widetilde{u}^{j}}\widetilde{a}^{k}_{\alpha}.
 $$
 
 $\blacksquare$
 
 ## 1.3 (平均曲率的张量表达式)
 
-证明: 平均曲率 $H=\dfrac12b_{\alpha\beta}g^{\beta\alpha}$.
+证明: 平均曲率 $H=\frac12b_{\alpha\beta}g^{\beta\alpha}$.
 
 ### 解答 1.3
 
@@ -275,27 +263,27 @@ $$
 \mathrm{I}=\mathrm{d}u^{2}+\rho^{2}\mathrm{d}v^{2},
 $$
 
-按**公式 4.2.8 (第一、第二基本形式)**, 其系数为
+按**公式 4.2.8 (第一, 第二基本形式)**, 其系数为
 
 $$
-E=g_{11}=1,\qquad{F}=g_{12}=0,\qquad{G}=g_{22}=\rho^{2}.
+E=g_{11}=1,\quad{F}=g_{12}=0,\quad{G}=g_{22}=\rho^{2}.
 $$
 
-这是正交参数 ($F=0$), 且 $E$ 为常数. 由**公式 4.2.28 (正交参数下的克里斯托费尔符号)**, 逐条代入 $\dfrac{\partial{E}}{\partial{u}}=\dfrac{\partial{E}}{\partial{v}}=0$, $\dfrac{\partial{G}}{\partial{u}}=2\rho\rho_u$, $\dfrac{\partial{G}}{\partial{v}}=2\rho\rho_v$:
+这是正交参数 ($F=0$), 且 $E$ 为常数. 由**公式 4.2.28 (正交参数下的克里斯托费尔符号)**, 逐条代入 $\frac{\partial{E}}{\partial{u}}=\frac{\partial{E}}{\partial{v}}=0$, $\frac{\partial{G}}{\partial{u}}=2\rho\rho_u$, $\frac{\partial{G}}{\partial{v}}=2\rho\rho_v$:
 
 $$
-\Gamma^{1}_{11}=\frac{1}{2E}\frac{\partial{E}}{\partial{u}}=0,\qquad
-\Gamma^{1}_{12}=\Gamma^{1}_{21}=\frac{1}{2E}\frac{\partial{E}}{\partial{v}}=0,\qquad
+\Gamma^{1}_{11}=\frac{1}{2E}\frac{\partial{E}}{\partial{u}}=0,\quad
+\Gamma^{1}_{12}=\Gamma^{1}_{21}=\frac{1}{2E}\frac{\partial{E}}{\partial{v}}=0,\quad
 \Gamma^{2}_{11}=-\frac{1}{2G}\frac{\partial{E}}{\partial{v}}=0,
 $$
 
 $$
-\Gamma^{2}_{12}=\Gamma^{2}_{21}=\frac{1}{2G}\frac{\partial{G}}{\partial{u}}=\frac{\rho_u}{\rho},\qquad
-\Gamma^{1}_{22}=-\frac{1}{2E}\frac{\partial{G}}{\partial{u}}=-\rho\rho_u,\qquad
+\Gamma^{2}_{12}=\Gamma^{2}_{21}=\frac{1}{2G}\frac{\partial{G}}{\partial{u}}=\frac{\rho_u}{\rho},\quad
+\Gamma^{1}_{22}=-\frac{1}{2E}\frac{\partial{G}}{\partial{u}}=-\rho\rho_u,\quad
 \Gamma^{2}_{22}=\frac{1}{2G}\frac{\partial{G}}{\partial{v}}=\frac{\rho_v}{\rho}.
 $$
 
-若曲面是绕轴的旋转曲面而 $u$ 为其子午线的弧长参数, 则 $\rho=\rho\left(u\right)$, $\rho_v=0$, 此时 $\Gamma^{2}_{22}=0$, 其余五式不变, 即 $\Gamma^{2}_{12}=\Gamma^{2}_{21}=\dfrac{\rho'}{\rho}$, $\Gamma^{1}_{22}=-\rho\rho'$, 其余为零. $\blacksquare$
+若曲面是绕轴的旋转曲面而 $u$ 为其子午线的弧长参数, 则 $\rho=\rho\left(u\right)$, $\rho_v=0$, 此时 $\Gamma^{2}_{22}=0$, 其余五式不变, 即 $\Gamma^{2}_{12}=\Gamma^{2}_{21}=\frac{\rho'}{\rho}$, $\Gamma^{1}_{22}=-\rho\rho'$, 其余为零. $\blacksquare$
 
 ## 1.5 (曲面 $z=f\left(x,y\right)$ 的克里斯托费尔符号)
 
@@ -303,16 +291,16 @@ $$
 
 ### 解答 1.5
 
-取参数 $\left(u,v\right)=\left(x,y\right)$ 与参数表示 $\boldsymbol{r}\left(u,v\right)=\left(u,\,v,\,f\left(u,v\right)\right)$; 记 $p=f_u$, $q=f_v$, $r=f_{uu}$, $s=f_{uv}$, $t=f_{vv}$. 则
+取参数 $\left(u,v\right)=\left(x,y\right)$ 与参数表示 $\boldsymbol{r}\left(u,v\right)=\left(u,v,f\left(u,v\right)\right)$; 记 $p=f_u$, $q=f_v$, $r=f_{uu}$, $s=f_{uv}$, $t=f_{vv}$. 则
 
 $$
-\boldsymbol{r}_1=\left(1,\,0,\,p\right),\qquad\boldsymbol{r}_2=\left(0,\,1,\,q\right).
+\boldsymbol{r}_1=\left(1,0,p\right),\quad\boldsymbol{r}_2=\left(0,1,q\right).
 $$
 
-由**公式 4.2.8 (第一、第二基本形式)** 中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$,
+由**公式 4.2.8 (第一, 第二基本形式)** 中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_\alpha,\boldsymbol{r}_\beta\right\rangle$,
 
 $$
-E=g_{11}=1+p^{2},\qquad{F}=g_{12}=pq,\qquad{G}=g_{22}=1+q^{2},
+E=g_{11}=1+p^{2},\quad{F}=g_{12}=pq,\quad{G}=g_{22}=1+q^{2},
 $$
 
 故
@@ -324,12 +312,12 @@ $$
 以下记 $W^{2}:=\Delta$. 对上列 $E,F,G$ 求偏导:
 
 $$
-\frac{\partial{E}}{\partial{u}}=2pr,\qquad\frac{\partial{E}}{\partial{v}}=2ps,\qquad
-\frac{\partial{F}}{\partial{u}}=rq+ps,\qquad\frac{\partial{F}}{\partial{v}}=sq+pt,
+\frac{\partial{E}}{\partial{u}}=2pr,\quad\frac{\partial{E}}{\partial{v}}=2ps,\quad
+\frac{\partial{F}}{\partial{u}}=rq+ps,\quad\frac{\partial{F}}{\partial{v}}=sq+pt,
 $$
 
 $$
-\frac{\partial{G}}{\partial{u}}=2qs,\qquad\frac{\partial{G}}{\partial{v}}=2qt.
+\frac{\partial{G}}{\partial{u}}=2qs,\quad\frac{\partial{G}}{\partial{v}}=2qt.
 $$
 
 由**公式 4.2.27 (用 $E,F,G$ 表示克里斯托费尔符号)**, 六个符号依次为
@@ -358,7 +346,7 @@ $$
 \Gamma^{2}_{22}=\frac{1}{W^{2}}\left(-F\frac{\partial{F}}{\partial{v}}+\frac{F}{2}\frac{\partial{G}}{\partial{u}}+\frac{E}{2}\frac{\partial{G}}{\partial{v}}\right)=\frac{1}{W^{2}}\left(-pq^{2}s-p^{2}qt+pq^{2}s+qt\left(1+p^{2}\right)\right)=\frac{qt}{W^{2}},
 $$
 
-其中每一步只是把括号展开并合并同类项, 例如 $\Gamma^{2}_{22}$ 中 $-F\dfrac{\partial{F}}{\partial{v}}=-pq\left(sq+pt\right)=-pq^{2}s-p^{2}qt$. 汇总:
+其中每一步只是把括号展开并合并同类项, 例如 $\Gamma^{2}_{22}$ 中 $-F\frac{\partial{F}}{\partial{v}}=-pq\left(sq+pt\right)=-pq^{2}s-p^{2}qt$. 汇总:
 
 $$
 \Gamma^{1}_{11}=\frac{pr}{W^{2}},\quad\Gamma^{1}_{12}=\Gamma^{1}_{21}=\frac{ps}{W^{2}},\quad\Gamma^{1}_{22}=\frac{pt}{W^{2}},\quad
@@ -417,12 +405,12 @@ $$
 \Gamma^{\sigma}_{\alpha\gamma}g_{\sigma\beta}+\Gamma^{\sigma}_{\beta\gamma}g_{\alpha\sigma}=\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\gamma}},
 $$
 
-代入定义得 $\nabla_\gamma{g}_{\alpha\beta}=0$. 同法 ($g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}_{\,\gamma}$ 两边求导并用上式) 得 $\nabla_\gamma{g}^{\alpha\beta}=0$.
+代入定义得 $\nabla_\gamma{g}_{\alpha\beta}=0$. 同法 ($g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}{}_{\gamma}$ 两边求导并用上式) 得 $\nabla_\gamma{g}^{\alpha\beta}=0$.
 
 第二步: 由乘积法则与 $\nabla_\gamma{g}^{\xi\sigma}=0$,
 
 $$
-\nabla_\gamma{b}^{\xi}_{\alpha}=\nabla_\gamma\left(g^{\xi\sigma}b_{\alpha\sigma}\right)=g^{\xi\sigma}\nabla_\gamma{b}_{\alpha\sigma}+b_{\alpha\sigma}\nabla_\gamma{g}^{\xi\sigma}=g^{\xi\sigma}\nabla_\gamma{b}_{\alpha\sigma}.\qquad\left(\mathrm{B}\right)
+\nabla_\gamma{b}^{\xi}_{\alpha}=\nabla_\gamma\left(g^{\xi\sigma}b_{\alpha\sigma}\right)=g^{\xi\sigma}\nabla_\gamma{b}_{\alpha\sigma}+b_{\alpha\sigma}\nabla_\gamma{g}^{\xi\sigma}=g^{\xi\sigma}\nabla_\gamma{b}_{\alpha\sigma}.\quad\left(\mathrm{B}\right)
 $$
 
 第三步: 把题中两式写成协变微分. 展开第一式的左端:
@@ -434,7 +422,7 @@ $$
 其中 $\Gamma^{\sigma}_{\beta\gamma}b_{\alpha\sigma}$ 与 $\Gamma^{\sigma}_{\gamma\beta}b_{\alpha\sigma}$ 因 $\Gamma^{\xi}_{\gamma\beta}=\Gamma^{\xi}_{\beta\gamma}$ 而相消, 故
 
 $$
-\nabla_\gamma{b}_{\alpha\beta}-\nabla_\beta{b}_{\alpha\gamma}=\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial{b}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\sigma}_{\alpha\beta}b_{\sigma\gamma}-\Gamma^{\sigma}_{\alpha\gamma}b_{\sigma\beta}.\qquad\left(\mathrm{C}\right)
+\nabla_\gamma{b}_{\alpha\beta}-\nabla_\beta{b}_{\alpha\gamma}=\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial{b}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\sigma}_{\alpha\beta}b_{\sigma\gamma}-\Gamma^{\sigma}_{\alpha\gamma}b_{\sigma\beta}.\quad\left(\mathrm{C}\right)
 $$
 
 同理展开第二式的左端:
@@ -446,7 +434,7 @@ $$
 而 $\Gamma^{\sigma}_{\beta\alpha}b^{\xi}_{\sigma}=\Gamma^{\sigma}_{\alpha\beta}b^{\xi}_{\sigma}$, 故
 
 $$
-\nabla_\beta{b}^{\xi}_{\alpha}-\nabla_\alpha{b}^{\xi}_{\beta}=\frac{\partial{b}^{\xi}_{\alpha}}{\partial{u}^{\beta}}-\frac{\partial{b}^{\xi}_{\beta}}{\partial{u}^{\alpha}}+b^{\gamma}_{\alpha}\Gamma^{\xi}_{\gamma\beta}-b^{\gamma}_{\beta}\Gamma^{\xi}_{\gamma\alpha}.\qquad\left(\mathrm{D}\right)
+\nabla_\beta{b}^{\xi}_{\alpha}-\nabla_\alpha{b}^{\xi}_{\beta}=\frac{\partial{b}^{\xi}_{\alpha}}{\partial{u}^{\beta}}-\frac{\partial{b}^{\xi}_{\beta}}{\partial{u}^{\alpha}}+b^{\gamma}_{\alpha}\Gamma^{\xi}_{\gamma\beta}-b^{\gamma}_{\beta}\Gamma^{\xi}_{\gamma\alpha}.\quad\left(\mathrm{D}\right)
 $$
 
 于是"第一式对一切 $\alpha,\beta,\gamma$ 成立"$\iff$"$\nabla_\gamma{b}_{\alpha\beta}$ 关于下标 $\gamma$ 与 $\beta$ 对称"; 而由 $b_{\alpha\beta}=b_{\beta\alpha}$ 与 $\Gamma^{\sigma}_{\beta\gamma}=\Gamma^{\sigma}_{\gamma\beta}$, 定义式立刻给出 $\nabla_\gamma{b}_{\alpha\beta}=\nabla_\gamma{b}_{\beta\alpha}$, 故第一式成立 $\iff$ $\nabla_\gamma{b}_{\alpha\beta}$ 关于三个下标全对称. 同理, 第二式对一切 $\alpha,\beta,\xi$ 成立 $\iff$ $\nabla_\beta{b}^{\xi}_{\alpha}$ 关于 $\alpha,\beta$ 对称.
@@ -463,4 +451,4 @@ $$
 \nabla_\beta{b}_{\mu\alpha}=g^{\xi\sigma}\nabla_\beta{b}_{\alpha\sigma}g_{\xi\mu}=\nabla_\beta{b}^{\xi}_{\alpha}g_{\xi\mu}=\nabla_\alpha{b}^{\xi}_{\beta}g_{\xi\mu}=\nabla_\alpha{b}_{\mu\beta},
 $$
 
-即 $\nabla{b}$ 关于第二、第三下标对称; 再加上自动成立的关于第一、第二下标对称, 得全对称, 于是第一式成立. 故两式等价. $\blacksquare$
+即 $\nabla{b}$ 关于第二, 第三下标对称; 再加上自动成立的关于第一, 第二下标对称, 得全对称, 于是第一式成立. 故两式等价. $\blacksquare$

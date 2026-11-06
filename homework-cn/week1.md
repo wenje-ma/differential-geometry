@@ -52,9 +52,9 @@
 > 
 > (1) $\kappa=0$ 时 $\boldsymbol{r}$ 是直线;
 > 
-> (2) $k>0,\,\tau=0$ 时 $\boldsymbol{r}$ 是半径 $\frac1k$ 的圆;
+> (2) $k>0,\tau=0$ 时 $\boldsymbol{r}$ 是半径 $\frac1k$ 的圆;
 > 
-> (3) $k>0,\,\tau\ne0$ 时 $\boldsymbol{r}$ 是圆柱螺线.
+> (3) $k>0,\tau\ne0$ 时 $\boldsymbol{r}$ 是圆柱螺线.
 
 > **习题 2.5 (一般参数下的曲率与挠率公式)**
 > 
@@ -223,7 +223,7 @@ $$
 (3) $\boldsymbol{r}\left(t\right)=\left(a\left(1-\sin{t}\right),a\left(1-\cos{t}\right),bt\right)$ ($a>0$).
 
 $$
-\boldsymbol{r}'=\left(-a\cos{t},a\sin{t},b\right),;v^{2}=a^{2}+b^{2}=:c^{2},;\boldsymbol{r}''=\left(a\sin{t},a\cos{t},0\right),;\boldsymbol{r}'''=\left(a\cos{t},-a\sin{t},0\right),;\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-ab\cos{t},ab\sin{t},-a^{2}\right),;w^{2}=a^{2}c^{2},\,w=ac,;\left(\boldsymbol{r}',\boldsymbol{r}'',\boldsymbol{r}'''\right)=\left\langle\left(-ab\cos{t},ab\sin{t},-a^{2}\right),\left(a\cos{t},-a\sin{t},0\right)\right\rangle=-a^{2}b.
+\boldsymbol{r}'=\left(-a\cos{t},a\sin{t},b\right),;v^{2}=a^{2}+b^{2}=:c^{2},;\boldsymbol{r}''=\left(a\sin{t},a\cos{t},0\right),;\boldsymbol{r}'''=\left(a\cos{t},-a\sin{t},0\right),;\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-ab\cos{t},ab\sin{t},-a^{2}\right),;w^{2}=a^{2}c^{2},w=ac,;\left(\boldsymbol{r}',\boldsymbol{r}'',\boldsymbol{r}'''\right)=\left\langle\left(-ab\cos{t},ab\sin{t},-a^{2}\right),\left(a\cos{t},-a\sin{t},0\right)\right\rangle=-a^{2}b.
 $$
 
 故

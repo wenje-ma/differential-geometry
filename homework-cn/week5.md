@@ -68,13 +68,13 @@
 > 
 > 极小曲面方程满足 $f\left(x,y\right)=h\left(x\right)+k\left(y\right)$ 的解为 $f\left(x,y\right)=\ln\frac{\cos{x}}{\cos{y}}$, 相应的极小曲面称为谢尔克曲面.
 
-## 1 (函数图的 $\mathrm{I},\mathrm{II}$ 与平均、高斯曲率)
+## 1 (函数图的 $\mathrm{I},\mathrm{II}$ 与平均, 高斯曲率)
 
 设 $f:D\subset\mathbb{R}^{2}\to\mathbb{R}$ 是光滑函数, 而且正则曲面 $S:=\left\{\left(x,y,f\left(x,y\right)\right)\mid\left(x,y\right)\in{D}\right\}$ 是 $f$ 的图. 试确定 $S$ 的 $I,II$, 平均曲率 $H$ 以及高斯曲率 $K$.
 
 ### 解答 1
 
-取参数化 $\boldsymbol{r}\left(x,y\right)=\left(x,\,y,\,f\left(x,y\right)\right)$, 记 $p:=f_x$, $q:=f_y$, $r:=f_{xx}$, $s:=f_{xy}$, $t:=f_{yy}$. 则 $\boldsymbol{r}_x=\left(1,0,p\right)$, $\boldsymbol{r}_y=\left(0,1,q\right)$. 由**定义 3.2.1 (第一基本形式)**, 系数为
+取参数化 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $p:=f_x$, $q:=f_y$, $r:=f_{xx}$, $s:=f_{xy}$, $t:=f_{yy}$. 则 $\boldsymbol{r}_x=\left(1,0,p\right)$, $\boldsymbol{r}_y=\left(0,1,q\right)$. 由**定义 3.2.1 (第一基本形式)**, 系数为
 
 $$
 g_{11}=\left\langle\boldsymbol{r}_x,\boldsymbol{r}_x\right\rangle=1+p^{2},\quad
@@ -394,13 +394,13 @@ $$
 
 ## 4.36 (直纹极小曲面与正螺面)
 
-证明正螺面 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},\,u\sin{v},\,bv\right)$ 是极小曲面; 并证明直纹极小曲面是平面或正螺面.
+证明正螺面 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$ 是极小曲面; 并证明直纹极小曲面是平面或正螺面.
 
 ### 解答 4.36
 
 (i) 正螺面是极小曲面.
 
-参数化 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},\,u\sin{v},\,bv\right)$, 则 $\boldsymbol{r}_u=\left(\cos{v},\,\sin{v},\,0\right)$, $\boldsymbol{r}_v=\left(-u\sin{v},\,u\cos{v},\,b\right)$. 由**定义 3.2.1 (第一基本形式)**,
+参数化 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$, 则 $\boldsymbol{r}_u=\left(\cos{v},\sin{v},0\right)$, $\boldsymbol{r}_v=\left(-u\sin{v},u\cos{v},b\right)$. 由**定义 3.2.1 (第一基本形式)**,
 
 $$
 g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=1,\quad
@@ -408,7 +408,7 @@ g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle=0,\quad
 g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle=u^{2}+b^{2}.
 $$
 
-二阶偏导 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{r}_{uv}=\left(-\sin{v},\,\cos{v},\,0\right)$, $\boldsymbol{r}_{vv}=\left(-u\cos{v},\,-u\sin{v},\,0\right)$. 由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol{n}=\left(\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right)/\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|$, 而 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(b\sin{v},\,-b\cos{v},\,u\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{b^{2}+u^{2}}$, 故 $\boldsymbol{n}=\left(b\sin{v},-b\cos{v},u\right)/\sqrt{b^{2}+u^{2}}$. 由**定义 3.3.1 (第二基本形式)**,
+二阶偏导 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right)$, $\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right)$. 由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol{n}=\left(\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right)/\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|$, 而 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(b\sin{v},-b\cos{v},u\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{b^{2}+u^{2}}$, 故 $\boldsymbol{n}=\left(b\sin{v},-b\cos{v},u\right)/\sqrt{b^{2}+u^{2}}$. 由**定义 3.3.1 (第二基本形式)**,
 
 $$
 b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=0,\quad
@@ -422,7 +422,7 @@ $$
 H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}=\frac{0-2b_{12}\cdot0+0}{2\left(u^{2}+b^{2}\right)}=0,
 $$
 
-由**定义 10.1.1 (极小曲面)** ($H\equiv0$), 正螺面 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},\,u\sin{v},\,bv\right)$ 是极小曲面.
+由**定义 10.1.1 (极小曲面)** ($H\equiv0$), 正螺面 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$ 是极小曲面.
 
 (ii) 直纹极小曲面是平面或正螺面.
 

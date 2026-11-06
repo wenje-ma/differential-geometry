@@ -170,7 +170,7 @@ $$
 \frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}
 =\frac{2\left[\frac{s^{2}}{2}\kappa\left(0\right)+O\left(s^{3}\right)\right]}{s^{2}+O\left(s^{3}\right)}
 =\kappa\left(0\right)\cdot\frac{1+O\left(s\right)}{1+O\left(s\right)}
-\longrightarrow\kappa\left(0\right)=\kappa\left(P_0\right),\,\,s\to0.
+\longrightarrow\kappa\left(0\right)=\kappa\left(P_0\right),s\to0.
 $$
 
 即 $\lim_{P\to{P}_0}\frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}=\kappa\left(P_0\right)$. $\blacksquare$
@@ -236,7 +236,7 @@ $$
 
 ## 1.20 (两条曲线合同的判定)
 
-证明: 曲线 $\boldsymbol{r}\left(t\right)=\left(t+\sqrt3\sin{t},\,2\cos{t},\,\sqrt3t-\sin{t}\right)$ 与曲线 $\widetilde{\boldsymbol{r}}\left(t\right)=\left(2\cos\frac{t}{2},\,2\sin\frac{t}{2},\,-t\right)$ 是合同的.
+证明: 曲线 $\boldsymbol{r}\left(t\right)=\left(t+\sqrt3\sin{t},2\cos{t},\sqrt3t-\sin{t}\right)$ 与曲线 $\widetilde{\boldsymbol{r}}\left(t\right)=\left(2\cos\frac{t}{2},2\sin\frac{t}{2},-t\right)$ 是合同的.
 
 ### 解答 1.20
 
@@ -245,14 +245,14 @@ $$
 曲线 $\boldsymbol{r}$. 求导:
 
 $$
-\boldsymbol{r}'=\left(1+\sqrt3\cos{t},\,-2\sin{t},\,\sqrt3-\cos{t}\right),;\boldsymbol{r}''=\left(-\sqrt3\sin{t},\,-2\cos{t},\,\sin{t}\right),;\boldsymbol{r}'''=\left(-\sqrt3\cos{t},\,2\sin{t},\,\cos{t}\right).
+\boldsymbol{r}'=\left(1+\sqrt3\cos{t},-2\sin{t},\sqrt3-\cos{t}\right),;\boldsymbol{r}''=\left(-\sqrt3\sin{t},-2\cos{t},\sin{t}\right),;\boldsymbol{r}'''=\left(-\sqrt3\cos{t},2\sin{t},\cos{t}\right).
 $$
 
 $$
 v^{2}=\left|\boldsymbol{r}'\right|^2=\left(1+\sqrt3\cos{t}\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos{t}\right)^{2}=8,\quad{v}=2\sqrt2.
 $$
 
-又 $\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-2+2\sqrt3\cos{t},\,-4\sin{t},\,-2\cos{t}-2\sqrt3\right)$,
+又 $\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-2+2\sqrt3\cos{t},-4\sin{t},-2\cos{t}-2\sqrt3\right)$,
 
 $$
 w^{2}=\left|\boldsymbol{r}'\wedge\boldsymbol{r}''\right|^2=\left(-2+2\sqrt3\cos{t}\right)^{2}+16\sin^{2}t+\left(-2\cos{t}-2\sqrt3\right)^{2}=32,\quad{w}=4\sqrt2.
@@ -274,9 +274,9 @@ $$
 曲线 $\widetilde{\boldsymbol{r}}$. 求导:
 
 $$
-\widetilde{\boldsymbol{r}}'=\left(-\sin\frac{t}{2},\,\cos\frac{t}{2},\,-1\right),\quad
-\widetilde{\boldsymbol{r}}''=\left(-\frac12\cos\frac{t}{2},\,-\frac12\sin\frac{t}{2},\,0\right),\quad
-\widetilde{\boldsymbol{r}}'''=\left(\frac14\sin\frac{t}{2},\,-\frac14\cos\frac{t}{2},\,0\right).
+\widetilde{\boldsymbol{r}}'=\left(-\sin\frac{t}{2},\cos\frac{t}{2},-1\right),\quad
+\widetilde{\boldsymbol{r}}''=\left(-\frac12\cos\frac{t}{2},-\frac12\sin\frac{t}{2},0\right),\quad
+\widetilde{\boldsymbol{r}}'''=\left(\frac14\sin\frac{t}{2},-\frac14\cos\frac{t}{2},0\right).
 $$
 
 $$
@@ -285,7 +285,7 @@ $$
 
 $$
 \widetilde{\boldsymbol{r}}'\wedge\widetilde{\boldsymbol{r}}''
-=\left(-\frac12\sin\frac{t}{2},\,\frac12\cos\frac{t}{2},\,\frac12\right),\quad
+=\left(-\frac12\sin\frac{t}{2},\frac12\cos\frac{t}{2},\frac12\right),\quad
 \widetilde{w}^{2}=\frac12,\quad\widetilde{w}=\frac1{\sqrt2}.
 $$
 
@@ -301,7 +301,7 @@ $$
 
 不存在这样的 $\varepsilon>0$. 理由如下.
 
-对任意 $\delta>0$, 可以构造一条非平凡纽结 $\gamma$, 使其全曲率落在区间 $\left(4\pi,\,4\pi+\delta\right)$ 内. 构造思路: 取一条几乎整段落在一张平面内的闭曲线, 它形如"平面圆周上打一个微小纽结"的形状:
+对任意 $\delta>0$, 可以构造一条非平凡纽结 $\gamma$, 使其全曲率落在区间 $\left(4\pi,4\pi+\delta\right)$ 内. 构造思路: 取一条几乎整段落在一张平面内的闭曲线, 它形如"平面圆周上打一个微小纽结"的形状:
 
 - 远离纽结的部分是一段接近整圆的圆弧, 其全曲率趋近圆周的全曲率 $2\pi$ (由**定理 7.3.4 (芬切尔不等式)**, 闭曲线的全曲率不小于 $2\pi$, 而圆周恰好取到 $2\pi$);
 - 微小纽结所在的小段, 其切向量几乎额外扫过一整圈 (该小段作为近平面凸闭曲线, 由**定理 7.3.4 (芬切尔不等式)** 其全曲率不小于 $2\pi$, 且随其趋近平面凸环而趋近 $2\pi$).
