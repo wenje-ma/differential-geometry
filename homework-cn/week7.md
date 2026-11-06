@@ -398,7 +398,7 @@ $$
 D_{\boldsymbol{t}}\boldsymbol{n}=\frac{D_{\boldsymbol{t}}\boldsymbol{u}}{\sqrt{G}}-\frac{\boldsymbol{u}\,D_{\boldsymbol{t}}\left(\sqrt{G}\right)}{G}=\frac{H_F\boldsymbol{t}}{\sqrt{G}}-\frac{\boldsymbol{u}\left\langle{H}_F\boldsymbol{t},\boldsymbol{u}\right\rangle}{G^{\frac32}}.\quad\left(\mathrm{B}\right)
 $$
 
-第四步: 记 $\hat{\boldsymbol{u}}:=\frac{\boldsymbol{u}}{\sqrt{G}}=\boldsymbol{n}$, $P:=I_3-\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\top$（沿 $\boldsymbol{n}$ 的正交投影, 其像即 $S$ 的切平面）. 一方面 $\frac{\boldsymbol{u}\left\langle{H}_F\boldsymbol{t},\boldsymbol{u}\right\rangle}{G^{\frac32}}=\hat{\boldsymbol{u}}\cdot\frac{\left\langle{H}_F\boldsymbol{t},\boldsymbol{u}\right\rangle}{G}=\hat{\boldsymbol{u}}\left(\hat{\boldsymbol{u}}^\topH_F\boldsymbol{t}\right)$ 与 $\hat{\boldsymbol{u}}$ 平行, 故 $P$ 作用后为零; 另一方面由 $\left\langle\boldsymbol{n},\boldsymbol{n}\right\rangle=1$ 得 $0=\frac12D_{\boldsymbol{t}}\left\langle\boldsymbol{n},\boldsymbol{n}\right\rangle=\left\langle{D}_{\boldsymbol{t}}\boldsymbol{n},\boldsymbol{n}\right\rangle$, 故 $D_{\boldsymbol{t}}\boldsymbol{n}$ 已在切平面内, $PD_{\boldsymbol{t}}\boldsymbol{n}=D_{\boldsymbol{t}}\boldsymbol{n}$. 于是 (B) 两端用 $P$ 作用得
+第四步: 记 $\hat{\boldsymbol{u}}:=\frac{\boldsymbol{u}}{\sqrt{G}}=\boldsymbol{n}$, $P:=I_3-\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}$（沿 $\boldsymbol{n}$ 的正交投影, 其像即 $S$ 的切平面）. 一方面 $\frac{\boldsymbol{u}\left\langle{H}_F\boldsymbol{t},\boldsymbol{u}\right\rangle}{G^{\frac32}}=\hat{\boldsymbol{u}}\cdot\frac{\left\langle{H}_F\boldsymbol{t},\boldsymbol{u}\right\rangle}{G}=\hat{\boldsymbol{u}}\left(\hat{\boldsymbol{u}}^{\top}H_F\boldsymbol{t}\right)$ 与 $\hat{\boldsymbol{u}}$ 平行, 故 $P$ 作用后为零; 另一方面由 $\left\langle\boldsymbol{n},\boldsymbol{n}\right\rangle=1$ 得 $0=\frac12D_{\boldsymbol{t}}\left\langle\boldsymbol{n},\boldsymbol{n}\right\rangle=\left\langle{D}_{\boldsymbol{t}}\boldsymbol{n},\boldsymbol{n}\right\rangle$, 故 $D_{\boldsymbol{t}}\boldsymbol{n}$ 已在切平面内, $PD_{\boldsymbol{t}}\boldsymbol{n}=D_{\boldsymbol{t}}\boldsymbol{n}$. 于是 (B) 两端用 $P$ 作用得
 
 $$
 D_{\boldsymbol{t}}\boldsymbol{n}=P\frac{H_F\boldsymbol{t}}{\sqrt{G}}.\quad\left(\mathrm{C}\right)
@@ -419,10 +419,10 @@ $$
 第六步: 记
 
 $$
-\alpha:=\operatorname{tr}H_F,\quad\beta:=\operatorname{tr}\left(H_F^{2}\right),\quad\gamma:=\hat{\boldsymbol{u}}^\topH_F\hat{\boldsymbol{u}},\quad\delta:=\hat{\boldsymbol{u}}^\topH_F^{2}\hat{\boldsymbol{u}}.
+\alpha:=\operatorname{tr}H_F,\quad\beta:=\operatorname{tr}\left(H_F^{2}\right),\quad\gamma:=\hat{\boldsymbol{u}}^{\top}H_F\hat{\boldsymbol{u}},\quad\delta:=\hat{\boldsymbol{u}}^{\top}H_F^{2}\hat{\boldsymbol{u}}.
 $$
 
-由 $P=I_3-\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\top$ 与 $\hat{\boldsymbol{u}}^\top\hat{\boldsymbol{u}}=1$: $\operatorname{tr}P=3-1=2$, $\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F\right)=\hat{\boldsymbol{u}}^\topH_F\hat{\boldsymbol{u}}=\gamma$, 故
+由 $P=I_3-\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}$ 与 $\hat{\boldsymbol{u}}^{\top}\hat{\boldsymbol{u}}=1$: $\operatorname{tr}P=3-1=2$, $\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F\right)=\hat{\boldsymbol{u}}^{\top}H_F\hat{\boldsymbol{u}}=\gamma$, 故
 
 $$
 \operatorname{tr}\left(PH_F\right)=\alpha-\gamma.\quad\left(\mathrm{D}\right)
@@ -431,10 +431,10 @@ $$
 又
 
 $$
-PH_FPH_F=H_F^{2}-H_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F-\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F^{2}+\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F,
+PH_FPH_F=H_F^{2}-H_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F-\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F^{2}+\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F,
 $$
 
-取迹: $\operatorname{tr}\left(H_F^{2}\right)=\beta$; $\operatorname{tr}\left(H_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F\right)=\hat{\boldsymbol{u}}^\topH_F^{2}\hat{\boldsymbol{u}}=\delta$; $\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F^{2}\right)=\hat{\boldsymbol{u}}^\topH_F^{2}\hat{\boldsymbol{u}}=\delta$; $\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F\right)=\left(\hat{\boldsymbol{u}}^\topH_F\hat{\boldsymbol{u}}\right)\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^\topH_F\right)=\gamma\cdot\gamma$, 故
+取迹: $\operatorname{tr}\left(H_F^{2}\right)=\beta$; $\operatorname{tr}\left(H_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F\right)=\hat{\boldsymbol{u}}^{\top}H_F^{2}\hat{\boldsymbol{u}}=\delta$; $\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F^{2}\right)=\hat{\boldsymbol{u}}^{\top}H_F^{2}\hat{\boldsymbol{u}}=\delta$; $\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F\right)=\left(\hat{\boldsymbol{u}}^{\top}H_F\hat{\boldsymbol{u}}\right)\operatorname{tr}\left(\hat{\boldsymbol{u}}\hat{\boldsymbol{u}}^{\top}H_F\right)=\gamma\cdot\gamma$, 故
 
 $$
 \operatorname{tr}\left(PH_FPH_F\right)=\beta-2\delta+\gamma^{2}.\quad\left(\mathrm{E}\right)
@@ -453,13 +453,13 @@ $$
 $$
 
 $$
-\gamma=\hat{\boldsymbol{u}}^\topH_F\hat{\boldsymbol{u}}=\frac{1}{G}\left(F_x,F_y,F_z\right)H_F\left(F_x,F_y,F_z\right)^\top,\quad\delta=\frac{1}{G}\left(F_x,F_y,F_z\right)H_F^{2}\left(F_x,F_y,F_z\right)^\top,
+\gamma=\hat{\boldsymbol{u}}^{\top}H_F\hat{\boldsymbol{u}}=\frac{1}{G}\left(F_x,F_y,F_z\right)H_F\left(F_x,F_y,F_z\right)^{\top},\quad\delta=\frac{1}{G}\left(F_x,F_y,F_z\right)H_F^{2}\left(F_x,F_y,F_z\right)^{\top},
 $$
 
-其中 $\left(F_x,F_y,F_z\right)H_F^{2}\left(F_x,F_y,F_z\right)^\top=\left(F_x,F_y,F_z\right)H_F\,H_F\left(F_x,F_y,F_z\right)^\top$. 代入 (F) 即得所求的高斯曲率:
+其中 $\left(F_x,F_y,F_z\right)H_F^{2}\left(F_x,F_y,F_z\right)^{\top}=\left(F_x,F_y,F_z\right)H_F\,H_F\left(F_x,F_y,F_z\right)^{\top}$. 代入 (F) 即得所求的高斯曲率:
 
 $$
-K=\frac{1}{2\left|\nabla{F}\right|^{2}}\left\{\left(\operatorname{tr}H_F\right)^{2}-\operatorname{tr}\left(H_F^{2}\right)-\frac{2}{\left|\nabla{F}\right|^{2}}\left(\operatorname{tr}H_F\right)\nabla{F}^\topH_F\nabla{F}+\frac{2}{\left|\nabla{F}\right|^{2}}\nabla{F}^\topH_F^{2}\nabla{F}\right\},
+K=\frac{1}{2\left|\nabla{F}\right|^{2}}\left\{\left(\operatorname{tr}H_F\right)^{2}-\operatorname{tr}\left(H_F^{2}\right)-\frac{2}{\left|\nabla{F}\right|^{2}}\left(\operatorname{tr}H_F\right)\nabla{F}^{\top}H_F\nabla{F}+\frac{2}{\left|\nabla{F}\right|^{2}}\nabla{F}^{\top}H_F^{2}\nabla{F}\right\},
 $$
 
 $$

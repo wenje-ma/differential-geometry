@@ -444,7 +444,7 @@ $$
 
 (a) 面积与参数选取无关.
 
-由于**定义 3.2.1 (第一基本形式)**, $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm{d}u\,\mathrm{d}v=\int_{D}\sqrt{\det\left(g_{ij}\right)}\,\mathrm{d}u\,\mathrm{d}v$, 矩阵 $\boldsymbol{G}=\left(g_{ij}\right)$ 为第一基本形式的系数矩阵. 由 **定理 3.2.1 (第一基本形式与参数选取无关)**, 存在 $\boldsymbol{J}$, 使得换参数后的新系数矩阵 $\widetilde{\boldsymbol{G}}$ 满足 $\widetilde{\boldsymbol{G}}=\boldsymbol{J}^\top\boldsymbol{G}\boldsymbol{J}$, 则
+由于**定义 3.2.1 (第一基本形式)**, $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{g_{11}g_{22}-g_{12}^{2}}\,\mathrm{d}u\,\mathrm{d}v=\int_{D}\sqrt{\det\left(g_{ij}\right)}\,\mathrm{d}u\,\mathrm{d}v$, 矩阵 $\boldsymbol{G}=\left(g_{ij}\right)$ 为第一基本形式的系数矩阵. 由 **定理 3.2.1 (第一基本形式与参数选取无关)**, 存在 $\boldsymbol{J}$, 使得换参数后的新系数矩阵 $\widetilde{\boldsymbol{G}}$ 满足 $\widetilde{\boldsymbol{G}}=\boldsymbol{J}^{\top}\boldsymbol{G}\boldsymbol{J}$, 则
 
 $$
 \sqrt{\det\widetilde{\boldsymbol{G}}}\,\mathrm{d}\widetilde{u}\,\mathrm{d}\widetilde{v}=\left|\det\boldsymbol{J}\right|\sqrt{\det\boldsymbol{G}}\cdot\frac1{\left|\det\boldsymbol{J}\right|}\,\mathrm{d}u\,\mathrm{d}v=\sqrt{\det\boldsymbol{G}}\,\mathrm{d}u\,\mathrm{d}v.

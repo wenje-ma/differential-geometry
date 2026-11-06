@@ -2,7 +2,7 @@
 
 > **定义 2.2.1 (弧长与弧长参数)**
 > 
-> 曲线 $\boldsymbol{r}\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol{r}'\left(t\right)\right|\mathrm{d}t$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol{r}'\left(u\right)\right|\mathrm{d}u$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}\right|\equiv1$, 单位切向量 $\boldsymbol{t}=\dot{\boldsymbol{r}}$.
+> 曲线 $\boldsymbol{r}\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol{r}'\left(t\right)\right|\mathrm{d}t$; 弧长函数 $s\left(t\right)=\int_c^{\top}\left|\boldsymbol{r}'\left(u\right)\right|\mathrm{d}u$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}\right|\equiv1$, 单位切向量 $\boldsymbol{t}=\dot{\boldsymbol{r}}$.
 
 > **定义 2.2.2 (平面曲线的曲率与弗勒内标架)**
 > 

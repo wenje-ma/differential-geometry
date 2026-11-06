@@ -161,17 +161,19 @@ $$
 a^{\alpha}_{i}\widetilde{a}^{i}_{\beta}=\delta^{\alpha}{}_{\beta},\quad\widetilde{a}^{i}_{\alpha}a^{\alpha}_{j}=\delta^{i}{}_{j}.
 $$
 
-记 $A=\left(a^{\alpha}_{i}\right)$(行指标 $\alpha$, 列指标 $i$), $\widetilde{A}=\left(\widetilde{a}^{i}_{\alpha}\right)$, 则上两式即 $A\widetilde{A}=I_2$ 与 $\widetilde{A}A=I_2$, 故 $\widetilde{A}=A^{-1}$. 已证的 $\widetilde{g}_{ij}=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$ 即矩阵等式 $\widetilde{G}=A^\top GA$; 于是
+记 $A=\left(a^{\alpha}_{i}\right)$(行指标 $\alpha$, 列指标 $i$), $\widetilde{A}=\left(\widetilde{a}^{i}_{\alpha}\right)$, 则上两式即 $A\widetilde{A}=I_2$ 与 $\widetilde{A}A=I_2$, 故 $\widetilde{A}=A^{-1}$. 已证的 $\widetilde{g}_{ij}=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}$ 即矩阵等式 $\widetilde{G}=A^{\top}GA$; 于是
 
 $$
-\widetilde{G}^{-1}=\left(A^\top GA\right)^{-1}=A^{-1}G^{-1}\left(A^\top\right)^{-1}=\widetilde{A}\,G^{-1}\widetilde{A}^\top,
+\widetilde{G}^{-1}=\left(A^{\top}GA\right)^{-1}=A^{-1}G^{-1}\left(A^{\top}\right)^{-1}=\widetilde{A}\,G^{-1}\widetilde{A}^{\top},
 $$
 
-即 $\widetilde{g}^{ij}=\widetilde{a}^{i}_{\alpha}g^{\alpha\beta}\widetilde{a}^{j}_{\beta}$. 两边左乘 $\widetilde{A}^{-1}=A$, 右乘 $\left(\widetilde{A}^\top\right)^{-1}=A^\top$, 得
+则
 
 $$
-G^{-1}=A\widetilde{G}^{-1}A^\top,\quad\text{即}\quad{g}^{\alpha\beta}=\widetilde{g}^{ij}a^{\alpha}_{i}a^{\beta}_{j}.
+G^{-1}=A\widetilde{G}^{-1}A^{\top},\quad\text{即}\quad{g}^{\alpha\beta}=\widetilde{g}^{ij}a^{\alpha}_{i}a^{\beta}_{j}.
 $$
+
+$\blacksquare$
 
 (2) 由**公式 4.2.19 (克里斯托费尔符号与内积的关系)**, 在 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 参数下同样有
 

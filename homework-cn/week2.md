@@ -2,7 +2,7 @@
 
 > **定义 2.2.1 (弧长与弧长参数)**
 > 
-> 曲线 $\boldsymbol{r}\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol{r}'\left(t\right)\right|\mathrm{d}t$; 弧长函数 $s\left(t\right)=\int_c^\top\left|\boldsymbol{r}'\left(u\right)\right|\mathrm{d}u$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}\right|\equiv1$; 反之, 若参数 $t$ 满足 $\left|\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}t}\right|\equiv1$, 则 $t$ 是弧长参数.
+> 曲线 $\boldsymbol{r}\left(t\right)$, $t\in\left[c,d\right]$, 的弧长为 $\int_c^d\left|\boldsymbol{r}'\left(t\right)\right|\mathrm{d}t$; 弧长函数 $s\left(t\right)=\int_c^{\top}\left|\boldsymbol{r}'\left(u\right)\right|\mathrm{d}u$ 严格单调, 可把参数换为弧长参数 $s$, 此时 $\left|\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}\right|\equiv1$; 反之, 若参数 $t$ 满足 $\left|\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}t}\right|\equiv1$, 则 $t$ 是弧长参数.
 
 > **定义 2.3.1 (空间曲线的曲率与弗勒内标架)**
 > 
