@@ -177,7 +177,7 @@ $$
 \widetilde\Gamma^{k}_{ij}\widetilde{g}_{k\ell}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{r}_{\widetilde{u}^{\ell}}\right\rangle.
 $$
 
-把（A）与 $\boldsymbol{r}_{\widetilde{u}^{\ell}}=a^{\sigma}_{\ell}\boldsymbol{r}_\sigma$ 代入右端, 并用 $\left\langle\boldsymbol{r}_\gamma,\boldsymbol{r}_\sigma\right\rangle=g_{\gamma\sigma}$:
+把 (A) 与 $\boldsymbol{r}_{\widetilde{u}^{\ell}}=a^{\sigma}_{\ell}\boldsymbol{r}_\sigma$ 代入右端, 并用 $\left\langle\boldsymbol{r}_\gamma,\boldsymbol{r}_\sigma\right\rangle=g_{\gamma\sigma}$:
 
 $$
 \left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{r}_{\widetilde{u}^{\ell}}\right\rangle=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)a^{\sigma}_{\ell}g_{\gamma\sigma}.
