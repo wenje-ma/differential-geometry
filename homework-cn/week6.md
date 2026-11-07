@@ -54,7 +54,7 @@
 
 ### 解答 1.1
 
-(1) 由**公式 4.2.10 (基本量的矩阵与行列式)**, $(g^{\alpha\beta})(g_{\alpha\beta})=G^{-1}G=I_{2}$, 故 $g^{\alpha\beta}g_{\alpha\beta}=g_{11}+g_{22}=1+1=2$. $\blacksquare$
+(1) 由**公式 4.2.10 (基本量的矩阵与行列式)**, $\left(g^{\alpha\beta}\right)\left(g_{\alpha\beta}\right)=G^{-1}G=I_{2}$, 故 $g^{\alpha\beta}g_{\alpha\beta}=g_{11}+g_{22}=1+1=2$. $\blacksquare$
 
 (2) 由 $g>0$, $\sqrt{g}$ 可微, 且 $\ln\sqrt{g}=\frac12\ln{g}$, 故
 
@@ -116,7 +116,7 @@ $S$ 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下的第一, �
 
 ### 解答 1.2
 
-(1) 先算切向量. 由**公式 4.2.M (自然标架的运动方程)** 中的 $(M_1)$: $\partial_\alpha\boldsymbol{r}=\boldsymbol{r}_\alpha$, 与链式法则,
+(1) 先算切向量. 由**公式 4.2.M (自然标架的运动方程)** 中的 $\left(M_1\right)$: $\partial_\alpha\boldsymbol{r}=\boldsymbol{r}_\alpha$, 与链式法则,
 
 $$
 \boldsymbol{r}_{\widetilde{u}^{i}}=\frac{\partial{u}^{\alpha}}{\partial\widetilde{u}^{i}}\boldsymbol{r}_\alpha=a^{\alpha}_{i}\boldsymbol{r}_\alpha.
@@ -137,7 +137,7 @@ $$
 \frac{\partial\boldsymbol{r}_\alpha}{\partial\widetilde{u}^{j}}=\frac{\partial{u}^{\beta}}{\partial\widetilde{u}^{j}}\partial_\beta\boldsymbol{r}_\alpha=a^{\beta}_{j}\partial_\beta\boldsymbol{r}_\alpha.
 $$
 
-由**公式 4.2.M (自然标架的运动方程)** 中的 $(M_2)$: $\partial_\beta\boldsymbol{r}_\alpha=\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}$, 代入上式得
+由**公式 4.2.M (自然标架的运动方程)** 中的 $\left(M_2\right)$: $\partial_\beta\boldsymbol{r}_\alpha=\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}$, 代入上式得
 
 $$
 \boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}_{\alpha\beta}\right)\boldsymbol{r}_\gamma+a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}\boldsymbol{n}.\quad\left(\mathrm{A}\right)
@@ -230,7 +230,7 @@ $\blacksquare$
 由**公式 3.5.4 (平均曲率与高斯曲率)**,
 
 $$
-H=\frac12\operatorname{tr}(G^{-1}B)=\frac12\operatorname{tr}(b_{\alpha\xi}g^{\xi\beta})=\frac12b_{\alpha\beta}g^{\beta\alpha}.
+H=\frac12\operatorname{tr}\left(G^{-1}B\right)=\frac12\operatorname{tr}\left(b_{\alpha\xi}g^{\xi\beta}\right)=\frac12b_{\alpha\beta}g^{\beta\alpha}.
 $$
 
 $\blacksquare$
