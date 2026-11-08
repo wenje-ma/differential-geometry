@@ -355,11 +355,11 @@ $$
 第二步 (图象曲面的几何量): 记 $p:=z_u$, $q:=z_v$, $r:=z_{uu}$, $s:=z_{uv}$, $t:=z_{vv}$, $W:=\sqrt{1+p^{2}+q^{2}}$. 由**公式 10.1.2 (函数图的几何量)**, 该图象的第一, 第二基本形式系数为
 
 $$
-g_{11}=1+p^{2},\quad g_{12}=pq,\quad g_{22}=1+q^{2},\tag{B}
+g_{11}=1+p^{2},\quad{g}_{12}=pq,\quad{g}_{22}=1+q^{2},\tag{B}
 $$
 
 $$
-b_{11}=\frac{r}{W},\quad b_{12}=\frac{s}{W},\quad b_{22}=\frac{t}{W}.\tag{C}
+b_{11}=\frac{r}{W},\quad{b}_{12}=\frac{s}{W},\quad{b}_{22}=\frac{t}{W}.\tag{C}
 $$
 
 第三步 (高斯曲率): 由**公式 3.5.4 (平均曲率与高斯曲率)** 与 (B)(C),
@@ -371,19 +371,19 @@ $$
 第四步 ($p,q,r,s,t$ 换成 $F$ 的偏导): 由 $F\left(u,v,z\left(u,v\right)\right)=0$ 对 $u$, $v$ 求偏导得
 
 $$
-F_x+F_z{p}=0,\quad F_y+F_z{q}=0,\tag{E}
+F_x+F_z{p}=0,\quad{F}_y+F_z{q}=0,\tag{E}
 $$
 
 故 $p=-\frac{F_x}{F_z}$, $q=-\frac{F_y}{F_z}$. 对 (E) 再求一次偏导得
 
 $$
-F_{xx}+2F_{xz}p+F_{zz}p^{2}+F_z{r}=0,\quad F_{xy}+F_{xz}q+F_{yz}p+F_{zz}pq+F_z{s}=0,\quad F_{yy}+2F_{yz}q+F_{zz}q^{2}+F_z{t}=0.\tag{F}
+F_{xx}+2F_{xz}p+F_{zz}p^{2}+F_z{r}=0,\quad{F}_{xy}+F_{xz}q+F_{yz}p+F_{zz}pq+F_z{s}=0,\quad{F}_{yy}+2F_{yz}q+F_{zz}q^{2}+F_z{t}=0.\tag{F}
 $$
 
 把 $p,q$ 代回 (F) 并通分:
 
 $$
-r=-\frac{F_{xx}F_z^{2}-2F_{xz}F_xF_z+F_{zz}F_x^{2}}{F_z^{3}},\quad s=-\frac{F_{xy}F_z^{2}-F_{xz}F_yF_z-F_{yz}F_xF_z+F_{zz}F_xF_y}{F_z^{3}},\quad t=-\frac{F_{yy}F_z^{2}-2F_{yz}F_yF_z+F_{zz}F_y^{2}}{F_z^{3}}.\tag{G}
+r=-\frac{F_{xx}F_z^{2}-2F_{xz}F_xF_z+F_{zz}F_x^{2}}{F_z^{3}},\quad{s}=-\frac{F_{xy}F_z^{2}-F_{xz}F_yF_z-F_{yz}F_xF_z+F_{zz}F_xF_y}{F_z^{3}},\quad{t}=-\frac{F_{yy}F_z^{2}-2F_{yz}F_yF_z+F_{zz}F_y^{2}}{F_z^{3}}.\tag{G}
 $$
 
 代回即可. $\blacksquare$
