@@ -1,0 +1,139 @@
+指数映射
+设 Sigma: gamma=gamma(u) 是参数曲面.
+x_0 in Sigma
+exp_x_0: T_x_0 Sigma to Sigma
+       ni
+       v   to exp_x_0(v)=C_v(|v|)
+其中 C_v(t) 是测地线, t 是弧长.
+并且 C_v(0)=x_0
+C_v'(0)=v/|v|
+命题. exp_x_0 在 x_0 的邻域内是微分同胚.
+证明. D(exp_x_0) |_v=0(w), w in T_x_0 Sigma, |w|=1
+=(d/d epsilon) |_epsilon=0 exp_x_0 (v+epsilon w) |_v=0
+=(d/d epsilon) |_epsilon=0 C_w(epsilon)=w.
+D(exp_x_0)|_v=0=Id_T_x_0 Sigma
+用反函数定理, 存在开集
+(0 in)U subset T_x_0 Sigma
+使得 exp_x_0: U to exp_x_0(U) subset Sigma
+是微分同胚.
+(1)法坐标系. 
+在 T_x_0 Sigma 取单位正交系 {e_1,e_2}.
+phi: U to Sigma
+phi(u^1, u^2):=exp_x_0(u^alpha e_alpha)
+exp_x_0 是微分同胚
+implies phi 是 Sigma 的正则参数化.
+(u^1, u^2) 是测地法坐标.
+partial/partial u^alpha | exp_x_0(u^beta e_beta)=e_alpha implies g_alphabeta(0) = delta_alpha beta
+(2)取定 u^alpha e_alpha=v. |v|=1
+则 exp_x_0(t v)=C_v(t) 是以弧长为参数的测地线.
+iff u^alpha(t)=t v^alpha 满足测地线方程.
+v^epsilon v^tau Gamma_epailon tau^alpha(t v^beta)=0.
+令 t=0 implies v^epsilon v^tau Gamma_epailon tau^alpha(0)equiv 0, 任意的 v in T_x_0 Sigma, |v|=1
+implies Gamma_epailon tau^alpha (0)=0, K| _ 0 = partial Gamma |_ v * g - Gamma * Gamma =0
+(2) 测地极坐标
+phi(rho, theta)=exp_x_0(rho cos theta e_1+rho sin theta e_2)
+theta 固定, phi_theta(rho)=phi(rho theta)是测地线.
+rho 固定, phi_rho(theta): 每个点到 x_0 的距离是 rho, rho ll 1.
+例子. 在 S^2(1) 上测地线
+都是大圆.
+但只有长 le pi 的大
+圆弧才是最短的.
+命题. 设 x_0 in Sigma 存在一个 rho_0 > 0.
+使得 (1) exp_x_0: U_0={v in T_x_0 Sigma, |v| le rho_0} to Sigma
+是微分同胚.
+(2) 任意的 v in U_0, exp_x_0(t v/|v|), t in [0, |v|]
+是 exp_x_0 到 x_0 的最短曲线.
+证明. (1) 存在 rho_0 使 exp_x_0: U_0={|v|<rho_0}to Sigma
+是微分同胚.
+(2) 设 v in U_0
+曲线 C, C(0)=x_0
+C(L_0)=exp_x_0(v)
+c=c(t), t 是弧长. rho=rho(t), theta=theta(t).
+L_0=int_0^L_0 dot C^alpha(t) dot C^beta(t) g_alphabeta(t)
+=int_0^ dot L_0 sqrt(|dot C^rho(t)|^2+g_thetatheta(c(t))(dot C^theta(t))^2)
+(1)当 C subset U_0
+L_0=int_0^L_0 sqrt((dot rho)^2+g_thetatheta(dot theta)^2)
+ge int_0^L_0 dot rho = |v|
+(2) 设 C not subset U_0
+设 C| _ [0,t_1] subset U_0
+C | _ [t_2, L_0] subset U_0
+L ge L_[0,t_1]+L_[t_2, L_0]
+ge rho_0-(rho_0-|v|)
+=2 rho-|v|
+ge rho ge |v|
+(C not subset U implies C 不是最短)
+---
+(1)g_rhotheta(p,theta)=0
+implies <partial/partial tho phi, partial/partial theta phi> equiv 0
+exp_x_0(rho, theta)=C_v(theta)(rho)
+partial/partial theta C_v(theta)(rho)=partial/partial theta phi
+partial/partial rho | _ rho=rho(0) C_v(theta)()=partial/partial rho phi
+partial/partial rho phi 是 rho=rho_0 的法向, 而 partial/partial theta phi 是切向.
+(2) g_rhotheta(rho, theta)=1 (theta 固定, rho 是测地线弧长)
+---
+g=(d rho)^2+g_thetatheta(rho,theta) d theta^2
+测地极坐标
+g=(dp)^2+g_rhotheta d rho d theta+g_thetatheta(d theta)^2
+theta equiv const 是测地线.
+ddot theta (=0)+ Gamma_rhorho^theta dot rho dot rho (=1) + Gamma_rhotheta^theta dot rho dot theta (=0) + Gamma_thetatheta^theta (=0) =0
+implies Gamma_rhorho^theta-0
+0=1/2 g^theta* (2 partial rho g_rho* - partial_* g_rhorho)
+=1/2 g^thetatheta(2 partial_rho g_rhotheta)
+implies partial_rho g_rhotheta equiv 0
+implies g_rhotheta = g(theta, theta)
+法坐标下,
+g=g_alphabeta du^alpha du^beta
+(u^1;u^2)=(cos theta;sin theta)
+du^1=cos theta drho-rho sin theta dtheta
+du^2=sin theta drho+ rho cos theta dtheta
+g=g_11(cos^2 theta drho^2-2 rho cos theta sin theta drho dtheta + rho^2 sin^2 theta dtheta^2)
++2 g_12(cos theta sin theta drho^2+rho^2(cos^2 theta-sin^2 theta)drho dtheta+rho^2 cos theta sin theta dtheta^2)
++g_22(sin^2 theta drho^2+2rho sin theta cos theta drho dtheta+rho^2 cos^2 theta dtheta^2)
+=(g_11 cos^2 theta+2 g_22 cos theta sin theta + g_12 sin^2 theta) drho^2 + rho(...) drho dtheta
++rho^2(g_11 sin^2 theta+2 cos theta sin theta g_12+g_22 cos^2 theta) dtheta^2
+而 g_rhotheta=rho(g_alphabeta * sin theta * cos theta)=g(0,theta)=0
+g_thetatheta=rho^2(g_alphabeta * sin theta * cos theta)=rho^2+0(rho^2), rho to 0^+.
+partial/partial rho g_thetatheta=2 rho(g_alphabeta * sin theta * cos theta)+rho^2(partial_rho g_alphabeta * sin theta * cos theta)=O(rho), rho to 0^+.
+partial/partial sqrt(g_thetatheta)=(2 rho(...)+rho^2(...))/(2 sqrt(rho^2(g_alphabeta * ...))) (rho=0)/(g_alphabeta(0)=delta_alphabeta) 1
+I=drho^2+g_thetatheta dtheta^2
+g_thetatheta=rho^2+o(rho^2), rho to 0^+.
+命题. 若在切空间的极坐标下给定的 I 基本形式
+I=drho^2+psi^2(rho, theta)dtheta^2
+是光滑的.
+implies psi(rho, theta)=rho+o(rho), rho to 0^+.
+rho=sqrt((u^1)^2+(u^2)^2)
+theta=arctg u^2/u^1.
+K=-1/sqrt(g_11 g_22)((partial_2sqrt(g_11)/sqrt(g_11))_2+(partial_1 sqrt(g_22)/sqrt(g_22)_2))
+K=-1/sqrt(g_thetatheta)(partial_11^2 ln sqrt(g_thetatheta))
+partial_11^2 sqrt(g_thetatheta)=-K sqrt(g_thetatheta)
+g(0,theta)=0
+partial/partial rho g | _ (theta,theta)=1
+K equiv 1,0,-1.
+K=1, sqrt(g_thetatheta)=lambda cos rho + mu sin rho
+(sqrt(g_thetatheta)(0)=0 implies lambda=0)/(partial/partial rho sqrt(g_thetatheta)(0)=1 implies mu=1) sin rho
+K=0 implies g_thetatheta=rho^2
+K=-1 implies g_thetatheta+sh^2 rho
+g_thetatheta=sqrt(K)^(-1) sin^2 (sqrt(K)rho), K>0; rho^2, K=0; sqrt(-K)^(-1) sh^2(sqrt(-K)rho), K<0.
+命题: 设 Sigma: gamma=gamma(u) 是 u in D subset R^2 单连通参数曲面
+设 p, q in Sigma 是两点,
+C 是链接 p,q 的曲线.
+若 bar C 是 连 p, q 的曲线中, 最长/短的.
+则 C 是测地线.
+证明. 考虑任何一族正则曲线
+C(t;s)=(u^alpha(t;s))_(s in cal S)
+C(t;0)=(bar u^alpha(t))=bar C, t 是 bar C 的弧长
+C(0;s)equiv(p), C(L;s)equiv(q).
+L(s)=int_0^L sqrt(g_alphabeta C(t;s) dot C^alpha(t;s) dot C^beta(t;s))dt.
+0 是 L 的最值点.
+implies partial/partial s | _ s=0 L=0
+partial/partial s | _ s=0 L=int_0^L (partial/partial u^epsilon g_alphabeta (C^epsilon)'dot C^alpha dot C^beta+2 g_alphabeta (dot C^alpha)'dot C^beta)/(2 sqrt(g_alphabeta dot C^alpha dot C^beta))
+|dot C(t;0)|=1 int_0^L(partial/partial u^epsilon g_alphabeta dot C^alpha dot C^beta)(C^epsilon)'+2 int_0^L g_alphabeta(dot C^alpha)'dot C^beta
+=int_0^L(dot C^alpha dot C^beta partial/partial u^epsilon g_alphabeta-ddot C^beta g_alphabeta-dot C^beta dot C^alpha partial/partial u^alpha g_epsilonbeta)(C^epsilon)'dt
+---
+(C^epsilon)'=partial/partial s C^epsilon
+partial/partial s C^epsilon(0;s)
+equiv partial/partial s C^epsilon(L;s)=0
+int_0^L g_alphabeta(dot C^alpha)'dot C^beta dt
+=int_0^L g_alphabeta dot C^beta d(C^alpha)'
+=g_alphabeta dot C^beta(C^alpha)'|_0^L-int_0^L (ddot C^beta g_alphabeta+partial/partial u^epsilon g_alphabeta dot C^beta dot C^beta)(C^alpha)'
+=-int_0^L (ddot C^beta g_alphabeta+dot C^beta dot C^epsilon partial/partial u^epsilon g_alphabeta)(C^alpha)'dt.
