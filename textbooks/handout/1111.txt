@@ -1,0 +1,122 @@
+参数曲面
+Sigma: gamma=gamma(u)to Sigma(subset R^3)
+D to Sigma
+subset R^2
+Sigma cong D(R^2)
+正则曲面
+设 M subset R^3
+(1)M=cup_n=1^infty Sigma_i, Sigma_i 是参数曲面, gamma_i=gamma_i(u_i), u_i in D_i subset R^2
+并且 (2) 任意的 x in M,
+存在开集 (x in) cup (subset H), cup 只用有限个 Sigma_i
+相交
+(3)若 Sigma_i cap Sigma_j ne emptyset.
+gamma_j^(-1) cdot gamma_i, gamma_i^(-1)(Sigma_i cap Sigma_j)to gamma_j^(-1)(Sigma_i cap Sigma_j) 是 C^p 同胚.
+U={(Sigma_i:gamma_i=gamma_i(u_i):u_i in D_i)}_(i in I)
+任意的 Sigma_i, Sigma_j
+给定 Sigma_ij(subset Sigma_i)
+与 Sigma_ji(subset Sigma_j)
+之间 C^p 同胚
+phi_ij:Sigma_ji to Sigma_ij
+并且 phi_ij cdot phi_jk=phi_ik, 任意的 i,j,k.
+implies U/sim 是正则曲面, u_i sim phi_ij(u_j), u_i in Sigma_ij, phi_ij in Sigma_ji.
+例子. (1) 球面.
+S^2(1)={|x|=1}
+Sigma_(i,pm)=S^3(1)cap{pm x^i>0}, i=1,2,3.
+Sigma_(1,+)=S^3(1)cap{x^1>0}.(u_(i,+)^1=x^2, u_(1,+)^2=x^3)
+gamma_(1,+)(u_(1,+))=(sqrt(1-|u_(1,+)|), u_(1,+)), D_(1,+)cong{|u_(1,+)|^2<1}.
+Sigma_(2,+)=S^3(1)cap{x^2>0}, (u_(2,+)^1=x^1, u_(2,+)^2=x^3)
+Sigma_(1,+)cap Sigma_(2,+)=S^3(1)cap{x^1, x^2>0}
+gamma_(1,+)^(-1) (Sigma_(1,+)cap Sigma_(2,+)) to gamma_(2,+)^(-1)(Sigma_(1,+)cap Sigma_(2,+))
+(u_(1,+)^1, u_(2,+)^2), u_(2,+)=(-sqrt(1-|u_(1,+)|^2), u_(1,+)^2), ...? (没抄上, 似乎是一个结论, 代表本例题结束).
+(2) 环面
+S=I_1 cup I_1' cup I_2 cup I_2'
+I_1={0<theta<pi}
+I_1'={0<-theta<pi}
+I_2={pi/2<tilde theta<3pi/2}
+I_2'={-pi/2<theta<pi/2}
+tilde theta|_(I_1 cap I_2)=theta
+tilde theta|_(I_2 cap I_1')=theta-pi
+T subset I_1 cap I_1' cap I_2 cap I_2'
+phi
+...?(没抄上, 到此本例题结束)
+(3) 任何二维闭曲面
+若它包围一个区域
+则 M=T#T#dots#T (card(M)=k).
+定义. 若 M 是正则曲面,
+M 上存在处处非零的连续的法向向量场, 就称
+M 可定向, 这时若 partial M=emptyset, M 分 R^3
+为两部分.
+例子. (1) S^1(1) times[0,1](柱面)
+tilde gamma=(gamma,t)
+gamma in S^1, t in[0,1]
+取 n=(gamma,0)
+是处处非零的连续法向量场
+(2)莫比乌斯带.
+---
+定理(高斯博内)
+Sigma:gamma=gamma(u), u in D(cong{|x|^2<1}subset R^2)
+int_Sigma K dsigma+int_partial Sigma ds+Sigma_i alpha_i=2pi
+设 M 是可定向的正则曲面, 紧致.
+求int_M K dsigma
+定义. 设 M 是正则曲面
+M=cup_(i in I)T_i, i in I ??可数
+T_i 为曲边三角形
+(1)任意的 T_i cap T_j=emptyset 或者是条公共边, 或者是一个顶点.
+(2)任意的 P in M, 只能是有限个 T_i 的顶点.
+称 {T_i} 是 M 的三角剖分.
+定理. 设 M 是正则曲面, 紧致的.
+T={T_i|i=1,dots,N} 是三角剖分
+E:=T 的边数. V_i=T 的顶点数.
+N+(-1)^1E+(-1)^0V=:chi(M),
+成为 M 的欧拉示性数. 它与具体的剖分
+方式无关.
+(1)球, N=8, E=12, V=6, chi=2
+(2)甜甜圈, N=8, E=14, V=6, chi=0.
+(3)M=#T, chi(M)=2(1-k)
+设 M 是紧致的, 可定向的正则曲面.
+假设 T=cap_(i=1)^(T_i) 是 M 的三角剖分.
+并且 T_i 全是测地三角形
+每个 T_i 都在一个参数曲片中.
+由高斯博内公式
+int_(T_i)K dsigma+sum_(j=1)^3 alpha_ij=2pi
+iff int_(T_i)K dsigma+pi=sum_(j=1)^3 beta_ij (内角)
+对 i 求和
+int_(partial M) K_h ds+int_M K dsigma+N pi=sum_(v in V setminus partial H) 2pi
++sum_(v in V cap partial H)pi-sum_s alpha_s (partial M 的外角).
+int_(partial M) K_h ds+int_M K dsigma+sum_s alpha_s=-N pi+2pi#(V setminus partial H)
++pi#(V cap partial H)
+int_n K dsigma+sum_s alpha_s
+=pi(2#(V setminus partial H)+#(V cap partial H)
+-N)
+E 为边的集合
+3N=2#(E setminus partial H)+#(E cap partial H).
+由 partial M 的唯一分支 cong S^1
+所以 #(E cap partial H)=#(V cap partial H)
+implies int_(partial M) K_h ds+int_M K dsigma+sum_s alpha_s=pi(2#(V setminus partial H)+2N-2#(E setminus partial H))
+=2pi(#(V setminus partial H)+#(V cap partial H)+N-#(E setminus partial H)-#(E cap partial H))
+=2pi(N+#V-#E)=2pi chi(M)
+定理. 若 M 是可定的, 紧致正则曲面,
+int_(partial M) K_g ds+int_M K dsigma+sum_s alpha_s(partial M 上的外角)=2pi chi(M).
+在一个曲边多边形上,
+int_triangle K dsigma+sum_s alpha_s+int_(partial triangle)k_g ds=2pi(m-2^m-(m-2+1+m-2))=2pi
+定理. 当 M 可定向, 紧致, partial M=emptyset
+则 int_M K dsigma=2pi chi(M)
+问 int_M |K| dsigma=?
+命题. 设 M 是紧致的, 无边的正则
+曲面, 则在 M 上一定有一点 x_0
+使得 K(x_0)>0.
+证明. 令 f(x)=|x|^2, x in R^3.
+由于 M 紧致, 存在 x_0 使得 f(x_0)=max_M f
+设 x_0 附近, M 可以写成
+gamma=gamma(u)
+的形式. gamma(u_0)=x_0.
+f(gamma(u)) 在 u_0 in D 是内部的最大值点.
+考虑任意曲线 c(t)=(u^alpha(t)), c(0)=(u_0^alpha)
+1/2 d^2/dt^2 |_(t=0) f(gamma(u(t)))
+=d^2/dt^2 |_(t=0) 1/2 <gamma(u(t)),gamma(u(t))>
+=1/2<ddot gamma(0),gamma(0)>+<dot gamma(0),dot gamma(0)>
+=1/2 <ddot gamma(0),gamma(0)>+1
+若 gamma(c(t)) 是曲率线,
+0 ge -1/2 K|gamma(0)|+1, K ge 2/|gamma(0)|>0
+在极值点, gamma(0) perp T_(gamma(0))M,
+implies gamma(0) para 法向
