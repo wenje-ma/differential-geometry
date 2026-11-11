@@ -134,7 +134,7 @@ $S$ 由 $x^{2}+y^{2}-f\left(z\right)=0$ 给定, $f\left(0\right)=0$, $f'\left(0\
 记 $\Phi\left(x,y,z\right):=x^{2}+y^{2}-f\left(z\right)$, 则 $S=\left\{\Phi=0\right\}$ 是 $\Phi$ 的等值面. 由**例 3.1.5 (等值面)**, $\nabla\Phi$ 是 $S$ 的法向; 在 $\left(0,0,0\right)$ 处
 
 $$
-\nabla\Phi\left(0,0,0\right)=\left(2x,2y,-f'\left(z\right)\right)\big|_{\left(0,0,0\right)}=\left(0,0,-f'\left(0\right)\right)\neq\boldsymbol0
+\nabla\Phi\left(0,0,0\right)=\left.\left(2x,2y,-f'\left(z\right)\right)\right|_{\left(0,0,0\right)}=\left(0,0,-f'\left(0\right)\right)\neq\boldsymbol0
 $$
 
 (因 $f'\left(0\right)\neq0$), 故 $\left(0,0,0\right)$ 是 $S$ 的正则点, 且由**例 3.1.5 (等值面)** 的切平面方程, $\left(0,0,0\right)$ 处 $S$ 的切平面是 $z=0$. 又 $\Phi_z\left(0,0,0\right)=-f'\left(0\right)\neq0$, 由隐函数定理, 在 $\left(0,0,0\right)$ 邻近 $S$ 可表示为函数图 $z=z\left(x,y\right)$; 因 $\Phi$ 只通过 $\rho^{2}:=x^{2}+y^{2}$ 依赖 $x,y$, 该函数图具形式
