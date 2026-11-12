@@ -59,7 +59,9 @@ $$
 \boldsymbol{r}_u=\left(a\cos{u}\cos{v},b\cos{u}\sin{v},-c\sin{u}\right),;\boldsymbol{r}_v=\left(-a\sin{u}\sin{v},b\sin{u}\cos{v},0\right),;\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\sin{u}\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right).
 $$
 
-因 $u\in\left(0,\pi\right)$ 时 $\sin{u}>0$, 且 $\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right)\ne\boldsymbol0$ ($\cos{v},\sin{v}$ 不能同时为零), 故 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol{r}\left(u,v\right)$ 是椭球面 (除去南北两极) 的正则参数曲面. $\blacksquare$
+因 $u\in\left(0,\pi\right)$ 时 $\sin{u}>0$, 且 $\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right)\ne\boldsymbol0$ ($\cos{v},\sin{v}$ 不能同时为零), 故 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol{r}\left(u,v\right)$ 是椭球面 (除去南北两极) 的正则参数曲面.
+
+$\blacksquare$
 
 (2) 单叶双曲面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$. 取参数
 
@@ -80,7 +82,9 @@ $$
 \boldsymbol{r}_u=\left(a\sinh{u}\cos{v},b\sinh{u}\sin{v},c\cosh{u}\right),;\boldsymbol{r}_v=\left(-a\cosh{u}\sin{v},b\cosh{u}\cos{v},0\right),;\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(-bc\cosh^2u\cos{v},-ac\cosh^2u\sin{v},ab\sinh{u}\cosh{u}\right).
 $$
 
-因 $\cosh{u}>0$ 恒成立, 前两个分量同为零当且仅当 $\cos{v}=\sin{v}=0$, 这不可能, 故 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, 它是单叶双曲面的正则参数曲面. $\blacksquare$
+因 $\cosh{u}>0$ 恒成立, 前两个分量同为零当且仅当 $\cos{v}=\sin{v}=0$, 这不可能, 故 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, 它是单叶双曲面的正则参数曲面.
+
+$\blacksquare$
 
 (4) 椭圆抛物面 $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$. 取参数
 
@@ -96,7 +100,9 @@ $$
 \boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(-\frac{2u}{a^2},-\frac{2v}{b^2},1\right)\ne\boldsymbol0,
 $$
 
-(第三个分量恒为 $1$, 处处非零). 由**定义 3.1.1 (曲面与单位法向)**, 它是椭圆抛物面的正则参数曲面. $\blacksquare$
+(第三个分量恒为 $1$, 处处非零). 由**定义 3.1.1 (曲面与单位法向)**, 它是椭圆抛物面的正则参数曲面.
+
+$\blacksquare$
 
 ## 1.7 (椭球面的第一基本形式)
 
@@ -157,7 +163,9 @@ $$
 \mathrm{I}=g_{11}\,\mathrm{d}u^2+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^2=\mathrm{d}u^2+\left(u^2+b^2\right)\mathrm{d}v^2,
 $$
 
-即 $g_{11}=1,g_{12}=0,g_{22}=u^2+b^2$. $\blacksquare$
+即 $g_{11}=1,g_{12}=0,g_{22}=u^2+b^2$.
+
+$\blacksquare$
 
 (2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
@@ -219,7 +227,9 @@ $$
 \boldsymbol{r}_x\wedge\boldsymbol{r}_y=\det{J}\,\boldsymbol{r}_u\wedge\boldsymbol{r}_v.
 $$
 
-因此两向量 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 与 $\boldsymbol{r}_x\wedge\boldsymbol{r}_y$ 的指向是否相同, 取决于 $\det{J}$ 的符号: 当 $\det{J}>0$ (同向参数变换) 时 $\boldsymbol{r}_x\wedge\boldsymbol{r}_y$ 与 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 同向; 当 $\det{J}<0$ (反向参数变换) 时两者反向. $\blacksquare$
+因此两向量 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 与 $\boldsymbol{r}_x\wedge\boldsymbol{r}_y$ 的指向是否相同, 取决于 $\det{J}$ 的符号: 当 $\det{J}>0$ (同向参数变换) 时 $\boldsymbol{r}_x\wedge\boldsymbol{r}_y$ 与 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 同向; 当 $\det{J}<0$ (反向参数变换) 时两者反向.
+
+$\blacksquare$
 
 ## 1.14 (第二基本形式的计算)
 

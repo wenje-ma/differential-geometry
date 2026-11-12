@@ -76,9 +76,13 @@ $$
 \widetilde\tau=\kappa.
 $$
 
-故 $\widetilde\kappa=\tau$, $\widetilde\tau=k$. $\blacksquare$
+故 $\widetilde\kappa=\tau$, $\widetilde\tau=k$.
 
-(2) $\widetilde{C}$ 的弗勒内标架为 $\widetilde{\boldsymbol{t}}=\boldsymbol{b}$, $\widetilde{\boldsymbol{n}}=-\boldsymbol{n}$, $\widetilde{\boldsymbol{b}}=\boldsymbol{t}$. $\blacksquare$
+$\blacksquare$
+
+(2) $\widetilde{C}$ 的弗勒内标架为 $\widetilde{\boldsymbol{t}}=\boldsymbol{b}$, $\widetilde{\boldsymbol{n}}=-\boldsymbol{n}$, $\widetilde{\boldsymbol{b}}=\boldsymbol{t}$.
+
+$\blacksquare$
 
 ## 1.12 (切线像的曲率与挠率)
 
@@ -173,7 +177,9 @@ $$
 \longrightarrow\kappa\left(0\right)=\kappa\left(P_0\right),s\to0.
 $$
 
-即 $\lim_{P\to{P}_0}\frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}=\kappa\left(P_0\right)$. $\blacksquare$
+即 $\lim_{P\to{P}_0}\frac{2d\left(P,l\right)}{d^{2}\left(P_0,P\right)}=\kappa\left(P_0\right)$.
+
+$\blacksquare$
 
 ## 1.17 (满足 $\tau=c\kappa$ 的一般螺旋线)
 
@@ -204,7 +210,9 @@ $$
 =\frac{c}{\sqrt{1+c^{2}}}=\text{常数},
 $$
 
-即切向量 $\boldsymbol{t}$ 与固定方向 $\boldsymbol{v}$ 的夹角恒定. 因此满足 $\tau=c\kappa$ 的曲线正是一般螺旋线 (其切向量与固定方向保持定角). $\blacksquare$
+即切向量 $\boldsymbol{t}$ 与固定方向 $\boldsymbol{v}$ 的夹角恒定. 因此满足 $\tau=c\kappa$ 的曲线正是一般螺旋线 (其切向量与固定方向保持定角).
+
+$\blacksquare$
 
 > 计算 $\frac{\mathrm{d}}{\mathrm{d}s}\left(A\boldsymbol{t}+B\boldsymbol{b}\right)=\left(A\kappa-B\tau\right)\boldsymbol{n}$ 发现其仅与 $\boldsymbol{n}$ 有关, 一个自然的想法是, 若令 $\boldsymbol{n}$ 的系数为 $0$, 这样的曲线肯定很特殊.
 
@@ -291,7 +299,9 @@ $$
 
 混合积 $\left(\widetilde{\boldsymbol{r}}',\widetilde{\boldsymbol{r}}'',\widetilde{\boldsymbol{r}}'''\right)=-\frac18$. 故 $\widetilde{k}=\frac{\widetilde{w}}{\widetilde{v}^{3}}=\frac{1/\sqrt2}{\left(\sqrt2\right)^{3}}=\frac14$, $\widetilde\tau=\frac{\left(\widetilde{\boldsymbol{r}}',\widetilde{\boldsymbol{r}}'',\widetilde{\boldsymbol{r}}'''\right)}{\widetilde{w}^{2}}=\frac{-1/8}{1/2}=-\frac14$.
 
-结论. 两条曲线的曲率, 挠率分别相等: $k=\widetilde{k}=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb{E}^{3}$ 中相差一个刚体运动, 即两曲线合同. $\blacksquare$
+结论. 两条曲线的曲率, 挠率分别相等: $k=\widetilde{k}=\frac14$, $\tau=\widetilde\tau=-\frac14$. 由**定理 2.4.2 (空间曲线基本定理)**, 它们在 $\mathbb{E}^{3}$ 中相差一个刚体运动, 即两曲线合同.
+
+$\blacksquare$
 
 ## 2 (非平凡纽结全曲率的下确界)
 
@@ -310,4 +320,6 @@ $$
 
 若存在题设中的 $\varepsilon>0$ 使一切非平凡纽结都有 $\int_\gamma\kappa\ge4\pi+\varepsilon$, 则取下确界将给出 $\inf_{\text{纽结}}\int_\gamma\kappa\ge4\pi+\varepsilon>4\pi$, 与上面构造出的, 全曲率可以任意接近 $4\pi$ 的纽结矛盾.
 
-所以, 全体非平凡纽结的全曲率的下确界恰为 $4\pi$, 它被趋近但从不达到; 不存在对一切非平凡纽结一致的 $\varepsilon>0$. $\blacksquare$
+所以, 全体非平凡纽结的全曲率的下确界恰为 $4\pi$, 它被趋近但从不达到; 不存在对一切非平凡纽结一致的 $\varepsilon>0$.
+
+$\blacksquare$

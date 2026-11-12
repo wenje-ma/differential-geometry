@@ -54,7 +54,9 @@
 
 ### 解答 1.1
 
-(1) 由**公式 4.2.10 (基本量的矩阵与行列式)**, $\left(g^{\alpha\beta}\right)\left(g_{\alpha\beta}\right)=G^{-1}G=I_{2}$, 故 $g^{\alpha\beta}g_{\alpha\beta}=g_{11}+g_{22}=1+1=2$. $\blacksquare$
+(1) 由**公式 4.2.10 (基本量的矩阵与行列式)**, $\left(g^{\alpha\beta}\right)\left(g_{\alpha\beta}\right)=G^{-1}G=I_{2}$, 故 $g^{\alpha\beta}g_{\alpha\beta}=g_{11}+g_{22}=1+1=2$.
+
+$\blacksquare$
 
 (2) 由 $g>0$, $\sqrt{g}$ 可微, 且 $\ln\sqrt{g}=\frac12\ln{g}$, 故
 

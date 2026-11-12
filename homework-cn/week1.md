@@ -82,7 +82,9 @@ $$
 
 ($\Rightarrow$) 若 $\left|\boldsymbol{a}\right|$ 为常数, 则 $\left|\boldsymbol{a}\right|^{2}$ 亦为常数, 故 $\frac{\mathrm{d}}{\mathrm{d}t}\left|\boldsymbol{a}\right|^{2}=0$, 从而由上式 $\left\langle\boldsymbol{a},\boldsymbol{a}'\right\rangle=0$.
 
-($\Leftarrow$) 反之, 若 $\left\langle\boldsymbol{a},\boldsymbol{a}'\right\rangle=0$, 则由上式 $\frac{\mathrm{d}}{\mathrm{d}t}\left|\boldsymbol{a}\right|^{2}=0$, 故 $\left|\boldsymbol{a}\right|^{2}$ 为常数, 即 $\left|\boldsymbol{a}\right|$ 为常数. $\blacksquare$
+($\Leftarrow$) 反之, 若 $\left\langle\boldsymbol{a},\boldsymbol{a}'\right\rangle=0$, 则由上式 $\frac{\mathrm{d}}{\mathrm{d}t}\left|\boldsymbol{a}\right|^{2}=0$, 故 $\left|\boldsymbol{a}\right|^{2}$ 为常数, 即 $\left|\boldsymbol{a}\right|$ 为常数.
+
+$\blacksquare$
 
 (2) 设 $\boldsymbol{a}\ne\boldsymbol0$ (否则方向无定义).
 
@@ -98,7 +100,9 @@ $$
 \boldsymbol{u}'=\frac{\boldsymbol{a}'}{\left|\boldsymbol{a}\right|}-\frac{\boldsymbol{a}\left(\left|\boldsymbol{a}\right|\right)'}{\left|\boldsymbol{a}\right|^{2}}=\frac{\mu\boldsymbol{a}}{\left|\boldsymbol{a}\right|}-\frac{\boldsymbol{a}\,\mu\left|\boldsymbol{a}\right|}{\left|\boldsymbol{a}\right|^{2}}=\boldsymbol0.
 $$
 
-故 $\boldsymbol{u}$ 为常向量, 即 $\boldsymbol{a}$ 的方向不变. $\blacksquare$
+故 $\boldsymbol{u}$ 为常向量, 即 $\boldsymbol{a}$ 的方向不变.
+
+$\blacksquare$
 
 ## 2 (光滑曲线弧长的积分公式与直线最短性)
 
@@ -136,7 +140,9 @@ $$
 L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_PL\left(\boldsymbol\alpha,P\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm{d}t-\varepsilon\left(b-a\right).
 $$
 
-由 $\varepsilon>0$ 任意, 得 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm{d}t$. 两方向结合即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm{d}t$, 与**定义 2.2.1 (弧长与弧长参数)** 的弧长公式一致. $\blacksquare$
+由 $\varepsilon>0$ 任意, 得 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\int_a^b\left|\boldsymbol\alpha'\right|\mathrm{d}t$. 两方向结合即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm{d}t$, 与**定义 2.2.1 (弧长与弧长参数)** 的弧长公式一致.
+
+$\blacksquare$
 
 (2) 设 $\boldsymbol\alpha:\left[a,b\right]\to\mathbb{E}^{3}$ 是连接两点 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意曲线. 直线段可参数化为 $\boldsymbol{r}\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right)$, $t\in\left[a,b\right]$. 则 $\boldsymbol{r}'=\frac{Q-P}{b-a}$, 其弧长为 $\int_a^b\left|\boldsymbol{r}'\right|\mathrm{d}t=\int_a^b\frac{\left|Q-P\right|}{b-a}\mathrm{d}t=\left|Q-P\right|$. 对任意连接 $P,Q$ 的曲线 $\boldsymbol\alpha$, 由 (1) 及积分三角不等式,
 
@@ -144,7 +150,9 @@ $$
 L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\mathrm{d}t\ge\left|\int_a^b\boldsymbol\alpha'\mathrm{d}t\right|=\left|\boldsymbol\alpha\left(b\right)-\boldsymbol\alpha\left(a\right)\right|=\left|Q-P\right|.
 $$
 
-故任何连接两点的曲线长度都不小于 $\left|Q-P\right|$, 而直线段恰好达到 $\left|Q-P\right|$, 所以 $\mathbb{E}^{3}$ 中任何两点之间直线最短. $\blacksquare$
+故任何连接两点的曲线长度都不小于 $\left|Q-P\right|$, 而直线段恰好达到 $\left|Q-P\right|$, 所以 $\mathbb{E}^{3}$ 中任何两点之间直线最短.
+
+$\blacksquare$
 
 ## 3 (平面曲线几何与空间曲线的对比)
 
@@ -177,7 +185,9 @@ $$
 =\kappa\left(s\right)\begin{bmatrix}-\dot{x}^2\\\dot{x}^1\end{bmatrix},
 $$
 
-连同 $\dot{x}^1,\dot{x}^2$ 的定义构成一阶常微分方程组; 因 $\kappa\in{C}^1$, 右端关于未知量满足利普希茨条件, 由一阶常微分方程组初值问题解的存在唯一性 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol{r}}$ 也是同一 $\kappa$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol{A}$ 使 $\boldsymbol{A}\dot{\boldsymbol{r}}\left(0\right)=\dot{\widetilde{\boldsymbol{r}}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol{r}}\left(0\right)-\boldsymbol{A}\boldsymbol{r}\left(0\right)$, 构造 $\widehat{\boldsymbol{r}}=\boldsymbol{A}\boldsymbol{r}+\boldsymbol\beta_0$; 由正向部分它仍以 $\kappa$ 为有向曲率, 且与 $\widetilde{\boldsymbol{r}}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol{r}}=\widehat{\boldsymbol{r}}$. $\blacksquare$
+连同 $\dot{x}^1,\dot{x}^2$ 的定义构成一阶常微分方程组; 因 $\kappa\in{C}^1$, 右端关于未知量满足利普希茨条件, 由一阶常微分方程组初值问题解的存在唯一性 得存在性. 唯一性 (模保向等距): 设 $\widetilde{\boldsymbol{r}}$ 也是同一 $\kappa$ 的弧长参数平面曲线, 取旋转矩阵 $\boldsymbol{A}$ 使 $\boldsymbol{A}\dot{\boldsymbol{r}}\left(0\right)=\dot{\widetilde{\boldsymbol{r}}}\left(0\right)$, 平移向量 $\boldsymbol\beta_0=\widetilde{\boldsymbol{r}}\left(0\right)-\boldsymbol{A}\boldsymbol{r}\left(0\right)$, 构造 $\widehat{\boldsymbol{r}}=\boldsymbol{A}\boldsymbol{r}+\boldsymbol\beta_0$; 由正向部分它仍以 $\kappa$ 为有向曲率, 且与 $\widetilde{\boldsymbol{r}}$ 初值相同, 由初值唯一性得 $\widetilde{\boldsymbol{r}}=\widehat{\boldsymbol{r}}$.
+
+$\blacksquare$
 
 (2) 平面曲线的特别之处.
 
@@ -189,7 +199,9 @@ $$
 
 (d) 等距变换下曲率的保向敏感性. 空间曲率 $k=\left|\dot{\boldsymbol{t}}\right|$ 在任意正交变换下不变, 挠率 $\tau$ 在反向 (反射) 变换下变号; 而平面有向曲率在等距变换下按 $k_2=\det\boldsymbol{A}\cdot{k}_1$ 变换, 反射下 $\det\boldsymbol{A}=-1$ 会翻转符号. 因此平面曲线唯一性需模保向等距 (**定理 2.4.4 (平面曲线基本定理)**), 空间曲线唯一性模整个刚体运动 (**定理 2.4.2 (空间曲线基本定理)**).
 
-综上, 平面曲线之特别处在于: 曲率退化为一个可带符号的标量函数, 且无挠率, 由单一函数 $\kappa\left(s\right)$ 模保向等距即可完全确定曲线. $\blacksquare$
+综上, 平面曲线之特别处在于: 曲率退化为一个可带符号的标量函数, 且无挠率, 由单一函数 $\kappa\left(s\right)$ 模保向等距即可完全确定曲线.
+
+$\blacksquare$
 
 ## 4 (曲率与挠率的计算)
 
@@ -290,7 +302,9 @@ $$
 
 情形 B: $\varphi'\equiv0$, 即 $\left(\frac1\kappa\right)'\equiv0$. 则 $\frac1\kappa$ 为常数, 故 $\kappa\equiv$ 常数.
 
-综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $\kappa$ 为常数 (情形 B), 这正是**习题 2.15 (球面曲线的刻画)** 的结论. $\blacksquare$
+综上, 满足该条件的曲线, 或者落在球面上 (情形 A), 或者 $\kappa$ 为常数 (情形 B), 这正是**习题 2.15 (球面曲线的刻画)** 的结论.
+
+$\blacksquare$
 
 ## 6.8 (曲线到定点最近点的切向垂直性)
 
@@ -311,7 +325,9 @@ $$
 0=f'\left(t_0\right)=2\left\langle\boldsymbol{r}\left(t_0\right)-P_0,\boldsymbol{r}'\left(t_0\right)\right\rangle.
 $$
 
-即 $\left\langle\boldsymbol{r}\left(t_0\right)-P_0,\boldsymbol{r}'\left(t_0\right)\right\rangle=0$. 故向量 $\boldsymbol{r}\left(t_0\right)-P_0$ 与 $\boldsymbol{r}'\left(t_0\right)$ 垂直. $\blacksquare$
+即 $\left\langle\boldsymbol{r}\left(t_0\right)-P_0,\boldsymbol{r}'\left(t_0\right)\right\rangle=0$. 故向量 $\boldsymbol{r}\left(t_0\right)-P_0$ 与 $\boldsymbol{r}'\left(t_0\right)$ 垂直.
+
+$\blacksquare$
 
 ## 6.9 (切线或主法线过定点的曲线)
 
@@ -330,7 +346,9 @@ $$
 =\lambda'\boldsymbol{t}+\lambda{k}\boldsymbol{n}.
 $$
 
-若某开区间上 $\kappa\ne0$, 则由**定义 2.3.1 (空间曲线的曲率与弗勒内标架)** 知 $\boldsymbol{t},\boldsymbol{n}$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda\kappa=0$. 由 $\kappa\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol{t}}\equiv\boldsymbol0$. 由**例 2.2.2 (曲率为常数的曲线)** (1) ($k\equiv0$ 当且仅当曲线是直线), 曲线 $C$ 是直线. $\blacksquare$
+若某开区间上 $\kappa\ne0$, 则由**定义 2.3.1 (空间曲线的曲率与弗勒内标架)** 知 $\boldsymbol{t},\boldsymbol{n}$ 线性无关, 比较系数得 $\lambda'=1$ 且 $\lambda\kappa=0$. 由 $\kappa\ne0$ 得 $\lambda=0$, 进而 $\lambda'=0\ne1$, 矛盾. 故在整个区间上 $k\equiv0$, 即 $\dot{\boldsymbol{t}}\equiv\boldsymbol0$. 由**例 2.2.2 (曲率为常数的曲线)** (1) ($k\equiv0$ 当且仅当曲线是直线), 曲线 $C$ 是直线.
+
+$\blacksquare$
 
 (2) 设 $\kappa\ne0$ 处处成立 (否则主法线无定义). 每条主法线都过原点, 即 $\boldsymbol{r}\left(s\right)$ 落在过原点的直线 $\mathrm{span}\left\{\boldsymbol{n}\left(s\right)\right\}$ 上, 故存在数量函数 $\lambda\left(s\right)$ 使 $\boldsymbol{r}\left(s\right)=\lambda\left(s\right)\boldsymbol{n}\left(s\right)$. 对 $s$ 求导 ($\dot{\boldsymbol{r}}=\boldsymbol{t}$, $\dot{\boldsymbol{n}}=-\kappa\boldsymbol{t}+\tau\boldsymbol{b}$, 见**定理 2.3.2 (弗勒内公式)**):
 
@@ -340,7 +358,9 @@ $$
 =-\lambda{k}\boldsymbol{t}+\lambda'\boldsymbol{n}+\lambda\tau\boldsymbol{b}.
 $$
 
-$\left\{\boldsymbol{t},\boldsymbol{n},\boldsymbol{b}\right\}$ 为标准正交基, 比较系数: $1=-\lambda{k}$, $0=\lambda'$, $0=\lambda\tau$. 由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda\kappa\ne0$ 知 $\lambda\ne0$, 再由 $\lambda\tau=0$ 得 $\tau\equiv0$. 于是由**定理 2.3.1 (平面曲线的充要条件)**, $\boldsymbol{r}$ 是平面曲线; 又 $\lambda$ 为常数, 故 $\left|\boldsymbol{r}\right|=\left|\lambda\right|=$ 常数, 即曲线到原点的距离恒定. 于是曲率 $k=\frac1{\left|\lambda\right|}=$ 常数 $>0$ (由 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$ 及 $\boldsymbol{r}=\lambda\boldsymbol{n}$ 得 $\left|\dot{\boldsymbol{t}}\right|=\left|k\boldsymbol{n}\right|=\left|k\right|=\frac1{\left|\lambda\right|}$). 由于 $\boldsymbol{r}$ 是平面曲线 ($\tau\equiv0$) 且其曲率 $\kappa$ 为正常数, 由**例 2.4.5 (曲率挠率均为常数的曲线分类)** (2), $\boldsymbol{r}$ 是半径 $\frac1k$ 的圆. 故所有主法线过定点的曲线是圆. $\blacksquare$
+$\left\{\boldsymbol{t},\boldsymbol{n},\boldsymbol{b}\right\}$ 为标准正交基, 比较系数: $1=-\lambda{k}$, $0=\lambda'$, $0=\lambda\tau$. 由 $0=\lambda'$ 得 $\lambda$ 为常数; 由 $1=-\lambda\kappa\ne0$ 知 $\lambda\ne0$, 再由 $\lambda\tau=0$ 得 $\tau\equiv0$. 于是由**定理 2.3.1 (平面曲线的充要条件)**, $\boldsymbol{r}$ 是平面曲线; 又 $\lambda$ 为常数, 故 $\left|\boldsymbol{r}\right|=\left|\lambda\right|=$ 常数, 即曲线到原点的距离恒定. 于是曲率 $k=\frac1{\left|\lambda\right|}=$ 常数 $>0$ (由 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$ 及 $\boldsymbol{r}=\lambda\boldsymbol{n}$ 得 $\left|\dot{\boldsymbol{t}}\right|=\left|k\boldsymbol{n}\right|=\left|k\right|=\frac1{\left|\lambda\right|}$). 由于 $\boldsymbol{r}$ 是平面曲线 ($\tau\equiv0$) 且其曲率 $\kappa$ 为正常数, 由**例 2.4.5 (曲率挠率均为常数的曲线分类)** (2), $\boldsymbol{r}$ 是半径 $\frac1k$ 的圆. 故所有主法线过定点的曲线是圆.
+
+$\blacksquare$
 
 ## 6.10 (反向等距变换下曲线几何量的变化)
 

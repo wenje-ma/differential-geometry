@@ -134,7 +134,9 @@ $$
 2H=\frac{b_{11}g_{22}+b_{22}g_{11}}{g_{11}g_{22}}=\frac{L}{E}+\frac{N}{G}.\tag{G}
 $$
 
-把 (G) 代入 (F), 得 $L_v=\frac{E_v}{2}\cdot2H=HE_v$. $\blacksquare$
+把 (G) 代入 (F), 得 $L_v=\frac{E_v}{2}\cdot2H=HE_v$.
+
+$\blacksquare$
 
 第五步: 同法, 由 $M=0$, (C) 的第二, 第四项消失:
 
@@ -284,7 +286,9 @@ $$
 
 即 $S$ 的高斯曲率处处为零.
 
-第五步 (第二基本形式为零的情形): 若 $b_{\alpha\beta}=0$ ($\forall\alpha,\beta$), 则 $\mathrm{II}=0$, 由**公式 3.6.35 (全脐点曲面)** 可知 $k=0$, 故 $S$ 是平面. $\blacksquare$
+第五步 (第二基本形式为零的情形): 若 $b_{\alpha\beta}=0$ ($\forall\alpha,\beta$), 则 $\mathrm{II}=0$, 由**公式 3.6.35 (全脐点曲面)** 可知 $k=0$, 故 $S$ 是平面.
+
+$\blacksquare$
 
 第六步 (第二基本形式不全为零的情形): 以下设 $\overline{B}=\left(b_{\alpha\beta}\right)\neq0$. 由 (D) $\det\overline{B}=LN-M^{2}=0$ 且 $\overline{B}\neq0$, 故 $\operatorname{rank}\overline{B}=1$, 于是 $\overline{B}$ 有属于特征值 $0$ 的非零特征向量 $\left(a^{1},a^{2}\right)$, 即
 
@@ -300,7 +304,9 @@ $$
 
 故 $\boldsymbol\xi$ 是常向量; 又 $\left(a^{1},a^{2}\right)\neq\left(0,0\right)$ 而 $\boldsymbol{r}_1,\boldsymbol{r}_2$ 线性无关, 故 $\boldsymbol\xi\neq\boldsymbol0$.
 
-第七步 ($S$ 是柱面): 设 $S$ 的参数表示为 $\overline{\boldsymbol{r}}\left(\overline{u},\overline{v}\right)=\overline{\boldsymbol{a}}\left(\overline{u}\right)+\overline{v}\,\boldsymbol\xi$. 即 $S$ 是以 $\boldsymbol\xi$ 为直母线方向, 且该方向不随参数改变的直纹面; 由**例 3.6.2 (柱面)** 的定义, $S$ 是柱面. $\blacksquare$
+第七步 ($S$ 是柱面): 设 $S$ 的参数表示为 $\overline{\boldsymbol{r}}\left(\overline{u},\overline{v}\right)=\overline{\boldsymbol{a}}\left(\overline{u}\right)+\overline{v}\,\boldsymbol\xi$. 即 $S$ 是以 $\boldsymbol\xi$ 为直母线方向, 且该方向不随参数改变的直纹面; 由**例 3.6.2 (柱面)** 的定义, $S$ 是柱面.
+
+$\blacksquare$
 
 ## 1.9 (两个二次微分式能否作为第一, 第二基本形式)
 
@@ -328,7 +334,9 @@ $$
 
 以下分别检验.
 
-(1) 此时 $E=G=1$, $F=0$, $L=1$, $M=0$, $N=-1$. (A) 给出 $0=-1$, 矛盾. $\blacksquare$
+(1) 此时 $E=G=1$, $F=0$, $L=1$, $M=0$, $N=-1$. (A) 给出 $0=-1$, 矛盾.
+
+$\blacksquare$
 
 (2) 此时 $E=1$, $F=0$, $G=\cos^{2}u$, $L=\cos^{2}u$, $M=0$, $N=1$. (C): 由 $M=0$, (C) 化为
 
@@ -336,7 +344,9 @@ $$
 \left(\frac{N}{\sqrt{G}}\right)_u-L\frac{\left(\sqrt{G}\right)_u}{E}=\left(\frac{1}{\cos{u}}\right)_u-\cos^{2}u\cdot\frac{-\sin{u}}{1}=\frac{\sin{u}}{\cos^{2}u}+\cos^{2}u\sin{u}=\sin{u}\left(\frac{1}{\cos^{2}u}+\cos^{2}u\right).
 $$
 
-若参数域内有 $\sin{u}\neq0$ 的点, 上式在该点不为零, 与 (C) 矛盾; 若参数域内 $u$ 恒等于某个 $k\pi$ ($\sin{u}$ 恒为零), 则 $\cos^{2}u=1$, 此时 $E=G=1$, $L=N=1$, 代入 (A): 左端 $=0$ ($E,G$ 为常数) 而右端 $=\frac{1\cdot1}{1}=1$, 仍矛盾. $\blacksquare$
+若参数域内有 $\sin{u}\neq0$ 的点, 上式在该点不为零, 与 (C) 矛盾; 若参数域内 $u$ 恒等于某个 $k\pi$ ($\sin{u}$ 恒为零), 则 $\cos^{2}u=1$, 此时 $E=G=1$, $L=N=1$, 代入 (A): 左端 $=0$ ($E,G$ 为常数) 而右端 $=\frac{1\cdot1}{1}=1$, 仍矛盾.
+
+$\blacksquare$
 
 ## 1.10 (隐式曲面 $F\left(x,y,z\right)=0$ 的高斯曲率)
 
@@ -386,7 +396,9 @@ $$
 r=-\frac{F_{xx}F_z^{2}-2F_{xz}F_xF_z+F_{zz}F_x^{2}}{F_z^{3}},\quad{s}=-\frac{F_{xy}F_z^{2}-F_{xz}F_yF_z-F_{yz}F_xF_z+F_{zz}F_xF_y}{F_z^{3}},\quad{t}=-\frac{F_{yy}F_z^{2}-2F_{yz}F_yF_z+F_{zz}F_y^{2}}{F_z^{3}}.\tag{G}
 $$
 
-代回即可. $\blacksquare$
+代回即可.
+
+$\blacksquare$
 
 ## 1.11 (由第一, 第二基本形式求曲面)
 
@@ -458,7 +470,9 @@ $$
 \lambda_u=0.\tag{D}
 $$
 
-(C)(D) 即 $\lambda$ 为常数. $\blacksquare$
+(C)(D) 即 $\lambda$ 为常数.
+
+$\blacksquare$
 
 (2) 设 $E=G=:f\left(u,v\right)>0$.
 
@@ -478,7 +492,9 @@ $$
 
 (F) 正是刘维尔方程.
 
-第三步 ($\lambda=0$): 此时 (F) 为 $\Delta\Psi=0$, 标准解取 $\Psi=$ 常数, 即 $E=G=f$ 均为常数. $\blacksquare$
+第三步 ($\lambda=0$): 此时 (F) 为 $\Delta\Psi=0$, 标准解取 $\Psi=$ 常数, 即 $E=G=f$ 均为常数.
+
+$\blacksquare$
 
 第四步 ($\lambda\neq0$): 取其常用通解
 

@@ -253,7 +253,9 @@ H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\
 =\frac{\left(1+z_y^{2}\right)z_{xx}-2z_xz_yz_{xy}+\left(1+z_x^{2}\right)z_{yy}}{2\left(1+z_x^{2}+z_y^{2}\right)^{3/2}},
 $$
 
-再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的高斯曲率与平均曲率. $\blacksquare$
+再代入上述 $z_x,z_y,z_{xx},z_{xy},z_{yy}$ 即得隐函数型曲面的高斯曲率与平均曲率.
+
+$\blacksquare$
 
 ## 3.27 (平行曲面的曲率)
 
@@ -426,7 +428,9 @@ $$
 
 (ii) 直纹极小曲面是平面或正螺面.
 
-平面是直纹面 (任一方向族均为直母线), 且由**定义 10.1.1 (极小曲面)** 处处 $H\equiv0$, 故平面是直纹极小曲面. 由**例 10.1.1 (螺旋面)**, 螺旋面是唯一的直纹极小曲面, 而螺旋面即正螺面 (同一曲面的不同参数化), 因此任一非平面的直纹极小曲面必为正螺面. 综合两者: 直纹极小曲面是平面或正螺面. $\blacksquare$
+平面是直纹面 (任一方向族均为直母线), 且由**定义 10.1.1 (极小曲面)** 处处 $H\equiv0$, 故平面是直纹极小曲面. 由**例 10.1.1 (螺旋面)**, 螺旋面是唯一的直纹极小曲面, 而螺旋面即正螺面 (同一曲面的不同参数化), 因此任一非平面的直纹极小曲面必为正螺面. 综合两者: 直纹极小曲面是平面或正螺面.
+
+$\blacksquare$
 
 ## 5 (曲面的面积与高斯曲率的面积比)
 
@@ -450,7 +454,9 @@ $$
 \sqrt{\det\widetilde{\boldsymbol{G}}}\,\mathrm{d}\widetilde{u}\,\mathrm{d}\widetilde{v}=\left|\det\boldsymbol{J}\right|\sqrt{\det\boldsymbol{G}}\cdot\frac1{\left|\det\boldsymbol{J}\right|}\,\mathrm{d}u\,\mathrm{d}v=\sqrt{\det\boldsymbol{G}}\,\mathrm{d}u\,\mathrm{d}v.
 $$
 
-即面积与参数选取无关. $\blacksquare$
+即面积与参数选取无关.
+
+$\blacksquare$
 
 (b) $\widetilde{\boldsymbol{r}}=g\circ\boldsymbol{r}$ 是参数曲面片及极限公式.
 
