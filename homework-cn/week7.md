@@ -16,6 +16,14 @@
 > 
 > 魏因加滕变换的两个特征值即曲面的两个主曲率 $k_1,k_2$; 平均曲率 $H=\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol{W}$, 高斯曲率 $K=k_1k_2=\det\boldsymbol{W}$; 用第一, 第二基本形式的系数表示, $H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}$, $K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}$.
 
+> **例 3.6.2 (柱面)**
+> 
+> 直纹面 $\boldsymbol{r}\left(u,v\right)=\boldsymbol{a}\left(u\right)+v\boldsymbol{b}\left(u\right)$ 中, 若方向 $\boldsymbol{b}$ 与 $u$ 无关 (即 $\boldsymbol{b}$ 是常向量), 则称为柱面, 这时 $S$ 的直母线均平行.
+
+> **定理 3.6.3 (全脐点曲面的分类)**
+> 
+> 曲面是全脐点曲面当且仅当它是平面或球面.
+
 > **公式 3.6.3 (旋转曲面的第一, 第二基本形式)**
 > 
 > 旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{v},f\left(u\right)\sin{v},g\left(u\right)\right)$ $\left(f>0\right)$ 的 $E=\left(f'\right)^{2}+\left(g'\right)^{2}$, $F=0$, $G=f^{2}$, $L=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $M=0$, $N=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
@@ -24,17 +32,13 @@
 > 
 > 曲面上每一点的 $k_1=k_2$ 时称它为全脐点曲面; $S$ 是全脐点曲面当且仅当 $\mathrm{II}=k\,\mathrm{I}$, 其中 $k$ 是 $S$ 上的函数.
 
-> **定理 3.6.3 (全脐点曲面的分类)**
-> 
-> 曲面是全脐点曲面当且仅当它是平面或球面.
-
-> **例 3.6.2 (柱面)**
-> 
-> 直纹面 $\boldsymbol{r}\left(u,v\right)=\boldsymbol{a}\left(u\right)+v\boldsymbol{b}\left(u\right)$ 中, 若方向 $\boldsymbol{b}$ 与 $u$ 无关 (即 $\boldsymbol{b}$ 是常向量), 则称为柱面, 这时 $S$ 的直母线均平行.
-
 > **习题 3.29 (参数曲线为曲率线的充要条件)**
 > 
 > 设 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 是曲面 $S$ 的参数表示, 则 $S$ 的参数曲线 $u=$ 常数与 $v=$ 常数是曲率线的充要条件是 $F=M=0$.
+
+> **公式 4.2.M (自然标架的运动方程)**
+> 
+> $\left(M_1\right)$ $\partial_\alpha\boldsymbol{r}=\boldsymbol{r}_\alpha$; $\left(M_2\right)$ $\partial_\beta\boldsymbol{r}_\alpha=\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}$; $\left(M_3\right)$ $\partial_\alpha\boldsymbol{n}=-b^{\beta}_{\alpha}\boldsymbol{r}_\beta$. 其中 $\Gamma^{\gamma}_{\alpha\beta}=\Gamma^{\gamma}_{\beta\alpha}$, 而 $\left(b^{\beta}_{\alpha}\right)$ 是魏因加滕变换在自然基 $\left\{\boldsymbol{r}_1,\boldsymbol{r}_2\right\}$ 下的系数矩阵.
 
 > **公式 4.2.11 (对偶基)**
 > 
@@ -47,10 +51,6 @@
 > **公式 4.2.27 (用 $E,F,G$ 表示克里斯托费尔符号)**
 > 
 > 记 $E=g_{11}$, $F=g_{12}$, $G=g_{22}$, $\Delta=EG-F^{2}$, 则 $\Gamma^{1}_{11}=\frac1\Delta\left(\frac{G}2\frac{\partial{E}}{\partial{u}}+\frac{F}2\frac{\partial{E}}{\partial{v}}-F\frac{\partial{F}}{\partial{u}}\right)$, $\Gamma^{1}_{12}=\Gamma^{1}_{21}=\frac1\Delta\left(\frac{G}2\frac{\partial{E}}{\partial{v}}-\frac{F}2\frac{\partial{G}}{\partial{u}}\right)$, $\Gamma^{2}_{11}=\frac1\Delta\left(-\frac{F}2\frac{\partial{E}}{\partial{u}}-\frac{E}2\frac{\partial{E}}{\partial{v}}+E\frac{\partial{F}}{\partial{u}}\right)$, $\Gamma^{1}_{22}=\frac1\Delta\left(G\frac{\partial{F}}{\partial{v}}-\frac{G}2\frac{\partial{G}}{\partial{u}}-\frac{F}2\frac{\partial{G}}{\partial{v}}\right)$, $\Gamma^{2}_{12}=\Gamma^{2}_{21}=\frac1\Delta\left(-\frac{F}2\frac{\partial{E}}{\partial{v}}+\frac{E}2\frac{\partial{G}}{\partial{u}}\right)$, $\Gamma^{2}_{22}=\frac1\Delta\left(-F\frac{\partial{F}}{\partial{v}}+\frac{F}2\frac{\partial{G}}{\partial{u}}+\frac{E}2\frac{\partial{G}}{\partial{v}}\right)$.
-
-> **公式 4.2.M (自然标架的运动方程)**
-> 
-> $\left(M_1\right)$ $\partial_\alpha\boldsymbol{r}=\boldsymbol{r}_\alpha$; $\left(M_2\right)$ $\partial_\beta\boldsymbol{r}_\alpha=\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}$; $\left(M_3\right)$ $\partial_\alpha\boldsymbol{n}=-b^{\beta}_{\alpha}\boldsymbol{r}_\beta$. 其中 $\Gamma^{\gamma}_{\alpha\beta}=\Gamma^{\gamma}_{\beta\alpha}$, 而 $\left(b^{\beta}_{\alpha}\right)$ 是魏因加滕变换在自然基 $\left\{\boldsymbol{r}_1,\boldsymbol{r}_2\right\}$ 下的系数矩阵.
 
 > **公式 4.3.7 (高斯方程)**
 > 
