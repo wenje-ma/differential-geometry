@@ -1,18 +1,18 @@
 # week6
 
-> **定义 21.1 (第一基本形式)**
+> **定义 3.3.1 (第一基本形式)**
 > 
 > 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$; 它给出切向量长度的平方.
 
-> **定义 23.1 (第二基本形式)**
+> **定义 3.5.2 (第二基本形式)**
 > 
 > 二次微分式 $\mathrm{II}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第二基本形式, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$; 且 $b_{\alpha\beta}=b_{\beta\alpha}$.
 
-> **定义 24.1 (魏因加滕变换/形状算子)**
+> **定义 3.6.1 (魏因加滕变换/形状算子)**
 > 
 > $\mathrm{d}\boldsymbol{n}$ 把切向量映到切向量: 对 $\boldsymbol{v}=v^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, $\mathrm{d}\boldsymbol{n}\left(\boldsymbol{v}\right)=v^{\alpha}\partial_{\alpha}\boldsymbol{n}=-v^{\alpha}b^{\beta}{}_{\alpha}\boldsymbol{r}_{\beta}$. 定义 $W:=-\mathrm{d}\boldsymbol{n}:T_{\boldsymbol{r}\left(u_{0}\right)}S\to{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, 称为曲面的魏因加滕变换 (形状算子); 在自然基 $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\}$ 下其系数矩阵为 $\left(b^{\beta}{}_{\alpha}\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$, 其中 $\left(g^{\alpha\beta}\right)$ 是 $\left(g_{\alpha\beta}\right)$ 的逆矩阵.
 
-> **定义 25.B (自然标架的运动方程)**
+> **定义 3.7.2 (自然标架的运动方程)**
 > 
 > 自然标架 $\left\{\boldsymbol{r};\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{n}\right\}$ 随参数的运动方程为
 > $$
@@ -22,7 +22,7 @@
 >$$
 > 其中第一式是定义, 第二式是 $\boldsymbol{r}_{\alpha\beta}$ 的分解式, 第三式由 $\left\langle\partial_{\beta}\boldsymbol{n},\boldsymbol{r}_{\alpha}\right\rangle=-b_{\alpha\beta}$ 与 $\left(g^{\alpha\beta}\right)=\left(g_{\alpha\beta}\right)^{-1}$ 而得; 故自然标架的运动完全由第一, 第二基本形式的系数及其一阶偏导决定.
 
-> **推导 25.A (克里斯托费尔符号由第一基本形式确定)**
+> **推导 3.7.1 (克里斯托费尔符号由第一基本形式确定)**
 > 
 > 因 $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{n}\right\}$ 是 $E^{3}$ 的基, 二阶偏导可分解为 $\boldsymbol{r}_{\alpha\beta}=\Gamma^{\gamma}{}_{\alpha\beta}\boldsymbol{r}_{\gamma}+b_{\alpha\beta}\boldsymbol{n}$. 记第一类克里斯托费尔符号 $\Gamma_{\alpha\beta\tau}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}_{\tau}\right\rangle$, 则 $\Gamma_{\alpha\beta\tau}=g_{\gamma\tau}\Gamma^{\gamma}{}_{\alpha\beta}$, 且由
 > $$
@@ -34,15 +34,15 @@
 >$$
 > 右端只含 $g_{\alpha\beta}$ 及其一阶偏导, 故 $\Gamma^{\gamma}{}_{\alpha\beta}$ 完全由第一基本形式确定, 且 $\Gamma^{\gamma}{}_{\alpha\beta}=\Gamma^{\gamma}{}_{\beta\alpha}$.
 
-> **定义 32.1 (平均曲率与总曲率)**
+> **定义 4.6.1 (平均曲率与总曲率)**
 > 
 > 设曲面 $S$ 在一点的主曲率为 $k_{1},k_{2}$. 称 $H:=\frac{k_{1}+k_{2}}{2}$ 为该点的平均曲率, 称 $K:=k_{1}k_{2}$ 为该点的总曲率 (高斯曲率).
 
-> **命题 32.2 (特征方程与 $H,K$)**
+> **命题 4.6.2 (特征方程与 $H,K$)**
 > 
 > 主曲率 $k_{1},k_{2}$ 是方程 $\det\left(b_{\alpha\beta}-kg_{\alpha\beta}\right)=0$ 的根, 该方程等价于 $k^{2}-2Hk+K=0$. 于是 $\operatorname{tr}\left(g^{-1}b\right)=2H$, $\det\left(g^{-1}b\right)=K$.
 
-> **推导 35.B (高斯方程与科达齐方程)**
+> **推导 5.1.2 (高斯方程与科达齐方程)**
 > 
 > 把运动方程代入 $\partial_{\gamma}\partial_{\beta}\boldsymbol{r}_{\alpha}=\partial_{\beta}\partial_{\gamma}\boldsymbol{r}_{\alpha}$ 并逐项比较系数, 切向部分给出高斯方程
 > $$
@@ -66,7 +66,7 @@
 
 ### 解答 1.1
 
-(1) 由**定义 24.1** 中的约定 $\left(g^{\alpha\beta}\right)=\left(g_{\alpha\beta}\right)^{-1}$, 有 $g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}{}_{\gamma}$. 故
+(1) 由**定义 3.6.1** 中的约定 $\left(g^{\alpha\beta}\right)=\left(g_{\alpha\beta}\right)^{-1}$, 有 $g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}{}_{\gamma}$. 故
 
 $$
 g^{\alpha\beta}g_{\alpha\beta}=\delta^{\alpha}{}_{\alpha}=\delta^{1}{}_{1}+\delta^{2}{}_{2}=1+1=2.
@@ -107,7 +107,7 @@ $$
 \frac{\partial\ln\sqrt{g}}{\partial{u}^{\alpha}}=\frac{1}{2}g^{\xi\beta}\partial_{\alpha}g_{\xi\beta}.
 $$
 
-由**推导 25.A** 中的 $\partial_{\varepsilon}g_{\alpha\beta}=\Gamma_{\alpha\varepsilon\beta}+\Gamma_{\beta\varepsilon\alpha}$ (把 $\varepsilon$ 换成 $\alpha$, $\alpha$ 换成 $\xi$ 即 $\partial_{\alpha}g_{\xi\beta}=\Gamma_{\xi\alpha\beta}+\Gamma_{\beta\alpha\xi}$) 与 $\Gamma_{\alpha\beta\tau}=g_{\gamma\tau}\Gamma^{\gamma}{}_{\alpha\beta}$,
+由**推导 3.7.1** 中的 $\partial_{\varepsilon}g_{\alpha\beta}=\Gamma_{\alpha\varepsilon\beta}+\Gamma_{\beta\varepsilon\alpha}$ (把 $\varepsilon$ 换成 $\alpha$, $\alpha$ 换成 $\xi$ 即 $\partial_{\alpha}g_{\xi\beta}=\Gamma_{\xi\alpha\beta}+\Gamma_{\beta\alpha\xi}$) 与 $\Gamma_{\alpha\beta\tau}=g_{\gamma\tau}\Gamma^{\gamma}{}_{\alpha\beta}$,
 
 $$
 \frac{1}{2}g^{\xi\beta}\partial_{\alpha}g_{\xi\beta}
@@ -138,13 +138,13 @@ $S$ 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下的第一, �
 
 ### 解答 1.2
 
-(1) 由链式法则与**定义 25.B** 的第一式 $\partial_{\alpha}\boldsymbol{r}=\boldsymbol{r}_{\alpha}$,
+(1) 由链式法则与**定义 3.7.2** 的第一式 $\partial_{\alpha}\boldsymbol{r}=\boldsymbol{r}_{\alpha}$,
 
 $$
 \boldsymbol{r}_{\widetilde{u}^{i}}=\frac{\partial{u}^{\alpha}}{\partial\widetilde{u}^{i}}\boldsymbol{r}_{\alpha}=a^{\alpha}_{i}\boldsymbol{r}_{\alpha}.
 $$
 
-由**定义 21.1** 中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$,
+由**定义 3.3.1** 中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$,
 
 $$
 \widetilde{g}_{ij}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}},\boldsymbol{r}_{\widetilde{u}^{j}}\right\rangle=a^{\alpha}_{i}a^{\beta}_{j}\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle=g_{\alpha\beta}a^{\alpha}_{i}a^{\beta}_{j}.
@@ -156,13 +156,13 @@ $$
 \boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}}=\frac{\partial}{\partial\widetilde{u}^{j}}\left(a^{\alpha}_{i}\boldsymbol{r}_{\alpha}\right)=\frac{\partial{a}^{\alpha}_{i}}{\partial\widetilde{u}^{j}}\boldsymbol{r}_{\alpha}+a^{\alpha}_{i}a^{\beta}_{j}\partial_{\beta}\boldsymbol{r}_{\alpha},
 $$
 
-代入**定义 25.B** 的第二式 $\partial_{\beta}\boldsymbol{r}_{\alpha}=\Gamma^{\gamma}{}_{\alpha\beta}\boldsymbol{r}_{\gamma}+b_{\alpha\beta}\boldsymbol{n}$:
+代入**定义 3.7.2** 的第二式 $\partial_{\beta}\boldsymbol{r}_{\alpha}=\Gamma^{\gamma}{}_{\alpha\beta}\boldsymbol{r}_{\gamma}+b_{\alpha\beta}\boldsymbol{n}$:
 
 $$
 \boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}}=\left(\frac{\partial{a}^{\gamma}_{i}}{\partial\widetilde{u}^{j}}+a^{\alpha}_{i}a^{\beta}_{j}\Gamma^{\gamma}{}_{\alpha\beta}\right)\boldsymbol{r}_{\gamma}+a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}\boldsymbol{n}.\quad\left(\mathrm{A}\right)
 $$
 
-因 $\left\langle\boldsymbol{r}_{\gamma},\boldsymbol{n}\right\rangle=0$, 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下用同一个单位法向 $\boldsymbol{n}$ 计算第二基本形式 (**定义 23.1**) 得
+因 $\left\langle\boldsymbol{r}_{\gamma},\boldsymbol{n}\right\rangle=0$, 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下用同一个单位法向 $\boldsymbol{n}$ 计算第二基本形式 (**定义 3.5.2**) 得
 
 $$
 \widetilde{b}_{ij}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{n}\right\rangle=a^{\alpha}_{i}a^{\beta}_{j}b_{\alpha\beta}.
@@ -188,7 +188,7 @@ $$
 
 $\blacksquare$
 
-(2) 由**推导 25.A** 中 $\Gamma^{\gamma}{}_{\alpha\beta}g_{\gamma\tau}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}_{\tau}\right\rangle$, 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下
+(2) 由**推导 3.7.1** 中 $\Gamma^{\gamma}{}_{\alpha\beta}g_{\gamma\tau}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}_{\tau}\right\rangle$, 在参数 $\left(\widetilde{u}^{1},\widetilde{u}^{2}\right)$ 下
 
 $$
 \widetilde\Gamma^{k}_{ij}\widetilde{g}_{k\ell}=\left\langle\boldsymbol{r}_{\widetilde{u}^{i}\widetilde{u}^{j}},\boldsymbol{r}_{\widetilde{u}^{\ell}}\right\rangle.
@@ -242,13 +242,13 @@ $\blacksquare$
 
 ### 解答 1.3
 
-由**定义 24.1**, $W$ 在自然基下的系数矩阵为 $\left(b^{\beta}{}_{\alpha}\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$, 即 $g^{-1}b$; 其迹为
+由**定义 3.6.1**, $W$ 在自然基下的系数矩阵为 $\left(b^{\beta}{}_{\alpha}\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$, 即 $g^{-1}b$; 其迹为
 
 $$
 \operatorname{tr}\left(g^{-1}b\right)=b^{\gamma}{}_{\gamma}=b_{\gamma\xi}g^{\xi\gamma}=b_{\alpha\beta}g^{\beta\alpha},
 $$
 
-最后一式只是改名 ($\gamma\to\alpha$, $\xi\to\beta$) 与用 $b_{\alpha\beta}=b_{\beta\alpha}$. 又由**命题 32.2**, $\operatorname{tr}\left(g^{-1}b\right)=k_{1}+k_{2}=2H$ (**定义 32.1**), 故
+最后一式只是改名 ($\gamma\to\alpha$, $\xi\to\beta$) 与用 $b_{\alpha\beta}=b_{\beta\alpha}$. 又由**命题 4.6.2**, $\operatorname{tr}\left(g^{-1}b\right)=k_{1}+k_{2}=2H$ (**定义 4.6.1**), 故
 
 $$
 H=\frac{1}{2}\operatorname{tr}\left(g^{-1}b\right)=\frac{1}{2}b_{\alpha\beta}g^{\beta\alpha}.
@@ -262,7 +262,7 @@ $\blacksquare$
 
 ### 解答 1.4
 
-由**定义 21.1**, $g_{11}=1$, $g_{12}=0$, $g_{22}=\rho^{2}$; 由**定义 24.1** 的约定, 逆矩阵为 $g^{11}=1$, $g^{12}=0$, $g^{22}=\frac{1}{\rho^{2}}$. 由**推导 25.A** 的公式
+由**定义 3.3.1**, $g_{11}=1$, $g_{12}=0$, $g_{22}=\rho^{2}$; 由**定义 3.6.1** 的约定, 逆矩阵为 $g^{11}=1$, $g^{12}=0$, $g^{22}=\frac{1}{\rho^{2}}$. 由**推导 3.7.1** 的公式
 
 $$
 \Gamma^{\gamma}{}_{\alpha\beta}=\frac{1}{2}g^{\gamma\varepsilon}\left(\partial_{\alpha}g_{\beta\varepsilon}+\partial_{\beta}g_{\alpha\varepsilon}-\partial_{\varepsilon}g_{\alpha\beta}\right),
@@ -312,7 +312,7 @@ $$
 \boldsymbol{r}_{1}=\left(1,0,p\right),\quad\boldsymbol{r}_{2}=\left(0,1,q\right),
 $$
 
-由**定义 21.1**,
+由**定义 3.3.1**,
 
 $$
 g_{11}=1+p^{2},\quad{g}_{12}=pq,\quad{g}_{22}=1+q^{2},
@@ -322,7 +322,7 @@ $$
 g=\det\left(g_{\alpha\beta}\right)=\left(1+p^{2}\right)\left(1+q^{2}\right)-p^{2}q^{2}=1+p^{2}+q^{2}=:W^{2}.
 $$
 
-由**定义 24.1** 的约定,
+由**定义 3.6.1** 的约定,
 
 $$
 g^{11}=\frac{g_{22}}{g}=\frac{1+q^{2}}{W^{2}},\quad
@@ -341,7 +341,7 @@ $$
 \partial_{1}g_{22}=2qs_{0},\quad\partial_{2}g_{22}=2qt_{0}.
 $$
 
-按**推导 25.A** 的公式 $\Gamma^{\gamma}{}_{\alpha\beta}=\frac{1}{2}g^{\gamma\varepsilon}\left(\partial_{\alpha}g_{\beta\varepsilon}+\partial_{\beta}g_{\alpha\varepsilon}-\partial_{\varepsilon}g_{\alpha\beta}\right)$ 逐个计算.
+按**推导 3.7.1** 的公式 $\Gamma^{\gamma}{}_{\alpha\beta}=\frac{1}{2}g^{\gamma\varepsilon}\left(\partial_{\alpha}g_{\beta\varepsilon}+\partial_{\beta}g_{\alpha\varepsilon}-\partial_{\varepsilon}g_{\alpha\beta}\right)$ 逐个计算.
 
 $\gamma=1$, $\alpha=\beta=1$:
 
@@ -403,7 +403,7 @@ $$
 
 ### 解答 2
 
-记第一式为 (I), 第二式为 (II). 两式的左端都是某个量关于一对下标反对称; 证明的要点是认出这个量就是 $b$ 的协变导数, 再说明这一种对称性与另一种对称性等价. 由**推导 35.B**, (I) 就是由运动方程的法向部分给出的科达齐方程. 又由**推导 25.A**, $\Gamma^{\sigma}{}_{\alpha\gamma}=\Gamma^{\sigma}{}_{\gamma\alpha}$; 由**定义 23.1**, $b_{\alpha\beta}=b_{\beta\alpha}$; 由**定义 24.1**, $b^{\sigma}{}_{\alpha}=b_{\alpha\tau}g^{\tau\sigma}$. 下面记两个量 (它们就是 $b$ 的协变导数)
+记第一式为 (I), 第二式为 (II). 两式的左端都是某个量关于一对下标反对称; 证明的要点是认出这个量就是 $b$ 的协变导数, 再说明这一种对称性与另一种对称性等价. 由**推导 5.1.2**, (I) 就是由运动方程的法向部分给出的科达齐方程. 又由**推导 3.7.1**, $\Gamma^{\sigma}{}_{\alpha\gamma}=\Gamma^{\sigma}{}_{\gamma\alpha}$; 由**定义 3.5.2**, $b_{\alpha\beta}=b_{\beta\alpha}$; 由**定义 3.6.1**, $b^{\sigma}{}_{\alpha}=b_{\alpha\tau}g^{\tau\sigma}$. 下面记两个量 (它们就是 $b$ 的协变导数)
 
 $$
 \nabla_{\gamma}b_{\alpha\beta}:=\partial_{\gamma}b_{\alpha\beta}-\Gamma^{\sigma}{}_{\alpha\gamma}b_{\sigma\beta}-\Gamma^{\sigma}{}_{\beta\gamma}b_{\alpha\sigma},
@@ -413,7 +413,7 @@ $$
 \nabla_{\beta}b^{\xi}{}_{\alpha}:=\partial_{\beta}b^{\xi}{}_{\alpha}+\Gamma^{\xi}{}_{\sigma\beta}b^{\sigma}{}_{\alpha}-\Gamma^{\sigma}{}_{\alpha\beta}b^{\xi}{}_{\sigma}.
 $$
 
-第一步: 两式即 $\nabla{b}$ 的两个对称性. 把上述定义展开并用 $\Gamma^{\sigma}{}_{\beta\gamma}=\Gamma^{\sigma}{}_{\gamma\beta}$, $\Gamma^{\sigma}{}_{\beta\alpha}=\Gamma^{\sigma}{}_{\alpha\beta}$ (**推导 25.A**), 有
+第一步: 两式即 $\nabla{b}$ 的两个对称性. 把上述定义展开并用 $\Gamma^{\sigma}{}_{\beta\gamma}=\Gamma^{\sigma}{}_{\gamma\beta}$, $\Gamma^{\sigma}{}_{\beta\alpha}=\Gamma^{\sigma}{}_{\alpha\beta}$ (**推导 3.7.1**), 有
 
 $$
 \nabla_{\gamma}b_{\alpha\beta}-\nabla_{\beta}b_{\alpha\gamma}
@@ -453,7 +453,7 @@ $$
 \partial_{\gamma}g^{\tau\sigma}=-g^{\tau\mu}g^{\sigma\nu}\partial_{\gamma}g_{\mu\nu},
 $$
 
-代入 $\partial_{\gamma}g_{\mu\nu}=\Gamma_{\mu\gamma\nu}+\Gamma_{\nu\gamma\mu}$ (**推导 25.A**) 得
+代入 $\partial_{\gamma}g_{\mu\nu}=\Gamma_{\mu\gamma\nu}+\Gamma_{\nu\gamma\mu}$ (**推导 3.7.1**) 得
 
 $$
 \partial_{\gamma}g^{\tau\sigma}=-g^{\tau\mu}g^{\sigma\nu}\left(\Gamma_{\mu\gamma\nu}+\Gamma_{\nu\gamma\mu}\right)=-\Gamma^{\sigma}{}_{\gamma\mu}g^{\tau\mu}-\Gamma^{\tau}{}_{\gamma\nu}g^{\sigma\nu},

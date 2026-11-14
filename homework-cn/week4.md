@@ -1,22 +1,22 @@
 # week4
 
-> **定义 19.1 (参数曲面)**
+> **定义 3.1.1 (参数曲面)**
 > 
 > 设 $D\subset{E}^{2}$ 是平面区域, $\boldsymbol{r}:D\to{E}^{3}$, $\boldsymbol{r}\left(u^{1},u^{2}\right)=\left(x\left(u^{1},u^{2}\right),y\left(u^{1},u^{2}\right),z\left(u^{1},u^{2}\right)\right)$ 是 $C^{k}$ ($k\ge1$) 映射. 记坐标切向量 $\boldsymbol{r}_{\alpha}:=\frac{\partial\boldsymbol{r}}{\partial{u}^{\alpha}}$, $\alpha=1,2$. 若处处有 $\operatorname{rank}\left(\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right)=2$, 即 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 则称 $\boldsymbol{r}\left(D\right)\subset{E}^{3}$ 是一张正则 $C^{k}$ 参数曲面, 记作 $S$; $\left(u^{1},u^{2}\right)$ 称为曲面的坐标参数.
 
-> **定义 19.2 (单位法向与定向)**
+> **定义 3.1.2 (单位法向与定向)**
 > 
 > 由正则性 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 曲面上每点有确定的单位法向 $\boldsymbol{n}:=\frac{\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}}{\left|\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\right|}$. $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{n}\right\}$ 构成 $E^{3}$ 的一组正定向标架, 定向由参数化本身给出; 参数反向则 $\boldsymbol{n}$ 同时反向.
 
-> **定义 19.3 (切平面)**
+> **定义 3.1.3 (切平面)**
 > 
 > $\boldsymbol{r}_{1},\boldsymbol{r}_{2}$ 张成的二维子空间 $T_{\boldsymbol{r}\left(u_{0}\right)}S:=\operatorname{span}\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\}$ 称为曲面 $S$ 在 $\boldsymbol{r}\left(u_{0}\right)$ 处的切平面. 由正则性, $\boldsymbol{r}_{1},\boldsymbol{r}_{2}$ 线性无关; 它的正交补正是 $\operatorname{span}\left\{\boldsymbol{n}\right\}$, 故与切平面垂直的向量只能是 $\boldsymbol{n}$ 的倍数.
 
-> **定义 21.1 (第一基本形式)**
+> **定义 3.3.1 (第一基本形式)**
 > 
 > 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式 (即弧长平方 $\mathrm{d}s^{2}$), 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$. 它给出切向量长度的平方: 对切向量 $\boldsymbol{w}=w^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, $\left\langle\boldsymbol{w},\boldsymbol{w}\right\rangle=g_{\alpha\beta}w^{\alpha}w^{\beta}$.
 
-> **定义 23.1 (第二基本形式)**
+> **定义 3.5.2 (第二基本形式)**
 > 
 > 二次微分式 $\mathrm{II}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第二基本形式, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$. 等价地 $\mathrm{II}=-\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{n}\right\rangle$; 且 $b_{\alpha\beta}=b_{\beta\alpha}$, 故交叉项合并为 $2b_{12}\,\mathrm{d}u^{1}\mathrm{d}u^{2}$.
 
@@ -44,7 +44,7 @@ $$
 \frac{\left(a\sin{u}\cos{v}\right)^{2}}{a^{2}}+\frac{\left(b\sin{u}\sin{v}\right)^{2}}{b^{2}}+\frac{\left(c\cos{u}\right)^{2}}{c^{2}}=1.
 $$
 
-正则性按**定义 19.1** 验证:
+正则性按**定义 3.1.1** 验证:
 
 $$
 \boldsymbol{r}_{u}=\left(a\cos{u}\cos{v},b\cos{u}\sin{v},-c\sin{u}\right),\quad
@@ -55,7 +55,7 @@ $$
 \boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\sin{u}\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right).
 $$
 
-$u\in\left(0,\pi\right)$ 时 $\sin{u}>0$; 而前两个分量同为零要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 19.1**, 这是椭球面除去南北两极的正则参数曲面.
+$u\in\left(0,\pi\right)$ 时 $\sin{u}>0$; 而前两个分量同为零要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 3.1.1**, 这是椭球面除去南北两极的正则参数曲面.
 
 $\blacksquare$
 
@@ -65,7 +65,7 @@ $$
 \boldsymbol{r}\left(u,v\right)=\left(a\cosh{u}\cos{v},b\cosh{u}\sin{v},c\sinh{u}\right),\quad{u}\in\mathbb{R},v\in\left[0,2\pi\right).
 $$
 
-由 $\cosh^{2}u-\sinh^{2}u=1$ 知像点落在曲面上. 正则性按**定义 19.1** 验证:
+由 $\cosh^{2}u-\sinh^{2}u=1$ 知像点落在曲面上. 正则性按**定义 3.1.1** 验证:
 
 $$
 \boldsymbol{r}_{u}=\left(a\sinh{u}\cos{v},b\sinh{u}\sin{v},c\cosh{u}\right),\quad
@@ -76,7 +76,7 @@ $$
 \boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(-bc\cosh^{2}u\cos{v},-ac\cosh^{2}u\sin{v},ab\sinh{u}\cosh{u}\right).
 $$
 
-$\cosh{u}>0$ 恒成立, 前两个分量同为零同样要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 19.1**, 这是单叶双曲面的正则参数曲面.
+$\cosh{u}>0$ 恒成立, 前两个分量同为零同样要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 3.1.1**, 这是单叶双曲面的正则参数曲面.
 
 $\blacksquare$
 
@@ -86,7 +86,7 @@ $$
 \boldsymbol{r}\left(u,v\right)=\left(u,v,\frac{u^{2}}{a^{2}}+\frac{v^{2}}{b^{2}}\right),\quad\left(u,v\right)\in\mathbb{R}^{2}.
 $$
 
-像点显然落在曲面上. 正则性按**定义 19.1** 验证:
+像点显然落在曲面上. 正则性按**定义 3.1.1** 验证:
 
 $$
 \boldsymbol{r}_{u}=\left(1,0,\frac{2u}{a^{2}}\right),\quad
@@ -94,7 +94,7 @@ $$
 \boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(-\frac{2u}{a^{2}},-\frac{2v}{b^{2}},1\right),
 $$
 
-第三个分量恒为 $1$, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$ 处处成立, 由**定义 19.1**, 这是椭圆抛物面的正则参数曲面.
+第三个分量恒为 $1$, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$ 处处成立, 由**定义 3.1.1**, 这是椭圆抛物面的正则参数曲面.
 
 $\blacksquare$
 
@@ -110,7 +110,7 @@ $$
 
 ### 解答 1.7
 
-取 1.1 (1) 中的参数化, 其 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 已在 解答 1.1 算出. 按**定义 21.1**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$:
+取 1.1 (1) 中的参数化, 其 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 已在 解答 1.1 算出. 按**定义 3.3.1**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$:
 
 $$
 g_{11}=\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{u}\right\rangle
@@ -150,7 +150,7 @@ $\blacksquare$
 
 ### 解答 1.8
 
-由**定义 21.1**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$, 故只需算 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 并作内积.
+由**定义 3.3.1**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$, 故只需算 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 并作内积.
 
 (1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$.
 
@@ -200,7 +200,7 @@ $\blacksquare$
 
 ### 解答 1.9
 
-取参数 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$. 按**定义 21.1**,
+取参数 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$. 按**定义 3.3.1**,
 
 $$
 \boldsymbol{r}_{x}=\left(1,0,f_{x}\right),\quad
@@ -243,7 +243,7 @@ $$
 \quad{J}:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}.
 $$
 
-于是 $\det{J}>0$ 时两外积同向, $\det{J}<0$ 时反向; 归一化后即**定义 19.2** 所述: 定向由参数化本身给出, 参数反向则 $\boldsymbol{n}$ 同时反向.
+于是 $\det{J}>0$ 时两外积同向, $\det{J}<0$ 时反向; 归一化后即**定义 3.1.2** 所述: 定向由参数化本身给出, 参数反向则 $\boldsymbol{n}$ 同时反向.
 
 $\blacksquare$
 
@@ -257,7 +257,7 @@ $\blacksquare$
 
 ### 解答 1.14
 
-两小题都先按**定义 19.2** 取单位法向 $\boldsymbol{n}=\frac{\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}}{\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|}$, 再按**定义 23.1** 算 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$.
+两小题都先按**定义 3.1.2** 取单位法向 $\boldsymbol{n}=\frac{\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}}{\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|}$, 再按**定义 3.5.2** 算 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$.
 
 (1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$. 由 解答 1.8 (1),
 
@@ -346,13 +346,13 @@ $$
 \left|\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}\right|=\sqrt{1+f_{x}^{2}+f_{y}^{2}},
 $$
 
-故由**定义 19.2**,
+故由**定义 3.1.2**,
 
 $$
 \boldsymbol{n}=\frac{\left(-f_{x},-f_{y},1\right)}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}.
 $$
 
-二阶偏导 $\boldsymbol{r}_{xx}=\left(0,0,f_{xx}\right)$, $\boldsymbol{r}_{xy}=\left(0,0,f_{xy}\right)$, $\boldsymbol{r}_{yy}=\left(0,0,f_{yy}\right)$, 按**定义 23.1**
+二阶偏导 $\boldsymbol{r}_{xx}=\left(0,0,f_{xx}\right)$, $\boldsymbol{r}_{xy}=\left(0,0,f_{xy}\right)$, $\boldsymbol{r}_{yy}=\left(0,0,f_{yy}\right)$, 按**定义 3.5.2**
 
 $$
 b_{11}=\frac{f_{xx}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}},\quad
@@ -374,14 +374,14 @@ $\blacksquare$
 
 ### 解答 2
 
-先对单位球面的任一参数化 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 作通用处理. 由 $\left\langle\boldsymbol{r},\boldsymbol{r}\right\rangle\equiv1$ 对参数求偏导得 $\left\langle\boldsymbol{r}_{u},\boldsymbol{r}\right\rangle=\left\langle\boldsymbol{r}_{v},\boldsymbol{r}\right\rangle=0$, 故 $\boldsymbol{r}$ 与 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 都垂直; 由**定义 19.3**, 切平面 $\operatorname{span}\left\{\boldsymbol{r}_{u},\boldsymbol{r}_{v}\right\}$ 的正交补正是 $\operatorname{span}\left\{\boldsymbol{r}\right\}$, 故
+先对单位球面的任一参数化 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 作通用处理. 由 $\left\langle\boldsymbol{r},\boldsymbol{r}\right\rangle\equiv1$ 对参数求偏导得 $\left\langle\boldsymbol{r}_{u},\boldsymbol{r}\right\rangle=\left\langle\boldsymbol{r}_{v},\boldsymbol{r}\right\rangle=0$, 故 $\boldsymbol{r}$ 与 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 都垂直; 由**定义 3.1.3**, 切平面 $\operatorname{span}\left\{\boldsymbol{r}_{u},\boldsymbol{r}_{v}\right\}$ 的正交补正是 $\operatorname{span}\left\{\boldsymbol{r}\right\}$, 故
 
 $$
 T_{\boldsymbol{r}}S=\left\{\boldsymbol{w}:\left\langle\boldsymbol{w},\boldsymbol{r}\right\rangle=0\right\},\quad
 \boldsymbol{n}=\frac{\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}}{\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|}=\sigma\boldsymbol{r},\quad\sigma=\pm1,
 $$
 
-其中 $\sigma$ 由 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}$ 与 $\boldsymbol{r}$ 同向或反向决定 (**定义 19.2**).
+其中 $\sigma$ 由 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}$ 与 $\boldsymbol{r}$ 同向或反向决定 (**定义 3.1.2**).
 
 第二基本形式与第一基本形式的关系. 由 $\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}\right\rangle\equiv0$ 对 $u^{\beta}$ 求导,
 
@@ -389,7 +389,7 @@ $$
 0=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle+\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle+g_{\alpha\beta},
 $$
 
-即 $\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-g_{\alpha\beta}$. 由 $\boldsymbol{n}=\sigma\boldsymbol{r}$ 与**定义 23.1**,
+即 $\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-g_{\alpha\beta}$. 由 $\boldsymbol{n}=\sigma\boldsymbol{r}$ 与**定义 3.5.2**,
 
 $$
 b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle=\sigma\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-\sigma{g}_{\alpha\beta},
@@ -420,7 +420,7 @@ $$
 \boldsymbol{r}_{\theta}\wedge\boldsymbol{r}_{\varphi}=-\sin\varphi\left(\sin\varphi\cos\theta,\sin\varphi\sin\theta,\cos\varphi\right)=-\sin\varphi\,\boldsymbol{r}.
 $$
 
-$\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi>0$, $\left|\boldsymbol{r}_{\theta}\wedge\boldsymbol{r}_{\varphi}\right|=\sin\varphi$, 由**定义 19.2**, $\boldsymbol{n}=-\boldsymbol{r}$ (内法向, $\sigma=-1$). 由**定义 21.1**,
+$\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi>0$, $\left|\boldsymbol{r}_{\theta}\wedge\boldsymbol{r}_{\varphi}\right|=\sin\varphi$, 由**定义 3.1.2**, $\boldsymbol{n}=-\boldsymbol{r}$ (内法向, $\sigma=-1$). 由**定义 3.3.1**,
 
 $$
 g_{11}=\left\langle\boldsymbol{r}_{\theta},\boldsymbol{r}_{\theta}\right\rangle=\sin^{2}\varphi,\quad
@@ -450,7 +450,7 @@ $$
 \left|\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}\right|=\frac{1}{f},
 $$
 
-故 $\boldsymbol{n}=\boldsymbol{r}$ (外法向, $\sigma=+1$). 由**定义 21.1**,
+故 $\boldsymbol{n}=\boldsymbol{r}$ (外法向, $\sigma=+1$). 由**定义 3.3.1**,
 
 $$
 g_{11}=1+\frac{x^{2}}{f^{2}}=\frac{1-y^{2}}{f^{2}},\quad
@@ -485,7 +485,7 @@ $$
 \left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=\frac{4}{D^{2}},
 $$
 
-故 $\boldsymbol{n}=-\boldsymbol{r}$ (内法向, $\sigma=-1$). 由**定义 21.1**,
+故 $\boldsymbol{n}=-\boldsymbol{r}$ (内法向, $\sigma=-1$). 由**定义 3.3.1**,
 
 $$
 g_{11}=\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{u}\right\rangle=\frac{4}{D^{2}},\quad

@@ -1,62 +1,62 @@
 # week5
 
-> **定义 19.1 (参数曲面)**
+> **定义 3.1.1 (参数曲面)**
 > 
 > 设 $D\subset{E}^{2}$ 是平面区域, $\boldsymbol{r}:D\to{E}^{3}$, $\boldsymbol{r}\left(u^{1},u^{2}\right)=\left(x\left(u^{1},u^{2}\right),y\left(u^{1},u^{2}\right),z\left(u^{1},u^{2}\right)\right)$ 是 $C^{k}$ ($k\ge1$) 映射. 记坐标切向量 $\boldsymbol{r}_{\alpha}:=\frac{\partial\boldsymbol{r}}{\partial{u}^{\alpha}}$, $\alpha=1,2$. 若处处有 $\operatorname{rank}\left(\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right)=2$, 即 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 则称 $\boldsymbol{r}\left(D\right)\subset{E}^{3}$ 是一张正则 $C^{k}$ 参数曲面, 记作 $S$.
 
-> **定义 19.2 (单位法向与定向)**
+> **定义 3.1.2 (单位法向与定向)**
 > 
 > 由正则性 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 曲面上每点有确定的单位法向 $\boldsymbol{n}:=\frac{\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}}{\left|\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\right|}$. $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{n}\right\}$ 构成 $E^{3}$ 的一组正定向标架, 定向由参数化本身给出; 参数反向则 $\boldsymbol{n}$ 同时反向.
 
-> **定义 21.1 (第一基本形式)**
+> **定义 3.3.1 (第一基本形式)**
 > 
 > 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式 (即弧长平方 $\mathrm{d}s^{2}$), 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$. 它给出切向量长度的平方: 对切向量 $\boldsymbol{w}=w^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, $\left\langle\boldsymbol{w},\boldsymbol{w}\right\rangle=g_{\alpha\beta}w^{\alpha}w^{\beta}$.
 
-> **命题 21.2 (第一基本形式与参数选取无关)**
+> **命题 3.3.2 (第一基本形式与参数选取无关)**
 > 
 > 第一基本形式不依赖于曲面的参数选取.
 
-> **定义 23.1 (第二基本形式)**
+> **定义 3.5.2 (第二基本形式)**
 > 
 > 二次微分式 $\mathrm{II}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第二基本形式, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$. 等价地 $\mathrm{II}=-\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{n}\right\rangle$; 且 $b_{\alpha\beta}=b_{\beta\alpha}$, 故交叉项合并为 $2b_{12}\,\mathrm{d}u^{1}\mathrm{d}u^{2}$.
 
-> **定义 24.1 (魏因加滕变换/形状算子)**
+> **定义 3.6.1 (魏因加滕变换/形状算子)**
 > 
 > 设 $\boldsymbol{n}$ 是正则参数曲面 $\boldsymbol{r}:D\to{S}$ 的单位法向向量场. 由 $\partial_{\beta}\boldsymbol{n}$ 是切向量, 故 $\mathrm{d}\boldsymbol{n}$ 把切向量映到切向量: 对 $\boldsymbol{v}=v^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, $\mathrm{d}\boldsymbol{n}\left(\boldsymbol{v}\right)=v^{\alpha}\partial_{\alpha}\boldsymbol{n}=-v^{\alpha}b^{\beta}{}_{\alpha}\boldsymbol{r}_{\beta}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$. 定义 $W:=-\mathrm{d}\boldsymbol{n}:T_{\boldsymbol{r}\left(u_{0}\right)}S\to{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, 它是切空间到自身的线性映射, 称为曲面的魏因加滕变换 (形状算子); 在自然基 $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\}$ 下其系数矩阵为 $\left(b^{\beta}{}_{\alpha}\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$.
 
-> **定义 27.2 (主曲率与主方向)**
+> **定义 4.1.3 (主曲率与主方向)**
 > 
 > $k_{1}\left(u\right),k_{2}\left(u\right)$ (即 $W$ 的两个特征值) 称为曲面 $S$ 在 $\boldsymbol{r}\left(u\right)$ 点的主曲率; $W$ 的单位特征向量 $\boldsymbol{e}_{1},\boldsymbol{e}_{2}$ 称为该点的主方向.
 
-> **例 28.B (法曲率的定义式)**
+> **例 4.2.2 (法曲率的定义式)**
 > 
 > 沿弧长参数曲线 $\boldsymbol{c}\left(s\right)$, 把 $\ddot{\boldsymbol{c}}$ 的法向部分系数定义为法曲率 $k_{n}:=b_{\alpha\beta}\dot{u}^{\alpha}\dot{u}^{\beta}$. 若参数 $u^{\alpha}=u^{\alpha}\left(t\right)$ 不必是弧长, 则 $k_{n}=\left.\frac{b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}}{g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}}\right|_{u=u\left(t\right)}=\left.\frac{\mathrm{II}}{\mathrm{I}}\right|_{u=u\left(t\right)}$.
 
-> **命题 29.1 (在一点同时对角化 $g$ 与 $b$)**
+> **命题 4.3.1 (在一点同时对角化 $g$ 与 $b$)**
 > 
 > 在任一固定点 $u_{0}\in{D}$, 存在该点处的线性参数变换, 使得新参数基恰为单位正交主方向: 即 $\boldsymbol{r}_{\alpha}\left(u_{0}\right)=\boldsymbol{e}_{\alpha}$, 从而在 $u_{0}$ 处 $g_{\alpha\beta}\left(u_{0}\right)=\delta_{\alpha\beta}$, $b_{\alpha\beta}\left(u_{0}\right)=k_{\alpha}\delta_{\alpha\beta}$ ($\alpha$ 不求和).
 
-> **命题 29.2 (欧拉公式)**
+> **命题 4.3.3 (欧拉公式)**
 > 
 > 设 $\boldsymbol{e}_{1},\boldsymbol{e}_{2}$ 是 $S$ 在 $\boldsymbol{r}\left(u_{0}\right)$ 的单位正交主方向, $k_{1},k_{2}$ 是对应主曲率. 对任意单位切向量 $\boldsymbol{v}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, 设 $\theta$ 为 $\boldsymbol{v}$ 与 $\boldsymbol{e}_{1}$ 的夹角, 则沿 $\boldsymbol{v}$ 的法曲率为 $k_{n}\left(\boldsymbol{v}\right)=k_{1}\cos^{2}\theta+k_{2}\sin^{2}\theta$.
 
-> **定义 32.1 (平均曲率与总曲率)**
+> **定义 4.6.1 (平均曲率与总曲率)**
 > 
 > 设曲面 $S$ 在一点的主曲率为 $k_{1},k_{2}$. 称 $H:=\frac{k_{1}+k_{2}}{2}$ 为曲面在该点的平均曲率, 称 $K:=k_{1}k_{2}$ 为曲面在该点的总曲率 (高斯曲率).
 
-> **命题 32.2 (特征方程与 $H,K$)**
+> **命题 4.6.2 (特征方程与 $H,K$)**
 > 
 > 主曲率 $k_{1},k_{2}$ 是方程 $\det\left(b_{\alpha\beta}-kg_{\alpha\beta}\right)=0$ 的根, 该方程等价于 $k^{2}-2Hk+K=0$.
 
-> **定义 34.1 (椭圆点, 双曲点, 抛物点与平点)**
+> **定义 4.8.2 (椭圆点, 双曲点, 抛物点与平点)**
 > 
 > 设 $\boldsymbol{r}\left(u_{0}\right)\in{S}$, 主曲率 $k_{1}\left(u_{0}\right)\le{k}_{2}\left(u_{0}\right)$. 若 $k_{1}k_{2}>0$ (即 $K>0$), 称 $\boldsymbol{r}\left(u_{0}\right)$ 为椭圆点; 若 $k_{1}k_{2}<0$ (即 $K<0$), 称它为双曲点; 若 $k_{1}k_{2}=0$ (即 $K=0$), 称它为抛物点, 若更有 $k_{1}=k_{2}=0$ (即 $b_{\alpha\beta}\left(u_{0}\right)=0$), 称它为平点.
 
-> **定义 40.1 (直纹面)**
+> **定义 6.4.1 (直纹面)**
 > 
 > 设 $\boldsymbol{c},\boldsymbol{l}$ 是区间 $I$ 上的光滑向量值函数, $\left|\boldsymbol{l}\left(t\right)\right|\equiv1$, 且 $\boldsymbol{c}'\left(t\right)$ 与 $\boldsymbol{l}\left(t\right)$ 处处线性无关. 由一族直线生成的曲面 $\boldsymbol{r}\left(t,u\right)=\boldsymbol{c}\left(t\right)+u\,\boldsymbol{l}\left(t\right)$ 称为直纹面; 对固定的 $t$, 直线 $u\mapsto\boldsymbol{r}\left(t,u\right)$ 称为直线 (直母线), $\boldsymbol{c}\left(t\right)$ 称为准线.
 
-> **例 40.2 (直纹面的特殊类型)**
+> **例 6.4.2 (直纹面的特殊类型)**
 > 
 > (1) 若 $\boldsymbol{l}\equiv$ 常向量, 直母线互相平行, 曲面是柱面; (2) 若 $\boldsymbol{c}\equiv$ 常向量, 所有直母线过同一固定点, 曲面是锥面; (3) 若 $\boldsymbol{l}=\frac{\boldsymbol{c}'}{\left|\boldsymbol{c}'\right|}$, 直母线沿准线的切线方向, 曲面是切线面.
 
@@ -72,7 +72,7 @@ $$
 \boldsymbol{r}_{x}=\left(1,0,f_{x}\right),\quad\boldsymbol{r}_{y}=\left(0,1,f_{y}\right),
 $$
 
-由**定义 21.1**,
+由**定义 3.3.1**,
 
 $$
 g_{11}=1+f_{x}^{2},\quad{g}_{12}=f_{x}f_{y},\quad{g}_{22}=1+f_{y}^{2},
@@ -82,13 +82,13 @@ $$
 \mathrm{I}=\left(1+f_{x}^{2}\right)\mathrm{d}x^{2}+2f_{x}f_{y}\,\mathrm{d}x\,\mathrm{d}y+\left(1+f_{y}^{2}\right)\mathrm{d}y^{2}.
 $$
 
-又 $\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}=\left(-f_{x},-f_{y},1\right)$, $\left|\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}\right|=\sqrt{1+f_{x}^{2}+f_{y}^{2}}=:W$, 由**定义 19.2**
+又 $\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}=\left(-f_{x},-f_{y},1\right)$, $\left|\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}\right|=\sqrt{1+f_{x}^{2}+f_{y}^{2}}=:W$, 由**定义 3.1.2**
 
 $$
 \boldsymbol{n}=\frac{\left(-f_{x},-f_{y},1\right)}{W}.
 $$
 
-二阶偏导 $\boldsymbol{r}_{xx}=\left(0,0,f_{xx}\right)$, $\boldsymbol{r}_{xy}=\left(0,0,f_{xy}\right)$, $\boldsymbol{r}_{yy}=\left(0,0,f_{yy}\right)$, 由**定义 23.1**
+二阶偏导 $\boldsymbol{r}_{xx}=\left(0,0,f_{xx}\right)$, $\boldsymbol{r}_{xy}=\left(0,0,f_{xy}\right)$, $\boldsymbol{r}_{yy}=\left(0,0,f_{yy}\right)$, 由**定义 3.5.2**
 
 $$
 b_{11}=\frac{f_{xx}}{W},\quad{b}_{12}=\frac{f_{xy}}{W},\quad{b}_{22}=\frac{f_{yy}}{W},
@@ -98,13 +98,13 @@ $$
 \mathrm{II}=\frac{f_{xx}\,\mathrm{d}x^{2}+2f_{xy}\,\mathrm{d}x\,\mathrm{d}y+f_{yy}\,\mathrm{d}y^{2}}{W}.
 $$
 
-两行列式: $\det\left(g_{\alpha\beta}\right)=\left(1+f_{x}^{2}\right)\left(1+f_{y}^{2}\right)-f_{x}^{2}f_{y}^{2}=1+f_{x}^{2}+f_{y}^{2}=W^{2}$, $\det\left(b_{\alpha\beta}\right)=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{W^{2}}$. 由**命题 32.2**, 主曲率是 $k^{2}-2Hk+K=0$ 的根, 而 $\det\left(g^{-1}b\right)=K$, $\operatorname{tr}\left(g^{-1}b\right)=2H$, 其中 $2\times2$ 情形
+两行列式: $\det\left(g_{\alpha\beta}\right)=\left(1+f_{x}^{2}\right)\left(1+f_{y}^{2}\right)-f_{x}^{2}f_{y}^{2}=1+f_{x}^{2}+f_{y}^{2}=W^{2}$, $\det\left(b_{\alpha\beta}\right)=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{W^{2}}$. 由**命题 4.6.2**, 主曲率是 $k^{2}-2Hk+K=0$ 的根, 而 $\det\left(g^{-1}b\right)=K$, $\operatorname{tr}\left(g^{-1}b\right)=2H$, 其中 $2\times2$ 情形
 
 $$
 \operatorname{tr}\left(g^{-1}b\right)=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{\det\left(g_{\alpha\beta}\right)}.
 $$
 
-故由**定义 32.1** 与上式,
+故由**定义 4.6.1** 与上式,
 
 $$
 K=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{W^{4}}=\frac{f_{xx}f_{yy}-f_{xy}^{2}}{\left(1+f_{x}^{2}+f_{y}^{2}\right)^{2}},
@@ -142,7 +142,7 @@ $$
 \psi'\left(0\right)=\frac{1}{f'\left(0\right)}.
 $$
 
-由**定义 19.1**, 该图是 $S$ 在原点邻近的正则参数化 (因 $f'\left(0\right)\ne0$ 使 $1+f_{x}^{2}+f_{y}^{2}>0$, 见下文). 对 $u\left(x,y\right):=\psi\left(x^{2}+y^{2}\right)$ 用 解答 1 的函数图公式: 记 $u_{x},u_{y},u_{xx},u_{xy},u_{yy}$ 为其偏导,
+由**定义 3.1.1**, 该图是 $S$ 在原点邻近的正则参数化 (因 $f'\left(0\right)\ne0$ 使 $1+f_{x}^{2}+f_{y}^{2}>0$, 见下文). 对 $u\left(x,y\right):=\psi\left(x^{2}+y^{2}\right)$ 用 解答 1 的函数图公式: 记 $u_{x},u_{y},u_{xx},u_{xy},u_{yy}$ 为其偏导,
 
 $$
 u_{x}=2x\psi',\quad{u}_{y}=2y\psi',\quad
@@ -156,19 +156,19 @@ $$
 \mathrm{II}=2\psi'\left(0\right)\left(\mathrm{d}x^{2}+\mathrm{d}y^{2}\right),
 $$
 
-即 $g_{11}=g_{22}=1$, $g_{12}=0$, $b_{11}=b_{22}=2\psi'\left(0\right)$, $b_{12}=0$. 于是由**命题 29.1** (此参数在原点已是同时对角化的单位正交主方向), 两个主曲率相等,
+即 $g_{11}=g_{22}=1$, $g_{12}=0$, $b_{11}=b_{22}=2\psi'\left(0\right)$, $b_{12}=0$. 于是由**命题 4.3.1** (此参数在原点已是同时对角化的单位正交主方向), 两个主曲率相等,
 
 $$
 k_{1}=k_{2}=2\psi'\left(0\right)=\frac{2}{f'\left(0\right)}.
 $$
 
-由**例 28.B**, 沿任一非零切方向 $\left(\mathrm{d}x,\mathrm{d}y\right)$ 的法曲率为 $\frac{\mathrm{II}}{\mathrm{I}}$, 而此处 $\mathrm{II}=2\psi'\left(0\right)\mathrm{I}$, 故
+由**例 4.2.2**, 沿任一非零切方向 $\left(\mathrm{d}x,\mathrm{d}y\right)$ 的法曲率为 $\frac{\mathrm{II}}{\mathrm{I}}$, 而此处 $\mathrm{II}=2\psi'\left(0\right)\mathrm{I}$, 故
 
 $$
 k_{n}=\frac{\mathrm{II}}{\mathrm{I}}=2\psi'\left(0\right)=\frac{2}{f'\left(0\right)}
 $$
 
-与切方向无关; 也可直接由**命题 29.2** (欧拉公式) 看出: $k_{n}=k_{1}\cos^{2}\theta+k_{2}\sin^{2}\theta=k\left(\cos^{2}\theta+\sin^{2}\theta\right)=k$, 故 $S$ 在 $\left(0,0,0\right)$ 的法曲率为常数 $\frac{2}{f'\left(0\right)}$.
+与切方向无关; 也可直接由**命题 4.3.3** (欧拉公式) 看出: $k_{n}=k_{1}\cos^{2}\theta+k_{2}\sin^{2}\theta=k\left(\cos^{2}\theta+\sin^{2}\theta\right)=k$, 故 $S$ 在 $\left(0,0,0\right)$ 的法曲率为常数 $\frac{2}{f'\left(0\right)}$.
 
 $\blacksquare$
 
@@ -184,7 +184,7 @@ $$
 z_{x}=-\frac{F_{x}}{F_{z}},\quad{z}_{y}=-\frac{F_{y}}{F_{z}}.
 $$
 
-由**定义 19.1**, 图 $\boldsymbol{r}\left(x,y\right)=\left(x,y,z\left(x,y\right)\right)$ 在 $1+z_{x}^{2}+z_{y}^{2}>0$ 处是正则参数化, 而 $1+z_{x}^{2}+z_{y}^{2}=\frac{F_{x}^{2}+F_{y}^{2}+F_{z}^{2}}{F_{z}^{2}}>0$. 由 解答 1 的函数图公式与上式,
+由**定义 3.1.1**, 图 $\boldsymbol{r}\left(x,y\right)=\left(x,y,z\left(x,y\right)\right)$ 在 $1+z_{x}^{2}+z_{y}^{2}>0$ 处是正则参数化, 而 $1+z_{x}^{2}+z_{y}^{2}=\frac{F_{x}^{2}+F_{y}^{2}+F_{z}^{2}}{F_{z}^{2}}>0$. 由 解答 1 的函数图公式与上式,
 
 $$
 \mathrm{I}=\left(1+z_{x}^{2}\right)\mathrm{d}x^{2}+2z_{x}z_{y}\,\mathrm{d}x\,\mathrm{d}y+\left(1+z_{y}^{2}\right)\mathrm{d}y^{2}
@@ -208,7 +208,7 @@ $$
 z_{xy}=\frac{-F_{xy}F_{z}^{2}+F_{x}F_{yz}F_{z}+F_{y}F_{xz}F_{z}-F_{x}F_{y}F_{zz}}{F_{z}^{3}}.
 $$
 
-记 $W:=\sqrt{1+z_{x}^{2}+z_{y}^{2}}=\frac{\sqrt{F_{x}^{2}+F_{y}^{2}+F_{z}^{2}}}{\left|F_{z}\right|}$, 由 解答 1 与**定义 23.1**,
+记 $W:=\sqrt{1+z_{x}^{2}+z_{y}^{2}}=\frac{\sqrt{F_{x}^{2}+F_{y}^{2}+F_{z}^{2}}}{\left|F_{z}\right|}$, 由 解答 1 与**定义 3.5.2**,
 
 $$
 \mathrm{II}=\frac{z_{xx}\,\mathrm{d}x^{2}+2z_{xy}\,\mathrm{d}x\,\mathrm{d}y+z_{yy}\,\mathrm{d}y^{2}}{W},
@@ -221,7 +221,7 @@ K=\frac{z_{xx}z_{yy}-z_{xy}^{2}}{\left(1+z_{x}^{2}+z_{y}^{2}\right)^{2}},\quad
 H=\frac{\left(1+z_{y}^{2}\right)z_{xx}-2z_{x}z_{y}z_{xy}+\left(1+z_{x}^{2}\right)z_{yy}}{2\left(1+z_{x}^{2}+z_{y}^{2}\right)^{3/2}},
 $$
 
-而 解答 1 中 $H,K$ 的这两个表达式正是**定义 32.1** 与**命题 32.2** 的直接推论 ($K=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}$, $2H=\operatorname{tr}\left(g^{-1}b\right)$). 把 $z_{x},z_{y},z_{xx},z_{xy},z_{yy}$ 的表达式代入并约去 $F_{z}$ 的幂, 即得隐函数型曲面的高斯曲率与平均曲率: 例如 $K$ 的分母 $\left(1+z_{x}^{2}+z_{y}^{2}\right)^{2}=\frac{\left(F_{x}^{2}+F_{y}^{2}+F_{z}^{2}\right)^{2}}{F_{z}^{4}}$, 而分子 $z_{xx}z_{yy}-z_{xy}^{2}$ 是 $F$ 的二阶偏导的二次型除以 $F_{z}^{6}$, 故 $K$ 是关于 $F_{x},F_{y},F_{z},F_{xx},F_{xy},\dots,F_{zz}$ 的有理式, 只在 $S$ 上取值.
+而 解答 1 中 $H,K$ 的这两个表达式正是**定义 4.6.1** 与**命题 4.6.2** 的直接推论 ($K=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}$, $2H=\operatorname{tr}\left(g^{-1}b\right)$). 把 $z_{x},z_{y},z_{xx},z_{xy},z_{yy}$ 的表达式代入并约去 $F_{z}$ 的幂, 即得隐函数型曲面的高斯曲率与平均曲率: 例如 $K$ 的分母 $\left(1+z_{x}^{2}+z_{y}^{2}\right)^{2}=\frac{\left(F_{x}^{2}+F_{y}^{2}+F_{z}^{2}\right)^{2}}{F_{z}^{4}}$, 而分子 $z_{xx}z_{yy}-z_{xy}^{2}$ 是 $F$ 的二阶偏导的二次型除以 $F_{z}^{6}$, 故 $K$ 是关于 $F_{x},F_{y},F_{z},F_{xx},F_{xy},\dots,F_{zz}$ 的有理式, 只在 $S$ 上取值.
 
 $\blacksquare$
 
@@ -235,29 +235,29 @@ $\blacksquare$
 
 ### 解答 3.27
 
-以 $k_{1},k_{2}$ 记 $S$ 的主曲率, 由**定义 32.1**, $H=\frac{k_{1}+k_{2}}{2}$, $K=k_{1}k_{2}$.
+以 $k_{1},k_{2}$ 记 $S$ 的主曲率, 由**定义 4.6.1**, $H=\frac{k_{1}+k_{2}}{2}$, $K=k_{1}k_{2}$.
 
 (1) 切平面平行.
 
-由**定义 24.1**, $\boldsymbol{n}_{\alpha}=-\mathrm{d}\boldsymbol{n}\left(\boldsymbol{r}_{\alpha}\right)=W\left(\boldsymbol{r}_{\alpha}\right)\in{T}_{\boldsymbol{r}}S$ 是切向量, 故
+由**定义 3.6.1**, $\boldsymbol{n}_{\alpha}=-\mathrm{d}\boldsymbol{n}\left(\boldsymbol{r}_{\alpha}\right)=W\left(\boldsymbol{r}_{\alpha}\right)\in{T}_{\boldsymbol{r}}S$ 是切向量, 故
 
 $$
 \partial_{\alpha}\boldsymbol{r}_{\lambda}=\boldsymbol{r}_{\alpha}+\lambda\boldsymbol{n}_{\alpha}\in{T}_{\boldsymbol{r}}S,\quad\alpha=1,2.
 $$
 
-于是 $T_{\boldsymbol{r}_{\lambda}}S_{\lambda}=\operatorname{span}\left\{\boldsymbol{r}_{\lambda,1},\boldsymbol{r}_{\lambda,2}\right\}\subset{T}_{\boldsymbol{r}}S$. 反之, 由**命题 29.1**, 在点 $P$ 取同时对角化的单位正交主方向参数, 使 $g_{\alpha\beta}=\delta_{\alpha\beta}$, $b_{\alpha\beta}=k_{\alpha}\delta_{\alpha\beta}$; 由**定义 27.2**, $\boldsymbol{r}_{\alpha}$ 是 $W$ 的特征向量, $W\left(\boldsymbol{r}_{\alpha}\right)=k_{\alpha}\boldsymbol{r}_{\alpha}$, 故 $\boldsymbol{n}_{\alpha}=-k_{\alpha}\boldsymbol{r}_{\alpha}$, 从而
+于是 $T_{\boldsymbol{r}_{\lambda}}S_{\lambda}=\operatorname{span}\left\{\boldsymbol{r}_{\lambda,1},\boldsymbol{r}_{\lambda,2}\right\}\subset{T}_{\boldsymbol{r}}S$. 反之, 由**命题 4.3.1**, 在点 $P$ 取同时对角化的单位正交主方向参数, 使 $g_{\alpha\beta}=\delta_{\alpha\beta}$, $b_{\alpha\beta}=k_{\alpha}\delta_{\alpha\beta}$; 由**定义 4.1.3**, $\boldsymbol{r}_{\alpha}$ 是 $W$ 的特征向量, $W\left(\boldsymbol{r}_{\alpha}\right)=k_{\alpha}\boldsymbol{r}_{\alpha}$, 故 $\boldsymbol{n}_{\alpha}=-k_{\alpha}\boldsymbol{r}_{\alpha}$, 从而
 
 $$
 \boldsymbol{r}_{\lambda,\alpha}=\boldsymbol{r}_{\alpha}+\lambda\boldsymbol{n}_{\alpha}=\left(1-\lambda{k}_{\alpha}\right)\boldsymbol{r}_{\alpha}.
 $$
 
-$S$ 上无抛物点即由**定义 34.1**, $K=k_{1}k_{2}\ne0$, 故 $k_{1},k_{2}$ 都非零; 在该点的邻域内 $\left|k_{\alpha}\right|$ 有界, 取 $\lambda$ 充分小使 $1-\lambda{k}_{\alpha}\ne0$ ($\alpha=1,2$). 此时 $\boldsymbol{r}_{\lambda,1},\boldsymbol{r}_{\lambda,2}$ 线性无关, $\dim{T}_{\boldsymbol{r}_{\lambda}}S_{\lambda}=2$, 与 $T_{\boldsymbol{r}}S$ 的二维子空间 $T_{\boldsymbol{r}}S$ 同维且含于其中, 故
+$S$ 上无抛物点即由**定义 4.8.2**, $K=k_{1}k_{2}\ne0$, 故 $k_{1},k_{2}$ 都非零; 在该点的邻域内 $\left|k_{\alpha}\right|$ 有界, 取 $\lambda$ 充分小使 $1-\lambda{k}_{\alpha}\ne0$ ($\alpha=1,2$). 此时 $\boldsymbol{r}_{\lambda,1},\boldsymbol{r}_{\lambda,2}$ 线性无关, $\dim{T}_{\boldsymbol{r}_{\lambda}}S_{\lambda}=2$, 与 $T_{\boldsymbol{r}}S$ 的二维子空间 $T_{\boldsymbol{r}}S$ 同维且含于其中, 故
 
 $$
 T_{\boldsymbol{r}_{\lambda}}S_{\lambda}=T_{\boldsymbol{r}}S,
 $$
 
-即对应点的切平面平行. 又 $\boldsymbol{r}_{\lambda,1}\wedge\boldsymbol{r}_{\lambda,2}=\left(1-\lambda{k}_{1}\right)\left(1-\lambda{k}_{2}\right)\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}$, 在 $\lambda$ 充分小时其系数为正, 由**定义 19.2** 可取单位法向
+即对应点的切平面平行. 又 $\boldsymbol{r}_{\lambda,1}\wedge\boldsymbol{r}_{\lambda,2}=\left(1-\lambda{k}_{1}\right)\left(1-\lambda{k}_{2}\right)\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}$, 在 $\lambda$ 充分小时其系数为正, 由**定义 3.1.2** 可取单位法向
 
 $$
 \boldsymbol{n}_{\lambda}=\boldsymbol{n}.
@@ -271,7 +271,7 @@ $$
 \mathrm{I}_{\lambda}=\left(1-\lambda{k}_{1}\right)^{2}\mathrm{d}u^{2}+\left(1-\lambda{k}_{2}\right)^{2}\mathrm{d}v^{2}.
 $$
 
-再算 $\mathrm{II}_{\lambda}$. 由 $\boldsymbol{n}_{1}=-k_{1}\boldsymbol{r}_{1}$ 对 $u$ 求导得 $0=\left\langle\boldsymbol{n}_{11},\boldsymbol{n}\right\rangle+\left\langle\boldsymbol{n}_{1},\boldsymbol{n}_{1}\right\rangle$, 即 $\left\langle\boldsymbol{n}_{11},\boldsymbol{n}\right\rangle=-\left|\boldsymbol{n}_{1}\right|^{2}=-k_{1}^{2}$; 同理 $\left\langle\boldsymbol{n}_{22},\boldsymbol{n}\right\rangle=-k_{2}^{2}$. 于是由**定义 23.1**,
+再算 $\mathrm{II}_{\lambda}$. 由 $\boldsymbol{n}_{1}=-k_{1}\boldsymbol{r}_{1}$ 对 $u$ 求导得 $0=\left\langle\boldsymbol{n}_{11},\boldsymbol{n}\right\rangle+\left\langle\boldsymbol{n}_{1},\boldsymbol{n}_{1}\right\rangle$, 即 $\left\langle\boldsymbol{n}_{11},\boldsymbol{n}\right\rangle=-\left|\boldsymbol{n}_{1}\right|^{2}=-k_{1}^{2}$; 同理 $\left\langle\boldsymbol{n}_{22},\boldsymbol{n}\right\rangle=-k_{2}^{2}$. 于是由**定义 3.5.2**,
 
 $$
 b_{11,\lambda}=\left\langle\boldsymbol{r}_{\lambda,11},\boldsymbol{n}\right\rangle=\left\langle\boldsymbol{r}_{11}+\lambda\boldsymbol{n}_{11},\boldsymbol{n}\right\rangle=b_{11}-\lambda{k}_{1}^{2}=k_{1}-\lambda{k}_{1}^{2}=k_{1}\left(1-\lambda{k}_{1}\right),
@@ -288,13 +288,13 @@ $$
 \mathrm{II}_{\lambda}=k_{1}\left(1-\lambda{k}_{1}\right)\mathrm{d}u^{2}+k_{2}\left(1-\lambda{k}_{2}\right)\mathrm{d}v^{2}.
 $$
 
-$\mathrm{I}_{\lambda}$ 与 $\mathrm{II}_{\lambda}$ 同时对角且坐标方向是主方向 (仍由**定义 27.2**: $\left\{1,2\right\}$ 方向上的魏因加滕变换对角), 故 $S_{\lambda}$ 的主曲率由**命题 32.2** 的特征方程给出, 在同时对角化参数下即比值
+$\mathrm{I}_{\lambda}$ 与 $\mathrm{II}_{\lambda}$ 同时对角且坐标方向是主方向 (仍由**定义 4.1.3**: $\left\{1,2\right\}$ 方向上的魏因加滕变换对角), 故 $S_{\lambda}$ 的主曲率由**命题 4.6.2** 的特征方程给出, 在同时对角化参数下即比值
 
 $$
 k_{\alpha}^{\lambda}=\frac{b_{\alpha\alpha,\lambda}}{g_{\alpha\alpha,\lambda}}=\frac{k_{\alpha}\left(1-\lambda{k}_{\alpha}\right)}{\left(1-\lambda{k}_{\alpha}\right)^{2}}=\frac{k_{\alpha}}{1-\lambda{k}_{\alpha}}\quad\left(\alpha=1,2\right).
 $$
 
-由**定义 32.1**,
+由**定义 4.6.1**,
 
 $$
 K_{\lambda}=k_{1}^{\lambda}k_{2}^{\lambda}=\frac{k_{1}k_{2}}{\left(1-\lambda{k}_{1}\right)\left(1-\lambda{k}_{2}\right)}=\frac{K}{1-\lambda\left(k_{1}+k_{2}\right)+\lambda^{2}k_{1}k_{2}}=\frac{K}{1-2\lambda{H}+\lambda^{2}K},
@@ -313,7 +313,7 @@ $\blacksquare$
 
 ### 解答 4.35
 
-称 $H\equiv0$ 的曲面为极小曲面 (由**定义 32.1**). 设 $h\left(x,y\right)=f\left(x\right)+g\left(y\right)$, $S$ 是 $h$ 的图. 则由 解答 1, 记 $h_{x}=f'$, $h_{y}=g'$, $h_{xx}=f''$, $h_{xy}=0$, $h_{yy}=g''$, 极小条件 $H\equiv0$ 即
+称 $H\equiv0$ 的曲面为极小曲面 (由**定义 4.6.1**). 设 $h\left(x,y\right)=f\left(x\right)+g\left(y\right)$, $S$ 是 $h$ 的图. 则由 解答 1, 记 $h_{x}=f'$, $h_{y}=g'$, $h_{xx}=f''$, $h_{xy}=0$, $h_{yy}=g''$, 极小条件 $H\equiv0$ 即
 
 $$
 \left(1+h_{y}^{2}\right)h_{xx}-2h_{x}h_{y}h_{xy}+\left(1+h_{x}^{2}\right)h_{yy}=0,
@@ -372,19 +372,19 @@ $$
 \boldsymbol{r}_{u}=\left(\cos{v},\sin{v},0\right),\quad\boldsymbol{r}_{v}=\left(-u\sin{v},u\cos{v},b\right),
 $$
 
-由**定义 21.1**,
+由**定义 3.3.1**,
 
 $$
 g_{11}=1,\quad{g}_{12}=0,\quad{g}_{22}=u^{2}+b^{2}.
 $$
 
-又 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(b\sin{v},-b\cos{v},u\right)$, $\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=\sqrt{b^{2}+u^{2}}$, 故由**定义 19.2**
+又 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(b\sin{v},-b\cos{v},u\right)$, $\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=\sqrt{b^{2}+u^{2}}$, 故由**定义 3.1.2**
 
 $$
 \boldsymbol{n}=\frac{\left(b\sin{v},-b\cos{v},u\right)}{\sqrt{b^{2}+u^{2}}}.
 $$
 
-二阶偏导 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right)$, $\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right)$, 由**定义 23.1**
+二阶偏导 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right)$, $\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right)$, 由**定义 3.5.2**
 
 $$
 b_{11}=0,\quad
@@ -392,13 +392,13 @@ b_{12}=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac{b}{\sqrt{b^{2}+u
 b_{22}=\frac{-bu\sin{v}\cos{v}+bu\cos{v}\sin{v}}{\sqrt{b^{2}+u^{2}}}=0.
 $$
 
-由**命题 32.2**, $2H=\operatorname{tr}\left(g^{-1}b\right)=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{\det\left(g_{\alpha\beta}\right)}=\frac{0-0+0}{u^{2}+b^{2}}=0$, 故 $H\equiv0$, 正螺面是极小曲面.
+由**命题 4.6.2**, $2H=\operatorname{tr}\left(g^{-1}b\right)=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{\det\left(g_{\alpha\beta}\right)}=\frac{0-0+0}{u^{2}+b^{2}}=0$, 故 $H\equiv0$, 正螺面是极小曲面.
 
 $\blacksquare$
 
 (ii) 直纹极小曲面是平面或正螺面.
 
-设直纹面 $\boldsymbol{r}\left(t,u\right)=\boldsymbol{c}\left(t\right)+u\,\boldsymbol{l}\left(t\right)$, $\left|\boldsymbol{l}\right|\equiv1$, $\boldsymbol{c}'$ 与 $\boldsymbol{l}$ 线性无关 (**定义 40.1**). 极小指由**定义 32.1** 的 $H\equiv0$.
+设直纹面 $\boldsymbol{r}\left(t,u\right)=\boldsymbol{c}\left(t\right)+u\,\boldsymbol{l}\left(t\right)$, $\left|\boldsymbol{l}\right|\equiv1$, $\boldsymbol{c}'$ 与 $\boldsymbol{l}$ 线性无关 (**定义 6.4.1**). 极小指由**定义 4.6.1** 的 $H\equiv0$.
 
 第一步: 归一化 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$. 记 $a:=\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle$, 取 $f\left(t\right):=\int{a}\,\mathrm{d}t$, $\widetilde{\boldsymbol{c}}:=\boldsymbol{c}-f\boldsymbol{l}$. 由 $\left\langle\boldsymbol{l},\boldsymbol{l}'\right\rangle=0$,
 
@@ -408,7 +408,7 @@ $$
 
 又 $\boldsymbol{r}=\widetilde{\boldsymbol{c}}+\left(f+u\right)\boldsymbol{l}$, 而 $f+u$ 与 $u$ 取遍同一范围, 直母线族不变, 故可设 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$.
 
-第二步: 柱面情形 $\boldsymbol{l}'\equiv\boldsymbol0$. 此时 $\boldsymbol{l}$ 为常向量, 由**例 40.2** (1), 曲面是柱面; 且 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$ 给出 $g_{12}=0$, $g_{22}=1$, $g_{11}=\left|\boldsymbol{c}'\right|^{2}$, 而 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{l}'=\boldsymbol0$ 给出 $b_{22}=0$, $b_{12}=0$. 由**命题 32.2**,
+第二步: 柱面情形 $\boldsymbol{l}'\equiv\boldsymbol0$. 此时 $\boldsymbol{l}$ 为常向量, 由**例 6.4.2** (1), 曲面是柱面; 且 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$ 给出 $g_{12}=0$, $g_{22}=1$, $g_{11}=\left|\boldsymbol{c}'\right|^{2}$, 而 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{l}'=\boldsymbol0$ 给出 $b_{22}=0$, $b_{12}=0$. 由**命题 4.6.2**,
 
 $$
 H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\det\left(g_{\alpha\beta}\right)}=\frac{b_{11}}{2\left|\boldsymbol{c}'\right|^{2}},
@@ -444,7 +444,7 @@ $$
 \boldsymbol{r}_{t}\wedge\boldsymbol{r}_{u}=\left(\alpha+u\kappa\right)\left(\boldsymbol{p}\wedge\boldsymbol{l}\right)+\beta\left(\boldsymbol{q}\wedge\boldsymbol{l}\right)=-\left(\alpha+u\kappa\right)\boldsymbol{q}+\beta\boldsymbol{p},
 $$
 
-故由**定义 19.2**,
+故由**定义 3.1.2**,
 
 $$
 \boldsymbol{n}=\frac{\beta\boldsymbol{p}-\left(\alpha+u\kappa\right)\boldsymbol{q}}{\sqrt{\beta^{2}+\left(\alpha+u\kappa\right)^{2}}}.
@@ -466,14 +466,14 @@ $$
 =-\kappa\left(\alpha+u\kappa\right)\boldsymbol{l}+\left(\alpha'-\beta\tau+u\kappa'\right)\boldsymbol{p}+\left(\alpha\tau+\beta'+u\kappa\tau\right)\boldsymbol{q}.
 $$
 
-由**定义 23.1**, $b_{22}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=0$, $b_{12}=\left\langle\boldsymbol{r}_{tu},\boldsymbol{n}\right\rangle=\frac{\kappa\beta}{\sqrt{\beta^{2}+\left(\alpha+u\kappa\right)^{2}}}$, 且
+由**定义 3.5.2**, $b_{22}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=0$, $b_{12}=\left\langle\boldsymbol{r}_{tu},\boldsymbol{n}\right\rangle=\frac{\kappa\beta}{\sqrt{\beta^{2}+\left(\alpha+u\kappa\right)^{2}}}$, 且
 
 $$
 b_{11}=\left\langle\boldsymbol{r}_{tt},\boldsymbol{n}\right\rangle
 =\frac{\left(\alpha'-\beta\tau+u\kappa'\right)\beta-\left(\alpha\tau+\beta'+u\kappa\tau\right)\left(\alpha+u\kappa\right)}{\sqrt{\beta^{2}+\left(\alpha+u\kappa\right)^{2}}}.
 $$
 
-由**命题 32.2**, 因 $g_{12}=0$, $g_{22}=1$, $b_{22}=0$,
+由**命题 4.6.2**, 因 $g_{12}=0$, $g_{22}=1$, $b_{22}=0$,
 
 $$
 2H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{\det\left(g_{\alpha\beta}\right)}
@@ -544,13 +544,13 @@ $$
 
 (a) 面积与参数选取无关.
 
-由**定义 19.2** 与**定义 21.1**, $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}$ 的长度与 $\det\left(g_{\alpha\beta}\right)$ 满足
+由**定义 3.1.2** 与**定义 3.3.1**, $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}$ 的长度与 $\det\left(g_{\alpha\beta}\right)$ 满足
 
 $$
 \left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|^{2}=\left|\boldsymbol{r}_{u}\right|^{2}\left|\boldsymbol{r}_{v}\right|^{2}-\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{v}\right\rangle^{2}=g_{11}g_{22}-g_{12}^{2}=\det\left(g_{\alpha\beta}\right),
 $$
 
-故 $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{\det\left(g_{\alpha\beta}\right)}\,\mathrm{d}u\,\mathrm{d}v$ (面积微元的来处即参数小矩形经 $\boldsymbol{r}$ 的像为以 $\boldsymbol{r}_{u}\mathrm{d}u$, $\boldsymbol{r}_{v}\mathrm{d}v$ 为邻边的平行四边形, 其面积为 $\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|\mathrm{d}u\,\mathrm{d}v$). 设 $\left(\widetilde{u},\widetilde{v}\right)$ 是另一组参数, 由链式法则 $\widetilde{\boldsymbol{r}}_{\alpha}=\boldsymbol{r}_{\varepsilon}\frac{\partial{u}^{\varepsilon}}{\partial\widetilde{u}^{\alpha}}$, 故由**命题 21.2**,
+故 $\mathrm{Area}\left(S\right)=\int_{D}\sqrt{\det\left(g_{\alpha\beta}\right)}\,\mathrm{d}u\,\mathrm{d}v$ (面积微元的来处即参数小矩形经 $\boldsymbol{r}$ 的像为以 $\boldsymbol{r}_{u}\mathrm{d}u$, $\boldsymbol{r}_{v}\mathrm{d}v$ 为邻边的平行四边形, 其面积为 $\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|\mathrm{d}u\,\mathrm{d}v$). 设 $\left(\widetilde{u},\widetilde{v}\right)$ 是另一组参数, 由链式法则 $\widetilde{\boldsymbol{r}}_{\alpha}=\boldsymbol{r}_{\varepsilon}\frac{\partial{u}^{\varepsilon}}{\partial\widetilde{u}^{\alpha}}$, 故由**命题 3.3.2**,
 
 $$
 \widetilde{\mathrm{I}}=\mathrm{I},\quad\text{即}\quad\left(\widetilde{g}_{\alpha\beta}\right)=\boldsymbol{J}^{\top}\left(g_{\varepsilon\tau}\right)\boldsymbol{J},\quad
@@ -571,20 +571,20 @@ $\blacksquare$
 
 (b) $\widetilde{\boldsymbol{r}}=g\circ\boldsymbol{r}$ 是参数曲面片及极限公式.
 
-先证正则性. 由**定义 24.1**, $\boldsymbol{n}_{\alpha}=\partial_{\alpha}\boldsymbol{n}=-\mathrm{d}\boldsymbol{n}\left(\boldsymbol{r}_{\alpha}\right)=-W\left(\boldsymbol{r}_{\alpha}\right)=-b^{\beta}{}_{\alpha}\boldsymbol{r}_{\beta}$, 故 $\boldsymbol{n}_{\alpha}$ 在基 $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\}$ 下的系数矩阵为 $\left(-b^{\beta}{}_{\alpha}\right)$, 得
+先证正则性. 由**定义 3.6.1**, $\boldsymbol{n}_{\alpha}=\partial_{\alpha}\boldsymbol{n}=-\mathrm{d}\boldsymbol{n}\left(\boldsymbol{r}_{\alpha}\right)=-W\left(\boldsymbol{r}_{\alpha}\right)=-b^{\beta}{}_{\alpha}\boldsymbol{r}_{\beta}$, 故 $\boldsymbol{n}_{\alpha}$ 在基 $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\}$ 下的系数矩阵为 $\left(-b^{\beta}{}_{\alpha}\right)$, 得
 
 $$
 \boldsymbol{n}_{1}\wedge\boldsymbol{n}_{2}=\left(b^{1}{}_{1}b^{2}{}_{2}-b^{2}{}_{1}b^{1}{}_{2}\right)\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}
 =\det\left(g^{-1}b\right)\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}.
 $$
 
-由**定义 32.1** 与**命题 32.2**, $\det\left(g^{-1}b\right)=k_{1}k_{2}=K$, 故
+由**定义 4.6.1** 与**命题 4.6.2**, $\det\left(g^{-1}b\right)=k_{1}k_{2}=K$, 故
 
 $$
 \boldsymbol{n}_{1}\wedge\boldsymbol{n}_{2}=K\,\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}.
 $$
 
-在 $\left(u_{0},v_{0}\right)$ 处 $K\left(p_{0}\right)>0$, 而 $K$ 连续, 故存在 $\delta_{0}>0$ 使 $K>0$ 于 $B_{\delta_{0}}\left(u_{0},v_{0}\right)$. 在该邻域内 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$ 且 $K\ne0$, 故 $\boldsymbol{n}_{1}\wedge\boldsymbol{n}_{2}\ne\boldsymbol0$, 即 $\boldsymbol{n}_{1},\boldsymbol{n}_{2}$ 线性无关; 由**定义 19.1**, $\widetilde{\boldsymbol{r}}:\left(u,v\right)\mapsto\boldsymbol{n}\left(u,v\right)$ 是正则参数曲面片. 又 $\left|\boldsymbol{n}\right|=1$, 故 $\widetilde{\boldsymbol{r}}$ 取值于 $S^{2}\left(1\right)$, 是单位球面在 $\boldsymbol{n}\left(u_{0},v_{0}\right)$ 附近的参数化.
+在 $\left(u_{0},v_{0}\right)$ 处 $K\left(p_{0}\right)>0$, 而 $K$ 连续, 故存在 $\delta_{0}>0$ 使 $K>0$ 于 $B_{\delta_{0}}\left(u_{0},v_{0}\right)$. 在该邻域内 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$ 且 $K\ne0$, 故 $\boldsymbol{n}_{1}\wedge\boldsymbol{n}_{2}\ne\boldsymbol0$, 即 $\boldsymbol{n}_{1},\boldsymbol{n}_{2}$ 线性无关; 由**定义 3.1.1**, $\widetilde{\boldsymbol{r}}:\left(u,v\right)\mapsto\boldsymbol{n}\left(u,v\right)$ 是正则参数曲面片. 又 $\left|\boldsymbol{n}\right|=1$, 故 $\widetilde{\boldsymbol{r}}$ 取值于 $S^{2}\left(1\right)$, 是单位球面在 $\boldsymbol{n}\left(u_{0},v_{0}\right)$ 附近的参数化.
 
 再证极限公式. 由 $\boldsymbol{n}_{1}\wedge\boldsymbol{n}_{2}=K\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}$ 与 (a) 中面积微元, 像 $\widetilde{\boldsymbol{r}}\left(B_{\delta}\right)$ 的面积为
 
