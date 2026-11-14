@@ -327,3 +327,99 @@ $$
 $$
 
 $\blacksquare$
+
+## 2 (科达齐方程两种形式的等价性)
+
+证明: 对任意 $\alpha,\beta,\gamma$,
+
+$$
+\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial{b}_{\gamma\alpha}}{\partial{u}^{\beta}}+\Gamma^{\xi}_{\alpha\beta}b_{\xi\gamma}-\Gamma^{\xi}_{\gamma\beta}b_{\xi\alpha}=0
+$$
+
+等价于对任意 $\alpha,\beta,\xi$,
+
+$$
+\frac{\partial{b}^{\xi}_{\alpha}}{\partial{u}^{\beta}}-\frac{\partial{b}^{\xi}_{\beta}}{\partial{u}^{\alpha}}+b^{\gamma}_{\alpha}\Gamma^{\xi}_{\gamma\beta}-b^{\gamma}_{\beta}\Gamma^{\xi}_{\gamma\alpha}=0.
+$$
+
+### 解答 2
+
+先看出两式与书上方程的关系. 由 $b_{\gamma\alpha}=b_{\alpha\gamma}$ 与 $\Gamma^{\xi}_{\gamma\beta}=\Gamma^{\xi}_{\beta\gamma}$, 第一式即
+
+$$
+\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial{b}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\xi}_{\alpha\beta}b_{\xi\gamma}-\Gamma^{\xi}_{\alpha\gamma}b_{\xi\beta}=0,
+$$
+
+这正是**公式 4.3.8 (科达齐方程)**; 第二式正是**公式 4.3.9 (科达齐方程的等价形式)**. 以下用协变微分把二者统一. 对 $b_{\alpha\beta}$ 与 $b^{\xi}_{\alpha}$ 分别定义
+
+$$
+\nabla_\gamma{b}_{\alpha\beta}:=\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\Gamma^{\sigma}_{\alpha\gamma}b_{\sigma\beta}-\Gamma^{\sigma}_{\beta\gamma}b_{\alpha\sigma},
+$$
+
+$$
+\nabla_\gamma{b}^{\xi}_{\alpha}:=\frac{\partial{b}^{\xi}_{\alpha}}{\partial{u}^{\gamma}}+\Gamma^{\xi}_{\sigma\gamma}b^{\sigma}_{\alpha}-\Gamma^{\sigma}_{\alpha\gamma}b^{\xi}_{\sigma},
+$$
+
+即把两个张量的分量沿 $u^{\gamma}$ 方向"平行移动"时的变化率 (这两个定义满足乘积法则, 因为它们由同一组系数 $\Gamma$ 给出).
+
+第一步: 度量相容. 由**公式 4.2.24 (第一类克里斯托费尔符号)** 与 $g_{\alpha\beta}=g_{\beta\alpha}$,
+
+$$
+\Gamma_{\alpha\gamma\beta}+\Gamma_{\beta\gamma\alpha}=\frac12\left(\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\gamma}}+\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\gamma}}\right)+\frac12\left(\frac{\partial{g}_{\gamma\beta}}{\partial{u}^{\alpha}}-\frac{\partial{g}_{\alpha\gamma}}{\partial{u}^{\beta}}+\frac{\partial{g}_{\gamma\alpha}}{\partial{u}^{\beta}}-\frac{\partial{g}_{\beta\gamma}}{\partial{u}^{\alpha}}\right)=\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\gamma}},
+$$
+
+中括号中四项两两相抵消. 又由 $\Gamma_{\alpha\beta\gamma}=g_{\gamma\xi}\Gamma^{\xi}_{\alpha\beta}$, 上式即
+
+$$
+\Gamma^{\sigma}_{\alpha\gamma}g_{\sigma\beta}+\Gamma^{\sigma}_{\beta\gamma}g_{\alpha\sigma}=\frac{\partial{g}_{\alpha\beta}}{\partial{u}^{\gamma}},
+$$
+
+代入定义得 $\nabla_\gamma{g}_{\alpha\beta}=0$. 同法 ($g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}{}_{\gamma}$ 两边求导并用上式) 得 $\nabla_\gamma{g}^{\alpha\beta}=0$.
+
+第二步: 由乘积法则与 $\nabla_\gamma{g}^{\xi\sigma}=0$,
+
+$$
+\nabla_\gamma{b}^{\xi}_{\alpha}=\nabla_\gamma\left(g^{\xi\sigma}b_{\alpha\sigma}\right)=g^{\xi\sigma}\nabla_\gamma{b}_{\alpha\sigma}+b_{\alpha\sigma}\nabla_\gamma{g}^{\xi\sigma}=g^{\xi\sigma}\nabla_\gamma{b}_{\alpha\sigma}.\quad\left(\mathrm{B}\right)
+$$
+
+第三步: 把题中两式写成协变微分. 展开第一式的左端:
+
+$$
+\nabla_\gamma{b}_{\alpha\beta}-\nabla_\beta{b}_{\alpha\gamma}=\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\Gamma^{\sigma}_{\alpha\gamma}b_{\sigma\beta}-\Gamma^{\sigma}_{\beta\gamma}b_{\alpha\sigma}-\frac{\partial{b}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\sigma}_{\alpha\beta}b_{\sigma\gamma}+\Gamma^{\sigma}_{\gamma\beta}b_{\alpha\sigma},
+$$
+
+其中 $\Gamma^{\sigma}_{\beta\gamma}b_{\alpha\sigma}$ 与 $\Gamma^{\sigma}_{\gamma\beta}b_{\alpha\sigma}$ 因 $\Gamma^{\xi}_{\gamma\beta}=\Gamma^{\xi}_{\beta\gamma}$ 而相消, 故
+
+$$
+\nabla_\gamma{b}_{\alpha\beta}-\nabla_\beta{b}_{\alpha\gamma}=\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial{b}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\sigma}_{\alpha\beta}b_{\sigma\gamma}-\Gamma^{\sigma}_{\alpha\gamma}b_{\sigma\beta}.\quad\left(\mathrm{C}\right)
+$$
+
+同理展开第二式的左端:
+
+$$
+\nabla_\beta{b}^{\xi}_{\alpha}-\nabla_\alpha{b}^{\xi}_{\beta}=\frac{\partial{b}^{\xi}_{\alpha}}{\partial{u}^{\beta}}-\frac{\partial{b}^{\xi}_{\beta}}{\partial{u}^{\alpha}}+b^{\gamma}_{\alpha}\Gamma^{\xi}_{\gamma\beta}-b^{\gamma}_{\beta}\Gamma^{\xi}_{\gamma\alpha}+\left(\Gamma^{\xi}_{\sigma\beta}b^{\sigma}_{\alpha}-\Gamma^{\sigma}_{\alpha\beta}b^{\xi}_{\sigma}\right)-\left(\Gamma^{\xi}_{\sigma\alpha}b^{\sigma}_{\beta}-\Gamma^{\sigma}_{\beta\alpha}b^{\xi}_{\sigma}\right),
+$$
+
+而 $\Gamma^{\sigma}_{\beta\alpha}b^{\xi}_{\sigma}=\Gamma^{\sigma}_{\alpha\beta}b^{\xi}_{\sigma}$, 故
+
+$$
+\nabla_\beta{b}^{\xi}_{\alpha}-\nabla_\alpha{b}^{\xi}_{\beta}=\frac{\partial{b}^{\xi}_{\alpha}}{\partial{u}^{\beta}}-\frac{\partial{b}^{\xi}_{\beta}}{\partial{u}^{\alpha}}+b^{\gamma}_{\alpha}\Gamma^{\xi}_{\gamma\beta}-b^{\gamma}_{\beta}\Gamma^{\xi}_{\gamma\alpha}.\quad\left(\mathrm{D}\right)
+$$
+
+于是"第一式对一切 $\alpha,\beta,\gamma$ 成立"$\iff$"$\nabla_\gamma{b}_{\alpha\beta}$ 关于下标 $\gamma$ 与 $\beta$ 对称"; 而由 $b_{\alpha\beta}=b_{\beta\alpha}$ 与 $\Gamma^{\sigma}_{\beta\gamma}=\Gamma^{\sigma}_{\gamma\beta}$, 定义式立刻给出 $\nabla_\gamma{b}_{\alpha\beta}=\nabla_\gamma{b}_{\beta\alpha}$, 故第一式成立 $\iff$ $\nabla_\gamma{b}_{\alpha\beta}$ 关于三个下标全对称. 同理, 第二式对一切 $\alpha,\beta,\xi$ 成立 $\iff$ $\nabla_\beta{b}^{\xi}_{\alpha}$ 关于 $\alpha,\beta$ 对称.
+
+第四步: 两个对称性条件等价. 若 $\nabla_\gamma{b}_{\alpha\beta}$ 关于三个下标全对称, 则 $\nabla_\beta{b}_{\alpha\sigma}=\nabla_\sigma{b}_{\alpha\beta}=\nabla_\sigma{b}_{\beta\alpha}=\nabla_\alpha{b}_{\beta\sigma}$, 由（B）
+
+$$
+\nabla_\beta{b}^{\xi}_{\alpha}=g^{\xi\sigma}\nabla_\beta{b}_{\alpha\sigma}=g^{\xi\sigma}\nabla_\alpha{b}_{\beta\sigma}=\nabla_\alpha{b}^{\xi}_{\beta},
+$$
+
+即第二式成立. 反之若 $\nabla_\beta{b}^{\xi}_{\alpha}=\nabla_\alpha{b}^{\xi}_{\beta}$ 对一切成立, 则两边乘 $g_{\xi\mu}$ 并对 $\xi$ 求和, 用（B）得
+
+$$
+\nabla_\beta{b}_{\mu\alpha}=g^{\xi\sigma}\nabla_\beta{b}_{\alpha\sigma}g_{\xi\mu}=\nabla_\beta{b}^{\xi}_{\alpha}g_{\xi\mu}=\nabla_\alpha{b}^{\xi}_{\beta}g_{\xi\mu}=\nabla_\alpha{b}_{\mu\beta},
+$$
+
+即 $\nabla{b}$ 关于第二, 第三下标对称; 再加上自动成立的关于第一, 第二下标对称, 得全对称, 于是第一式成立. 故两式等价.
+
+$\blacksquare$
