@@ -1,32 +1,24 @@
 # week4
 
-> **定义 3.1.1 (曲面与单位法向)**
+> **定义 19.1 (参数曲面)**
 > 
-> 若映射 $\boldsymbol{r}:D\to\mathbb{E}^{3}$, $\left(u,v\right)\mapsto\boldsymbol{r}\left(u,v\right)$ 的分量函数可微且 $\boldsymbol{r}_u,\boldsymbol{r}_v$ 线性无关 (即 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$), 则称 $\boldsymbol{r}$ 是 $\mathbb{E}^{3}$ 的一个曲面(片); $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 是曲面在该点的法向量, $\boldsymbol{n}=\frac{\boldsymbol{r}_u\wedge\boldsymbol{r}_v}{\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|}$ 是该点的单位法向量.
+> 设 $D\subset{E}^{2}$ 是平面区域, $\boldsymbol{r}:D\to{E}^{3}$, $\boldsymbol{r}\left(u^{1},u^{2}\right)=\left(x\left(u^{1},u^{2}\right),y\left(u^{1},u^{2}\right),z\left(u^{1},u^{2}\right)\right)$ 是 $C^{k}$ ($k\ge1$) 映射. 记坐标切向量 $\boldsymbol{r}_{\alpha}:=\frac{\partial\boldsymbol{r}}{\partial{u}^{\alpha}}$, $\alpha=1,2$. 若处处有 $\operatorname{rank}\left(\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right)=2$, 即 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 则称 $\boldsymbol{r}\left(D\right)\subset{E}^{3}$ 是一张正则 $C^{k}$ 参数曲面, 记作 $S$; $\left(u^{1},u^{2}\right)$ 称为曲面的坐标参数.
 
-> **推导 3.1.2 (参数变换下法向)**
+> **定义 19.2 (单位法向与定向)**
 > 
-> 设 $\left(u,v\right)\to\left(\widetilde{u},\widetilde{v}\right)$ 是参数变换, 雅可比行列式 $J:=\frac{\partial\left(u,v\right)}{\partial\left(\widetilde{u},\widetilde{v}\right)}$, 则 $\boldsymbol{r}_{\widetilde{u}}\wedge\boldsymbol{r}_{\widetilde{v}}=\det{J}\,\boldsymbol{r}_u\wedge\boldsymbol{r}_v$; 因而同向参数变换 ($\det{J}>0$) 不改变单位法向 $\boldsymbol{n}$, 反向参数变换 ($\det{J}<0$) 使 $\boldsymbol{n}$ 变号.
+> 由正则性 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 曲面上每点有确定的单位法向 $\boldsymbol{n}:=\frac{\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}}{\left|\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\right|}$. $\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{n}\right\}$ 构成 $E^{3}$ 的一组正定向标架, 定向由参数化本身给出; 参数反向则 $\boldsymbol{n}$ 同时反向.
 
-> **定义 3.1.3 (切平面)**
+> **定义 19.3 (切平面)**
 > 
-> $\boldsymbol{r}_u,\boldsymbol{r}_v$ 张成的平面 $T_{\boldsymbol{r}}S=\mathrm{span}\left\{\boldsymbol{r}_u,\boldsymbol{r}_v\right\}$ 称为曲面 $S$ 在点 $\boldsymbol{r}$ 处的切平面(切空间).
+> $\boldsymbol{r}_{1},\boldsymbol{r}_{2}$ 张成的二维子空间 $T_{\boldsymbol{r}\left(u_{0}\right)}S:=\operatorname{span}\left\{\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\}$ 称为曲面 $S$ 在 $\boldsymbol{r}\left(u_{0}\right)$ 处的切平面. 由正则性, $\boldsymbol{r}_{1},\boldsymbol{r}_{2}$ 线性无关; 它的正交补正是 $\operatorname{span}\left\{\boldsymbol{n}\right\}$, 故与切平面垂直的向量只能是 $\boldsymbol{n}$ 的倍数.
 
-> **定义 3.2.1 (第一基本形式)**
+> **定义 21.1 (第一基本形式)**
 > 
-> $\mathrm{I}=\left(\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right)=g_{11}\,\mathrm{d}u^{2}+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^{2}$, 其中 $g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle$, $g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle$, $g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle$; 它给出切向量长度的平方.
+> 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式 (即弧长平方 $\mathrm{d}s^{2}$), 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$. 它给出切向量长度的平方: 对切向量 $\boldsymbol{w}=w^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, $\left\langle\boldsymbol{w},\boldsymbol{w}\right\rangle=g_{\alpha\beta}w^{\alpha}w^{\beta}$.
 
-> **定义 3.3.1 (第二基本形式)**
+> **定义 23.1 (第二基本形式)**
 > 
-> $\mathrm{II}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle\mathrm{d}u^{2}+2\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle\mathrm{d}u\,\mathrm{d}v+\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle\mathrm{d}v^{2}=b_{11}\,\mathrm{d}u^{2}+2b_{12}\,\mathrm{d}u\,\mathrm{d}v+b_{22}\,\mathrm{d}v^{2}$, 其中 $b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle$, $b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle$, $b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle$.
-
-> **性质 3.3.4 (第二基本形式在参数变换下变号)**
-> 
-> 设 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 与 $\boldsymbol{r}=\boldsymbol{r}\left(\widetilde{u},\widetilde{v}\right)$ 是曲面 $S$ 的两个不同参数表示. 当变换 $\left(u,v\right)\to\left(\widetilde{u},\widetilde{v}\right)$ 是同向参数变换时, $\mathrm{II}\left(\widetilde{u},\widetilde{v}\right)=\mathrm{II}\left(u,v\right)$; 当它是反向参数变换时, $\mathrm{II}\left(\widetilde{u},\widetilde{v}\right)=-\mathrm{II}\left(u,v\right)$.
-
-> **公式 3.6.1 (旋转曲面的基本量)**
-> 
-> 旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{v},f\left(u\right)\sin{v},g\left(u\right)\right)$ ($f>0$) 的第一, 第二基本形式系数为 $g_{11}=\left(f'\right)^{2}+\left(g'\right)^{2}$, $g_{12}=0$, $g_{22}=f^{2}$, $b_{11}=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $b_{12}=0$, $b_{22}=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
+> 二次微分式 $\mathrm{II}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第二基本形式, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$. 等价地 $\mathrm{II}=-\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{n}\right\rangle$; 且 $b_{\alpha\beta}=b_{\beta\alpha}$, 故交叉项合并为 $2b_{12}\,\mathrm{d}u^{1}\mathrm{d}u^{2}$.
 
 ## 1.1 (二次曲面的参数表达式)
 
@@ -40,67 +32,69 @@
 
 ### 解答 1.1
 
-(1) 椭球面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$. 取参数
+(1) 椭球面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$. 取
 
 $$
 \boldsymbol{r}\left(u,v\right)=\left(a\sin{u}\cos{v},b\sin{u}\sin{v},c\cos{u}\right),\quad{u}\in\left(0,\pi\right),v\in\left[0,2\pi\right).
 $$
 
-先验证它在 $S$ 上: 由
+像点落在曲面上: 由 $\sin^{2}u\cos^{2}v+\sin^{2}u\sin^{2}v+\cos^{2}u=1$,
 
 $$
-\frac{\left(a\sin{u}\cos{v}\right)^2}{a^2}+\frac{\left(b\sin{u}\sin{v}\right)^2}{b^2}+\frac{\left(c\cos{u}\right)^2}{c^2}
-=\sin^2u\cos^2v+\sin^2u\sin^2v+\cos^2u=1,
+\frac{\left(a\sin{u}\cos{v}\right)^{2}}{a^{2}}+\frac{\left(b\sin{u}\sin{v}\right)^{2}}{b^{2}}+\frac{\left(c\cos{u}\right)^{2}}{c^{2}}=1.
 $$
 
-故 $\boldsymbol{r}\left(u,v\right)\in{S}$. 由**定义 3.1.1 (曲面与单位法向)**, 还需验证正则性:
+正则性按**定义 19.1** 验证:
 
 $$
-\boldsymbol{r}_u=\left(a\cos{u}\cos{v},b\cos{u}\sin{v},-c\sin{u}\right),;\boldsymbol{r}_v=\left(-a\sin{u}\sin{v},b\sin{u}\cos{v},0\right),;\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\sin{u}\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right).
+\boldsymbol{r}_{u}=\left(a\cos{u}\cos{v},b\cos{u}\sin{v},-c\sin{u}\right),\quad
+\boldsymbol{r}_{v}=\left(-a\sin{u}\sin{v},b\sin{u}\cos{v},0\right),
 $$
 
-因 $u\in\left(0,\pi\right)$ 时 $\sin{u}>0$, 且 $\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right)\ne\boldsymbol0$ ($\cos{v},\sin{v}$ 不能同时为零), 故 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol{r}\left(u,v\right)$ 是椭球面 (除去南北两极) 的正则参数曲面.
+$$
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\sin{u}\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right).
+$$
+
+$u\in\left(0,\pi\right)$ 时 $\sin{u}>0$; 而前两个分量同为零要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 19.1**, 这是椭球面除去南北两极的正则参数曲面.
 
 $\blacksquare$
 
-(2) 单叶双曲面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$. 取参数
+(2) 单叶双曲面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$. 取
 
 $$
 \boldsymbol{r}\left(u,v\right)=\left(a\cosh{u}\cos{v},b\cosh{u}\sin{v},c\sinh{u}\right),\quad{u}\in\mathbb{R},v\in\left[0,2\pi\right).
 $$
 
-验证: 由
+由 $\cosh^{2}u-\sinh^{2}u=1$ 知像点落在曲面上. 正则性按**定义 19.1** 验证:
 
 $$
-\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}
-=\cosh^2u\cos^2v+\cosh^2u\sin^2v-\sinh^2u=\cosh^2u-\sinh^2u=1,
+\boldsymbol{r}_{u}=\left(a\sinh{u}\cos{v},b\sinh{u}\sin{v},c\cosh{u}\right),\quad
+\boldsymbol{r}_{v}=\left(-a\cosh{u}\sin{v},b\cosh{u}\cos{v},0\right),
 $$
 
-故 $\boldsymbol{r}\left(u,v\right)\in{S}$. 由**定义 3.1.1 (曲面与单位法向)**, 验证正则性:
-
 $$
-\boldsymbol{r}_u=\left(a\sinh{u}\cos{v},b\sinh{u}\sin{v},c\cosh{u}\right),;\boldsymbol{r}_v=\left(-a\cosh{u}\sin{v},b\cosh{u}\cos{v},0\right),;\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(-bc\cosh^2u\cos{v},-ac\cosh^2u\sin{v},ab\sinh{u}\cosh{u}\right).
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(-bc\cosh^{2}u\cos{v},-ac\cosh^{2}u\sin{v},ab\sinh{u}\cosh{u}\right).
 $$
 
-因 $\cosh{u}>0$ 恒成立, 前两个分量同为零当且仅当 $\cos{v}=\sin{v}=0$, 这不可能, 故 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v\ne\boldsymbol0$ 处处成立. 由**定义 3.1.1 (曲面与单位法向)**, 它是单叶双曲面的正则参数曲面.
+$\cosh{u}>0$ 恒成立, 前两个分量同为零同样要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 19.1**, 这是单叶双曲面的正则参数曲面.
 
 $\blacksquare$
 
-(4) 椭圆抛物面 $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$. 取参数
+(4) 椭圆抛物面 $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$. 取
 
 $$
-\boldsymbol{r}\left(u,v\right)=\left(u,v,\frac{u^2}{a^2}+\frac{v^2}{b^2}\right),\quad\left(u,v\right)\in\mathbb{R}^2.
+\boldsymbol{r}\left(u,v\right)=\left(u,v,\frac{u^{2}}{a^{2}}+\frac{v^{2}}{b^{2}}\right),\quad\left(u,v\right)\in\mathbb{R}^{2}.
 $$
 
-它显然满足 $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$, 故 $\boldsymbol{r}\left(u,v\right)\in{S}$. 由**定义 3.1.1 (曲面与单位法向)**, 验证正则性:
+像点显然落在曲面上. 正则性按**定义 19.1** 验证:
 
 $$
-\boldsymbol{r}_u=\left(1,0,\frac{2u}{a^2}\right),\quad
-\boldsymbol{r}_v=\left(0,1,\frac{2v}{b^2}\right),\quad
-\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(-\frac{2u}{a^2},-\frac{2v}{b^2},1\right)\ne\boldsymbol0,
+\boldsymbol{r}_{u}=\left(1,0,\frac{2u}{a^{2}}\right),\quad
+\boldsymbol{r}_{v}=\left(0,1,\frac{2v}{b^{2}}\right),\quad
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(-\frac{2u}{a^{2}},-\frac{2v}{b^{2}},1\right),
 $$
 
-(第三个分量恒为 $1$, 处处非零). 由**定义 3.1.1 (曲面与单位法向)**, 它是椭圆抛物面的正则参数曲面.
+第三个分量恒为 $1$, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$ 处处成立, 由**定义 19.1**, 这是椭圆抛物面的正则参数曲面.
 
 $\blacksquare$
 
@@ -116,23 +110,35 @@ $$
 
 ### 解答 1.7
 
-由题 1(1), 椭球面的参数表示为 $\boldsymbol{r}\left(u,v\right)=\left(a\sin{u}\cos{v},b\sin{u}\sin{v},c\cos{u}\right)$. 由**定义 3.2.1 (第一基本形式)**, 系数为 $g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle,g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle,g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle$. 由解答 1-1 中的 $\boldsymbol{r}_u,\boldsymbol{r}_v$:
+取 1.1 (1) 中的参数化, 其 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 已在 解答 1.1 算出. 按**定义 21.1**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$:
 
 $$
-g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle
-=a^2\cos^2u\cos^2v+b^2\cos^2u\sin^2v+c^2\sin^2u
-=\cos^2u\left(a^2\cos^2v+b^2\sin^2v\right)+c^2\sin^2u,;g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle
-=-a^2\sin{u}\cos{u}\sin{v}\cos{v}+b^2\sin{u}\cos{u}\sin{v}\cos{v}
-=\left(b^2-a^2\right)\sin{u}\cos{u}\sin{v}\cos{v},;g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle
-=a^2\sin^2u\sin^2v+b^2\sin^2u\cos^2v
-=\sin^2u\left(a^2\sin^2v+b^2\cos^2v\right).
+g_{11}=\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{u}\right\rangle
+=a^{2}\cos^{2}u\cos^{2}v+b^{2}\cos^{2}u\sin^{2}v+c^{2}\sin^{2}u
+=\left(a^{2}\cos^{2}v+b^{2}\sin^{2}v\right)\cos^{2}u+c^{2}\sin^{2}u,
 $$
 
-故椭球面的第一基本形式为
+$$
+g_{12}=\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{v}\right\rangle
+=-a^{2}\sin{u}\cos{u}\sin{v}\cos{v}+b^{2}\sin{u}\cos{u}\sin{v}\cos{v}
+=\left(b^{2}-a^{2}\right)\sin{u}\cos{u}\sin{v}\cos{v},
+$$
 
 $$
-\mathrm{I}=g_{11}\,\mathrm{d}u^2+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^2=\left[\cos^2u\left(a^2\cos^2v+b^2\sin^2v\right)+c^2\sin^2u\right]\mathrm{d}u^2+2\left(b^2-a^2\right)\sin{u}\cos{u}\sin{v}\cos{v}\,\mathrm{d}u\,\mathrm{d}v+\sin^2u\left(a^2\sin^2v+b^2\cos^2v\right)\mathrm{d}v^2.\,\blacksquare
+g_{22}=\left\langle\boldsymbol{r}_{v},\boldsymbol{r}_{v}\right\rangle
+=a^{2}\sin^{2}u\sin^{2}v+b^{2}\sin^{2}u\cos^{2}v
+=\left(a^{2}\sin^{2}v+b^{2}\cos^{2}v\right)\sin^{2}u.
 $$
+
+故
+
+$$
+\mathrm{I}=\left[\left(a^{2}\cos^{2}v+b^{2}\sin^{2}v\right)\cos^{2}u+c^{2}\sin^{2}u\right]\mathrm{d}u^{2}
++2\left(b^{2}-a^{2}\right)\sin{u}\cos{u}\sin{v}\cos{v}\,\mathrm{d}u\,\mathrm{d}v
++\left(a^{2}\sin^{2}v+b^{2}\cos^{2}v\right)\sin^{2}u\,\mathrm{d}v^{2}.
+$$
+
+$\blacksquare$
 
 ## 1.8 (第一基本形式的计算)
 
@@ -144,47 +150,49 @@ $$
 
 ### 解答 1.8
 
-由**定义 3.2.1 (第一基本形式)**, $g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle,g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle,g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle$.
+由**定义 21.1**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$, 故只需算 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 并作内积.
 
 (1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$.
 
 $$
-\boldsymbol{r}_u=\left(\cos{v},\sin{v},0\right),\quad
-\boldsymbol{r}_v=\left(-u\sin{v},u\cos{v},b\right),
+\boldsymbol{r}_{u}=\left(\cos{v},\sin{v},0\right),\quad
+\boldsymbol{r}_{v}=\left(-u\sin{v},u\cos{v},b\right),
 $$
 
 $$
-g_{11}=\cos^2v+\sin^2v=1;g_{12}=\cos{v}\left(-u\sin{v}\right)+\sin{v}\left(u\cos{v}\right)+0=0;g_{22}=u^2\sin^2v+u^2\cos^2v+b^2=u^2+b^2.
+g_{11}=\cos^{2}v+\sin^{2}v=1,\quad
+g_{12}=-u\sin{v}\cos{v}+u\sin{v}\cos{v}+0=0,\quad
+g_{22}=u^{2}\sin^{2}v+u^{2}\cos^{2}v+b^{2}=u^{2}+b^{2}.
 $$
 
 故
 
 $$
-\mathrm{I}=g_{11}\,\mathrm{d}u^2+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^2=\mathrm{d}u^2+\left(u^2+b^2\right)\mathrm{d}v^2,
+\mathrm{I}=\mathrm{d}u^{2}+\left(u^{2}+b^{2}\right)\mathrm{d}v^{2}.
 $$
-
-即 $g_{11}=1,g_{12}=0,g_{22}=u^2+b^2$.
 
 $\blacksquare$
 
-(2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
+(2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^{2}+v^{2}\right)$.
 
 $$
-\boldsymbol{r}_u=\left(a,b,2u\right),\quad
-\boldsymbol{r}_v=\left(a,-b,2v\right),
+\boldsymbol{r}_{u}=\left(a,b,2u\right),\quad
+\boldsymbol{r}_{v}=\left(a,-b,2v\right),
 $$
 
 $$
-g_{11}=a^2+b^2+4u^2,\quad
-g_{12}=a^2-b^2+4uv,\quad
-g_{22}=a^2+b^2+4v^2.
+g_{11}=a^{2}+b^{2}+4u^{2},\quad
+g_{12}=a^{2}-b^{2}+4uv,\quad
+g_{22}=a^{2}+b^{2}+4v^{2}.
 $$
 
 故
 
 $$
-\mathrm{I}=g_{11}\,\mathrm{d}u^2+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^2=\left(a^2+b^2+4u^2\right)\mathrm{d}u^2+2\left(a^2-b^2+4uv\right)\mathrm{d}u\,\mathrm{d}v+\left(a^2+b^2+4v^2\right)\mathrm{d}v^2.\,\blacksquare
+\mathrm{I}=\left(a^{2}+b^{2}+4u^{2}\right)\mathrm{d}u^{2}+2\left(a^{2}-b^{2}+4uv\right)\mathrm{d}u\,\mathrm{d}v+\left(a^{2}+b^{2}+4v^{2}\right)\mathrm{d}v^{2}.
 $$
+
+$\blacksquare$
 
 ## 1.9 (函数图的第一基本形式)
 
@@ -192,23 +200,21 @@ $$
 
 ### 解答 1.9
 
-曲面 $z=f\left(x,y\right)$ 取参数 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $f_x:=\frac{\partial{f}}{\partial{x}}$, $f_y:=\frac{\partial{f}}{\partial{y}}$. 由**定义 3.2.1 (第一基本形式)**, 系数为
+取参数 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$. 按**定义 21.1**,
 
 $$
-\boldsymbol{r}_x=\left(1,0,f_x\right),\quad
-\boldsymbol{r}_y=\left(0,1,f_y\right),
+\boldsymbol{r}_{x}=\left(1,0,f_{x}\right),\quad
+\boldsymbol{r}_{y}=\left(0,1,f_{y}\right),
 $$
 
 $$
-g_{11}=1+f_x^2,\quad
-g_{12}=f_xf_y,\quad
-g_{22}=1+f_y^2.
+g_{11}=1+f_{x}^{2},\quad{g}_{12}=f_{x}f_{y},\quad{g}_{22}=1+f_{y}^{2},
 $$
 
-故
+其中 $f_{x}=\frac{\partial{f}}{\partial{x}}$, $f_{y}=\frac{\partial{f}}{\partial{y}}$. 故
 
 $$
-\mathrm{I}=g_{11}\,\mathrm{d}x^2+2g_{12}\,\mathrm{d}x\,\mathrm{d}y+g_{22}\,\mathrm{d}y^2=\left(1+f_x^2\right)\mathrm{d}x^2+2f_xf_y\,\mathrm{d}x\,\mathrm{d}y+\left(1+f_y^2\right)\mathrm{d}y^2,
+\mathrm{I}=\left(1+f_{x}^{2}\right)\mathrm{d}x^{2}+2f_{x}f_{y}\,\mathrm{d}x\,\mathrm{d}y+\left(1+f_{y}^{2}\right)\mathrm{d}y^{2}.
 $$
 
 $\blacksquare$
@@ -219,15 +225,25 @@ $\blacksquare$
 
 ### 解答 1.11
 
-不一定相同; 指向相同 $\Leftrightarrow\det{J}>0$ (同向参数变换).
+不一定相同, 指向是否相同由参数变换的雅可比行列式的符号决定.
 
-设 $\left(x,y\right)$ 是另一组参数, 即存在参数变换 $u=u\left(x,y\right)$, $v=v\left(x,y\right)$, 记其雅可比行列式 $J:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}$. 由**推导 3.1.2 (参数变换下法向)**,
+由 $\boldsymbol{r}\left(x,y\right)=\boldsymbol{r}\left(u\left(x,y\right),v\left(x,y\right)\right)$ 与链式法则,
 
 $$
-\boldsymbol{r}_x\wedge\boldsymbol{r}_y=\det{J}\,\boldsymbol{r}_u\wedge\boldsymbol{r}_v.
+\boldsymbol{r}_{x}=\boldsymbol{r}_{u}u_{x}+\boldsymbol{r}_{v}v_{x},\quad
+\boldsymbol{r}_{y}=\boldsymbol{r}_{u}u_{y}+\boldsymbol{r}_{v}v_{y},
 $$
 
-因此两向量 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 与 $\boldsymbol{r}_x\wedge\boldsymbol{r}_y$ 的指向是否相同, 取决于 $\det{J}$ 的符号: 当 $\det{J}>0$ (同向参数变换) 时 $\boldsymbol{r}_x\wedge\boldsymbol{r}_y$ 与 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 同向; 当 $\det{J}<0$ (反向参数变换) 时两者反向.
+故由外积的双线性与 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{u}=\boldsymbol{r}_{v}\wedge\boldsymbol{r}_{v}=\boldsymbol0$,
+
+$$
+\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}
+=\left(u_{x}v_{y}-v_{x}u_{y}\right)\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}
+=\det{J}\cdot\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v},
+\quad{J}:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}.
+$$
+
+于是 $\det{J}>0$ 时两外积同向, $\det{J}<0$ 时反向; 归一化后即**定义 19.2** 所述: 定向由参数化本身给出, 参数反向则 $\boldsymbol{n}$ 同时反向.
 
 $\blacksquare$
 
@@ -241,90 +257,74 @@ $\blacksquare$
 
 ### 解答 1.14
 
-由**定义 3.1.1 (曲面与单位法向)**, 单位法向 $\boldsymbol{n}=\frac{\boldsymbol{r}_u\wedge\boldsymbol{r}_v}{\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|}$; 由**定义 3.3.1 (第二基本形式)**, $b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle,b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle,b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle$.
+两小题都先按**定义 19.2** 取单位法向 $\boldsymbol{n}=\frac{\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}}{\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|}$, 再按**定义 23.1** 算 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$.
 
-(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$. 由解答 1-8(1),
-
-$$
-\boldsymbol{r}_u=\left(\cos{v},\sin{v},0\right),\quad\boldsymbol{r}_v=\left(-u\sin{v},u\cos{v},b\right),
-$$
+(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$. 由 解答 1.8 (1),
 
 $$
-\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(b\sin{v},-b\cos{v},u\right),\quad
-\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{b^2+u^2},
+\boldsymbol{r}_{u}=\left(\cos{v},\sin{v},0\right),\quad\boldsymbol{r}_{v}=\left(-u\sin{v},u\cos{v},b\right),
 $$
 
-故由**定义 3.1.1 (曲面与单位法向)**,
-
 $$
-\boldsymbol{n}=\frac{\left(b\sin{v},-b\cos{v},u\right)}{\sqrt{b^2+u^2}}.
-$$
-
-二阶偏导
-
-$$
-\boldsymbol{r}_{uu}=\left(0,0,0\right),\quad
-\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right),\quad
-\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right).
-$$
-
-由**定义 3.3.1 (第二基本形式)**,
-
-$$
-b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=0,\quad
-b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=\frac{-b\sin^2v-b\cos^2v}{\sqrt{b^2+u^2}}=-\frac{b}{\sqrt{b^2+u^2}},\quad
-b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=0.
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(b\sin{v},-b\cos{v},u\right),\quad
+\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=\sqrt{b^{2}+u^{2}},
 $$
 
 故
 
 $$
-\mathrm{II}=b_{11}\,\mathrm{d}u^2+2b_{12}\,\mathrm{d}u\,\mathrm{d}v+b_{22}\,\mathrm{d}v^2=-\frac{2b}{\sqrt{b^2+u^2}}\,\mathrm{d}u\,\mathrm{d}v,
+\boldsymbol{n}=\frac{\left(b\sin{v},-b\cos{v},u\right)}{\sqrt{b^{2}+u^{2}}}.
+$$
+
+二阶偏导
+
+$$
+\boldsymbol{r}_{uu}=\boldsymbol0,\quad
+\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right),\quad
+\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right).
+$$
+
+于是
+
+$$
+b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=0,\quad
+b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac{b}{\sqrt{b^{2}+u^{2}}},\quad
+b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{bu\sin{v}\cos{v}-bu\cos{v}\sin{v}}{\sqrt{b^{2}+u^{2}}}=0.
+$$
+
+故
+
+$$
+\mathrm{II}=-\frac{2b}{\sqrt{b^{2}+u^{2}}}\,\mathrm{d}u\,\mathrm{d}v.
 $$
 
 $\blacksquare$
 
-(2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$. 由解答 1-8(2),
+(2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^{2}+v^{2}\right)$. 由 解答 1.8 (2),
 
 $$
-\boldsymbol{r}_u=\left(a,b,2u\right),\quad\boldsymbol{r}_v=\left(a,-b,2v\right),
+\boldsymbol{r}_{u}=\left(a,b,2u\right),\quad\boldsymbol{r}_{v}=\left(a,-b,2v\right),\quad
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(2b\left(u+v\right),2a\left(u-v\right),-2ab\right).
 $$
 
-$$
-\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(2b\left(u+v\right),2a\left(u-v\right),-2ab\right),
-$$
-
-$$
-\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=2\sqrt{b^2\left(u+v\right)^2+a^2\left(u-v\right)^2+a^2b^2}.
-$$
-
-记 $\Delta:=\sqrt{b^2\left(u+v\right)^2+a^2\left(u-v\right)^2+a^2b^2}$, 则 $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=2\Delta$, 由**定义 3.1.1 (曲面与单位法向)**,
+记 $\Delta:=\sqrt{b^{2}\left(u+v\right)^{2}+a^{2}\left(u-v\right)^{2}+a^{2}b^{2}}$, 则 $\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=2\Delta$, 故
 
 $$
 \boldsymbol{n}=\frac{\left(b\left(u+v\right),a\left(u-v\right),-ab\right)}{\Delta}.
 $$
 
-二阶偏导
+二阶偏导 $\boldsymbol{r}_{uu}=\left(0,0,2\right)$, $\boldsymbol{r}_{uv}=\boldsymbol0$, $\boldsymbol{r}_{vv}=\left(0,0,2\right)$, 于是
 
 $$
-\boldsymbol{r}_{uu}=\left(0,0,2\right),\quad
-\boldsymbol{r}_{uv}=\left(0,0,0\right),\quad
-\boldsymbol{r}_{vv}=\left(0,0,2\right).
-$$
-
-由**定义 3.3.1 (第二基本形式)**,
-
-$$
-b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=\frac{2\left(-ab\right)}{\Delta}=-\frac{2ab}{\Delta},\quad
-b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=0,\quad
-b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=-\frac{2ab}{\Delta}.
+b_{11}=\frac{2\left(-ab\right)}{\Delta}=-\frac{2ab}{\Delta},\quad
+b_{12}=0,\quad
+b_{22}=-\frac{2ab}{\Delta}.
 $$
 
 故
 
 $$
-\mathrm{II}=b_{11}\,\mathrm{d}u^2+2b_{12}\,\mathrm{d}u\,\mathrm{d}v+b_{22}\,\mathrm{d}v^2=-\frac{2ab}{\Delta}\left(\mathrm{d}u^2+\mathrm{d}v^2\right),\quad
-\Delta=\sqrt{b^2\left(u+v\right)^2+a^2\left(u-v\right)^2+a^2b^2},
+\mathrm{II}=-\frac{2ab}{\Delta}\left(\mathrm{d}u^{2}+\mathrm{d}v^{2}\right).
 $$
 
 $\blacksquare$
@@ -335,39 +335,35 @@ $\blacksquare$
 
 ### 解答 1.15
 
-曲面 $z=f\left(x,y\right)$ 取参数 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $f_x,f_y$ 为一阶偏导, $f_{xx},f_{xy},f_{yy}$ 为二阶偏导. 由解答 1-9, $\boldsymbol{r}_x=\left(1,0,f_x\right),\boldsymbol{r}_y=\left(0,1,f_y\right)$, 故
+取参数 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 由 解答 1.9,
 
 $$
-\boldsymbol{r}_x\wedge\boldsymbol{r}_y=\left(-f_x,-f_y,1\right),\quad
-\left|\boldsymbol{r}_x\wedge\boldsymbol{r}_y\right|=\sqrt{1+f_x^2+f_y^2}.
+\boldsymbol{r}_{x}=\left(1,0,f_{x}\right),\quad\boldsymbol{r}_{y}=\left(0,1,f_{y}\right),\quad
+\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}=\left(-f_{x},-f_{y},1\right),
 $$
 
-由**定义 3.1.1 (曲面与单位法向)**,
-
 $$
-\boldsymbol{n}=\frac{\left(-f_x,-f_y,1\right)}{\sqrt{1+f_x^2+f_y^2}}.
+\left|\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}\right|=\sqrt{1+f_{x}^{2}+f_{y}^{2}},
 $$
 
-二阶偏导
+故由**定义 19.2**,
 
 $$
-\boldsymbol{r}_{xx}=\left(0,0,f_{xx}\right),\quad
-\boldsymbol{r}_{xy}=\left(0,0,f_{xy}\right),\quad
-\boldsymbol{r}_{yy}=\left(0,0,f_{yy}\right).
+\boldsymbol{n}=\frac{\left(-f_{x},-f_{y},1\right)}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}.
 $$
 
-由**定义 3.3.1 (第二基本形式)**, $b_{11}=\left\langle\boldsymbol{r}_{xx},\boldsymbol{n}\right\rangle,b_{12}=\left\langle\boldsymbol{r}_{xy},\boldsymbol{n}\right\rangle,b_{22}=\left\langle\boldsymbol{r}_{yy},\boldsymbol{n}\right\rangle$, 得
+二阶偏导 $\boldsymbol{r}_{xx}=\left(0,0,f_{xx}\right)$, $\boldsymbol{r}_{xy}=\left(0,0,f_{xy}\right)$, $\boldsymbol{r}_{yy}=\left(0,0,f_{yy}\right)$, 按**定义 23.1**
 
 $$
-b_{11}=\frac{f_{xx}}{\sqrt{1+f_x^2+f_y^2}},\quad
-b_{12}=\frac{f_{xy}}{\sqrt{1+f_x^2+f_y^2}},\quad
-b_{22}=\frac{f_{yy}}{\sqrt{1+f_x^2+f_y^2}}.
+b_{11}=\frac{f_{xx}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}},\quad
+b_{12}=\frac{f_{xy}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}},\quad
+b_{22}=\frac{f_{yy}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}.
 $$
 
 故
 
 $$
-\mathrm{II}=b_{11}\,\mathrm{d}x^2+2b_{12}\,\mathrm{d}x\,\mathrm{d}y+b_{22}\,\mathrm{d}y^2=\frac{f_{xx}\,\mathrm{d}x^2+2f_{xy}\,\mathrm{d}x\,\mathrm{d}y+f_{yy}\,\mathrm{d}y^2}{\sqrt{1+f_x^2+f_y^2}},
+\mathrm{II}=\frac{f_{xx}\,\mathrm{d}x^{2}+2f_{xy}\,\mathrm{d}x\,\mathrm{d}y+f_{yy}\,\mathrm{d}y^{2}}{\sqrt{1+f_{x}^{2}+f_{y}^{2}}}.
 $$
 
 $\blacksquare$
@@ -378,162 +374,129 @@ $\blacksquare$
 
 ### 解答 2
 
-先建立单位球面的通用刻画. 设 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 是 $S^{2}\left(1\right)$ 的任一参数表示. 由内积求导, 对 $\left\langle\boldsymbol{r},\boldsymbol{r}\right\rangle=1$ 求偏导得 $\left\langle\boldsymbol{r}_u,\boldsymbol{r}\right\rangle=\left\langle\boldsymbol{r}_v,\boldsymbol{r}\right\rangle=0$, 故 $\boldsymbol{r}$ 同时垂直于 $\boldsymbol{r}_u,\boldsymbol{r}_v$; 于是由**定义 3.1.3 (切平面)**,
+先对单位球面的任一参数化 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 作通用处理. 由 $\left\langle\boldsymbol{r},\boldsymbol{r}\right\rangle\equiv1$ 对参数求偏导得 $\left\langle\boldsymbol{r}_{u},\boldsymbol{r}\right\rangle=\left\langle\boldsymbol{r}_{v},\boldsymbol{r}\right\rangle=0$, 故 $\boldsymbol{r}$ 与 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 都垂直; 由**定义 19.3**, 切平面 $\operatorname{span}\left\{\boldsymbol{r}_{u},\boldsymbol{r}_{v}\right\}$ 的正交补正是 $\operatorname{span}\left\{\boldsymbol{r}\right\}$, 故
 
 $$
-T_{\boldsymbol{r}}S=\mathrm{span}\left\{\boldsymbol{r}_u,\boldsymbol{r}_v\right\}=\left\{\boldsymbol{w}:\left\langle\boldsymbol{w},\boldsymbol{r}\right\rangle=0\right\}
+T_{\boldsymbol{r}}S=\left\{\boldsymbol{w}:\left\langle\boldsymbol{w},\boldsymbol{r}\right\rangle=0\right\},\quad
+\boldsymbol{n}=\frac{\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}}{\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|}=\sigma\boldsymbol{r},\quad\sigma=\pm1,
 $$
 
-(即过原点, 垂直于 $\boldsymbol{r}$ 的平面, 因 $\dim{T}_{\boldsymbol{r}}S=2$ 而 $\boldsymbol{r}\ne\boldsymbol0$). 又 $\boldsymbol{r}$ 是单位向量, 故 $\boldsymbol{r}$ 是曲面在该点的一个单位法向量; 由**定义 3.1.1 (曲面与单位法向)**,
+其中 $\sigma$ 由 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}$ 与 $\boldsymbol{r}$ 同向或反向决定 (**定义 19.2**).
+
+第二基本形式与第一基本形式的关系. 由 $\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}\right\rangle\equiv0$ 对 $u^{\beta}$ 求导,
 
 $$
-\boldsymbol{n}=\frac{\boldsymbol{r}_u\wedge\boldsymbol{r}_v}{\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|}=\sigma\,\boldsymbol{r},\quad\sigma=\pm1,
+0=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle+\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle+g_{\alpha\beta},
 $$
 
-其中 $\sigma$ 的符号由该参数化下 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v$ 与 $\boldsymbol{r}$ 平行或反平行决定.
-
-切空间与法线已由上述通用结论确定: 对每种参数表示, 切空间都是 $T_{\boldsymbol{r}}S=\boldsymbol{r}^{\perp}$, 单位法向为 $\boldsymbol{n}=\pm\boldsymbol{r}$.
-
-第一基本形式由**定义 3.2.1 (第一基本形式)** 按 $g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle,g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle,g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle$ 逐张计算.
-
-第二基本形式可用如下通用关系求出. 由内积求导, $0=\frac{\partial}{\partial{v}}\left\langle\boldsymbol{r}_u,\boldsymbol{r}\right\rangle=\left\langle\boldsymbol{r}_{uv},\boldsymbol{r}\right\rangle+\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle$, 故 $\left\langle\boldsymbol{r}_{uv},\boldsymbol{r}\right\rangle=-g_{12}$; 同理 $\left\langle\boldsymbol{r}_{uu},\boldsymbol{r}\right\rangle=-g_{11}$, $\left\langle\boldsymbol{r}_{vv},\boldsymbol{r}\right\rangle=-g_{22}$. 由**定义 3.3.1 (第二基本形式)** 及 $\boldsymbol{n}=\sigma\boldsymbol{r}$,
+即 $\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-g_{\alpha\beta}$. 由 $\boldsymbol{n}=\sigma\boldsymbol{r}$ 与**定义 23.1**,
 
 $$
-b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=\sigma\left\langle\boldsymbol{r}_{uu},\boldsymbol{r}\right\rangle=-\sigma{g}_{11},\quad
-b_{12}=-\sigma{g}_{12},\quad
-b_{22}=-\sigma{g}_{22},
+b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle=\sigma\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-\sigma{g}_{\alpha\beta},
 $$
 
-从而
+故
 
 $$
-\mathrm{II}=-\sigma\left(g_{11}\,\mathrm{d}u^{2}+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^{2}\right)=-\sigma\,\mathrm{I}.
+\mathrm{II}=-\sigma{g}_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}=-\sigma\,\mathrm{I}.
 $$
 
-下面逐张确定 $\sigma$ 并给出 $T,\boldsymbol{n},\mathrm{I},\mathrm{II}$.
+下面逐组参数给出 $T_{\boldsymbol{r}}S$, $\boldsymbol{n}$, $\mathrm{I}$, $\mathrm{II}$.
 
-(i) 球坐标. 取参数
+(i) 球坐标. 取
 
 $$
 \boldsymbol{r}\left(\theta,\varphi\right)=\left(\sin\varphi\cos\theta,\sin\varphi\sin\theta,\cos\varphi\right),\quad\varphi\in\left(0,\pi\right),\theta\in\left[0,2\pi\right).
 $$
 
-坐标切向量
+坐标切向量与法向:
 
 $$
-\boldsymbol{r}_\theta=\left(-\sin\varphi\sin\theta,\sin\varphi\cos\theta,0\right),\quad
-\boldsymbol{r}_\varphi=\left(\cos\varphi\cos\theta,\cos\varphi\sin\theta,-\sin\varphi\right),
+\boldsymbol{r}_{\theta}=\left(-\sin\varphi\sin\theta,\sin\varphi\cos\theta,0\right),\quad
+\boldsymbol{r}_{\varphi}=\left(\cos\varphi\cos\theta,\cos\varphi\sin\theta,-\sin\varphi\right),
 $$
 
-且
-
 $$
-\boldsymbol{r}_\theta\wedge\boldsymbol{r}_\varphi
-=-\sin\varphi\left(\sin\varphi\cos\theta,\sin\varphi\sin\theta,\cos\varphi\right)=-\sin\varphi\,\boldsymbol{r},\quad
-\left|\boldsymbol{r}_\theta\wedge\boldsymbol{r}_\varphi\right|=\sin\varphi.
+\boldsymbol{r}_{\theta}\wedge\boldsymbol{r}_{\varphi}=-\sin\varphi\left(\sin\varphi\cos\theta,\sin\varphi\sin\theta,\cos\varphi\right)=-\sin\varphi\,\boldsymbol{r}.
 $$
 
-因 $\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi>0$, 由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol{n}=-\boldsymbol{r}$, 即 $\sigma=-1$ (球面内法向). 由**定义 3.2.1 (第一基本形式)**:
+$\varphi\in\left(0,\pi\right)$ 时 $\sin\varphi>0$, $\left|\boldsymbol{r}_{\theta}\wedge\boldsymbol{r}_{\varphi}\right|=\sin\varphi$, 由**定义 19.2**, $\boldsymbol{n}=-\boldsymbol{r}$ (内法向, $\sigma=-1$). 由**定义 21.1**,
 
 $$
-g_{11}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_\theta\right\rangle=\sin^2\varphi,\quad
-g_{12}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_\varphi\right\rangle=0,\quad
-g_{22}=\left\langle\boldsymbol{r}_\varphi,\boldsymbol{r}_\varphi\right\rangle=1,
-$$
-
-故
-
-$$
-\mathrm{I}=\sin^2\varphi\,\mathrm{d}\theta^{2}+\mathrm{d}\varphi^{2}.
-$$
-
-由 $\mathrm{II}=-\sigma\,\mathrm{I}$ 且 $\sigma=-1$, 得
-
-$$
-\mathrm{II}=\mathrm{I}=\sin^2\varphi\,\mathrm{d}\theta^{2}+\mathrm{d}\varphi^{2}.
-$$
-
-$\blacksquare$
-
-(ii) 函数图形 (上半球). 取参数
-
-$$
-\boldsymbol{r}\left(x,y\right)=\left(x,y,\sqrt{1-x^2-y^2}\right),\quad{x}^2+y^2<1.
-$$
-
-记 $f:=\sqrt{1-x^2-y^2}$, 则 $f_x=-\frac{x}{f}$, $f_y=-\frac{y}{f}$, 坐标切向量
-
-$$
-\boldsymbol{r}_x=\left(1,0,f_x\right)=\left(1,0,-\frac{x}{f}\right),\quad
-\boldsymbol{r}_y=\left(0,1,f_y\right)=\left(0,1,-\frac{y}{f}\right).
-$$
-
-切空间 $T_{\boldsymbol{r}}S=\mathrm{span}\left\{\boldsymbol{r}_x,\boldsymbol{r}_y\right\}$ (**定义 3.1.3 (切平面)**). 又
-
-$$
-\boldsymbol{r}_x\wedge\boldsymbol{r}_y=\left(-f_x,-f_y,1\right)=\left(\frac{x}{f},\frac{y}{f},1\right)=\frac1f\left(x,y,f\right)=\frac1f\,\boldsymbol{r},\quad
-\left|\boldsymbol{r}_x\wedge\boldsymbol{r}_y\right|=\frac1f,
-$$
-
-故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol{n}=\boldsymbol{r}$, 即 $\sigma=+1$ (球面外法向). 由**定义 3.2.1 (第一基本形式)**:
-
-$$
-g_{11}=1+\frac{x^2}{f^2},\quad{g}_{12}=\frac{xy}{f^2},\quad{g}_{22}=1+\frac{y^2}{f^2}.
-$$
-
-利用 $f^2=1-x^2-y^2$ 得 $f^2+x^2=1-y^2$, $f^2+y^2=1-x^2$, 故
-
-$$
-\mathrm{I}=g_{11}\,\mathrm{d}x^2+2g_{12}\,\mathrm{d}x\,\mathrm{d}y+g_{22}\,\mathrm{d}y^2=\frac{\left(1-y^2\right)\mathrm{d}x^2+2xy\,\mathrm{d}x\,\mathrm{d}y+\left(1-x^2\right)\mathrm{d}y^2}{1-x^2-y^2}.
-$$
-
-由 $\mathrm{II}=-\sigma\,\mathrm{I}$ 且 $\sigma=+1$, 得
-
-$$
-\mathrm{II}=-\mathrm{I}=-\frac{\left(1-y^2\right)\mathrm{d}x^2+2xy\,\mathrm{d}x\,\mathrm{d}y+\left(1-x^2\right)\mathrm{d}y^2}{1-x^2-y^2}.
-$$
-
-$\blacksquare$
-
-(iii) 立体投影. 取参数 (从北极 $\left(0,0,1\right)$ 的球极投影)
-
-$$
-\boldsymbol{r}\left(u,v\right)=\frac{\left(2u,2v,u^2+v^2-1\right)}{1+u^2+v^2},\quad\left(u,v\right)\in\mathbb{R}^2.
-$$
-
-记 $\rho^2:=u^2+v^2$, $D:=1+\rho^2$, 则 $\boldsymbol{r}=\frac1D\left(2u,2v,\rho^2-1\right)$, 坐标切向量
-
-$$
-\boldsymbol{r}_u=\frac{2}{D^2}\left(1+v^2-u^2,-2uv,2u\right),\quad
-\boldsymbol{r}_v=\frac{2}{D^2}\left(-2uv,1+u^2-v^2,2v\right).
-$$
-
-切空间 $T_{\boldsymbol{r}}S=\mathrm{span}\left\{\boldsymbol{r}_u,\boldsymbol{r}_v\right\}$ (**定义 3.1.3 (切平面)**). 直接计算
-
-$$
-\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\frac{4}{D^3}\left(-2u,-2v,1-\rho^2\right)
-=-\frac{4}{D^2}\,\boldsymbol{r},\quad
-\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\frac4{D^2},
-$$
-
-故由**定义 3.1.1 (曲面与单位法向)**, $\boldsymbol{n}=-\boldsymbol{r}$, 即 $\sigma=-1$ (球面内法向). 由**定义 3.2.1 (第一基本形式)**:
-
-$$
-g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=\frac4{D^2},\quad
+g_{11}=\left\langle\boldsymbol{r}_{\theta},\boldsymbol{r}_{\theta}\right\rangle=\sin^{2}\varphi,\quad
 g_{12}=0,\quad
-g_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle=\frac4{D^2},
+g_{22}=\left\langle\boldsymbol{r}_{\varphi},\boldsymbol{r}_{\varphi}\right\rangle=1,
+$$
+
+故 $\mathrm{I}=\sin^{2}\varphi\,\mathrm{d}\theta^{2}+\mathrm{d}\varphi^{2}$, 由 $\mathrm{II}=-\sigma\,\mathrm{I}$ 得 $\mathrm{II}=\mathrm{I}$.
+
+$\blacksquare$
+
+(ii) 函数图 (上半球). 取
+
+$$
+\boldsymbol{r}\left(x,y\right)=\left(x,y,\sqrt{1-x^{2}-y^{2}}\right),\quad{x}^{2}+y^{2}<1.
+$$
+
+记 $f:=\sqrt{1-x^{2}-y^{2}}$, 则 $f_{x}=-\frac{x}{f}$, $f_{y}=-\frac{y}{f}$. 坐标切向量
+
+$$
+\boldsymbol{r}_{x}=\left(1,0,-\frac{x}{f}\right),\quad
+\boldsymbol{r}_{y}=\left(0,1,-\frac{y}{f}\right),
+$$
+
+$$
+\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}=\left(\frac{x}{f},\frac{y}{f},1\right)=\frac{1}{f}\left(x,y,f\right)=\frac{1}{f}\,\boldsymbol{r},\quad
+\left|\boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}\right|=\frac{1}{f},
+$$
+
+故 $\boldsymbol{n}=\boldsymbol{r}$ (外法向, $\sigma=+1$). 由**定义 21.1**,
+
+$$
+g_{11}=1+\frac{x^{2}}{f^{2}}=\frac{1-y^{2}}{f^{2}},\quad
+g_{12}=\frac{xy}{f^{2}},\quad
+g_{22}=1+\frac{y^{2}}{f^{2}}=\frac{1-x^{2}}{f^{2}},
+$$
+
+其中用了 $f^{2}=1-x^{2}-y^{2}$. 故
+
+$$
+\mathrm{I}=\frac{\left(1-y^{2}\right)\mathrm{d}x^{2}+2xy\,\mathrm{d}x\,\mathrm{d}y+\left(1-x^{2}\right)\mathrm{d}y^{2}}{1-x^{2}-y^{2}},
+\quad\mathrm{II}=-\mathrm{I}.
+$$
+
+$\blacksquare$
+
+(iii) 球极投影. 取从北极 $\left(0,0,1\right)$ 的球极投影
+
+$$
+\boldsymbol{r}\left(u,v\right)=\frac{\left(2u,2v,u^{2}+v^{2}-1\right)}{1+u^{2}+v^{2}},\quad\left(u,v\right)\in\mathbb{R}^{2}.
+$$
+
+记 $\rho^{2}:=u^{2}+v^{2}$, $D:=1+\rho^{2}$, 则 $\boldsymbol{r}=\frac{1}{D}\left(2u,2v,\rho^{2}-1\right)$, 且由 $\left(2u\right)^{2}+\left(2v\right)^{2}+\left(\rho^{2}-1\right)^{2}=\left(1+\rho^{2}\right)^{2}$ 知 $\left|\boldsymbol{r}\right|=1$. 坐标切向量
+
+$$
+\boldsymbol{r}_{u}=\frac{2}{D^{2}}\left(1+v^{2}-u^{2},-2uv,2u\right),\quad
+\boldsymbol{r}_{v}=\frac{2}{D^{2}}\left(-2uv,1+u^{2}-v^{2},2v\right),
+$$
+
+$$
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\frac{4}{D^{3}}\left(-2u,-2v,1-\rho^{2}\right)=\frac{4}{D^{3}}\left(-D\right)\boldsymbol{r}=-\frac{4}{D^{2}}\,\boldsymbol{r},\quad
+\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=\frac{4}{D^{2}},
+$$
+
+故 $\boldsymbol{n}=-\boldsymbol{r}$ (内法向, $\sigma=-1$). 由**定义 21.1**,
+
+$$
+g_{11}=\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{u}\right\rangle=\frac{4}{D^{2}},\quad
+g_{12}=0,\quad
+g_{22}=\left\langle\boldsymbol{r}_{v},\boldsymbol{r}_{v}\right\rangle=\frac{4}{D^{2}},
 $$
 
 故
 
 $$
-\mathrm{I}=g_{11}\,\mathrm{d}u^2+2g_{12}\,\mathrm{d}u\,\mathrm{d}v+g_{22}\,\mathrm{d}v^2=\frac{4\left(\mathrm{d}u^2+\mathrm{d}v^2\right)}{\left(1+u^2+v^2\right)^2}.
-$$
-
-由 $\mathrm{II}=-\sigma\,\mathrm{I}$ 且 $\sigma=-1$, 得
-
-$$
-\mathrm{II}=\mathrm{I}=\frac{4\left(\mathrm{d}u^2+\mathrm{d}v^2\right)}{\left(1+u^2+v^2\right)^2}.
+\mathrm{I}=\frac{4\left(\mathrm{d}u^{2}+\mathrm{d}v^{2}\right)}{\left(1+u^{2}+v^{2}\right)^{2}},\quad\mathrm{II}=\mathrm{I}.
 $$
 
 $\blacksquare$

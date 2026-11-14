@@ -1,160 +1,214 @@
 # week7
 
-> **例 3.1.5 (等值面)**
+> **定义 21.1 (第一基本形式)**
 > 
-> 对等值面 $S_c=\left\{\left(x,y,z\right)\mid{F}\left(x,y,z\right)=c\right\}$, 当 $\nabla{F}\left(P\right)\neq\boldsymbol0$ ($\forall{P}\in{S}_c$) 时 $S_c$ 是曲面, $\nabla{F}$ 是它的法向, 单位法向量 $\boldsymbol{n}=\frac{\nabla{F}}{\left|\nabla{F}\right|}$.
+> 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$; 它给出切向量长度的平方.
 
-> **公式 3.2.19 (球极投影参数下球面的第一基本形式)**
+> **定义 23.1 (第二基本形式)**
 > 
-> 球面 $x^{2}+y^{2}+z^{2}=a^{2}$ 在球极投影参数表示下 $\mathrm{I}=\frac{4a^{4}}{\left(a^{2}+u^{2}+v^{2}\right)^{2}}\left(\mathrm{d}u^{2}+\mathrm{d}v^{2}\right)$, 即 $E=G=\frac{4a^{4}}{\left(a^{2}+u^{2}+v^{2}\right)^{2}}$, $F=0$.
+> 二次微分式 $\mathrm{II}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第二基本形式, 其中 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$; 且 $b_{\alpha\beta}=b_{\beta\alpha}$.
 
-> **定义 3.4.3 (魏因加滕变换)**
+> **定义 24.1 (魏因加滕变换)**
 > 
-> 线性变换 $\boldsymbol{W}:=-\mathrm{d}\boldsymbol{n}:\,T_{\boldsymbol{r}}S\to{T}_{\boldsymbol{r}}S$, $\boldsymbol{W}\left(\lambda\boldsymbol{r}_u+\mu\boldsymbol{r}_v\right)=-\left(\lambda\boldsymbol{n}_u+\mu\boldsymbol{n}_v\right)$ 称为曲面的魏因加滕变换; 记为 $\boldsymbol{W}\boldsymbol{t}=-D_{\boldsymbol{t}}\boldsymbol{n}$, 其中 $D_{\boldsymbol{t}}$ 是沿切向量 $\boldsymbol{t}$ 的方向导数.
+> 设 $\boldsymbol{n}$ 是正则参数曲面 $\boldsymbol{r}:D\to{S}$ 的单位法向向量场. 因 $\partial_{\beta}\boldsymbol{n}$ 是切向量, $\mathrm{d}\boldsymbol{n}$ 把切向量映到切向量: 对 $\boldsymbol{v}=v^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_0\right)}S$,
+> $$
+>\mathrm{d}\boldsymbol{n}\left(\boldsymbol{v}\right)=v^{\alpha}\partial_{\alpha}\boldsymbol{n}=-v^{\alpha}b^{\beta}{}_{\alpha}\boldsymbol{r}_{\beta}.
+>$$
+> 定义 $W:=-\mathrm{d}\boldsymbol{n}:T_{\boldsymbol{r}\left(u_0\right)}S\to{T}_{\boldsymbol{r}\left(u_0\right)}S$, 它是切空间到自身的线性映射, 称为曲面的魏因加滕变换 (形状算子); 在自然基 $\left\{\boldsymbol{r}_1,\boldsymbol{r}_2\right\}$ 下其系数矩阵为 $\left(b^{\beta}{}_{\alpha}\right)=\left(b_{\alpha\gamma}g^{\gamma\beta}\right)$.
 
-> **公式 3.5.4 (平均曲率与高斯曲率)**
+> **定义 25.B (自然标架的运动方程)**
 > 
-> 魏因加滕变换的两个特征值即曲面的两个主曲率 $k_1,k_2$; 平均曲率 $H=\frac12\left(k_1+k_2\right)=\frac12\operatorname{tr}\boldsymbol{W}$, 高斯曲率 $K=k_1k_2=\det\boldsymbol{W}$; 用第一, 第二基本形式的系数表示, $H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\left(g_{11}g_{22}-g_{12}^{2}\right)}$, $K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}$.
+> 自然标架 $\left\{\boldsymbol{r};\boldsymbol{r}_1,\boldsymbol{r}_2,\boldsymbol{n}\right\}$ 随参数的运动方程为
+> $$
+>\partial_{\beta}\boldsymbol{r}=\boldsymbol{r}_{\beta},\quad\partial_{\beta}\boldsymbol{r}_{\alpha}=\Gamma^{\gamma}{}_{\alpha\beta}\boldsymbol{r}_{\gamma}+b_{\alpha\beta}\boldsymbol{n},\quad\partial_{\beta}\boldsymbol{n}=-b_{\alpha\beta}g^{\alpha\gamma}\boldsymbol{r}_{\gamma}.
+>$$
+> 故自然标架的运动完全由第一, 第二基本形式的系数及其一阶偏导决定.
 
-> **例 3.6.2 (柱面)**
+> **推导 25.A (克里斯托费尔符号由第一基本形式确定)**
 > 
-> 直纹面 $\boldsymbol{r}\left(u,v\right)=\boldsymbol{a}\left(u\right)+v\boldsymbol{b}\left(u\right)$ 中, 若方向 $\boldsymbol{b}$ 与 $u$ 无关 (即 $\boldsymbol{b}$ 是常向量), 则称为柱面, 这时 $S$ 的直母线均平行.
+> 记 $\Gamma_{\alpha\beta\tau}:=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}_{\tau}\right\rangle$, 则 $\Gamma_{\alpha\beta\tau}=g_{\gamma\tau}\Gamma^{\gamma}{}_{\alpha\beta}$, 且
+> $$
+>\Gamma_{\alpha\beta\varepsilon}=\frac{1}{2}\left(\partial_{\alpha}g_{\beta\varepsilon}+\partial_{\beta}g_{\alpha\varepsilon}-\partial_{\varepsilon}g_{\alpha\beta}\right),\quad
+>\Gamma^{\gamma}{}_{\alpha\beta}=\frac{1}{2}g^{\gamma\varepsilon}\left(\partial_{\alpha}g_{\beta\varepsilon}+\partial_{\beta}g_{\alpha\varepsilon}-\partial_{\varepsilon}g_{\alpha\beta}\right),
+>$$
+> 故 $\Gamma^{\gamma}{}_{\alpha\beta}$ 完全由第一基本形式确定, 且 $\Gamma^{\gamma}{}_{\alpha\beta}=\Gamma^{\gamma}{}_{\beta\alpha}$.
 
-> **定理 3.6.3 (全脐点曲面的分类)**
+> **定义 31.1 (曲率线)**
 > 
-> 曲面是全脐点曲面当且仅当它是平面或球面.
+> 设 $C\subset{S}$ 是一条曲线. 若 $C$ 在每点 $\boldsymbol{r}\left(u\right)\in{C}$ 的切向量都是 $S$ 在该点的一个主方向, 则称 $C$ 是 $S$ 的一条曲率线.
 
-> **公式 3.6.3 (旋转曲面的第一, 第二基本形式)**
+> **定义 31.2 (脐点)** 
 > 
-> 旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{v},f\left(u\right)\sin{v},g\left(u\right)\right)$ $\left(f>0\right)$ 的 $E=\left(f'\right)^{2}+\left(g'\right)^{2}$, $F=0$, $G=f^{2}$, $L=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $M=0$, $N=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
+> 使 $k_{1}\left(u\right)=k_{2}\left(u\right)$ 的点 $\boldsymbol{r}\left(u\right)$ 称为 $S$ 的脐点; 脐点处公共主曲率 $k\ne0$ 时称圆点, $k=0$ (即 $b_{\alpha\beta}=0$) 时称平点.
 
-> **公式 3.6.35 (全脐点曲面)**
+> **定理 31.5 (曲率线网参数)**
 > 
-> 曲面上每一点的 $k_1=k_2$ 时称它为全脐点曲面; $S$ 是全脐点曲面当且仅当 $\mathrm{II}=k\,\mathrm{I}$, 其中 $k$ 是 $S$ 上的函数.
+> 在 $S$ 的非脐点附近, 存在参数 $\left(u^{1},u^{2}\right)$ 使 $\frac{\partial\boldsymbol{r}}{\partial{u}^{\alpha}}$ 是第 $\alpha$ 个主方向, 即坐标曲线是曲率线. 在此参数下
+> $$
+>\mathrm{I}=g_{11}\left(u\right)\left(\mathrm{d}u^{1}\right)^{2}+g_{22}\left(u\right)\left(\mathrm{d}u^{2}\right)^{2},\quad
+>\mathrm{II}=k_{1}\left(u\right)g_{11}\left(u\right)\left(\mathrm{d}u^{1}\right)^{2}+k_{2}\left(u\right)g_{22}\left(u\right)\left(\mathrm{d}u^{2}\right)^{2},
+>$$
+> 即 $g_{12}=0$, $b_{12}=0$, $b_{\alpha\alpha}=k_{\alpha}g_{\alpha\alpha}$ ($\alpha$ 不求和). 这样的参数称为曲率线网参数.
 
-> **习题 3.29 (参数曲线为曲率线的充要条件)**
+> **定义 32.1 (平均曲率与总曲率)**
 > 
-> 设 $\boldsymbol{r}=\boldsymbol{r}\left(u,v\right)$ 是曲面 $S$ 的参数表示, 则 $S$ 的参数曲线 $u=$ 常数与 $v=$ 常数是曲率线的充要条件是 $F=M=0$.
+> 设曲面 $S$ 在一点的主曲率为 $k_{1},k_{2}$. 称 $H:=\frac{k_{1}+k_{2}}{2}$ 为该点的平均曲率, 称 $K:=k_{1}k_{2}$ 为该点的总曲率 (高斯曲率).
 
-> **公式 4.2.M (自然标架的运动方程)**
+> **命题 32.2 (特征方程与 $H,K$)**
 > 
-> $\left(M_1\right)$ $\partial_\alpha\boldsymbol{r}=\boldsymbol{r}_\alpha$; $\left(M_2\right)$ $\partial_\beta\boldsymbol{r}_\alpha=\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}$; $\left(M_3\right)$ $\partial_\alpha\boldsymbol{n}=-b^{\beta}_{\alpha}\boldsymbol{r}_\beta$. 其中 $\Gamma^{\gamma}_{\alpha\beta}=\Gamma^{\gamma}_{\beta\alpha}$, 而 $\left(b^{\beta}_{\alpha}\right)$ 是魏因加滕变换在自然基 $\left\{\boldsymbol{r}_1,\boldsymbol{r}_2\right\}$ 下的系数矩阵.
+> 主曲率 $k_{1},k_{2}$ 是方程 $\det\left(b_{\alpha\beta}-kg_{\alpha\beta}\right)=0$ 的根, 该方程等价于 $k^{2}-2Hk+K=0$. 于是 $\operatorname{tr}\left(g^{-1}b\right)=k_{1}+k_{2}=2H$, $\det\left(g^{-1}b\right)=k_{1}k_{2}=K$.
 
-> **公式 4.2.11 (对偶基)**
+> **推导 35.B (高斯方程与科达齐方程)**
 > 
-> $g^{\alpha\beta}g_{\beta\gamma}=\delta^{\alpha}{}_{\gamma}$, 即 $\left(g^{\alpha\beta}\right)\left(g_{\beta\gamma}\right)=I_2$.
+> 把运动方程代入 $\partial_{\gamma}\partial_{\beta}\boldsymbol{r}_{\alpha}=\partial_{\beta}\partial_{\gamma}\boldsymbol{r}_{\alpha}$ 并比较系数, 切向部分给出高斯方程
+> $$
+>\partial_{\gamma}\Gamma^{\delta}{}_{\alpha\beta}-\partial_{\beta}\Gamma^{\delta}{}_{\alpha\gamma}
+>+\Gamma^{\varepsilon}{}_{\alpha\beta}\Gamma^{\delta}{}_{\varepsilon\gamma}-\Gamma^{\varepsilon}{}_{\alpha\gamma}\Gamma^{\delta}{}_{\varepsilon\beta}
+>-b_{\alpha\beta}b^{\delta}{}_{\gamma}+b_{\alpha\gamma}b^{\delta}{}_{\beta}=0,
+>$$
+> 法向部分给出科达齐方程
+> $$
+>\partial_{\gamma}b_{\alpha\beta}-\partial_{\beta}b_{\alpha\gamma}
+>+\Gamma^{\varepsilon}{}_{\alpha\beta}b_{\varepsilon\gamma}-\Gamma^{\varepsilon}{}_{\alpha\gamma}b_{\varepsilon\beta}=0.
+>$$
 
-> **公式 4.2.17 (第二基本形式系数的指标升降)**
+> **定理 35.1 (曲面的基本定理)**
 > 
-> $b^{\beta}_{\alpha}=b_{\alpha\gamma}g^{\gamma\beta}$.
+> 设 $\varphi=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$, $\psi=b_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 是参数域 $D$ 上的两个二次微分式, $\left(g_{\alpha\beta}\right)$ 对称正定, $\left(b_{\alpha\beta}\right)$ 对称. 则存在曲面 $\boldsymbol{r}:D\to{E}^{3}$ 以 $\varphi,\psi$ 为第一, 第二基本形式, 当且仅当 $\left(g_{\alpha\beta}\right),\left(b_{\alpha\beta}\right)$ 满足高斯-科达齐方程组; 且这样的曲面在 $E^{3}$ 的刚体运动意义下唯一.
 
-> **公式 4.2.27 (用 $E,F,G$ 表示克里斯托费尔符号)**
+> **定理 36.1 (高斯绝妙定理)**
 > 
-> 记 $E=g_{11}$, $F=g_{12}$, $G=g_{22}$, $\Delta=EG-F^{2}$, 则 $\Gamma^{1}_{11}=\frac1\Delta\left(\frac{G}2\frac{\partial{E}}{\partial{u}}+\frac{F}2\frac{\partial{E}}{\partial{v}}-F\frac{\partial{F}}{\partial{u}}\right)$, $\Gamma^{1}_{12}=\Gamma^{1}_{21}=\frac1\Delta\left(\frac{G}2\frac{\partial{E}}{\partial{v}}-\frac{F}2\frac{\partial{G}}{\partial{u}}\right)$, $\Gamma^{2}_{11}=\frac1\Delta\left(-\frac{F}2\frac{\partial{E}}{\partial{u}}-\frac{E}2\frac{\partial{E}}{\partial{v}}+E\frac{\partial{F}}{\partial{u}}\right)$, $\Gamma^{1}_{22}=\frac1\Delta\left(G\frac{\partial{F}}{\partial{v}}-\frac{G}2\frac{\partial{G}}{\partial{u}}-\frac{F}2\frac{\partial{G}}{\partial{v}}\right)$, $\Gamma^{2}_{12}=\Gamma^{2}_{21}=\frac1\Delta\left(-\frac{F}2\frac{\partial{E}}{\partial{v}}+\frac{E}2\frac{\partial{G}}{\partial{u}}\right)$, $\Gamma^{2}_{22}=\frac1\Delta\left(-F\frac{\partial{F}}{\partial{v}}+\frac{F}2\frac{\partial{G}}{\partial{u}}+\frac{E}2\frac{\partial{G}}{\partial{v}}\right)$.
+> 曲面的总曲率
+> $$
+>K\left(u\right)=k_{1}k_{2}=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}=-\frac{R_{1212}}{\det\left(g_{\alpha\beta}\right)},
+>$$
+> 只依赖第一基本形式的系数 $\left(g_{\alpha\beta}\right)$, 与第二基本形式无关; 即总曲率是内蕴量.
 
-> **公式 4.3.7 (高斯方程)**
+> **定义 37.1 (全脐曲面)**
 > 
-> $\frac{\partial\Gamma^{\xi}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial\Gamma^{\xi}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\eta}_{\alpha\beta}\Gamma^{\xi}_{\eta\gamma}-\Gamma^{\eta}_{\alpha\gamma}\Gamma^{\xi}_{\eta\beta}-b_{\alpha\beta}b^{\xi}_{\gamma}+b_{\alpha\gamma}b^{\xi}_{\beta}=0$.
+> 若曲面 $S$ 上每一点都是脐点 (即 $k_{1}=k_{2}$ 处处成立), 则称 $S$ 为全脐曲面.
 
-> **公式 4.3.8 (科达齐方程)**
+> **定理 37.2 (全脐曲面必为平面或球面)**
 > 
-> $\frac{\partial{b}_{\alpha\beta}}{\partial{u}^{\gamma}}-\frac{\partial{b}_{\alpha\gamma}}{\partial{u}^{\beta}}+\Gamma^{\xi}_{\alpha\beta}b_{\xi\gamma}-\Gamma^{\xi}_{\alpha\gamma}b_{\xi\beta}=0$.
+> 全脐曲面一定是平面的一部分或球面的一部分.
 
-> **公式 4.3.16 (正交参数下的高斯方程)**
+> **例 38.1 (旋转面及其主曲率)**
 > 
-> 当 $F=0$ 时, $-\frac{1}{\sqrt{EG}}\left[\left(\frac{\left(\sqrt{E}\right)_v}{\sqrt{G}}\right)_v+\left(\frac{\left(\sqrt{G}\right)_u}{\sqrt{E}}\right)_u\right]=\frac{LN-M^{2}}{EG}$, 左端即 $S$ 的高斯曲率 $K$.
+> 设 $x^{2}>0$ 的平面曲线 $x^{2}=x^{2}\left(t\right)$, $x^{3}=x^{3}\left(t\right)$ 绕 $Ox^{3}$ 轴旋转, 得曲面 $\boldsymbol{r}\left(t,\theta\right)=\left(x^{2}\cos\theta,x^{2}\sin\theta,x^{3}\right)$. 记 $A=\left(x^{2}\right)'^{2}+\left(x^{3}\right)'^{2}$, 则 $g_{11}=A$, $g_{12}=0$, $g_{22}=\left(x^{2}\right)^{2}$, $b_{11}=\frac{\left(x^{2}\right)'\left(x^{3}\right)''-\left(x^{2}\right)''\left(x^{3}\right)'}{\sqrt{A}}$, $b_{12}=0$, $b_{22}=\frac{x^{2}\left(x^{3}\right)'}{\sqrt{A}}$, 主曲率为
+> $$
+>k_{1}=\frac{\left(x^{2}\right)'\left(x^{3}\right)''-\left(x^{2}\right)''\left(x^{3}\right)'}{A^{3/2}},\quad
+>k_{2}=\frac{\left(x^{3}\right)'}{x^{2}\sqrt{A}}.
+>$$
 
-> **公式 4.3.17 (正交参数下的科达齐方程)**
+> **定义 40.1 (直纹面)**
 > 
-> 当 $F=0$ 时, $\left(\frac{L}{\sqrt{E}}\right)_v-\left(\frac{M}{\sqrt{E}}\right)_u-N\frac{\left(\sqrt{E}\right)_v}{G}-M\frac{\left(\sqrt{G}\right)_u}{\sqrt{EG}}=0$; $\left(\frac{N}{\sqrt{G}}\right)_u-\left(\frac{M}{\sqrt{G}}\right)_v-L\frac{\left(\sqrt{G}\right)_u}{E}-M\frac{\left(\sqrt{E}\right)_v}{\sqrt{EG}}=0$.
+> 由一族直线生成的曲面 $\boldsymbol{r}\left(t,u\right)=\boldsymbol{c}\left(t\right)+u\,\boldsymbol{l}\left(t\right)$ ($\left|\boldsymbol{l}\right|\equiv1$, $\boldsymbol{c}'$ 与 $\boldsymbol{l}$ 处处线性无关) 称为直纹面; 对固定的 $t$, 直线 $u\mapsto\boldsymbol{r}\left(t,u\right)$ 称为直母线, $\boldsymbol{c}\left(t\right)$ 称为准线.
 
-> **定理 4.4.1 (唯一性定理)**
+> **例 40.2 (直纹面的特殊类型)**
 > 
-> 设 $S_1,S_2$ 是定义在同一参数域 $D$ 上的两张曲面, 若在每组对应参数处它们的第一, 第二基本形式相同, 则存在 $\mathbb{E}^{3}$ 的刚体运动把 $S_1$ 变为 $S_2$.
-
-> **定理 4.4.2 (存在性定理)**
-> 
-> 若 $\Gamma^{\gamma}_{\alpha\beta}$ 与 $b_{\alpha\beta}$ 满足高斯方程与科达齐方程, 则局部存在曲面, 以它们为克里斯托费尔符号与第二基本形式系数.
-
-> **公式 10.1.2 (函数图的几何量)**
-> 
-> 对函数图 $\boldsymbol{r}\left(x,y\right)=\left(x,y,f\left(x,y\right)\right)$, 记 $p=f_x$, $q=f_y$, $r=f_{xx}$, $s=f_{xy}$, $t=f_{yy}$, $W=\left|\boldsymbol{r}_x\wedge\boldsymbol{r}_y\right|=\sqrt{1+p^{2}+q^{2}}$, 则 $\mathrm{I}=\left(1+p^{2}\right)\mathrm{d}x^{2}+2pq\,\mathrm{d}x\mathrm{d}y+\left(1+q^{2}\right)\mathrm{d}y^{2}$, $\boldsymbol{e}_3=\frac1W\left(-p,-q,1\right)$, $\mathrm{II}=\frac{r\,\mathrm{d}x^{2}+2s\,\mathrm{d}x\mathrm{d}y+t\,\mathrm{d}y^{2}}{W}$, $H=\frac{\left(1+q^{2}\right)r-2pqs+\left(1+p^{2}\right)t}{2W^{3}}$.
+> (1) 若 $\boldsymbol{l}\equiv$ 常向量, 直母线互相平行, 曲面是柱面; (2) 若 $\boldsymbol{c}\equiv$ 常向量, 所有直母线过同一固定点, 曲面是锥面; (3) 若 $\boldsymbol{l}=\frac{\boldsymbol{c}'}{\left|\boldsymbol{c}'\right|}$, 直母线沿准线的切线方向, 曲面是切线面.
 
 ## 1.6 (正交曲率线网下科达齐方程的化简)
 
-证明: 当 $\left(u,v\right)$ 是曲面的正交曲率线网时,科达齐方程可简化为
+证明: 当 $\left(u,v\right)$ 是曲面的正交曲率线网时, 科达齐方程可简化为
 
 $$
-L_v=HE_v,\quad{N}_u=HG_u,
+L_{v}=HE_{v},\quad{N}_{u}=HG_{u},
 $$
 
-其中 $L_v=\frac{\partial{L}}{\partial{v}}$, $N_u=\frac{\partial{N}}{\partial{u}}$, $E_v=\frac{\partial{E}}{\partial{v}}$, $G_u=\frac{\partial{G}}{\partial{u}}$.
+其中 $L_{v}=\frac{\partial{L}}{\partial{v}}$, $N_{u}=\frac{\partial{N}}{\partial{u}}$, $E_{v}=\frac{\partial{E}}{\partial{v}}$, $G_{u}=\frac{\partial{G}}{\partial{u}}$.
 
 ### 解答 1.6
 
-按教材回到原记号的约定, 记 $E=g_{11}$, $F=g_{12}$, $G=g_{22}$, $L=b_{11}$, $M=b_{12}$, $N=b_{22}$.
+题中的 $E,F,G$ 与 $L,M,N$ 就是 $g_{11},g_{12},g_{22}$ 与 $b_{11},b_{12},b_{22}$; 下面按讲义记号写, 并记 $\partial_{1}=\frac{\partial}{\partial{u}}$, $\partial_{2}=\frac{\partial}{\partial{v}}$.
 
-第一步: 由**习题 3.29 (参数曲线为曲率线的充要条件)**, 参数曲线既是曲率线又是正交的, 故
-
-$$
-F=0,\quad{M}=0.\tag{A}
-$$
-
-第二步: 由**公式 4.3.17 (正交参数下的科达齐方程)**, 在 $F=0$ 下两式分别为
+第一步 (曲率线网给出对角形). 由**定义 31.1** (曲率线), 正交曲率线网就是坐标曲线都是曲率线且互相正交的参数; 由**定理 31.5** (曲率线网参数), 这样的参数正是曲率线网参数, 故
 
 $$
-\left(\frac{L}{\sqrt{E}}\right)_v-\left(\frac{M}{\sqrt{E}}\right)_u-N\frac{\left(\sqrt{E}\right)_v}{G}-M\frac{\left(\sqrt{G}\right)_u}{\sqrt{EG}}=0,\tag{B}
+g_{12}=0,\quad{b}_{12}=0,\quad{b}_{11}=k_{1}g_{11},\quad{b}_{22}=k_{2}g_{22}.\tag{A}
+$$
+
+由 $\left(g_{\alpha\beta}\right)$ 对角, 其逆矩阵也对角: $g^{11}=\frac{1}{g_{11}}$, $g^{22}=\frac{1}{g_{22}}$, $g^{12}=0$.
+
+第二步 (算出用到的克里斯托费尔符号). 由**推导 25.A** 的公式, 并注意 $\partial_{1}g_{12}=\partial_{2}g_{12}=0$ 与 $\partial_{1}g_{11}$, $\partial_{2}g_{11}$ 只需保留真正出现者:
+
+$$
+\Gamma^{1}{}_{12}=\Gamma^{1}{}_{21}=\frac{1}{2}g^{11}\left(\partial_{1}g_{21}+\partial_{2}g_{11}-\partial_{1}g_{12}\right)=\frac{\partial_{2}g_{11}}{2g_{11}},\tag{B}
 $$
 
 $$
-\left(\frac{N}{\sqrt{G}}\right)_u-\left(\frac{M}{\sqrt{G}}\right)_v-L\frac{\left(\sqrt{G}\right)_u}{E}-M\frac{\left(\sqrt{E}\right)_v}{\sqrt{EG}}=0.\tag{C}
+\Gamma^{2}{}_{11}=\frac{1}{2}g^{22}\left(2\partial_{1}g_{12}-\partial_{2}g_{11}\right)=-\frac{\partial_{2}g_{11}}{2g_{22}},\tag{C}
 $$
 
-第三步: 由 (A) 中 $M=0$, (B) 的第二项与第四项消失, 得
-
 $$
-\left(\frac{L}{\sqrt{E}}\right)_v-N\frac{\left(\sqrt{E}\right)_v}{G}=0.\tag{D}
+\Gamma^{1}{}_{22}=\frac{1}{2}g^{11}\left(2\partial_{2}g_{21}-\partial_{1}g_{22}\right)=-\frac{\partial_{1}g_{22}}{2g_{11}},\tag{D}
 $$
 
-由 $\left(\frac{L}{\sqrt{E}}\right)_v=\frac{L_v}{\sqrt{E}}-\frac{L}{2}E_vE^{-\frac32}=\frac{1}{\sqrt{E}}\left(L_v-\frac{LE_v}{2E}\right)$ 及 $\left(\sqrt{E}\right)_v=\frac{E_v}{2\sqrt{E}}$, 代入 (D):
-
 $$
-\frac{1}{\sqrt{E}}\left(L_v-\frac{LE_v}{2E}\right)-\frac{NE_v}{2\sqrt{E}\,G}=0.\tag{E}
+\Gamma^{2}{}_{12}=\Gamma^{2}{}_{21}=\frac{1}{2}g^{22}\left(\partial_{1}g_{22}+\partial_{2}g_{12}-\partial_{2}g_{12}\right)=\frac{\partial_{1}g_{22}}{2g_{22}}.\tag{E}
 $$
 
-两边乘 $\sqrt{E}$, 并提取公因子 $\frac{E_v}{2}$, 得 $L_v-\frac{E_v}{2}\left(\frac{L}{E}+\frac{N}{G}\right)=0$, 即
+第三步 (科达齐方程的 $\left(1,1,2\right)$ 分量). 在**推导 35.B** (高斯方程与科达齐方程) 的科达齐方程中取 $\alpha=1$, $\beta=1$, $\gamma=2$:
 
 $$
-L_v=\frac{E_v}{2}\left(\frac{L}{E}+\frac{N}{G}\right).\tag{F}
+\partial_{2}b_{11}-\partial_{1}b_{12}+\Gamma^{\varepsilon}{}_{11}b_{\varepsilon2}-\Gamma^{\varepsilon}{}_{12}b_{\varepsilon1}=0.
 $$
 
-第四步: 由**公式 3.5.4 (平均曲率与高斯曲率)**, 在 (A) 之下 $b_{12}=g_{12}=0$, 故
+由 (A) 中 $b_{12}=0$, 上式第一组 $\Gamma$ 项只剩 $\varepsilon=2$, 第二组只剩 $\varepsilon=1$:
 
 $$
-2H=\frac{b_{11}g_{22}+b_{22}g_{11}}{g_{11}g_{22}}=\frac{L}{E}+\frac{N}{G}.\tag{G}
+\partial_{2}b_{11}+\Gamma^{2}{}_{11}b_{22}-\Gamma^{1}{}_{12}b_{11}=0.\tag{F}
 $$
 
-把 (G) 代入 (F), 得 $L_v=\frac{E_v}{2}\cdot2H=HE_v$.
+把 (B)(C)(A) 代入 (F):
+
+$$
+\partial_{2}\left(k_{1}g_{11}\right)-\frac{\partial_{2}g_{11}}{2g_{22}}\cdot{k}_{2}g_{22}-\frac{\partial_{2}g_{11}}{2g_{11}}\cdot{k}_{1}g_{11}
+=\left(\partial_{2}k_{1}\right)g_{11}+k_{1}\partial_{2}g_{11}-\frac{k_{2}}{2}\partial_{2}g_{11}-\frac{k_{1}}{2}\partial_{2}g_{11}=0,
+$$
+
+即
+
+$$
+\left(\partial_{2}k_{1}\right)g_{11}=\frac{k_{2}-k_{1}}{2}\partial_{2}g_{11}.\tag{G}
+$$
+
+由 (G) 与 $\partial_{2}b_{11}=\left(\partial_{2}k_{1}\right)g_{11}+k_{1}\partial_{2}g_{11}$,
+
+$$
+\partial_{2}b_{11}=\frac{k_{2}-k_{1}}{2}\partial_{2}g_{11}+k_{1}\partial_{2}g_{11}=\frac{k_{1}+k_{2}}{2}\partial_{2}g_{11}=H\partial_{2}g_{11},
+$$
+
+最后一步用了**定义 32.1** ($H=\frac{k_{1}+k_{2}}{2}$). 即 $L_{v}=HE_{v}$.
 
 $\blacksquare$
 
-第五步: 同法, 由 $M=0$, (C) 的第二, 第四项消失:
+第四步 (科达齐方程的 $\left(2,2,1\right)$ 分量). 同法取 $\alpha=2$, $\beta=2$, $\gamma=1$:
 
 $$
-\left(\frac{N}{\sqrt{G}}\right)_u-L\frac{\left(\sqrt{G}\right)_u}{E}=0.\tag{H}
+\partial_{1}b_{22}-\partial_{2}b_{21}+\Gamma^{\varepsilon}{}_{22}b_{\varepsilon1}-\Gamma^{\varepsilon}{}_{21}b_{\varepsilon2}=0,
 $$
 
-由 $\left(\frac{N}{\sqrt{G}}\right)_u=\frac{1}{\sqrt{G}}\left(N_u-\frac{NG_u}{2G}\right)$ 及 $\left(\sqrt{G}\right)_u=\frac{G_u}{2\sqrt{G}}$, 代入 (H):
+由 $b_{12}=0$ 化为
 
 $$
-\frac{1}{\sqrt{G}}\left(N_u-\frac{NG_u}{2G}\right)-\frac{LG_u}{2\sqrt{G}\,E}=0,\tag{I}
+\partial_{1}b_{22}+\Gamma^{1}{}_{22}b_{11}-\Gamma^{2}{}_{21}b_{22}=0.
 $$
 
-两边乘 $\sqrt{G}$ 并提取公因子 $\frac{G_u}{2}$, 得 $N_u=\frac{G_u}{2}\left(\frac{N}{G}+\frac{L}{E}\right)$, 再由 (G) 得
+把 (D)(E)(A) 代入:
 
 $$
-N_u=HG_u.\tag{J}
+\partial_{1}\left(k_{2}g_{22}\right)-\frac{\partial_{1}g_{22}}{2g_{11}}\cdot{k}_{1}g_{11}-\frac{\partial_{1}g_{22}}{2g_{22}}\cdot{k}_{2}g_{22}
+=\left(\partial_{1}k_{2}\right)g_{22}+k_{2}\partial_{1}g_{22}-\frac{k_{1}}{2}\partial_{1}g_{22}-\frac{k_{2}}{2}\partial_{1}g_{22}=0,
 $$
+
+即 $\left(\partial_{1}k_{2}\right)g_{22}=\frac{k_{1}-k_{2}}{2}\partial_{1}g_{22}$, 于是
+
+$$
+\partial_{1}b_{22}=\left(\partial_{1}k_{2}\right)g_{22}+k_{2}\partial_{1}g_{22}=\frac{k_{1}+k_{2}}{2}\partial_{1}g_{22}=H\partial_{1}g_{22},
+$$
+
+即 $N_{u}=HG_{u}$.
 
 $\blacksquare$
 
@@ -168,61 +222,59 @@ $$
 
 ### 解答 1.7
 
-第一步 (取正交曲率线网): 若 $S$ 是全脐点曲面则直接满足; 若不是, 则由**习题 3.29 (参数曲线为曲率线的充要条件)**, 取 $P$ 邻近的参数 $\left(u,v\right)$ 使两族参数曲线为曲率线且正交, 即
+第一步 (取曲率线网参数). 设 $H$ 是常数. 若 $S$ 是**定义 37.1** (全脐曲面) 意义下的全脐曲面, 则结论的第一种情形已成立. 否则 $S$ 上有非脐点, 由**定理 31.5** (曲率线网参数) 在非脐点邻域内可取曲率线网参数, 使
 
 $$
-F=0,\quad{M}=0.\tag{A}
+g_{12}=b_{12}=0,\quad{b}_{11}=k_{1}g_{11},\quad{b}_{22}=k_{2}g_{22},\tag{A}
 $$
 
-仍记 $E=g_{11}$, $G=g_{22}$, $L=b_{11}$, $N=b_{22}$, 并令
+且在此邻域内 $k_{1}\ne{k}_{2}$. 令
 
 $$
-\varepsilon:=\frac12\left(\frac{L}{E}-\frac{N}{G}\right).
+\varepsilon:=\frac{k_{1}-k_{2}}{2}\ne0,\quad\text{则}\quad{k}_{1}=H+\varepsilon,\quad{k}_{2}=H-\varepsilon,\tag{B}
 $$
 
-由**公式 3.5.4 (平均曲率与高斯曲率)**, 在 (A) 之下 $2H=\frac{L}{E}+\frac{N}{G}$, 与 $\varepsilon$ 的定义联立得
+其中 $k_{1}+k_{2}=2H$ 用了**定义 32.1** (或**命题 32.2**). 不妨设 $\varepsilon>0$ (若 $\varepsilon<0$, 交换 $u,v$ 两坐标, $\varepsilon$ 变号而 $H$ 与结论的形式不变).
+
+第二步 (科达齐方程给出 $\left(\varepsilon{g}_{11}\right)_{v}=0$ 等). 由**解答 1.6** 的第三个式子 (科达齐方程的 $\left(1,1,2\right)$ 分量), 在 (A) 之下有
 
 $$
-\frac{L}{E}=H+\varepsilon,\quad\frac{N}{G}=H-\varepsilon,\quad\text{即}\quad{L}=E\left(H+\varepsilon\right),\quad{N}=G\left(H-\varepsilon\right).\tag{B}
+\partial_{2}b_{11}=H\partial_{2}g_{11}.
 $$
 
-在 $P$ 处 $\frac{L}{E}\neq\frac{N}{G}$, 故 $\varepsilon\left(P\right)\neq0$. 不妨设
+把 (B) 与 $b_{11}=k_{1}g_{11}=\left(H+\varepsilon\right)g_{11}$ 代入:
 
 $$
-\varepsilon>0.\tag{C}
+\partial_{2}\left[\left(H+\varepsilon\right)g_{11}\right]=H\partial_{2}g_{11}.
 $$
 
-第二步 (由科达齐方程提取信息): 由 (B) 及 $L_v=\left[E\left(H+\varepsilon\right)\right]_v=E_v\left(H+\varepsilon\right)+E\varepsilon_v$ ($H$ 为常数), 得
+因 $H$ 为常数, 左端为 $H\partial_{2}g_{11}+\partial_{2}\left(\varepsilon{g}_{11}\right)$, 故
 
 $$
-L_v-HE_v=E_v\left(H+\varepsilon\right)+E\varepsilon_v-HE_v=E_v\varepsilon+E\varepsilon_v=\left(E\varepsilon\right)_v,
+\partial_{2}\left(\varepsilon{g}_{11}\right)=0.\tag{C}
 $$
 
-上题 (1.6) 已证, 对正交曲率线网, 科达齐方程 $\Leftrightarrow$ $L_v=HE_v$ 且 $N_u=HG_u$, 则
+同理由解答 1.6 的第四步与 $b_{22}=\left(H-\varepsilon\right)g_{22}$:
 
 $$
-\left(E\varepsilon\right)_v=0.\tag{D}
+\partial_{1}\left[\left(H-\varepsilon\right)g_{22}\right]=H\partial_{1}g_{22}\,\Longrightarrow\,\partial_{1}\left(\varepsilon{g}_{22}\right)=0.\tag{D}
 $$
 
-同理
+第三步 (换参数使 $g_{11}=g_{22}$). 由 (C), $\varepsilon{g}_{11}$ 与 $v$ 无关, 记 $\varepsilon{g}_{11}=\varphi\left(u\right)$; 由 (D), $\varepsilon{g}_{22}$ 与 $u$ 无关, 记 $\varepsilon{g}_{22}=\psi\left(v\right)$. 因 $\varepsilon>0$ 且 $g_{\alpha\alpha}>0$, 有 $\varphi>0$, $\psi>0$. 取新参数
 
 $$
-\left(G\varepsilon\right)_u=0.\tag{E}
+\widetilde{u}:=\int\sqrt{\varphi\left(u\right)}\,\mathrm{d}u,\quad\widetilde{v}:=\int\sqrt{\psi\left(v\right)}\,\mathrm{d}v,
 $$
 
-第三步 (换参数使 $E=G$): 由 (D), $E\varepsilon$ 与 $v$ 无关, 记 $E\varepsilon=\varphi\left(u\right)$; 由 (E), $G\varepsilon$ 与 $u$ 无关, 记 $G\varepsilon=\psi\left(v\right)$. 由 $E>0$, $G>0$ 与 (C) 得 $\varphi>0$, $\psi>0$. 取新参数
+则 $\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}=\frac{1}{\sqrt{\varphi}}$, $\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}=\frac{1}{\sqrt{\psi}}$. 由 $\boldsymbol{r}_{\widetilde{u}}=\boldsymbol{r}_{1}\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}$, $\boldsymbol{r}_{\widetilde{v}}=\boldsymbol{r}_{2}\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}$ 与内积的双线性,
 
 $$
-\widetilde{u}=\int\sqrt{\varphi\left(u\right)}\,\mathrm{d}u,\quad\widetilde{v}=\int\sqrt{\psi\left(v\right)}\,\mathrm{d}v
+\widetilde{g}_{11}=g_{11}\left(\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}\right)^{2}=\frac{g_{11}}{\varphi}=\frac{1}{\varepsilon},\quad
+\widetilde{g}_{22}=g_{22}\left(\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}\right)^{2}=\frac{g_{22}}{\psi}=\frac{1}{\varepsilon},\quad
+\widetilde{g}_{12}=0.\tag{E}
 $$
 
-则 $\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}=\frac{1}{\sqrt{\varphi}}$, $\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}=\frac{1}{\sqrt{\psi}}$. 由 $\boldsymbol{r}_{\widetilde{u}}=\boldsymbol{r}_u\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}$, $\boldsymbol{r}_{\widetilde{v}}=\boldsymbol{r}_v\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}$ 与内积的双线性, 新参数下的系数为
-
-$$
-\widetilde{E}=E\left(\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}\right)^{2}=\frac{E}{\varphi}=\frac{1}{\varepsilon},\quad\widetilde{G}=G\left(\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}\right)^{2}=\frac{G}{\psi}=\frac{1}{\varepsilon},\quad\widetilde{F}=F\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}=0.
-$$
-
-记 $\lambda:=\frac{1}{\varepsilon}$, 由 (C) 得 $\lambda>0$, 且 $\widetilde{E}=\widetilde{G}=\lambda$, 故
+第三步的结论: 记 $\lambda:=\frac{1}{\varepsilon}>0$, 由 (E) 得
 
 $$
 \mathrm{I}=\lambda\left(\mathrm{d}\widetilde{u}^{2}+\mathrm{d}\widetilde{v}^{2}\right).\tag{F}
@@ -230,17 +282,18 @@ $$
 
 $\blacksquare$
 
-第四步 (算第二基本形式): 由 (B) 与第四步的换元,
+第四步 (算第二基本形式). 第二基本形式的系数按二次微分式的同一换元变化, 且 $\widetilde{k}_{\alpha}$ 不变 (主曲率是几何量):
 
 $$
-\widetilde{L}=L\left(\frac{\mathrm{d}u}{\mathrm{d}\widetilde{u}}\right)^{2}=\frac{L}{\varphi}=\frac{E\left(H+\varepsilon\right)}{E\varepsilon}=\frac{H+\varepsilon}{\varepsilon}=1+\lambda{H},
+\widetilde{b}_{11}=\frac{b_{11}}{\varphi}=\frac{\left(H+\varepsilon\right)g_{11}}{\varepsilon{g}_{11}}=\frac{H+\varepsilon}{\varepsilon}=1+\frac{H}{\varepsilon}=1+\lambda{H},
 $$
 
 $$
-\widetilde{N}=N\left(\frac{\mathrm{d}v}{\mathrm{d}\widetilde{v}}\right)^{2}=\frac{N}{\psi}=\frac{G\left(H-\varepsilon\right)}{G\varepsilon}=\frac{H-\varepsilon}{\varepsilon}=\lambda{H}-1=-\left(1-\lambda{H}\right),\quad\widetilde{M}=0,
+\widetilde{b}_{22}=\frac{b_{22}}{\psi}=\frac{\left(H-\varepsilon\right)g_{22}}{\varepsilon{g}_{22}}=\frac{H-\varepsilon}{\varepsilon}=\frac{H}{\varepsilon}-1=-\left(1-\lambda{H}\right),\quad
+\widetilde{b}_{12}=0,
 $$
 
-故第二基本形式为
+故
 
 $$
 \mathrm{II}=\left(1+\lambda{H}\right)\mathrm{d}\widetilde{u}^{2}-\left(1-\lambda{H}\right)\mathrm{d}\widetilde{v}^{2}.\tag{G}
@@ -254,57 +307,105 @@ $\blacksquare$
 
 ### 解答 1.8
 
-第一步: 由**公式 4.2.27 (用 $E,F,G$ 表示克里斯托费尔符号)**, 六个 $\Gamma$ 都是 $E,F,G$ 及其一阶偏导数的有理式, 而 $E,F,G$ 为常数使各一阶偏导为零, 故
+即 $g_{\alpha\beta}$ 与 $b_{\alpha\beta}$ 都是常数矩阵的情形.
+
+第一步 ($\Gamma=0$). 由**推导 25.A** (克里斯托费尔符号由第一基本形式确定), $\Gamma^{\gamma}{}_{\alpha\beta}$ 是 $g_{\alpha\beta}$ 及其一阶偏导的表达式; $g_{\alpha\beta}$ 为常数使这些偏导全为零, 于是
 
 $$
-\Gamma^{\gamma}_{\alpha\beta}=0\quad\left(\forall\alpha,\beta,\gamma\right).\tag{A}
+\Gamma^{\gamma}{}_{\alpha\beta}=0\quad\left(\forall\alpha,\beta,\gamma\right).\tag{A}
 $$
 
-第二步: 把 (A) 代入**公式 4.3.7 (高斯方程)**, 两个含 $\Gamma$ 偏导的项与四个 $\Gamma\Gamma$ 型的项全为零, 剩下
+第二步 (高斯方程化为 $b$ 的秩条件). 把 (A) 代入**推导 35.B** 中的高斯方程, 含 $\Gamma$ 的四项全为零, 得
 
 $$
--b_{\alpha\beta}b^{\xi}_{\gamma}+b_{\alpha\gamma}b^{\xi}_{\beta}=0,\quad\text{即}\quad{b}_{\alpha\beta}b^{\xi}_{\gamma}=b_{\alpha\gamma}b^{\xi}_{\beta}.\tag{B}
+-b_{\alpha\beta}b^{\delta}{}_{\gamma}+b_{\alpha\gamma}b^{\delta}{}_{\beta}=0,\quad\text{即}\quad{b}_{\alpha\beta}b^{\delta}{}_{\gamma}=b_{\alpha\gamma}b^{\delta}{}_{\beta}.\tag{B}
 $$
 
-第三步: (B) 两端乘 $g_{\xi\delta}$ 并对 $\xi$ 求和; 由**公式 4.2.17 (第二基本形式系数的指标升降)** $b^{\xi}_{\gamma}=b_{\gamma\sigma}g^{\sigma\xi}$ 与**公式 4.2.11 (对偶基)** $g^{\sigma\xi}g_{\xi\delta}=\delta^{\sigma}{}_{\delta}$, 得 $b^{\xi}_{\gamma}g_{\xi\delta}=b_{\gamma\sigma}g^{\sigma\xi}g_{\xi\delta}=b_{\gamma\sigma}\delta^{\sigma}{}_{\delta}=b_{\gamma\delta}$, 于是
+(B) 两端乘 $g_{\delta\varepsilon}$ 并对 $\delta$ 求和, 用 $b^{\delta}{}_{\gamma}=b_{\gamma\tau}g^{\tau\delta}$ (见**定义 24.1**) 与 $g^{\tau\delta}g_{\delta\varepsilon}=\delta^{\tau}{}_{\varepsilon}$:
 
 $$
-b_{\alpha\beta}b_{\gamma\delta}=b_{\alpha\gamma}b_{\beta\delta}.\tag{C}
+b_{\alpha\beta}b_{\gamma\varepsilon}=b_{\alpha\gamma}b_{\beta\varepsilon}.\tag{C}
 $$
 
-在 (C) 中取 $\left(\alpha,\beta,\gamma,\delta\right)=\left(1,1,2,2\right)$, 得 $b_{11}b_{22}=b_{12}^{2}$, 即
+第三步 (总曲率为零). 在 (C) 中取 $\left(\alpha,\beta,\gamma,\varepsilon\right)=\left(1,1,2,2\right)$, 得 $b_{11}b_{22}=b_{12}^{2}$, 即 $\det\left(b_{\alpha\beta}\right)=0$. 由**定理 36.1** (高斯绝妙定理),
 
 $$
-LN=M^{2}.\tag{D}
+K=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}=0.\tag{D}
 $$
 
-第四步: 由**公式 3.5.4 (平均曲率与高斯曲率)** 与 (D), 注意 $g_{11}g_{22}-g_{12}^{2}=EG-F^{2}>0$ ($\mathrm{I}$ 正定),
-
-$$
-K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}=\frac{LN-M^{2}}{EG-F^{2}}=0,\tag{E}
-$$
-
-即 $S$ 的高斯曲率处处为零.
-
-第五步 (第二基本形式为零的情形): 若 $b_{\alpha\beta}=0$ ($\forall\alpha,\beta$), 则 $\mathrm{II}=0$, 由**公式 3.6.35 (全脐点曲面)** 可知 $k=0$, 故 $S$ 是平面.
+第四步 (第二基本形式为零的情形). 若 $b_{\alpha\beta}=0$, 则 $S$ 上处处 $k_{1}=k_{2}=0$, 即**定义 31.2** 的平点; 于是 $S$ 是**定义 37.1** (全脐曲面) 意义下的全脐曲面, 由**定理 37.2** (全脐曲面必为平面或球面) 及 $K=0$ (球面 $K>0$), $S$ 是平面的一部分.
 
 $\blacksquare$
 
-第六步 (第二基本形式不全为零的情形): 以下设 $\overline{B}=\left(b_{\alpha\beta}\right)\neq0$. 由 (D) $\det\overline{B}=LN-M^{2}=0$ 且 $\overline{B}\neq0$, 故 $\operatorname{rank}\overline{B}=1$, 于是 $\overline{B}$ 有属于特征值 $0$ 的非零特征向量 $\left(a^{1},a^{2}\right)$, 即
+第五步 (第二基本形式不为零的情形: 取直母线方向). 设 $B:=\left(b_{\alpha\beta}\right)\ne0$ 而 $\det{B}=0$, 则 $\operatorname{rank}B=1$, 故 $B$ 有属于特征值 $0$ 的非零常向量 $\left(a^{1},a^{2}\right)$ ($B$ 为常数矩阵, 可取其常值特征向量), 即
 
 $$
-b_{\alpha\beta}a^{\beta}=0\quad\left(\alpha=1,2\right).\tag{F}
+b_{\alpha\beta}a^{\beta}=0\quad\left(\alpha=1,2\right),\quad\left(a^{1},a^{2}\right)\ne\left(0,0\right).\tag{E}
 $$
 
-令 $\boldsymbol\xi:=a^{\alpha}\boldsymbol{r}_\alpha$. 由 (A) 与 (F), 用**公式 4.2.M (自然标架的运动方程)** 之 $\left(M_2\right)$:
+以下作常值线性参数变换使 $\left(a^{1},a^{2}\right)=\left(1,0\right)$: 这样的变换把 $g_{\alpha\beta},b_{\alpha\beta}$ 变为仍然为常数的矩阵, 且不改变曲面, 故可设
 
 $$
-\partial_\beta\boldsymbol\xi=a^{\alpha}\partial_\beta\boldsymbol{r}_\alpha=a^{\alpha}\left(\Gamma^{\gamma}_{\alpha\beta}\boldsymbol{r}_\gamma+b_{\alpha\beta}\boldsymbol{n}\right)=0.\tag{G}
+b_{1\beta}=0\quad\left(\beta=1,2\right),\quad\text{即}\quad{b}_{11}=b_{12}=b_{21}=0.\tag{F}
 $$
 
-故 $\boldsymbol\xi$ 是常向量; 又 $\left(a^{1},a^{2}\right)\neq\left(0,0\right)$ 而 $\boldsymbol{r}_1,\boldsymbol{r}_2$ 线性无关, 故 $\boldsymbol\xi\neq\boldsymbol0$.
+第六步 ($\boldsymbol{r}_{1}$ 是常向量). 由**定义 25.B** 的运动方程第二式与 (A)(F):
 
-第七步 ($S$ 是柱面): 设 $S$ 的参数表示为 $\overline{\boldsymbol{r}}\left(\overline{u},\overline{v}\right)=\overline{\boldsymbol{a}}\left(\overline{u}\right)+\overline{v}\,\boldsymbol\xi$. 即 $S$ 是以 $\boldsymbol\xi$ 为直母线方向, 且该方向不随参数改变的直纹面; 由**例 3.6.2 (柱面)** 的定义, $S$ 是柱面.
+$$
+\partial_{\beta}\boldsymbol{r}_{1}=\Gamma^{\gamma}{}_{1\beta}\boldsymbol{r}_{\gamma}+b_{1\beta}\boldsymbol{n}=0\quad\left(\beta=1,2\right),
+$$
+
+故 $\boldsymbol{r}_{1}\equiv\boldsymbol{\xi}$ 是常向量; 因参数表示正则, $\boldsymbol{\xi}=\boldsymbol{r}_{1}\ne0$.
+
+第七步 (曲面是柱面). 由 $\partial_{1}\boldsymbol{r}=\boldsymbol{r}_{1}=\boldsymbol{\xi}$ 对 $u$ 积分, 得
+
+$$
+\boldsymbol{r}\left(u,v\right)=\boldsymbol{c}\left(v\right)+u\,\boldsymbol{\xi},\quad\boldsymbol{c}\left(v\right):=\boldsymbol{r}\left(0,v\right).\tag{G}
+$$
+
+把 $\boldsymbol{\xi}$ 换成单位向量 $\boldsymbol{l}:=\frac{\boldsymbol{\xi}}{\left|\boldsymbol{\xi}\right|}$ (直母线方向), 则 (G) 即 $\boldsymbol{r}=\boldsymbol{c}\left(v\right)+\widetilde{u}\,\boldsymbol{l}$ ($\widetilde{u}=u\left|\boldsymbol{\xi}\right|$), 其中 $\left|\boldsymbol{l}\right|=1$ 为常向量, $\boldsymbol{c}'=\boldsymbol{r}_{2}$ 与 $\boldsymbol{l}=\boldsymbol{r}_{1}$ 线性无关 (参数表示正则). 由**定义 40.1** (直纹面), $S$ 是直纹面; 由**例 40.2** (直纹面的特殊类型) (1), $\boldsymbol{l}$ 常向量时直母线互相平行, $S$ 是柱面.
+
+$\blacksquare$
+
+第八步 (把准线改为与直母线正交, 再证它是圆). 取 $\left|\boldsymbol{\xi}\right|=1$ 并把 (G) 写成 $\boldsymbol{r}\left(u,v\right)=\boldsymbol{c}\left(v\right)+u\boldsymbol{\xi}$; 记 $\rho:=\left\langle\boldsymbol{c}',\boldsymbol{\xi}\right\rangle$, 则 $g_{12}=\left\langle\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right\rangle=\left\langle\boldsymbol{\xi},\boldsymbol{c}'\right\rangle=\rho$, 且 $\rho$ 为常数 (因 $g_{12}$ 为常数). 令
+
+$$
+\widetilde{\boldsymbol{c}}\left(v\right):=\boldsymbol{c}\left(v\right)-\rho\,v\,\boldsymbol{\xi},\quad{w}:=u+\rho\,v,
+$$
+
+则由 $\boldsymbol{\xi}$ 为常向量, $\widetilde{\boldsymbol{c}}'=\boldsymbol{c}'-\rho\boldsymbol{\xi}$ 与 $\partial_{1}$ 无关, 且
+
+$$
+\boldsymbol{r}=\boldsymbol{c}\left(v\right)+u\boldsymbol{\xi}=\widetilde{\boldsymbol{c}}\left(v\right)+\left(u+\rho{v}\right)\boldsymbol{\xi}=\widetilde{\boldsymbol{c}}\left(v\right)+w\,\boldsymbol{\xi},\quad
+\left\langle\widetilde{\boldsymbol{c}}',\boldsymbol{\xi}\right\rangle=\left\langle\boldsymbol{c}',\boldsymbol{\xi}\right\rangle-\rho=0.
+$$
+
+(这是常系数的线性换元, 故 $g_{\alpha\beta},b_{\alpha\beta}$ 仍为常数, 曲面不变.) 于是以下可设
+
+$$
+g_{11}=1,\quad{g}_{12}=0,\quad{g}_{22}=\left|\boldsymbol{c}'\right|^{2}=:\Lambda>0\,\left(\text{常数}\right),\quad
+b_{11}=b_{12}=0,\quad{b}_{22}\ne0\,\left(\text{常数}\right),\tag{H}
+$$
+
+其中 $b_{11}=\left\langle\partial_{1}\boldsymbol{r}_{1},\boldsymbol{n}\right\rangle=0$ 因 $\boldsymbol{r}_{1}=\boldsymbol{\xi}$ 为常向量, $\Lambda>0$ 因 $\boldsymbol{c}'=\boldsymbol{r}_{2}$ 与 $\boldsymbol{r}_{1}=\boldsymbol{\xi}$ 正交且非零, $b_{12}=0$ 与 $b_{22}\ne0$ 由 (C)(F).
+
+由于 $\mathrm{II}$ 的 $b_{22}$ 就是 $\left\langle\boldsymbol{c}'',\boldsymbol{n}\right\rangle$, 故
+
+$$
+\left\langle\boldsymbol{c}'',\boldsymbol{c}'\right\rangle=\frac{1}{2}\partial_{2}\left\langle\boldsymbol{c}',\boldsymbol{c}'\right\rangle=\frac{1}{2}\partial_{2}g_{22}=0,\quad
+\left\langle\boldsymbol{c}'',\boldsymbol{\xi}\right\rangle=\partial_{2}\left\langle\boldsymbol{c}',\boldsymbol{\xi}\right\rangle=0,\quad
+\left\langle\boldsymbol{c}'',\boldsymbol{n}\right\rangle=b_{22}.
+$$
+
+第一式用了 $\left|\boldsymbol{c}'\right|^{2}=g_{22}$ 为常数, 第三式用了 $\boldsymbol{r}_{22}=\boldsymbol{c}''$ 与**定义 23.1**. 前两式说明 $\boldsymbol{c}''$ 与 $\boldsymbol{c}'$ 和 $\boldsymbol{\xi}$ 都正交, 而 $\left\{\boldsymbol{c}',\boldsymbol{\xi}\right\}$ 张成的平面的法向与 $\boldsymbol{n}$ 平行 (因 $g_{12}=0$, $\boldsymbol{n}$ 垂直于 $\boldsymbol{\xi}$ 与 $\boldsymbol{c}'$), 故 $\boldsymbol{c}''$ 平行于 $\boldsymbol{n}$, 结合第三式得 $\left|\boldsymbol{c}''\right|=\left|b_{22}\right|$ 为常数.
+
+第九步 (准线是圆). 由 (H) 中 $g_{12}=0$ 知曲线 $\boldsymbol{c}$ 落在与 $\boldsymbol{\xi}$ 垂直的平面内, 故其挠率 $\tau_{c}=0$; 又 $\left|\boldsymbol{c}'\right|^{2}=\Lambda$ 与 $\left|\boldsymbol{c}''\right|^{2}=b_{22}^{2}$ 都是常数, 故 $\boldsymbol{c}$ 的曲率
+
+$$
+\kappa_{c}=\frac{\left|\boldsymbol{c}''\right|}{\left|\boldsymbol{c}'\right|^{2}}=\frac{\left|b_{22}\right|}{\Lambda}
+$$
+
+为常数. 曲率为常数且挠率为零的曲线是圆, 其半径 $\frac{\Lambda}{\left|b_{22}\right|}$; 于是 $S$ 是以 $\boldsymbol{\xi}$ 为轴, 以该圆为准线的圆柱面.
 
 $\blacksquare$
 
@@ -318,33 +419,45 @@ $\blacksquare$
 
 ### 解答 1.9
 
-记 $\varphi$ 的系数为 $E,F,G$, $\psi$ 的系数为 $L,M,N$. 两问中 $\varphi,\psi$ 都没有 $\mathrm{d}u\,\mathrm{d}v$ 项, 即 $F=0$, $M=0$, 故若这样的曲面 $S$ 存在, 则 $\left(u,v\right)$ 是 $S$ 的正交参数, 由**公式 4.3.16 (正交参数下的高斯方程)** 与**公式 4.3.17 (正交参数下的科达齐方程)** 必有
+两问的 $\varphi,\psi$ 都没有 $\mathrm{d}u\mathrm{d}v$ 项, 即 $g_{12}=b_{12}=0$. 若存在这样的曲面, 则由**定理 35.1** (曲面的基本定理), $\left(g_{\alpha\beta}\right)$ 与 $\left(b_{\alpha\beta}\right)$ 必须满足高斯-科达齐方程组; 下面用其中两个分量导出矛盾.
+
+(1) 此时 $g_{11}=g_{22}=1$, $b_{11}=1$, $b_{22}=-1$. $g_{\alpha\beta}$ 为常数, 由**推导 25.A** 的公式 $\Gamma^{\gamma}{}_{\alpha\beta}=0$; 代入**推导 35.B** 的高斯方程得 $-b_{\alpha\beta}b^{\delta}{}_{\gamma}+b_{\alpha\gamma}b^{\delta}{}_{\beta}=0$, 两端乘 $g_{\delta\varepsilon}$ 求和得 $b_{\alpha\beta}b_{\gamma\varepsilon}=b_{\alpha\gamma}b_{\beta\varepsilon}$. 取 $\left(\alpha,\beta,\gamma,\varepsilon\right)=\left(1,1,2,2\right)$:
 
 $$
--\frac{1}{\sqrt{EG}}\left[\left(\frac{\left(\sqrt{E}\right)_v}{\sqrt{G}}\right)_v+\left(\frac{\left(\sqrt{G}\right)_u}{\sqrt{E}}\right)_u\right]=\frac{LN-M^{2}}{EG},\tag{A}
+b_{11}b_{22}=b_{12}^{2}\,\Longrightarrow\,1\cdot\left(-1\right)=0,
 $$
 
-$$
-\left(\frac{L}{\sqrt{E}}\right)_v-\left(\frac{M}{\sqrt{E}}\right)_u-N\frac{\left(\sqrt{E}\right)_v}{G}-M\frac{\left(\sqrt{G}\right)_u}{\sqrt{EG}}=0,\tag{B}
-$$
-
-$$
-\left(\frac{N}{\sqrt{G}}\right)_u-\left(\frac{M}{\sqrt{G}}\right)_v-L\frac{\left(\sqrt{G}\right)_u}{E}-M\frac{\left(\sqrt{E}\right)_v}{\sqrt{EG}}=0.\tag{C}
-$$
-
-以下分别检验.
-
-(1) 此时 $E=G=1$, $F=0$, $L=1$, $M=0$, $N=-1$. (A) 给出 $0=-1$, 矛盾.
+矛盾. 故不存在这样的曲面.
 
 $\blacksquare$
 
-(2) 此时 $E=1$, $F=0$, $G=\cos^{2}u$, $L=\cos^{2}u$, $M=0$, $N=1$. (C): 由 $M=0$, (C) 化为
+(2) 此时 $g_{11}=1$, $g_{22}=\cos^{2}u$, $g_{12}=0$, $b_{11}=\cos^{2}u$, $b_{22}=1$, $b_{12}=0$. 记 $\partial_{1}=\frac{\partial}{\partial{u}}$, $\partial_{2}=\frac{\partial}{\partial{v}}$; 由 $g_{12}=0$ 得 $g^{11}=1$, $g^{22}=\frac{1}{\cos^{2}u}$.
+
+第一步 (算出用到的 $\Gamma$). 由**推导 25.A** 的公式, 并注意各量与 $v$ 无关:
 
 $$
-\left(\frac{N}{\sqrt{G}}\right)_u-L\frac{\left(\sqrt{G}\right)_u}{E}=\left(\frac{1}{\cos{u}}\right)_u-\cos^{2}u\cdot\frac{-\sin{u}}{1}=\frac{\sin{u}}{\cos^{2}u}+\cos^{2}u\sin{u}=\sin{u}\left(\frac{1}{\cos^{2}u}+\cos^{2}u\right).
+\Gamma^{1}{}_{22}=\frac{1}{2}g^{11}\left(2\partial_{2}g_{12}-\partial_{1}g_{22}\right)=-\frac{1}{2}\partial_{1}\left(\cos^{2}u\right)=\cos{u}\sin{u},
 $$
 
-若参数域内有 $\sin{u}\neq0$ 的点, 上式在该点不为零, 与 (C) 矛盾; 若参数域内 $u$ 恒等于某个 $k\pi$ ($\sin{u}$ 恒为零), 则 $\cos^{2}u=1$, 此时 $E=G=1$, $L=N=1$, 代入 (A): 左端 $=0$ ($E,G$ 为常数) 而右端 $=\frac{1\cdot1}{1}=1$, 仍矛盾.
+$$
+\Gamma^{2}{}_{21}=\Gamma^{2}{}_{12}=\frac{1}{2}g^{22}\left(\partial_{1}g_{22}\right)=\frac{1}{2\cos^{2}u}\cdot\left(-2\cos{u}\sin{u}\right)=-\tan{u}.
+$$
+
+第二步 (科达齐方程的 $\left(2,2,1\right)$ 分量). 在**推导 35.B** 的科达齐方程中取 $\alpha=2$, $\beta=2$, $\gamma=1$, 并用 $b_{12}=0$:
+
+$$
+\partial_{1}b_{22}-\partial_{2}b_{21}+\Gamma^{\varepsilon}{}_{22}b_{\varepsilon1}-\Gamma^{\varepsilon}{}_{21}b_{\varepsilon2}=0
+\,\Longrightarrow\,\partial_{1}b_{22}+\Gamma^{1}{}_{22}b_{11}-\Gamma^{2}{}_{21}b_{22}=0.
+$$
+
+代入 $b_{11}=\cos^{2}u$, $b_{22}=1$ 与第一步的结果:
+
+$$
+0+\cos{u}\sin{u}\cdot\cos^{2}u-\left(-\tan{u}\right)\cdot1=\cos^{3}u\sin{u}+\tan{u}
+=\sin{u}\left(\cos^{3}u+\frac{1}{\cos{u}}\right)=\frac{\sin{u}\left(\cos^{4}u+1\right)}{\cos{u}}.
+$$
+
+第三步 (导出矛盾). 上式在 $\sin{u}\ne0$ 的点不等于零, 与科达齐方程矛盾. 参数域 $D$ 是开集, 其上 $u$ 不能恒等于常数 (否则 $\boldsymbol{r}$ 关于 $u$ 退化), 故 $D$ 内必有一点使 $\sin{u}\ne0$, 在该点矛盾. 故不存在这样的曲面.
 
 $\blacksquare$
 
@@ -354,49 +467,78 @@ $\blacksquare$
 
 ### 解答 1.10
 
-第一步 (化为图象): 设在点 $P$ 处 $\nabla{F}\left(P\right)\neq\boldsymbol0$. 若 $F_z\left(P\right)\neq0$, 由隐函数定理, $P$ 邻近 $S$ 可写成图象 $z=z\left(x,y\right)$, 取参数 $\left(u,v\right)=\left(x,y\right)$, 则
+第一步 (化为函数图). 设在点 $P$ 处 $\nabla{F}\left(P\right)\ne\boldsymbol0$. 若 $F_{z}\left(P\right)\ne0$, 由隐函数定理, $P$ 邻近 $S$ 可写成图 $z=z\left(x,y\right)$, 取参数 $\left(u,v\right)=\left(x,y\right)$, 则 $\boldsymbol{r}\left(u,v\right)=\left(u,v,z\left(u,v\right)\right)$. 若 $F_{z}\left(P\right)=0$, 则 $F_{x},F_{y}$ 至少一个非零, 同法把 $x$ 或 $y$ 解成另两个变量的函数, 以下各步照搬; 又最终公式关于 $x,y,z$ 对称, 故三支给出同一个 $K$. 以下按 $F_{z}\ne0$ 写出.
+
+第二步 (图的几何量). 记 $p:=z_{u}$, $q:=z_{v}$, $r:=z_{uu}$, $s:=z_{uv}$, $t:=z_{vv}$, $W:=\sqrt{1+p^{2}+q^{2}}$. 由 $\boldsymbol{r}_{1}=\left(1,0,p\right)$, $\boldsymbol{r}_{2}=\left(0,1,q\right)$ 与**定义 21.1**,
 
 $$
-\boldsymbol{r}\left(u,v\right)=\left(u,v,z\left(u,v\right)\right).\tag{A}
+g_{11}=1+p^{2},\quad{g}_{12}=pq,\quad{g}_{22}=1+q^{2},\quad\det\left(g_{\alpha\beta}\right)=1+p^{2}+q^{2}=W^{2}.\tag{A}
 $$
 
-若 $F_z\left(P\right)=0$, 则 $F_x\left(P\right),F_y\left(P\right)$ 至少一个不为零, 同法把 $x$ 或 $y$ 解成另两个变量的函数, 下面每一步照搬即可; 且 (H) 关于 $x,y,z$ 循环对称, 故三支给出同一个 $K$. 以下按 $F_z\neq0$ 写出.
-
-第二步 (图象曲面的几何量): 记 $p:=z_u$, $q:=z_v$, $r:=z_{uu}$, $s:=z_{uv}$, $t:=z_{vv}$, $W:=\sqrt{1+p^{2}+q^{2}}$. 由**公式 10.1.2 (函数图的几何量)**, 该图象的第一, 第二基本形式系数为
+单位法向 $\boldsymbol{n}=\frac{\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}}{\left|\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\right|}=\frac{\left(-p,-q,1\right)}{W}$. 由 $\boldsymbol{r}_{11}=\left(0,0,r\right)$, $\boldsymbol{r}_{12}=\left(0,0,s\right)$, $\boldsymbol{r}_{22}=\left(0,0,t\right)$ 与**定义 23.1**,
 
 $$
-g_{11}=1+p^{2},\quad{g}_{12}=pq,\quad{g}_{22}=1+q^{2},\tag{B}
+b_{11}=\frac{r}{W},\quad{b}_{12}=\frac{s}{W},\quad{b}_{22}=\frac{t}{W}.\tag{B}
+$$
+
+第三步 (用 $F$ 的偏导表示 $p,q,r,s,t$). 由 $F\left(u,v,z\left(u,v\right)\right)=0$ 对 $u$, $v$ 求偏导:
+
+$$
+F_{x}+F_{z}p=0,\quad{F}_{y}+F_{z}q=0\,\Longrightarrow\,p=-\frac{F_{x}}{F_{z}},\quad{q}=-\frac{F_{y}}{F_{z}}.\tag{C}
+$$
+
+再对 $\left(C\right)$ 求一次偏导 (第一式对 $u$ 与对 $v$, 第二式对 $v$):
+
+$$
+F_{xx}+2F_{xz}p+F_{zz}p^{2}+F_{z}r=0,
 $$
 
 $$
-b_{11}=\frac{r}{W},\quad{b}_{12}=\frac{s}{W},\quad{b}_{22}=\frac{t}{W}.\tag{C}
+F_{xy}+F_{xz}q+F_{yz}p+F_{zz}pq+F_{z}s=0,\quad
+F_{yy}+2F_{yz}q+F_{zz}q^{2}+F_{z}t=0.
 $$
 
-第三步 (高斯曲率): 由**公式 3.5.4 (平均曲率与高斯曲率)** 与 (B)(C),
+把 (C) 代入并通分:
 
 $$
-K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}=\frac{rt-s^{2}}{\left(1+p^{2}+q^{2}\right)^{2}}.\tag{D}
+r=-\frac{F_{xx}F_{z}^{2}-2F_{xz}F_{x}F_{z}+F_{zz}F_{x}^{2}}{F_{z}^{3}},\quad
+t=-\frac{F_{yy}F_{z}^{2}-2F_{yz}F_{y}F_{z}+F_{zz}F_{y}^{2}}{F_{z}^{3}},
 $$
 
-第四步 ($p,q,r,s,t$ 换成 $F$ 的偏导): 由 $F\left(u,v,z\left(u,v\right)\right)=0$ 对 $u$, $v$ 求偏导得
-
 $$
-F_x+F_z{p}=0,\quad{F}_y+F_z{q}=0,\tag{E}
+s=-\frac{F_{xy}F_{z}^{2}-F_{xz}F_{y}F_{z}-F_{yz}F_{x}F_{z}+F_{zz}F_{x}F_{y}}{F_{z}^{3}}.\tag{D}
 $$
 
-故 $p=-\frac{F_x}{F_z}$, $q=-\frac{F_y}{F_z}$. 对 (E) 再求一次偏导得
+第四步 (总曲率). 由**定理 36.1** (高斯绝妙定理) 与 (A)(B),
 
 $$
-F_{xx}+2F_{xz}p+F_{zz}p^{2}+F_z{r}=0,\quad{F}_{xy}+F_{xz}q+F_{yz}p+F_{zz}pq+F_z{s}=0,\quad{F}_{yy}+2F_{yz}q+F_{zz}q^{2}+F_z{t}=0.\tag{F}
+K=\frac{b_{11}b_{22}-b_{12}^{2}}{g_{11}g_{22}-g_{12}^{2}}=\frac{rt-s^{2}}{W^{4}}.\tag{E}
 $$
 
-把 $p,q$ 代回 (F) 并通分:
+又由 (C) 与 $W^{2}=1+p^{2}+q^{2}$,
 
 $$
-r=-\frac{F_{xx}F_z^{2}-2F_{xz}F_xF_z+F_{zz}F_x^{2}}{F_z^{3}},\quad{s}=-\frac{F_{xy}F_z^{2}-F_{xz}F_yF_z-F_{yz}F_xF_z+F_{zz}F_xF_y}{F_z^{3}},\quad{t}=-\frac{F_{yy}F_z^{2}-2F_{yz}F_yF_z+F_{zz}F_y^{2}}{F_z^{3}}.\tag{G}
+W^{2}=1+\frac{F_{x}^{2}+F_{y}^{2}}{F_{z}^{2}}=\frac{F_{x}^{2}+F_{y}^{2}+F_{z}^{2}}{F_{z}^{2}},\quad\text{即}\quad{W}^{4}=\frac{\left|\nabla{F}\right|^{4}}{F_{z}^{4}}.\tag{F}
 $$
 
-代回即可.
+把 (D)(F) 代入 (E). 记
+
+$$
+\Omega:=F_{x}^{2}\left(F_{yy}F_{zz}-F_{yz}^{2}\right)+F_{y}^{2}\left(F_{xx}F_{zz}-F_{xz}^{2}\right)+F_{z}^{2}\left(F_{xx}F_{yy}-F_{xy}^{2}\right)
++2F_{x}F_{y}\left(F_{xz}F_{yz}-F_{xy}F_{zz}\right)+2F_{y}F_{z}\left(F_{xy}F_{xz}-F_{yz}F_{xx}\right)+2F_{x}F_{z}\left(F_{xy}F_{yz}-F_{xz}F_{yy}\right),
+$$
+
+则逐项展开并合并同类项得 $rt-s^{2}=\frac{\Omega}{F_{z}^{4}}$, 故
+
+$$
+K=\frac{\Omega}{F_{z}^{4}}\cdot\frac{F_{z}^{4}}{\left|\nabla{F}\right|^{4}}=\frac{\Omega}{\left|\nabla{F}\right|^{4}}.
+$$
+
+即
+
+$$
+K=\frac{F_{x}^{2}\left(F_{yy}F_{zz}-F_{yz}^{2}\right)+F_{y}^{2}\left(F_{xx}F_{zz}-F_{xz}^{2}\right)+F_{z}^{2}\left(F_{xx}F_{yy}-F_{xy}^{2}\right)+2F_{x}F_{y}\left(F_{xz}F_{yz}-F_{xy}F_{zz}\right)+2F_{y}F_{z}\left(F_{xy}F_{xz}-F_{yz}F_{xx}\right)+2F_{x}F_{z}\left(F_{xy}F_{yz}-F_{xz}F_{yy}\right)}{\left(F_{x}^{2}+F_{y}^{2}+F_{z}^{2}\right)^{2}}.
+$$
 
 $\blacksquare$
 
@@ -410,29 +552,52 @@ $$
 
 ### 解答 1.11
 
-第一步: 写出所给的系数: $E=1+u^{2}$, $F=0$, $G=u^{2}$, $L=\frac{1}{\sqrt{1+u^{2}}}$, $M=0$, $N=\frac{u^{2}}{\sqrt{1+u^{2}}}$.
-
-第二步: 由**公式 3.6.3 (旋转曲面的第一, 第二基本形式)**, 对旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(f\cos{v},f\sin{v},g\right)$ 有 $E=\left(f'\right)^{2}+\left(g'\right)^{2}$, $F=0$, $G=f^{2}$, $L=\frac{f'g''-f''g'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$, $M=0$, $N=\frac{fg'}{\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}}$.
-
-第三步: 取 $f\left(u\right)=u$. 则
+第一步 (读出系数). 题给的两个二次微分式都没有 $\mathrm{d}u\mathrm{d}v$ 项, 故
 
 $$
-g\left(u\right)=\frac{u^{2}}{2},\quad{g}''\left(u\right)=1,\quad{f}'=1,\quad{f}''=0.
+g_{11}=1+u^{2},\quad{g}_{12}=0,\quad{g}_{22}=u^{2},\quad
+b_{11}=\frac{1}{\sqrt{1+u^{2}}},\quad{b}_{12}=0,\quad{b}_{22}=\frac{u^{2}}{\sqrt{1+u^{2}}}.\tag{A}
 $$
 
-第四步 (验算 $L,N$): $\sqrt{\left(f'\right)^{2}+\left(g'\right)^{2}}=\sqrt{1+u^{2}}$, $f'g''-f''g'=1\cdot1-0\cdot{u}=1$, $fg'=u\cdot{u}=u^{2}$, 故
+第二步 (猜旋转面并按**例 38.1** 反解母线). 两基本形式只依赖 $u$, 且 $g_{22}$ 与 $b_{22}$ 之比只依赖 $u$, 这与**例 38.1** (旋转面及其主曲率) 的旋转面一致. 取母线 $x^{2}=u$, $x^{3}=\varphi\left(u\right)$, 即
 
 $$
-L=\frac{1}{\sqrt{1+u^{2}}},\quad{N}=\frac{u^{2}}{\sqrt{1+u^{2}}},
+\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},\varphi\left(u\right)\right).
 $$
 
-与第一步所给相同; 又 $F=M=0$ 与 $E,G$ 亦相同. 于是曲面为旋转抛物面
+由**例 38.1**, $\left(x^{2}\right)'=1$, $\left(x^{2}\right)''=0$, $\left(x^{3}\right)'=\varphi'$, $\left(x^{3}\right)''=\varphi''$, 故
 
 $$
-\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},\frac{u^{2}}{2}\right).
+A=\left(x^{2}\right)'^{2}+\left(x^{3}\right)'^{2}=1+\varphi'^{2},\quad
+g_{11}=1+\varphi'^{2},\quad{g}_{22}=u^{2},
 $$
 
-第五步 (唯一性): 由**定理 4.4.1 (唯一性定理)**, 第一, 第二基本形式相同. 因此所求曲面 (在参数变换与刚体运动的意义下) 唯一.
+$$
+b_{11}=\frac{\left(x^{2}\right)'\left(x^{3}\right)''-\left(x^{2}\right)''\left(x^{3}\right)'}{\sqrt{A}}=\frac{\varphi''}{\sqrt{1+\varphi'^{2}}},\quad
+b_{22}=\frac{x^{2}\left(x^{3}\right)'}{\sqrt{A}}=\frac{u\varphi'}{\sqrt{1+\varphi'^{2}}}.\tag{B}
+$$
+
+第三步 (解出母线). 由 (A)(B), $g_{11}=1+u^{2}$ 要求 $\varphi'^{2}=u^{2}$, 取 $\varphi'=u$; 又 $b_{22}=u^{2}/\sqrt{1+u^{2}}$ 要求
+
+$$
+\frac{u\varphi'}{\sqrt{1+\varphi'^{2}}}=\frac{u^{2}}{\sqrt{1+u^{2}}},
+$$
+
+以 $\varphi'=u$ 代入左端得 $\frac{u^{2}}{\sqrt{1+u^{2}}}$, 与右端相同, 故此式自动满足. 再由 $b_{11}$:
+
+$$
+\frac{\varphi''}{\sqrt{1+\varphi'^{2}}}=\frac{1}{\sqrt{1+u^{2}}},
+$$
+
+以 $\varphi'=u$, $\varphi''=1$ 代入左端得 $\frac{1}{\sqrt{1+u^{2}}}$, 亦满足. 故 $\varphi'=u$, 积分得 $\varphi\left(u\right)=\frac{u^{2}}{2}$ (常数项对应沿轴平移).
+
+第四步 (结论与唯一性). 于是所求曲面可取为旋转抛物面
+
+$$
+\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},\frac{u^{2}}{2}\right),
+$$
+
+且由 (A)(B) 的验算, 它的第一, 第二基本形式正是题给的两个二次微分式. 由**定理 35.1** (曲面的基本定理), 以给定 $\varphi,\psi$ 为第一, 第二基本形式的曲面在 $E^{3}$ 的刚体运动意义下唯一 (初始法向的取反只把 $\mathrm{II}$ 变号, 与题给 $\mathrm{II}$ 的符号相符, 故解在刚体运动与定向的意义下唯一).
 
 $\blacksquare$
 
@@ -446,60 +611,93 @@ $\blacksquare$
 
 ### 解答 1.12
 
-(1) 记 $\varphi$ 的系数为 $E,F=0,G$, $\psi$ 的系数为 $L=\lambda{E}$, $M=0$, $N=\lambda{G}$.
-
-第一步 (充分必要条件): 由**定理 4.4.2 (存在性定理)**, $\varphi,\psi$ 可作为某曲面的第一, 第二基本形式 $\Leftrightarrow$ 由 $g_{\alpha\beta}$ 按**公式 4.2.27 (用 $E,F,G$ 表示克里斯托费尔符号)** 定出的 $\Gamma^{\gamma}_{\alpha\beta}$ 与此 $b_{\alpha\beta}$ 满足 **公式 4.3.7 (高斯方程)** 与**公式 4.3.8 (科达齐方程)**. 因 $F=0$, 这两组方程按教材的化简就是**公式 4.3.16 (正交参数下的高斯方程)** 与**公式 4.3.17 (正交参数下的科达齐方程)**:
+(1) 记 $\varphi,\psi$ 的系数为
 
 $$
--\frac{1}{\sqrt{EG}}\left[\left(\frac{\left(\sqrt{E}\right)_v}{\sqrt{G}}\right)_v+\left(\frac{\left(\sqrt{G}\right)_u}{\sqrt{E}}\right)_u\right]=\frac{\lambda^{2}EG}{EG}=\lambda^{2},\tag{A}
+g_{11}=E,\quad{g}_{12}=0,\quad{g}_{22}=G;\quad{b}_{11}=\lambda{E},\quad{b}_{12}=0,\quad{b}_{22}=\lambda{G}.\tag{A}
 $$
 
-$$
-\left(\lambda\sqrt{E}\right)_v-\lambda{G}\frac{\left(\sqrt{E}\right)_v}{G}=0,\quad\left(\lambda\sqrt{G}\right)_u-\lambda{E}\frac{\left(\sqrt{G}\right)_u}{E}=0.\tag{B}
-$$
+第一步 (判定准则). 由**定理 35.1** (曲面的基本定理), $\varphi,\psi$ 可作为第一, 第二基本形式当且仅当 (A) 中的 $\left(g_{\alpha\beta}\right)$ 与 $\left(b_{\alpha\beta}\right)$ 满足高斯-科达齐方程组. 下面把这组方程在 (A) 之下算成 $E,G,\lambda$ 的条件.
 
-第二步 (化简 (B)): (B) 第一式中 $\lambda{G}\frac{\left(\sqrt{E}\right)_v}{G}=\lambda\left(\sqrt{E}\right)_v$, 而 $\left(\lambda\sqrt{E}\right)_v=\lambda_v\sqrt{E}+\lambda\left(\sqrt{E}\right)_v$, 故第一式即 $\lambda_v\sqrt{E}=0$; 由 $E>0$ 得
+第二步 (科达齐方程给出 $\lambda$ 为常数). 由 (A), $g_{12}=b_{12}=0$, 极像解答 1.6 的情形, 只是此处 $b_{\alpha\beta}=\lambda{g}_{\alpha\beta}$ 的比例函数 $\lambda$ 不必是主曲率. 由**推导 25.A** 算得
 
 $$
-\lambda_v=0.\tag{C}
+\Gamma^{1}{}_{12}=\frac{\partial_{2}g_{11}}{2g_{11}},\quad
+\Gamma^{2}{}_{11}=-\frac{\partial_{2}g_{11}}{2g_{22}},\quad
+\Gamma^{1}{}_{22}=-\frac{\partial_{1}g_{22}}{2g_{11}},\quad
+\Gamma^{2}{}_{21}=\frac{\partial_{1}g_{22}}{2g_{22}}.\tag{B}
 $$
 
-同理
+取科达齐方程 (**推导 35.B**) 的 $\left(1,1,2\right)$ 分量 $\alpha=\beta=1$, $\gamma=2$:
 
 $$
-\lambda_u=0.\tag{D}
+\partial_{2}b_{11}-\partial_{1}b_{12}+\Gamma^{\varepsilon}{}_{11}b_{\varepsilon2}-\Gamma^{\varepsilon}{}_{12}b_{\varepsilon1}=0
+\,\Longrightarrow\,\partial_{2}b_{11}+\Gamma^{2}{}_{11}b_{22}-\Gamma^{1}{}_{12}b_{11}=0.
 $$
 
-(C)(D) 即 $\lambda$ 为常数.
+把 (A)(B) 代入:
+
+$$
+\partial_{2}\left(\lambda{E}\right)-\frac{\partial_{2}E}{2G}\cdot\lambda{G}-\frac{\partial_{2}E}{2E}\cdot\lambda{E}
+=\left(\partial_{2}\lambda\right)E+\lambda\partial_{2}E-\frac{\lambda}{2}\partial_{2}E-\frac{\lambda}{2}\partial_{2}E=\left(\partial_{2}\lambda\right)E=0.
+$$
+
+因 $E>0$, 得 $\partial_{2}\lambda=0$. 同法取 $\alpha=\beta=2$, $\gamma=1$ 的分量并用 $\Gamma^{1}{}_{22}$, $\Gamma^{2}{}_{21}$ 得 $\left(\partial_{1}\lambda\right)G=0$, 即 $\partial_{1}\lambda=0$. 故
+
+$$
+\lambda\equiv\text{常数}.\tag{C}
+$$
 
 $\blacksquare$
 
-(2) 设 $E=G=:f\left(u,v\right)>0$.
-
-第一步: 由 (C)(D), $\lambda$ 为常数.
-
-第二步 (高斯方程): 由 $E=G=f$ 得 $\sqrt{E}=\sqrt{G}=\sqrt{f}$, $\sqrt{EG}=f$, 故 (A) 为
+第三步 (高斯方程给出 $K=\lambda^{2}$). 二维情形的高斯方程只有一个独立分量, 即 $R_{1212}=-\det\left(b_{\alpha\beta}\right)$ (见**定理 36.1** 的证明); 由**定理 36.1** (高斯绝妙定理) 与前一步的 (A),
 
 $$
--\frac{1}{f}\left[\left(\frac{\left(\sqrt{f}\right)_v}{\sqrt{f}}\right)_v+\left(\frac{\left(\sqrt{f}\right)_u}{\sqrt{f}}\right)_u\right]=\frac{\lambda^{2}f^{2}}{f^{2}}=\lambda^{2}.\tag{E}
+K=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}=\frac{\lambda^{2}EG}{EG}=\lambda^{2}.\tag{D}
 $$
 
-又 $\frac{\left(\sqrt{f}\right)_v}{\sqrt{f}}=\left(\ln\sqrt{f}\right)_v$, $\frac{\left(\sqrt{f}\right)_u}{\sqrt{f}}=\left(\ln\sqrt{f}\right)_u$; 记 $\Psi:=\ln\sqrt{f}=\frac12\ln{f}$ 与 $\Delta:=\frac{\partial^{2}}{\partial{u}^{2}}+\frac{\partial^{2}}{\partial{v}^{2}}$, 则 (E) 即
+而 $K$ 只依赖 $\left(g_{\alpha\beta}\right)=\mathrm{diag}\left(E,G\right)$, 即 $K$ 是由 $E,G$ 算出的一个量. 故高斯方程 $\Leftrightarrow$ 以 $E,G$ 为系数的第一基本形式具有常值高斯曲率 $\lambda^{2}$.
+
+第四步 (结论). $\varphi,\psi$ 可作为某曲面的第一, 第二基本形式 $\Leftrightarrow$
 
 $$
-\Delta\Psi=-\lambda^{2}f=-\lambda^{2}e^{2\Psi}\quad\left(\text{因~}f=e^{2\Psi}\right).\tag{F}
+\lambda\equiv\text{常数},\quad\text{且度量}\;E\,\mathrm{d}u^{2}+G\,\mathrm{d}v^{2}\;\text{的高斯曲率}\;K\equiv\lambda^{2}.\tag{E}
 $$
 
-(F) 正是刘维尔方程.
-
-第三步 ($\lambda=0$): 此时 (F) 为 $\Delta\Psi=0$, 标准解取 $\Psi=$ 常数, 即 $E=G=f$ 均为常数.
+特别地 $\lambda=0$ 时要求该度量平坦 ($K\equiv0$), 此时曲面是可展的 (由**定理 37.2** 与 $K=0$ 只是必要条件的一部分, 具体形状由 $E,G$ 定出).
 
 $\blacksquare$
 
-第四步 ($\lambda\neq0$): 取其常用通解
+(2) 设 $E=G=f\left(u,v\right)>0$, 即 $\varphi=f\left(\mathrm{d}u^{2}+\mathrm{d}v^{2}\right)$, $\psi=\lambda\varphi$.
+
+第一步 ($\lambda$ 为常数). 由 (1) 第二步, $\lambda\equiv$ 常数.
+
+第二步 (化为刘维尔方程). 此时 $\varphi$ 是共形度量: $\mathrm{I}=f\left(\mathrm{d}u^{2}+\mathrm{d}v^{2}\right)$, 取 $\rho:=\sqrt{f}$, 则 $\mathrm{I}=\rho^{2}\left(\mathrm{d}u^{2}+\mathrm{d}v^{2}\right)$. 记 $\Psi:=\ln\rho=\frac{1}{2}\ln{f}$, 则由平面上的共形度量公式 (可直接由 $\Gamma$ 与**定理 36.1** 验算) 有
 
 $$
-E=G=f\left(u,v\right)=\frac{4}{\lambda^{2}\left(1+u^{2}+v^{2}\right)^{2}}.
+K=-\frac{1}{\rho^{2}}\left(\partial_{1}^{2}\Psi+\partial_{2}^{2}\Psi\right)=-\frac{\Delta\Psi}{f},\quad\Delta:=\partial_{1}^{2}+\partial_{2}^{2}.\tag{F}
 $$
+
+于是 (1) 的条件 $K=\lambda^{2}$ 成为
+
+$$
+\Delta\Psi=-\lambda^{2}f=-\lambda^{2}e^{2\Psi}.\tag{G}
+$$
+
+(G) 即刘维尔方程; 于是 $f=e^{2\Psi}$, 其中 $\Psi$ 是 (G) 的任一解.
+
+第三步 (写出一族解). 取 $z=u+\mathrm{i}v$ 与任一解析函数 $w=w\left(z\right)$, 令
+
+$$
+f=\frac{4\left|w'\left(z\right)\right|^{2}}{\lambda^{2}\left(1+\left|w\left(z\right)\right|^{2}\right)^{2}},\tag{H}
+$$
+
+则 (G) 成立 (这可由直接求导验证: 对 $w=z$ 的情形, $\Psi=\ln\frac{2}{\lambda\left(1+u^{2}+v^{2}\right)}$, $\Delta\ln\left(1+u^{2}+v^{2}\right)=\frac{4}{\left(1+u^{2}+v^{2}\right)^{2}}$, 故 $\Delta\Psi=-\frac{4}{\left(1+u^{2}+v^{2}\right)^{2}}=-\lambda^{2}e^{2\Psi}$). 取 $w=z$ 得最常用的一支:
+
+$$
+E=G=f\left(u,v\right)=\frac{4}{\lambda^{2}\left(1+u^{2}+v^{2}\right)^{2}},\quad\lambda\equiv\text{常数},\tag{I}
+$$
+
+它正是半径 $\frac{1}{\left|\lambda\right|}$ 的球面在球极投影参数下的第一基本形式, 而 $\psi=\lambda\varphi$ 给出 $K=\lambda^{2}$, 与球面的 $K$ 相符.
 
 $\blacksquare$
