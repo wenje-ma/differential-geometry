@@ -1,0 +1,150 @@
+定理. 设 Sigma subset R^3 是正则, 紧
+闭曲面, 则 Sigma 上必有一点
+x_0 使 K(x_0)>0 (椭圆点)
+证明. 存在 R>0, 使
+S^2(R) 与 Sigma 相切
+并且 Sigma subset B_0(R).
+
+引理. 设有正则参数曲面 Sigma_(i), i=1,2
+Sigma_(1), Sigma_(2) 在 x_0 点有公共切平面 Pi
+并且 Sigma_(1), Sigma_(2) 在 x_0 附近都在 Pi 的一侧
+以及在 x_0 附近, Sigma_(2) 完全含在 Sigma_(1) 中,
+则 K_(2) ge K_(1)(x_0) ge 0.
+
+证明. Sigma_(1), gamma(i)=gamma(i)(u^1, u^2), 不妨设 x_0=0
+gamma_(i)(u)=partial/partial u^alpha gamma(i)|_0 du^alpha-1/2 h_(i)alphabeta(0) du^alpha du^beta+O(Gamma*partial/partial u gamma*du^2), |du|to 0
+(1) 由 Sigma_(i) 局部在 Pi 的一侧, 可设 h_(i)alphabeta(0) le -O, i=1,2
+(2) 当 |du| ll 1, gamma_(i)(du^1, du^2)=(partial/partial u^1 gamma du^1+partial/partial u^2 gamma du^2 (切)|_0, -h_(i)alphabeta(0) du^alpha du^beta (法))+O^2(下 d^2u...)
+在 x_0=0 一点
+总可以取 u^1, u^2, 使 I_(i) 都是对角形.
+I_(i)=g_(i)11(du^1)^2+g_(i)22(du^2)^2.
+
+在 Pi 中取一点 (x^1, x^2).
+设 x_(i) in Sigma_(i), 使得 x_(i) 投影到 P.
+x_(i) cong gamma_(i)(P^1/sqrt(g_(i)11(0)), P^2/sqrt(g_(i)22(0))).
+
+由 Sigma_(2) 含在 Sigma_(1) 中,
+h_(2)alphabeta P^alpha/sqrt(g_(i)alphaalpha(0)) P^beta/sqrt(g_(i)betabeta(0)) le h_(1)betabeta P^alpha/sqrt(g_(i)alphaalpha(0)) P^beta/sqrt(g_(i)betabeta(0))
+iff sqrt(g_(2))^(-1) h_(2)(sqrt(g_(2))^(-1))^top (=:H_2) le iff sqrt(g_(1))^(-1) h_(1)(sqrt(g_(1))^(-1))^top (=:H_1) le 0
+
+0 le (-H_1) le (-H_2)
+(1) Ker(H_1) ne {0}
+则 Ker(H_2) subset Ker(H_1)
+若 Ker(H_2) = Ker(H_1)
+implies K_(2)(x_0)K_1(x_0)=0
+若 Ker(H_2)={0}
+implies H_2 的特征全是负的
+K_(2)(x_0)=det(H_2)>0
+(2) 0<(-H_1)le(-H_2)
+iff 0<I_2times2 le sqrt(-H_1)^(-1)(-H_2)(sqrt(-H_1))^top
+implies sqrt(-1+1)^(-1)(-H_2)(sqrt(-H_1)^(-1))^top 两个特征值 ge 1
+implies det(sqrt(-H_1)^(-1)(-H_2)sqrt(-H_1)^(-1))^top=det(H_2)/det(H_1)=K_(2)(x_0)/K_(1)(x_0) ge 1
+
+命题. 设 Sigma 使参数曲面
+n 使沿 Sigma 的单位法向
+量场, 则
+N: Sigma to S^2(1)
+(u) to n(u).
+则 |partial/partial u^1 n times partial/partial u^2 n|/|partial/partial u^1 gamma times partial/partial u^2 gamma|=K.
+证明. partial/partial u^alpha n=h_alpha^beta partial/partial u^beta gamma
+det(partial/partial u n)=det(h_alpha^beta)=K.
+int_N(Sigma) dsigma_s^(n-1)(1)=int_D K|partial/partial u^alpha gamma times partial/partial u^beta gamma|du times du^beta
+=int_D K dsigma_Sigma.
+
+推论. 设 Sigma 使可定向紧闭曲面,
+n 使单位法向量
+则 int_N(Sigma) dsigma_s^2(1)=int_Sigma K dsigma_Sigma
+=2 pi chi(Sigma)
+
+int_Sigma K dsigma_Sigma=2 pi chi(Sigma)=4 pi(1-rho)
+(1) int_Sigma K_+ dsigma_Sigma ge 4 pi, K_pm=max{pm K,0}
+K_+(x) ne 0 iff x 是椭圆点.
+(1) iff N|_椭圆点=S^2(1).
+
+(1) 的证明
+设 p in S^2(1)
+f_p(x):=<p,x>, x in Sigma
+implies 存在 x_pm in Sigma' 使 f_p 在 x_pm 达到
+最大/小值.
+
+在 x_pm. 设 u 是局部参数
+0=partial/partial u^alpha f (x_pm)=<p,partial/partial u^alpha gamma | x_pm> implies p 是 x_pm 处的法向
+Sigma subset {f(x_0)le<p,x>le f(x_pm)}.
+在 x_+/x_-, p 分别是外/内法向.
+n=单位外法向
+implies n(x_+)=p, n(x-_)=-p,
+而 x_pm 是椭圆点 (K ge 0).
+
+(2)int_Sigma K dsigma_Sigma=int_Sigma(K_+-K_-)ge 4 pi-4 pi S.
+implies int_Sigma K_-=int_Sigma K_+-4 pi+4 pi S ge 4 pi S.
+
+命题. 设 Sigma 是紧致, 可定向
+闭曲面.
+则 int_Sigma |K| dsigma_Sigma ge 4 pi(1+S)
+
+命题. 设 Sigma 是紧致, 可定向闭曲面.
+则 int_Sigma |H|^2 dsigma_Sigma ge 4 pi, H=(K_1+K_2)/2.
+并且取等 iff Sigma 是球面.
+证明. int_Sigma H_2 ge int_{K ge 0}H^2 ge int_{K ge 0}K ge 4 pi.
+第一个不等号说明 K ge 0, 第二个说明 K_1=K_2(全脐), 第三个说明 K_1 K_2>0.
+等号 implies {K ge 0, K_1=K_2>0} iff 球面.
+
+命题. 设 gamma: [0,L] 是光滑闭曲线, tilde gamma(L,theta)=gamma(s)+R(cos theta N(s)+sin theta B(s))
+当 0 ll R ll 1, tilde r 是光滑紧闭曲面, 可定向.
+4 pi le int_tilde r K to 2 int_gamma k ds, R to 0.
+
+局部高斯-博内公式.
+设 Sigma: gamma=gamma(u) 上有曲边三角形 T,
+k_g ds=dtheta-omega
+(domega=K dsigma)
+int_partial T k_g ds=(theta(L)-theta(0))-int_T k dsigma
+theta-partial T 的切向与 u^1-曲线的夹角.
+theta(L)-theta(0)=2 pi, (partial T 是简单闭对角线)
+
+theta 只定义在参数域 D 中.
+
+设 Sigma 是可定向, 紧致闭曲面
+V 是 Sigma 上的光滑向量场.
+(1) 设 x_0 in Sigma, V(x_0) ne 0.
+存在 x_0 的邻域 U 以 U 上的参数
+(u^1, u^2), 使 u_U=partial/partial u^1 gamma.
+(2) 设 V(x_0)=0(奇点)
+
+R^2 上, (x^1, x^2) 使整体坐标
+向量场 V=V^alpha(x)e_alpha.
+V 只有孤立奇点.
+设 x_0 是孤立奇点.
+在 x_0 的邻域 U_0 上, V 除 x_0 外
+处处非零.
+
+设 gamma sim S^1 包围了 x_0.
+沿 gamma, V 与 e_1 的夹角 theta=theta(s).
+theta(s)=arctg V^2/V^1(x^1(s)).
+V 绕 gamma 一周.
+dtheta=d(V^2/V^1)/(1+(V^2/V^1)^2)
+=(V^1 dV^2-V^2 dV^1)/((V^1)^2+(V^2)^2)
+Delta_gamma theta=int_gamma(V^1 dot V^2-V^2 dot V^1)/||V||^2 ds
+注记. 对另一曲线 tilde r,
+设 tilde r 与 r 围成 Omega.
+Delta_ tilde gamma theta-Delta_gamma theta=int_Omega d(dtheta)=0.
+(若 V(x_0)ne 0 implies I_x_0=0)
+
+设 Sigma 是紧致的闭曲面.
+可定向. V 是 Sigma 上的光
+滑向量场, 并且 V 只有
+孤立奇点(implies 有限个).
+
+(1) 设 x_0 是孤立奇点.
+x_0 附近有局部参数 (u^1, u^2) in D.
+I_x_0:=1/2 pi int_gamma (V^2 dot V^1-V^1 dot V^2)/((V^1)^2+(V^2)^2)ds, gamma 包围 x_0, S^1 cong gamma subset D.
+(2) 2 pi sum_x_i I_x_i=int_Sigma K dsigma=2 pi chi(Sigma).
+
+设 x in gamma,
+W in T_x Sigma,
+W 沿 gamma 平行移动一周
+回到 x 变成 W'.
+angle(W, W^1)=int_Omega K dsigma.
+angle(V,W)-angle(V,W^1)
+=2 pi I-x_0-int_Omega K dsigma.
+
+2 pi I_x_0=int_Omega K dsigma + Delta_gamma(V, tilde W).
