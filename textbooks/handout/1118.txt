@@ -1,0 +1,124 @@
+常高斯曲率的闭曲面
+
+定理: 设 Sigma 是光滑紧致
+的闭曲面, 并且 K equiv 1.
+则 Sigma 是单位曲面.
+(1) partial Sigma=emptyset.
+
+证明. (1) 由于 Sigma 闭, 紧致
+implies Sigma 上一定有椭圆点.
+implies K>0.
+以下设 K equiv 1.
+(2) 只要证明任意的 x in Sigma, x 都是脐点.
+由于 K_1 ge K_2 (主曲率) 在 Sigma 上连续.
+存在 x_0 使得 K_1(x_0)=max_Sigma K_1, 又 K_1 K_2=1,
+implies K_2(x_0)=min_Sigma K_2.
+
+只要证
+K_1(x_0)=K_2(x_0).
+否则, 设 K_1(x_0)>K_2(x_0)>0.
+由连续性, 在 x_0 的某个邻域 U 上,
+K_1(x)>K_2(x)>0.
+并且 U 上有曲率线网 u^1, u^2,
+使得 I=g_11(du^1)^2+g_22(du^2)^2,
+II=K_1 g_11(du^1)^2+K_2 g_22(du^2)^2
+
+1 equiv K=-1/(2 sqrt(g_11 g_22))(((g_11)_2/sqrt(g_11 g_22))_2+((g_22)_1/sqrt(g_11 g_22))_1)
+=-1/(2 sqrt(g_11 g_22))(((g_11)_22+(g_22)_11)/sqrt(g_11 g_22)+g*partial g).
+(K_1)_2 g_11=1/2(K_2-K_1)(g_11)_2.
+(K_2)_1 g_22=1/2(K_1-K_2)(g_22)_1.
+-2 g_11 g_22=(g_11)_22+(g_22)_11+g*partial g.
+=2(K_1)_22 g_11/(K_2-K_1)+2(K_1)_11 g_22/(K_1-K_2)+g*partial g+partial K*partial g
+
+((K_1)_2 g_11)_2=1/2(K_2-K_1)(g_11)_22
++partial K*partial g
+(K_1)_22 g_11=1/2(K_2-K_1)(g_11)_22+partial K*partial g
+(K_2)_11 g_22=1/2(K_1-K_2)(g_22)_11+partial K*partial g
+
+在 x_0 点, partial K=partial g=0
+K_1-K_2>0
+(K_1)_22 le 0, (K_2)_11 ge 0
+0>-2 g_11 g_22|_x_0
+=(2(K_1)_22 g_11/(K_2-K_1)+2(K_1)_11 g_22/(K_1-K_2))+_x_0
+ge 0, 矛盾.
+
+implies 在 K 的极值点,
+K_1(x_0) ge K_1(x) ge K_2(x) ge K_2(x_0)=K_1(x_0)
+implies K_1(x) equiv K_2(x).
+
+曲面的拉普拉斯.
+df=partial f/partial u^alpha du^alpha.
+nabla df=Sigma(*)_alpha du^alpha
+nabla_(partial/partial u^epsilon)(df)
+=partial^2 f/partial u^alpha partial u^epsilon du^alpha-Gamma_(partial epsilon)^tau partial f/partial u^tau du^alpha
+nabla^2 f=partial^2 f/partial u^alpha partial u^epsilon-Gamma_(alpha epsilon^tau partial f/partial u^tau) du^alpha du^epsilon
+定义. f in C^infty(Sigma)
+f 的二阶协变函数
+f_(,alpha epsilon)=partial^2 f/partial u^alpha partial u^epsilon-partial f/partial u^tau Gamma_(alpha epsilon)^tau
+命题. 设有参数代换 u^alpha=u^alpha(bar u)
+f_(,bar alpha bar epsilon)=partial u^lambda/partial u^(bar alpha)(f_(,alpha epsilon)) partial u^mu/partial bar u^epsilon.
+g_(bar alpha bar beta)=partial u^lambda/partial bar u^alpha g_lambdamu partial u^mu/partial u^beta
+
+命题. 设 x_0 是 f 在 Sigma 内的极值点,
+则 x_0 是极大 (小) 值 iff
+(f_(,alphabeta))(x_0)le 0(ge 0)
+定义. Delta_Sigma=tr(g^(-1) nabla^2 f)
+=g^alphabeta f_(,alphabeta)
+
+定理. 设 Sigma 是带边的光滑曲面, 可定向
+x 是 Sigma 上光滑向量场,
+n 是边界在 Sigma 中的单位内
+法向量场. (n in T Sigma, n perp partial Sigma)
+则 int_Sigma x^(dot alpha)_(,alpha) dV=int_(partial Sigma)<x,n>dsigma_(partial Sigma).
+
+证明. 不妨设参数 (u^1, u^2) 使得
+u^1 是 partial Sigma 的弧长
+u^2-曲线沿着 partial Sigma 与 partial Sigma 正交.
+即 n=c partial gamma/partial u^2.
+
+如 gamma(u)=exp_(c(u^1))(u^2 n), 不妨设 x|_(partial u setminus partial Sigma)=0.
+int_(partial U)<x,n> du^1
+=int_0^L x^2 du^1=int_U(-partial x^2/partial u^2)du^1 du^2
+x^beta Gamma_2beta^2, Gamma_2beta=1/2 g^2epsilon(partial_2 g_epsilonbeta+partial_beta g_2epsilon-partial_epsilon g_2beta)
+=partial/partial u^2 sqrt(det(g)).
+
+x_(,beta)^alpha=partial x^alpha/partial u^beta+Gamma_taubeta^alpha x^tau
+x_(,alpha)^alpha=partial x^alpha/partial u^beta+Gamma_alphatau^alpha x^tau
+Gamma_alphatau^alpha=1/2 g^alphatau(partial_tau g^alphabeta+partial_alpha g_tauepsilon-partial_epsilon g_alphatau)
+
+...一堆式子, 似乎是推导散度定理的过程.
+
+定理. (散度定理)
+int_Sigma x^alpha_(,alpha) dsigma=int_(partial Sigma)<x,n>ds,
+推论. 设 X=u grad f
+=u g^alphabeta partial f/partial u^beta partial gamma/partial u^alpha
+x^alpha=u g^alphabeta partial f/partial u^beta partial gamma/partial alpha.
+x_(,epsilon)^alpha=(u g^alphabeta partial f/partial u^beta)_epsilon+u g^taubeta partial f/partial u^beta Gamma_tauepsilon^alpha
+=phi partial^2 f/partial u^beta partial u^epsilon g^alphabeta-Gamma_betaepsilon^gamma partial f/partial u^gamma g^alphabeta phi+<nabla phi, nabla f>
+x_(,alpha)^alpha=phi Delta f+<nabla phi,nabla f>
+
+int_Sigma(phi Delta f+<nabla phi, nabla f>)dsigma
+=int_(partial Sigma)phi partial f/partial n ds
+当 partial Sigma=emptyset implies int_Sigma phi Delta f dV=-int_Sigma<nabla phi, nabla f>dV.
+int_Sigma phi g^alphabeta=f_(,alphabeta) dV=int_Sigma phi_(,beta) g^alphabeta f_(,alpha) dV.
+推论. 取 phi equiv 1, 设 partial Sigma=emptyset, implies int_Sigma Delta f=0.
+
+定理. 设 Sigma 是紧的, 可定向闭曲面, 连通,
+partial Sigma=emptyset
+若 Delta f=0(调和函数)
+则 f 为常数
+证明. 0=int_Sigma f Delta d dV
+=-int_Sigma (nabla f)^2 dV
+implies nabla f=0.
+implies f 为常数.
+
+设 Sigma 是 R^3 中的正则曲面.
+n 是沿 Sigma 的单位法向量场, f 定义在 Sigma 附近
+(Delta_R^3 f)|_Sigma=Delta_Sigma f+H partial/partial n f+partial_2/partial n^2.
+H=tr(g^(-1)h)
+设 u^1, u^2 是 Sigma 的参数,
+phi(u^1,u^2,t):=gamma(u^1,u^2)+t n(u).
+则 (u^1,u^2,t) 是 Sigma 的一个邻域内 R^3
+的参数.
+g_R^3=<partial Phi/partial u^alpha,partial Phi/partial u^beta>
+=g_alphabeta+2 t h_alphabeta+t^2 h_alphaepsilon h_beta^epsilon.
