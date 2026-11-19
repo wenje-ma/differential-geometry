@@ -16,10 +16,6 @@
 > 
 > 设 $C=\boldsymbol{c}\left(s\right)\subset{S}$ 以弧长参数化; 若其测地曲率 $k_g\equiv0$, 则称 $C$ 是曲面 $S$ 上的一条测地线.
 
-> **命题 7.2.2 (测地线方程)**
-> 
-> $C$ 是测地线, 当且仅当 $\ddot{u}^\alpha+\Gamma^\alpha{}_{\varepsilon\tau}\left(u\left(s\right)\right)\dot{u}^\varepsilon\dot{u}^\tau=0$, $\alpha=1,2$.
-
 > **推导 7.3.1 (正交参数网下的测地曲率)**
 > 
 > 设 $S$ 上有正交参数网 $\mathrm{I}=g_{11}\left(\mathrm{d}u^1\right)^2+g_{22}\left(\mathrm{d}u^2\right)^2$ $\left(g_{12}=0\right)$, 取 $\boldsymbol{e}_\alpha:=\frac{1}{\sqrt{g_{\alpha\alpha}}}\frac{\partial\boldsymbol{r}}{\partial{u}^\alpha}$, $\boldsymbol{n}=\boldsymbol{e}_1\times\boldsymbol{e}_2$, 曲线单位切向量 $\dot{\boldsymbol{c}}=\cos\theta\,\boldsymbol{e}_1+\sin\theta\,\boldsymbol{e}_2$, 取 $\boldsymbol{t}_g=-\sin\theta\,\boldsymbol{e}_1+\cos\theta\,\boldsymbol{e}_2$, 则 $k_g=\theta'\left(s\right)-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta$; 其中 $\Gamma^1{}_{12}=\frac{\partial_2g_{11}}{2g_{11}}$, $\Gamma^1{}_{22}=-\frac{\partial_1g_{22}}{2g_{11}}$, $\Gamma^2{}_{11}=-\frac{\partial_2g_{11}}{2g_{22}}$, $\Gamma^2{}_{12}=\frac{\partial_1g_{22}}{2g_{22}}$.
@@ -88,18 +84,16 @@ $$
 
 ### 解答 1.10
 
-直接求导得
+(1) 直接求导得
 
 $$
-\boldsymbol{r}_u=\left(-a\sin{u}\cos{v},-a\sin{u}\sin{v},a\cos{u}\right),\quad\boldsymbol{r}_v=\left(-a\cos{u}\sin{v},a\cos{u}\cos{v},0\right),
-$$
-
-$$
-g_{11}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=a^2\left(\sin^2u\cos^2v+\sin^2u\sin^2v+\cos^2u\right)=a^2,
-$$
-
-$$
-g_{12}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle=a^2\sin{u}\cos{u}\sin{v}\cos{v}-a^2\sin{u}\cos{u}\sin{v}\cos{v}=0,\quad{g}_{22}=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle=a^2\cos^2u\left(\sin^2v+\cos^2v\right)=a^2\cos^2u,
+\begin{aligned}
+\boldsymbol{r}_u&=\left(-a\sin{u}\cos{v},-a\sin{u}\sin{v},a\cos{u}\right),\\
+\boldsymbol{r}_v&=\left(-a\cos{u}\sin{v},a\cos{u}\cos{v},0\right),\\
+g_{11}&=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=a^2\left(\sin^2u\cos^2v+\sin^2u\sin^2v+\cos^2u\right)=a^2,\\
+g_{12}&=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle=a^2\sin{u}\cos{u}\sin{v}\cos{v}-a^2\sin{u}\cos{u}\sin{v}\cos{v}=0,\\
+g_{22}&=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle=a^2\cos^2u\left(\sin^2v+\cos^2v\right)=a^2\cos^2u,\\
+\end{aligned}
 $$
 
 故由**定义 3.3.1 (第一基本形式)**
@@ -144,13 +138,11 @@ $$
 
 $\blacksquare$
 
-下面求纬圆的测地曲率. 纬圆 $u\equiv{u}_0$ $\left(\left|u_0\right|<\pi/2\right)$ 的切向量沿 $v$ 线, 故 $\theta\equiv\pi/2$, $\dot\theta=0$; 又 $s$ 是纬圆的弧长参数, 由 $\left|\dot{\boldsymbol{c}}\right|=\left|\dot{v}\right|\sqrt{g_{22}}=1$ 得 $\dot{v}=1/\left(a\cos{u}_0\right)$. 代入上面 $k_g$ 的表达式
+(2) 纬圆 $u\equiv{u}_0$ $\left(\left|u_0\right|<\pi/2\right)$ 的切向量沿 $v$ 线, 故 $\theta\equiv\pi/2$, $\dot\theta=0$; 又 $s$ 是纬圆的弧长参数, 由 $\left|\dot{\boldsymbol{c}}\right|=\left|\dot{v}\right|\sqrt{g_{22}}=1$ 得 $\dot{v}=1/\left(a\cos{u}_0\right)$. 代入上面 $k_g$ 的表达式
 
 $$
 k_g=-\sin{u}_0\cdot\frac{1}{a\cos{u}_0}=-\frac{\tan{u}_0}{a}.
 $$
-
-若把 $\boldsymbol{n}$ 取成外法向, 则 $k_g=+\tan{u}_0/a$.
 
 $\blacksquare$
 
@@ -172,14 +164,6 @@ $$
 k_g=\theta'-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta=0-0+\frac{2ff'}{2f^2\sqrt{A}}\cdot1=\frac{f'\left(u\right)}{f\left(u\right)\sqrt{\left(f'\right)^2+\left(g'\right)^2}}.
 $$
 
-作为核对, 纬圆是半径 $f$ 的圆, 其空间曲率 $\kappa=1/f$; 由**例 6.2.1 (旋转面及其主曲率)**, 沿纬线方向的法曲率 $k_n=k_2=g'/\left(f\sqrt{A}\right)$; 由**说明 7.11.2 (测地曲率与法曲率的关系)**, $\kappa^2=k_g^2+k_n^2$, 故
-
-$$
-k_g^2=\frac{1}{f^2}-\frac{\left(g'\right)^2}{f^2A}=\frac{A-\left(g'\right)^2}{f^2A}=\frac{\left(f'\right)^2}{f^2A},
-$$
-
-与上面的绝对值相符, 符号由**推导 7.3.1 (正交参数网下的测地曲率)** 的定向给出.
-
 $\blacksquare$
 
 ## 1.12 (沿曲线的正交标架与测地挠率)
@@ -200,21 +184,13 @@ $$
 
 ### 解答 1.12
 
-由 $\left\langle\boldsymbol{e}_i,\boldsymbol{e}_j\right\rangle=\delta_{ij}$ 对 $s$ 求导得 $\left\langle\dot{\boldsymbol{e}}_i,\boldsymbol{e}_j\right\rangle+\left\langle\boldsymbol{e}_i,\dot{\boldsymbol{e}}_j\right\rangle=0$. 把 $\dot{\boldsymbol{e}}_i$ 按标架展开为 $\dot{\boldsymbol{e}}_i=a_{ij}\boldsymbol{e}_j$ (对 $j$ 求和), 则 $a_{ij}=\left\langle\dot{\boldsymbol{e}}_i,\boldsymbol{e}_j\right\rangle$, 上面的式子即 $a_{ij}+a_{ji}=0$. 于是 $a_{11}=a_{22}=a_{33}=0$, 剩下三个独立系数
-
-$$
-\lambda_1:=a_{12},\quad\lambda_2:=a_{13},\quad\lambda_3:=a_{23},
-$$
-
-题给的矩阵正是这个系数阵.
-
 以下按右手标架 $\boldsymbol{e}_1\times\boldsymbol{e}_2=\boldsymbol{e}_3$ 取定 ($\boldsymbol{e}_2$ 若反向, 下面 $\lambda_1$ 的符号随之改变). 于是
 
 $$
 \boldsymbol{e}_2=\boldsymbol{e}_3\times\boldsymbol{e}_1=\boldsymbol{n}\times\boldsymbol{e}_1.
 $$
 
-先证 (1). $\boldsymbol{e}_1=\dot{\boldsymbol{r}}=\boldsymbol{t}$, $\boldsymbol{e}_3=\boldsymbol{n}$, 故 $\dot{\boldsymbol{e}}_1=\dot{\boldsymbol{t}}$; 由**推导 7.11.1 (切向分解与法曲率)** 与**说明 7.11.2 (测地曲率与法曲率的关系)**
+(1) $\boldsymbol{e}_1=\dot{\boldsymbol{r}}=\boldsymbol{t}$, $\boldsymbol{e}_3=\boldsymbol{n}$, 故 $\dot{\boldsymbol{e}}_1=\dot{\boldsymbol{t}}$; 由**推导 7.11.1 (切向分解与法曲率)** 与**说明 7.11.2 (测地曲率与法曲率的关系)**
 
 $$
 \dot{\boldsymbol{e}}_1=\dot{\boldsymbol{t}}=k_g\left(\boldsymbol{n}\times\boldsymbol{t}\right)+k_n\boldsymbol{n}=k_g\boldsymbol{e}_2+k_n\boldsymbol{e}_3,
@@ -228,7 +204,7 @@ $$
 
 $\blacksquare$
 
-再证 (2). 题给矩阵的第二行给出 $\dot{\boldsymbol{e}}_2=-\lambda_1\boldsymbol{e}_1+\lambda_3\boldsymbol{e}_3$, 故
+(2) 题给矩阵的第二行给出 $\dot{\boldsymbol{e}}_2=-\lambda_1\boldsymbol{e}_1+\lambda_3\boldsymbol{e}_3$, 故
 
 $$
 \lambda_3=\left\langle\dot{\boldsymbol{e}}_2,\boldsymbol{e}_3\right\rangle=-\left\langle\boldsymbol{e}_2,\dot{\boldsymbol{e}}_3\right\rangle;
@@ -264,15 +240,7 @@ $$
 
 ### 解答 1.13
 
-令 $\boldsymbol{e}_2:=\boldsymbol{n}\times\boldsymbol{v}$. 由 $\left|\boldsymbol{v}\right|=1$, $\left\langle\boldsymbol{v},\boldsymbol{n}\right\rangle=0$ 得 $\left|\boldsymbol{e}_2\right|=1$ 且 $\left\langle\boldsymbol{v},\boldsymbol{e}_2\right\rangle=0$, 故 $\left\{\boldsymbol{v},\boldsymbol{e}_2\right\}$ 是 $T_{\boldsymbol{r}\left(t\right)}S$ 的单位正交基; 又
-
-$$
-\boldsymbol{v}\times\boldsymbol{e}_2=\boldsymbol{v}\times\left(\boldsymbol{n}\times\boldsymbol{v}\right)=\boldsymbol{n}\left\langle\boldsymbol{v},\boldsymbol{v}\right\rangle-\boldsymbol{v}\left\langle\boldsymbol{v},\boldsymbol{n}\right\rangle=\boldsymbol{n},
-$$
-
-故 $\left\{\boldsymbol{v},\boldsymbol{e}_2,\boldsymbol{n}\right\}$ 是右手正交标架.
-
-取沿曲线光滑的 $\theta$ 使
+令 $\boldsymbol{e}_2:=\boldsymbol{n}\times\boldsymbol{v}$, 则 $\left\{\boldsymbol{v},\boldsymbol{e}_2,\boldsymbol{n}\right\}$ 是右手正交标架. 取沿曲线光滑的 $\theta$ 使
 
 $$
 \boldsymbol{w}=\cos\theta\,\boldsymbol{v}+\sin\theta\,\boldsymbol{e}_2,
@@ -292,7 +260,7 @@ $$
 \left\langle\boldsymbol{n}\times\boldsymbol{a},\boldsymbol{n}\times\boldsymbol{b}\right\rangle=\left\langle\boldsymbol{n},\boldsymbol{n}\right\rangle\left\langle\boldsymbol{a},\boldsymbol{b}\right\rangle-\left\langle\boldsymbol{n},\boldsymbol{b}\right\rangle\left\langle\boldsymbol{a},\boldsymbol{n}\right\rangle=\left\langle\boldsymbol{a},\boldsymbol{b}\right\rangle.
 $$
 
-由**定义 9.2.1 (协变微分)** 的 Leibniz 法则, 对上面 $\boldsymbol{w}$ 的展开式求导,
+由**定义 9.2.1 (协变微分)** 的莱布尼茨法则, 对上面 $\boldsymbol{w}$ 的展开式求导,
 
 $$
 \frac{D\boldsymbol{w}}{\mathrm{d}t}=\theta'\left(-\sin\theta\,\boldsymbol{v}+\cos\theta\,\boldsymbol{e}_2\right)+\cos\theta\frac{D\boldsymbol{v}}{\mathrm{d}t}+\sin\theta\frac{D\boldsymbol{e}_2}{\mathrm{d}t}.
@@ -410,27 +378,33 @@ $$
 g_{11}=1+\left(f'\right)^2=:A,\quad{g}_{12}=0,\quad{g}_{22}=u^2.
 $$
 
-由**定义 9.3.1 (克里斯托费尔符号)**, 并注意 $A$ 只依赖 $u$, 得
+$g_{12}=0$ 即参数网正交; 取 $\boldsymbol{e}_1=\boldsymbol{r}_u/\sqrt{g_{11}}$, $\boldsymbol{e}_2=\boldsymbol{r}_v/\sqrt{g_{22}}$, 记 $\theta$ 为曲线单位切向量 $\dot{\boldsymbol{c}}$ 与 $\boldsymbol{e}_1$ (即经线) 的夹角. 由 $\dot{\boldsymbol{c}}=\dot{u}\boldsymbol{r}_u+\dot{v}\boldsymbol{r}_v$, $\left|\dot{\boldsymbol{c}}\right|=1$ 与 $\left\{\boldsymbol{e}_1,\boldsymbol{e}_2\right\}$ 单位正交得
 
 $$
-\Gamma^1{}_{11}=\frac{A'}{2A},\quad\Gamma^1{}_{12}=0,\quad\Gamma^1{}_{22}=-\frac{u}{A},\quad\Gamma^2{}_{11}=0,\quad\Gamma^2{}_{12}=\frac{1}{u},\quad\Gamma^2{}_{22}=0.
+\cos\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_1\right\rangle=\dot{u}\sqrt{g_{11}}=\dot{u}\sqrt{A},\quad\sin\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_2\right\rangle=\dot{v}\sqrt{g_{22}}=u\dot{v}.
 $$
 
-由**命题 7.2.2 (测地线方程)**, 以弧长 $s$ 为参数, 测地线满足
+设 $C$ 是测地线, 由**定义 7.2.1 (测地线)** $k_g\equiv0$; $A$ 与 $g_{22}=u^2$ 都只依赖 $u$, 故 $\partial_2g_{11}=0$, $\partial_1g_{22}=2u$, 代入**推论 7.3.2 (正交参数网下的测地线方程)**
 
 $$
-\ddot{u}+\frac{A'}{2A}\dot{u}^2-\frac{u}{A}\dot{v}^2=0,\quad\ddot{v}+\frac{2}{u}\dot{u}\dot{v}=0.
+\theta'=\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta-\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta=-\frac{2u}{2u^2\sqrt{A}}\sin\theta=-\frac{\sin\theta}{u\sqrt{A}}.
 $$
 
-第二式乘以 $u^2$ 得 $\left(u^2\dot{v}\right)'=u^2\ddot{v}+2u\dot{u}\dot{v}=0$, 故
+于是
 
 $$
-u^2\dot{v}\equiv{h}
+\frac{\mathrm{d}}{\mathrm{d}s}\left(u\sin\theta\right)=\dot{u}\sin\theta+u\cos\theta\,\theta'=\frac{\cos\theta}{\sqrt{A}}\sin\theta-\frac{u\cos\theta\sin\theta}{u\sqrt{A}}=0,
+$$
+
+故沿 $C$
+
+$$
+u\sin\theta\equiv{h}
 $$
 
 为常数.
 
-由 $\left|\dot{\boldsymbol{c}}\right|^2=A\dot{u}^2+u^2\dot{v}^2=1$ 与 $u^2\dot{v}=h$ 得
+由 $\left|\dot{\boldsymbol{c}}\right|^2=A\dot{u}^2+u^2\dot{v}^2=1$ 与 $u\sin\theta=u^2\dot{v}=h$ 得
 
 $$
 A\dot{u}^2=1-\frac{h^2}{u^2},
@@ -440,7 +414,7 @@ $$
 
 $h=0$ 时 $\dot{v}=0$, 即 $v\equiv{v}_0$, 曲线是经线, 其弧长参数满足 $A\dot{u}^2=1$, 即 $\dot{u}=\pm1/\sqrt{A}$.
 
-$h<0$ 时把 $v$ 换成 $-v$ 即化归 $h>0$ (曲面在该变换下不变). 设 $h>0$, 把 $\dot{v}=h/u^2$ 与 $\dot{u}$ 相除,
+不妨设 $h>0$ (否则把 $v$ 换成 $-v$ 即化归 $h>0$), 把 $\dot{v}=h/u^2$ 与 $\dot{u}$ 相除,
 
 $$
 \frac{\mathrm{d}v}{\mathrm{d}u}=\frac{\dot{v}}{\dot{u}}=\pm\frac{h/u^2}{\sqrt{\left(1-h^2/u^2\right)/A}}=\pm\frac{h\sqrt{A}}{u\sqrt{u^2-h^2}},
@@ -452,16 +426,6 @@ $$
 v=v_0\pm\int_{h}^{u}\frac{h\sqrt{1+\left(f'\left(\sigma\right)\right)^2}}{\sigma\sqrt{\sigma^2-h^2}}\,\mathrm{d}\sigma,\quad{u}>h.
 $$
 
-由 $\sin\theta=\dot{v}\sqrt{g_{22}}=u\dot{v}=h/u$, 在 $u=h$ 处 $\sin\theta=1$, 即 $\theta=\pi/2$: 曲线在该点与纬线相切; 又 $\dot{u}^2$ 只依赖 $u$, 故曲线关于 $u=h$ 对称, 在此处转向.
-
-最后验证充分性. 记 $E:=A\dot{u}^2+u^2\dot{v}^2$; 由测地线方程的两式,
-
-$$
-E'=2A\dot{u}\ddot{u}+A'\dot{u}^3+2u\dot{u}\dot{v}^2+2u^2\dot{v}\ddot{v}=2\dot{u}\left(A\ddot{u}+\frac{A'}{2}\dot{u}^2-u\dot{v}^2\right),
-$$
-
-故在 $\dot{u}\ne0$ 处, $E\equiv1$ 与第一式等价; 于是上两段给出的曲线 (以弧长参数化, 满足 $u^2\dot{v}=h$ 与 $E=1$) 都满足测地线方程, 都是测地线.
-
 $\blacksquare$
 
 ## 2 (圆柱面的和乐群)
@@ -469,8 +433,6 @@ $\blacksquare$
 试确定圆柱面 $\left\{\left(x,y,z\right)\mid{x}^2+y^2=1\right\}$ 的和乐群.
 
 ### 解答 2
-
-固定圆柱面上的点 $P$. 对以 $P$ 为基点的分段光滑闭曲线 $\boldsymbol{c}$ $\left(\boldsymbol{c}\left(0\right)=\boldsymbol{c}\left(L\right)=P\right)$, 由**定义 9.5.4 (平行移动)** 与**命题 9.5.6 (平行移动的存在唯一性与线性性)**, 沿 $\boldsymbol{c}$ 的平行移动给出线性同构 $\Phi_{\boldsymbol{c}}:T_PS\to{T}_PS$. 由**推论 9.6.3 (长度与夹角不变)**, $\Phi_{\boldsymbol{c}}$ 保持长度与夹角, 故在 $T_PS$ 的单位正交基下 $\Phi_{\boldsymbol{c}}$ 是正交矩阵; 又两条闭曲线首尾拼接时对应的 $\Phi$ 相乘, 故这些 $\Phi_{\boldsymbol{c}}$ 的全体对乘法封闭. 称这个群为圆柱面在 $P$ 的和乐群, 记作 $\mathrm{Hol}\left(P\right)$.
 
 由**例 11.2.2 (圆柱面)**, 圆柱面可用 $\boldsymbol{r}\left(\theta,u\right)=\left(\cos\theta,\sin\theta,u\right)$ 参数化 ($\theta$ 按模 $2\pi$ 理解, $u$ 取遍实数), 且
 
@@ -501,18 +463,6 @@ $$
 $$
 
 上面的 $\Gamma\equiv0$ 使之化为 $\left(V^1\right)'=\left(V^2\right)'=0$, 故 $V^1,V^2$ 都是常数.
-
-设 $\boldsymbol{c}$ 是以 $P$ 为基点的闭曲线, $\boldsymbol{V}_0\in{T}_PS$, $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$; 把 $\boldsymbol{c}$ 分成有限段, 每段落在同一个坐标卡内, 在每段上分量都不变, 故整体上 $V^1,V^2$ 为常数. 又
-
-$$
-\boldsymbol{r}_\theta=\left(-y,x,0\right),\quad\boldsymbol{r}_u=\left(0,0,1\right)
-$$
-
-只依赖点而不依赖 $\theta$ 的取法, 故 $\boldsymbol{c}\left(L\right)=P=\boldsymbol{c}\left(0\right)$ 处的标架与出发时相同, 于是
-
-$$
-\boldsymbol{V}\left(L\right)=V^1\boldsymbol{r}_\theta\left(P\right)+V^2\boldsymbol{r}_u\left(P\right)=\boldsymbol{V}\left(0\right).
-$$
 
 故每个 $\Phi_{\boldsymbol{c}}$ 都是恒等映射,
 
