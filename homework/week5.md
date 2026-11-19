@@ -396,7 +396,7 @@ $\blacksquare$
 
 (ii) 直纹极小曲面是平面或正螺面.
 
-设直纹面 $\boldsymbol{r}\left(t,u\right)=\boldsymbol{c}\left(t\right)+u\,\boldsymbol{l}\left(t\right)$, $\left|\boldsymbol{l}\right|\equiv1$, $\boldsymbol{c}'$ 与 $\boldsymbol{l}$ 线性无关 (**定义 6.4.1 (直纹面)**). 极小指由**定义 4.6.1 (平均曲率与总曲率)** 的 $H\equiv0$. 第一步: 归一化 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$. 记 $a:=\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle$, 取 $f\left(t\right):=\int{a}\,\mathrm{d}t$, $\widetilde{\boldsymbol{c}}:=\boldsymbol{c}-f\boldsymbol{l}$. 由 $\left\langle\boldsymbol{l},\boldsymbol{l}'\right\rangle=0$,
+设直纹面 $\boldsymbol{r}\left(t,u\right)=\boldsymbol{c}\left(t\right)+u\,\boldsymbol{l}\left(t\right)$, $\left|\boldsymbol{l}\right|\equiv1$, $\boldsymbol{c}'$ 与 $\boldsymbol{l}$ 线性无关 (**定义 6.4.1 (直纹面)**). 极小指由**定义 4.6.1 (平均曲率与总曲率)** 的 $H\equiv0$. 先归一化 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$. 记 $a:=\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle$, 取 $f\left(t\right):=\int{a}\,\mathrm{d}t$, $\widetilde{\boldsymbol{c}}:=\boldsymbol{c}-f\boldsymbol{l}$. 由 $\left\langle\boldsymbol{l},\boldsymbol{l}'\right\rangle=0$,
 
 $$
 \left\langle\widetilde{\boldsymbol{c}}',\boldsymbol{l}\right\rangle=\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle-f'-f\left\langle\boldsymbol{l}',\boldsymbol{l}\right\rangle=a-a=0.
@@ -404,7 +404,7 @@ $$
 
 又 $\boldsymbol{r}=\widetilde{\boldsymbol{c}}+\left(f+u\right)\boldsymbol{l}$, 而 $f+u$ 与 $u$ 取遍同一范围, 直母线族不变, 故可设 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$.
 
-第二步: 柱面情形 $\boldsymbol{l}'\equiv\boldsymbol0$. 此时 $\boldsymbol{l}$ 为常向量, 由**例 6.4.2 (直纹面的特殊类型)** (1), 曲面是柱面; 且 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$ 给出 $g_{12}=0$, $g_{22}=1$, $g_{11}=\left|\boldsymbol{c}'\right|^{2}$, 而 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{l}'=\boldsymbol0$ 给出 $b_{22}=0$, $b_{12}=0$. 由**命题 4.6.2 (特征方程与 $H,K$)**,
+柱面情形 $\boldsymbol{l}'\equiv\boldsymbol0$. 此时 $\boldsymbol{l}$ 为常向量, 由**例 6.4.2 (直纹面的特殊类型)** (1), 曲面是柱面; 且 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$ 给出 $g_{12}=0$, $g_{22}=1$, $g_{11}=\left|\boldsymbol{c}'\right|^{2}$, 而 $\boldsymbol{r}_{uu}=\boldsymbol0$, $\boldsymbol{l}'=\boldsymbol0$ 给出 $b_{22}=0$, $b_{12}=0$. 由**命题 4.6.2 (特征方程与 $H,K$)**,
 
 $$
 H=\frac{b_{11}g_{22}-2b_{12}g_{12}+b_{22}g_{11}}{2\det\left(g_{\alpha\beta}\right)}=\frac{b_{11}}{2\left|\boldsymbol{c}'\right|^{2}},
@@ -418,7 +418,7 @@ $$
 
 于是 $\boldsymbol{c}$ 与方向 $\boldsymbol{l}$ 都平行于固定平面 $\Pi$, 全部直母线落在仿射平面 $\boldsymbol{c}\left(t_{0}\right)+\Pi$ 内, 即 $S$ 是平面的一部分.
 
-第三步: 非柱面情形 $\boldsymbol{l}'\not\equiv\boldsymbol0$. 取 $\kappa:=\left|\boldsymbol{l}'\right|>0$, $\boldsymbol{p}:=\frac{\boldsymbol{l}'}{\kappa}$, $\boldsymbol{q}:=\boldsymbol{l}\wedge\boldsymbol{p}$; 由 $\left|\boldsymbol{l}\right|=1$ 得 $\left\langle\boldsymbol{l},\boldsymbol{l}'\right\rangle=0$, 故 $\left\langle\boldsymbol{l},\boldsymbol{p}\right\rangle=0$, $\left\{\boldsymbol{l},\boldsymbol{p},\boldsymbol{q}\right\}$ 是右手单位正交标架. 记 $\tau:=\left\langle\boldsymbol{p}',\boldsymbol{q}\right\rangle$, 把 $\boldsymbol{p}',\boldsymbol{q}'$ 在上述标架下展开并用 $\left\langle\boldsymbol{p}',\boldsymbol{p}\right\rangle=\left\langle\boldsymbol{q}',\boldsymbol{q}\right\rangle=0$ 得
+非柱面情形 $\boldsymbol{l}'\not\equiv\boldsymbol0$. 取 $\kappa:=\left|\boldsymbol{l}'\right|>0$, $\boldsymbol{p}:=\frac{\boldsymbol{l}'}{\kappa}$, $\boldsymbol{q}:=\boldsymbol{l}\wedge\boldsymbol{p}$; 由 $\left|\boldsymbol{l}\right|=1$ 得 $\left\langle\boldsymbol{l},\boldsymbol{l}'\right\rangle=0$, 故 $\left\langle\boldsymbol{l},\boldsymbol{p}\right\rangle=0$, $\left\{\boldsymbol{l},\boldsymbol{p},\boldsymbol{q}\right\}$ 是右手单位正交标架. 记 $\tau:=\left\langle\boldsymbol{p}',\boldsymbol{q}\right\rangle$, 把 $\boldsymbol{p}',\boldsymbol{q}'$ 在上述标架下展开并用 $\left\langle\boldsymbol{p}',\boldsymbol{p}\right\rangle=\left\langle\boldsymbol{q}',\boldsymbol{q}\right\rangle=0$ 得
 
 $$
 \boldsymbol{l}'=\kappa\boldsymbol{p},\quad
@@ -428,7 +428,7 @@ $$
 
 其中 $\left\langle\boldsymbol{p}',\boldsymbol{l}\right\rangle=-\left\langle\boldsymbol{p},\boldsymbol{l}'\right\rangle=-\kappa$, $\left\langle\boldsymbol{q}',\boldsymbol{l}\right\rangle=-\left\langle\boldsymbol{q},\boldsymbol{l}'\right\rangle=0$, $\left\langle\boldsymbol{q}',\boldsymbol{p}\right\rangle=-\left\langle\boldsymbol{q},\boldsymbol{p}'\right\rangle=-\tau$.
 
-由第一步 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$, 记 $\boldsymbol{c}'=\alpha\boldsymbol{p}+\beta\boldsymbol{q}$. 于是
+由上面的 $\left\langle\boldsymbol{c}',\boldsymbol{l}\right\rangle=0$, 记 $\boldsymbol{c}'=\alpha\boldsymbol{p}+\beta\boldsymbol{q}$. 于是
 
 $$
 \boldsymbol{r}_{t}=\boldsymbol{c}'+u\boldsymbol{l}'=\left(\alpha+u\kappa\right)\boldsymbol{p}+\beta\boldsymbol{q},\quad\boldsymbol{r}_{u}=\boldsymbol{l},

@@ -78,7 +78,7 @@
 
 ### 解答 1
 
-第一步 (切映射的曲线定义): 设 $p=\boldsymbol{r}\left(u^1,u^2\right)$, $\boldsymbol{v}=a^1\boldsymbol{r}_1+a^2\boldsymbol{r}_2\in{T}_pS$. 按**推导 8.1.2 (切映射及其系数矩阵)** 的定义, 取 $S$ 上过 $p$ 的光滑曲线
+先看切映射的曲线定义: 设 $p=\boldsymbol{r}\left(u^1,u^2\right)$, $\boldsymbol{v}=a^1\boldsymbol{r}_1+a^2\boldsymbol{r}_2\in{T}_pS$. 按**推导 8.1.2 (切映射及其系数矩阵)** 的定义, 取 $S$ 上过 $p$ 的光滑曲线
 
 $$
 \alpha\left(t\right)=\boldsymbol{r}\left(u^1+ta^1,u^2+ta^2\right),\quad\alpha\left(0\right)=p,\quad\alpha'\left(0\right)=a^1\boldsymbol{r}_1+a^2\boldsymbol{r}_2=\boldsymbol{v},
@@ -90,7 +90,7 @@ $$
 \mathrm{d}\varphi_p\left(\boldsymbol{v}\right):=\left(\varphi\circ\alpha\right)'\left(0\right).
 $$
 
-第二步 (良定义性与线性): 设 $S,S'$ 的参数为 $u^\alpha,\widetilde{u}^\alpha$, $\varphi$ 的参数表示为 $\widetilde{u}^\alpha=\widetilde{u}^\alpha\left(u^1,u^2\right)$, 并记 $\widetilde{u}^\gamma\left(t\right):=\widetilde{u}^\gamma\left(u^1+ta^1,u^2+ta^2\right)$. 则 $\varphi\left(\alpha\left(t\right)\right)=\widetilde{\boldsymbol{r}}\left(\widetilde{u}^\gamma\left(t\right)\right)$, 由链式法则
+再看良定义性与线性: 设 $S,S'$ 的参数为 $u^\alpha,\widetilde{u}^\alpha$, $\varphi$ 的参数表示为 $\widetilde{u}^\alpha=\widetilde{u}^\alpha\left(u^1,u^2\right)$, 并记 $\widetilde{u}^\gamma\left(t\right):=\widetilde{u}^\gamma\left(u^1+ta^1,u^2+ta^2\right)$. 则 $\varphi\left(\alpha\left(t\right)\right)=\widetilde{\boldsymbol{r}}\left(\widetilde{u}^\gamma\left(t\right)\right)$, 由链式法则
 
 $$
 \left(\varphi\circ\alpha\right)'\left(0\right)=\left(\widetilde{u}^\gamma\right)'\left(0\right)\widetilde{\boldsymbol{r}}_{\widetilde{u}^\gamma}=\frac{\partial\widetilde{u}^\gamma}{\partial{u}^\beta}a^\beta\widetilde{\boldsymbol{r}}_{\widetilde{u}^\gamma},
@@ -98,13 +98,13 @@ $$
 
 右端只依赖 $a^\beta$ (即只依赖 $\boldsymbol{v}$) 且对 $a^\beta$ 线性, 故 $\mathrm{d}\varphi_p$ 良定义且是线性映射; 它在基 $\left\{\boldsymbol{r}_\alpha\right\}$ 与 $\left\{\widetilde{\boldsymbol{r}}_\alpha\right\}$ 下的矩阵正是**推导 8.1.2 (切映射及其系数矩阵)** 的系数矩阵 $J_\varphi:=\left(\partial\widetilde{u}^\gamma/\partial{u}^\beta\right)$.
 
-第三步 (复合的参数表示): 设 $S''$ 的参数为 $\widehat{u}^\alpha$, $\psi$ 的参数表示为 $\widehat{u}^\alpha=\widehat{u}^\alpha\left(\widetilde{u}\right)$. 则 $\psi\circ\varphi$ 的参数表示为 $\widehat{u}^\alpha=\widehat{u}^\alpha\left(\widetilde{u}\left(u\right)\right)$, 由普通多元函数的链式法则,
+接着看复合的参数表示: 设 $S''$ 的参数为 $\widehat{u}^\alpha$, $\psi$ 的参数表示为 $\widehat{u}^\alpha=\widehat{u}^\alpha\left(\widetilde{u}\right)$. 则 $\psi\circ\varphi$ 的参数表示为 $\widehat{u}^\alpha=\widehat{u}^\alpha\left(\widetilde{u}\left(u\right)\right)$, 由普通多元函数的链式法则,
 
 $$
 \frac{\partial\widehat{u}^\alpha}{\partial{u}^\beta}=\frac{\partial\widehat{u}^\alpha}{\partial\widetilde{u}^\gamma}\frac{\partial\widetilde{u}^\gamma}{\partial{u}^\beta}.
 $$
 
-第四步: 上式中右端的两个因子依次是 $\mathrm{d}\psi_{\varphi\left(p\right)}$ 与 $\mathrm{d}\varphi_p$ 的矩阵元素 (第二步), 左端是 $\mathrm{d}\left(\psi\circ\varphi\right)_p$ 的矩阵元素 (对 $\psi\circ\varphi$ 再用一次第二步), 故上式逐元素地说明
+上式中右端的两个因子依次是 $\mathrm{d}\psi_{\varphi\left(p\right)}$ 与 $\mathrm{d}\varphi_p$ 的矩阵元素 (见上), 左端是 $\mathrm{d}\left(\psi\circ\varphi\right)_p$ 的矩阵元素 (对 $\psi\circ\varphi$ 再用一次上面的公式), 故上式逐元素地说明
 
 $$
 \mathrm{d}\left(\psi\circ\varphi\right)_p=\mathrm{d}\psi_{\varphi\left(p\right)}\circ\mathrm{d}\varphi_p.
@@ -126,9 +126,9 @@ $\blacksquare$
 
 ### 解答 2.1
 
-第一步 (归约): 由**定理 5.2.2 (高斯绝妙定理)**, $K=-\frac{R_{1212}}{\det\left(g_{\alpha\beta}\right)}$; 由**推导 5.2.1 (高斯方程的低指标形式)**, $R_{1212}$ 用 $\Gamma^\varepsilon{}_{\alpha\beta}$ 及其一阶偏导表出; 由**定义 9.3.1 (克里斯托费尔符号)**, $\Gamma^\varepsilon{}_{\alpha\beta}$ 用 $g_{\alpha\beta}$ 及其一阶偏导表出. 故 $K$ 完全由所给的第一基本形式算出, 下面逐小题代入这三个公式.
+先看归约: 由**定理 5.2.2 (高斯绝妙定理)**, $K=-\frac{R_{1212}}{\det\left(g_{\alpha\beta}\right)}$; 由**推导 5.2.1 (高斯方程的低指标形式)**, $R_{1212}$ 用 $\Gamma^\varepsilon{}_{\alpha\beta}$ 及其一阶偏导表出; 由**定义 9.3.1 (克里斯托费尔符号)**, $\Gamma^\varepsilon{}_{\alpha\beta}$ 用 $g_{\alpha\beta}$ 及其一阶偏导表出. 故 $K$ 完全由所给的第一基本形式算出, 下面逐小题代入这三个公式.
 
-第二步 (正交参数下的化简): 设 $g_{12}=0$. 由**定义 9.3.1 (克里斯托费尔符号)**,
+再看正交参数下的化简: 设 $g_{12}=0$. 由**定义 9.3.1 (克里斯托费尔符号)**,
 
 $$
 \Gamma^1{}_{11}=\frac{\partial_1g_{11}}{2g_{11}},\quad\Gamma^1{}_{12}=\frac{\partial_2g_{11}}{2g_{11}},\quad\Gamma^1{}_{22}=-\frac{\partial_1g_{22}}{2g_{11}},
@@ -150,7 +150,7 @@ $$
 K=-\frac{1}{\sqrt{g_{11}g_{22}}}\left[\partial_2\left(\frac{\partial_2\sqrt{g_{11}}}{\sqrt{g_{22}}}\right)+\partial_1\left(\frac{\partial_1\sqrt{g_{22}}}{\sqrt{g_{11}}}\right)\right].\tag{A}
 $$
 
-第三步 (1): 此时 $g_{11}=1$, $g_{22}=u^{2}$, 故 $\sqrt{g_{11}}=1$, $\sqrt{g_{22}}=u$, $\sqrt{g_{11}g_{22}}=u$. (A) 中两项分别为 $\partial_2\left(\frac{0}{u}\right)=0$ 与 $\partial_1\left(\frac{1}{1}\right)=0$, 故
+接着看情形 (1): 此时 $g_{11}=1$, $g_{22}=u^{2}$, 故 $\sqrt{g_{11}}=1$, $\sqrt{g_{22}}=u$, $\sqrt{g_{11}g_{22}}=u$. (A) 中两项分别为 $\partial_2\left(\frac{0}{u}\right)=0$ 与 $\partial_1\left(\frac{1}{1}\right)=0$, 故
 
 $$
 K=0.
@@ -160,7 +160,7 @@ $\blacksqua
 
 re$
 
-第四步 (2): 此时 $g_{11}=1$, $g_{22}=\sin^{2}u$, 故 $\sqrt{g_{22}}=\sin{u}$, $\sqrt{g_{11}g_{22}}=\sin{u}$, $\partial_1\sqrt{g_{22}}=\cos{u}$. (A) 中两项分别为 $\partial_2\left(\frac{0}{\sin{u}}\right)=0$ 与 $\partial_1\left(\frac{\cos{u}}{1}\right)=-\sin{u}$, 故
+然后看情形 (2): 此时 $g_{11}=1$, $g_{22}=\sin^{2}u$, 故 $\sqrt{g_{22}}=\sin{u}$, $\sqrt{g_{11}g_{22}}=\sin{u}$, $\partial_1\sqrt{g_{22}}=\cos{u}$. (A) 中两项分别为 $\partial_2\left(\frac{0}{\sin{u}}\right)=0$ 与 $\partial_1\left(\frac{\cos{u}}{1}\right)=-\sin{u}$, 故
 
 $$
 K=-\frac{1}{\sin{u}}\left(-\sin{u}\right)=1.
@@ -168,7 +168,7 @@ $$
 
 $\blacksquare$
 
-第五步 (3): 记
+然后看情形 (3): 记
 
 $$
 \mu:=\frac{1}{c+u^{2}+v^{2}}>0,\quad{g}_{11}=g_{22}=\mu^{2},\quad\sqrt{g_{11}}=\sqrt{g_{22}}=\mu,\quad\sqrt{g_{11}g_{22}}=\mu^{2},
@@ -182,7 +182,7 @@ $$
 
 故 (A) 的方括号内为 $\Delta\ln\mu=\partial_1^2\ln\mu+\partial_2^2\ln\mu$.
 
-第六步: 由 $\mu>0$ 得 $\ln\mu=-\ln\left(c+u^{2}+v^{2}\right)$. 记 $R^{2}=u^{2}+v^{2}$, $h:=\ln\left(c+R^{2}\right)$, 则
+然后由 $\mu>0$ 得 $\ln\mu=-\ln\left(c+u^{2}+v^{2}\right)$. 记 $R^{2}=u^{2}+v^{2}$, $h:=\ln\left(c+R^{2}\right)$, 则
 
 $$
 \partial_1h=\frac{2u}{c+R^{2}},\quad\partial_1^2h=\frac{2}{c+R^{2}}-\frac{4u^{2}}{\left(c+R^{2}\right)^{2}},
@@ -202,7 +202,7 @@ $$
 
 $\blacksquare$
 
-第七步 (4): 此时 $g_{12}=\cos\theta\ne0$ (设 $\sin\theta\ne0$, 否则所给 $\mathrm{I}$ 退化), (A) 不适用. 取参数变换
+最后看情形 (4): 此时 $g_{12}=\cos\theta\ne0$ (设 $\sin\theta\ne0$, 否则所给 $\mathrm{I}$ 退化), (A) 不适用. 取参数变换
 
 $$
 \widetilde{u}=u\sin\theta,\quad{w}=v+u\cos\theta,
@@ -230,7 +230,7 @@ re$
 
 ### 解答 2.2
 
-第一步: 在对应参数下 $\mathrm{I}=\lambda\widetilde{\mathrm{I}}$ 即 $g_{\alpha\beta}=\lambda\widetilde{g}_{\alpha\beta}$. 以下把 $S$ 在参数 $u^\alpha$ 下的系数记为 $g_{\alpha\beta}$, 把 $\widetilde{S}$ 在同一组参数下的系数记为 $\widetilde{g}_{\alpha\beta}$. 第二步 (克里斯托费尔符号不变): 由**定义 9.3.1 (克里斯托费尔符号)**, 若把系数整体乘以常数 $\lambda>0$, 则算出的克里斯托费尔符号为
+先在对应参数下 $\mathrm{I}=\lambda\widetilde{\mathrm{I}}$ 即 $g_{\alpha\beta}=\lambda\widetilde{g}_{\alpha\beta}$. 以下把 $S$ 在参数 $u^\alpha$ 下的系数记为 $g_{\alpha\beta}$, 把 $\widetilde{S}$ 在同一组参数下的系数记为 $\widetilde{g}_{\alpha\beta}$. 再看克里斯托费尔符号不变: 由**定义 9.3.1 (克里斯托费尔符号)**, 若把系数整体乘以常数 $\lambda>0$, 则算出的克里斯托费尔符号为
 
 $$
 \Gamma^\varepsilon{}_{\alpha\beta}=\frac{1}{2}\left(\lambda\widetilde{g}\right)^{\varepsilon\tau}\left(\lambda\partial_\alpha\widetilde{g}_{\beta\tau}+\lambda\partial_\beta\widetilde{g}_{\alpha\tau}-\lambda\partial_\tau\widetilde{g}_{\alpha\beta}\right),
@@ -244,19 +244,19 @@ $$
 
 即 $S$ 与 $\widetilde{S}$ 在对应参数下有相同的克里斯托费尔符号.
 
-第三步 (黎曼记号按 $\lambda$ 一次放大): 由**推导 5.2.1 (高斯方程的低指标形式)**,
+最后看黎曼记号按 $\lambda$ 一次放大: 由**推导 5.2.1 (高斯方程的低指标形式)**,
 
 $$
 R_{1212}=g_{1\varepsilon}\left(\partial_2\Gamma^\varepsilon{}_{21}-\partial_1\Gamma^\varepsilon{}_{22}+\Gamma^\tau{}_{21}\Gamma^\varepsilon{}_{\tau2}-\Gamma^\tau{}_{22}\Gamma^\varepsilon{}_{\tau1}\right).
 $$
 
-由第二步, 右端括号内只含 $\Gamma$ 及其一阶偏导, 对 $S$ 与 $\widetilde{S}$ 是同一个数; 而 $g_{1\varepsilon}=\lambda\widetilde{g}_{1\varepsilon}$, 故
+由上面的论证, 右端括号内只含 $\Gamma$ 及其一阶偏导, 对 $S$ 与 $\widetilde{S}$ 是同一个数; 而 $g_{1\varepsilon}=\lambda\widetilde{g}_{1\varepsilon}$, 故
 
 $$
 R_{1212}\left(\lambda\widetilde{g}\right)=\lambda{R}_{1212}\left(\widetilde{g}\right).
 $$
 
-又 $\det\left(\lambda\widetilde{g}\right)=\lambda^{2}\det\left(\widetilde{g}\right)$. 第四步: 由**定理 5.2.2 (高斯绝妙定理)**,
+又 $\det\left(\lambda\widetilde{g}\right)=\lambda^{2}\det\left(\widetilde{g}\right)$. 最后由**定理 5.2.2 (高斯绝妙定理)**,
 
 $$
 K=-\frac{R_{1212}\left(\lambda\widetilde{g}\right)}{\det\left(\lambda\widetilde{g}\right)}=-\frac{\lambda{R}_{1212}\left(\widetilde{g}\right)}{\lambda^{2}\det\left(\widetilde{g}\right)}=\frac{1}{\lambda}\left(-\frac{R_{1212}\left(\widetilde{g}\right)}{\det\left(\widetilde{g}\right)}\right)=\frac{1}{\lambda}\widetilde{K}.
@@ -276,7 +276,7 @@ $\blacksquare$
 
 (1)
 
-第一步: 以下设 $a,b,\widetilde{a},\widetilde{b}>0$. 直接求导得
+以下设 $a,b,\widetilde{a},\widetilde{b}>0$. 直接求导得
 
 $$
 \boldsymbol{r}_u=\left(a,0,au\right),\quad\boldsymbol{r}_v=\left(0,b,bv\right),\quad\boldsymbol{r}_{uu}=\left(0,0,a\right),\quad\boldsymbol{r}_{uv}=\boldsymbol0,\quad\boldsymbol{r}_{vv}=\left(0,0,b\right),
@@ -288,19 +288,19 @@ $$
 g_{11}=a^{2}\left(1+u^{2}\right),\quad{g}_{12}=abuv,\quad{g}_{22}=b^{2}\left(1+v^{2}\right).\tag{A}
 $$
 
-第二步: $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=ab\left(-v,-u,1\right)$, 其长度为 $ab\sqrt{1+u^{2}+v^{2}}$, 故单位法向量
+再证 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=ab\left(-v,-u,1\right)$, 其长度为 $ab\sqrt{1+u^{2}+v^{2}}$, 故单位法向量
 
 $$
 \boldsymbol{n}=\frac{1}{W}\left(-v,-u,1\right),\quad{W}:=\sqrt{1+u^{2}+v^{2}}.\tag{B}
 $$
 
-第三步: 由 (B) 与**定义 3.5.2 (第二基本形式)**,
+接着由 (B) 与**定义 3.5.2 (第二基本形式)**,
 
 $$
 b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=\frac{a}{W},\quad{b}_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=0,\quad{b}_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{b}{W}.\tag{C}
 $$
 
-第四步: 由 (A),
+然后由 (A),
 
 $$
 \det\left(g_{\alpha\beta}\right)=a^{2}b^{2}\left(1+u^{2}\right)\left(1+v^{2}\right)-a^{2}b^{2}u^{2}v^{2}=a^{2}b^{2}\left(1+u^{2}+v^{2}\right)=a^{2}b^{2}W^{2},
@@ -312,7 +312,7 @@ $$
 K=\frac{\det\left(b_{\alpha\beta}\right)}{\det\left(g_{\alpha\beta}\right)}=\frac{ab/W^{2}}{a^{2}b^{2}W^{2}}=\frac{1}{ab\left(1+u^{2}+v^{2}\right)^{2}}.\tag{D}
 $$
 
-第五步: 把 $\left(a,b\right)$ 换成 $\left(\widetilde{a},\widetilde{b}\right)$ 重复第一至四步, 得
+最后把 $\left(a,b\right)$ 换成 $\left(\widetilde{a},\widetilde{b}\right)$ 重复上面的做法, 得
 
 $$
 \widetilde{K}=\frac{1}{\widetilde{a}\widetilde{b}\left(1+\widetilde{u}^{2}+\widetilde{v}^{2}\right)^{2}}.\tag{E}
@@ -324,11 +324,11 @@ $\blacksquare$
 
 (2)
 
-第一步 (充分性, 情形之一): 若 $a=\widetilde{a}$, $b=\widetilde{b}$, 则两曲面的参数表示逐项相同, 恒等映射的参数表示是 $J=\begin{bmatrix}1&0\\0&1\end{bmatrix}$, 代入**命题 8.1.5 (等距变换的判别)** 的矩阵等式显然成立, 故恒等映射是等距变换.
+先看充分性, 情形之一: 若 $a=\widetilde{a}$, $b=\widetilde{b}$, 则两曲面的参数表示逐项相同, 恒等映射的参数表示是 $J=\begin{bmatrix}1&0\\0&1\end{bmatrix}$, 代入**命题 8.1.5 (等距变换的判别)** 的矩阵等式显然成立, 故恒等映射是等距变换.
 
 $\blacksquare$
 
-第二步 (充分性, 情形之二): 若 $a=\widetilde{b}$, $b=\widetilde{a}$, 取 $E^3$ 的刚体运动
+再看充分性, 情形之二: 若 $a=\widetilde{b}$, $b=\widetilde{a}$, 取 $E^3$ 的刚体运动
 
 $$
 \tau\left(x,y,z\right)=\left(y,x,z\right).
@@ -344,13 +344,13 @@ $$
 
 $\blacksquare$
 
-第三步 (必要性, 曲率的最大值): 设 $\sigma:S\to\widetilde{S}$ 是等距变换. 由**命题 8.1.5 (等距变换的判别)**, 在对应参数下 $g_{\alpha\beta}=\widetilde{g}_{\alpha\beta}$; 由**定理 5.2.2 (高斯绝妙定理)**, $K$ 只依赖 $g_{\alpha\beta}$, 故对应点处 $K=\widetilde{K}$. 由 (D), $K=\frac{1}{abW^{4}}\le\frac{1}{ab}$, 等号只在顶点 $\left(u,v\right)=\left(0,0\right)$ 成立 ($W\ge1$ 且只在顶点取等号); $\widetilde{K}$ 同法以 $\frac{1}{\widetilde{a}\widetilde{b}}$ 为最大值. 等距是一一对应且保持 $K$, 故 $K$ 与 $\widetilde{K}$ 的值域相同, 于是
+接着看必要性, 曲率的最大值: 设 $\sigma:S\to\widetilde{S}$ 是等距变换. 由**命题 8.1.5 (等距变换的判别)**, 在对应参数下 $g_{\alpha\beta}=\widetilde{g}_{\alpha\beta}$; 由**定理 5.2.2 (高斯绝妙定理)**, $K$ 只依赖 $g_{\alpha\beta}$, 故对应点处 $K=\widetilde{K}$. 由 (D), $K=\frac{1}{abW^{4}}\le\frac{1}{ab}$, 等号只在顶点 $\left(u,v\right)=\left(0,0\right)$ 成立 ($W\ge1$ 且只在顶点取等号); $\widetilde{K}$ 同法以 $\frac{1}{\widetilde{a}\widetilde{b}}$ 为最大值. 等距是一一对应且保持 $K$, 故 $K$ 与 $\widetilde{K}$ 的值域相同, 于是
 
 $$
 ab=\widetilde{a}\widetilde{b}.\tag{F}
 $$
 
-第四步 ($K$ 的等值线): 由 (D), $K$ 只依赖 $W^{2}=1+u^{2}+v^{2}$, 而在 $\left[1,+\infty\right)$ 上 $\frac{1}{abW^{4}}$ 严格单调递减, 故 $S$ 上 $K=c$ $\left(0<{}c\le\frac{1}{ab}\right)$ 的等值线恰是参数圆
+然后看 $K$ 的等值线: 由 (D), $K$ 只依赖 $W^{2}=1+u^{2}+v^{2}$, 而在 $\left[1,+\infty\right)$ 上 $\frac{1}{abW^{4}}$ 严格单调递减, 故 $S$ 上 $K=c$ $\left(0<{}c\le\frac{1}{ab}\right)$ 的等值线恰是参数圆
 
 $$
 C_\rho:\quad{u}^{2}+v^{2}=\rho^{2},\quad\rho:=\sqrt{\frac{1}{\sqrt{abc}}-1}>0.\tag{G}
@@ -364,7 +364,7 @@ $$
 
 其中 $L\left(\rho\right)$ 是 $C_\rho$ 的长度.
 
-第五步 (算长度): 在 $C_\rho$ 上取 $u=\rho\cos\theta$, $v=\rho\sin\theta$, 则 $\mathrm{d}u=-\rho\sin\theta\,\mathrm{d}\theta$, $\mathrm{d}v=\rho\cos\theta\,\mathrm{d}\theta$, 代入 (A) 得
+然后算长度: 在 $C_\rho$ 上取 $u=\rho\cos\theta$, $v=\rho\sin\theta$, 则 $\mathrm{d}u=-\rho\sin\theta\,\mathrm{d}\theta$, $\mathrm{d}v=\rho\cos\theta\,\mathrm{d}\theta$, 代入 (A) 得
 
 $$
 g_{\alpha\beta}\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}=\rho^{2}\left[a^{2}\sin^{2}\theta+b^{2}\cos^{2}\theta+\rho^{2}\left(a-b\right)^{2}\sin^{2}\theta\cos^{2}\theta\right]\mathrm{d}\theta^{2},
@@ -376,7 +376,7 @@ $$
 L\left(\rho\right)=\rho\int_0^{2\pi}\sqrt{a^{2}\sin^{2}\theta+b^{2}\cos^{2}\theta+\rho^{2}\left(a-b\right)^{2}\sin^{2}\theta\cos^{2}\theta}\,\mathrm{d}\theta.\tag{I}
 $$
 
-第六步: 把 (I) 两边同除以 $\rho^{2}$,
+然后把 (I) 两边同除以 $\rho^{2}$,
 
 $$
 \frac{L\left(\rho\right)}{\rho^{2}}=\int_0^{2\pi}\sqrt{\left(a-b\right)^{2}\sin^{2}\theta\cos^{2}\theta+\frac{a^{2}\sin^{2}\theta+b^{2}\cos^{2}\theta}{\rho^{2}}}\,\mathrm{d}\theta,
@@ -394,13 +394,13 @@ $$
 \left|a-b\right|=\left|\widetilde{a}-\widetilde{b}\right|.\tag{K}
 $$
 
-第七步: 由 (F) 与 (K), $a,b$ 与 $\widetilde{a},\widetilde{b}$ 的和也相同:
+然后由 (F) 与 (K), $a,b$ 与 $\widetilde{a},\widetilde{b}$ 的和也相同:
 
 $$
 a+b=\sqrt{\left(a-b\right)^{2}+4ab}=\sqrt{\left(\widetilde{a}-\widetilde{b}\right)^{2}+4\widetilde{a}\widetilde{b}}=\widetilde{a}+\widetilde{b}.\tag{L}
 $$
 
-第八步: $a,b$ 是 $X^{2}-\left(a+b\right)X+ab=0$ 的两根, $\widetilde{a},\widetilde{b}$ 是 $X^{2}-\left(\widetilde{a}+\widetilde{b}\right)X+\widetilde{a}\widetilde{b}=0$ 的两根; 由 (F) 与 (L), 这两个方程相同, 故两根的集合相同:
+最后证 $a,b$ 是 $X^{2}-\left(a+b\right)X+ab=0$ 的两根, $\widetilde{a},\widetilde{b}$ 是 $X^{2}-\left(\widetilde{a}+\widetilde{b}\right)X+\widetilde{a}\widetilde{b}=0$ 的两根; 由 (F) 与 (L), 这两个方程相同, 故两根的集合相同:
 
 $$
 \left\{a,b\right\}=\left\{\widetilde{a},\widetilde{b}\right\}.
@@ -414,9 +414,9 @@ $\blacksquare$
 
 ### 解答 2.8
 
-第一步: 赤道是过球心的平面与球面的交线, 即大圆. 由**定义 10.1.1 (测地线)**, 测地线是测地曲率 $k_g\equiv0$ 的曲线; 由**例 10.2.1 (单位球面上的测地线恰为大圆)**, 球面上的测地线恰为大圆, 故赤道是球面的测地线. 设 $s$ 是它的弧长参数, $\boldsymbol{t}=\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}$ 是单位切向量场. 第二步: 由**命题 10.1.2 (测地线即切向量平行的曲线)**, 测地线的单位切向量 $\boldsymbol{t}$ 沿赤道平行, 即 $D_{\boldsymbol{t}}\boldsymbol{t}=\boldsymbol0$.
+先证赤道是过球心的平面与球面的交线, 即大圆. 由**定义 10.1.1 (测地线)**, 测地线是测地曲率 $k_g\equiv0$ 的曲线; 由**例 10.2.1 (单位球面上的测地线恰为大圆)**, 球面上的测地线恰为大圆, 故赤道是球面的测地线. 设 $s$ 是它的弧长参数, $\boldsymbol{t}=\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}$ 是单位切向量场. 再由**命题 10.1.2 (测地线即切向量平行的曲线)**, 测地线的单位切向量 $\boldsymbol{t}$ 沿赤道平行, 即 $D_{\boldsymbol{t}}\boldsymbol{t}=\boldsymbol0$.
 
-第三步: 设 $\boldsymbol{v}\left(s\right)$ 是沿赤道平行的切向量场. 因 $\boldsymbol{t}$ 也沿赤道平行, 由**命题 9.6.1 (内积沿平行场为常数)**
+接着设 $\boldsymbol{v}\left(s\right)$ 是沿赤道平行的切向量场. 因 $\boldsymbol{t}$ 也沿赤道平行, 由**命题 9.6.1 (内积沿平行场为常数)**
 
 $$
 \left\langle\boldsymbol{v}\left(s\right),\boldsymbol{t}\left(s\right)\right\rangle\equiv{c}
@@ -424,7 +424,7 @@ $$
 
 是常数; 又由**推论 9.6.3 (长度与夹角不变)**, $\left|\boldsymbol{v}\left(s\right)\right|\equiv{r}$ 是常数.
 
-第四步 (取定一组沿赤道平行的正交基): 以单位球面的赤道 $z=0$ 为例,
+然后看取定一组沿赤道平行的正交基: 以单位球面的赤道 $z=0$ 为例,
 
 $$
 \boldsymbol{r}\left(s\right)=\left(\cos{s},\sin{s},0\right),\quad\boldsymbol{t}=\left(-\sin{s},\cos{s},0\right),\quad\boldsymbol{n}=\boldsymbol{r},\quad\boldsymbol{e}_2:=\boldsymbol{n}\wedge\boldsymbol{t}=\left(0,0,1\right).
@@ -432,15 +432,15 @@ $$
 
 $\boldsymbol{e}_2$ 作为 $E^3$ 中的常向量场, 沿 $\boldsymbol{c}'\left(s\right)$ 的普通方向导数为零; 由**命题 9.3.4 (协变微分是普通微分的切向投影)**, 协变微分是普通方向导数在切平面上的投影, 故 $D_{\boldsymbol{c}'}\boldsymbol{e}_2=\boldsymbol0$, 即 $\boldsymbol{e}_2$ 沿赤道平行. 又 $\left\{\boldsymbol{t},\boldsymbol{e}_2\right\}$ 是切平面的单位正交基, 且 $\boldsymbol{t}=\boldsymbol{c}'$ 也沿赤道平行.
 
-第五步: 把 $\boldsymbol{v}$ 按这组基展开,
+然后把 $\boldsymbol{v}$ 按这组基展开,
 
 $$
 \boldsymbol{v}\left(s\right)=c\,\boldsymbol{t}\left(s\right)+d\,\boldsymbol{e}_2\left(s\right)=c\,\boldsymbol{t}\left(s\right)+\left(0,0,d\right),
 $$
 
-其中 $c=\left\langle\boldsymbol{v},\boldsymbol{t}\right\rangle$ 由第三步为常数, $d=\left\langle\boldsymbol{v},\boldsymbol{e}_2\right\rangle$ 由**命题 9.6.1 (内积沿平行场为常数)** (两个平行场的内积) 也是常数. 反过来, 常数 $c,d$ 给出的上式右端由 $\boldsymbol{t},\boldsymbol{e}_2$ 的平行性与**定义 9.5.1 (平行)** 是沿赤道的平行场.
+其中 $c=\left\langle\boldsymbol{v},\boldsymbol{t}\right\rangle$ 由上面的计算为常数, $d=\left\langle\boldsymbol{v},\boldsymbol{e}_2\right\rangle$ 由**命题 9.6.1 (内积沿平行场为常数)** (两个平行场的内积) 也是常数. 反过来, 常数 $c,d$ 给出的上式右端由 $\boldsymbol{t},\boldsymbol{e}_2$ 的平行性与**定义 9.5.1 (平行)** 是沿赤道的平行场.
 
-第六步 (结果): 沿赤道平行移动的切向量, 其沿赤道切向的分量 $c\,\boldsymbol{t}\left(s\right)$ 随赤道的切向量一起绕 $Ox^3$ 轴转动, 而沿 $Ox^3$ 轴的分量 $\left(0,0,d\right)$ 保持为常向量; 即与赤道的夹角 $\arccos\left(c/r\right)$ 与到 $Ox^3$ 轴的分量 $d$ 都不变.
+最后看结果: 沿赤道平行移动的切向量, 其沿赤道切向的分量 $c\,\boldsymbol{t}\left(s\right)$ 随赤道的切向量一起绕 $Ox^3$ 轴转动, 而沿 $Ox^3$ 轴的分量 $\left(0,0,d\right)$ 保持为常向量; 即与赤道的夹角 $\arccos\left(c/r\right)$ 与到 $Ox^3$ 轴的分量 $d$ 都不变.
 
 $\blacksquare$
 
@@ -450,7 +450,7 @@ $\blacksquare$
 
 ### 解答 2.9
 
-第一步: 由 $g_{11}=\left\langle\boldsymbol{r}_1,\boldsymbol{r}_1\right\rangle=E$ 得 $\left|\boldsymbol{r}_1\right|=\sqrt{E}$, 故 $\boldsymbol{v}=\frac{\boldsymbol{r}_1}{\sqrt{E}}$ 是单位切向量场, 且它的分量只有
+先由 $g_{11}=\left\langle\boldsymbol{r}_1,\boldsymbol{r}_1\right\rangle=E$ 得 $\left|\boldsymbol{r}_1\right|=\sqrt{E}$, 故 $\boldsymbol{v}=\frac{\boldsymbol{r}_1}{\sqrt{E}}$ 是单位切向量场, 且它的分量只有
 
 $$
 v^{1}=\frac{1}{\sqrt{E}},\quad{v}^{2}=0
@@ -458,13 +458,13 @@ $$
 
 不为零.
 
-第二步 (用平行移动方程组): 由**推导 9.5.5 (平行移动的方程组)**, 沿 $C$
+再看用平行移动方程组: 由**推导 9.5.5 (平行移动的方程组)**, 沿 $C$
 
 $$
 D_{\boldsymbol{c}'}\boldsymbol{v}=\left[\left(v^{\beta}\right)'+\left(u^{\alpha}\right)'v^{\varepsilon}\Gamma^{\beta}{}_{\alpha\varepsilon}\right]\boldsymbol{r}_{\beta},
 $$
 
-其中 $\boldsymbol{c}'=\left(u^{\alpha}\right)'\boldsymbol{r}_{\alpha}$. 把第一步的分量代入, 右端两个方括号成为
+其中 $\boldsymbol{c}'=\left(u^{\alpha}\right)'\boldsymbol{r}_{\alpha}$. 把上面的分量代入, 右端两个方括号成为
 
 $$
 \beta=1:\quad\left(\frac{1}{\sqrt{E}}\right)'+\left(u^{\alpha}\right)'\frac{1}{\sqrt{E}}\Gamma^{1}{}_{1\alpha},\quad
@@ -481,13 +481,13 @@ $$
 \Gamma^{2}{}_{1\alpha}\left(u^{\alpha}\right)'=0.\tag{C}
 $$
 
-第三步: 由 $\left(\frac{1}{\sqrt{E}}\right)'=-\frac{1}{2}E^{-3/2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}$, 把 (B) 两边乘以 $\sqrt{E}E$ 得等价形式
+接着由 $\left(\frac{1}{\sqrt{E}}\right)'=-\frac{1}{2}E^{-3/2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}$, 把 (B) 两边乘以 $\sqrt{E}E$ 得等价形式
 
 $$
 -\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}+g_{11}\left(u^{\alpha}\right)'\Gamma^{1}{}_{1\alpha}=0.\tag{D}
 $$
 
-第四步 (算出 $g_{11}\Gamma^{1}{}_{1\alpha}$): 记 $\Gamma_{1\alpha1}:=g_{1\varepsilon}\Gamma^{\varepsilon}{}_{1\alpha}$. 由**定义 9.3.1 (克里斯托费尔符号)**,
+然后算出 $g_{11}\Gamma^{1}{}_{1\alpha}$: 记 $\Gamma_{1\alpha1}:=g_{1\varepsilon}\Gamma^{\varepsilon}{}_{1\alpha}$. 由**定义 9.3.1 (克里斯托费尔符号)**,
 
 $$
 \Gamma_{1\alpha1}=\frac{1}{2}g_{1\varepsilon}g^{\varepsilon\lambda}\left(\partial_1g_{\alpha\lambda}+\partial_\alpha{g}_{1\lambda}-\partial_\lambda{g}_{1\alpha}\right),
@@ -505,7 +505,7 @@ $$
 g_{11}\Gamma^{1}{}_{1\alpha}=\frac{1}{2}\partial_\alpha{g}_{11}-g_{12}\Gamma^{2}{}_{1\alpha}.\tag{E}
 $$
 
-第五步: 把 (E) 代入 (D), 两个 $\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}$ 相消,
+然后把 (E) 代入 (D), 两个 $\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}$ 相消,
 
 $$
 -g_{12}\Gamma^{2}{}_{1\alpha}\left(u^{\alpha}\right)'=0.\tag{F}
@@ -513,7 +513,7 @@ $$
 
 故 (B) 与 (F) 等价.
 
-第六步: 由第五步, (B) 成立 $\Leftrightarrow$ (F) 成立; 于是
+最后由上面的论证, (B) 成立 $\Leftrightarrow$ (F) 成立; 于是
 
 若 (C) 成立, 则 (F) 成立, 从而 (B) 成立, 两个式子同时成立;
 
@@ -583,7 +583,7 @@ $$
 
 $\blacksquare$
 
-三张曲面的高斯曲率分别处处等于 $1$, $0$ 与负数, 任意两张都不可能在对应点处相等, 由第一步它们两两不等距, 其一部分也不等距.
+三张曲面的高斯曲率分别处处等于 $1$, $0$ 与负数, 任意两张都不可能在对应点处相等, 由上面的论证它们两两不等距, 其一部分也不等距.
 
 $\blacksquare$
 
@@ -593,7 +593,7 @@ $\blacksquare$
 
 ### 解答 3.2
 
-第一步 ($S_1$ 的基本量): $S_1$ 是旋转面, 母线为 $x^2=u$, $x^3=\log{u}$ $\left(u>0\right)$, 则 $\left(x^2\right)'=1$, $\left(x^3\right)'=\frac{1}{u}$, $\left(x^2\right)''=0$, $\left(x^3\right)''=-\frac{1}{u^{2}}$, $A=1+\frac{1}{u^{2}}$. 由**例 6.2.1 (旋转面及其主曲率)**, $g_{11}=A=1+\frac{1}{u^{2}}$, $g_{12}=0$, $g_{22}=\left(x^2\right)^{2}=u^{2}$, 且
+先看 $S_1$ 的基本量: $S_1$ 是旋转面, 母线为 $x^2=u$, $x^3=\log{u}$ $\left(u>0\right)$, 则 $\left(x^2\right)'=1$, $\left(x^3\right)'=\frac{1}{u}$, $\left(x^2\right)''=0$, $\left(x^3\right)''=-\frac{1}{u^{2}}$, $A=1+\frac{1}{u^{2}}$. 由**例 6.2.1 (旋转面及其主曲率)**, $g_{11}=A=1+\frac{1}{u^{2}}$, $g_{12}=0$, $g_{22}=\left(x^2\right)^{2}=u^{2}$, 且
 
 $$
 K_1=\frac{\left(1\cdot\left(-\frac{1}{u^{2}}\right)-0\right)\frac{1}{u}}{u\left(1+\frac{1}{u^{2}}\right)^{2}}=-\frac{1}{u^{4}\left(1+\frac{1}{u^{2}}\right)^{2}}=-\frac{1}{\left(1+u^{2}\right)^{2}}.
@@ -601,7 +601,7 @@ $$
 
 $\blacksquare$
 
-第二步 ($S_2$ 的基本量): 直接求导得
+再看 $S_2$ 的基本量: 直接求导得
 
 $$
 \boldsymbol{r}_u=\left(\cos{v},\sin{v},0\right),\quad\boldsymbol{r}_v=\left(-u\sin{v},u\cos{v},1\right),
@@ -613,7 +613,7 @@ $$
 
 故由**定义 3.3.1 (第一基本形式)**, $g_{11}=1$, $g_{12}=0$, $g_{22}=1+u^{2}$.
 
-第三步: $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(\sin{v},-\cos{v},u\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{1+u^{2}}=:W$, 故 $\boldsymbol{n}=\frac{1}{W}\left(\sin{v},-\cos{v},u\right)$; 由**定义 3.5.2 (第二基本形式)**
+接着证 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(\sin{v},-\cos{v},u\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{1+u^{2}}=:W$, 故 $\boldsymbol{n}=\frac{1}{W}\left(\sin{v},-\cos{v},u\right)$; 由**定义 3.5.2 (第二基本形式)**
 
 $$
 b_{11}=0,\quad{b}_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=\frac{-\sin^{2}v-\cos^{2}v}{W}=-\frac{1}{W},\quad{b}_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{-u\cos{v}\sin{v}+u\sin{v}\cos{v}}{W}=0.
@@ -627,13 +627,13 @@ $$
 
 $\blacksquare$
 
-第四步: 比较第一步与第三步, $K_1=K_2$ 是同一个函数, 即两曲面在相应点处的高斯曲率相同.
+然后比较上两段的结论, $K_1=K_2$ 是同一个函数, 即两曲面在相应点处的高斯曲率相同.
 
 $\blacksquare$
 
-第五步 (不等距): 反设存在等距变换 $\sigma:S_1\to{S}_2$. 由**命题 8.1.5 (等距变换的判别)** 与**定理 5.2.2 (高斯绝妙定理)**, 对应点处 $K_1=K_2$; 且等距保持曲线长度, 从而把 $K$ 的等值线送到 $K$ 的等值线并保持其长度.
+然后看不等距: 反设存在等距变换 $\sigma:S_1\to{S}_2$. 由**命题 8.1.5 (等距变换的判别)** 与**定理 5.2.2 (高斯绝妙定理)**, 对应点处 $K_1=K_2$; 且等距保持曲线长度, 从而把 $K$ 的等值线送到 $K$ 的等值线并保持其长度.
 
-第六步 ($K$ 的等值线): 由第一步, $K_1$ 只依赖 $u$, 在 $u>0$ 上 $u^{2}+1$ 严格单调增, 故 $K_1=c$ $\left(-1<{}c<0\right)$ 的等值线是纬圆 $u=u_0$, 其中
+然后看 $K$ 的等值线: 由上面的结果, $K_1$ 只依赖 $u$, 在 $u>0$ 上 $u^{2}+1$ 严格单调增, 故 $K_1=c$ $\left(-1<{}c<0\right)$ 的等值线是纬圆 $u=u_0$, 其中
 
 $$
 u_0=\sqrt{\frac{1}{\sqrt{-c}}-1}>0.
@@ -645,19 +645,19 @@ $$
 \ell_1\left(c\right)=\int_0^{2\pi}\sqrt{g_{22}}\,\mathrm{d}v=2\pi{u}_0=2\pi\sqrt{\frac{1}{\sqrt{-c}}-1}.
 $$
 
-第七步: 由第三步, $K_2$ 与 $K_1$ 是同一个函数, 故 $K_2=c$ 的等值线对应同一个参数值 $u=u_0$; 由 $g_{22}=1+u^{2}$,
+然后由上面的结果, $K_2$ 与 $K_1$ 是同一个函数, 故 $K_2=c$ 的等值线对应同一个参数值 $u=u_0$; 由 $g_{22}=1+u^{2}$,
 
 $$
 \ell_2\left(c\right)=\int_0^{2\pi}\sqrt{g_{22}}\,\mathrm{d}v=2\pi\sqrt{1+u_0^{2}}=2\pi\sqrt{\frac{1}{\sqrt{-c}}}.
 $$
 
-第八步: 由 $u_0^{2}>0$ 得 $\sqrt{\frac{1}{\sqrt{-c}}-1}<\sqrt{\frac{1}{\sqrt{-c}}}$, 故对一切 $-1<{}c<0$ 有
+最后由 $u_0^{2}>0$ 得 $\sqrt{\frac{1}{\sqrt{-c}}-1}<\sqrt{\frac{1}{\sqrt{-c}}}$, 故对一切 $-1<{}c<0$ 有
 
 $$
 \ell_1\left(c\right)<\ell_2\left(c\right),
 $$
 
-这与第五步要求的 $\ell_1\left(c\right)=\ell_2\left(c\right)$ 矛盾, 故 $S_1$ 与 $S_2$ 不等距.
+这与上面要求的 $\ell_1\left(c\right)=\ell_2\left(c\right)$ 矛盾, 故 $S_1$ 与 $S_2$ 不等距.
 
 $\blacksquare$
 
