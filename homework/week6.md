@@ -389,7 +389,7 @@ $$
 \nabla_{\beta}b^{\xi}{}_{\alpha}:=\partial_{\beta}b^{\xi}{}_{\alpha}+\Gamma^{\xi}{}_{\sigma\beta}b^{\sigma}{}_{\alpha}-\Gamma^{\sigma}{}_{\alpha\beta}b^{\xi}{}_{\sigma}.
 $$
 
-第一步: 两式即 $\nabla{b}$ 的两个对称性. 把上述定义展开并用 $\Gamma^{\sigma}{}_{\beta\gamma}=\Gamma^{\sigma}{}_{\gamma\beta}$, $\Gamma^{\sigma}{}_{\beta\alpha}=\Gamma^{\sigma}{}_{\alpha\beta}$ (**推导 3.7.1 (克里斯托费尔符号由第一基本形式确定)**), 有
+先证两式即 $\nabla{b}$ 的两个对称性. 把上述定义展开并用 $\Gamma^{\sigma}{}_{\beta\gamma}=\Gamma^{\sigma}{}_{\gamma\beta}$, $\Gamma^{\sigma}{}_{\beta\alpha}=\Gamma^{\sigma}{}_{\alpha\beta}$ (**推导 3.7.1 (克里斯托费尔符号由第一基本形式确定)**), 有
 
 $$
 \nabla_{\gamma}b_{\alpha\beta}-\nabla_{\beta}b_{\alpha\gamma}
@@ -413,7 +413,7 @@ $$
 \left(\mathrm{II}\right)\text{对一切}\alpha,\beta,\xi\text{成立}\Leftrightarrow\nabla_{\beta}b^{\xi}{}_{\alpha}\text{关于}\alpha,\beta\text{对称}.
 $$
 
-第二步: $\nabla{b}$ 本来就关于 $b$ 的两个下标对称. 由 $b_{\alpha\beta}=b_{\beta\alpha}$ 与 $\Gamma^{\sigma}{}_{\beta\gamma}=\Gamma^{\sigma}{}_{\gamma\beta}$, 在 $\nabla_{\gamma}b_{\alpha\beta}$ 的定义中交换 $\alpha,\beta$ 得
+再证 $\nabla{b}$ 本来就关于 $b$ 的两个下标对称. 由 $b_{\alpha\beta}=b_{\beta\alpha}$ 与 $\Gamma^{\sigma}{}_{\beta\gamma}=\Gamma^{\sigma}{}_{\gamma\beta}$, 在 $\nabla_{\gamma}b_{\alpha\beta}$ 的定义中交换 $\alpha,\beta$ 得
 
 $$
 \nabla_{\gamma}b_{\alpha\beta}=\partial_{\gamma}b_{\alpha\beta}-\Gamma^{\sigma}{}_{\alpha\gamma}b_{\sigma\beta}-\Gamma^{\sigma}{}_{\beta\gamma}b_{\alpha\sigma}
@@ -423,7 +423,7 @@ $$
 
 因此 $\left(\mathrm{I}\right)$ 等价于说 $\nabla{b}$ 三个下标两两对称, 即 $\nabla_{\gamma}b_{\alpha\beta}$ 关于全部下标对称.
 
-第三步: 提升指标不改变对称性. 由 $\nabla_{\gamma}g^{\xi\sigma}=0$, 其中 $\nabla_{\gamma}g^{\xi\sigma}:=\partial_{\gamma}g^{\xi\sigma}+\Gamma^{\xi}{}_{\tau\gamma}g^{\tau\sigma}+\Gamma^{\sigma}{}_{\tau\gamma}g^{\xi\tau}$. 事实上对 $g_{\alpha\tau}g^{\tau\sigma}=\delta^{\sigma}{}_{\alpha}$ 求导得
+最后证提升指标不改变对称性. 由 $\nabla_{\gamma}g^{\xi\sigma}=0$, 其中 $\nabla_{\gamma}g^{\xi\sigma}:=\partial_{\gamma}g^{\xi\sigma}+\Gamma^{\xi}{}_{\tau\gamma}g^{\tau\sigma}+\Gamma^{\sigma}{}_{\tau\gamma}g^{\xi\tau}$. 事实上对 $g_{\alpha\tau}g^{\tau\sigma}=\delta^{\sigma}{}_{\alpha}$ 求导得
 
 $$
 \partial_{\gamma}g^{\tau\sigma}=-g^{\tau\mu}g^{\sigma\nu}\partial_{\gamma}g_{\mu\nu},
@@ -456,6 +456,6 @@ $$
 =\nabla_{\alpha}b^{\xi}{}_{\beta}g_{\xi\mu}=\nabla_{\alpha}b_{\beta\mu}.
 $$
 
-这与第二步的 $\nabla_{\gamma}b_{\alpha\beta}=\nabla_{\gamma}b_{\beta\alpha}$ 合并, 得 $\nabla{b}$ 关于三个下标全对称: 任取两个下标, 若两者都是 $b$ 的下标由第二步交换, 若其中一个是指标 $\gamma$ 则由上式交换. 于是由第一步, (I) 成立. 故两式等价.
+这与上面的 $\nabla_{\gamma}b_{\alpha\beta}=\nabla_{\gamma}b_{\beta\alpha}$ 合并, 得 $\nabla{b}$ 关于三个下标全对称: 任取两个下标, 若两者都是 $b$ 的下标则由上面的对称性交换, 若其中一个是指标 $\gamma$ 则由上式交换. 于是由上面的等式, (I) 成立. 故两式等价.
 
 $\blacksquare$
