@@ -1,0 +1,152 @@
+凸闭曲面
+定义. 设 Sigma subset R^3 是一个曲面,
+若在任意的 x in Sigma, 都存在一个平面 Pi_x
+使得 Sigma 完全在 Pi_x 的某一侧.
+则称 Sigma 为凸曲面.
+
+注. (1) 若在 x 附近, Sigma 是 C^1 的,
+则 Pi_x 是唯一确定的.
+就是 Sigma 在 x 的切平面.
+(2) 在正方体的顶点上可以有无数平面满足, 因为顶点并不光滑.
+(3) Sigma 是凸平面 iff Sigma=partial Omega, Omega 是凸区域.
+(任意的 x_1, x_2 in Omega, 则 overline(x_1, x_2) subset Omega)
+
+定理. 设 Sigma 是光滑的曲面,
+Sigma 凸 iff K_Sigma ge 0.
+定理 (哈达玛)
+设 Sigma 是紧致, 无边光滑的闭曲面,
+K_Sigma(x)>0, 任意的 x in Sigma,
+则 Sigma 是严格凸的. (Sigma=partial Omega, Omega 严格凸)
+
+证明. (1) Sigma sim S^2(1), (Q(Sigma)=0)
+0<int_E K=2 pi chi(Sigma), implies chi(Sigma)>0 implies Q(Sigma)=0
+implies int_E K=4 pi
+令 N: Sigma to S^2(1)
+x to n(x) 外法向,
+则 mu(N(Sigma))=mu(s^1(1)).
+
+(2) N(Sigma)=S^2(1)
+任意的 p in S^2(1)
+令 f_p(x)=<x,p>, x in I.
+则存在 x_m, X_M 使得 f_p(x_m)=min_Sigma f_p, f_p(x_M)=max_Sigma f_p
+implies P 是 x_m, x_M 处的内, 外法向.
+
+(3) N 是单射
+又 det(partial N/partial(u))=K_Sigma>0
+implies N 是局部微分同胚
+特别地, N 是开映射.
+若 x_1, x_2 in Sigma, n(x_1)=n(x_2).
+设 U_i(ni x_i) 是 x_i 在 Sigma 上的邻域,
+并且 N|_U_i 是微分同胚.
+implies S^2(1) 上的开集 N(U_1), N(U_2) 有公共内点 n(x_1)=n(x_2).
+存在非空开集 V subset N(U_1) cap N(U_2)
+N(Sigma setminus N_2^(-1)(V))=N(Sigma)=S^2(1).
+int_(Sigma setminus N_2^(-1)(V))K dsigma_Sigma=int_(S^2(1)) dsigma_(S^2(1))=4 pi.
+<int_Sigma K dsigma_Sigma=4 pi.
+implies N 是整体微分同胚.
+
+(4) Sigma 是凸的.
+设 Sigma 不凸, 存在 x in Sigma, Sigma 在切平面 Pi_x 两侧都有点.
+证. n(x)=p,
+f_p(y)=<p,y>, y in Sigma
+由假设 f_p 的最大 (y_M), 最小值点 (y_m) 都不是 x,
+并且 {n(y_m), n(y_M)}={pm p},
+但 n(x)=p implies 与单射矛盾.
+(5) 设 x_1, x_2 in Sigma, overline(x_1 x_2)subset Sigma implies K=0.
+
+定义. 紧致, 无边, K>0 的凸闭曲面
+称为卵形面.
+
+设 Sigma subset R^3 是正则曲面.
+局部有参数 (u^1, u^2),
+第一基本形式 I=g_alphabeta du^alpha du^beta.
+设 f 定义在 Sigma 的邻域 U 上,
+f in C^2(U).
+
+f_(,alpha)=partial f/partial u^alpha
+f_(,beta)=partial^2 f/partial u^alpha partial u^beta-partial f/partial u^epislon Gamma_alphabeta^epsilon
+(V^alpha partial gamma/partial u^alpha)_(,beta)=V^alpha_(,beta) partial gamma/partial u^alpha
+V^alpha_(,beta)=partial V^alpha/partial u^beta+V^epsilon Gamma_betaepsilon^alpha
+nabla<V,df>=<nabla V,df>+<V,nabla df>
+nabla(V(f))=(nabla V)(f)+V(nabla df).
+partial^2/partial u^alpha partial u^beta gamma=Gamma_alphabeta^epsilon partial gamma/partial u^epislon-h_alphabeta n
+dn=h_beta^alpha partial/partial u^alpha gamma du^beta
+其中, h_beta^alpha=g^alphaepsilon h_epsilonbeta.
+支持函数 phi(x)=<gamma(x),n(x)>.
+
+在 Sigma 附近, R^3 用 (u,t) 参数比.
+tilde gamma(u,t)=gamma(u)+t n(u).
+
+Delta_R^3 f= overline g^ij f_(,ij), 1 le i, j le 3,
+overline g 是 R^3 的第一基本形式 overline I=(dx^1)^2+cdot+(dx^3)^2
+按 (u^1, u^2, u^3=t) 展开的系数.
+overline I=overline g_ij du^i du^j.
+partial tilde gamma/partial u^alpha=partial gamma/partial alpha+t h_alpha^beta partial gamma/partial u^beta, 1 le alpha, beta le 2
+partial gamma/partial t=n.
+overline g_alphabeta=g_alphabeta+2 t h_alphabeta+t^2 h_0^epsilon h_epsilonbeta.
+
+---
+
+Delta_R^3 f=overline g^ij f_(,ij)
+=g^alphabeta f_(,alphabeta)+partial^2/partial t f.
+f_(,overline alpha overline beta)=partial^2 f/partial u^alpha partial u^beta|_Sigma-partial f/partial u^i overline Gamma_alphabeta^i|_Sigma
+=partial^2 f/partial u^alpha partial u^beta|_Sigma-partial f/partial u^epislon Gamma_alphabeta^epsilon|_Sigma(=f_(,alphabeta))
+-partial f/partial u^3 overline Gamma_alphabeta^3|_Sigma=f_(,alphabeta)+h_alphabeta n(t).
+
+(overline Gamma_alphabeta^3=(overline nabla_(partial tilde gamma/partial tilde u^alpha)partial tilde gamma/partial u^beta)|_Sigma
+overline Sigma_(partial gamma/partial u^alpha)partial gamma/partial u^beta=Gamma_alphabeta^epsilon partial gamma/partial u^epislon-h_alphabeta n
+implies overline Gamma_alphabeta^3|_Sigma-h_alphabeta)
+
+implies Delta_R^3 f=Delta_Sigma f+H partial/partial n(f)+partial^2/partial n^2(f)
+f=1/2|x|^2
+则 3=1/2 Delta_Sigma|x|^2+phi H+1
+iff 2-phi H=1/2 Delta_Sigma|x|^2
+implies int_Sigma(2-phi H)dsigma_Sigma=0.
+定理. 设 Sigma subset R^3 是紧致无边的正则凸闭曲面, n 是单位外法向场,
+H 是关于 n 的平均曲率.
+phi 是关于 n 的支持函数.
+则 int_Sigma(2-phi H)dsigma_Sigma=0.
+int_Sigma(H-2 K phi)dsigma_Sigma=0.
+
+implies int_Sigma_t(2-phi_t H_t)dsigma_Sigma_t=0. |t| ll 1.
+设 (u^1, u^2) 在 Sigma_0=Sigma 上是曲率线网.
+h_alphabeta=K_alpha g_alphabeta, g_alphabeta=g_alphaalpha delta_alphabeta
+g_alphaalpha(t)=g_alphabeta+2 t h_alphabeta+t^2 h_alphaepsilon h_p^epsilon
+n(t)=n
+h_alphabeta(t)=-<n,partial^2 tilde gamma_t/partial u^alpha partial u^beta>
+=h_alphabeta+t h_alpha^epsilon h_epsilonbeta
+phi_t=<n,tilde gamma_t>=phi+t.
+
+g(t)=((1+t K_1)^2,0;0,(1+t K_2)^2)(g_11,0;0,g_22)
+phi_t=phi+t
+h(t)=(K_1(1+K_1 t),0;0,K_2(1+t K_2))(g_11,0;0,g_22)
+H_t=K_1/(1+t K_1)+K_2/(1+t K_2)
+dsigma_t=(1+t K_1)(1+t K_2)dsigma
+
+int_D(2-(phi+t)(K_1/(1+t K_1)+K_2/(1+K_2)))(1+t K_1)(1+t K_2)dsigma=0
+=int_D 2(1+t K_1)(1+t K_2)-int_D(phi+t)(K_1(1+t K_1)+K_2(1+t K_1))equiv 0.
+|t| ll 1.
+
+int_D 2(K_1+K_2)sqrt(g)=int_D(2 phi K_1 K_2+(K_1+K_2))sqrt(g)
+2 int_Sigma H=int_Sigma(2 phi K_H )
+iff int_Sigma H=int_Sigma phi K+int_Sigma dsigma
+iff int_Sigma(H-2 K phi)=0.
+
+比较定理.
+设 Sigma 是紧致曲面.
+任意的 x in Sigma, exp_x: T_x Sigma to Sigma.
+存在一个 rho(x)>0, 使得 exp_x|_(B_0(rho)) 是微分同胚.
+rho<rho(x).
+并且 rho in C^0(Sigma)
+由 Sigma 紧, inf_(x in Sigma)rho(x)=rho_0>0.
+定义. rho_0 称为 Sigma 的单射半径.
+(implies 任何 rho<rho_0, 任何 x in Sigma, exp_x|_(B_0(rho))是微分同胚)
+例子. (1) rho_0(S^2(1))=pi,
+(2) rho_0(Sigma)=+infty.
+(3) rho_0(R^2)=+infty
+(4)rho_0(s^1(0)times R)=pi.
+Sigma 单连通, K le -epsilon_0<0.
+设 (rho,0)是测地极坐标.
+I=drho^2+G(rho,theta)dtheta^2
+sqrt(G(rho,0))=rho(1+theta(1))_1 rho to 0^+.
+K=-(sqrt(G))_rhorho/sqrt(G).
