@@ -1,70 +1,74 @@
 # week9
 
-> **定义 3.3.1 (第一基本形式)**
+> **定义 2.3.1 (第一基本形式)**
 > 
 > 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\mathrm{d}u^{\alpha}\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式, 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$; 它给出切向量长度的平方.
 
-> **例 6.2.1 (旋转面及其主曲率)**
+> **例 5.2.1 (旋转面及其主曲率)**
 > 
 > 取 $x^3Ox^2$ 平面内的正则曲线 $x^2=x^2\left(t\right)$, $x^3=x^3\left(t\right)$ $\left(x^2>0\right)$, 它绕 $Ox^3$ 轴旋转所得曲面为 $\boldsymbol{r}\left(t,\theta\right)=\left(x^2\left(t\right)\cos\theta,x^2\left(t\right)\sin\theta,x^3\left(t\right)\right)$, 且 $g_{12}=0$, $g_{11}=A:=\left(x^2\right)'^2+\left(x^3\right)'^2$, $g_{22}=\left(x^2\right)^2$, 而 $k_1=\frac{b_{11}}{g_{11}}=\frac{\left(x^2\right)'\left(x^3\right)''-\left(x^2\right)''\left(x^3\right)'}{A^{3/2}}$, $k_2=\frac{b_{22}}{g_{22}}=\frac{\left(x^3\right)'}{x^2\sqrt{A}}$, $K=k_1k_2=\frac{\left(\left(x^2\right)'\left(x^3\right)''-\left(x^2\right)''\left(x^3\right)'\right)\left(x^3\right)'}{x^2A^2}$.
 
-> **定义 7.1.2 (法曲率与测地曲率)**
+> **定义 6.1.2 (法曲率与测地曲率)**
 > 
 > $k_n:=b_{\alpha\beta}\dot{u}^\alpha\dot{u}^\beta$ 称为曲线 $\boldsymbol{c}$ 在曲面上的法曲率, $k_g$ 称为曲线 $\boldsymbol{c}$ 在曲面上的测地曲率, $\ddot{u}^\alpha+\Gamma^\alpha{}_{\varepsilon\tau}\dot{u}^\varepsilon\dot{u}^\tau$ 称为曲线的测地曲率向量.
 
-> **定义 7.2.1 (测地线)**
+> **定义 6.2.1 (测地线)**
 > 
 > 设 $C=\boldsymbol{c}\left(s\right)\subset{}S$ 以弧长参数化; 若其测地曲率 $k_g\equiv0$, 则称 $C$ 是曲面 $S$ 上的一条测地线.
 
-> **推导 7.3.1 (正交参数网下的测地曲率)**
+> **推导 6.3.1 (正交参数网下的测地曲率)**
 > 
 > 设 $S$ 上有正交参数网 $\mathrm{I}=g_{11}\left(\mathrm{d}u^1\right)^2+g_{22}\left(\mathrm{d}u^2\right)^2$ $\left(g_{12}=0\right)$, 取 $\boldsymbol{e}_\alpha:=\frac{1}{\sqrt{g_{\alpha\alpha}}}\frac{\partial\boldsymbol{r}}{\partial{}u^\alpha}$, $\boldsymbol{n}=\boldsymbol{e}_1\times\boldsymbol{e}_2$, 曲线单位切向量 $\dot{\boldsymbol{c}}=\cos\theta\,\boldsymbol{e}_1+\sin\theta\,\boldsymbol{e}_2$, 取 $\boldsymbol{t}_g=-\sin\theta\,\boldsymbol{e}_1+\cos\theta\,\boldsymbol{e}_2$, 则 $k_g=\theta'\left(s\right)-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta$; 其中 $\Gamma^1{}_{12}=\frac{\partial_2g_{11}}{2g_{11}}$, $\Gamma^1{}_{22}=-\frac{\partial_1g_{22}}{2g_{11}}$, $\Gamma^2{}_{11}=-\frac{\partial_2g_{11}}{2g_{22}}$, $\Gamma^2{}_{12}=\frac{\partial_1g_{22}}{2g_{22}}$.
 
-> **推论 7.3.2 (正交参数网下的测地线方程)**
+> **推论 6.3.2 (正交参数网下的测地线方程)**
 > 
 > 在正交参数网下, 曲线是测地线当且仅当 $\theta'\left(s\right)=\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta-\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta$.
 
-> **推导 7.11.1 (切向分解与法曲率)**
+> **推导 6.1.1 (曲面上曲线的二阶分解)**
 > 
-> 设 $\boldsymbol{c}=\boldsymbol{c}\left(s\right)$ 以弧长参数化, $\boldsymbol{t}=\dot{\boldsymbol{c}}$, $\boldsymbol{n}$ 为曲面沿 $\boldsymbol{c}$ 的单位法向, 则 $\dot{\boldsymbol{t}}\perp\boldsymbol{t}$, $\left\{\boldsymbol{t},\boldsymbol{n}\times\boldsymbol{t},\boldsymbol{n}\right\}$ 是右手正交标架, 且 $\dot{\boldsymbol{t}}=\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\times\boldsymbol{t}\right\rangle\left(\boldsymbol{n}\times\boldsymbol{t}\right)+k_n\boldsymbol{n}$, 其中 $k_n:=\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\right\rangle$.
+> 设 $S:\,\boldsymbol{r}=\boldsymbol{r}\left(u\right)$ 是参数曲面, 曲线 $\boldsymbol{c}=\boldsymbol{r}\left(u\left(s\right)\right)\subset{}S$ 以弧长 $s$ 参数化, $\boldsymbol{n}$ 为曲面沿 $\boldsymbol{c}$ 的单位法向. 则 $\ddot{\boldsymbol{c}}=\left(\ddot{u}^\alpha+\Gamma^\alpha{}_{\varepsilon\tau}\dot{u}^\varepsilon\dot{u}^\tau\right)\boldsymbol{r}_\alpha+b_{\varepsilon\tau}\dot{u}^\varepsilon\dot{u}^\tau\,\boldsymbol{n}$, 前一括号为测地曲率向量 $k_g\boldsymbol{t}_g$, 其中 $\boldsymbol{t}_g$ 是切平面内单位向量且 $\boldsymbol{t}_g\perp\dot{\boldsymbol{c}}$, 后一项为法曲率向量 $k_n\boldsymbol{n}$; 两部分正交, 故 $\kappa^2=k_g^2+k_n^2$.
 
-> **说明 7.11.2 (测地曲率与法曲率的关系)**
+> **推导 6.4.2**
 > 
-> 取标架 $\left\{\boldsymbol{t},\boldsymbol{n}\times\boldsymbol{t}\right\}$, 把测地曲率定义为 $k_g:=\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\times\boldsymbol{t}\right\rangle$, 即 $\dot{\boldsymbol{t}}=k_g\left(\boldsymbol{n}\times\boldsymbol{t}\right)+k_n\boldsymbol{n}$, 两端取模平方得 $\kappa^2=k_g^2+k_n^2$.
+> 取 $\boldsymbol{t}=\dot{\boldsymbol{c}}$, $\boldsymbol{n}$ 为曲面沿 $\boldsymbol{c}$ 的单位法向, 则 $\boldsymbol{n}\times\boldsymbol{t}$ 是 $\boldsymbol{t}$ 在切平面内的正交单位向量, 且 $\boldsymbol{t}\times\left(\boldsymbol{n}\times\boldsymbol{t}\right)=\boldsymbol{n}$.
 
-> **定义 9.2.1 (协变微分)**
+> **推导 6.4.3 (测地曲率的展开)**
+> 
+> 测地曲率由切平面内与 $\boldsymbol{t}$ 正交的单位向量 $\boldsymbol{n}\times\boldsymbol{t}$ 定向: $k_g:=\left\langle\frac{D\boldsymbol{t}}{\mathrm{d}s},\boldsymbol{n}\times\boldsymbol{t}\right\rangle$; 因 $\frac{D\boldsymbol{t}}{\mathrm{d}s}$ 是 $\dot{\boldsymbol{t}}$ 在切平面上的投影而 $\boldsymbol{n}\times\boldsymbol{t}$ 在切平面内, 故 $k_g=\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\times\boldsymbol{t}\right\rangle$.
+
+> **定义 8.2.1 (协变微分)**
 > 
 > 称由切向量场 $\left(\boldsymbol{W},\boldsymbol{V}\right)$ 给出切向量场 $D_{\boldsymbol{W}}\boldsymbol{V}$ 的运算 $D$ 为曲面 $S$ 上的协变微分, 若对任意光滑函数 $\lambda,\mu$ 与任意切向量场 $\boldsymbol{W},\boldsymbol{W}_1,\boldsymbol{W}_2,\boldsymbol{V},\boldsymbol{V}_1,\boldsymbol{V}_2$ 满足 $D_{\lambda\boldsymbol{W}_1+\mu\boldsymbol{W}_2}\boldsymbol{V}=\lambda{}D_{\boldsymbol{W}_1}\boldsymbol{V}+\mu{}D_{\boldsymbol{W}_2}\boldsymbol{V}$, $D_{\boldsymbol{W}}\left(\lambda\boldsymbol{V}_1+\mu\boldsymbol{V}_2\right)=\boldsymbol{W}\left(\lambda\right)\boldsymbol{V}_1+\lambda{}D_{\boldsymbol{W}}\boldsymbol{V}_1+\boldsymbol{W}\left(\mu\right)\boldsymbol{V}_2+\mu{}D_{\boldsymbol{W}}\boldsymbol{V}_2$, $\boldsymbol{W}\left\langle\boldsymbol{V}_1,\boldsymbol{V}_2\right\rangle=\left\langle{}D_{\boldsymbol{W}}\boldsymbol{V}_1,\boldsymbol{V}_2\right\rangle+\left\langle\boldsymbol{V}_1,{D}_{\boldsymbol{W}}\boldsymbol{V}_2\right\rangle$, $D_{\boldsymbol{r}_\alpha}\boldsymbol{r}_\beta=D_{\boldsymbol{r}_\beta}\boldsymbol{r}_\alpha$.
 
-> **定义 9.3.1 (克里斯托费尔符号)**
+> **定义 8.3.1 (克里斯托费尔符号)**
 > 
 > 称 $\Gamma^\varepsilon{}_{\alpha\beta}:=\frac{1}{2}g^{\varepsilon\lambda}\left(\partial_\alpha{}g_{\beta\lambda}+\partial_\beta{}g_{\alpha\lambda}-\partial_\lambda{}g_{\alpha\beta}\right)$ 为曲面 (或度量 $\mathrm{I}=g_{\alpha\beta}\mathrm{d}u^\alpha\mathrm{d}u^\beta$) 的克里斯托费尔符号; 它由 $g_{\alpha\beta}$ 及其一阶偏导完全确定, 且 $\Gamma^\varepsilon{}_{\alpha\beta}=\Gamma^\varepsilon{}_{\beta\alpha}$.
 
-> **命题 9.3.4 (协变微分是普通微分的切向投影)**
+> **命题 8.3.4 (协变微分是普通微分的切向投影)**
 > 
 > 对切向量场 $\boldsymbol{V}$ 与切向量场 $\boldsymbol{W}$, 有 $D_{\boldsymbol{W}}\boldsymbol{V}=\boldsymbol{W}\left(\boldsymbol{V}\right)-\left\langle\boldsymbol{W}\left(\boldsymbol{V}\right),\boldsymbol{n}\right\rangle\boldsymbol{n}$, 其中 $\boldsymbol{W}\left(\boldsymbol{V}\right)$ 是把 $\boldsymbol{V}$ 的分量沿 $\boldsymbol{W}$ 作普通方向导数所得的 $E^3$ 向量.
 
-> **定义 9.5.1 (平行)**
+> **定义 8.5.1 (平行)**
 > 
 > 设 $\boldsymbol{c}\left(t\right)$ 是 $S$ 上的正则曲线, $\boldsymbol{V}\left(t\right)$ 是沿 $\boldsymbol{c}$ 的切向量场; 若 $D_{\boldsymbol{c}'\left(t\right)}\boldsymbol{V}\left(t\right)=0$ 对一切 $t$ 成立, 则称 $\boldsymbol{V}$ 沿 $\boldsymbol{c}$ 平行.
 
-> **定义 9.5.4 (平行移动)**
+> **定义 8.5.4 (平行移动)**
 > 
 > 设 $\boldsymbol{c}\left(t\right)$, $t\in\left[0,1\right]$ 是 $S$ 上的曲线, $\boldsymbol{V}_0\in{}T_{\boldsymbol{c}\left(0\right)}S$; 若 $\boldsymbol{V}\left(t\right)$ 是沿 $\boldsymbol{c}$ 的平行切向量场且 $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$, 则称 $\boldsymbol{V}\left(1\right)$ 是 $\boldsymbol{V}_0$ 沿 $\boldsymbol{c}$ 平行移动到 $\boldsymbol{c}\left(1\right)$ 的结果; 它与 $\boldsymbol{c}$ 的参数化无关.
 
-> **推导 9.5.5 (平行移动的方程组)**
+> **推导 8.5.5 (平行移动的方程组)**
 > 
 > 设 $\boldsymbol{V}\left(t\right)=V^\beta\left(t\right)\boldsymbol{r}_\beta\left(u\left(t\right)\right)$, 曲线 $\boldsymbol{c}\left(t\right)=\boldsymbol{r}\left(u\left(t\right)\right)$; 则 $D_{\boldsymbol{c}'}\boldsymbol{V}=\left[\left(V^\beta\right)'+\left(u^\alpha\right)'V^\varepsilon\Gamma^\beta{}_{\alpha\varepsilon}\right]\boldsymbol{r}_\beta$, 故 $D_{\boldsymbol{c}'}\boldsymbol{V}=0$ 等价于 $\left(V^\beta\right)'+V^\varepsilon\left(u^\alpha\right)'\Gamma^\beta{}_{\alpha\varepsilon}=0$, $\beta=1,2$.
 
-> **命题 9.5.6 (平行移动的存在唯一性与线性性)**
+> **命题 8.5.6 (平行移动的存在唯一性与线性性)**
 > 
 > 设 $\boldsymbol{c}\left(t\right)$, $t\in\left[0,1\right]$ 是 $S$ 上的正则曲线, $\boldsymbol{V}_0\in{}T_{\boldsymbol{c}\left(0\right)}S$; 则存在唯一的沿 $\boldsymbol{c}$ 的平行切向量场 $\boldsymbol{V}\left(t\right)$ 使 $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$, 并且 $\boldsymbol{V}_0\mapsto\boldsymbol{V}\left(1\right)$ 是线性同构 $T_{\boldsymbol{c}\left(0\right)}S\to{}T_{\boldsymbol{c}\left(1\right)}S$.
 
-> **推论 9.6.3 (长度与夹角不变)**
+> **推论 8.6.3 (长度与夹角不变)**
 > 
 > 设 $\boldsymbol{V}$ 沿 $\boldsymbol{c}$ 平行, 则 $\left|\boldsymbol{V}\right|=\sqrt{\left\langle\boldsymbol{V},\boldsymbol{V}\right\rangle}$ 为常数; 设 $\boldsymbol{V}_1,\boldsymbol{V}_2$ 都沿 $\boldsymbol{c}$ 平行且处处非零, 则它们之间的夹角为常数; 特别地, 平行移动不改变向量的长度与向量间的夹角.
 
-> **例 11.2.2 (圆柱面)**
+> **例 10.2.2 (圆柱面)**
 > 
 > 圆柱面 $x^2+y^2=1$ 可用柱面坐标参数化为 $\boldsymbol{r}\left(\theta,u\right)=\left(\cos\theta,\sin\theta,u\right)$, $\theta$ 按模 $2\pi$ 理解, $u$ 取遍实数; 它分成 $\Sigma_1=\left\{x<1\right\}$ 与 $\Sigma_2=\left\{x>-1\right\}$ 两块, 分别取 $\theta\in\left(0,2\pi\right)$ 与 $\varphi\in\left(-\pi,\pi\right)$, 两块重叠处的拼接为 $\varphi=\theta-2\pi$ $\left(\theta\in\left(\pi,2\pi\right)\right)$.
 
@@ -96,7 +100,7 @@ g_{22}&=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle=a^2\cos^2u\le
 \end{aligned}
 $$
 
-故由**定义 3.3.1 (第一基本形式)**
+故由**定义 2.3.1 (第一基本形式)**
 
 $$
 \mathrm{I}=a^2\mathrm{d}u^2+a^2\cos^2u\,\mathrm{d}v^2,
@@ -104,7 +108,7 @@ $$
 
 取 $\left|u\right|<\pi/2$ 使 $\cos{}u>0$, 参数正则.
 
-$g_{12}=0$ 即参数网正交, 故由**推导 7.3.1 (正交参数网下的测地曲率)**
+$g_{12}=0$ 即参数网正交, 故由**推导 6.3.1 (正交参数网下的测地曲率)**
 
 $$
 k_g=\theta'\left(s\right)-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta,
@@ -152,13 +156,13 @@ $\blacksquare$
 
 ### 解答 1.11
 
-设旋转面为 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{}v,f\left(u\right)\sin{}v,g\left(u\right)\right)$ $\left(f>0\right)$; 这是**例 6.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
+设旋转面为 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{}v,f\left(u\right)\sin{}v,g\left(u\right)\right)$ $\left(f>0\right)$; 这是**例 5.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
 
 $$
 g_{11}=A:=\left(f'\right)^2+\left(g'\right)^2,\quad{}g_{12}=0,\quad{}g_{22}=f^2.
 $$
 
-纬线是 $v$ 线, 其切向量沿 $\boldsymbol{e}_2=\boldsymbol{r}_v/\sqrt{g_{22}}$, 故 $\theta\equiv\pi/2$, $\theta'=0$, $\cos\theta=0$, $\sin\theta=1$; 又 $A$ 与 $f$ 都只依赖 $u$, 故 $\partial_2g_{11}=0$, $\partial_1g_{22}=2ff'$. 代入**推导 7.3.1 (正交参数网下的测地曲率)**, 纬线的测地曲率为
+纬线是 $v$ 线, 其切向量沿 $\boldsymbol{e}_2=\boldsymbol{r}_v/\sqrt{g_{22}}$, 故 $\theta\equiv\pi/2$, $\theta'=0$, $\cos\theta=0$, $\sin\theta=1$; 又 $A$ 与 $f$ 都只依赖 $u$, 故 $\partial_2g_{11}=0$, $\partial_1g_{22}=2ff'$. 代入**推导 6.3.1 (正交参数网下的测地曲率)**, 纬线的测地曲率为
 
 $$
 k_g=\theta'-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta=0-0+\frac{2ff'}{2f^2\sqrt{A}}\cdot1=\frac{f'\left(u\right)}{f\left(u\right)\sqrt{\left(f'\right)^2+\left(g'\right)^2}}.
@@ -190,13 +194,13 @@ $$
 \boldsymbol{e}_2=\boldsymbol{e}_3\times\boldsymbol{e}_1=\boldsymbol{n}\times\boldsymbol{e}_1.
 $$
 
-(1) $\boldsymbol{e}_1=\dot{\boldsymbol{r}}=\boldsymbol{t}$, $\boldsymbol{e}_3=\boldsymbol{n}$, 故 $\dot{\boldsymbol{e}}_1=\dot{\boldsymbol{t}}$; 由**推导 7.11.1 (切向分解与法曲率)** 与**说明 7.11.2 (测地曲率与法曲率的关系)**
+(1) $\boldsymbol{e}_1=\dot{\boldsymbol{r}}=\boldsymbol{t}$, $\boldsymbol{e}_3=\boldsymbol{n}$, 故 $\dot{\boldsymbol{e}}_1=\dot{\boldsymbol{t}}$; 由**推导 6.1.1 (曲面上曲线的二阶分解)**, $\dot{\boldsymbol{t}}=k_g\boldsymbol{t}_g+k_n\boldsymbol{n}$ 且 $\left\{\boldsymbol{t}_g,\boldsymbol{n}\right\}$ 是 $\boldsymbol{t}^{\perp}$ 的正交基, 又由**推导 6.4.2** 与**推导 6.4.3 (测地曲率的展开)**, $\boldsymbol{t}_g=\boldsymbol{n}\times\boldsymbol{t}$ 且 $k_g=\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\times\boldsymbol{t}\right\rangle$; 于是
 
 $$
 \dot{\boldsymbol{e}}_1=\dot{\boldsymbol{t}}=k_g\left(\boldsymbol{n}\times\boldsymbol{t}\right)+k_n\boldsymbol{n}=k_g\boldsymbol{e}_2+k_n\boldsymbol{e}_3,
 $$
 
-其中 $k_n$ 按**定义 7.1.2 (法曲率与测地曲率)** 就是法曲率. 与题给矩阵的第一行 $\dot{\boldsymbol{e}}_1=\lambda_1\boldsymbol{e}_2+\lambda_2\boldsymbol{e}_3$ 比较, 由 $\boldsymbol{e}_2,\boldsymbol{e}_3$ 线性无关得
+其中 $k_n$ 按**定义 6.1.2 (法曲率与测地曲率)** 就是法曲率. 与题给矩阵的第一行 $\dot{\boldsymbol{e}}_1=\lambda_1\boldsymbol{e}_2+\lambda_2\boldsymbol{e}_3$ 比较, 由 $\boldsymbol{e}_2,\boldsymbol{e}_3$ 线性无关得
 
 $$
 \lambda_1=k_g,\quad\lambda_2=k_n.
@@ -260,13 +264,13 @@ $$
 \left\langle\boldsymbol{n}\times\boldsymbol{a},\boldsymbol{n}\times\boldsymbol{b}\right\rangle=\left\langle\boldsymbol{n},\boldsymbol{n}\right\rangle\left\langle\boldsymbol{a},\boldsymbol{b}\right\rangle-\left\langle\boldsymbol{n},\boldsymbol{b}\right\rangle\left\langle\boldsymbol{a},\boldsymbol{n}\right\rangle=\left\langle\boldsymbol{a},\boldsymbol{b}\right\rangle.
 $$
 
-由**定义 9.2.1 (协变微分)** 的莱布尼茨法则, 对上面 $\boldsymbol{w}$ 的展开式求导,
+由**定义 8.2.1 (协变微分)** 的莱布尼茨法则, 对上面 $\boldsymbol{w}$ 的展开式求导,
 
 $$
 \frac{D\boldsymbol{w}}{\mathrm{d}t}=\theta'\left(-\sin\theta\,\boldsymbol{v}+\cos\theta\,\boldsymbol{e}_2\right)+\cos\theta\frac{D\boldsymbol{v}}{\mathrm{d}t}+\sin\theta\frac{D\boldsymbol{e}_2}{\mathrm{d}t}.
 $$
 
-又由 $\left|\boldsymbol{v}\right|=1$ 与**定义 9.2.1 (协变微分)** 的度量相容性,
+又由 $\left|\boldsymbol{v}\right|=1$ 与**定义 8.2.1 (协变微分)** 的度量相容性,
 
 $$
 0=\frac{\mathrm{d}}{\mathrm{d}t}\left\langle\boldsymbol{v},\boldsymbol{v}\right\rangle=2\left\langle\frac{D\boldsymbol{v}}{\mathrm{d}t},\boldsymbol{v}\right\rangle;
@@ -284,7 +288,7 @@ $$
 \frac{\mathrm{d}}{\mathrm{d}t}\left(\boldsymbol{n}\times\boldsymbol{v}\right)=\dot{\boldsymbol{n}}\times\boldsymbol{v}+\boldsymbol{n}\times\frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t},
 $$
 
-右端第一项是两个切向量的叉积, 沿 $\boldsymbol{n}$; 第二项中 $\frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t}$ 的法向分量为 $\left\langle\frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t},\boldsymbol{n}\right\rangle\boldsymbol{n}$, 它与 $\boldsymbol{n}$ 的叉积为零. 故由**命题 9.3.4 (协变微分是普通微分的切向投影)**
+右端第一项是两个切向量的叉积, 沿 $\boldsymbol{n}$; 第二项中 $\frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t}$ 的法向分量为 $\left\langle\frac{\mathrm{d}\boldsymbol{v}}{\mathrm{d}t},\boldsymbol{n}\right\rangle\boldsymbol{n}$, 它与 $\boldsymbol{n}$ 的叉积为零. 故由**命题 8.3.4 (协变微分是普通微分的切向投影)**
 
 $$
 \frac{D\boldsymbol{e}_2}{\mathrm{d}t}=\boldsymbol{n}\times\frac{D\boldsymbol{v}}{\mathrm{d}t}.
@@ -326,13 +330,13 @@ $\blacksquare$
 
 ### 解答 1.14
 
-这是**例 6.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
+这是**例 5.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
 
 $$
 g_{11}=A:=\left(f'\right)^2+\left(g'\right)^2,\quad{}g_{12}=0,\quad{}g_{22}=f^2.
 $$
 
-$C$ 是测地线, 由**定义 7.2.1 (测地线)** $k_g\equiv0$, 故由**推论 7.3.2 (正交参数网下的测地线方程)** 沿 $C$
+$C$ 是测地线, 由**定义 6.2.1 (测地线)** $k_g\equiv0$, 故由**推论 6.3.2 (正交参数网下的测地线方程)** 沿 $C$
 
 $$
 \theta'=\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta-\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta.
@@ -372,7 +376,7 @@ $$
 \boldsymbol{r}_u=\left(\cos{}v,\sin{}v,f'\right),\quad\boldsymbol{r}_v=\left(-u\sin{}v,u\cos{}v,0\right),
 $$
 
-故由**定义 3.3.1 (第一基本形式)**, 取参数区域 $u>0$,
+故由**定义 2.3.1 (第一基本形式)**, 取参数区域 $u>0$,
 
 $$
 g_{11}=1+\left(f'\right)^2=:A,\quad{}g_{12}=0,\quad{}g_{22}=u^2.
@@ -384,7 +388,7 @@ $$
 \cos\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_1\right\rangle=\dot{u}\sqrt{g_{11}}=\dot{u}\sqrt{A},\quad\sin\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_2\right\rangle=\dot{v}\sqrt{g_{22}}=u\dot{v}.
 $$
 
-设 $C$ 是测地线, 由**定义 7.2.1 (测地线)** $k_g\equiv0$; $A$ 与 $g_{22}=u^2$ 都只依赖 $u$, 故 $\partial_2g_{11}=0$, $\partial_1g_{22}=2u$, 代入**推论 7.3.2 (正交参数网下的测地线方程)**
+设 $C$ 是测地线, 由**定义 6.2.1 (测地线)** $k_g\equiv0$; $A$ 与 $g_{22}=u^2$ 都只依赖 $u$, 故 $\partial_2g_{11}=0$, $\partial_1g_{22}=2u$, 代入**推论 6.3.2 (正交参数网下的测地线方程)**
 
 $$
 \theta'=\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta-\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta=-\frac{2u}{2u^2\sqrt{A}}\sin\theta=-\frac{\sin\theta}{u\sqrt{A}}.
@@ -434,13 +438,13 @@ $\blacksquare$
 
 ### 解答 2
 
-由**例 11.2.2 (圆柱面)**, 圆柱面可用 $\boldsymbol{r}\left(\theta,u\right)=\left(\cos\theta,\sin\theta,u\right)$ 参数化 ($\theta$ 按模 $2\pi$ 理解, $u$ 取遍实数), 且
+由**例 10.2.2 (圆柱面)**, 圆柱面可用 $\boldsymbol{r}\left(\theta,u\right)=\left(\cos\theta,\sin\theta,u\right)$ 参数化 ($\theta$ 按模 $2\pi$ 理解, $u$ 取遍实数), 且
 
 $$
 \boldsymbol{r}_\theta=\left(-\sin\theta,\cos\theta,0\right),\quad\boldsymbol{r}_u=\left(0,0,1\right),
 $$
 
-故由**定义 3.3.1 (第一基本形式)**
+故由**定义 2.3.1 (第一基本形式)**
 
 $$
 g_{11}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_\theta\right\rangle=1,\quad{}g_{12}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_u\right\rangle=0,\quad{}g_{22}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=1,
@@ -448,7 +452,7 @@ $$
 
 即 $\mathrm{I}=\mathrm{d}\theta^2+\mathrm{d}u^2$, 全部系数为常数.
 
-由**定义 9.3.1 (克里斯托费尔符号)**, $\Gamma^\varepsilon{}_{\alpha\beta}$ 只由 $g_{\alpha\beta}$ 及其一阶偏导算出, 而上面的 $g_{\alpha\beta}$ 全为常数, 故
+由**定义 8.3.1 (克里斯托费尔符号)**, $\Gamma^\varepsilon{}_{\alpha\beta}$ 只由 $g_{\alpha\beta}$ 及其一阶偏导算出, 而上面的 $g_{\alpha\beta}$ 全为常数, 故
 
 $$
 \Gamma^\varepsilon{}_{\alpha\beta}\equiv0,\quad\alpha,\beta,\varepsilon\in\left\{1,2\right\}.
@@ -456,7 +460,7 @@ $$
 
 于是 $D_{\boldsymbol{r}_\alpha}\boldsymbol{r}_\beta=\Gamma^\varepsilon{}_{\alpha\beta}\boldsymbol{r}_\varepsilon=0$: 坐标标架 $\left\{\boldsymbol{r}_\theta,\boldsymbol{r}_u\right\}$ 的协变导数处处为零.
 
-设 $\boldsymbol{V}$ 是沿圆柱面上曲线 $\boldsymbol{c}$ 的平行切向量场 (即由**定义 9.5.1 (平行)** $D_{\boldsymbol{c}'}\boldsymbol{V}=0$), $\boldsymbol{V}=V^1\boldsymbol{r}_\theta+V^2\boldsymbol{r}_u$. 由**推导 9.5.5 (平行移动的方程组)**
+设 $\boldsymbol{V}$ 是沿圆柱面上曲线 $\boldsymbol{c}$ 的平行切向量场 (即由**定义 8.5.1 (平行)** $D_{\boldsymbol{c}'}\boldsymbol{V}=0$), $\boldsymbol{V}=V^1\boldsymbol{r}_\theta+V^2\boldsymbol{r}_u$. 由**推导 8.5.5 (平行移动的方程组)**
 
 $$
 \left(V^\beta\right)'+V^\varepsilon\left(u^\alpha\right)'\Gamma^\beta{}_{\alpha\varepsilon}=0,\quad\beta=1,2,

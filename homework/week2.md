@@ -28,10 +28,6 @@
 > 
 > 设 $\boldsymbol{r}=\boldsymbol{r}\left(s\right)$ 是以弧长 $s$ 为参数的正则曲线, 且 $\kappa\left(s\right)>0$ 对一切 $s$ 成立, 弗雷内标架为 $\left\{\boldsymbol{t},\boldsymbol{n},\boldsymbol{b}\right\}$. 单位切向量 $\boldsymbol{t}\left(s\right)$ 可视作单位球面 $S^{2}\left(1\right)$ 上的一条曲线 $\boldsymbol{r}^{*}\left(s\right):=\boldsymbol{t}\left(s\right)$, 称为 $\boldsymbol{r}$ 的切线像. 以 $\sigma$ 记切线像的弧长参数, 则 $\mathrm{d}\sigma=\kappa\,\mathrm{d}s$, 且切线像的曲率与挠率为 $\kappa^{*}=\sqrt{1+\left(\frac{\tau}{\kappa}\right)^{2}}$, $\tau^{*}=\frac{1}{\kappa}\cdot\frac{\left(\frac{\tau}{\kappa}\right)'}{1+\left(\frac{\tau}{\kappa}\right)^{2}}$.
 
-> **定理 2.4.1 (芬切尔)**
-> 
-> 设 $\boldsymbol{r}:\left[0,L\right]\to{}E^{3}$ 是正则闭曲线, $\kappa=\kappa\left(s\right)$ 为其曲率, 则全曲率满足 $\int_{\boldsymbol{r}}\kappa\left(s\right)\,\mathrm{d}s\ge2\pi$, 等号成立当且仅当 $\boldsymbol{r}$ 是一条平面凸闭曲线.
-
 ## 1.11 (副法向量积分曲线与曲率挠率互换)
 
 设弧长参数曲线 $\boldsymbol{r}\left(s\right)$ 的曲率 $\kappa>0$, 挠率 $\tau>0$, $\boldsymbol{b}\left(s\right)$ 是 $\boldsymbol{r}$ 的副法向量, 定义曲线 $\widetilde{C}$: $\widetilde{\boldsymbol{r}}\left(s\right)=\int_0^s\boldsymbol{b}\left(u\right)\mathrm{d}u$.
@@ -354,9 +350,9 @@ $$
 \int_{\gamma}\kappa\left(s\right)\mathrm{d}s=\mathrm{len}\left(\boldsymbol{r}^{*}\right),
 $$
 
-即全曲率等于切线像在 $S^{2}\left(1\right)$ 上的长度. 下界. 由**定理 2.4.1 (芬切尔)**, 任何正则闭曲线的全曲率不小于 $2\pi$; 而题面给定的法里-米尔诺定理给出, 非平凡纽结的全曲率严格大于 $4\pi$.
+即全曲率等于切线像在 $S^{2}\left(1\right)$ 上的长度. 下界. 题面给定的法里-米尔诺定理给出, 非平凡纽结的全曲率严格大于 $4\pi$, 故 $4\pi$ 是全体非平凡纽结全曲率的下界.
 
-逼近. 对任意 $\delta>0$ 构造一条非平凡纽结, 其全曲率落在 $\left(4\pi,4\pi+\delta\right)$ 内. 取一条平面凸闭曲线 $\gamma_{0}$ (例如单位圆), 由**定理 2.4.1 (芬切尔)** 的等号情形, $\int_{\gamma_{0}}\kappa\,\mathrm{d}s=2\pi$. 在 $\gamma_{0}$ 的一小段 $\left|\Delta{}s\right|=\delta'$ 上把曲线在垂直于平面方向的 $\varepsilon$ 尺度内绕出一个小环, 使该段的切线方向先离开平面, 绕过近乎一整圈, 再回到原平面并接上原曲线. 该段切线像的长度为 $2\pi+O\left(\varepsilon/\delta'\right)$; 平面上的其余部分几乎不受影响, 其全曲率为 $2\pi-O\left(\delta'\right)$; 小环段与原曲线相接处的调整量也为 $O\left(\delta'\right)$. 于是
+逼近. 对任意 $\delta>0$ 构造一条非平凡纽结, 其全曲率落在 $\left(4\pi,4\pi+\delta\right)$ 内. 取单位圆 $\gamma_{0}$ 作平面凸闭曲线: 以弧长参数化 $\gamma_{0}\left(s\right)=\left(\cos{}s,\sin{}s\right)$, $s\in\left[0,2\pi\right]$, 其单位切向 $\left(-\sin{}s,\cos{}s\right)$ 关于 $s$ 的导数为 $\left(-\cos{}s,-\sin{}s\right)$, 模长为 $1$, 故 $\kappa\equiv1$ (**定义 1.5.3 (曲率与主法向量)**), 而 $\gamma_{0}$ 的弧长为 $2\pi$, 于是 $\int_{\gamma_{0}}\kappa\,\mathrm{d}s=2\pi$. 在 $\gamma_{0}$ 的一小段 $\left|\Delta{}s\right|=\delta'$ 上把曲线在垂直于平面方向的 $\varepsilon$ 尺度内绕出一个小环, 使该段的切线方向先离开平面, 绕过近乎一整圈, 再回到原平面并接上原曲线. 该段切线像的长度为 $2\pi+O\left(\varepsilon/\delta'\right)$; 平面上的其余部分几乎不受影响, 其全曲率为 $2\pi-O\left(\delta'\right)$; 小环段与原曲线相接处的调整量也为 $O\left(\delta'\right)$. 于是
 
 $$
 \int_{\gamma}\kappa\,\mathrm{d}s=2\pi-O\left(\delta'\right)+2\pi+O\left(\varepsilon/\delta'\right)=4\pi+o\left(1\right),\quad\delta'\to0,\varepsilon\to0.
