@@ -18,7 +18,7 @@
 
 > **定理 1.5.9 (空间曲线基本定理)**
 > 
-> 在 $E^{3}$ 上相差一个保向等距变换 (刚体运动) 的意义下, 给定 $\kappa\in{C}^{1}$ ($\kappa>0$) 与 $\tau\in{C}^{1}$, 存在唯一弧长参数曲线 $\boldsymbol{r}\left(s\right)$ 以 $\kappa$, $\tau$ 为曲率与挠率.
+> 在 $E^{3}$ 上相差一个保向等距变换 (刚体运动) 的意义下, 给定 $\kappa\in{}C^{1}$ ($\kappa>0$) 与 $\tau\in{}C^{1}$, 存在唯一弧长参数曲线 $\boldsymbol{r}\left(s\right)$ 以 $\kappa$, $\tau$ 为曲率与挠率.
 
 > **命题 1.5.10 (一般参数下的曲率与挠率公式)**
 > 
@@ -30,7 +30,7 @@
 
 > **定理 2.4.1 (芬切尔)**
 > 
-> 设 $\boldsymbol{r}:\left[0,L\right]\to{E}^{3}$ 是正则闭曲线, $\kappa=\kappa\left(s\right)$ 为其曲率, 则全曲率满足 $\int_{\boldsymbol{r}}\kappa\left(s\right)\,\mathrm{d}s\ge2\pi$, 等号成立当且仅当 $\boldsymbol{r}$ 是一条平面凸闭曲线.
+> 设 $\boldsymbol{r}:\left[0,L\right]\to{}E^{3}$ 是正则闭曲线, $\kappa=\kappa\left(s\right)$ 为其曲率, 则全曲率满足 $\int_{\boldsymbol{r}}\kappa\left(s\right)\,\mathrm{d}s\ge2\pi$, 等号成立当且仅当 $\boldsymbol{r}$ 是一条平面凸闭曲线.
 
 ## 1.11 (副法向量积分曲线与曲率挠率互换)
 
@@ -143,7 +143,7 @@ $\blacksquare$
 设 $P_0$ 是 $E^{3}$ 的曲线 $\widetilde{C}$ 上一点, $P$ 是 $\widetilde{C}$ 上 $P_0$ 的邻近点, $l$ 是 $P_0$ 处的切线; 证明:
 
 $$
-\lim_{P\to{P}_0}\frac{2d\left(P,l\right)}{d^2\left(P_0,P\right)}=\kappa\left(P_0\right),
+\lim_{P\to{}P_0}\frac{2d\left(P,l\right)}{d^2\left(P_0,P\right)}=\kappa\left(P_0\right),
 $$
 
 这里 $d$ 表示 $E^{3}$ 的距离.
@@ -267,38 +267,38 @@ $\blacksquare$
 
 ## 1.20 (两条曲线合同的判定)
 
-证明: 曲线 $\boldsymbol{r}\left(t\right)=\left(t+\sqrt3\sin{t},2\cos{t},\sqrt3t-\sin{t}\right)$ 与曲线 $\widetilde{\boldsymbol{r}}\left(t\right)=\left(2\cos\frac{t}{2},2\sin\frac{t}{2},-t\right)$ 是合同的.
+证明: 曲线 $\boldsymbol{r}\left(t\right)=\left(t+\sqrt3\sin{}t,2\cos{}t,\sqrt3t-\sin{}t\right)$ 与曲线 $\widetilde{\boldsymbol{r}}\left(t\right)=\left(2\cos\frac{t}{2},2\sin\frac{t}{2},-t\right)$ 是合同的.
 
 ### 解答 1.20
 
 两曲线合同即相差 $E^{3}$ 的一个等距变换. 由**定理 1.5.9 (空间曲线基本定理)**, 只需二者有相同的曲率与挠率; 曲率与挠率按**命题 1.5.10 (一般参数下的曲率与挠率公式)** 计算. 曲线 $\boldsymbol{r}$. 求导:
 
 $$
-\boldsymbol{r}'=\left(1+\sqrt3\cos{t},-2\sin{t},\sqrt3-\cos{t}\right),\quad
-\boldsymbol{r}''=\left(-\sqrt3\sin{t},-2\cos{t},\sin{t}\right),
+\boldsymbol{r}'=\left(1+\sqrt3\cos{}t,-2\sin{}t,\sqrt3-\cos{}t\right),\quad
+\boldsymbol{r}''=\left(-\sqrt3\sin{}t,-2\cos{}t,\sin{}t\right),
 $$
 
 $$
-\boldsymbol{r}'''=\left(-\sqrt3\cos{t},2\sin{t},\cos{t}\right).
+\boldsymbol{r}'''=\left(-\sqrt3\cos{}t,2\sin{}t,\cos{}t\right).
 $$
 
 于是
 
 $$
-v^{2}=\left(1+\sqrt3\cos{t}\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos{t}\right)^{2}=8,\quad{v}=2\sqrt2,
+v^{2}=\left(1+\sqrt3\cos{}t\right)^{2}+4\sin^{2}t+\left(\sqrt3-\cos{}t\right)^{2}=8,\quad{}v=2\sqrt2,
 $$
 
 $$
-\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-2+2\sqrt3\cos{t},-4\sin{t},-2\cos{t}-2\sqrt3\right),
+\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-2+2\sqrt3\cos{}t,-4\sin{}t,-2\cos{}t-2\sqrt3\right),
 $$
 
 $$
-w^{2}=\left(-2+2\sqrt3\cos{t}\right)^{2}+16\sin^{2}t+\left(-2\cos{t}-2\sqrt3\right)^{2}=32,\quad{w}=4\sqrt2,
+w^{2}=\left(-2+2\sqrt3\cos{}t\right)^{2}+16\sin^{2}t+\left(-2\cos{}t-2\sqrt3\right)^{2}=32,\quad{}w=4\sqrt2,
 $$
 
 $$
 \left(\boldsymbol{r}',\boldsymbol{r}'',\boldsymbol{r}'''\right)
-=\det\begin{bmatrix}1+\sqrt3\cos{t}&-2\sin{t}&\sqrt3-\cos{t}\\-\sqrt3\sin{t}&-2\cos{t}&\sin{t}\\-\sqrt3\cos{t}&2\sin{t}&\cos{t}\end{bmatrix}=-8.
+=\det\begin{bmatrix}1+\sqrt3\cos{}t&-2\sin{}t&\sqrt3-\cos{}t\\-\sqrt3\sin{}t&-2\cos{}t&\sin{}t\\-\sqrt3\cos{}t&2\sin{}t&\cos{}t\end{bmatrix}=-8.
 $$
 
 故 $\kappa=\frac{w}{v^{3}}=\frac{4\sqrt2}{16\sqrt2}=\frac{1}{4}$, $\tau=\frac{\left(\boldsymbol{r}',\boldsymbol{r}'',\boldsymbol{r}'''\right)}{w^{2}}=\frac{-8}{32}=-\frac{1}{4}$.
@@ -356,7 +356,7 @@ $$
 
 即全曲率等于切线像在 $S^{2}\left(1\right)$ 上的长度. 下界. 由**定理 2.4.1 (芬切尔)**, 任何正则闭曲线的全曲率不小于 $2\pi$; 而题面给定的法里-米尔诺定理给出, 非平凡纽结的全曲率严格大于 $4\pi$.
 
-逼近. 对任意 $\delta>0$ 构造一条非平凡纽结, 其全曲率落在 $\left(4\pi,4\pi+\delta\right)$ 内. 取一条平面凸闭曲线 $\gamma_{0}$ (例如单位圆), 由**定理 2.4.1 (芬切尔)** 的等号情形, $\int_{\gamma_{0}}\kappa\,\mathrm{d}s=2\pi$. 在 $\gamma_{0}$ 的一小段 $\left|\Delta{s}\right|=\delta'$ 上把曲线在垂直于平面方向的 $\varepsilon$ 尺度内绕出一个小环, 使该段的切线方向先离开平面, 绕过近乎一整圈, 再回到原平面并接上原曲线. 该段切线像的长度为 $2\pi+O\left(\varepsilon/\delta'\right)$; 平面上的其余部分几乎不受影响, 其全曲率为 $2\pi-O\left(\delta'\right)$; 小环段与原曲线相接处的调整量也为 $O\left(\delta'\right)$. 于是
+逼近. 对任意 $\delta>0$ 构造一条非平凡纽结, 其全曲率落在 $\left(4\pi,4\pi+\delta\right)$ 内. 取一条平面凸闭曲线 $\gamma_{0}$ (例如单位圆), 由**定理 2.4.1 (芬切尔)** 的等号情形, $\int_{\gamma_{0}}\kappa\,\mathrm{d}s=2\pi$. 在 $\gamma_{0}$ 的一小段 $\left|\Delta{}s\right|=\delta'$ 上把曲线在垂直于平面方向的 $\varepsilon$ 尺度内绕出一个小环, 使该段的切线方向先离开平面, 绕过近乎一整圈, 再回到原平面并接上原曲线. 该段切线像的长度为 $2\pi+O\left(\varepsilon/\delta'\right)$; 平面上的其余部分几乎不受影响, 其全曲率为 $2\pi-O\left(\delta'\right)$; 小环段与原曲线相接处的调整量也为 $O\left(\delta'\right)$. 于是
 
 $$
 \int_{\gamma}\kappa\,\mathrm{d}s=2\pi-O\left(\delta'\right)+2\pi+O\left(\varepsilon/\delta'\right)=4\pi+o\left(1\right),\quad\delta'\to0,\varepsilon\to0.

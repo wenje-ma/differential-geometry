@@ -26,7 +26,7 @@
 
 > **推导 8.1.2 (切映射及其系数矩阵)**
 > 
-> 设 $\sigma:S\to\widetilde{S}$ 是两张曲面间的对应, $P=\boldsymbol{r}\left(u,v\right)\in{S}$, $\sigma\left(P\right)=\widetilde{\boldsymbol{r}}\left(\widetilde{u},\widetilde{v}\right)$. 对 $\boldsymbol{v}=a\boldsymbol{r}_u+b\boldsymbol{r}_v\in{T}_PS$, 取 $D$ 中的曲线 $\left(u\left(t\right),v\left(t\right)\right)$ 使 $\left(u,v\right)\left(0\right)=\left(u,v\right)$, $\left(\dot{u},\dot{v}\right)\left(0\right)=\left(a,b\right)$, 规定 $\sigma_*\left(\boldsymbol{v}\right):=\left.\frac{\mathrm{d}}{\mathrm{d}t}\sigma\left(\boldsymbol{r}\left(u\left(t\right),v\left(t\right)\right)\right)\right|_{t=0}$, 则 $\sigma_*$ 是线性映射, 且它在基 $\left\{\boldsymbol{r}_u,\boldsymbol{r}_v\right\}$ 与 $\left\{\widetilde{\boldsymbol{r}}_{\widetilde{u}},\widetilde{\boldsymbol{r}}_{\widetilde{v}}\right\}$ 下的矩阵为 $J_\sigma=\begin{bmatrix}\widetilde{u}_u&\widetilde{v}_u\\\widetilde{u}_v&\widetilde{v}_v\end{bmatrix}$.
+> 设 $\sigma:S\to\widetilde{S}$ 是两张曲面间的对应, $P=\boldsymbol{r}\left(u,v\right)\in{}S$, $\sigma\left(P\right)=\widetilde{\boldsymbol{r}}\left(\widetilde{u},\widetilde{v}\right)$. 对 $\boldsymbol{v}=a\boldsymbol{r}_u+b\boldsymbol{r}_v\in{}T_PS$, 取 $D$ 中的曲线 $\left(u\left(t\right),v\left(t\right)\right)$ 使 $\left(u,v\right)\left(0\right)=\left(u,v\right)$, $\left(\dot{u},\dot{v}\right)\left(0\right)=\left(a,b\right)$, 规定 $\sigma_*\left(\boldsymbol{v}\right):=\left.\frac{\mathrm{d}}{\mathrm{d}t}\sigma\left(\boldsymbol{r}\left(u\left(t\right),v\left(t\right)\right)\right)\right|_{t=0}$, 则 $\sigma_*$ 是线性映射, 且它在基 $\left\{\boldsymbol{r}_u,\boldsymbol{r}_v\right\}$ 与 $\left\{\widetilde{\boldsymbol{r}}_{\widetilde{u}},\widetilde{\boldsymbol{r}}_{\widetilde{v}}\right\}$ 下的矩阵为 $J_\sigma=\begin{bmatrix}\widetilde{u}_u&\widetilde{v}_u\\\widetilde{u}_v&\widetilde{v}_v\end{bmatrix}$.
 
 > **定义 8.1.4 (拉回)**
 > 
@@ -38,7 +38,7 @@
 
 > **定义 9.3.1 (克里斯托费尔符号)**
 > 
-> 称 $\Gamma^\varepsilon{}_{\alpha\beta}:=\frac{1}{2}g^{\varepsilon\lambda}\left(\partial_\alpha{g}_{\beta\lambda}+\partial_\beta{g}_{\alpha\lambda}-\partial_\lambda{g}_{\alpha\beta}\right)$ 为曲面 (或度量 $\mathrm{I}=g_{\alpha\beta}\mathrm{d}u^\alpha\mathrm{d}u^\beta$) 的克里斯托费尔符号; 它由 $g_{\alpha\beta}$ 及其一阶偏导数完全确定, 并且 $\Gamma^\varepsilon{}_{\alpha\beta}=\Gamma^\varepsilon{}_{\beta\alpha}$.
+> 称 $\Gamma^\varepsilon{}_{\alpha\beta}:=\frac{1}{2}g^{\varepsilon\lambda}\left(\partial_\alpha{}g_{\beta\lambda}+\partial_\beta{}g_{\alpha\lambda}-\partial_\lambda{}g_{\alpha\beta}\right)$ 为曲面 (或度量 $\mathrm{I}=g_{\alpha\beta}\mathrm{d}u^\alpha\mathrm{d}u^\beta$) 的克里斯托费尔符号; 它由 $g_{\alpha\beta}$ 及其一阶偏导数完全确定, 并且 $\Gamma^\varepsilon{}_{\alpha\beta}=\Gamma^\varepsilon{}_{\beta\alpha}$.
 
 > **命题 9.3.4 (协变微分是普通微分的切向投影)**
 > 
@@ -62,7 +62,7 @@
 
 > **定义 10.1.1 (测地线)**
 > 
-> 设 $\boldsymbol{c}\left(s\right)$ 是 $S$ 上以弧长参数化的曲线, 其测地曲率 $k_g:=\left\langle{D}_{\boldsymbol{c}'}\boldsymbol{c}',\boldsymbol{t}_\perp\right\rangle$, 其中 $\boldsymbol{c}'$ 是单位切向量, $\boldsymbol{t}_\perp$ 是切平面内与 $\boldsymbol{c}'$ 正交的单位向量且 $\left\{\boldsymbol{c}',\boldsymbol{t}_\perp\right\}$ 与曲面的定向一致. 若 $k_g\equiv0$, 则称 $\boldsymbol{c}$ 是 $S$ 的测地线.
+> 设 $\boldsymbol{c}\left(s\right)$ 是 $S$ 上以弧长参数化的曲线, 其测地曲率 $k_g:=\left\langle{}D_{\boldsymbol{c}'}\boldsymbol{c}',\boldsymbol{t}_\perp\right\rangle$, 其中 $\boldsymbol{c}'$ 是单位切向量, $\boldsymbol{t}_\perp$ 是切平面内与 $\boldsymbol{c}'$ 正交的单位向量且 $\left\{\boldsymbol{c}',\boldsymbol{t}_\perp\right\}$ 与曲面的定向一致. 若 $k_g\equiv0$, 则称 $\boldsymbol{c}$ 是 $S$ 的测地线.
 
 > **命题 10.1.2 (测地线即切向量平行的曲线)**
 > 
@@ -70,15 +70,15 @@
 
 > **例 10.2.1 (单位球面上的测地线恰为大圆)**
 > 
-> 设 $S^2\left(1\right)=\left\{\left(x^1,x^2,x^3\right)\in{E}^3:\left|\boldsymbol{x}\right|=1\right\}$ 是单位球面, 称 $S^2\left(1\right)$ 与过原点的平面的交集为大圆. 则 $S^2\left(1\right)$ 上的测地线恰为大圆.
+> 设 $S^2\left(1\right)=\left\{\left(x^1,x^2,x^3\right)\in{}E^3:\left|\boldsymbol{x}\right|=1\right\}$ 是单位球面, 称 $S^2\left(1\right)$ 与过原点的平面的交集为大圆. 则 $S^2\left(1\right)$ 上的测地线恰为大圆.
 
 ## 1 (链式法则)
 
-设 $S$, $S'$ 和 $S''$ 为曲面片, 且 $\varphi:S\to{S}'$ 和 $\psi:S'\to{S}''$ 为光滑映射. 证明: 对于任意 $p\in{S}$, $\mathrm{d}\left(\psi\circ\varphi\right)_p=\mathrm{d}\psi_{\varphi\left(p\right)}\circ\mathrm{d}\varphi_p$.
+设 $S$, $S'$ 和 $S''$ 为曲面片, 且 $\varphi:S\to{}S'$ 和 $\psi:S'\to{}S''$ 为光滑映射. 证明: 对于任意 $p\in{}S$, $\mathrm{d}\left(\psi\circ\varphi\right)_p=\mathrm{d}\psi_{\varphi\left(p\right)}\circ\mathrm{d}\varphi_p$.
 
 ### 解答 1
 
-先看切映射的曲线定义: 设 $p=\boldsymbol{r}\left(u^1,u^2\right)$, $\boldsymbol{v}=a^1\boldsymbol{r}_1+a^2\boldsymbol{r}_2\in{T}_pS$. 按**推导 8.1.2 (切映射及其系数矩阵)** 的定义, 取 $S$ 上过 $p$ 的光滑曲线
+先看切映射的曲线定义: 设 $p=\boldsymbol{r}\left(u^1,u^2\right)$, $\boldsymbol{v}=a^1\boldsymbol{r}_1+a^2\boldsymbol{r}_2\in{}T_pS$. 按**推导 8.1.2 (切映射及其系数矩阵)** 的定义, 取 $S$ 上过 $p$ 的光滑曲线
 
 $$
 \alpha\left(t\right)=\boldsymbol{r}\left(u^1+ta^1,u^2+ta^2\right),\quad\alpha\left(0\right)=p,\quad\alpha'\left(0\right)=a^1\boldsymbol{r}_1+a^2\boldsymbol{r}_2=\boldsymbol{v},
@@ -93,15 +93,15 @@ $$
 再看良定义性与线性: 设 $S,S'$ 的参数为 $u^\alpha,\widetilde{u}^\alpha$, $\varphi$ 的参数表示为 $\widetilde{u}^\alpha=\widetilde{u}^\alpha\left(u^1,u^2\right)$, 并记 $\widetilde{u}^\gamma\left(t\right):=\widetilde{u}^\gamma\left(u^1+ta^1,u^2+ta^2\right)$. 则 $\varphi\left(\alpha\left(t\right)\right)=\widetilde{\boldsymbol{r}}\left(\widetilde{u}^\gamma\left(t\right)\right)$, 由链式法则
 
 $$
-\left(\varphi\circ\alpha\right)'\left(0\right)=\left(\widetilde{u}^\gamma\right)'\left(0\right)\widetilde{\boldsymbol{r}}_{\widetilde{u}^\gamma}=\frac{\partial\widetilde{u}^\gamma}{\partial{u}^\beta}a^\beta\widetilde{\boldsymbol{r}}_{\widetilde{u}^\gamma},
+\left(\varphi\circ\alpha\right)'\left(0\right)=\left(\widetilde{u}^\gamma\right)'\left(0\right)\widetilde{\boldsymbol{r}}_{\widetilde{u}^\gamma}=\frac{\partial\widetilde{u}^\gamma}{\partial{}u^\beta}a^\beta\widetilde{\boldsymbol{r}}_{\widetilde{u}^\gamma},
 $$
 
-右端只依赖 $a^\beta$ (即只依赖 $\boldsymbol{v}$) 且对 $a^\beta$ 线性, 故 $\mathrm{d}\varphi_p$ 良定义且是线性映射; 它在基 $\left\{\boldsymbol{r}_\alpha\right\}$ 与 $\left\{\widetilde{\boldsymbol{r}}_\alpha\right\}$ 下的矩阵正是**推导 8.1.2 (切映射及其系数矩阵)** 的系数矩阵 $J_\varphi:=\left(\partial\widetilde{u}^\gamma/\partial{u}^\beta\right)$.
+右端只依赖 $a^\beta$ (即只依赖 $\boldsymbol{v}$) 且对 $a^\beta$ 线性, 故 $\mathrm{d}\varphi_p$ 良定义且是线性映射; 它在基 $\left\{\boldsymbol{r}_\alpha\right\}$ 与 $\left\{\widetilde{\boldsymbol{r}}_\alpha\right\}$ 下的矩阵正是**推导 8.1.2 (切映射及其系数矩阵)** 的系数矩阵 $J_\varphi:=\left(\partial\widetilde{u}^\gamma/\partial{}u^\beta\right)$.
 
 接着看复合的参数表示: 设 $S''$ 的参数为 $\widehat{u}^\alpha$, $\psi$ 的参数表示为 $\widehat{u}^\alpha=\widehat{u}^\alpha\left(\widetilde{u}\right)$. 则 $\psi\circ\varphi$ 的参数表示为 $\widehat{u}^\alpha=\widehat{u}^\alpha\left(\widetilde{u}\left(u\right)\right)$, 由普通多元函数的链式法则,
 
 $$
-\frac{\partial\widehat{u}^\alpha}{\partial{u}^\beta}=\frac{\partial\widehat{u}^\alpha}{\partial\widetilde{u}^\gamma}\frac{\partial\widetilde{u}^\gamma}{\partial{u}^\beta}.
+\frac{\partial\widehat{u}^\alpha}{\partial{}u^\beta}=\frac{\partial\widehat{u}^\alpha}{\partial\widetilde{u}^\gamma}\frac{\partial\widetilde{u}^\gamma}{\partial{}u^\beta}.
 $$
 
 上式中右端的两个因子依次是 $\mathrm{d}\psi_{\varphi\left(p\right)}$ 与 $\mathrm{d}\varphi_p$ 的矩阵元素 (见上), 左端是 $\mathrm{d}\left(\psi\circ\varphi\right)_p$ 的矩阵元素 (对 $\psi\circ\varphi$ 再用一次上面的公式), 故上式逐元素地说明
@@ -160,10 +160,10 @@ $\blacksqua
 
 re$
 
-然后看情形 (2): 此时 $g_{11}=1$, $g_{22}=\sin^{2}u$, 故 $\sqrt{g_{22}}=\sin{u}$, $\sqrt{g_{11}g_{22}}=\sin{u}$, $\partial_1\sqrt{g_{22}}=\cos{u}$. (A) 中两项分别为 $\partial_2\left(\frac{0}{\sin{u}}\right)=0$ 与 $\partial_1\left(\frac{\cos{u}}{1}\right)=-\sin{u}$, 故
+然后看情形 (2): 此时 $g_{11}=1$, $g_{22}=\sin^{2}u$, 故 $\sqrt{g_{22}}=\sin{}u$, $\sqrt{g_{11}g_{22}}=\sin{}u$, $\partial_1\sqrt{g_{22}}=\cos{}u$. (A) 中两项分别为 $\partial_2\left(\frac{0}{\sin{}u}\right)=0$ 与 $\partial_1\left(\frac{\cos{}u}{1}\right)=-\sin{}u$, 故
 
 $$
-K=-\frac{1}{\sin{u}}\left(-\sin{u}\right)=1.
+K=-\frac{1}{\sin{}u}\left(-\sin{}u\right)=1.
 $$
 
 $\blacksquare$
@@ -171,7 +171,7 @@ $\blacksquare$
 然后看情形 (3): 记
 
 $$
-\mu:=\frac{1}{c+u^{2}+v^{2}}>0,\quad{g}_{11}=g_{22}=\mu^{2},\quad\sqrt{g_{11}}=\sqrt{g_{22}}=\mu,\quad\sqrt{g_{11}g_{22}}=\mu^{2},
+\mu:=\frac{1}{c+u^{2}+v^{2}}>0,\quad{}g_{11}=g_{22}=\mu^{2},\quad\sqrt{g_{11}}=\sqrt{g_{22}}=\mu,\quad\sqrt{g_{11}g_{22}}=\mu^{2},
 $$
 
 则
@@ -191,10 +191,10 @@ $$
 同法 $\partial_2^2h=\frac{2}{c+R^{2}}-\frac{4v^{2}}{\left(c+R^{2}\right)^{2}}$. 相加得
 
 $$
-\Delta{h}=\frac{4}{c+R^{2}}-\frac{4R^{2}}{\left(c+R^{2}\right)^{2}}=\frac{4c}{\left(c+R^{2}\right)^{2}}=4c\mu^{2}.
+\Delta{}h=\frac{4}{c+R^{2}}-\frac{4R^{2}}{\left(c+R^{2}\right)^{2}}=\frac{4c}{\left(c+R^{2}\right)^{2}}=4c\mu^{2}.
 $$
 
-于是 $\Delta\ln\mu=-\Delta{h}=-4c\mu^{2}$, 代入 (A) 得
+于是 $\Delta\ln\mu=-\Delta{}h=-4c\mu^{2}$, 代入 (A) 得
 
 $$
 K=-\frac{1}{\mu^{2}}\left(-4c\mu^{2}\right)=4c.
@@ -205,7 +205,7 @@ $\blacksquare$
 最后看情形 (4): 此时 $g_{12}=\cos\theta\ne0$ (设 $\sin\theta\ne0$, 否则所给 $\mathrm{I}$ 退化), (A) 不适用. 取参数变换
 
 $$
-\widetilde{u}=u\sin\theta,\quad{w}=v+u\cos\theta,
+\widetilde{u}=u\sin\theta,\quad{}w=v+u\cos\theta,
 $$
 
 则 $\mathrm{d}\widetilde{u}=\sin\theta\,\mathrm{d}u$, $\mathrm{d}w=\mathrm{d}v+\cos\theta\,\mathrm{d}u$, 即 $\mathrm{d}v=\mathrm{d}w-\cos\theta\,\mathrm{d}u$. 代入所给 $\mathrm{I}$:
@@ -253,13 +253,13 @@ $$
 由上面的论证, 右端括号内只含 $\Gamma$ 及其一阶偏导, 对 $S$ 与 $\widetilde{S}$ 是同一个数; 而 $g_{1\varepsilon}=\lambda\widetilde{g}_{1\varepsilon}$, 故
 
 $$
-R_{1212}\left(\lambda\widetilde{g}\right)=\lambda{R}_{1212}\left(\widetilde{g}\right).
+R_{1212}\left(\lambda\widetilde{g}\right)=\lambda{}R_{1212}\left(\widetilde{g}\right).
 $$
 
 又 $\det\left(\lambda\widetilde{g}\right)=\lambda^{2}\det\left(\widetilde{g}\right)$. 最后由**定理 5.2.2 (高斯绝妙定理)**,
 
 $$
-K=-\frac{R_{1212}\left(\lambda\widetilde{g}\right)}{\det\left(\lambda\widetilde{g}\right)}=-\frac{\lambda{R}_{1212}\left(\widetilde{g}\right)}{\lambda^{2}\det\left(\widetilde{g}\right)}=\frac{1}{\lambda}\left(-\frac{R_{1212}\left(\widetilde{g}\right)}{\det\left(\widetilde{g}\right)}\right)=\frac{1}{\lambda}\widetilde{K}.
+K=-\frac{R_{1212}\left(\lambda\widetilde{g}\right)}{\det\left(\lambda\widetilde{g}\right)}=-\frac{\lambda{}R_{1212}\left(\widetilde{g}\right)}{\lambda^{2}\det\left(\widetilde{g}\right)}=\frac{1}{\lambda}\left(-\frac{R_{1212}\left(\widetilde{g}\right)}{\det\left(\widetilde{g}\right)}\right)=\frac{1}{\lambda}\widetilde{K}.
 $$
 
 $\blacksquare$
@@ -285,19 +285,19 @@ $$
 故由**定义 3.3.1 (第一基本形式)**,
 
 $$
-g_{11}=a^{2}\left(1+u^{2}\right),\quad{g}_{12}=abuv,\quad{g}_{22}=b^{2}\left(1+v^{2}\right).\tag{A}
+g_{11}=a^{2}\left(1+u^{2}\right),\quad{}g_{12}=abuv,\quad{}g_{22}=b^{2}\left(1+v^{2}\right).\tag{A}
 $$
 
 再证 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=ab\left(-v,-u,1\right)$, 其长度为 $ab\sqrt{1+u^{2}+v^{2}}$, 故单位法向量
 
 $$
-\boldsymbol{n}=\frac{1}{W}\left(-v,-u,1\right),\quad{W}:=\sqrt{1+u^{2}+v^{2}}.\tag{B}
+\boldsymbol{n}=\frac{1}{W}\left(-v,-u,1\right),\quad{}W:=\sqrt{1+u^{2}+v^{2}}.\tag{B}
 $$
 
 接着由 (B) 与**定义 3.5.2 (第二基本形式)**,
 
 $$
-b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=\frac{a}{W},\quad{b}_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=0,\quad{b}_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{b}{W}.\tag{C}
+b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=\frac{a}{W},\quad{}b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=0,\quad{}b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{b}{W}.\tag{C}
 $$
 
 然后由 (A),
@@ -353,7 +353,7 @@ $$
 然后看 $K$ 的等值线: 由 (D), $K$ 只依赖 $W^{2}=1+u^{2}+v^{2}$, 而在 $\left[1,+\infty\right)$ 上 $\frac{1}{abW^{4}}$ 严格单调递减, 故 $S$ 上 $K=c$ $\left(0<{}c\le\frac{1}{ab}\right)$ 的等值线恰是参数圆
 
 $$
-C_\rho:\quad{u}^{2}+v^{2}=\rho^{2},\quad\rho:=\sqrt{\frac{1}{\sqrt{abc}}-1}>0.\tag{G}
+C_\rho:\quad{}u^{2}+v^{2}=\rho^{2},\quad\rho:=\sqrt{\frac{1}{\sqrt{abc}}-1}>0.\tag{G}
 $$
 
 $\widetilde{S}$ 上同理. $\sigma$ 保持 $K$, 故把 $K$ 的等值线送到 $K$ 的等值线; 又等距保持曲线长度, 故对每个 $c$ 有
@@ -419,15 +419,15 @@ $\blacksquare$
 接着设 $\boldsymbol{v}\left(s\right)$ 是沿赤道平行的切向量场. 因 $\boldsymbol{t}$ 也沿赤道平行, 由**命题 9.6.1 (内积沿平行场为常数)**
 
 $$
-\left\langle\boldsymbol{v}\left(s\right),\boldsymbol{t}\left(s\right)\right\rangle\equiv{c}
+\left\langle\boldsymbol{v}\left(s\right),\boldsymbol{t}\left(s\right)\right\rangle\equiv{}c
 $$
 
-是常数; 又由**推论 9.6.3 (长度与夹角不变)**, $\left|\boldsymbol{v}\left(s\right)\right|\equiv{r}$ 是常数.
+是常数; 又由**推论 9.6.3 (长度与夹角不变)**, $\left|\boldsymbol{v}\left(s\right)\right|\equiv{}r$ 是常数.
 
 然后看取定一组沿赤道平行的正交基: 以单位球面的赤道 $z=0$ 为例,
 
 $$
-\boldsymbol{r}\left(s\right)=\left(\cos{s},\sin{s},0\right),\quad\boldsymbol{t}=\left(-\sin{s},\cos{s},0\right),\quad\boldsymbol{n}=\boldsymbol{r},\quad\boldsymbol{e}_2:=\boldsymbol{n}\wedge\boldsymbol{t}=\left(0,0,1\right).
+\boldsymbol{r}\left(s\right)=\left(\cos{}s,\sin{}s,0\right),\quad\boldsymbol{t}=\left(-\sin{}s,\cos{}s,0\right),\quad\boldsymbol{n}=\boldsymbol{r},\quad\boldsymbol{e}_2:=\boldsymbol{n}\wedge\boldsymbol{t}=\left(0,0,1\right).
 $$
 
 $\boldsymbol{e}_2$ 作为 $E^3$ 中的常向量场, 沿 $\boldsymbol{c}'\left(s\right)$ 的普通方向导数为零; 由**命题 9.3.4 (协变微分是普通微分的切向投影)**, 协变微分是普通方向导数在切平面上的投影, 故 $D_{\boldsymbol{c}'}\boldsymbol{e}_2=\boldsymbol0$, 即 $\boldsymbol{e}_2$ 沿赤道平行. 又 $\left\{\boldsymbol{t},\boldsymbol{e}_2\right\}$ 是切平面的单位正交基, 且 $\boldsymbol{t}=\boldsymbol{c}'$ 也沿赤道平行.
@@ -453,7 +453,7 @@ $\blacksquare$
 先由 $g_{11}=\left\langle\boldsymbol{r}_1,\boldsymbol{r}_1\right\rangle=E$ 得 $\left|\boldsymbol{r}_1\right|=\sqrt{E}$, 故 $\boldsymbol{v}=\frac{\boldsymbol{r}_1}{\sqrt{E}}$ 是单位切向量场, 且它的分量只有
 
 $$
-v^{1}=\frac{1}{\sqrt{E}},\quad{v}^{2}=0
+v^{1}=\frac{1}{\sqrt{E}},\quad{}v^{2}=0
 $$
 
 不为零.
@@ -481,31 +481,31 @@ $$
 \Gamma^{2}{}_{1\alpha}\left(u^{\alpha}\right)'=0.\tag{C}
 $$
 
-接着由 $\left(\frac{1}{\sqrt{E}}\right)'=-\frac{1}{2}E^{-3/2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}$, 把 (B) 两边乘以 $\sqrt{E}E$ 得等价形式
+接着由 $\left(\frac{1}{\sqrt{E}}\right)'=-\frac{1}{2}E^{-3/2}\left(u^{\alpha}\right)'\partial_\alpha{}g_{11}$, 把 (B) 两边乘以 $\sqrt{E}E$ 得等价形式
 
 $$
--\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}+g_{11}\left(u^{\alpha}\right)'\Gamma^{1}{}_{1\alpha}=0.\tag{D}
+-\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{}g_{11}+g_{11}\left(u^{\alpha}\right)'\Gamma^{1}{}_{1\alpha}=0.\tag{D}
 $$
 
 然后算出 $g_{11}\Gamma^{1}{}_{1\alpha}$: 记 $\Gamma_{1\alpha1}:=g_{1\varepsilon}\Gamma^{\varepsilon}{}_{1\alpha}$. 由**定义 9.3.1 (克里斯托费尔符号)**,
 
 $$
-\Gamma_{1\alpha1}=\frac{1}{2}g_{1\varepsilon}g^{\varepsilon\lambda}\left(\partial_1g_{\alpha\lambda}+\partial_\alpha{g}_{1\lambda}-\partial_\lambda{g}_{1\alpha}\right),
+\Gamma_{1\alpha1}=\frac{1}{2}g_{1\varepsilon}g^{\varepsilon\lambda}\left(\partial_1g_{\alpha\lambda}+\partial_\alpha{}g_{1\lambda}-\partial_\lambda{}g_{1\alpha}\right),
 $$
 
 而 $g_{1\varepsilon}g^{\varepsilon\lambda}=\delta_{1\lambda}$, 故右端的 $\lambda$ 求和只剩 $\lambda=1$ 一项, 即
 
 $$
-\Gamma_{1\alpha1}=\frac{1}{2}\left(\partial_1g_{\alpha1}+\partial_\alpha{g}_{11}-\partial_1g_{\alpha1}\right)=\frac{1}{2}\partial_\alpha{g}_{11}.
+\Gamma_{1\alpha1}=\frac{1}{2}\left(\partial_1g_{\alpha1}+\partial_\alpha{}g_{11}-\partial_1g_{\alpha1}\right)=\frac{1}{2}\partial_\alpha{}g_{11}.
 $$
 
 另一方面, 同一个 $\Gamma_{1\alpha1}$ 按 $\varepsilon$ 写开就是 $g_{1\varepsilon}\Gamma^{\varepsilon}{}_{1\alpha}=g_{11}\Gamma^{1}{}_{1\alpha}+g_{12}\Gamma^{2}{}_{1\alpha}$, 故
 
 $$
-g_{11}\Gamma^{1}{}_{1\alpha}=\frac{1}{2}\partial_\alpha{g}_{11}-g_{12}\Gamma^{2}{}_{1\alpha}.\tag{E}
+g_{11}\Gamma^{1}{}_{1\alpha}=\frac{1}{2}\partial_\alpha{}g_{11}-g_{12}\Gamma^{2}{}_{1\alpha}.\tag{E}
 $$
 
-然后把 (E) 代入 (D), 两个 $\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{g}_{11}$ 相消,
+然后把 (E) 代入 (D), 两个 $\frac{1}{2}\left(u^{\alpha}\right)'\partial_\alpha{}g_{11}$ 相消,
 
 $$
 -g_{12}\Gamma^{2}{}_{1\alpha}\left(u^{\alpha}\right)'=0.\tag{F}
@@ -539,10 +539,10 @@ $\blacksquare$
 
 设 $\sigma:S\to\widetilde{S}$ 是等距变换. 由**命题 8.1.5 (等距变换的判别)**, 在对应参数下两组系数满足 $g_{\alpha\beta}=\widetilde{g}_{\alpha\beta}$; 由**定理 5.2.2 (高斯绝妙定理)**, $K$ 只依赖 $g_{\alpha\beta}$, 故对应点处 $K=\widetilde{K}$. 等距变换限制在参数区域的任意一块上仍是等距变换, 故只需比较三张曲面的 $K$ 的取值范围.
 
-(1) 把单位球面写成旋转面, 取**例 6.2.1 (旋转面及其主曲率)** 的母线 $x^2=\sin{t}$, $x^3=\cos{t}$ $\left(0<{}t<\pi\right)$, 则 $\left(x^2\right)'=\cos{t}$, $\left(x^3\right)'=-\sin{t}$, $\left(x^2\right)''=-\sin{t}$, $\left(x^3\right)''=-\cos{t}$, $A=\cos^{2}t+\sin^{2}t=1$. 由**例 6.2.1 (旋转面及其主曲率)**
+(1) 把单位球面写成旋转面, 取**例 6.2.1 (旋转面及其主曲率)** 的母线 $x^2=\sin{}t$, $x^3=\cos{}t$ $\left(0<{}t<\pi\right)$, 则 $\left(x^2\right)'=\cos{}t$, $\left(x^3\right)'=-\sin{}t$, $\left(x^2\right)''=-\sin{}t$, $\left(x^3\right)''=-\cos{}t$, $A=\cos^{2}t+\sin^{2}t=1$. 由**例 6.2.1 (旋转面及其主曲率)**
 
 $$
-k_1=\frac{\cos{t}\left(-\cos{t}\right)-\left(-\sin{t}\right)\left(-\sin{t}\right)}{1}=-1,\quad{k}_2=\frac{-\sin{t}}{\sin{t}\cdot1}=-1,
+k_1=\frac{\cos{}t\left(-\cos{}t\right)-\left(-\sin{}t\right)\left(-\sin{}t\right)}{1}=-1,\quad{}k_2=\frac{-\sin{}t}{\sin{}t\cdot1}=-1,
 $$
 
 故由**定义 4.6.1 (平均曲率与总曲率)**
@@ -556,7 +556,7 @@ $\blacksquare$
 (2) 圆柱面是旋转面, 母线取 $x^2=1$, $x^3=t$, 则 $\left(x^2\right)'=\left(x^2\right)''=\left(x^3\right)''=0$, $\left(x^3\right)'=1$, $A=1$. 由**例 6.2.1 (旋转面及其主曲率)**
 
 $$
-k_1=0,\quad{k}_2=\frac{1}{1\cdot1}=1,\quad{K}=k_1k_2=0.
+k_1=0,\quad{}k_2=\frac{1}{1\cdot1}=1,\quad{}K=k_1k_2=0.
 $$
 
 $\blacksquare$
@@ -572,7 +572,7 @@ $$
 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(-2u,2v,1\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{1+4u^{2}+4v^{2}}=:W$, 故 $\boldsymbol{n}=\frac{1}{W}\left(-2u,2v,1\right)$; 由**定义 3.5.2 (第二基本形式)**
 
 $$
-b_{11}=\frac{2}{W},\quad{b}_{12}=0,\quad{b}_{22}=-\frac{2}{W},
+b_{11}=\frac{2}{W},\quad{}b_{12}=0,\quad{}b_{22}=-\frac{2}{W},
 $$
 
 故 $\det\left(b_{\alpha\beta}\right)=-\frac{4}{W^{2}}$. 由**定理 5.2.2 (高斯绝妙定理)**
@@ -589,11 +589,11 @@ $\blacksquare$
 
 ## 3.2 (高斯曲率相同而互不等距的一对曲面)
 
-给定参数曲面片 $S_1:\boldsymbol{r}_1\left(u,v\right)=\left(u\cos{v},u\sin{v},\log{u}\right)$ 与 $S_2:\boldsymbol{r}_2\left(u,v\right)=\left(u\cos{v},u\sin{v},v\right)$. 证明: $S_1$ 在点 $\boldsymbol{r}_1\left(u,v\right)$ 和 $S_2$ 在相应点 $\boldsymbol{r}_2\left(u,v\right)$ 处的高斯曲率相同, 但是 $S_1$ 和 $S_2$ 不等距.
+给定参数曲面片 $S_1:\boldsymbol{r}_1\left(u,v\right)=\left(u\cos{}v,u\sin{}v,\log{}u\right)$ 与 $S_2:\boldsymbol{r}_2\left(u,v\right)=\left(u\cos{}v,u\sin{}v,v\right)$. 证明: $S_1$ 在点 $\boldsymbol{r}_1\left(u,v\right)$ 和 $S_2$ 在相应点 $\boldsymbol{r}_2\left(u,v\right)$ 处的高斯曲率相同, 但是 $S_1$ 和 $S_2$ 不等距.
 
 ### 解答 3.2
 
-先看 $S_1$ 的基本量: $S_1$ 是旋转面, 母线为 $x^2=u$, $x^3=\log{u}$ $\left(u>0\right)$, 则 $\left(x^2\right)'=1$, $\left(x^3\right)'=\frac{1}{u}$, $\left(x^2\right)''=0$, $\left(x^3\right)''=-\frac{1}{u^{2}}$, $A=1+\frac{1}{u^{2}}$. 由**例 6.2.1 (旋转面及其主曲率)**, $g_{11}=A=1+\frac{1}{u^{2}}$, $g_{12}=0$, $g_{22}=\left(x^2\right)^{2}=u^{2}$, 且
+先看 $S_1$ 的基本量: $S_1$ 是旋转面, 母线为 $x^2=u$, $x^3=\log{}u$ $\left(u>0\right)$, 则 $\left(x^2\right)'=1$, $\left(x^3\right)'=\frac{1}{u}$, $\left(x^2\right)''=0$, $\left(x^3\right)''=-\frac{1}{u^{2}}$, $A=1+\frac{1}{u^{2}}$. 由**例 6.2.1 (旋转面及其主曲率)**, $g_{11}=A=1+\frac{1}{u^{2}}$, $g_{12}=0$, $g_{22}=\left(x^2\right)^{2}=u^{2}$, 且
 
 $$
 K_1=\frac{\left(1\cdot\left(-\frac{1}{u^{2}}\right)-0\right)\frac{1}{u}}{u\left(1+\frac{1}{u^{2}}\right)^{2}}=-\frac{1}{u^{4}\left(1+\frac{1}{u^{2}}\right)^{2}}=-\frac{1}{\left(1+u^{2}\right)^{2}}.
@@ -604,19 +604,19 @@ $\blacksquare$
 再看 $S_2$ 的基本量: 直接求导得
 
 $$
-\boldsymbol{r}_u=\left(\cos{v},\sin{v},0\right),\quad\boldsymbol{r}_v=\left(-u\sin{v},u\cos{v},1\right),
+\boldsymbol{r}_u=\left(\cos{}v,\sin{}v,0\right),\quad\boldsymbol{r}_v=\left(-u\sin{}v,u\cos{}v,1\right),
 $$
 
 $$
-\boldsymbol{r}_{uu}=\boldsymbol0,\quad\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right),\quad\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right),
+\boldsymbol{r}_{uu}=\boldsymbol0,\quad\boldsymbol{r}_{uv}=\left(-\sin{}v,\cos{}v,0\right),\quad\boldsymbol{r}_{vv}=\left(-u\cos{}v,-u\sin{}v,0\right),
 $$
 
 故由**定义 3.3.1 (第一基本形式)**, $g_{11}=1$, $g_{12}=0$, $g_{22}=1+u^{2}$.
 
-接着证 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(\sin{v},-\cos{v},u\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{1+u^{2}}=:W$, 故 $\boldsymbol{n}=\frac{1}{W}\left(\sin{v},-\cos{v},u\right)$; 由**定义 3.5.2 (第二基本形式)**
+接着证 $\boldsymbol{r}_u\wedge\boldsymbol{r}_v=\left(\sin{}v,-\cos{}v,u\right)$, $\left|\boldsymbol{r}_u\wedge\boldsymbol{r}_v\right|=\sqrt{1+u^{2}}=:W$, 故 $\boldsymbol{n}=\frac{1}{W}\left(\sin{}v,-\cos{}v,u\right)$; 由**定义 3.5.2 (第二基本形式)**
 
 $$
-b_{11}=0,\quad{b}_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=\frac{-\sin^{2}v-\cos^{2}v}{W}=-\frac{1}{W},\quad{b}_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{-u\cos{v}\sin{v}+u\sin{v}\cos{v}}{W}=0.
+b_{11}=0,\quad{}b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=\frac{-\sin^{2}v-\cos^{2}v}{W}=-\frac{1}{W},\quad{}b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{-u\cos{}v\sin{}v+u\sin{}v\cos{}v}{W}=0.
 $$
 
 由**定理 5.2.2 (高斯绝妙定理)**
@@ -631,7 +631,7 @@ $\blacksquare$
 
 $\blacksquare$
 
-然后看不等距: 反设存在等距变换 $\sigma:S_1\to{S}_2$. 由**命题 8.1.5 (等距变换的判别)** 与**定理 5.2.2 (高斯绝妙定理)**, 对应点处 $K_1=K_2$; 且等距保持曲线长度, 从而把 $K$ 的等值线送到 $K$ 的等值线并保持其长度.
+然后看不等距: 反设存在等距变换 $\sigma:S_1\to{}S_2$. 由**命题 8.1.5 (等距变换的判别)** 与**定理 5.2.2 (高斯绝妙定理)**, 对应点处 $K_1=K_2$; 且等距保持曲线长度, 从而把 $K$ 的等值线送到 $K$ 的等值线并保持其长度.
 
 然后看 $K$ 的等值线: 由上面的结果, $K_1$ 只依赖 $u$, 在 $u>0$ 上 $u^{2}+1$ 严格单调增, 故 $K_1=c$ $\left(-1<{}c<0\right)$ 的等值线是纬圆 $u=u_0$, 其中
 
@@ -642,7 +642,7 @@ $$
 由 $g_{22}=u^{2}$,
 
 $$
-\ell_1\left(c\right)=\int_0^{2\pi}\sqrt{g_{22}}\,\mathrm{d}v=2\pi{u}_0=2\pi\sqrt{\frac{1}{\sqrt{-c}}-1}.
+\ell_1\left(c\right)=\int_0^{2\pi}\sqrt{g_{22}}\,\mathrm{d}v=2\pi{}u_0=2\pi\sqrt{\frac{1}{\sqrt{-c}}-1}.
 $$
 
 然后由上面的结果, $K_2$ 与 $K_1$ 是同一个函数, 故 $K_2=c$ 的等值线对应同一个参数值 $u=u_0$; 由 $g_{22}=1+u^{2}$,
@@ -661,4 +661,4 @@ $$
 
 $\blacksquare$
 
-> 这说明, $\text{等距}\Rightarrow{K}\;\text{相同}$.
+> 这说明, $\text{等距}\Rightarrow{}K\;\text{相同}$.

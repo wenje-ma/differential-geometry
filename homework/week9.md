@@ -14,11 +14,11 @@
 
 > **定义 7.2.1 (测地线)**
 > 
-> 设 $C=\boldsymbol{c}\left(s\right)\subset{S}$ 以弧长参数化; 若其测地曲率 $k_g\equiv0$, 则称 $C$ 是曲面 $S$ 上的一条测地线.
+> 设 $C=\boldsymbol{c}\left(s\right)\subset{}S$ 以弧长参数化; 若其测地曲率 $k_g\equiv0$, 则称 $C$ 是曲面 $S$ 上的一条测地线.
 
 > **推导 7.3.1 (正交参数网下的测地曲率)**
 > 
-> 设 $S$ 上有正交参数网 $\mathrm{I}=g_{11}\left(\mathrm{d}u^1\right)^2+g_{22}\left(\mathrm{d}u^2\right)^2$ $\left(g_{12}=0\right)$, 取 $\boldsymbol{e}_\alpha:=\frac{1}{\sqrt{g_{\alpha\alpha}}}\frac{\partial\boldsymbol{r}}{\partial{u}^\alpha}$, $\boldsymbol{n}=\boldsymbol{e}_1\times\boldsymbol{e}_2$, 曲线单位切向量 $\dot{\boldsymbol{c}}=\cos\theta\,\boldsymbol{e}_1+\sin\theta\,\boldsymbol{e}_2$, 取 $\boldsymbol{t}_g=-\sin\theta\,\boldsymbol{e}_1+\cos\theta\,\boldsymbol{e}_2$, 则 $k_g=\theta'\left(s\right)-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta$; 其中 $\Gamma^1{}_{12}=\frac{\partial_2g_{11}}{2g_{11}}$, $\Gamma^1{}_{22}=-\frac{\partial_1g_{22}}{2g_{11}}$, $\Gamma^2{}_{11}=-\frac{\partial_2g_{11}}{2g_{22}}$, $\Gamma^2{}_{12}=\frac{\partial_1g_{22}}{2g_{22}}$.
+> 设 $S$ 上有正交参数网 $\mathrm{I}=g_{11}\left(\mathrm{d}u^1\right)^2+g_{22}\left(\mathrm{d}u^2\right)^2$ $\left(g_{12}=0\right)$, 取 $\boldsymbol{e}_\alpha:=\frac{1}{\sqrt{g_{\alpha\alpha}}}\frac{\partial\boldsymbol{r}}{\partial{}u^\alpha}$, $\boldsymbol{n}=\boldsymbol{e}_1\times\boldsymbol{e}_2$, 曲线单位切向量 $\dot{\boldsymbol{c}}=\cos\theta\,\boldsymbol{e}_1+\sin\theta\,\boldsymbol{e}_2$, 取 $\boldsymbol{t}_g=-\sin\theta\,\boldsymbol{e}_1+\cos\theta\,\boldsymbol{e}_2$, 则 $k_g=\theta'\left(s\right)-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta$; 其中 $\Gamma^1{}_{12}=\frac{\partial_2g_{11}}{2g_{11}}$, $\Gamma^1{}_{22}=-\frac{\partial_1g_{22}}{2g_{11}}$, $\Gamma^2{}_{11}=-\frac{\partial_2g_{11}}{2g_{22}}$, $\Gamma^2{}_{12}=\frac{\partial_1g_{22}}{2g_{22}}$.
 
 > **推论 7.3.2 (正交参数网下的测地线方程)**
 > 
@@ -34,11 +34,11 @@
 
 > **定义 9.2.1 (协变微分)**
 > 
-> 称由切向量场 $\left(\boldsymbol{W},\boldsymbol{V}\right)$ 给出切向量场 $D_{\boldsymbol{W}}\boldsymbol{V}$ 的运算 $D$ 为曲面 $S$ 上的协变微分, 若对任意光滑函数 $\lambda,\mu$ 与任意切向量场 $\boldsymbol{W},\boldsymbol{W}_1,\boldsymbol{W}_2,\boldsymbol{V},\boldsymbol{V}_1,\boldsymbol{V}_2$ 满足 $D_{\lambda\boldsymbol{W}_1+\mu\boldsymbol{W}_2}\boldsymbol{V}=\lambda{D}_{\boldsymbol{W}_1}\boldsymbol{V}+\mu{D}_{\boldsymbol{W}_2}\boldsymbol{V}$, $D_{\boldsymbol{W}}\left(\lambda\boldsymbol{V}_1+\mu\boldsymbol{V}_2\right)=\boldsymbol{W}\left(\lambda\right)\boldsymbol{V}_1+\lambda{D}_{\boldsymbol{W}}\boldsymbol{V}_1+\boldsymbol{W}\left(\mu\right)\boldsymbol{V}_2+\mu{D}_{\boldsymbol{W}}\boldsymbol{V}_2$, $\boldsymbol{W}\left\langle\boldsymbol{V}_1,\boldsymbol{V}_2\right\rangle=\left\langle{D}_{\boldsymbol{W}}\boldsymbol{V}_1,\boldsymbol{V}_2\right\rangle+\left\langle\boldsymbol{V}_1,{D}_{\boldsymbol{W}}\boldsymbol{V}_2\right\rangle$, $D_{\boldsymbol{r}_\alpha}\boldsymbol{r}_\beta=D_{\boldsymbol{r}_\beta}\boldsymbol{r}_\alpha$.
+> 称由切向量场 $\left(\boldsymbol{W},\boldsymbol{V}\right)$ 给出切向量场 $D_{\boldsymbol{W}}\boldsymbol{V}$ 的运算 $D$ 为曲面 $S$ 上的协变微分, 若对任意光滑函数 $\lambda,\mu$ 与任意切向量场 $\boldsymbol{W},\boldsymbol{W}_1,\boldsymbol{W}_2,\boldsymbol{V},\boldsymbol{V}_1,\boldsymbol{V}_2$ 满足 $D_{\lambda\boldsymbol{W}_1+\mu\boldsymbol{W}_2}\boldsymbol{V}=\lambda{}D_{\boldsymbol{W}_1}\boldsymbol{V}+\mu{}D_{\boldsymbol{W}_2}\boldsymbol{V}$, $D_{\boldsymbol{W}}\left(\lambda\boldsymbol{V}_1+\mu\boldsymbol{V}_2\right)=\boldsymbol{W}\left(\lambda\right)\boldsymbol{V}_1+\lambda{}D_{\boldsymbol{W}}\boldsymbol{V}_1+\boldsymbol{W}\left(\mu\right)\boldsymbol{V}_2+\mu{}D_{\boldsymbol{W}}\boldsymbol{V}_2$, $\boldsymbol{W}\left\langle\boldsymbol{V}_1,\boldsymbol{V}_2\right\rangle=\left\langle{}D_{\boldsymbol{W}}\boldsymbol{V}_1,\boldsymbol{V}_2\right\rangle+\left\langle\boldsymbol{V}_1,{D}_{\boldsymbol{W}}\boldsymbol{V}_2\right\rangle$, $D_{\boldsymbol{r}_\alpha}\boldsymbol{r}_\beta=D_{\boldsymbol{r}_\beta}\boldsymbol{r}_\alpha$.
 
 > **定义 9.3.1 (克里斯托费尔符号)**
 > 
-> 称 $\Gamma^\varepsilon{}_{\alpha\beta}:=\frac{1}{2}g^{\varepsilon\lambda}\left(\partial_\alpha{g}_{\beta\lambda}+\partial_\beta{g}_{\alpha\lambda}-\partial_\lambda{g}_{\alpha\beta}\right)$ 为曲面 (或度量 $\mathrm{I}=g_{\alpha\beta}\mathrm{d}u^\alpha\mathrm{d}u^\beta$) 的克里斯托费尔符号; 它由 $g_{\alpha\beta}$ 及其一阶偏导完全确定, 且 $\Gamma^\varepsilon{}_{\alpha\beta}=\Gamma^\varepsilon{}_{\beta\alpha}$.
+> 称 $\Gamma^\varepsilon{}_{\alpha\beta}:=\frac{1}{2}g^{\varepsilon\lambda}\left(\partial_\alpha{}g_{\beta\lambda}+\partial_\beta{}g_{\alpha\lambda}-\partial_\lambda{}g_{\alpha\beta}\right)$ 为曲面 (或度量 $\mathrm{I}=g_{\alpha\beta}\mathrm{d}u^\alpha\mathrm{d}u^\beta$) 的克里斯托费尔符号; 它由 $g_{\alpha\beta}$ 及其一阶偏导完全确定, 且 $\Gamma^\varepsilon{}_{\alpha\beta}=\Gamma^\varepsilon{}_{\beta\alpha}$.
 
 > **命题 9.3.4 (协变微分是普通微分的切向投影)**
 > 
@@ -50,7 +50,7 @@
 
 > **定义 9.5.4 (平行移动)**
 > 
-> 设 $\boldsymbol{c}\left(t\right)$, $t\in\left[0,1\right]$ 是 $S$ 上的曲线, $\boldsymbol{V}_0\in{T}_{\boldsymbol{c}\left(0\right)}S$; 若 $\boldsymbol{V}\left(t\right)$ 是沿 $\boldsymbol{c}$ 的平行切向量场且 $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$, 则称 $\boldsymbol{V}\left(1\right)$ 是 $\boldsymbol{V}_0$ 沿 $\boldsymbol{c}$ 平行移动到 $\boldsymbol{c}\left(1\right)$ 的结果; 它与 $\boldsymbol{c}$ 的参数化无关.
+> 设 $\boldsymbol{c}\left(t\right)$, $t\in\left[0,1\right]$ 是 $S$ 上的曲线, $\boldsymbol{V}_0\in{}T_{\boldsymbol{c}\left(0\right)}S$; 若 $\boldsymbol{V}\left(t\right)$ 是沿 $\boldsymbol{c}$ 的平行切向量场且 $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$, 则称 $\boldsymbol{V}\left(1\right)$ 是 $\boldsymbol{V}_0$ 沿 $\boldsymbol{c}$ 平行移动到 $\boldsymbol{c}\left(1\right)$ 的结果; 它与 $\boldsymbol{c}$ 的参数化无关.
 
 > **推导 9.5.5 (平行移动的方程组)**
 > 
@@ -58,7 +58,7 @@
 
 > **命题 9.5.6 (平行移动的存在唯一性与线性性)**
 > 
-> 设 $\boldsymbol{c}\left(t\right)$, $t\in\left[0,1\right]$ 是 $S$ 上的正则曲线, $\boldsymbol{V}_0\in{T}_{\boldsymbol{c}\left(0\right)}S$; 则存在唯一的沿 $\boldsymbol{c}$ 的平行切向量场 $\boldsymbol{V}\left(t\right)$ 使 $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$, 并且 $\boldsymbol{V}_0\mapsto\boldsymbol{V}\left(1\right)$ 是线性同构 $T_{\boldsymbol{c}\left(0\right)}S\to{T}_{\boldsymbol{c}\left(1\right)}S$.
+> 设 $\boldsymbol{c}\left(t\right)$, $t\in\left[0,1\right]$ 是 $S$ 上的正则曲线, $\boldsymbol{V}_0\in{}T_{\boldsymbol{c}\left(0\right)}S$; 则存在唯一的沿 $\boldsymbol{c}$ 的平行切向量场 $\boldsymbol{V}\left(t\right)$ 使 $\boldsymbol{V}\left(0\right)=\boldsymbol{V}_0$, 并且 $\boldsymbol{V}_0\mapsto\boldsymbol{V}\left(1\right)$ 是线性同构 $T_{\boldsymbol{c}\left(0\right)}S\to{}T_{\boldsymbol{c}\left(1\right)}S$.
 
 > **推论 9.6.3 (长度与夹角不变)**
 > 
@@ -70,12 +70,12 @@
 
 ## 1.10 (球面上曲线的测地曲率)
 
-在球面 $\boldsymbol{r}=\left(a\cos{u}\cos{v},a\cos{u}\sin{v},a\sin{u}\right)$ 上,
+在球面 $\boldsymbol{r}=\left(a\cos{}u\cos{}v,a\cos{}u\sin{}v,a\sin{}u\right)$ 上,
 
 (1) 证明: 曲线的测地曲率可以表示为
 
 $$
-k_g=\frac{\mathrm{d}\theta}{\mathrm{d}s}-\sin{u}\frac{\mathrm{d}v}{\mathrm{d}s},
+k_g=\frac{\mathrm{d}\theta}{\mathrm{d}s}-\sin{}u\frac{\mathrm{d}v}{\mathrm{d}s},
 $$
 
 其中 $s$ 是曲线 $\left(u\left(s\right),v\left(s\right)\right)$ 的弧长参数, $\theta$ 是曲线与经线 ($u$ 线) 的夹角;
@@ -88,10 +88,10 @@ $$
 
 $$
 \begin{aligned}
-\boldsymbol{r}_u&=\left(-a\sin{u}\cos{v},-a\sin{u}\sin{v},a\cos{u}\right),\\
-\boldsymbol{r}_v&=\left(-a\cos{u}\sin{v},a\cos{u}\cos{v},0\right),\\
+\boldsymbol{r}_u&=\left(-a\sin{}u\cos{}v,-a\sin{}u\sin{}v,a\cos{}u\right),\\
+\boldsymbol{r}_v&=\left(-a\cos{}u\sin{}v,a\cos{}u\cos{}v,0\right),\\
 g_{11}&=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=a^2\left(\sin^2u\cos^2v+\sin^2u\sin^2v+\cos^2u\right)=a^2,\\
-g_{12}&=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle=a^2\sin{u}\cos{u}\sin{v}\cos{v}-a^2\sin{u}\cos{u}\sin{v}\cos{v}=0,\\
+g_{12}&=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_v\right\rangle=a^2\sin{}u\cos{}u\sin{}v\cos{}v-a^2\sin{}u\cos{}u\sin{}v\cos{}v=0,\\
 g_{22}&=\left\langle\boldsymbol{r}_v,\boldsymbol{r}_v\right\rangle=a^2\cos^2u\left(\sin^2v+\cos^2v\right)=a^2\cos^2u,\\
 \end{aligned}
 $$
@@ -102,7 +102,7 @@ $$
 \mathrm{I}=a^2\mathrm{d}u^2+a^2\cos^2u\,\mathrm{d}v^2,
 $$
 
-取 $\left|u\right|<\pi/2$ 使 $\cos{u}>0$, 参数正则.
+取 $\left|u\right|<\pi/2$ 使 $\cos{}u>0$, 参数正则.
 
 $g_{12}=0$ 即参数网正交, 故由**推导 7.3.1 (正交参数网下的测地曲率)**
 
@@ -110,38 +110,38 @@ $$
 k_g=\theta'\left(s\right)-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}\cos\theta+\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}\sin\theta,
 $$
 
-其中 $\partial_1=\partial/\partial{u}$, $\partial_2=\partial/\partial{v}$, $\theta$ 是 $\dot{\boldsymbol{c}}$ 与 $\boldsymbol{e}_1=\boldsymbol{r}_u/\sqrt{g_{11}}$ 的夹角. 该条取定向 $\boldsymbol{n}=\boldsymbol{e}_1\times\boldsymbol{e}_2$, 而本题参数下
+其中 $\partial_1=\partial/\partial{}u$, $\partial_2=\partial/\partial{}v$, $\theta$ 是 $\dot{\boldsymbol{c}}$ 与 $\boldsymbol{e}_1=\boldsymbol{r}_u/\sqrt{g_{11}}$ 的夹角. 该条取定向 $\boldsymbol{n}=\boldsymbol{e}_1\times\boldsymbol{e}_2$, 而本题参数下
 
 $$
-\boldsymbol{r}_u\wedge\boldsymbol{r}_v=-a^2\cos{u}\left(\cos{u}\cos{v},\cos{u}\sin{v},\sin{u}\right),\quad\boldsymbol{e}_1\times\boldsymbol{e}_2=-\left(\cos{u}\cos{v},\cos{u}\sin{v},\sin{u}\right),
+\boldsymbol{r}_u\wedge\boldsymbol{r}_v=-a^2\cos{}u\left(\cos{}u\cos{}v,\cos{}u\sin{}v,\sin{}u\right),\quad\boldsymbol{e}_1\times\boldsymbol{e}_2=-\left(\cos{}u\cos{}v,\cos{}u\sin{}v,\sin{}u\right),
 $$
 
 即 $\boldsymbol{n}$ 是内法向; 以下 $k_g$ 的符号都按这个定向确定.
 
-由上面的 $\mathrm{I}$ 得 $\partial_2g_{11}=0$, $\partial_1g_{22}=-2a^2\sin{u}\cos{u}$, $\sqrt{g_{11}}=a$, $\sqrt{g_{22}}=a\cos{u}$, 故
+由上面的 $\mathrm{I}$ 得 $\partial_2g_{11}=0$, $\partial_1g_{22}=-2a^2\sin{}u\cos{}u$, $\sqrt{g_{11}}=a$, $\sqrt{g_{22}}=a\cos{}u$, 故
 
 $$
-\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}=0,\quad\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}=\frac{-2a^2\sin{u}\cos{u}}{2a^2\cos^2u\cdot{a}}=-\frac{\sin{u}}{a\cos{u}}.
+\frac{\partial_2g_{11}}{2g_{11}\sqrt{g_{22}}}=0,\quad\frac{\partial_1g_{22}}{2g_{22}\sqrt{g_{11}}}=\frac{-2a^2\sin{}u\cos{}u}{2a^2\cos^2u\cdot{}a}=-\frac{\sin{}u}{a\cos{}u}.
 $$
 
 又由 $\dot{\boldsymbol{c}}=\dot{u}\boldsymbol{r}_u+\dot{v}\boldsymbol{r}_v$, $\left|\dot{\boldsymbol{c}}\right|=1$ 与 $\left\{\boldsymbol{e}_1,\boldsymbol{e}_2\right\}$ 单位正交得
 
 $$
-\cos\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_1\right\rangle=\dot{u}\sqrt{g_{11}}=a\dot{u},\quad\sin\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_2\right\rangle=\dot{v}\sqrt{g_{22}}=a\cos{u}\,\dot{v}.
+\cos\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_1\right\rangle=\dot{u}\sqrt{g_{11}}=a\dot{u},\quad\sin\theta=\left\langle\dot{\boldsymbol{c}},\boldsymbol{e}_2\right\rangle=\dot{v}\sqrt{g_{22}}=a\cos{}u\,\dot{v}.
 $$
 
 把这两个式子代入测地曲率的公式,
 
 $$
-k_g=\dot\theta-\frac{\sin{u}}{a\cos{u}}\cdot{a}\cos{u}\,\dot{v}=\dot\theta-\sin{u}\,\dot{v}=\frac{\mathrm{d}\theta}{\mathrm{d}s}-\sin{u}\frac{\mathrm{d}v}{\mathrm{d}s}.
+k_g=\dot\theta-\frac{\sin{}u}{a\cos{}u}\cdot{}a\cos{}u\,\dot{v}=\dot\theta-\sin{}u\,\dot{v}=\frac{\mathrm{d}\theta}{\mathrm{d}s}-\sin{}u\frac{\mathrm{d}v}{\mathrm{d}s}.
 $$
 
 $\blacksquare$
 
-(2) 纬圆 $u\equiv{u}_0$ $\left(\left|u_0\right|<\pi/2\right)$ 的切向量沿 $v$ 线, 故 $\theta\equiv\pi/2$, $\dot\theta=0$; 又 $s$ 是纬圆的弧长参数, 由 $\left|\dot{\boldsymbol{c}}\right|=\left|\dot{v}\right|\sqrt{g_{22}}=1$ 得 $\dot{v}=1/\left(a\cos{u}_0\right)$. 代入上面 $k_g$ 的表达式
+(2) 纬圆 $u\equiv{}u_0$ $\left(\left|u_0\right|<\pi/2\right)$ 的切向量沿 $v$ 线, 故 $\theta\equiv\pi/2$, $\dot\theta=0$; 又 $s$ 是纬圆的弧长参数, 由 $\left|\dot{\boldsymbol{c}}\right|=\left|\dot{v}\right|\sqrt{g_{22}}=1$ 得 $\dot{v}=1/\left(a\cos{}u_0\right)$. 代入上面 $k_g$ 的表达式
 
 $$
-k_g=-\sin{u}_0\cdot\frac{1}{a\cos{u}_0}=-\frac{\tan{u}_0}{a}.
+k_g=-\sin{}u_0\cdot\frac{1}{a\cos{}u_0}=-\frac{\tan{}u_0}{a}.
 $$
 
 $\blacksquare$
@@ -152,10 +152,10 @@ $\blacksquare$
 
 ### 解答 1.11
 
-设旋转面为 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{v},f\left(u\right)\sin{v},g\left(u\right)\right)$ $\left(f>0\right)$; 这是**例 6.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
+设旋转面为 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{}v,f\left(u\right)\sin{}v,g\left(u\right)\right)$ $\left(f>0\right)$; 这是**例 6.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
 
 $$
-g_{11}=A:=\left(f'\right)^2+\left(g'\right)^2,\quad{g}_{12}=0,\quad{g}_{22}=f^2.
+g_{11}=A:=\left(f'\right)^2+\left(g'\right)^2,\quad{}g_{12}=0,\quad{}g_{22}=f^2.
 $$
 
 纬线是 $v$ 线, 其切向量沿 $\boldsymbol{e}_2=\boldsymbol{r}_v/\sqrt{g_{22}}$, 故 $\theta\equiv\pi/2$, $\theta'=0$, $\cos\theta=0$, $\sin\theta=1$; 又 $A$ 与 $f$ 都只依赖 $u$, 故 $\partial_2g_{11}=0$, $\partial_1g_{22}=2ff'$. 代入**推导 7.3.1 (正交参数网下的测地曲率)**, 纬线的测地曲率为
@@ -322,14 +322,14 @@ $\blacksquare$
 
 ## 1.14 (旋转面测地线的克莱罗关系)
 
-设曲线 $C$ 是旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{v},f\left(u\right)\sin{v},g\left(u\right)\right)$ 上的一条测地线, $\theta$ 是曲线 $C$ 与经线的夹角, 证明: 沿 $C$ 有 $f\left(u\right)\sin\theta=$ 常数.
+设曲线 $C$ 是旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(f\left(u\right)\cos{}v,f\left(u\right)\sin{}v,g\left(u\right)\right)$ 上的一条测地线, $\theta$ 是曲线 $C$ 与经线的夹角, 证明: 沿 $C$ 有 $f\left(u\right)\sin\theta=$ 常数.
 
 ### 解答 1.14
 
 这是**例 6.2.1 (旋转面及其主曲率)** 中 $\left(t,\theta\right)=\left(u,v\right)$, $x^2=f$, $x^3=g$ 的情形, 故
 
 $$
-g_{11}=A:=\left(f'\right)^2+\left(g'\right)^2,\quad{g}_{12}=0,\quad{g}_{22}=f^2.
+g_{11}=A:=\left(f'\right)^2+\left(g'\right)^2,\quad{}g_{12}=0,\quad{}g_{22}=f^2.
 $$
 
 $C$ 是测地线, 由**定义 7.2.1 (测地线)** $k_g\equiv0$, 故由**推论 7.3.2 (正交参数网下的测地线方程)** 沿 $C$
@@ -362,20 +362,20 @@ $\blacksquare$
 
 ## 1.15 (旋转面的测地线)
 
-求旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},f\left(u\right)\right)$ 的测地线.
+求旋转曲面 $\boldsymbol{r}\left(u,v\right)=\left(u\cos{}v,u\sin{}v,f\left(u\right)\right)$ 的测地线.
 
 ### 解答 1.15
 
 直接求导得
 
 $$
-\boldsymbol{r}_u=\left(\cos{v},\sin{v},f'\right),\quad\boldsymbol{r}_v=\left(-u\sin{v},u\cos{v},0\right),
+\boldsymbol{r}_u=\left(\cos{}v,\sin{}v,f'\right),\quad\boldsymbol{r}_v=\left(-u\sin{}v,u\cos{}v,0\right),
 $$
 
 故由**定义 3.3.1 (第一基本形式)**, 取参数区域 $u>0$,
 
 $$
-g_{11}=1+\left(f'\right)^2=:A,\quad{g}_{12}=0,\quad{g}_{22}=u^2.
+g_{11}=1+\left(f'\right)^2=:A,\quad{}g_{12}=0,\quad{}g_{22}=u^2.
 $$
 
 $g_{12}=0$ 即参数网正交; 取 $\boldsymbol{e}_1=\boldsymbol{r}_u/\sqrt{g_{11}}$, $\boldsymbol{e}_2=\boldsymbol{r}_v/\sqrt{g_{22}}$, 记 $\theta$ 为曲线单位切向量 $\dot{\boldsymbol{c}}$ 与 $\boldsymbol{e}_1$ (即经线) 的夹角. 由 $\dot{\boldsymbol{c}}=\dot{u}\boldsymbol{r}_u+\dot{v}\boldsymbol{r}_v$, $\left|\dot{\boldsymbol{c}}\right|=1$ 与 $\left\{\boldsymbol{e}_1,\boldsymbol{e}_2\right\}$ 单位正交得
@@ -399,7 +399,7 @@ $$
 故沿 $C$
 
 $$
-u\sin\theta\equiv{h}
+u\sin\theta\equiv{}h
 $$
 
 为常数.
@@ -412,7 +412,7 @@ $$
 
 故必须有 $u\ge\left|h\right|$, 且 $\dot{u}=\pm\sqrt{\left(1-h^2/u^2\right)/A}$.
 
-$h=0$ 时 $\dot{v}=0$, 即 $v\equiv{v}_0$, 曲线是经线, 其弧长参数满足 $A\dot{u}^2=1$, 即 $\dot{u}=\pm1/\sqrt{A}$.
+$h=0$ 时 $\dot{v}=0$, 即 $v\equiv{}v_0$, 曲线是经线, 其弧长参数满足 $A\dot{u}^2=1$, 即 $\dot{u}=\pm1/\sqrt{A}$.
 
 不妨设 $h>0$ (否则把 $v$ 换成 $-v$ 即化归 $h>0$), 把 $\dot{v}=h/u^2$ 与 $\dot{u}$ 相除,
 
@@ -423,14 +423,14 @@ $$
 积分得
 
 $$
-v=v_0\pm\int_{h}^{u}\frac{h\sqrt{1+\left(f'\left(\sigma\right)\right)^2}}{\sigma\sqrt{\sigma^2-h^2}}\,\mathrm{d}\sigma,\quad{u}>h.
+v=v_0\pm\int_{h}^{u}\frac{h\sqrt{1+\left(f'\left(\sigma\right)\right)^2}}{\sigma\sqrt{\sigma^2-h^2}}\,\mathrm{d}\sigma,\quad{}u>h.
 $$
 
 $\blacksquare$
 
 ## 2 (圆柱面的和乐群)
 
-试确定圆柱面 $\left\{\left(x,y,z\right)\mid{x}^2+y^2=1\right\}$ 的和乐群.
+试确定圆柱面 $\left\{\left(x,y,z\right)\mid{}x^2+y^2=1\right\}$ 的和乐群.
 
 ### 解答 2
 
@@ -443,7 +443,7 @@ $$
 故由**定义 3.3.1 (第一基本形式)**
 
 $$
-g_{11}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_\theta\right\rangle=1,\quad{g}_{12}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_u\right\rangle=0,\quad{g}_{22}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=1,
+g_{11}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_\theta\right\rangle=1,\quad{}g_{12}=\left\langle\boldsymbol{r}_\theta,\boldsymbol{r}_u\right\rangle=0,\quad{}g_{22}=\left\langle\boldsymbol{r}_u,\boldsymbol{r}_u\right\rangle=1,
 $$
 
 即 $\mathrm{I}=\mathrm{d}\theta^2+\mathrm{d}u^2$, 全部系数为常数.

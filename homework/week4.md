@@ -2,7 +2,7 @@
 
 > **定义 3.1.1 (参数曲面)**
 > 
-> 设 $D\subset{E}^{2}$ 是平面区域, $\boldsymbol{r}:D\to{E}^{3}$, $\boldsymbol{r}\left(u^{1},u^{2}\right)=\left(x\left(u^{1},u^{2}\right),y\left(u^{1},u^{2}\right),z\left(u^{1},u^{2}\right)\right)$ 是 $C^{k}$ ($k\ge1$) 映射. 记坐标切向量 $\boldsymbol{r}_{\alpha}:=\frac{\partial\boldsymbol{r}}{\partial{u}^{\alpha}}$, $\alpha=1,2$. 若处处有 $\operatorname{rank}\left(\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right)=2$, 即 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 则称 $\boldsymbol{r}\left(D\right)\subset{E}^{3}$ 是一张正则 $C^{k}$ 参数曲面, 记作 $S$; $\left(u^{1},u^{2}\right)$ 称为曲面的坐标参数.
+> 设 $D\subset{}E^{2}$ 是平面区域, $\boldsymbol{r}:D\to{}E^{3}$, $\boldsymbol{r}\left(u^{1},u^{2}\right)=\left(x\left(u^{1},u^{2}\right),y\left(u^{1},u^{2}\right),z\left(u^{1},u^{2}\right)\right)$ 是 $C^{k}$ ($k\ge1$) 映射. 记坐标切向量 $\boldsymbol{r}_{\alpha}:=\frac{\partial\boldsymbol{r}}{\partial{}u^{\alpha}}$, $\alpha=1,2$. 若处处有 $\operatorname{rank}\left(\boldsymbol{r}_{1},\boldsymbol{r}_{2}\right)=2$, 即 $\boldsymbol{r}_{1}\wedge\boldsymbol{r}_{2}\ne\boldsymbol0$, 则称 $\boldsymbol{r}\left(D\right)\subset{}E^{3}$ 是一张正则 $C^{k}$ 参数曲面, 记作 $S$; $\left(u^{1},u^{2}\right)$ 称为曲面的坐标参数.
 
 > **定义 3.1.2 (单位法向与定向)**
 > 
@@ -14,7 +14,7 @@
 
 > **定义 3.3.1 (第一基本形式)**
 > 
-> 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式 (即弧长平方 $\mathrm{d}s^{2}$), 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$. 它给出切向量长度的平方: 对切向量 $\boldsymbol{w}=w^{\alpha}\boldsymbol{r}_{\alpha}\in{T}_{\boldsymbol{r}\left(u_{0}\right)}S$, $\left\langle\boldsymbol{w},\boldsymbol{w}\right\rangle=g_{\alpha\beta}w^{\alpha}w^{\beta}$.
+> 二次微分式 $\mathrm{I}:=\left\langle\mathrm{d}\boldsymbol{r},\mathrm{d}\boldsymbol{r}\right\rangle=g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}$ 称为曲面 $S$ 的第一基本形式 (即弧长平方 $\mathrm{d}s^{2}$), 其中 $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$. 它给出切向量长度的平方: 对切向量 $\boldsymbol{w}=w^{\alpha}\boldsymbol{r}_{\alpha}\in{}T_{\boldsymbol{r}\left(u_{0}\right)}S$, $\left\langle\boldsymbol{w},\boldsymbol{w}\right\rangle=g_{\alpha\beta}w^{\alpha}w^{\beta}$.
 
 > **定义 3.5.2 (第二基本形式)**
 > 
@@ -35,46 +35,46 @@
 (1) 椭球面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$. 取
 
 $$
-\boldsymbol{r}\left(u,v\right)=\left(a\sin{u}\cos{v},b\sin{u}\sin{v},c\cos{u}\right),\quad{u}\in\left(0,\pi\right),v\in\left[0,2\pi\right).
+\boldsymbol{r}\left(u,v\right)=\left(a\sin{}u\cos{}v,b\sin{}u\sin{}v,c\cos{}u\right),\quad{}u\in\left(0,\pi\right),v\in\left[0,2\pi\right).
 $$
 
 像点落在曲面上: 由 $\sin^{2}u\cos^{2}v+\sin^{2}u\sin^{2}v+\cos^{2}u=1$,
 
 $$
-\frac{\left(a\sin{u}\cos{v}\right)^{2}}{a^{2}}+\frac{\left(b\sin{u}\sin{v}\right)^{2}}{b^{2}}+\frac{\left(c\cos{u}\right)^{2}}{c^{2}}=1.
+\frac{\left(a\sin{}u\cos{}v\right)^{2}}{a^{2}}+\frac{\left(b\sin{}u\sin{}v\right)^{2}}{b^{2}}+\frac{\left(c\cos{}u\right)^{2}}{c^{2}}=1.
 $$
 
 正则性按**定义 3.1.1 (参数曲面)** 验证:
 
 $$
-\boldsymbol{r}_{u}=\left(a\cos{u}\cos{v},b\cos{u}\sin{v},-c\sin{u}\right),\quad
-\boldsymbol{r}_{v}=\left(-a\sin{u}\sin{v},b\sin{u}\cos{v},0\right),
+\boldsymbol{r}_{u}=\left(a\cos{}u\cos{}v,b\cos{}u\sin{}v,-c\sin{}u\right),\quad
+\boldsymbol{r}_{v}=\left(-a\sin{}u\sin{}v,b\sin{}u\cos{}v,0\right),
 $$
 
 $$
-\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\sin{u}\left(bc\sin{u}\cos{v},ac\sin{u}\sin{v},ab\cos{u}\right).
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\sin{}u\left(bc\sin{}u\cos{}v,ac\sin{}u\sin{}v,ab\cos{}u\right).
 $$
 
-$u\in\left(0,\pi\right)$ 时 $\sin{u}>0$; 而前两个分量同为零要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 3.1.1 (参数曲面)**, 这是椭球面除去南北两极的正则参数曲面. $\blacksquare$
+$u\in\left(0,\pi\right)$ 时 $\sin{}u>0$; 而前两个分量同为零要求 $\cos{}v=\sin{}v=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 3.1.1 (参数曲面)**, 这是椭球面除去南北两极的正则参数曲面. $\blacksquare$
 
 (2) 单叶双曲面 $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$. 取
 
 $$
-\boldsymbol{r}\left(u,v\right)=\left(a\cosh{u}\cos{v},b\cosh{u}\sin{v},c\sinh{u}\right),\quad{u}\in\mathbb{R},v\in\left[0,2\pi\right).
+\boldsymbol{r}\left(u,v\right)=\left(a\cosh{}u\cos{}v,b\cosh{}u\sin{}v,c\sinh{}u\right),\quad{}u\in\mathbb{R},v\in\left[0,2\pi\right).
 $$
 
 由 $\cosh^{2}u-\sinh^{2}u=1$ 知像点落在曲面上. 正则性按**定义 3.1.1 (参数曲面)** 验证:
 
 $$
-\boldsymbol{r}_{u}=\left(a\sinh{u}\cos{v},b\sinh{u}\sin{v},c\cosh{u}\right),\quad
-\boldsymbol{r}_{v}=\left(-a\cosh{u}\sin{v},b\cosh{u}\cos{v},0\right),
+\boldsymbol{r}_{u}=\left(a\sinh{}u\cos{}v,b\sinh{}u\sin{}v,c\cosh{}u\right),\quad
+\boldsymbol{r}_{v}=\left(-a\cosh{}u\sin{}v,b\cosh{}u\cos{}v,0\right),
 $$
 
 $$
-\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(-bc\cosh^{2}u\cos{v},-ac\cosh^{2}u\sin{v},ab\sinh{u}\cosh{u}\right).
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(-bc\cosh^{2}u\cos{}v,-ac\cosh^{2}u\sin{}v,ab\sinh{}u\cosh{}u\right).
 $$
 
-$\cosh{u}>0$ 恒成立, 前两个分量同为零同样要求 $\cos{v}=\sin{v}=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 3.1.1 (参数曲面)**, 这是单叶双曲面的正则参数曲面. $\blacksquare$
+$\cosh{}u>0$ 恒成立, 前两个分量同为零同样要求 $\cos{}v=\sin{}v=0$, 不可能, 故 $\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\ne\boldsymbol0$. 由**定义 3.1.1 (参数曲面)**, 这是单叶双曲面的正则参数曲面. $\blacksquare$
 
 (4) 椭圆抛物面 $z=\frac{x^2}{a^2}+\frac{y^2}{b^2}$. 取
 
@@ -97,7 +97,7 @@ $$
 求椭球面
 
 $$
-\boldsymbol{r}\left(u,v\right)=\left(a\sin{u}\cos{v},b\sin{u}\sin{v},c\cos{u}\right),\quad{u}\in\left(0,\pi\right),v\in\left[0,2\pi\right).
+\boldsymbol{r}\left(u,v\right)=\left(a\sin{}u\cos{}v,b\sin{}u\sin{}v,c\cos{}u\right),\quad{}u\in\left(0,\pi\right),v\in\left[0,2\pi\right).
 $$
 
 的第一基本形式.
@@ -114,8 +114,8 @@ $$
 
 $$
 g_{12}=\left\langle\boldsymbol{r}_{u},\boldsymbol{r}_{v}\right\rangle
-=-a^{2}\sin{u}\cos{u}\sin{v}\cos{v}+b^{2}\sin{u}\cos{u}\sin{v}\cos{v}
-=\left(b^{2}-a^{2}\right)\sin{u}\cos{u}\sin{v}\cos{v},
+=-a^{2}\sin{}u\cos{}u\sin{}v\cos{}v+b^{2}\sin{}u\cos{}u\sin{}v\cos{}v
+=\left(b^{2}-a^{2}\right)\sin{}u\cos{}u\sin{}v\cos{}v,
 $$
 
 $$
@@ -128,7 +128,7 @@ $$
 
 $$
 \mathrm{I}=\left[\left(a^{2}\cos^{2}v+b^{2}\sin^{2}v\right)\cos^{2}u+c^{2}\sin^{2}u\right]\mathrm{d}u^{2}
-+2\left(b^{2}-a^{2}\right)\sin{u}\cos{u}\sin{v}\cos{v}\,\mathrm{d}u\,\mathrm{d}v
++2\left(b^{2}-a^{2}\right)\sin{}u\cos{}u\sin{}v\cos{}v\,\mathrm{d}u\,\mathrm{d}v
 +\left(a^{2}\sin^{2}v+b^{2}\cos^{2}v\right)\sin^{2}u\,\mathrm{d}v^{2}.
 $$
 
@@ -138,7 +138,7 @@ $\blacksquare$
 
 求下列曲面的第一基本形式:
 
-(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$;
+(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{}v,u\sin{}v,bv\right)$;
 
 (2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
@@ -146,16 +146,16 @@ $\blacksquare$
 
 由**定义 3.3.1 (第一基本形式)**, $g_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha},\boldsymbol{r}_{\beta}\right\rangle$, 故只需算 $\boldsymbol{r}_{u}$, $\boldsymbol{r}_{v}$ 并作内积.
 
-(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$.
+(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{}v,u\sin{}v,bv\right)$.
 
 $$
-\boldsymbol{r}_{u}=\left(\cos{v},\sin{v},0\right),\quad
-\boldsymbol{r}_{v}=\left(-u\sin{v},u\cos{v},b\right),
+\boldsymbol{r}_{u}=\left(\cos{}v,\sin{}v,0\right),\quad
+\boldsymbol{r}_{v}=\left(-u\sin{}v,u\cos{}v,b\right),
 $$
 
 $$
 g_{11}=\cos^{2}v+\sin^{2}v=1,\quad
-g_{12}=-u\sin{v}\cos{v}+u\sin{v}\cos{v}+0=0,\quad
+g_{12}=-u\sin{}v\cos{}v+u\sin{}v\cos{}v+0=0,\quad
 g_{22}=u^{2}\sin^{2}v+u^{2}\cos^{2}v+b^{2}=u^{2}+b^{2}.
 $$
 
@@ -202,10 +202,10 @@ $$
 $$
 
 $$
-g_{11}=1+f_{x}^{2},\quad{g}_{12}=f_{x}f_{y},\quad{g}_{22}=1+f_{y}^{2},
+g_{11}=1+f_{x}^{2},\quad{}g_{12}=f_{x}f_{y},\quad{}g_{22}=1+f_{y}^{2},
 $$
 
-其中 $f_{x}=\frac{\partial{f}}{\partial{x}}$, $f_{y}=\frac{\partial{f}}{\partial{y}}$. 故
+其中 $f_{x}=\frac{\partial{}f}{\partial{}x}$, $f_{y}=\frac{\partial{}f}{\partial{}y}$. 故
 
 $$
 \mathrm{I}=\left(1+f_{x}^{2}\right)\mathrm{d}x^{2}+2f_{x}f_{y}\,\mathrm{d}x\,\mathrm{d}y+\left(1+f_{y}^{2}\right)\mathrm{d}y^{2}.
@@ -233,11 +233,11 @@ $$
 $$
 \boldsymbol{r}_{x}\wedge\boldsymbol{r}_{y}
 =\left(u_{x}v_{y}-v_{x}u_{y}\right)\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}
-=\det{J}\cdot\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v},
-\quad{J}:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}.
+=\det{}J\cdot\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v},
+\quad{}J:=\frac{\partial\left(u,v\right)}{\partial\left(x,y\right)}.
 $$
 
-于是 $\det{J}>0$ 时两外积同向, $\det{J}<0$ 时反向; 归一化后即**定义 3.1.2 (单位法向与定向)** 所述: 定向由参数化本身给出, 参数反向则 $\boldsymbol{n}$ 同时反向.
+于是 $\det{}J>0$ 时两外积同向, $\det{}J<0$ 时反向; 归一化后即**定义 3.1.2 (单位法向与定向)** 所述: 定向由参数化本身给出, 参数反向则 $\boldsymbol{n}$ 同时反向.
 
 $\blacksquare$
 
@@ -245,7 +245,7 @@ $\blacksquare$
 
 求下列曲面的第二基本形式:
 
-(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$;
+(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{}v,u\sin{}v,bv\right)$;
 
 (2) $\boldsymbol{r}\left(u,v\right)=\left(a\left(u+v\right),b\left(u-v\right),u^2+v^2\right)$.
 
@@ -253,29 +253,29 @@ $\blacksquare$
 
 两小题都先按**定义 3.1.2 (单位法向与定向)** 取单位法向 $\boldsymbol{n}=\frac{\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}}{\left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|}$, 再按**定义 3.5.2 (第二基本形式)** 算 $b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle$.
 
-(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{v},u\sin{v},bv\right)$. 由 解答 1.8 (1),
+(1) $\boldsymbol{r}\left(u,v\right)=\left(u\cos{}v,u\sin{}v,bv\right)$. 由 解答 1.8 (1),
 
 $$
-\boldsymbol{r}_{u}=\left(\cos{v},\sin{v},0\right),\quad\boldsymbol{r}_{v}=\left(-u\sin{v},u\cos{v},b\right),
+\boldsymbol{r}_{u}=\left(\cos{}v,\sin{}v,0\right),\quad\boldsymbol{r}_{v}=\left(-u\sin{}v,u\cos{}v,b\right),
 $$
 
 $$
-\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(b\sin{v},-b\cos{v},u\right),\quad
+\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}=\left(b\sin{}v,-b\cos{}v,u\right),\quad
 \left|\boldsymbol{r}_{u}\wedge\boldsymbol{r}_{v}\right|=\sqrt{b^{2}+u^{2}},
 $$
 
 故
 
 $$
-\boldsymbol{n}=\frac{\left(b\sin{v},-b\cos{v},u\right)}{\sqrt{b^{2}+u^{2}}}.
+\boldsymbol{n}=\frac{\left(b\sin{}v,-b\cos{}v,u\right)}{\sqrt{b^{2}+u^{2}}}.
 $$
 
 二阶偏导
 
 $$
 \boldsymbol{r}_{uu}=\boldsymbol0,\quad
-\boldsymbol{r}_{uv}=\left(-\sin{v},\cos{v},0\right),\quad
-\boldsymbol{r}_{vv}=\left(-u\cos{v},-u\sin{v},0\right).
+\boldsymbol{r}_{uv}=\left(-\sin{}v,\cos{}v,0\right),\quad
+\boldsymbol{r}_{vv}=\left(-u\cos{}v,-u\sin{}v,0\right).
 $$
 
 于是
@@ -283,7 +283,7 @@ $$
 $$
 b_{11}=\left\langle\boldsymbol{r}_{uu},\boldsymbol{n}\right\rangle=0,\quad
 b_{12}=\left\langle\boldsymbol{r}_{uv},\boldsymbol{n}\right\rangle=\frac{-b\sin^{2}v-b\cos^{2}v}{\sqrt{b^{2}+u^{2}}}=-\frac{b}{\sqrt{b^{2}+u^{2}}},\quad
-b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{bu\sin{v}\cos{v}-bu\cos{v}\sin{v}}{\sqrt{b^{2}+u^{2}}}=0.
+b_{22}=\left\langle\boldsymbol{r}_{vv},\boldsymbol{n}\right\rangle=\frac{bu\sin{}v\cos{}v-bu\cos{}v\sin{}v}{\sqrt{b^{2}+u^{2}}}=0.
 $$
 
 故
@@ -364,7 +364,7 @@ $\blacksquare$
 
 ## 2 (单位球面的三种参数化与基本形式)
 
-对于曲面 $S^{2}\left(1\right)=\left\{\left(x,y,z\right)\mid{x}^{2}+y^{2}+z^{2}=1\right\}$, 利用三种参数表示, 分别确定其切空间和法线; 计算第一基本形式和第二基本形式.
+对于曲面 $S^{2}\left(1\right)=\left\{\left(x,y,z\right)\mid{}x^{2}+y^{2}+z^{2}=1\right\}$, 利用三种参数表示, 分别确定其切空间和法线; 计算第一基本形式和第二基本形式.
 
 ### 解答 2
 
@@ -384,13 +384,13 @@ $$
 即 $\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-g_{\alpha\beta}$. 由 $\boldsymbol{n}=\sigma\boldsymbol{r}$ 与**定义 3.5.2 (第二基本形式)**,
 
 $$
-b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle=\sigma\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-\sigma{g}_{\alpha\beta},
+b_{\alpha\beta}=\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{n}\right\rangle=\sigma\left\langle\boldsymbol{r}_{\alpha\beta},\boldsymbol{r}\right\rangle=-\sigma{}g_{\alpha\beta},
 $$
 
 故
 
 $$
-\mathrm{II}=-\sigma{g}_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}=-\sigma\,\mathrm{I}.
+\mathrm{II}=-\sigma{}g_{\alpha\beta}\,\mathrm{d}u^{\alpha}\,\mathrm{d}u^{\beta}=-\sigma\,\mathrm{I}.
 $$
 
 下面逐组参数给出 $T_{\boldsymbol{r}}S$, $\boldsymbol{n}$, $\mathrm{I}$, $\mathrm{II}$.
@@ -427,7 +427,7 @@ $\blacksquare$
 (ii) 函数图 (上半球). 取
 
 $$
-\boldsymbol{r}\left(x,y\right)=\left(x,y,\sqrt{1-x^{2}-y^{2}}\right),\quad{x}^{2}+y^{2}<1.
+\boldsymbol{r}\left(x,y\right)=\left(x,y,\sqrt{1-x^{2}-y^{2}}\right),\quad{}x^{2}+y^{2}<1.
 $$
 
 记 $f:=\sqrt{1-x^{2}-y^{2}}$, 则 $f_{x}=-\frac{x}{f}$, $f_{y}=-\frac{y}{f}$. 坐标切向量

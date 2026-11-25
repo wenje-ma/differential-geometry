@@ -2,7 +2,7 @@
 
 > **定义 1.2.1 (弧长)**
 > 
-> 设 $C\subset{E}^{n}$ 是一条简单的 $C^{k}$ 曲线, 即存在参数化 $\boldsymbol{r}:\left[a,b\right]\to{C}$, $\boldsymbol{r}\in{C}^{k}$ 且 $\boldsymbol{r}$ 是单射. 则 $\boldsymbol{r}$ 在参数区间 $\left[t_{1},t_{2}\right]$ 上对应那段曲线的弧长为 $\mathrm{len}\left(\left.\boldsymbol{r}\right|_{\left[t_{1},t_{2}\right]}\right)=\int_{t_{1}}^{t_{2}}\left|\boldsymbol{r}'\left(t\right)\right|\,\mathrm{d}t$.
+> 设 $C\subset{}E^{n}$ 是一条简单的 $C^{k}$ 曲线, 即存在参数化 $\boldsymbol{r}:\left[a,b\right]\to{}C$, $\boldsymbol{r}\in{}C^{k}$ 且 $\boldsymbol{r}$ 是单射. 则 $\boldsymbol{r}$ 在参数区间 $\left[t_{1},t_{2}\right]$ 上对应那段曲线的弧长为 $\mathrm{len}\left(\left.\boldsymbol{r}\right|_{\left[t_{1},t_{2}\right]}\right)=\int_{t_{1}}^{t_{2}}\left|\boldsymbol{r}'\left(t\right)\right|\,\mathrm{d}t$.
 
 > **定义 1.2.5 (弧长参数化)**
 > 
@@ -14,7 +14,7 @@
 
 > **定义 1.3.1 (弗雷内标架)**
 > 
-> 设 $\boldsymbol{r}:\left[0,L\right]\to{E}^{2}$ 是以弧长为参数的平面正则曲线. 切向量 $\boldsymbol{t}\left(s\right):=\dot{\boldsymbol{r}}\left(s\right)=\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}$ 是单位向量. 在 $E^{2}$ 中垂直于 $\boldsymbol{t}$ 的方向有两个, 取其中使 $\left\{\boldsymbol{t},\boldsymbol{n}\right\}$ 与 $\left\{\boldsymbol{e}_{1},\boldsymbol{e}_{2}\right\}$ 定向相同的那个单位向量为 $\boldsymbol{n}\left(s\right)$, 即把 $\boldsymbol{t}$ 逆时针转 $\frac{\pi}{2}$. 于是 $\left\{\boldsymbol{t},\boldsymbol{n}\right\}\left(s\right)$ 是 $E^{2}$ 的一组标准正交右手基, 称为曲线在 $\boldsymbol{r}\left(s\right)$ 处的弗雷内标架.
+> 设 $\boldsymbol{r}:\left[0,L\right]\to{}E^{2}$ 是以弧长为参数的平面正则曲线. 切向量 $\boldsymbol{t}\left(s\right):=\dot{\boldsymbol{r}}\left(s\right)=\frac{\mathrm{d}\boldsymbol{r}}{\mathrm{d}s}$ 是单位向量. 在 $E^{2}$ 中垂直于 $\boldsymbol{t}$ 的方向有两个, 取其中使 $\left\{\boldsymbol{t},\boldsymbol{n}\right\}$ 与 $\left\{\boldsymbol{e}_{1},\boldsymbol{e}_{2}\right\}$ 定向相同的那个单位向量为 $\boldsymbol{n}\left(s\right)$, 即把 $\boldsymbol{t}$ 逆时针转 $\frac{\pi}{2}$. 于是 $\left\{\boldsymbol{t},\boldsymbol{n}\right\}\left(s\right)$ 是 $E^{2}$ 的一组标准正交右手基, 称为曲线在 $\boldsymbol{r}\left(s\right)$ 处的弗雷内标架.
 
 > **定义 1.3.2 (二维弗雷内方程)**
 > 
@@ -26,11 +26,11 @@
 
 > **定理 1.4.2 (平面曲线基本定理)**
 > 
-> (1) 设 $\boldsymbol{r}_{1},\boldsymbol{r}_{2}:\left[0,L\right]\to{E}^{2}$ 均以弧长为参数, 且 $\boldsymbol{r}_{2}=\boldsymbol{A}\boldsymbol{r}_{1}+\boldsymbol{b}_{0}$, 其中 $\boldsymbol{A}^{\top}\boldsymbol{A}=I_{2}$, $\boldsymbol{b}_{0}\in{E}^{2}$ 为常向量, $\det\boldsymbol{A}=1$, 则 $\kappa_{1}\left(s\right)=\kappa_{2}\left(s\right)$. (2) 给定 $\overline{\kappa}\in{C}^{1}\left(\left[0,L\right]\right)$, 在 $E^{2}$ 上保向等距变换的意义下, 存在唯一正则曲线 $\boldsymbol{r}:\left[0,L\right]\to{E}^{2}$ 以 $\overline{\kappa}$ 为曲率.
+> (1) 设 $\boldsymbol{r}_{1},\boldsymbol{r}_{2}:\left[0,L\right]\to{}E^{2}$ 均以弧长为参数, 且 $\boldsymbol{r}_{2}=\boldsymbol{A}\boldsymbol{r}_{1}+\boldsymbol{b}_{0}$, 其中 $\boldsymbol{A}^{\top}\boldsymbol{A}=I_{2}$, $\boldsymbol{b}_{0}\in{}E^{2}$ 为常向量, $\det\boldsymbol{A}=1$, 则 $\kappa_{1}\left(s\right)=\kappa_{2}\left(s\right)$. (2) 给定 $\overline{\kappa}\in{}C^{1}\left(\left[0,L\right]\right)$, 在 $E^{2}$ 上保向等距变换的意义下, 存在唯一正则曲线 $\boldsymbol{r}:\left[0,L\right]\to{}E^{2}$ 以 $\overline{\kappa}$ 为曲率.
 
 > **命题 1.5.1 (直线段刻画)**
 > 
-> 设 $\boldsymbol{r}:\left[0,L\right]\to{E}^{3}$ 是 $C^{k}$ 正则曲线 ($k\ge1$), $s$ 为弧长, $\boldsymbol{t}=\dot{\boldsymbol{r}}$. 则在一段区间 $\left[a,b\right]\subset\left[0,L\right]$ 上, $\left.\dot{\boldsymbol{t}}\right|_{\left[a,b\right]}\equiv\boldsymbol0$ 当且仅当 $\left.\boldsymbol{t}\right|_{\left[a,b\right]}\equiv\boldsymbol{v}$ 是常向量, 当且仅当 $\boldsymbol{r}\left(s\right)=\boldsymbol{v}\left(s-a\right)+\boldsymbol{r}\left(a\right)$, $s\in\left[a,b\right]$, 即 $\boldsymbol{r}$ 在该段上是直线段.
+> 设 $\boldsymbol{r}:\left[0,L\right]\to{}E^{3}$ 是 $C^{k}$ 正则曲线 ($k\ge1$), $s$ 为弧长, $\boldsymbol{t}=\dot{\boldsymbol{r}}$. 则在一段区间 $\left[a,b\right]\subset\left[0,L\right]$ 上, $\left.\dot{\boldsymbol{t}}\right|_{\left[a,b\right]}\equiv\boldsymbol0$ 当且仅当 $\left.\boldsymbol{t}\right|_{\left[a,b\right]}\equiv\boldsymbol{v}$ 是常向量, 当且仅当 $\boldsymbol{r}\left(s\right)=\boldsymbol{v}\left(s-a\right)+\boldsymbol{r}\left(a\right)$, $s\in\left[a,b\right]$, 即 $\boldsymbol{r}$ 在该段上是直线段.
 
 > **定义 1.5.3 (曲率与主法向量)**
 > 
@@ -42,7 +42,7 @@
 
 > **定理 1.5.9 (空间曲线基本定理)**
 > 
-> 在 $E^{3}$ 上相差一个保向等距变换 (刚体运动) 的意义下, 给定 $\kappa\in{C}^{1}$ ($\kappa>0$) 与 $\tau\in{C}^{1}$, 存在唯一弧长参数曲线 $\boldsymbol{r}\left(s\right)$ 以 $\kappa$, $\tau$ 为曲率与挠率.
+> 在 $E^{3}$ 上相差一个保向等距变换 (刚体运动) 的意义下, 给定 $\kappa\in{}C^{1}$ ($\kappa>0$) 与 $\tau\in{}C^{1}$, 存在唯一弧长参数曲线 $\boldsymbol{r}\left(s\right)$ 以 $\kappa$, $\tau$ 为曲率与挠率.
 
 > **命题 1.5.10 (一般参数下的曲率与挠率公式)**
 > 
@@ -106,13 +106,13 @@ $\blacksquare$
 
 ## 2 (光滑曲线弧长的积分公式与直线最短性)
 
-(1) 设 $\boldsymbol\alpha:I\to{E}^{3}$ 是连续曲线, 以及 $\left[a,b\right]$ 是包含在 $I$ 中的闭区间. 对于 $\left[a,b\right]$ 的任意划分 $P:a=t_0<{}t_1<\dots<{}t_n=b$, 定义
+(1) 设 $\boldsymbol\alpha:I\to{}E^{3}$ 是连续曲线, 以及 $\left[a,b\right]$ 是包含在 $I$ 中的闭区间. 对于 $\left[a,b\right]$ 的任意划分 $P:a=t_0<{}t_1<\dots<{}t_n=b$, 定义
 
 $$
 L\left(\boldsymbol\alpha,P\right):=\sum_{i=1}^n\left|\boldsymbol\alpha\left(t_i\right)-\boldsymbol\alpha\left(t_{i-1}\right)\right|.
 $$
 
-定义曲线 $\boldsymbol\alpha$ 从 $a$ 到 $b$ 的弧长 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)$ 为对所有划分 $P$ 的上确界, 即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right):=\sup_PL\left(\boldsymbol\alpha,P\right)$. 证明: 若 $\boldsymbol\alpha:I\to{E}^{3}$ 是光滑曲线, 则 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\left(t\right)\right|\mathrm{d}t$.
+定义曲线 $\boldsymbol\alpha$ 从 $a$ 到 $b$ 的弧长 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)$ 为对所有划分 $P$ 的上确界, 即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right):=\sup_PL\left(\boldsymbol\alpha,P\right)$. 证明: 若 $\boldsymbol\alpha:I\to{}E^{3}$ 是光滑曲线, 则 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\left(t\right)\right|\mathrm{d}t$.
 
 (2) 证明 $E^{3}$ 中任何两点之间直线最短.
 
@@ -126,7 +126,7 @@ $$
 L\left(\boldsymbol\alpha,P\right)\le\sum_{i=1}^n\int_{t_{i-1}}^{t_i}\left|\boldsymbol\alpha'\right|\,\mathrm{d}t=J,
 $$
 
-故 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_PL\left(\boldsymbol\alpha,P\right)\le{J}$.
+故 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\sup_PL\left(\boldsymbol\alpha,P\right)\le{}J$.
 
 下界. $\boldsymbol\alpha$ 光滑, 故 $\boldsymbol\alpha'$ 在 $\left[a,b\right]$ 上一致连续. 给定 $\varepsilon>0$, 取 $\delta>0$ 使 $\left|t-u\right|<\delta$ 时 $\left|\boldsymbol\alpha'\left(t\right)-\boldsymbol\alpha'\left(u\right)\right|<\varepsilon$, 并取划分 $P$ 的步长全小于 $\delta$. 在 $\left[t_{i-1},t_i\right]$ 上, 由积分三角不等式 ($\left|x+y\right|\ge\left|x\right|-\left|y\right|$),
 
@@ -143,9 +143,9 @@ $$
 L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge\sum_i\left|\boldsymbol\alpha'\left(t_{i-1}\right)\right|\left(t_i-t_{i-1}\right)-\varepsilon\left(b-a\right).
 $$
 
-令上述一列划分的步长趋于 $0$: $\left|\boldsymbol\alpha'\right|$ 连续, 左端黎曼和趋于 $J$, 于是 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge{J}-\varepsilon\left(b-a\right)$. 由 $\varepsilon$ 任意得 $L\ge{J}$. 与上界合并即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\,\mathrm{d}t$, 这正是**定义 1.2.1 (弧长)** 中的弧长表达式. $\blacksquare$
+令上述一列划分的步长趋于 $0$: $\left|\boldsymbol\alpha'\right|$ 连续, 左端黎曼和趋于 $J$, 于是 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)\ge{}J-\varepsilon\left(b-a\right)$. 由 $\varepsilon$ 任意得 $L\ge{}J$. 与上界合并即 $L\left(\boldsymbol\alpha,\left[a,b\right]\right)=\int_a^b\left|\boldsymbol\alpha'\right|\,\mathrm{d}t$, 这正是**定义 1.2.1 (弧长)** 中的弧长表达式. $\blacksquare$
 
-(2) 设 $\boldsymbol\alpha:\left[a,b\right]\to{E}^{3}$ 是连接 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意光滑曲线, $\boldsymbol{r}\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right)$ 为直线段的参数化. 由 $\boldsymbol{r}'=\frac{Q-P}{b-a}$ 与 (1),
+(2) 设 $\boldsymbol\alpha:\left[a,b\right]\to{}E^{3}$ 是连接 $P=\boldsymbol\alpha\left(a\right)$, $Q=\boldsymbol\alpha\left(b\right)$ 的任意光滑曲线, $\boldsymbol{r}\left(t\right)=P+\frac{t-a}{b-a}\left(Q-P\right)$ 为直线段的参数化. 由 $\boldsymbol{r}'=\frac{Q-P}{b-a}$ 与 (1),
 
 $$
 L\left(\boldsymbol{r},\left[a,b\right]\right)=\int_a^b\frac{\left|Q-P\right|}{b-a}\,\mathrm{d}t=\left|Q-P\right|.
@@ -169,7 +169,7 @@ $\blacksquare$
 
 ### 解答 3
 
-(1) 设 $\boldsymbol{r}:\left[0,L\right]\to{E}^{2}$ 是平面正则曲线, 以弧长 $s$ 为参数 (**定义 1.2.5 (弧长参数化)**), 则 $\left|\dot{\boldsymbol{r}}\right|\equiv1$ (**命题 1.2.7 (弧长参数的判别)**). 取 $\boldsymbol{t}:=\dot{\boldsymbol{r}}$, 并取 $\boldsymbol{n}$ 为 $\boldsymbol{t}$ 逆时针转 $\frac{\pi}{2}$ 所得的单位向量, 则 $\left\{\boldsymbol{t},\boldsymbol{n}\right\}$ 是沿曲线的弗雷内标架 (**定义 1.3.1 (弗雷内标架)**). 以下导出弗雷内方程. 由 $\left|\boldsymbol{t}\right|^{2}\equiv1$ 求导得 $\left\langle\boldsymbol{t},\dot{\boldsymbol{t}}\right\rangle=0$, 故 $\dot{\boldsymbol{t}}$ 沿 $\pm\boldsymbol{n}$ 方向, 记 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$; 由 $\left|\boldsymbol{n}\right|^{2}\equiv1$ 求导得 $\dot{\boldsymbol{n}}\perp\boldsymbol{n}$, 故 $\dot{\boldsymbol{n}}=\lambda\boldsymbol{t}$; 再由 $\left\langle\boldsymbol{t},\boldsymbol{n}\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\right\rangle+\left\langle\boldsymbol{t},\dot{\boldsymbol{n}}\right\rangle=\kappa+\lambda=0$, 即 $\lambda=-\kappa$. 于是
+(1) 设 $\boldsymbol{r}:\left[0,L\right]\to{}E^{2}$ 是平面正则曲线, 以弧长 $s$ 为参数 (**定义 1.2.5 (弧长参数化)**), 则 $\left|\dot{\boldsymbol{r}}\right|\equiv1$ (**命题 1.2.7 (弧长参数的判别)**). 取 $\boldsymbol{t}:=\dot{\boldsymbol{r}}$, 并取 $\boldsymbol{n}$ 为 $\boldsymbol{t}$ 逆时针转 $\frac{\pi}{2}$ 所得的单位向量, 则 $\left\{\boldsymbol{t},\boldsymbol{n}\right\}$ 是沿曲线的弗雷内标架 (**定义 1.3.1 (弗雷内标架)**). 以下导出弗雷内方程. 由 $\left|\boldsymbol{t}\right|^{2}\equiv1$ 求导得 $\left\langle\boldsymbol{t},\dot{\boldsymbol{t}}\right\rangle=0$, 故 $\dot{\boldsymbol{t}}$ 沿 $\pm\boldsymbol{n}$ 方向, 记 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$; 由 $\left|\boldsymbol{n}\right|^{2}\equiv1$ 求导得 $\dot{\boldsymbol{n}}\perp\boldsymbol{n}$, 故 $\dot{\boldsymbol{n}}=\lambda\boldsymbol{t}$; 再由 $\left\langle\boldsymbol{t},\boldsymbol{n}\right\rangle\equiv0$ 求导得 $\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\right\rangle+\left\langle\boldsymbol{t},\dot{\boldsymbol{n}}\right\rangle=\kappa+\lambda=0$, 即 $\lambda=-\kappa$. 于是
 
 $$
 \frac{\mathrm{d}}{\mathrm{d}s}\begin{bmatrix}\boldsymbol{t}\\\boldsymbol{n}\end{bmatrix}
@@ -179,7 +179,7 @@ $$
 
 即二维弗雷内方程 (**定义 1.3.2 (二维弗雷内方程)**). 其中 $\kappa=\left\langle\dot{\boldsymbol{t}},\boldsymbol{n}\right\rangle$ 是曲线的曲率 (**定义 1.3.4 (曲率)**), 是有符号的标量: $\kappa>0$ 表示曲线向 $\boldsymbol{n}$ 一侧弯曲.
 
-再取 $\boldsymbol{t}=\left(\cos\theta,\sin\theta\right)$, 其中 $\theta\left(s\right)$ 是 $\boldsymbol{t}$ 与 $\boldsymbol{e}_{1}$ 的夹角, 则 $\boldsymbol{n}=\left(-\sin\theta,\cos\theta\right)$ 且 $\dot{\boldsymbol{t}}=\dot{\theta}\boldsymbol{n}$, 与 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$ 比较得 $\kappa=\dot{\theta}$: 平面曲线的曲率就是单位切向量的转角关于弧长的变化率. 平面曲线基本定理 (**定理 1.4.2 (平面曲线基本定理)**): (1) $\boldsymbol{r}_{2}=\boldsymbol{A}\boldsymbol{r}_{1}+\boldsymbol{b}_{0}$ 且 $\boldsymbol{A}^{\top}\boldsymbol{A}=I_{2}$, $\det\boldsymbol{A}=1$ 时 $\kappa_{1}=\kappa_{2}$; (2) 给定 $\overline{\kappa}\in{C}^{1}\left(\left[0,L\right]\right)$, 存在以 $\overline{\kappa}$ 为曲率的正则曲线, 且在保向等距变换的意义下唯一. 存在性归结为以 $\left(x^{1},x^{2},\dot{x}^{1},\dot{x}^{2}\right)$ 为未知函数的一阶常微分方程组, 由初值问题的存在唯一性给出.
+再取 $\boldsymbol{t}=\left(\cos\theta,\sin\theta\right)$, 其中 $\theta\left(s\right)$ 是 $\boldsymbol{t}$ 与 $\boldsymbol{e}_{1}$ 的夹角, 则 $\boldsymbol{n}=\left(-\sin\theta,\cos\theta\right)$ 且 $\dot{\boldsymbol{t}}=\dot{\theta}\boldsymbol{n}$, 与 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$ 比较得 $\kappa=\dot{\theta}$: 平面曲线的曲率就是单位切向量的转角关于弧长的变化率. 平面曲线基本定理 (**定理 1.4.2 (平面曲线基本定理)**): (1) $\boldsymbol{r}_{2}=\boldsymbol{A}\boldsymbol{r}_{1}+\boldsymbol{b}_{0}$ 且 $\boldsymbol{A}^{\top}\boldsymbol{A}=I_{2}$, $\det\boldsymbol{A}=1$ 时 $\kappa_{1}=\kappa_{2}$; (2) 给定 $\overline{\kappa}\in{}C^{1}\left(\left[0,L\right]\right)$, 存在以 $\overline{\kappa}$ 为曲率的正则曲线, 且在保向等距变换的意义下唯一. 存在性归结为以 $\left(x^{1},x^{2},\dot{x}^{1},\dot{x}^{2}\right)$ 为未知函数的一阶常微分方程组, 由初值问题的存在唯一性给出.
 
 $\blacksquare$
 
@@ -201,20 +201,20 @@ $\blacksquare$
 
 曲率和挠率的计算. 求下列曲线的曲率和挠率:
 
-(1) $\boldsymbol{r}\left(t\right)=\left(a\cosh{t},a\sinh{t},bt\right)$ ($a>0$).
+(1) $\boldsymbol{r}\left(t\right)=\left(a\cosh{}t,a\sinh{}t,bt\right)$ ($a>0$).
 
-(3) $\boldsymbol{r}\left(t\right)=\left(a\left(1-\sin{t}\right),a\left(1-\cos{t}\right),bt\right)$ ($a>0$).
+(3) $\boldsymbol{r}\left(t\right)=\left(a\left(1-\sin{}t\right),a\left(1-\cos{}t\right),bt\right)$ ($a>0$).
 
 ### 解答 4
 
 两小题都用一般参数下的公式 (**命题 1.5.10 (一般参数下的曲率与挠率公式)**): 记 $v=\left|\boldsymbol{r}'\right|$, $w=\left|\boldsymbol{r}'\wedge\boldsymbol{r}''\right|$, 则 $\kappa=\frac{w}{v^{3}}$, $\tau=\frac{\left(\boldsymbol{r}',\boldsymbol{r}'',\boldsymbol{r}'''\right)}{w^{2}}$, 其中 $\left(\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}\right)=\left\langle\boldsymbol{a}\wedge\boldsymbol{b},\boldsymbol{c}\right\rangle$.
 
-(1) $\boldsymbol{r}\left(t\right)=\left(a\cosh{t},a\sinh{t},bt\right)$.
+(1) $\boldsymbol{r}\left(t\right)=\left(a\cosh{}t,a\sinh{}t,bt\right)$.
 
 $$
-\boldsymbol{r}'=\left(a\sinh{t},a\cosh{t},b\right),\quad
-\boldsymbol{r}''=\left(a\cosh{t},a\sinh{t},0\right),\quad
-\boldsymbol{r}'''=\left(a\sinh{t},a\cosh{t},0\right),
+\boldsymbol{r}'=\left(a\sinh{}t,a\cosh{}t,b\right),\quad
+\boldsymbol{r}''=\left(a\cosh{}t,a\sinh{}t,0\right),\quad
+\boldsymbol{r}'''=\left(a\sinh{}t,a\cosh{}t,0\right),
 $$
 
 $$
@@ -222,7 +222,7 @@ v^{2}=a^{2}\sinh^{2}t+a^{2}\cosh^{2}t+b^{2}=a^{2}\cosh2t+b^{2},
 $$
 
 $$
-\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-ab\sinh{t},ab\cosh{t},-a^{2}\right),\quad
+\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-ab\sinh{}t,ab\cosh{}t,-a^{2}\right),\quad
 w^{2}=a^{2}b^{2}\cosh2t+a^{4}=a^{2}\left(a^{2}+b^{2}\cosh2t\right),
 $$
 
@@ -241,12 +241,12 @@ $$
 
 $\blacksquare$
 
-(3) $\boldsymbol{r}\left(t\right)=\left(a\left(1-\sin{t}\right),a\left(1-\cos{t}\right),bt\right)$.
+(3) $\boldsymbol{r}\left(t\right)=\left(a\left(1-\sin{}t\right),a\left(1-\cos{}t\right),bt\right)$.
 
 $$
-\boldsymbol{r}'=\left(-a\cos{t},a\sin{t},b\right),\quad
-\boldsymbol{r}''=\left(a\sin{t},a\cos{t},0\right),\quad
-\boldsymbol{r}'''=\left(a\cos{t},-a\sin{t},0\right),
+\boldsymbol{r}'=\left(-a\cos{}t,a\sin{}t,b\right),\quad
+\boldsymbol{r}''=\left(a\sin{}t,a\cos{}t,0\right),\quad
+\boldsymbol{r}'''=\left(a\cos{}t,-a\sin{}t,0\right),
 $$
 
 $$
@@ -254,7 +254,7 @@ v^{2}=a^{2}\cos^{2}t+a^{2}\sin^{2}t+b^{2}=a^{2}+b^{2},
 $$
 
 $$
-\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-ab\cos{t},ab\sin{t},-a^{2}\right),\quad
+\boldsymbol{r}'\wedge\boldsymbol{r}''=\left(-ab\cos{}t,ab\sin{}t,-a^{2}\right),\quad
 w^{2}=a^{2}b^{2}\cos^{2}t+a^{2}b^{2}\sin^{2}t+a^{4}=a^{2}\left(a^{2}+b^{2}\right),
 $$
 
@@ -285,7 +285,7 @@ $\blacksquare$
 
 以下设 $\boldsymbol{r}=\boldsymbol{r}\left(s\right)$ 以弧长为参数, 且 $\kappa$, $\tau$ 处处非零, 使 $\frac{1}{\kappa}$, $\frac{1}{\tau}$ 有意义.
 
-(1) 平移坐标使球心为原点, 则 $\left|\boldsymbol{r}\right|^{2}\equiv{R}^{2}$. 关于 $s$ 求导, 由 $\dot{\boldsymbol{r}}=\boldsymbol{t}$ 与 $\left|\boldsymbol{t}\right|=1$ 得 $\left\langle\boldsymbol{r},\boldsymbol{t}\right\rangle\equiv0$. 再求导, 用 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$ (**定义 1.5.3 (曲率与主法向量)**),
+(1) 平移坐标使球心为原点, 则 $\left|\boldsymbol{r}\right|^{2}\equiv{}R^{2}$. 关于 $s$ 求导, 由 $\dot{\boldsymbol{r}}=\boldsymbol{t}$ 与 $\left|\boldsymbol{t}\right|=1$ 得 $\left\langle\boldsymbol{r},\boldsymbol{t}\right\rangle\equiv0$. 再求导, 用 $\dot{\boldsymbol{t}}=\kappa\boldsymbol{n}$ (**定义 1.5.3 (曲率与主法向量)**),
 
 $$
 0=\left\langle\dot{\boldsymbol{r}},\boldsymbol{t}\right\rangle+\left\langle\boldsymbol{r},\dot{\boldsymbol{t}}\right\rangle=1+\kappa\left\langle\boldsymbol{r},\boldsymbol{n}\right\rangle,
@@ -335,7 +335,7 @@ $$
 f'\left(t\right)=2\left\langle\boldsymbol{r}\left(t\right)-P_0,\boldsymbol{r}'\left(t\right)\right\rangle.
 $$
 
-因 $C$ 不过 $P_0$, $\boldsymbol{r}\left(t_0\right)\ne{P}_{0}$; 又 $\boldsymbol{r}\left(t_0\right)$ 是与 $P_0$ 距离最近的点, $f$ 在 $t_0$ 处取极小, 而 $t_0$ 是内点, 故 $f'\left(t_0\right)=0$. 于是
+因 $C$ 不过 $P_0$, $\boldsymbol{r}\left(t_0\right)\ne{}P_{0}$; 又 $\boldsymbol{r}\left(t_0\right)$ 是与 $P_0$ 距离最近的点, $f$ 在 $t_0$ 处取极小, 而 $t_0$ 是内点, 故 $f'\left(t_0\right)=0$. 于是
 
 $$
 \left\langle\boldsymbol{r}\left(t_0\right)-P_0,\boldsymbol{r}'\left(t_0\right)\right\rangle=0,
@@ -377,7 +377,7 @@ $\blacksquare$
 
 ## 6.10 (反向等距变换下曲线几何量的变化)
 
-设 $T\left(\boldsymbol{X}\right)=\boldsymbol{X}\boldsymbol{T}+P$ 是 $E^{3}$ 的一个合同 (等距) 变换, $\det{T}=-1$: $T$ 为变换, $\boldsymbol{T}\in{O}\left(3\right)$ 为正交矩阵. $\boldsymbol{r}\left(t\right)$ 是 $E^{3}$ 的正则曲线, 求曲线 $\widetilde{\boldsymbol{r}}=T\circ\boldsymbol{r}$ 与曲线 $\boldsymbol{r}$ 的弧长参数, 曲率, 挠率间的关系.
+设 $T\left(\boldsymbol{X}\right)=\boldsymbol{X}\boldsymbol{T}+P$ 是 $E^{3}$ 的一个合同 (等距) 变换, $\det{}T=-1$: $T$ 为变换, $\boldsymbol{T}\in{}O\left(3\right)$ 为正交矩阵. $\boldsymbol{r}\left(t\right)$ 是 $E^{3}$ 的正则曲线, 求曲线 $\widetilde{\boldsymbol{r}}=T\circ\boldsymbol{r}$ 与曲线 $\boldsymbol{r}$ 的弧长参数, 曲率, 挠率间的关系.
 
 ### 解答 6.10
 
